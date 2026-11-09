@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">04 practice</title>
+  <desc id="desc">TENGU category marker.</desc>
+<rect width="256" height="256" fill="none"/><path d="M42 190L96 78L128 142L166 54L214 190Z" fill="#11110F"/><path d="M96 78L128 142L111 178H72Z" fill="#A9853E"/><path d="M166 54L214 190H158L142 112Z" fill="#C92F20" opacity=".9"/>
+</svg>

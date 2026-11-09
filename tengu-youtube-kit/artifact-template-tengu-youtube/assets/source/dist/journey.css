@@ -1,0 +1,24 @@
+/* Story UI is editorial, not presenter controls. Illustrations are raster assets. */
+.rail__story{display:flex;flex-direction:column;justify-content:center;gap:9px;min-width:0}
+.rail__story>span{font:500 10px/1 Plex,monospace;letter-spacing:.14em;color:rgba(233,223,201,.7)}
+.dialogue-speaker{display:block;color:var(--vermilion);font:600 10px/1.4 Plex,monospace;letter-spacing:.14em;margin-bottom:6px}
+.travel-layer{position:fixed;inset:0;z-index:90;overflow:hidden;pointer-events:none}
+.travel-layer[hidden]{display:none}
+.travel-seam{position:absolute;top:var(--rail);bottom:0;width:3px;background:#a9853e;box-shadow:-10px 0 26px rgba(17,17,15,.2);will-change:transform}
+.travel-actor{position:absolute;left:0;bottom:6vh;width:clamp(210px,20vw,285px);height:auto;aspect-ratio:1;background-image:url('assets/travel-sprite-v22.png');background-size:400% 200%;transform:translateX(-82%);clip-path:inset(0 2%)}
+.travel-layer[data-direction="back"] .travel-actor{transform:translateX(-18%) scaleX(-1)}
+.travel-question{position:absolute;top:calc(var(--rail) + 20px);left:50%;transform:translateX(-50%);width:max-content;max-width:80vw;padding:12px 24px 15px;background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--vermilion);box-shadow:0 8px 32px rgba(17,17,15,.12);text-align:center}
+.travel-question span{display:block;font:600 10px/1.4 Plex,monospace;letter-spacing:.16em;color:var(--vermilion);margin-bottom:5px}
+.travel-question b{display:block;font:650 clamp(18px,2vw,28px)/1.25 Manrope,sans-serif}
+.scene.is-travelling{will-change:transform;pointer-events:none}
+.scene.is-travelling .reveal{opacity:1;transform:none;transition:none}
+.journey-moving .scene *{animation-play-state:paused!important}
+.journey-placeholder{pointer-events:none}
+.scene--attention .updated-token>p{font-family:Plex,monospace}
+.scene--attention .updated-token>p>i{font:400 12px/1.5 Manrope,sans-serif}
+.scene--diagnostics .rule{font-size:10px;letter-spacing:.02em}
+.scene--diagnostics .rule--c{font-size:11px}
+.scene--diagnostics .rule--c.story-cue.is-cue{background:var(--vermilion);color:var(--washi);box-shadow:inset 0 -3px var(--sumi)}
+@media(min-width:981px){.inference-story{padding-top:64px}}
+@media(max-width:600px){.rail__story>span{font-size:8px;letter-spacing:.02em}.rail{gap:12px}.rail__brand{font-size:12px}.rail__brand img{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.travel-layer{display:none!important}}

@@ -1,0 +1,22 @@
+{
+  "sha256": {
+    "assets/tengu-mark-simplified.svg": "ddd0b88fa80d3d82e91813ca7928bbeedaa41fa871843a6f81a88e557bb807ac",
+    "assets/tengu-mark-primary.svg": "216b3e99795d38b4acfbf7e71989bb4492cf3b49b2910552d190d042b38ac6f7",
+    "assets/tengu-wordmark-horizontal.svg": "0d713ec28528dbb6d8a437abef423813ce5a0cecf85045ae43657e7fccb7fa33",
+    "assets/tengu-wordmark-horizontal-en.svg": "3bbcfe9b7c7f11c8b9b47bd0df7c4f7225bced952958cc31e6c36c349120d6cd",
+    "assets/tengu-kaiju-v23.png": "37c34b0defe0387734b478c7368514b5b1385eac9ebabf3c0459e836f81eace3",
+    "assets/tengu-kaiju-complete-v33.png": "97012320bb19a49bcd8c6613d507573aa95cb3238ec67f3d149d0c938e3b8b6f",
+    "assets/tengu-robot-v23.png": "3a10d81a231729e18b89092ed55104b6c7920dba2cc7ebea289d613984bc9326",
+    "assets/field-light.jpg": "c21e232fcfd4bee69614b478c17b749940acd17e916de980e85a8796a061e553",
+    "assets/field-dark.jpg": "c04a7bcacb300516f006aec7c4954a7d996b9a8fd514ebe00f5b287d3f341ad5",
+    "assets/tengu-logo-sting.mp4": "03b54562375ff7b813a23c9cab9e133524da0a07b5ba314661fbbea749818d5d",
+    "assets/tengu-logo-sting-en.mp4": "239374b7d646c13ec290f130fee6ae681a9d423b83a64f40a068e531279fc11c",
+    "assets/fonts/literata.ttf": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440",
+    "assets/fonts/manrope-cyrillic.woff2": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+    "assets/fonts/manrope-latin.woff2": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+    "assets/fonts/plex-cyrillic-400.woff2": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce",
+    "assets/fonts/plex-cyrillic-600.woff2": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa",
+    "assets/fonts/plex-latin-400.woff2": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+    "assets/fonts/plex-latin-600.woff2": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "emudhra-ca-compromise",
+    "lang": "ru",
+    "status": "PASS",
+    "scenes": 9,
+    "spokenWords": 658,
+    "estimatedSeconds": 312,
+    "pace": 140,
+    "plannedPauseSeconds": 30,
+    "note": "Duration is an estimate; browser, visual and editorial QA still required.",
+    "warnings": [],
+    "errors": []
+  },
+  {
+    "slug": "emudhra-ca-compromise",
+    "lang": "en",
+    "status": "PASS",
+    "scenes": 9,
+    "spokenWords": 690,
+    "estimatedSeconds": 326,
+    "pace": 140,
+    "plannedPauseSeconds": 30,
+    "note": "Duration is an estimate; browser, visual and editorial QA still required.",
+    "warnings": [],
+    "errors": []
+  }
+]

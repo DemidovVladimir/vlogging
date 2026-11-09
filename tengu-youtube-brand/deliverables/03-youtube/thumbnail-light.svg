@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU light thumbnail</title>
+  <desc id="desc">Light editorial thumbnail template.</desc>
+<rect width="1280" height="720" fill="#E9DFC9"/><defs><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#11110F" stroke-width="1" opacity=".085"/></pattern></defs>
+  <rect width="1280" height="720" fill="url(#grid)"/>
+  <g stroke="#11110F" opacity=".24"><path d="M24 48H72M48 24V72M1208 48H1256M1232 24V72M24 672H72M48 648V696M1208 672H1256M1232 648V696"/></g>
+  <circle cx="1090" cy="138" r="99" fill="#C92F20"/>
+  <path d="M658 720L760 540L842 608L918 470L1000 548L1080 430L1168 532L1280 440V720Z" fill="#11110F" opacity=".88"/>
+  <text x="56" y="58" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="20" font-weight="700" letter-spacing="3">TENGU / 03 ИНСТРУМЕНТЫ</text>
+  <text x="56" y="182" fill="#11110F" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="88" font-weight="800" letter-spacing="-2">КАК СОБРАТЬ</text><text x="56" y="265" fill="#11110F" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="88" font-weight="800" letter-spacing="-2">ИИ-АГЕНТА</text><text x="56" y="348" fill="#11110F" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="88" font-weight="800" letter-spacing="-2">БЕЗ ХАЙПА</text>
+  <path d="M58 475H448" stroke="#C92F20" stroke-width="12"/>
+  <text x="58" y="535" fill="#1D3342" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="20" font-weight="700" letter-spacing="2">ПОЛНЫЙ ПРОЦЕСС · РЕАЛЬНЫЙ ТЕСТ</text>
+  <text x="58" y="667" fill="#A9853E" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="16" font-weight="700" letter-spacing="3">01 / FIELD NOTE</text>
+  <g transform="translate(934 274) scale(.53)"><g id="thumbLight" transform="translate(0 0) scale(1)">
+    <g fill="none" stroke="#11110F">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#11110F"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#11110F"/><circle cx="394" cy="256" r="9" fill="none" stroke="#11110F" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#11110F" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g></g>
+</svg>

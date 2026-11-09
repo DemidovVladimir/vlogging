@@ -1,0 +1,7 @@
+interface:
+  display_name: "TENGU YouTube"
+  short_description: "Five-minute TENGU videos, animated deck and script"
+  icon_large: "./assets/preview.png"
+  default_prompt: "Use $artifact-template-tengu-youtube to create a roughly five-minute TENGU episode in Russian and English, with meaningful animations and private spoken scripts, then publish the ready presentations on tengucluster.com. Topic: "
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,120 @@
+{
+  "origin": "http://127.0.0.1:4181",
+  "checkedAt": "2026-10-26T12:49:38.096Z",
+  "passed": 28,
+  "failed": 0,
+  "results": [
+    {
+      "name": "ru catalog at 320px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 390px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 768px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 1280px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 1920px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "ru catalog: the tab leads to /modal-city/",
+      "ok": true
+    },
+    {
+      "name": "ru tengu-cluster at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru tengu-cluster at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru agent-context at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru agent-context at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru emudhra-ca-compromise at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru emudhra-ca-compromise at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru chaos-kb at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "ru chaos-kb at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 320px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 390px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 768px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 1280px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 1920px: the trainer tab sits in the header, on one line, nothing scrolls sideways",
+      "ok": true
+    },
+    {
+      "name": "en catalog: the tab leads to /modal-city/",
+      "ok": true
+    },
+    {
+      "name": "en tengu-cluster at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en tengu-cluster at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en agent-context at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en agent-context at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en emudhra-ca-compromise at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en emudhra-ca-compromise at 1280px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en chaos-kb at 320px: the menu offers home and the trainer",
+      "ok": true
+    },
+    {
+      "name": "en chaos-kb at 1280px: the menu offers home and the trainer",
+      "ok": true
+    }
+  ]
+}

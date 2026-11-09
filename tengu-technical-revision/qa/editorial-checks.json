@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "tengu-cluster",
+    "lang": "ru",
+    "status": "PASS",
+    "scenes": 9,
+    "spokenWords": 645,
+    "estimatedSeconds": 301,
+    "pace": 140,
+    "plannedPauseSeconds": 25,
+    "note": "Duration is an estimate; browser, visual and editorial QA still required.",
+    "warnings": [],
+    "errors": []
+  },
+  {
+    "slug": "tengu-cluster",
+    "lang": "en",
+    "status": "PASS",
+    "scenes": 9,
+    "spokenWords": 745,
+    "estimatedSeconds": 356,
+    "pace": 135,
+    "plannedPauseSeconds": 25,
+    "note": "Duration is an estimate; browser, visual and editorial QA still required.",
+    "warnings": [],
+    "errors": []
+  },
+  {
+    "slug": "emudhra-ca-compromise",
+    "lang": "ru",
+    "status": "PASS",
+    "scenes": 9,
+    "spokenWords": 651,
+    "estimatedSeconds": 309,
+    "pace": 140,
+    "plannedPauseSeconds": 30,
+    "note": "Duration is an estimate; browser, visual and editorial QA still required.",
+    "warnings": [],
+    "errors": []
+  },
+  {
+    "slug": "emudhra-ca-compromise",
+    "lang": "en",
+    "status": "PASS",
+    "scenes": 9,
+    "spokenWords": 723,
+    "estimatedSeconds": 340,
+    "pace": 140,
+    "plannedPauseSeconds": 30,
+    "note": "Duration is an estimate; browser, visual and editorial QA still required.",
+    "warnings": [],
+    "errors": []
+  }
+]

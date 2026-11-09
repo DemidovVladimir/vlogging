@@ -1,0 +1,116 @@
+{
+  "origin": "https://tengucluster.com",
+  "checkedAt": "2026-10-23T10:06:21.990Z",
+  "slideContentPreserved": true,
+  "catalogs": [
+    {
+      "lang": "ru",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "ru",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "ru",
+      "width": 390,
+      "status": "passed"
+    },
+    {
+      "lang": "ru",
+      "width": 320,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "status": "passed"
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "status": "passed"
+    }
+  ],
+  "viewers": [
+    {
+      "lang": "ru",
+      "slug": "agent-context",
+      "slides": 12,
+      "menu": true,
+      "keyboard": true,
+      "recording": true,
+      "languageSwitch": true,
+      "introAudio": true
+    },
+    {
+      "lang": "ru",
+      "slug": "tengu-cluster",
+      "slides": 9,
+      "menu": true,
+      "keyboard": true,
+      "recording": true,
+      "languageSwitch": true,
+      "introAudio": true
+    },
+    {
+      "lang": "ru",
+      "slug": "emudhra-ca-compromise",
+      "slides": 8,
+      "menu": true,
+      "keyboard": true,
+      "recording": true,
+      "languageSwitch": true,
+      "introAudio": true
+    },
+    {
+      "lang": "en",
+      "slug": "agent-context",
+      "slides": 12,
+      "menu": true,
+      "keyboard": true,
+      "recording": true,
+      "languageSwitch": true,
+      "introAudio": true
+    },
+    {
+      "lang": "en",
+      "slug": "tengu-cluster",
+      "slides": 9,
+      "menu": true,
+      "keyboard": true,
+      "recording": true,
+      "languageSwitch": true,
+      "introAudio": true
+    },
+    {
+      "lang": "en",
+      "slug": "emudhra-ca-compromise",
+      "slides": 8,
+      "menu": true,
+      "keyboard": true,
+      "recording": true,
+      "languageSwitch": true,
+      "introAudio": true
+    }
+  ],
+  "legacyLinks": [
+    "/#slide-6",
+    "/#intro",
+    "/en/#slide-6",
+    "/en/#intro"
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 410" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU horizontal lockup</title>
+  <desc id="desc">Primary TENGU wordmark and descriptor.</desc>
+<rect width="1500" height="410" fill="none"/><g id="lockup" transform="translate(28 -48) scale(0.9)">
+    <g fill="none" stroke="#11110F">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#11110F"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#11110F"/><circle cx="394" cy="256" r="9" fill="none" stroke="#11110F" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#11110F" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g>
+  <g id="horizontalWord" transform="translate(520 82) scale(1.42)" fill="#11110F">
+      <path d="M0 0H94L86 18H58V100H35V18H0Z"/>
+      <path d="M118 0H210L202 18H141V39H195V57H141V82H210L202 100H118Z"/>
+      <path d="M236 100V0H258L311 66V0H334V100H312L259 34V100Z"/>
+      <path d="M450 0H386C370 0 360 11 360 27V73C360 89 370 100 386 100H450V43H409V61H428V82H389C384 82 382 79 382 74V26C382 21 384 18 389 18H450Z"/>
+      <path d="M477 0H500V74C500 79 504 82 509 82H542C547 82 551 79 551 74V0H574V77C574 92 563 100 548 100H503C488 100 477 92 477 77Z"/></g>
+  <path d="M522 224H1394" stroke="#C92F20" stroke-width="8"/>
+  <text x="524" y="280" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="27" font-weight="700" letter-spacing="6">ПРАКТИЧЕСКИЙ ИИ ДЛЯ ЛЮДЕЙ</text>
+  <text x="524" y="330" fill="#A9853E" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="17" font-weight="600" letter-spacing="3">HUMAN INTENT · SPECIALIST AGENTS · VERIFIED RESULTS</text>
+</svg>

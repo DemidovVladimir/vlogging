@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "origin": "https://tengucluster.com",
+  "manifest": "previous/build-manifest.json",
+  "checkedAt": "2026-10-26T12:33:43.379Z",
+  "contentHashes": 164,
+  "privatePaths": 280,
+  "httpsVerified": true
+}

@@ -1,0 +1,46 @@
+{
+  "status": "success",
+  "deploymentId": "b0bd4027-f710-4779-928b-a56355ebb169",
+  "immutableOrigin": "https://b0bd4027.tengu-presentations.pages.dev",
+  "createdAt": "2026-10-25T08:03:18.522505Z",
+  "deployStartedAt": "2026-10-25T08:02:40Z",
+  "previousDeploymentId": "164c89c5-ad6a-483f-bc55-d65e570dcceb",
+  "project": "tengu-presentations",
+  "origin": "https://tengucluster.com",
+  "revision": 5,
+  "slug": "chaos-kb",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "manifest": "build-manifest.json",
+  "verifiedAt": "2026-10-25T08:06:03.618Z",
+  "sourceWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-chaos-kb-release",
+  "uploader": "wrangler 4.151.3 pages deploy (OAuth scopes account:read user:read pages:write), branch main",
+  "staticAssets": 164,
+  "controlFiles": 2,
+  "privatePaths404PerOrigin": 280,
+  "verifiedOrigins": [
+    "tengucluster.com",
+    "tengu-presentations.pages.dev",
+    "b0bd4027.tengu-presentations.pages.dev"
+  ],
+  "browserChecks": {
+    "127.0.0.1": 33,
+    "tengucluster.com": 33
+  },
+  "rollbackSnapshot": "previous/public",
+  "qa": "qa/tengucluster.com/verify.json",
+  "changedFiles": [
+    "en/episodes/agent-context/index.html",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/tengu-cluster/index.html",
+    "en/index.html",
+    "episodes/agent-context/index.html",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/tengu-cluster/index.html",
+    "index.html"
+  ],
+  "addedFiles": 22,
+  "unrelatedContentUnchanged": true
+}

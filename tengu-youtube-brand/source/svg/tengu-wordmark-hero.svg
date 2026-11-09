@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 574 100" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU hero wordmark</title>
+  <desc id="desc">Distressed hero version of the custom TENGU lettering.</desc>
+<rect width="574" height="100" fill="none"/><defs><mask id="hero-distress"><rect x="-8" y="-8" width="590" height="116" fill="white"/>
+      <path d="M28 10H73L68 15H28ZM126 30H182L178 35H126ZM242 10H270L274 15H242ZM299 73H327V78H303ZM367 31H397V36H367ZM414 10H445V15H414ZM486 42H506V47H486ZM526 85H559L553 90H526Z" fill="black"/>
+      <path d="M16 69H47V73H16ZM153 88H194L189 93H153ZM274 47H304L308 52H278ZM377 88H420V93H377ZM489 12H520V16H489Z" fill="black" opacity=".72"/></mask></defs>
+    <g id="hero" transform="translate(0 0) scale(1)" fill="#11110F" stroke="#11110F" stroke-width="1.8" mask="url(#hero-distress)">
+      <path d="M0 0H94L86 18H58V100H35V18H0Z"/>
+      <path d="M118 0H210L202 18H141V39H195V57H141V82H210L202 100H118Z"/>
+      <path d="M236 100V0H258L311 66V0H334V100H312L259 34V100Z"/>
+      <path d="M450 0H386C370 0 360 11 360 27V73C360 89 370 100 386 100H450V43H409V61H428V82H389C384 82 382 79 382 74V26C382 21 384 18 389 18H450Z"/>
+      <path d="M477 0H500V74C500 79 504 82 509 82H542C547 82 551 79 551 74V0H574V77C574 92 563 100 548 100H503C488 100 477 92 477 77Z"/></g>
+</svg>

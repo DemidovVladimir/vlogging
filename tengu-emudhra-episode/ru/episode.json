@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "topic": "eMudhra: как восстановить доверие — TENGU",
+  "language": "ru",
+  "targetSeconds": 330,
+  "wordsPerMinute": 140,
+  "plannedPauseSeconds": 30,
+  "status": "ready",
+  "copiedReferenceContent": false,
+  "template": "artifact-template-tengu-youtube",
+  "reference": "Approved RU v33 / English edition",
+  "targetDurationSeconds": 330,
+  "durationOverride": "Article-led independent explanation; preserve important context with a roughly five-minute spoken script.",
+  "evidenceCheckedAt": "2026-10-23",
+  "revision": 4,
+  "qaVerifiedAt": "2026-10-23T11:34:03.247Z"
+}

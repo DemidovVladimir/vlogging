@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "phaseScreenshots": 46,
+  "pauseHold": true,
+  "speedBounds": true,
+  "focusGuard": true,
+  "languageSwitch": true,
+  "recordingQuery": true
+}

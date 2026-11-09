@@ -1,0 +1,62 @@
+{
+  "status": "success",
+  "deploymentId": "d19c7d06-0851-432f-b55a-354fcfde01eb",
+  "immutableOrigin": "https://d19c7d06.tengu-presentations.pages.dev",
+  "createdAt": "2026-10-26T12:56:42.17519Z",
+  "deployStartedAt": "2026-10-26T12:56:34Z",
+  "previousDeploymentId": "b0bd4027-f710-4779-928b-a56355ebb169",
+  "project": "tengu-presentations",
+  "origin": "https://tengucluster.com",
+  "revision": 6,
+  "slug": "modal-city-navigation",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "manifest": "build-manifest.json",
+  "verifiedAt": "2026-10-26T12:59:14.228Z",
+  "sourceWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-modal-city-release",
+  "uploader": "wrangler 4.151.3 pages deploy (OAuth token of cf profile tengu), branch main",
+  "staticAssets": 164,
+  "controlFiles": 2,
+  "privatePaths404PerOrigin": 280,
+  "verifiedOrigins": [
+    "tengucluster.com",
+    "tengu-presentations.pages.dev",
+    "d19c7d06.tengu-presentations.pages.dev"
+  ],
+  "browserChecks": {
+    "127.0.0.1": {
+      "regression": 33,
+      "trainer": 28
+    },
+    "tengucluster.com": {
+      "regression": 33,
+      "trainer": 28
+    }
+  },
+  "rollbackSnapshot": "previous/public",
+  "qa": "qa/tengucluster.com/",
+  "changedFiles": [
+    "en/episodes/agent-context/index.html",
+    "en/episodes/chaos-kb/index.html",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/tengu-cluster/index.html",
+    "en/index.html",
+    "episodes/agent-context/index.html",
+    "episodes/chaos-kb/index.html",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/tengu-cluster/index.html",
+    "index.html",
+    "site/catalog.css",
+    "site/site.css"
+  ],
+  "addedFiles": 0,
+  "unrelatedContentUnchanged": true,
+  "linkedWorker": {
+    "name": "tengu-modal-city",
+    "route": "tengucluster.com/modal-city*",
+    "versionId": "48b450ed-fd3e-41b0-9d91-daaff95ccc97",
+    "source": "/Users/vladimirdemidov/development/neovim_pro/site"
+  }
+}

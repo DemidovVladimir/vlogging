@@ -1,0 +1,575 @@
+{
+  "origin": "https://tengucluster.com",
+  "builtAt": "2026-10-22T15:25:16.655Z",
+  "previousDeploymentId": "bc795e24-58cf-48f9-bd86-ceff6915ccd0",
+  "episode": "emudhra-ca-compromise",
+  "sourceVersion": "EP03-v2-clearer-2026-10-22",
+  "allowedChanges": [
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/emudhra-ca-compromise/app.js",
+    "episodes/emudhra-ca-compromise/journey.js",
+    "episodes/emudhra-ca-compromise/episode.css",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/emudhra-ca-compromise/app.js",
+    "en/episodes/emudhra-ca-compromise/journey.js",
+    "en/episodes/emudhra-ca-compromise/episode.css"
+  ],
+  "files": {
+    "_headers": {
+      "bytes": 151,
+      "sha256": "298f97754a2053aa779e1d86968504311b960fa5cb94c117f6b11846d327a73d"
+    },
+    "_redirects": {
+      "bytes": 21,
+      "sha256": "df8d6d4ecd2c7d2c2254417425482b36ab392ab8b2dc82505044696b554fdcc2"
+    },
+    "404.html": {
+      "bytes": 535,
+      "sha256": "b0b5754be082e03d1e49238f17ceab5338d55dde67bc955d3360898203f839fa"
+    },
+    "app.js": {
+      "bytes": 16374,
+      "sha256": "fb360f28257ef19145f8be1535a9b1fe68d1c058430406bd118636ee2dff3ddd"
+    },
+    "assets/ceramics-study-v32.png": {
+      "bytes": 2545968,
+      "sha256": "73ef9e4da84f8eea901c90b46a3b9393b290e3d272c0ed3147d944a45bd1500b"
+    },
+    "assets/field-dark.jpg": {
+      "bytes": 962094,
+      "sha256": "c04a7bcacb300516f006aec7c4954a7d996b9a8fd514ebe00f5b287d3f341ad5"
+    },
+    "assets/field-light.jpg": {
+      "bytes": 916295,
+      "sha256": "c21e232fcfd4bee69614b478c17b749940acd17e916de980e85a8796a061e553"
+    },
+    "assets/fonts/literata.ttf": {
+      "bytes": 955132,
+      "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440"
+    },
+    "assets/fonts/manrope-cyrillic.woff2": {
+      "bytes": 14500,
+      "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+    },
+    "assets/fonts/manrope-latin.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "assets/fonts/plex-cyrillic-400.woff2": {
+      "bytes": 8356,
+      "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce"
+    },
+    "assets/fonts/plex-cyrillic-600.woff2": {
+      "bytes": 9352,
+      "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+    },
+    "assets/fonts/plex-latin-400.woff2": {
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    "assets/fonts/plex-latin-600.woff2": {
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+    },
+    "assets/serving-people-v18.png": {
+      "bytes": 1460083,
+      "sha256": "dfa4be5e11ae54bff76e99a16f94e90455178f03b41b7f4c18ba5db54dc07e43"
+    },
+    "assets/tengu-kaiju-complete-v33.png": {
+      "bytes": 2611113,
+      "sha256": "97012320bb19a49bcd8c6613d507573aa95cb3238ec67f3d149d0c938e3b8b6f"
+    },
+    "assets/tengu-kaiju-v23.png": {
+      "bytes": 2979652,
+      "sha256": "37c34b0defe0387734b478c7368514b5b1385eac9ebabf3c0459e836f81eace3"
+    },
+    "assets/tengu-logo-sting-en.mp4": {
+      "bytes": 3027125,
+      "sha256": "239374b7d646c13ec290f130fee6ae681a9d423b83a64f40a068e531279fc11c"
+    },
+    "assets/tengu-logo-sting-poster-en.png": {
+      "bytes": 2639916,
+      "sha256": "9ff34af48c50c83675f586e01608eea3bc0b509ccbbd0003c0782906a5e615f7"
+    },
+    "assets/tengu-logo-sting-poster.png": {
+      "bytes": 2778378,
+      "sha256": "ea34df69406d89073647ab6b74b4ed0cc83ffe907129b49e54a2d7dc7e5e4bf9"
+    },
+    "assets/tengu-logo-sting.mp4": {
+      "bytes": 2305733,
+      "sha256": "03b54562375ff7b813a23c9cab9e133524da0a07b5ba314661fbbea749818d5d"
+    },
+    "assets/tengu-mark-simplified.svg": {
+      "bytes": 797,
+      "sha256": "ddd0b88fa80d3d82e91813ca7928bbeedaa41fa871843a6f81a88e557bb807ac"
+    },
+    "assets/tengu-robot-v23.png": {
+      "bytes": 2536653,
+      "sha256": "3a10d81a231729e18b89092ed55104b6c7920dba2cc7ebea289d613984bc9326"
+    },
+    "assets/tengu-wordmark-horizontal-en.svg": {
+      "bytes": 2875,
+      "sha256": "3bbcfe9b7c7f11c8b9b47bd0df7c4f7225bced952958cc31e6c36c349120d6cd"
+    },
+    "assets/tengu-wordmark-horizontal.svg": {
+      "bytes": 2894,
+      "sha256": "0d713ec28528dbb6d8a437abef423813ce5a0cecf85045ae43657e7fccb7fa33"
+    },
+    "atlas.css": {
+      "bytes": 45523,
+      "sha256": "3ce0baa6893b2f9eb1f5e257dd5534bb248452d10a828989089f69a5895e4c13"
+    },
+    "en/app.js": {
+      "bytes": 14871,
+      "sha256": "4c07e2e7115bb709747a1770d5efa74d62404d760380d1415b94ccf8efc2b7f3"
+    },
+    "en/episodes/emudhra-ca-compromise/app.js": {
+      "bytes": 9875,
+      "sha256": "b2ec079cb80a673f6a919e89f5612b1ede794a02b0a2841213b4966de9bb75bb"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/field-dark.jpg": {
+      "bytes": 962094,
+      "sha256": "c04a7bcacb300516f006aec7c4954a7d996b9a8fd514ebe00f5b287d3f341ad5"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/field-light.jpg": {
+      "bytes": 916295,
+      "sha256": "c21e232fcfd4bee69614b478c17b749940acd17e916de980e85a8796a061e553"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/literata.ttf": {
+      "bytes": 955132,
+      "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/manrope-cyrillic.woff2": {
+      "bytes": 14500,
+      "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/manrope-latin.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/plex-cyrillic-400.woff2": {
+      "bytes": 8356,
+      "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/plex-cyrillic-600.woff2": {
+      "bytes": 9352,
+      "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/plex-latin-400.woff2": {
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/fonts/plex-latin-600.woff2": {
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/serving-people-v18.png": {
+      "bytes": 1460083,
+      "sha256": "dfa4be5e11ae54bff76e99a16f94e90455178f03b41b7f4c18ba5db54dc07e43"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-kaiju-complete-v33.png": {
+      "bytes": 2611113,
+      "sha256": "97012320bb19a49bcd8c6613d507573aa95cb3238ec67f3d149d0c938e3b8b6f"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-kaiju-v23.png": {
+      "bytes": 2979652,
+      "sha256": "37c34b0defe0387734b478c7368514b5b1385eac9ebabf3c0459e836f81eace3"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-logo-sting-en.mp4": {
+      "bytes": 3027125,
+      "sha256": "239374b7d646c13ec290f130fee6ae681a9d423b83a64f40a068e531279fc11c"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-logo-sting-poster-en.png": {
+      "bytes": 2639916,
+      "sha256": "9ff34af48c50c83675f586e01608eea3bc0b509ccbbd0003c0782906a5e615f7"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-mark-simplified.svg": {
+      "bytes": 797,
+      "sha256": "ddd0b88fa80d3d82e91813ca7928bbeedaa41fa871843a6f81a88e557bb807ac"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-robot-v23.png": {
+      "bytes": 2536653,
+      "sha256": "3a10d81a231729e18b89092ed55104b6c7920dba2cc7ebea289d613984bc9326"
+    },
+    "en/episodes/emudhra-ca-compromise/assets/tengu-wordmark-horizontal-en.svg": {
+      "bytes": 2875,
+      "sha256": "3bbcfe9b7c7f11c8b9b47bd0df7c4f7225bced952958cc31e6c36c349120d6cd"
+    },
+    "en/episodes/emudhra-ca-compromise/atlas.css": {
+      "bytes": 45523,
+      "sha256": "3ce0baa6893b2f9eb1f5e257dd5534bb248452d10a828989089f69a5895e4c13"
+    },
+    "en/episodes/emudhra-ca-compromise/episode.css": {
+      "bytes": 12544,
+      "sha256": "200fc4e717f519c3f2510efaa946fa594625dc7f985b504caa5c6e3583654dc5"
+    },
+    "en/episodes/emudhra-ca-compromise/index.html": {
+      "bytes": 17842,
+      "sha256": "fb0649bbca47972d9d37c035500071fe0efe5ede48af07e7bcc3ce9acb2f0190"
+    },
+    "en/episodes/emudhra-ca-compromise/journey.js": {
+      "bytes": 1615,
+      "sha256": "f0de5ef1c2fd82a18046dd31d649072fb008be573548be62da161c8a68da064a"
+    },
+    "en/episodes/emudhra-ca-compromise/licenses/IBMPlexMono-OFL.txt": {
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "en/episodes/emudhra-ca-compromise/licenses/Literata-OFL.txt": {
+      "bytes": 4389,
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+    },
+    "en/episodes/emudhra-ca-compromise/licenses/Manrope-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "en/episodes/emudhra-ca-compromise/styles.css": {
+      "bytes": 86007,
+      "sha256": "b6b787a5c66718593822fe34e8c18a4faba695e3dbd9918bccd3b02ae85794c9"
+    },
+    "en/episodes/tengu-cluster/app.js": {
+      "bytes": 10930,
+      "sha256": "ee3866af6cc14585f3d892c7c8717768df9c868dadade834f1c231613c0a7b89"
+    },
+    "en/episodes/tengu-cluster/assets/field-dark.jpg": {
+      "bytes": 962094,
+      "sha256": "c04a7bcacb300516f006aec7c4954a7d996b9a8fd514ebe00f5b287d3f341ad5"
+    },
+    "en/episodes/tengu-cluster/assets/field-light.jpg": {
+      "bytes": 916295,
+      "sha256": "c21e232fcfd4bee69614b478c17b749940acd17e916de980e85a8796a061e553"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/literata.ttf": {
+      "bytes": 955132,
+      "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/manrope-cyrillic.woff2": {
+      "bytes": 14500,
+      "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/manrope-latin.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/plex-cyrillic-400.woff2": {
+      "bytes": 8356,
+      "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/plex-cyrillic-600.woff2": {
+      "bytes": 9352,
+      "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/plex-latin-400.woff2": {
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    "en/episodes/tengu-cluster/assets/fonts/plex-latin-600.woff2": {
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+    },
+    "en/episodes/tengu-cluster/assets/serving-people-v18.png": {
+      "bytes": 1460083,
+      "sha256": "dfa4be5e11ae54bff76e99a16f94e90455178f03b41b7f4c18ba5db54dc07e43"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-kaiju-complete-v33.png": {
+      "bytes": 2611113,
+      "sha256": "97012320bb19a49bcd8c6613d507573aa95cb3238ec67f3d149d0c938e3b8b6f"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-kaiju-v23.png": {
+      "bytes": 2979652,
+      "sha256": "37c34b0defe0387734b478c7368514b5b1385eac9ebabf3c0459e836f81eace3"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-logo-sting-en.mp4": {
+      "bytes": 3027125,
+      "sha256": "239374b7d646c13ec290f130fee6ae681a9d423b83a64f40a068e531279fc11c"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-logo-sting-poster-en.png": {
+      "bytes": 2639916,
+      "sha256": "9ff34af48c50c83675f586e01608eea3bc0b509ccbbd0003c0782906a5e615f7"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-mark-simplified.svg": {
+      "bytes": 797,
+      "sha256": "ddd0b88fa80d3d82e91813ca7928bbeedaa41fa871843a6f81a88e557bb807ac"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-robot-v23.png": {
+      "bytes": 2536653,
+      "sha256": "3a10d81a231729e18b89092ed55104b6c7920dba2cc7ebea289d613984bc9326"
+    },
+    "en/episodes/tengu-cluster/assets/tengu-wordmark-horizontal-en.svg": {
+      "bytes": 2875,
+      "sha256": "3bbcfe9b7c7f11c8b9b47bd0df7c4f7225bced952958cc31e6c36c349120d6cd"
+    },
+    "en/episodes/tengu-cluster/atlas.css": {
+      "bytes": 45523,
+      "sha256": "3ce0baa6893b2f9eb1f5e257dd5534bb248452d10a828989089f69a5895e4c13"
+    },
+    "en/episodes/tengu-cluster/episode.css": {
+      "bytes": 14723,
+      "sha256": "36692bc18f6c4570a7ff5ef6b52826f3e5d3261678efd9753fb6f737d4a6151d"
+    },
+    "en/episodes/tengu-cluster/index.html": {
+      "bytes": 13059,
+      "sha256": "4daec7ba9e0d24269b11bd3ed8dde2ebc378c2970b24817f9a10380b017d5208"
+    },
+    "en/episodes/tengu-cluster/journey.js": {
+      "bytes": 1598,
+      "sha256": "0be51dbc24bae41dee9c947866b92cd45e421dcd4d85ef69cac5b8bbc33ccec9"
+    },
+    "en/episodes/tengu-cluster/licenses/IBMPlexMono-OFL.txt": {
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "en/episodes/tengu-cluster/licenses/Literata-OFL.txt": {
+      "bytes": 4389,
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+    },
+    "en/episodes/tengu-cluster/licenses/Manrope-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "en/episodes/tengu-cluster/styles.css": {
+      "bytes": 86007,
+      "sha256": "b6b787a5c66718593822fe34e8c18a4faba695e3dbd9918bccd3b02ae85794c9"
+    },
+    "en/index.html": {
+      "bytes": 21884,
+      "sha256": "ff66abb9d55dcbf07ad2fb774931a81c7a7b7f1203327f3ba819ab9e2301f621"
+    },
+    "en/journey.js": {
+      "bytes": 1764,
+      "sha256": "773c6e8d068388faa654d810d61e3a00b1cde9e7807d8cab8423efc436d1a043"
+    },
+    "episodes/emudhra-ca-compromise/app.js": {
+      "bytes": 10863,
+      "sha256": "8f91a15702666a3556a4d5462ab667c761a2b2a59839caf0c9087c3e28d77493"
+    },
+    "episodes/emudhra-ca-compromise/assets/field-dark.jpg": {
+      "bytes": 962094,
+      "sha256": "c04a7bcacb300516f006aec7c4954a7d996b9a8fd514ebe00f5b287d3f341ad5"
+    },
+    "episodes/emudhra-ca-compromise/assets/field-light.jpg": {
+      "bytes": 916295,
+      "sha256": "c21e232fcfd4bee69614b478c17b749940acd17e916de980e85a8796a061e553"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/literata.ttf": {
+      "bytes": 955132,
+      "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/manrope-cyrillic.woff2": {
+      "bytes": 14500,
+      "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/manrope-latin.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/plex-cyrillic-400.woff2": {
+      "bytes": 8356,
+      "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/plex-cyrillic-600.woff2": {
+      "bytes": 9352,
+      "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/plex-latin-400.woff2": {
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    "episodes/emudhra-ca-compromise/assets/fonts/plex-latin-600.woff2": {
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+    },
+    "episodes/emudhra-ca-compromise/assets/serving-people-v18.png": {
+      "bytes": 1460083,
+      "sha256": "dfa4be5e11ae54bff76e99a16f94e90455178f03b41b7f4c18ba5db54dc07e43"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-kaiju-complete-v33.png": {
+      "bytes": 2611113,
+      "sha256": "97012320bb19a49bcd8c6613d507573aa95cb3238ec67f3d149d0c938e3b8b6f"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-kaiju-v23.png": {
+      "bytes": 2979652,
+      "sha256": "37c34b0defe0387734b478c7368514b5b1385eac9ebabf3c0459e836f81eace3"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-logo-sting-poster.png": {
+      "bytes": 2778378,
+      "sha256": "ea34df69406d89073647ab6b74b4ed0cc83ffe907129b49e54a2d7dc7e5e4bf9"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-logo-sting.mp4": {
+      "bytes": 2305733,
+      "sha256": "03b54562375ff7b813a23c9cab9e133524da0a07b5ba314661fbbea749818d5d"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-mark-simplified.svg": {
+      "bytes": 797,
+      "sha256": "ddd0b88fa80d3d82e91813ca7928bbeedaa41fa871843a6f81a88e557bb807ac"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-robot-v23.png": {
+      "bytes": 2536653,
+      "sha256": "3a10d81a231729e18b89092ed55104b6c7920dba2cc7ebea289d613984bc9326"
+    },
+    "episodes/emudhra-ca-compromise/assets/tengu-wordmark-horizontal.svg": {
+      "bytes": 2894,
+      "sha256": "0d713ec28528dbb6d8a437abef423813ce5a0cecf85045ae43657e7fccb7fa33"
+    },
+    "episodes/emudhra-ca-compromise/atlas.css": {
+      "bytes": 45523,
+      "sha256": "3ce0baa6893b2f9eb1f5e257dd5534bb248452d10a828989089f69a5895e4c13"
+    },
+    "episodes/emudhra-ca-compromise/episode.css": {
+      "bytes": 12544,
+      "sha256": "200fc4e717f519c3f2510efaa946fa594625dc7f985b504caa5c6e3583654dc5"
+    },
+    "episodes/emudhra-ca-compromise/index.html": {
+      "bytes": 20779,
+      "sha256": "bb60181b82bebf79637e1da5e3a11c15ddec56d1b8638b25addd0414bebe8103"
+    },
+    "episodes/emudhra-ca-compromise/journey.js": {
+      "bytes": 1809,
+      "sha256": "3aa07c120e2c666cb13ba79e890699c5484d4bb0c18971a746e9382684f6247f"
+    },
+    "episodes/emudhra-ca-compromise/licenses/IBMPlexMono-OFL.txt": {
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "episodes/emudhra-ca-compromise/licenses/Literata-OFL.txt": {
+      "bytes": 4389,
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+    },
+    "episodes/emudhra-ca-compromise/licenses/Manrope-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "episodes/emudhra-ca-compromise/styles.css": {
+      "bytes": 86007,
+      "sha256": "b6b787a5c66718593822fe34e8c18a4faba695e3dbd9918bccd3b02ae85794c9"
+    },
+    "episodes/tengu-cluster/app.js": {
+      "bytes": 12339,
+      "sha256": "cac35c5a7ae166927152bbda4cc487785ce24ad1bb9ad99b61f4530da1370a46"
+    },
+    "episodes/tengu-cluster/assets/field-dark.jpg": {
+      "bytes": 962094,
+      "sha256": "c04a7bcacb300516f006aec7c4954a7d996b9a8fd514ebe00f5b287d3f341ad5"
+    },
+    "episodes/tengu-cluster/assets/field-light.jpg": {
+      "bytes": 916295,
+      "sha256": "c21e232fcfd4bee69614b478c17b749940acd17e916de980e85a8796a061e553"
+    },
+    "episodes/tengu-cluster/assets/fonts/literata.ttf": {
+      "bytes": 955132,
+      "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440"
+    },
+    "episodes/tengu-cluster/assets/fonts/manrope-cyrillic.woff2": {
+      "bytes": 14500,
+      "sha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914"
+    },
+    "episodes/tengu-cluster/assets/fonts/manrope-latin.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "episodes/tengu-cluster/assets/fonts/plex-cyrillic-400.woff2": {
+      "bytes": 8356,
+      "sha256": "7635422bd10ddbbcb0e0caa1154b928298f5c8319b8c00b30978d4395f4783ce"
+    },
+    "episodes/tengu-cluster/assets/fonts/plex-cyrillic-600.woff2": {
+      "bytes": 9352,
+      "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+    },
+    "episodes/tengu-cluster/assets/fonts/plex-latin-400.woff2": {
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    "episodes/tengu-cluster/assets/fonts/plex-latin-600.woff2": {
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+    },
+    "episodes/tengu-cluster/assets/serving-people-v18.png": {
+      "bytes": 1460083,
+      "sha256": "dfa4be5e11ae54bff76e99a16f94e90455178f03b41b7f4c18ba5db54dc07e43"
+    },
+    "episodes/tengu-cluster/assets/tengu-kaiju-complete-v33.png": {
+      "bytes": 2611113,
+      "sha256": "97012320bb19a49bcd8c6613d507573aa95cb3238ec67f3d149d0c938e3b8b6f"
+    },
+    "episodes/tengu-cluster/assets/tengu-kaiju-v23.png": {
+      "bytes": 2979652,
+      "sha256": "37c34b0defe0387734b478c7368514b5b1385eac9ebabf3c0459e836f81eace3"
+    },
+    "episodes/tengu-cluster/assets/tengu-logo-sting-poster.png": {
+      "bytes": 2778378,
+      "sha256": "ea34df69406d89073647ab6b74b4ed0cc83ffe907129b49e54a2d7dc7e5e4bf9"
+    },
+    "episodes/tengu-cluster/assets/tengu-logo-sting.mp4": {
+      "bytes": 2305733,
+      "sha256": "03b54562375ff7b813a23c9cab9e133524da0a07b5ba314661fbbea749818d5d"
+    },
+    "episodes/tengu-cluster/assets/tengu-mark-simplified.svg": {
+      "bytes": 797,
+      "sha256": "ddd0b88fa80d3d82e91813ca7928bbeedaa41fa871843a6f81a88e557bb807ac"
+    },
+    "episodes/tengu-cluster/assets/tengu-robot-v23.png": {
+      "bytes": 2536653,
+      "sha256": "3a10d81a231729e18b89092ed55104b6c7920dba2cc7ebea289d613984bc9326"
+    },
+    "episodes/tengu-cluster/assets/tengu-wordmark-horizontal.svg": {
+      "bytes": 2894,
+      "sha256": "0d713ec28528dbb6d8a437abef423813ce5a0cecf85045ae43657e7fccb7fa33"
+    },
+    "episodes/tengu-cluster/atlas.css": {
+      "bytes": 45523,
+      "sha256": "3ce0baa6893b2f9eb1f5e257dd5534bb248452d10a828989089f69a5895e4c13"
+    },
+    "episodes/tengu-cluster/episode.css": {
+      "bytes": 14723,
+      "sha256": "36692bc18f6c4570a7ff5ef6b52826f3e5d3261678efd9753fb6f737d4a6151d"
+    },
+    "episodes/tengu-cluster/index.html": {
+      "bytes": 15899,
+      "sha256": "fd8a59fa70647d946e545465e8ead0963e95dc8ef176025833d94525cbd20df3"
+    },
+    "episodes/tengu-cluster/journey.js": {
+      "bytes": 1744,
+      "sha256": "1f7d357fd259f4aeb5ff697bf7ba35be1c8902d7aff65f4ba9e074a2a00d510b"
+    },
+    "episodes/tengu-cluster/licenses/IBMPlexMono-OFL.txt": {
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "episodes/tengu-cluster/licenses/Literata-OFL.txt": {
+      "bytes": 4389,
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+    },
+    "episodes/tengu-cluster/licenses/Manrope-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "episodes/tengu-cluster/styles.css": {
+      "bytes": 86007,
+      "sha256": "b6b787a5c66718593822fe34e8c18a4faba695e3dbd9918bccd3b02ae85794c9"
+    },
+    "index.html": {
+      "bytes": 26997,
+      "sha256": "c22cecb1fb53e90b1de3c7a37fb46b008579d2df3945ebd1f1c3aca3727cda74"
+    },
+    "journey.js": {
+      "bytes": 1942,
+      "sha256": "eefbd3b7198dd30f536f764b29d95fc0e15ad56482eafa3cdb085d0258ec8bb5"
+    },
+    "licenses/IBMPlexMono-OFL.txt": {
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    "licenses/Literata-OFL.txt": {
+      "bytes": 4389,
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+    },
+    "licenses/Manrope-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "styles.css": {
+      "bytes": 86007,
+      "sha256": "b6b787a5c66718593822fe34e8c18a4faba695e3dbd9918bccd3b02ae85794c9"
+    }
+  }
+}

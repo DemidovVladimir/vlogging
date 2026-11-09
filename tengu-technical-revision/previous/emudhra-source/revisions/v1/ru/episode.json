@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "topic": "eMudhra: восемь бит доверия",
+  "language": "ru",
+  "targetSeconds": 540,
+  "wordsPerMinute": 140,
+  "plannedPauseSeconds": 42,
+  "status": "ready",
+  "copiedReferenceContent": false,
+  "template": "artifact-template-tengu-youtube",
+  "reference": "Approved RU v33 / English edition",
+  "targetDurationSeconds": 540,
+  "durationOverride": "User explicitly requested a more detailed and technical episode.",
+  "evidenceCheckedAt": "2026-10-22"
+}

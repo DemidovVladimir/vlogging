@@ -1,0 +1,39 @@
+{
+  "allowed": [
+    "episodes/tengu-cluster/index.html",
+    "episodes/tengu-cluster/app.js",
+    "episodes/tengu-cluster/journey.js",
+    "episodes/tengu-cluster/episode.css",
+    "en/episodes/tengu-cluster/index.html",
+    "en/episodes/tengu-cluster/app.js",
+    "en/episodes/tengu-cluster/journey.js",
+    "en/episodes/tengu-cluster/episode.css",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/emudhra-ca-compromise/app.js",
+    "episodes/emudhra-ca-compromise/journey.js",
+    "episodes/emudhra-ca-compromise/episode.css",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/emudhra-ca-compromise/app.js",
+    "en/episodes/emudhra-ca-compromise/journey.js",
+    "en/episodes/emudhra-ca-compromise/episode.css"
+  ],
+  "changed": [
+    "episodes/tengu-cluster/index.html",
+    "episodes/tengu-cluster/app.js",
+    "episodes/tengu-cluster/journey.js",
+    "episodes/tengu-cluster/episode.css",
+    "en/episodes/tengu-cluster/index.html",
+    "en/episodes/tengu-cluster/app.js",
+    "en/episodes/tengu-cluster/journey.js",
+    "en/episodes/tengu-cluster/episode.css",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/emudhra-ca-compromise/app.js",
+    "episodes/emudhra-ca-compromise/journey.js",
+    "episodes/emudhra-ca-compromise/episode.css",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/emudhra-ca-compromise/app.js",
+    "en/episodes/emudhra-ca-compromise/journey.js",
+    "en/episodes/emudhra-ca-compromise/episode.css"
+  ],
+  "firstEpisodeUnchanged": true
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">06 people</title>
+  <desc id="desc">TENGU category marker.</desc>
+<rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="78" fill="none" stroke="#C92F20" stroke-width="15"/><path d="M57 128H199" stroke="#C92F20" stroke-width="15"/><circle cx="128" cy="91" r="20" fill="#11110F"/><path d="M89 163C93 133 163 133 167 163" fill="#11110F"/>
+</svg>

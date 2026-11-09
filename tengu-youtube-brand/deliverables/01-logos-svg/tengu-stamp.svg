@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU seal</title>
+  <desc id="desc">Vermilion Japanese TENGU stamp.</desc>
+<rect width="512" height="512" fill="none"/><rect x="82" y="82" width="348" height="348" fill="none" stroke="#C92F20" stroke-width="18"/>
+  <rect x="104" y="104" width="304" height="304" fill="none" stroke="#C92F20" stroke-width="4" opacity=".7"/>
+  <text x="256" y="325" text-anchor="middle" fill="#C92F20" font-family="'Shippori Mincho','Hiragino Mincho ProN',serif" font-size="188" font-weight="800" letter-spacing="-14">天狗</text>
+</svg>

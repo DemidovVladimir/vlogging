@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">02 agents</title>
+  <desc id="desc">TENGU category marker.</desc>
+<rect width="256" height="256" fill="none"/><path d="M128 50L198 91V171L128 212L58 171V91Z" fill="none" stroke="#11110F" stroke-width="8"/><g fill="#11110F"><circle cx="128" cy="50" r="16"/><circle cx="198" cy="91" r="16"/><circle cx="198" cy="171" r="16"/><circle cx="128" cy="212" r="16"/><circle cx="58" cy="171" r="16"/><circle cx="58" cy="91" r="16"/></g><rect x="113" y="113" width="30" height="30" fill="#C92F20"/>
+</svg>

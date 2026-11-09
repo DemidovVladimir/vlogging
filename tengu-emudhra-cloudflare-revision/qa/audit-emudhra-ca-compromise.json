@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "files": 144,
+  "ru": "episodes/emudhra-ca-compromise/index.html",
+  "en": "en/episodes/emudhra-ca-compromise/index.html",
+  "previousFilesPreserved": true,
+  "authorizedChanges": [
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/emudhra-ca-compromise/app.js",
+    "episodes/emudhra-ca-compromise/journey.js",
+    "episodes/emudhra-ca-compromise/episode.css",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/emudhra-ca-compromise/app.js",
+    "en/episodes/emudhra-ca-compromise/journey.js",
+    "en/episodes/emudhra-ca-compromise/episode.css"
+  ],
+  "uploaded": false,
+  "note": "Inventory gate only. Review content and complete browser/live privacy QA before declaring a release."
+}

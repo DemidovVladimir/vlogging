@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU dark chapter bumper</title>
+  <desc id="desc">Dark chapter bumper still.</desc>
+<rect width="1920" height="1080" fill="#11110F"/><defs><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#E9DFC9" stroke-width="1" opacity=".085"/></pattern></defs>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <g stroke="#E9DFC9" opacity=".24"><path d="M24 48H72M48 24V72M1848 48H1896M1872 24V72M24 1032H72M48 1008V1056M1848 1032H1896M1872 1008V1056"/></g>
+  <path d="M0 920L0 760L90 700L155 748L260 624L328 690L414 590L486 662L560 548L632 635L720 500L802 592L866 557L940 672L1030 620L1114 690L1210 590L1300 670L1410 548L1535 660L1640 612L1740 710L1842 646L1920 690V920Z" fill="#1D3342" opacity="0.62"/>
+  <text x="100" y="98" fill="#E9DFC9" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="20" font-weight="700" letter-spacing="4">TENGU / CHAPTER 05</text>
+  <text x="100" y="398" fill="#E9DFC9" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="112" font-weight="800" letter-spacing="-2">ДОКАЗАТЕЛЬСТВА</text><text x="100" y="504" fill="#E9DFC9" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="112" font-weight="800" letter-spacing="-2">И ВЕРДИКТ</text>
+  <path d="M102 645H686" stroke="#C92F20" stroke-width="14"/>
+  <text x="104" y="710" fill="#A9853E" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="25" font-weight="700" letter-spacing="3">ПОКАЗЫВАЕМ РЕЗУЛЬТАТ ЧЕСТНО</text>
+  <g transform="translate(1270 270) scale(1.03)"><g id="bumperDark" transform="translate(0 0) scale(1)">
+    <g fill="none" stroke="#E9DFC9">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#E9DFC9"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#E9DFC9"/><circle cx="394" cy="256" r="9" fill="none" stroke="#E9DFC9" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#E9DFC9" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g></g>
+</svg>

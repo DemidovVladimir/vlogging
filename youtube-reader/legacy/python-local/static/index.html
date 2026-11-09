@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e14">
+  <meta name="description" content="A private workspace for turning YouTube videos into readable, searchable transcripts.">
+  <title>Margin — Transcript workspace</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <button class="sidebar-scrim" id="sidebar-scrim" type="button" aria-label="Close library" hidden></button>
+  <aside class="sidebar" id="sidebar" aria-label="Transcript library">
+    <a class="brand" href="./index.html" aria-label="Margin home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h5a4 4 0 0 1 3 1.2 4 4 0 0 1 3-1.2h5v13h-5a4 4 0 0 0-3 1.2 4 4 0 0 0-3-1.2H4zM12 8v12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+      <span>margin<span class="brand-period">.</span></span>
+    </a>
+    <button class="icon-button sidebar-close" id="sidebar-close" type="button" aria-label="Close library"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+    <div class="workspace-label"><span class="status-dot"></span> Personal workspace</div>
+    <button class="new-button" id="new-transcript" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> New transcript <kbd>N</kbd></button>
+    <div class="library-heading"><h2>Library</h2><span id="library-count">0</span></div>
+    <label class="library-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="library-search" type="search" placeholder="Search library" aria-label="Search library"></label>
+    <div class="library-list" id="library-list" aria-live="polite"></div>
+    <div class="sidebar-footer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><div><strong>Saved on this computer</strong><p>Private, local storage</p></div><span class="status-dot"></span></div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div class="topbar-left"><button id="library-toggle" class="icon-button" type="button" aria-label="Open library" aria-expanded="false" aria-controls="sidebar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></svg></button><span class="page-title">Transcripts</span><span class="private-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="10" width="12" height="10" rx="2"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>Private</span></div>
+      <button class="secondary-button import-trigger" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-4 4 4-4 4 4M4 14v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg><span>Import file</span></button>
+    </header>
+
+    <div class="workspace-content">
+      <section class="welcome" id="welcome">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUTUBE TRANSCRIPTS</div>
+        <h1>Extract a YouTube <span class="term" tabindex="0" aria-describedby="transcript-definition">transcript<span class="term-tip" id="transcript-definition" role="tooltip">A transcript is the written text of the speech in a video.</span></span>.</h1>
+        <p class="welcome-intro">Extract existing <span class="term" tabindex="0" aria-describedby="caption-definition">captions<span class="term-tip" id="caption-definition" role="tooltip">Captions are text displayed with a video. Each caption has a start time and an end time.</span></span> from a video. Read, search, and export the text.</p>
+      </section>
+
+      <section class="extract-panel" aria-label="Extract a transcript">
+        <form id="extract-form">
+          <label for="video-url" class="input-label">YouTube link</label>
+          <div class="url-row"><div class="url-input"><svg class="icon link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m10 13 4-4m-6 6-1.5 1.5a4 4 0 0 1-5.6-5.6L5 6.8a4 4 0 0 1 5.6 0m2.8 10.4a4 4 0 0 0 5.6 0l4.1-4.1a4 4 0 0 0-5.6-5.6L16 9" transform="translate(1 -1) scale(.9)"/></svg><input id="video-url" type="text" inputmode="url" aria-label="YouTube link" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off" required maxlength="2000" aria-describedby="extract-hint"></div><button class="primary-button" id="extract-button" type="submit"><span id="extract-button-text">Extract transcript</span><svg class="icon" id="extract-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button></div>
+          <div class="input-footer"><div class="language-control"><label for="language">Caption language</label><select id="language"><option value="auto">First available</option><option value="en">English</option><option value="ru">Russian</option><option value="de">German</option><option value="es">Spanish</option><option value="fr">French</option><option value="pt">Portuguese</option><option value="uk">Ukrainian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="zh-Hans">Chinese (simplified)</option></select></div><span id="extract-hint"><span class="status-dot"></span><span id="workspace-state">Saved automatically to your library</span></span></div>
+        </form>
+        <div class="feedback" id="feedback" role="status" hidden></div>
+      </section>
+
+      <section class="welcome-bottom" id="welcome-bottom">
+        <div class="empty-state">
+          <div class="document-preview" aria-hidden="true"><div class="document-fold"></div><div class="preview-play"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6z"/></svg></div><span class="preview-line line-one"></span><span class="preview-line line-two"></span><span class="preview-line line-three"></span><span class="preview-cursor"></span><div class="document-badge"><svg class="icon" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg> Ready to read</div></div>
+          <h2>No transcript selected</h2>
+          <p>Paste a video link to extract its captions.<br>Open saved transcripts from your library.</p>
+          <div class="empty-features"><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10M4 20h13"/></svg>Clean reading view</span><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Clickable timestamps</span><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>Text & subtitle exports</span></div>
+        </div>
+        <p class="caption-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg><span>Uses existing video captions. If captions aren’t available, you can <button class="inline-button import-trigger" type="button">import a transcript</button>.</span></p>
+      </section>
+
+      <section class="reader" id="reader" hidden aria-labelledby="reader-title">
+        <div class="reader-heading"><div class="reader-eyebrow"><span class="status-dot"></span><span id="reader-author"></span></div><a id="original-link" target="_blank" rel="noopener noreferrer">Open video <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+        <h1 id="reader-title"></h1>
+        <div class="document-meta" id="document-meta"></div>
+        <div class="reader-tools"><div class="view-switch" role="group" aria-label="Reading view"><button type="button" class="active" id="read-view" aria-pressed="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10M4 20h13"/></svg>Read</button><button type="button" id="timeline-view" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg>Timeline</button></div><div class="reader-actions"><button class="tool-button" id="copy-button" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg>Copy text</button><label class="export-control"><span class="sr-only">Export transcript</span><select id="export-format"><option value="">Export ↓</option><option value="txt">Plain text (.txt)</option><option value="md">Markdown (.md)</option><option value="srt">Subtitles (.srt)</option></select></label></div></div>
+        <div class="reading-surface"><label class="transcript-search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="transcript-search" type="search" placeholder="Search this transcript…" aria-label="Search this transcript"><span id="search-count" aria-live="polite"></span><kbd>/</kbd></label><p class="source-note" id="source-note"></p><div id="transcript-content" class="transcript-content"></div><div class="reader-end"><span>End of transcript</span><button type="button" class="delete-button" id="delete-button">Remove from library</button></div></div>
+      </section>
+      <footer class="main-footer"><span><span class="status-dot"></span>Your library stays on this computer.</span><span>margin<span class="brand-period">.</span></span></footer>
+    </div>
+  </main>
+  <input type="file" id="import-file" accept=".vtt,.srt,.txt,text/plain,text/vtt,application/x-subrip" hidden>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

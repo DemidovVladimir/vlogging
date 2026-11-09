@@ -1,0 +1,26 @@
+{
+  "changed": [
+    "en/episodes/agent-context/index.html",
+    "en/episodes/chaos-kb/index.html",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/tengu-cluster/index.html",
+    "en/index.html",
+    "episodes/agent-context/index.html",
+    "episodes/chaos-kb/index.html",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/tengu-cluster/index.html",
+    "index.html",
+    "site/catalog.css",
+    "site/site.css"
+  ],
+  "added": [],
+  "preserved": 154,
+  "siteCss": [
+    "/site/site.css?v=374cfcf770a6",
+    "/site/site.css?v=73d767bccc32"
+  ],
+  "catalogCss": [
+    "/site/catalog.css?v=c36fc2a39817",
+    "/site/catalog.css?v=31ea4a685ecf"
+  ]
+}

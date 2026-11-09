@@ -1,0 +1,37 @@
+{
+  "origin": "http://127.0.0.1:4178",
+  "editions": [
+    {
+      "slug": "emudhra-ca-compromise",
+      "lang": "ru",
+      "scenes": 9,
+      "phases": 23,
+      "viewports": [
+        1280,
+        1920,
+        1440,
+        664,
+        390
+      ],
+      "controls": true,
+      "audio": true
+    },
+    {
+      "slug": "emudhra-ca-compromise",
+      "lang": "en",
+      "scenes": 9,
+      "phases": 23,
+      "viewports": [
+        1280,
+        1920,
+        1440,
+        664,
+        390
+      ],
+      "controls": true,
+      "audio": true
+    }
+  ],
+  "errors": [],
+  "status": "passed"
+}

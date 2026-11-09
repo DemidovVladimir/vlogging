@@ -1,0 +1,33 @@
+{
+  "name": "tengu-youtube-motion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render:sting": "remotion render TenguLogoSting out/tengu-logo-sting.mp4 --codec=h264 --crf=12 --overwrite",
+    "render:alpha": "remotion render TenguLogoStingTransparent out/tengu-logo-sting-alpha.mov --codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --image-format=png --overwrite",
+    "render:symbol": "remotion render TenguSymbolMotion out/tengu-symbol-motion.mp4 --codec=h264 --crf=12 --overwrite",
+    "render:symbol-alpha": "remotion render TenguSymbolMotionTransparent out/tengu-symbol-motion-alpha.mov --codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --image-format=png --overwrite",
+    "render:chapter-light": "remotion render TenguChapterBumperLight out/tengu-chapter-bumper-light.mp4 --codec=h264 --crf=12 --overwrite",
+    "render:chapter-dark": "remotion render TenguChapterBumperDark out/tengu-chapter-bumper-dark.mp4 --codec=h264 --crf=12 --overwrite",
+    "still": "remotion still TenguLogoSting out/tengu-logo-sting-poster.png --frame=62 --overwrite"
+  },
+  "dependencies": {
+    "@fontsource-variable/literata": "^5.3.0",
+    "@fontsource-variable/manrope": "latest",
+    "@fontsource-variable/literata": "5.3.0",
+    "@fontsource/ibm-plex-mono": "latest",
+    "@fontsource/shippori-mincho": "5.3.0",
+    "@fontsource/shippori-mincho": "^5.3.0",
+    "@remotion/cli": "4.0.536",
+    "@remotion/media": "4.0.536",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

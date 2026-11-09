@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1280" width="1920" height="1280" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU YouTube brand system</title>
+  <desc id="desc">Reference board for the TENGU YouTube identity.</desc>
+<rect width="1920" height="1280" fill="#E9DFC9"/><defs><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#11110F" stroke-width="1" opacity=".085"/></pattern></defs>
+  <rect width="1920" height="1280" fill="url(#grid)"/>
+  <g stroke="#11110F" opacity=".24"><path d="M24 48H72M48 24V72M1848 48H1896M1872 24V72M24 1232H72M48 1208V1256M1848 1232H1896M1872 1208V1256"/></g>
+  <path d="M44 44H1876V1236H44Z" fill="none" stroke="#11110F" opacity=".34"/>
+  <text x="74" y="90" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="4">TENGU / YOUTUBE FIELD SYSTEM / V1.0</text>
+  <g transform="translate(34 112) scale(.98)"><g id="board" transform="translate(0 0) scale(1)">
+    <g fill="none" stroke="#11110F">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#11110F"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#11110F"/><circle cx="394" cy="256" r="9" fill="none" stroke="#11110F" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#11110F" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g></g>
+  <defs><mask id="boardWord-distress"><rect x="-8" y="-8" width="590" height="116" fill="white"/>
+      <path d="M28 10H73L68 15H28ZM126 30H182L178 35H126ZM242 10H270L274 15H242ZM299 73H327V78H303ZM367 31H397V36H367ZM414 10H445V15H414ZM486 42H506V47H486ZM526 85H559L553 90H526Z" fill="black"/>
+      <path d="M16 69H47V73H16ZM153 88H194L189 93H153ZM274 47H304L308 52H278ZM377 88H420V93H377ZM489 12H520V16H489Z" fill="black" opacity=".72"/></mask></defs>
+    <g id="boardWord" transform="translate(88 624) scale(0.78)" fill="#11110F" stroke="#11110F" stroke-width="1.8" mask="url(#boardWord-distress)">
+      <path d="M0 0H94L86 18H58V100H35V18H0Z"/>
+      <path d="M118 0H210L202 18H141V39H195V57H141V82H210L202 100H118Z"/>
+      <path d="M236 100V0H258L311 66V0H334V100H312L259 34V100Z"/>
+      <path d="M450 0H386C370 0 360 11 360 27V73C360 89 370 100 386 100H450V43H409V61H428V82H389C384 82 382 79 382 74V26C382 21 384 18 389 18H450Z"/>
+      <path d="M477 0H500V74C500 79 504 82 509 82H542C547 82 551 79 551 74V0H574V77C574 92 563 100 548 100H503C488 100 477 92 477 77Z"/></g>
+  <text x="90" y="758" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="23" font-weight="700" letter-spacing="5">ПРАКТИЧЕСКИЙ ИИ ДЛЯ ЛЮДЕЙ</text>
+  <path d="M88 792H542" stroke="#C92F20" stroke-width="9"/>
+  <text x="650" y="90" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="4">01 / SYMBOL SYSTEM</text>
+  <rect x="650" y="120" width="350" height="310" fill="none" stroke="#11110F" opacity=".25"/><g transform="translate(692 115) scale(.52)"><g id="board1" transform="translate(0 0) scale(1)">
+    <g fill="none" stroke="#11110F">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#11110F"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#11110F"/><circle cx="394" cy="256" r="9" fill="none" stroke="#11110F" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#11110F" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g></g>
+  <rect x="1020" y="120" width="350" height="310" fill="#11110F"/><g transform="translate(1062 115) scale(.52)"><g id="board2" transform="translate(0 0) scale(1)">
+    <g fill="none" stroke="#E9DFC9">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#E9DFC9"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#E9DFC9"/><circle cx="394" cy="256" r="9" fill="none" stroke="#E9DFC9" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#E9DFC9" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g></g>
+  <rect x="1390" y="120" width="430" height="310" fill="none" stroke="#11110F" opacity=".25"/><text x="1430" y="200" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="3">CORE</text><text x="1430" y="258" fill="#11110F" text-anchor="start" font-family="Manrope,'Avenir Next','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="1">ЧЕЛОВЕК</text><text x="1430" y="318" fill="#11110F" text-anchor="start" font-family="Manrope,'Avenir Next','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="1">АГЕНТЫ</text><text x="1430" y="378" fill="#C92F20" text-anchor="start" font-family="Manrope,'Avenir Next','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="1">ПРОВЕРКА</text>
+  <text x="650" y="492" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="4">02 / CATEGORY MARKERS</text>
+  <g font-family="Menlo,monospace" font-size="15" font-weight="700" fill="#11110F">
+    <g transform="translate(650 530)"><circle cx="42" cy="42" r="30" fill="none" stroke="#C92F20" stroke-width="9" stroke-dasharray="120 80"/><text x="0" y="112">01 ИДЕИ</text></g>
+    <g transform="translate(840 530)"><circle cx="22" cy="30" r="8"/><circle cx="62" cy="54" r="8"/><circle cx="22" cy="78" r="8"/><path d="M22 30L62 54L22 78Z" fill="none" stroke="#11110F" stroke-width="4"/><text x="0" y="112">02 АГЕНТЫ</text></g>
+    <g transform="translate(1030 530)"><path d="M8 36V8H36M62 8H90V36M90 62V90H62M36 90H8V62" fill="none" stroke="#11110F" stroke-width="8"/><text x="0" y="112">03 TOOLS</text></g>
+    <g transform="translate(1220 530)"><path d="M4 90L42 18L64 58L88 10L108 90Z"/><text x="0" y="112">04 ПРАКТИКА</text></g>
+    <g transform="translate(1420 530)"><path d="M0 20H110L90 40H20ZM18 50H92L110 68L92 86H18L0 68Z"/><text x="0" y="112">05 EVIDENCE</text></g>
+    <g transform="translate(1650 530)"><circle cx="55" cy="55" r="44" fill="none" stroke="#C92F20" stroke-width="9"/><path d="M12 55H98" stroke="#C92F20" stroke-width="9"/><text x="0" y="112">06 ЛЮДИ</text></g>
+  </g>
+  <text x="650" y="720" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="4">03 / THUMBNAIL GRAMMAR</text>
+  <rect x="650" y="750" width="555" height="312" fill="#11110F"/><text x="682" y="846" fill="#E9DFC9" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="-2">ОДНА МЫСЛЬ</text><text x="682" y="891" fill="#E9DFC9" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="-2">ОДИН КОНФЛИКТ</text><path d="M682 964H962" stroke="#C92F20" stroke-width="10"/><g transform="translate(972 770) scale(.4)"><g id="board3" transform="translate(0 0) scale(1)">
+    <g fill="none" stroke="#E9DFC9">
+      <path d="M256 54V105M256 407V458M54 256H105M407 256H458" stroke-width="4" opacity=".72"/>
+      <circle cx="256" cy="256" r="156" stroke-width="5" stroke-dasharray="213 31 92 22 151 471" transform="rotate(-70 256 256)"/>
+      <circle cx="256" cy="256" r="112" stroke-width="11" stroke-dasharray="187 22 80 24 144 247" transform="rotate(-37 256 256)"/>
+      <circle cx="256" cy="256" r="74" stroke-width="3" stroke-dasharray="10 15" opacity=".68"/>
+      <path d="M256 256L256 144M256 256L159 200M256 256L159 312M256 256L256 368M256 256L353 312" stroke-width="3" opacity=".45"/>
+      <path d="M256 256L353 200" stroke="#A9853E" stroke-width="8" opacity=".92"/>
+    </g>
+    <g fill="#E9DFC9"><circle cx="256" cy="144" r="13"/><circle cx="159" cy="200" r="13"/><circle cx="159" cy="312" r="13"/><circle cx="256" cy="368" r="13"/><circle cx="353" cy="312" r="13"/></g>
+    <circle cx="353" cy="200" r="15" fill="#A9853E"/>
+    <circle cx="116" cy="256" r="10" fill="#E9DFC9"/><circle cx="394" cy="256" r="9" fill="none" stroke="#E9DFC9" stroke-width="4"/>
+    <path d="M130 122C82 172 69 234 84 290" fill="none" stroke="#E9DFC9" stroke-width="25" stroke-linecap="butt"/>
+    <path d="M371 108C424 154 446 223 429 292" fill="none" stroke="#C92F20" stroke-width="30" stroke-linecap="butt"/>
+    <path d="M374 111C422 159 438 221 425 276" fill="none" stroke="#C92F20" stroke-width="8" opacity=".45"/>
+    <rect x="218" y="218" width="76" height="76" fill="#C92F20"/></g></g>
+  <rect x="1235" y="750" width="585" height="312" fill="#E9DFC9" stroke="#11110F" opacity=".96"/><text x="1266" y="846" fill="#11110F" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="-2">ЧЁТКИЙ</text><text x="1266" y="897" fill="#11110F" font-family="Manrope,'Avenir Next',Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="-2">РЕЗУЛЬТАТ</text><circle cx="1710" cy="838" r="72" fill="#C92F20"/><text x="1268" y="1012" fill="#1D3342" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="15" font-weight="700" letter-spacing="2">3–7 СЛОВ · ВЫСОКИЙ КОНТРАСТ</text>
+  <text x="74" y="1145" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="4">PALETTE</text>
+  <g transform="translate(250 1110)"><rect width="210" height="54" fill="#11110F"/><rect x="238" width="210" height="54" fill="#E9DFC9" stroke="#11110F"/><rect x="476" width="210" height="54" fill="#C92F20"/><rect x="714" width="210" height="54" fill="#1D3342"/><rect x="952" width="210" height="54" fill="#A9853E"/></g>
+  <text x="250" y="1194" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="14" font-weight="700" letter-spacing="2">SUMI</text><text x="488" y="1194" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="14" font-weight="700" letter-spacing="2">WASHI</text><text x="726" y="1194" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="14" font-weight="700" letter-spacing="2">VERMILION</text><text x="964" y="1194" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="14" font-weight="700" letter-spacing="2">INDIGO</text><text x="1202" y="1194" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="14" font-weight="700" letter-spacing="2">AGED GOLD</text>
+</svg>

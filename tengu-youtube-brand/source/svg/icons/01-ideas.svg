@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">01 ideas</title>
+  <desc id="desc">TENGU category marker.</desc>
+<rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="74" fill="none" stroke="#11110F" stroke-width="14" stroke-dasharray="280 184" transform="rotate(-35 128 128)"/><path d="M175 66A76 76 0 0 1 198 120" stroke="#C92F20" stroke-width="17" fill="none"/><circle cx="194" cy="142" r="10" fill="#A9853E"/>
+</svg>

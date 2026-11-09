@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.cloudflare/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+.DS_Store

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU end screen</title>
+  <desc id="desc">End screen with two video slots and subscribe target.</desc>
+<rect width="1920" height="1080" fill="#E9DFC9"/><defs><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#11110F" stroke-width="1" opacity=".085"/></pattern></defs>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <g stroke="#11110F" opacity=".24"><path d="M24 48H72M48 24V72M1848 48H1896M1872 24V72M24 1032H72M48 1008V1056M1848 1032H1896M1872 1008V1056"/></g>
+  <text x="84" y="92" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="22" font-weight="700" letter-spacing="4">TENGU / ПРОДОЛЖИТЬ МАРШРУТ</text>
+  <rect x="86" y="164" width="748" height="421" fill="#11110F"/><rect x="894" y="164" width="748" height="421" fill="#11110F"/>
+  <path d="M86 610H834M894 610H1642" stroke="#C92F20" stroke-width="10"/>
+  <text x="86" y="660" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="20" font-weight="700" letter-spacing="3">СЛЕДУЮЩИЙ ЭПИЗОД</text><text x="894" y="660" fill="#11110F" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="20" font-weight="700" letter-spacing="3">ПО ТЕМЕ</text>
+  <circle cx="1735" cy="846" r="116" fill="#11110F"/><g transform="translate(1607 718) scale(.5)"><g id="end" transform="translate(0 0) scale(1)">
+    <circle cx="256" cy="256" r="126" fill="none" stroke="#E9DFC9" stroke-width="11" stroke-dasharray="338 42 208 204" transform="rotate(-52 256 256)"/>
+    <circle cx="256" cy="130" r="12" fill="#E9DFC9"/><circle cx="148" cy="322" r="12" fill="#E9DFC9"/><circle cx="360" cy="330" r="12" fill="#A9853E"/>
+    <path d="M356 132C414 177 432 254 407 320" fill="none" stroke="#C92F20" stroke-width="29" stroke-linecap="butt"/>
+    <rect x="221" y="221" width="70" height="70" fill="#C92F20"/></g></g>
+  <text x="1540" y="1020" fill="#C92F20" text-anchor="start" font-family="'IBM Plex Mono',Menlo,monospace" font-size="18" font-weight="700" letter-spacing="3">ПОДПИСАТЬСЯ</text>
+  <text x="86" y="934" fill="#11110F" text-anchor="start" font-family="Manrope,'Avenir Next','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="2">ЧЕЛОВЕК ЗАДАЁТ ЦЕЛЬ. АГЕНТЫ РАБОТАЮТ.</text>
+  <text x="86" y="982" fill="#C92F20" text-anchor="start" font-family="Manrope,'Avenir Next','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="800" letter-spacing="2">РЕЗУЛЬТАТ ПРОВЕРЯЕТСЯ.</text>
+</svg>
