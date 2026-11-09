@@ -1,0 +1,29 @@
+{
+  "id": "2c4f7de1f47947f2b56fd6ba4a32b49b",
+  "stage": "training-recall",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "training-recall",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "recall_probe.py"
+  ],
+  "pid": 82092,
+  "pgid": 82092,
+  "birth": "Mon Oct 26 20:10:08 2026",
+  "manager_pid": 82056,
+  "manager_birth": "Mon Oct 26 20:10:08 2026",
+  "state": "finished",
+  "log": ".control/logs/2c4f7de1f47947f2b56fd6ba4a32b49b.log",
+  "exit_code": 0
+}

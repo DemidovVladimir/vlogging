@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "all180_prompt_hashes_and_token_counts_match": true,
+  "all180_unique": true,
+  "same_model_weights_tokenizer_decoding_versions_as_v5": true,
+  "all_finish_reason_stop": false,
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "raw_sha256": {
+    "search_only": "86f4f950fce70fafb263fb1ee6a23dd9831699d59c4c327278d5aaa0e04c70e9",
+    "prompt_only": "a12285cc9d95b3f5b6a0162645597c83a7a63fba693f003858c28893f6764c10",
+    "combined": "823d715ad112e20b38e4b03c471265a38a650282996061ef06d184c8c8ed6155"
+  }
+}

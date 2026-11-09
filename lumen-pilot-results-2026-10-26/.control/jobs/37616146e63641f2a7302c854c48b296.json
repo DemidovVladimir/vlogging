@@ -1,0 +1,16 @@
+{
+  "id": "37616146e63641f2a7302c854c48b296",
+  "stage": "prepare-17b",
+  "command": [
+    ".venv/bin/python",
+    "prepare_data.py"
+  ],
+  "pid": 68417,
+  "pgid": 68417,
+  "birth": "Mon Oct 26 17:26:53 2026",
+  "manager_pid": 68387,
+  "manager_birth": "Mon Oct 26 17:26:53 2026",
+  "state": "finished",
+  "log": ".control/logs/37616146e63641f2a7302c854c48b296.log",
+  "exit_code": 0
+}

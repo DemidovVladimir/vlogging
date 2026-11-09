@@ -1,0 +1,16 @@
+{
+  "id": "d54510cc02464e039e342b69f369fd75",
+  "stage": "prepare-data",
+  "command": [
+    ".venv/bin/python",
+    "prepare_data.py"
+  ],
+  "pid": 67248,
+  "pgid": 67248,
+  "birth": "Mon Oct 26 17:19:10 2026",
+  "manager_pid": 67237,
+  "manager_birth": "Mon Oct 26 17:19:10 2026",
+  "state": "finished",
+  "log": ".control/logs/d54510cc02464e039e342b69f369fd75.log",
+  "exit_code": 0
+}

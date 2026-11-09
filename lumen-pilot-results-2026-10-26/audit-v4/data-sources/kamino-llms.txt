@@ -1,0 +1,641 @@
+# Kamino Finance
+
+> Kamino Finance is a DeFi protocol on Solana offering automated yield strategies, borrowing and lending markets, leveraged positions, and concentrated liquidity vaults.
+> Three product areas: **Docs** (product guides for end users), **Buildkit** (developer guides for building on Kamino, with SDK examples and API reference), and **Curators** (vault creation and management for institutional operators).
+> Base API URL: `https://api.kamino.finance`. No API key required for public endpoints.
+
+## Quick Reference
+
+- Earn Vault deposit: `POST /ktx/kvault/deposit`
+- Earn Vault withdraw: `POST /ktx/kvault/withdraw`
+- Klend deposit: `POST /ktx/klend/deposit`
+- Klend borrow: `POST /ktx/klend/borrow`
+- Klend repay: `POST /ktx/klend/repay`
+- Klend withdraw: `POST /ktx/klend/withdraw`
+- All vaults: `GET /kvaults/vaults`
+- All markets: `GET /v2/kamino-market`
+- Oracle prices: `GET /oracles/prices`
+- User vault positions: `GET /kvaults/users/{pubkey}/positions`
+- User obligations: `GET /kamino-market/{marketPubkey}/users/{userPubkey}/obligations`
+- Wallet portfolio (all products): `GET /portfolio/{pubkey}`
+- Wallet pending rewards: `GET /portfolio/{pubkey}/rewards`
+- Token metadata and market data: `GET /tokens-api/tokens`
+
+
+## Products
+
+Product documentation for end users of Kamino Finance.
+
+- [Products](https://kamino.com/docs/products.md): Every Kamino product in one place, with links into Earn, Borrow, Multiply, and Swap documentation
+
+### EARN
+
+#### Lending Vaults
+- [Lending Vaults](https://kamino.com/docs/products/lending-vaults.md): Single-token managed yield aggregation across Kamino's lending markets
+- [How It Works](https://kamino.com/docs/products/lending-vaults/how-it-works.md): Vault shares, yield mechanics, allocation, and withdrawals
+
+##### Curators & Fees
+- [Curators & Fees](https://kamino.com/docs/products/lending-vaults/curators.md): Vault curators, fee structures, and trust features
+- [Insurance Pool](https://kamino.com/docs/products/lending-vaults/insurance-pool.md): Curator-backed loss backstop that compensates depositors after vault losses
+- [Whitelisted Reserves](https://kamino.com/docs/products/lending-vaults/whitelisted-reserves.md): Protocol-level restriction on which reserves a vault can allocate to
+- [Benchmark Rate](https://kamino.com/docs/products/lending-vaults/benchmark-rate.md): An objective DeFi baseline for measuring stablecoin vault performance
+- [Risks](https://kamino.com/docs/products/lending-vaults/risks.md): Understanding the risks of depositing into Lending Vaults
+- [Concepts](https://kamino.com/docs/products/lending-vaults/concepts.md): Reserves, utilization, auto-compounding, curators, and bad debt, how Lending Vaults work under the hood
+
+#### Liquidity
+- [Liquidity](https://kamino.com/docs/products/liquidity.md): Automated concentrated liquidity vaults for Solana DEX pools
+- [Features](https://kamino.com/docs/products/liquidity/features.md): How Kamino automates concentrated liquidity management: auto-swap, auto-compound, and auto-rebalance
+- [Concepts](https://kamino.com/docs/products/liquidity/concepts.md): AMMs, concentrated liquidity, impermanent loss, and how Kamino's vault strategies manage LP positions
+
+#### Institutional Yield
+- [Institutional Yield](https://kamino.com/docs/products/institutional-yield.md): Generate returns via regulated lending operations to institutional borrowers
+- [Legal Structure](https://kamino.com/docs/products/institutional-yield/structure.md): The SPV and lending operation behind Institutional Yield
+- [Collateral & Custody](https://kamino.com/docs/products/institutional-yield/collateral.md): How collateral is held, the LTV framework, custodian structure, and what happens when collateral coverage changes
+- [Reporting & Transparency](https://kamino.com/docs/products/institutional-yield/transparency.md): What data is available to depositors, how it's sourced, and the verification mechanisms that underpin Institutional Yield
+- [Risks](https://kamino.com/docs/products/institutional-yield/risks.md): Risk disclosure for Institutional Yield
+- [Loan Agreement](https://kamino.com/docs/products/institutional-yield/loan-agreement.md): The agreement depositors sign when they deposit into Institutional Yield
+- [Concepts](https://kamino.com/docs/products/institutional-yield/concepts.md): Foundational explanations of institutional lending, SPVs, and liquidity mechanics
+- [FAQ](https://kamino.com/docs/products/institutional-yield/faq.md): Direct answers to the most common questions about Institutional Yield
+
+### BORROW
+
+#### Borrow
+- [Borrow](https://kamino.com/docs/products/borrow.md): Kamino's peer-to-pool lending market on Solana
+- [Supplying](https://kamino.com/docs/products/borrow/supplying.md): How supplying assets into Kamino Borrow works
+- [Borrowing](https://kamino.com/docs/products/borrow/borrowing.md): How borrowing works on Kamino, collateral, LTV, interest, and repayment
+- [Markets](https://kamino.com/docs/products/borrow/markets.md): Kamino Borrow's market structure, isolated environments, position modes, and elevation groups
+- [Fees & Interest Rates](https://kamino.com/docs/products/borrow/fees.md): How interest rates are determined on Kamino Borrow, utilization curves, spreads, and liquidation penalties
+- [Liquidations](https://kamino.com/docs/products/borrow/liquidations.md): How Kamino Borrow monitors position health and executes liquidations
+- [Concepts](https://kamino.com/docs/products/borrow/concepts.md): The foundational ideas behind Kamino Borrow, from reserves and markets to how variable and fixed rates work
+- [Fixed Rates](https://kamino.com/docs/products/borrow/fixed-rates.md): Fixed-rate borrowing on Kamino, rate certainty, term structure, and price discovery
+- [Borrow Orders](https://kamino.com/docs/products/borrow/borrow-orders.md): Standing borrow orders that fill automatically as liquidity becomes available
+
+### MULTIPLY
+- [Multiply](https://kamino.com/docs/products/multiply.md): Leveraged yield strategies, amplify staking, LP, and RWA returns in a single transaction
+- [How It Works](https://kamino.com/docs/products/multiply/how-it-works.md): The mechanics behind Multiply, flash loans, eMode, and yield amplification
+- [Strategies](https://kamino.com/docs/products/multiply/strategies.md): SOL LSTs, JLP, stablecoins, RWAs, and tokenized stocks, Multiply strategy types and their mechanics
+- [Risks](https://kamino.com/docs/products/multiply/risks.md): Understanding liquidation, borrow rate, and strategy-specific risks in Multiply
+- [Concepts](https://kamino.com/docs/products/multiply/concepts.md): Flash loans, looping, Net APY, and the three categories of Multiply strategies, LSTs, JLP, and RWAs
+
+### SWAP
+- [Swap](https://kamino.com/docs/products/swap.md): How Kamino Swap routes trades across 15+ venues to find the best price
+- [Limit Orders](https://kamino.com/docs/products/swap/limit-orders.md): Place standing orders that execute at your target price, zero slippage, zero fees
+
+## Learn
+
+Step-by-step guides for using the Kamino app: opening positions, depositing, managing risk, and withdrawing.
+
+### Guides
+
+- [User Guides](https://kamino.com/docs/learn/guides.md): Short, step-by-step walkthroughs for using every product in the Kamino app
+
+### Earn
+
+- [How to Deposit into an Earn Vault](https://kamino.com/docs/learn/lend/supplying-assets.md): Deposit a single token into an Earn Vault and start earning optimized yield
+- [How to Earn and Track Yield](https://kamino.com/docs/learn/lend/earning-yield.md): Track your Earn Vault position and understand how your yield accrues and changes
+- [How to Withdraw from an Earn Vault](https://kamino.com/docs/learn/lend/withdrawing-assets.md): Redeem your vault shares and withdraw your tokens, including any yield earned
+- [Tips for Managing Risk](https://kamino.com/docs/learn/lend/risks.md): What to keep in mind about allocation, yield variability, and liquidity in Earn Vaults
+
+### Multiply
+
+- [How to Open a Multiply Position](https://kamino.com/docs/learn/multiply/opening-a-position.md): Choose an asset, set your leverage, and open a leveraged position in one transaction
+- [How to Manage a Multiply Position](https://kamino.com/docs/learn/multiply/managing-a-position.md): Monitor performance and adjust leverage, collateral, or debt
+- [Tips for Avoiding Liquidation](https://kamino.com/docs/learn/multiply/risks-and-liquidations.md): Leverage risk, borrow rate risk, and how to stay clear of liquidation
+
+### Borrow
+
+- [How to Long xStocks on Kamino](https://kamino.com/docs/learn/borrow/long-xstocks.md): Open a leveraged long position on xStocks by supplying collateral, borrowing USDC, and swapping for more exposure
+- [How to Short xStocks on Kamino](https://kamino.com/docs/learn/borrow/short-xstocks.md): Open a short position on xStocks by supplying USDC, borrowing the xStock, and selling it
+
+### Portfolio
+
+- [How to View Your Portfolio](https://kamino.com/docs/learn/portfolio/how-to-view-your-portfolio.md): See all your Kamino positions, rewards, and history for a connected wallet in one place
+
+## Security & Risk
+
+How Kamino secures the protocol and manages risk: audits, formal verification, oracle architecture, and the risk assessment framework.
+
+### SECURITY
+- [Security](https://kamino.com/docs/security.md): Kamino's layered security approach: audits, formal verification, and continuous monitoring
+- [Bug Bounty](https://kamino.com/docs/security/bug-bounty.md): Kamino's bug bounty program on Sherlock, with rewards up to 1,000,000 USDC covering KLend, KVault, KFarms, Scope, Kamino Liquidity, and web applications
+
+#### Audits & Verification
+- [Security Audits](https://kamino.com/docs/security/audits.md): Complete inventory of all security audits conducted on Kamino's smart contracts
+- [Formal Verification](https://kamino.com/docs/security/formal-verification.md): Mathematical proofs of correctness for Kamino's core smart contracts
+- [Fuzzing & Testing](https://kamino.com/docs/security/fuzzing.md): Automated fuzzing campaigns and verifiable builds for Kamino's smart contracts
+
+#### Oracle Architecture
+- [Scope Aggregator](https://kamino.com/docs/security/oracles.md): Kamino's proprietary on-chain oracle aggregator, multi-provider redundancy with validation
+- [Price Protection](https://kamino.com/docs/security/oracles/price-protection.md): TWAP, EWMA, and price band mechanisms that defend against oracle manipulation
+- [LST Oracles](https://kamino.com/docs/security/oracles/lst-oracles.md): How Kamino prices liquid staking tokens using stake rates instead of market prices
+- [Infrastructure & Redundancy](https://kamino.com/docs/security/infrastructure.md): Operational security: redundancy, monitoring, liquidation infrastructure, and stress testing
+
+### RISK FRAMEWORK
+- [Framework & Track Record](https://kamino.com/docs/risk.md): How Kamino manages risk across its lending protocol, and the empirical track record under real market stress
+
+#### Asset Risk
+- [Assessment Framework](https://kamino.com/docs/risk/asset-risk.md): The 5-dimension asset risk assessment used for token onboarding and ongoing risk review
+- [Oracle Pricing Risk](https://kamino.com/docs/risk/asset-risk/oracle-pricing.md): How oracle quality and reliability are evaluated as part of the asset risk framework
+- [Smart Contract Risk](https://kamino.com/docs/risk/asset-risk/smart-contract.md): How the code quality and security posture of listed tokens' underlying contracts are evaluated
+- [Depeg Risk](https://kamino.com/docs/risk/asset-risk/depeg.md): How depegging risk is evaluated for stablecoins, liquid staking tokens, and wrapped assets
+- [Counterparty Risk](https://kamino.com/docs/risk/asset-risk/counterparty.md): How governance decentralization, holder concentration, and trust assumptions are evaluated
+
+#### Market Risk
+- [Market Risk Overview](https://kamino.com/docs/risk/market-risk.md): How token volatility, liquidity, and price dynamics determine whether liquidations can execute profitably
+- [Volatility Analysis](https://kamino.com/docs/risk/market-risk/volatility.md): How Kamino measures token volatility using Parkinson's measure and how it informs LTV calibration
+- [Liquidity & Price Impact](https://kamino.com/docs/risk/market-risk/liquidity.md): How token liquidity, trading volumes, price impact, and price resilience determine liquidation feasibility
+- [Correlations & Systemic Risk](https://kamino.com/docs/risk/market-risk/correlations.md): How token relationships, market capitalization, and systemic exposure are evaluated
+- [KRAF Dashboard](https://kamino.com/docs/risk/kraf-dashboard.md): Guide to the live Kamino Risk Assessment Framework dashboard at risk.kamino.finance
+
+### PROTOCOL SAFEGUARDS
+- [Interest Rate Model](https://kamino.com/docs/risk/safeguards/interest-rates.md): How Kamino's poly-linear interest rate curve manages liquidity risk and maintains withdrawal availability
+- [Auto-Deleverage](https://kamino.com/docs/risk/safeguards/auto-deleverage.md): Kamino's novel mechanism for orderly unwinding of risky positions before bad debt materializes
+- [Daily Caps](https://kamino.com/docs/risk/safeguards/daily-caps.md): How daily flow limits prevent outsized position buildup and bound potential damage from exploits
+- [E-Mode Caps](https://kamino.com/docs/risk/safeguards/e-mode-caps.md): Per-pair borrow limits that enable granular risk control for each collateral/debt combination
+
+## KMNO
+
+The native token of the Kamino protocol.
+
+### Token
+- [KMNO](https://kamino.com/docs/kmno.md): KMNO is the native token of the Kamino protocol
+
+## Resources
+
+Brand assets and shared resources for partners and integrators.
+
+### Resources
+- [Brand Resources](https://kamino.com/docs/resources/brand.md): Official Kamino brand assets for partners, press, and collaborators. Download logos, wordmarks, icons, and brand guidelines to represent Kamino consistently across any medium.
+
+## Buildkit
+
+Developer documentation for building on Kamino: REST API, TypeScript SDK, and Rust crate, plus tutorials, recipes, and the CLI.
+
+### Get Started
+
+#### Welcome
+- [index](https://kamino.com/docs/build.md): Integrate Kamino for yield or crypto loans
+
+### Developers
+
+#### Developers
+- [Overview](https://kamino.com/docs/build/developers/overview.md): The Kamino SDK, API, and Rust crate provide access to Earn vaults and Borrow markets
+- [API vs SDK vs Rust Crate](https://kamino.com/docs/build/developers/api-vs-sdk.md): Access data and build transactions through the API, the TypeScript SDK, or the Rust interface crate
+
+#### Portfolio
+- [Portfolio API](https://kamino.com/docs/build/developers/portfolio.md): Fetch a wallet's entire Kamino footprint across lending, multiply, leverage, liquidity, earn, private credit, and staking in one call
+- [Data](https://kamino.com/docs/build/developers/portfolio/response.md): Response field reference for every product section, with runnable examples
+
+#### Earn
+- [Earn Vaults](https://kamino.com/docs/build/developers/earn.md): Learn how to build with Earn
+
+##### Data
+- [Vault](https://kamino.com/docs/build/developers/earn/data/vault-data.md)
+- [User Position](https://kamino.com/docs/build/developers/earn/data/user-position-data.md)
+
+###### Advanced Concepts
+- [Create a Vault](https://kamino.com/docs/build/developers/earn/data/advanced-concepts/creating-a-vault.md): Create and configure Kamino vaults with custom fee structures to earn revenue
+
+##### Operations
+- [Deposit](https://kamino.com/docs/build/developers/earn/operations/deposit.md): Deposit assets into Kamino Earn vaults
+- [Withdraw](https://kamino.com/docs/build/developers/earn/operations/withdraw.md): Withdraw assets from Kamino Earn vaults
+
+#### Borrow
+- [Borrow & Lend](https://kamino.com/docs/build/developers/borrow.md): Learn how to build with Borrow
+
+##### Data
+- [Market](https://kamino.com/docs/build/developers/borrow/data/market-data.md)
+- [User Obligation](https://kamino.com/docs/build/developers/borrow/data/user-position-data.md)
+
+##### Operations
+- [Deposit](https://kamino.com/docs/build/developers/borrow/operations/deposit.md): Deposit assets as collateral or liquidity
+- [Withdraw](https://kamino.com/docs/build/developers/borrow/operations/withdraw.md): Withdraw liquidity or collateral
+- [Borrow](https://kamino.com/docs/build/developers/borrow/operations/borrow.md): Borrow assets against collateral
+- [Repay](https://kamino.com/docs/build/developers/borrow/operations/repay.md): Repay borrowed assets
+
+###### Advanced Concepts
+- [Deposit with Referral](https://kamino.com/docs/build/developers/borrow/operations/advanced-concepts/deposit-with-referral.md): Deposit funds with a referrer who earns commission from a user's borrowing activity
+- [Refer User Without Deposit](https://kamino.com/docs/build/developers/borrow/operations/advanced-concepts/refer-user-without-deposit.md): Create UserMetadata with a referrer without requiring an initial deposit
+- [Referral Code Setup](https://kamino.com/docs/build/developers/borrow/operations/advanced-concepts/referrer-setup.md): Set up referrer state with a unique referral code
+- [Withdraw Referrer Fees](https://kamino.com/docs/build/developers/borrow/operations/advanced-concepts/withdraw-referrer-fees.md): Withdraw accumulated referral fees from borrowing activity
+
+##### Rewards
+- [Calculate Reserve Reward APY](https://kamino.com/docs/build/developers/borrow/rewards/calculate-reserve-reward-apy.md): Calculate collateral and debt farm reward APY for market reserves
+- [Calculate Extra Farm Reward APY](https://kamino.com/docs/build/developers/borrow/rewards/extra-farm-reward-apy.md): Calculate APY for extra farm stablecoin rewards
+- [Calculate Claimable User Rewards](https://kamino.com/docs/build/developers/borrow/rewards/calculate-claimable-user-rewards.md): Calculate pending rewards for a user across all farm positions and check claimability
+- [Claim User Rewards](https://kamino.com/docs/build/developers/borrow/rewards/claim-user-rewards.md): Claim all pending rewards from lending farm positions
+
+##### Position Management
+- [Repay with Collateral using KSwap](https://kamino.com/docs/build/developers/borrow/operations/advanced-concepts/repay-with-collateral-kswap.md): Reduce debt by converting collateral using flash loans in a single atomic transaction
+
+##### Liquidations
+- [The Liquidation Engine](https://kamino.com/docs/build/developers/borrow/liquidations/liquidation-engine.md): Technical breakdown of how Kamino's liquidation engine determines position health, calculates bonuses, enforces collateral priority, and handles bad debt
+- [Building a Liquidation Bot](https://kamino.com/docs/build/developers/borrow/liquidations/liquidation-bot.md): Build a bot that scans for unhealthy obligations, selects profitable liquidation pairs, executes liquidations, and rebalances collateral
+
+#### Multiply
+- [Multiply](https://kamino.com/docs/build/developers/multiply/overview.md): Understanding how Multiply creates leveraged positions through atomic looping with flash loans
+
+##### Data
+- [Monitor Position Health](https://kamino.com/docs/build/developers/multiply/data/health-metrics.md): Monitor LTV, leverage, and liquidation risk of multiply positions
+
+##### Operations
+- [Flash Loans](https://kamino.com/docs/build/developers/multiply/flash-loans.md): Execute flash loans for atomic, uncollateralized borrowing within a single transaction
+- [Multiply Deposit with xStocks](https://kamino.com/docs/build/developers/multiply/operations/deposit-xstocks.md): Create leveraged positions using xStocks collateral with atomic flash loan deposits
+- [Multiply Repay with xStocks](https://kamino.com/docs/build/developers/multiply/operations/repay-xstocks.md): Repay debt on leveraged xStocks positions to reduce leverage and lower liquidation risk
+- [Multiply Withdraw with xStocks](https://kamino.com/docs/build/developers/multiply/operations/withdraw-xstocks.md): Withdraw collateral from leveraged xStocks positions after repaying debt
+- [Multiply Deleverage with xStocks](https://kamino.com/docs/build/developers/multiply/operations/deleverage-xstocks.md): Reduce leverage on xStocks positions by selling collateral to repay debt atomically
+- [Repay with Collateral](https://kamino.com/docs/build/developers/multiply/operations/repay-collateral.md): Repay debt using collateral from your position with KSwap routing
+
+#### Liquidity
+- [Liquidity](https://kamino.com/docs/build/developers/liquidity/overview.md): Learn how to build with Kamino's automated concentrated liquidity vaults
+
+##### Data
+- [Strategy](https://kamino.com/docs/build/developers/liquidity/data/strategy.md)
+- [User Position](https://kamino.com/docs/build/developers/liquidity/data/user-position.md)
+
+##### Operations
+- [Deposit](https://kamino.com/docs/build/developers/liquidity/operations/deposit.md): Deposit into a Kamino liquidity strategy
+- [Withdraw](https://kamino.com/docs/build/developers/liquidity/operations/withdraw.md): Withdraw all shares from a Kamino liquidity strategy
+
+#### Rewards
+- [Farms](https://kamino.com/docs/build/developers/rewards/overview.md): Learn how to build with Kamino Farms, the rewards distribution layer for Kamino products
+
+##### Data
+- [Farms](https://kamino.com/docs/build/developers/rewards/data/farm-state.md): Read farm state, discover farms, and compute reward APY with the Kamino Farms SDK
+- [User Position](https://kamino.com/docs/build/developers/rewards/data/user-position.md): Read a wallet's farm stake, lockup and cooldown status, and pending rewards with the Kamino Farms SDK
+
+##### Operations
+- [Stake](https://kamino.com/docs/build/developers/rewards/operations/stake.md): Stake share tokens into a Kamino farm
+- [Unstake](https://kamino.com/docs/build/developers/rewards/operations/unstake.md): Unstake share tokens from a Kamino farm
+- [Withdraw](https://kamino.com/docs/build/developers/rewards/operations/withdraw-unstaked.md): Withdraw unstaked tokens from a Kamino farm to your wallet
+- [Harvest](https://kamino.com/docs/build/developers/rewards/operations/harvest.md): Claim all pending rewards from a Kamino farm
+
+#### Oracle
+
+- [Oracle Developer Guide](https://kamino.com/docs/build/developers/oracle/overview.md): Build with the Scope SDK to read on-chain oracle prices, inspect feed wiring, and refresh price slots
+- [Prices](https://kamino.com/docs/build/developers/oracle/data/prices.md): Read all Scope prices or resolve a single token via its scope chain. SDK and REST.
+- [Feeds](https://kamino.com/docs/build/developers/oracle/data/feeds.md): Inspect a feed's configuration, chain metadata, and per-slot oracle mappings
+- [Refresh Prices](https://kamino.com/docs/build/developers/oracle/operations/refresh.md): Build and send the permissionless Scope refresh instruction
+
+#### Agentic Finance
+- [Building with LLMs](https://kamino.com/docs/build/agentic-finance/building-with-llms.md): Leverage Kamino documentation with AI agents and language models for faster development
+- [Agent Integrations: Using OpenClaw with Kamino](https://kamino.com/docs/build/agentic-finance/openclaw-agent-integration.md): Build an OpenClaw skill to enable AI agents to autonomously interact with Kamino's lending markets and yield vaults.
+
+#### Resources
+- [Kamino Program Addresses](https://kamino.com/docs/build/resources/program-addresses.md): The official program addresses for Kamino's protocols across different environments
+
+### Earn
+
+#### Earn
+- [Earn](https://kamino.com/docs/build/earn.md)
+
+#### Add Yield to an App
+- [Earn Vaults: Deposit and Withdraw](https://kamino.com/docs/build/earn/tutorials/earn-and-withdraw.md): Deposit assets into Kamino Earn Vaults and withdraw your shares
+- [Vault Data and Metrics](https://kamino.com/docs/build/earn/vault-data-positions.md): Learn how to retrieve vault TVL, APY, farm rewards, allocation weights, and user share balances using the Kamino SDK and API
+- [Claim Rewards](https://kamino.com/docs/build/earn/tutorials/claim-rewards.md): Claim all rewards earned from Kamino vaults
+
+#### Launch a Vault
+- [Plan Your Vault](https://kamino.com/docs/build/earn/plan-your-vault.md): Understand the decisions a curator makes when designing and operating a Kamino lending vault, including allocation strategy, withdrawal buffer, fees, Insurance Pool, Whitelisted Reserves, and multisig ownership
+- [Create a Vault](https://kamino.com/docs/build/earn/tutorials/creating-a-vault.md): Create and configure Kamino vaults with custom fee structures to earn revenue
+
+#### Earn Recipes
+- [Get Vault APYs](https://kamino.com/docs/build/earn/get-vault-apys.md): Fetch vault APY data using the API or SDK
+- [Earn Deposit with the API](https://kamino.com/docs/build/earn/recipes/earn-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Earn Withdraw with the API](https://kamino.com/docs/build/earn/recipes/earn-withdraw-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+
+### Borrow
+
+#### Borrow
+- [Borrow Overview](https://kamino.com/docs/build/borrow.md)
+- [Get Market Reserve APYs](https://kamino.com/docs/build/borrow/get-market-reserve-apys.md): Fetch Kamino market reserve borrow and supply APY data using the API or SDK
+- [Market Data and Metrics](https://kamino.com/docs/build/borrow/market-data-metrics.md): Learn how to access market data including supply APY, borrow APY, TVL, and utilization rates for lending reserves
+
+##### SDK Tutorials
+- [Deposit and Borrow](https://kamino.com/docs/build/borrow/tutorials/deposit-and-borrow.md): Deposit collateral and borrow assets against it
+- [Fixed-Rate Borrowing](https://kamino.com/docs/build/borrow/tutorials/fixed-rate-borrowing.md): Deposit collateral and place a fixed-term borrow order to borrow at a fixed rate
+- [Plan Your Market](https://kamino.com/docs/build/borrow/plan-your-market.md): Understand the decisions a curator makes when designing and operating a Kamino lending market, including risk parameters, oracle configuration, authority roles, and pre-launch readiness
+- [Repay and Withdraw](https://kamino.com/docs/build/borrow/tutorials/repay-and-withdraw.md): Repay borrowed assets and withdraw your collateral
+
+##### API Recipes
+- [Deposit with the API](https://kamino.com/docs/build/borrow/recipes/deposit-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Borrow with the API](https://kamino.com/docs/build/borrow/recipes/borrow-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Repay with the API](https://kamino.com/docs/build/borrow/recipes/repay-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Withdraw via the API](https://kamino.com/docs/build/borrow/recipes/withdraw-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+
+#### Multiply
+- [Flash Loans](https://kamino.com/docs/build/borrow/multiply/flash-loans.md): Execute atomic flash loan transactions on Kamino
+- [Multiply Deposit with xStocks](https://kamino.com/docs/build/borrow/multiply/multiply-deposit-kswap.md): Leverage your position by borrowing and swapping to deposit more collateral
+- [Multiply Repay with xStocks](https://kamino.com/docs/build/borrow/multiply/multiply-repay-xstocks.md): Repay debt on multiply positions with tokenized stocks to reduce leverage
+- [Multiply Withdraw with xStocks](https://kamino.com/docs/build/borrow/multiply/multiply-withdraw-xstocks.md): Withdraw collateral from multiply positions with tokenized stocks
+- [Deleverage Multiply Position with xStocks](https://kamino.com/docs/build/borrow/multiply/multiply-deleverage-xstocks.md): Reduce leverage by selling collateral to repay debt atomically
+- [Repay with Collateral](https://kamino.com/docs/build/borrow/multiply/repay-collateral-kswap.md): Swap collateral to repay borrowed assets in a single transaction
+- [Monitor Position Health](https://kamino.com/docs/build/borrow/multiply/monitor-position-health.md): Monitor LTV, leverage, and liquidation risk for your multiply positions
+
+### Liquidity
+
+#### Liquidity
+- [Liquidity](https://kamino.com/docs/build/developers/liquidity/overview.md): Learn how to build with Kamino's automated concentrated liquidity vaults
+
+### Rewards
+
+#### Rewards
+- [Farms](https://kamino.com/docs/build/developers/rewards/overview.md): Learn how to build with Kamino Farms, the rewards distribution layer for Kamino products
+
+### AI
+
+#### AI
+- [Building with LLMs](https://kamino.com/docs/build/agentic-finance/building-with-llms.md): Leverage Kamino documentation with AI agents and language models for faster development
+
+### API Reference
+
+#### API Reference
+- [Kamino API](https://kamino.com/docs/build/api-reference/introduction.md)
+
+#### Earn
+
+##### Vault Data
+- [Get all kvaults](https://kamino.com/docs/build/api-reference/earn/vault-data/vaults-list.md): GET /kvaults/vaults
+- [Get KVault by address](https://kamino.com/docs/build/api-reference/earn/vault-data/vault-detail.md): GET /kvaults/vaults/{pubkey}
+- [Get current KVault metrics](https://kamino.com/docs/build/api-reference/earn/vault-data/vault-metrics.md): GET /kvaults/vaults/{pubkey}/metrics
+- [Get historical KVault metrics](https://kamino.com/docs/build/api-reference/earn/vault-data/vault-metrics-history.md): GET /kvaults/vaults/{pubkey}/metrics/history
+- [Get historical KVault allocation volume](https://kamino.com/docs/build/api-reference/earn/vault-data/vault-allocation-history.md): GET /kvaults/vaults/{pubkey}/allocation-volume/history
+- [Get all KVault season rewards](https://kamino.com/docs/build/api-reference/earn/vault-data/vaults-rewards.md): GET /kvaults/rewards
+- [Get summary of the KVault program earnings](https://kamino.com/docs/build/api-reference/earn/vault-data/vaults-summary.md): GET /kvaults/summary
+- [Get metadata for KVault token](https://kamino.com/docs/build/api-reference/earn/vault-data/vault-mint-metadata.md): GET /kvaults/mints/{pubkey}/metadata
+- [Get icon for KVault token](https://kamino.com/docs/build/api-reference/earn/vault-data/vault-mint-image.md): GET /kvaults/mints/{pubkey}/metadata/image.svg
+
+##### User Data
+- [Get historical user metrics for all KVault positions](https://kamino.com/docs/build/api-reference/earn/user-data/user-metrics-history.md): GET /kvaults/users/{pubkey}/metrics/history
+- [Get user KVault transactions](https://kamino.com/docs/build/api-reference/earn/user-data/user-transactions.md): GET /kvaults/users/{pubkey}/transactions
+- [Get all user KVault positions](https://kamino.com/docs/build/api-reference/earn/user-data/user-positions.md): GET /kvaults/users/{pubkey}/positions
+- [Get user position for a specific KVault](https://kamino.com/docs/build/api-reference/earn/user-data/user-vault-position.md): GET /kvaults/users/{userPubkey}/positions/{vaultPubkey}
+- [Get historical user metrics for a single KVault](https://kamino.com/docs/build/api-reference/earn/user-data/user-vault-metrics-history.md): GET /kvaults/users/{userPubkey}/vaults/{vaultPubkey}/metrics/history
+- [Get user KVault PnL](https://kamino.com/docs/build/api-reference/earn/user-data/user-vault-pnl.md): GET /kvaults/users/{userPubkey}/vaults/{vaultPubkey}/pnl
+- [Get user KVault PnL history](https://kamino.com/docs/build/api-reference/earn/user-data/user-vault-pnl-history.md): GET /kvaults/users/{userPubkey}/vaults/{vaultPubkey}/pnl/history
+
+##### Deposit Txn
+- [Get transaction to deposit into a kvault](https://kamino.com/docs/build/api-reference/earn/actions/deposit/kvault-deposit.md): POST /ktx/kvault/deposit
+- [Get instructions to deposit into a kvault](https://kamino.com/docs/build/api-reference/earn/actions/deposit/kvault-deposit-instructions.md): POST /ktx/kvault/deposit-instructions
+
+##### Withdraw Txn
+- [Get transaction to withdraw from a kvault](https://kamino.com/docs/build/api-reference/earn/actions/withdraw/kvault-withdraw.md): POST /ktx/kvault/withdraw
+- [Get instructions to withdraw from a kvault](https://kamino.com/docs/build/api-reference/earn/actions/withdraw/kvault-withdraw-instructions.md): POST /ktx/kvault/withdraw-instructions
+
+#### Borrow
+
+##### Market Data
+- [Get all Kamino Markets config](https://kamino.com/docs/build/api-reference/borrow/market-data/markets-list.md): GET /v2/kamino-market
+- [Get Kamino Market config](https://kamino.com/docs/build/api-reference/borrow/market-data/market-detail.md): GET /v2/kamino-market/{pubkey}
+- [Get metrics for market reserves](https://kamino.com/docs/build/api-reference/borrow/market-data/market-reserves-metrics.md): GET /kamino-market/{pubkey}/reserves/metrics
+- [Get KLend reserve history](https://kamino.com/docs/build/api-reference/borrow/market-data/market-reserve-metrics-history.md): GET /kamino-market/{marketPubkey}/reserves/{reservePubkey}/metrics/history
+- [Get metrics for leverage/multiply vaults](https://kamino.com/docs/build/api-reference/borrow/market-data/market-leverage-metrics.md): GET /kamino-market/{pubkey}/leverage/metrics
+- [Get KLend market reserves account data](https://kamino.com/docs/build/api-reference/borrow/market-data/market-reserves-account-data.md): GET /kamino-market/reserves/account-data
+
+##### User and Loans Data
+- [Get user KLend rewards](https://kamino.com/docs/build/api-reference/borrow/user-and-loans-data/user-rewards.md): GET /klend/users/{pubkey}/rewards
+- [Get information about a loan (obligation)](https://kamino.com/docs/build/api-reference/borrow/user-and-loans-data/loan-detail.md): GET /klend/loans/{pubkey}
+- [Get all user obligations](https://kamino.com/docs/build/api-reference/borrow/user-and-loans-data/user-obligations.md): GET /kamino-market/{marketPubkey}/users/{userPubkey}/obligations
+- [Get profit and loss for an obligation](https://kamino.com/docs/build/api-reference/borrow/user-and-loans-data/obligation-pnl.md): GET /v2/kamino-market/{marketPubkey}/obligations/{obligationPubkey}/pnl
+- [Get KLend obligation history](https://kamino.com/docs/build/api-reference/borrow/user-and-loans-data/obligation-metrics-history.md): GET /v2/kamino-market/{marketPubkey}/obligations/{obligationPubkey}/metrics/history
+
+##### Rewards
+- [Get KLend rewards](https://kamino.com/docs/build/api-reference/borrow/rewards/rewards-list.md): GET /klend/rewards
+- [Get KLend reward history](https://kamino.com/docs/build/api-reference/borrow/rewards/rewards-history.md): GET /klend/{depositReservePubkey}/{borrowReservePubkey}/rewards/history
+
+##### Deposit Txn
+- [Get transaction to deposit into a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/deposit/klend-deposit.md): POST /ktx/klend/deposit
+- [Get instructions to deposit into a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/deposit/klend-deposit-instructions.md): POST /ktx/klend/deposit-instructions
+
+##### Withdraw Txn
+- [Get transaction to withdraw from a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/withdraw/klend-withdraw.md): POST /ktx/klend/withdraw
+- [Get instructions to withdraw from a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/withdraw/klend-withdraw-instructions.md): POST /ktx/klend/withdraw-instructions
+
+##### Borrow Txn
+- [Get transaction to borrow liquidity from a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/borrow/klend-borrow.md): POST /ktx/klend/borrow
+- [Get instructions to borrow liquidity from a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/borrow/klend-borrow-instructions.md): POST /ktx/klend/borrow-instructions
+
+##### Repay Txn
+- [Get transaction to repay debt of a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/repay/klend-repay.md): POST /ktx/klend/repay
+- [Get instructions to repay debt of a klend reserve](https://kamino.com/docs/build/api-reference/borrow/actions/repay/klend-repay-instructions.md): POST /ktx/klend/repay-instructions
+
+#### Liquidity
+
+##### Strategy Data
+- [Get all strategies](https://kamino.com/docs/build/api-reference/liquidity/strategy-data/strategies-list.md): GET /strategies
+- [Get strategy metrics](https://kamino.com/docs/build/api-reference/liquidity/strategy-data/strategy-metrics.md): GET /strategies/{pubkey}/metrics
+- [Get strategy historical metrics](https://kamino.com/docs/build/api-reference/liquidity/strategy-data/strategy-metrics-history.md): GET /v2/strategies/{pubkey}/history
+- [Get total strategy TVL](https://kamino.com/docs/build/api-reference/liquidity/strategy-data/strategies-tvl.md): GET /strategies/tvl
+- [Get strategy fees and rewards](https://kamino.com/docs/build/api-reference/liquidity/strategy-data/strategies-fees-and-rewards.md): GET /strategies/fees-and-rewards
+
+##### User Data
+- [Get user PnL](https://kamino.com/docs/build/api-reference/liquidity/user-data/user-pnl.md): GET /v2/strategies/{strategyPubkey}/shareholders/{walletPubkey}/pnl
+- [Get user PnL history](https://kamino.com/docs/build/api-reference/liquidity/user-data/user-pnl-history.md): GET /v2/strategies/{strategyPubkey}/shareholders/{walletPubkey}/pnl/history
+- [Get user fees and rewards](https://kamino.com/docs/build/api-reference/liquidity/user-data/user-fees-and-rewards.md): GET /strategies/{strategyPubkey}/shareholders/{walletPubkey}/fees-and-rewards
+- [Get user rewards history](https://kamino.com/docs/build/api-reference/liquidity/user-data/user-rewards-history.md): GET /strategies/shareholders/{walletPubkey}/rewards/history
+- [Get user transactions](https://kamino.com/docs/build/api-reference/liquidity/user-data/user-transactions.md): GET /v2/shareholders/{walletPubkey}/transactions
+
+#### Oracle
+
+##### Prices
+- [Get oracle prices](https://kamino.com/docs/build/api-reference/oracle/oracle-prices.md): GET /oracles/prices
+- [Get token prices](https://kamino.com/docs/build/api-reference/oracle/token-prices.md): GET /prices
+- [Get token price history](https://kamino.com/docs/build/api-reference/oracle/token-prices-history.md): GET /prices/history
+
+#### Rewards
+
+##### Farm Data
+- [Get farm transactions](https://kamino.com/docs/build/api-reference/rewards/farm-transactions.md): GET /farms/{farmPubkey}/transactions
+- [Get farm management history](https://kamino.com/docs/build/api-reference/rewards/farm-management-history.md): GET /farms/{farmPubkey}/management-history
+
+##### User Farm Data
+- [Get user farm transactions](https://kamino.com/docs/build/api-reference/rewards/user-transactions.md): GET /farms/users/{pubkey}/transactions
+
+#### Tokens
+
+- [Get tokens](https://kamino.com/docs/build/api-reference/tokens/token-list.md): GET /tokens-api/tokens
+
+#### Swap
+
+##### Route
+- [Swap](https://kamino.com/docs/build/api-reference/kswap/swap.md): GET /kswap/swap/
+
+#### Full API Reference
+
+##### Actions
+
+### Tutorials
+
+#### Earn
+- [Vaults](https://kamino.com/docs/build/tutorials/earn.md): Learn how to retrieve vault TVL, APY, farm rewards, allocation weights, and user share balances using the Kamino SDK and API
+- [Earn and Withdraw](https://kamino.com/docs/build/tutorials/earn/earn-and-withdraw.md): Deposit assets into Kamino Earn Vaults and withdraw your shares
+- [Create a Vault](https://kamino.com/docs/build/tutorials/earn/creating-a-vault.md): Create and configure Kamino vaults with custom fee structures to earn revenue
+- [Claim Rewards](https://kamino.com/docs/build/tutorials/earn/claim-rewards.md): Claim all rewards earned from Kamino vaults
+
+#### Borrow
+- [Markets](https://kamino.com/docs/build/tutorials/borrow.md): Learn how to access market data including supply APY, borrow APY, TVL, and utilization rates for lending reserves
+- [Deposit and Borrow](https://kamino.com/docs/build/tutorials/borrow/deposit-and-borrow.md): Deposit collateral and borrow assets against it
+- [Repay and Withdraw](https://kamino.com/docs/build/tutorials/borrow/repay-and-withdraw.md): Repay borrowed assets and withdraw your collateral
+- [Mint cTokens](https://kamino.com/docs/build/tutorials/borrow/mint-ctokens.md): Mint cTokens by depositing liquidity into Kamino lending reserves
+- [Redeem cTokens](https://kamino.com/docs/build/tutorials/borrow/redeem-ctokens.md): Redeem cTokens to receive the underlying asset plus earned interest
+- [Interest Rate Curve](https://kamino.com/docs/build/tutorials/borrow/calculate-interest-rate-curve.md): Calculate how borrow and supply APY change based on pool utilization
+
+##### Rewards
+- [Calculate Reserve Reward APY](https://kamino.com/docs/build/tutorials/borrow/calculate-reserve-reward-apy.md): Calculate collateral and debt farm reward APY for market reserves
+- [Calculate Extra Farm Reward APY](https://kamino.com/docs/build/tutorials/borrow/extra-farm-reward-apy.md): Calculate APY for extra farm stablecoin rewards
+- [Calculate Claimable User Rewards](https://kamino.com/docs/build/tutorials/borrow/calculate-claimable-user-rewards.md): Calculate pending rewards for a user across all farm positions and check claimability
+- [Claim User Rewards](https://kamino.com/docs/build/tutorials/borrow/claim-user-rewards.md): Claim all pending rewards from lending farm positions
+
+##### Position Management
+- [Flash Loans](https://kamino.com/docs/build/tutorials/borrow/flash-loans.md): Execute a flash loan to borrow assets and repay within a single atomic transaction
+- [Multiply Deposit with KSwap](https://kamino.com/docs/build/tutorials/borrow/multiply-deposit-kswap.md): Create leveraged positions using flash loans in a single atomic transaction
+- [Repay with Collateral using KSwap](https://kamino.com/docs/build/tutorials/borrow/repay-with-collateral-kswap.md): Reduce debt by converting collateral using flash loans in a single atomic transaction
+
+##### Liquidations
+- [Building a Liquidation Bot](https://kamino.com/docs/build/tutorials/borrow/liquidation-bot.md): Build a bot that monitors position health, identifies profitable liquidation pairs, executes liquidations, and rebalances seized collateral
+
+##### Referrals
+- [Deposit with Referral](https://kamino.com/docs/build/tutorials/borrow/deposit-with-referral.md): Deposit funds with a referrer who earns commission from a user's borrowing activity
+- [Refer User Without Deposit](https://kamino.com/docs/build/tutorials/borrow/refer-user-without-deposit.md): Create UserMetadata with a referrer without requiring an initial deposit
+- [Referral Code Setup](https://kamino.com/docs/build/tutorials/borrow/referrer-setup.md): Set up referrer state with a unique referral code
+- [Withdraw Referrer Fees](https://kamino.com/docs/build/tutorials/borrow/withdraw-referrer-fees.md): Withdraw accumulated referral fees from borrowing activity
+
+### Recipes
+
+#### Agentic Finance
+- [Building with LLMs](https://kamino.com/docs/build/resources/building-with-llms.md): Leverage Kamino documentation with AI agents and language models for faster development
+
+#### Earn
+- [Get Vault APYs](https://kamino.com/docs/build/recipes/earn/get-vault-apys.md): Fetch Kamino vault APY data using the API or SDK
+- [Earn Deposit with the API](https://kamino.com/docs/build/recipes/earn/earn-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Earn Withdraw with the API](https://kamino.com/docs/build/recipes/earn/earn-withdraw-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Earn Deposit with the SDK](https://kamino.com/docs/build/recipes/earn/earn-via-sdk.md): Deposit to vaults using TypeScript SDK
+- [Earn Withdraw with the SDK](https://kamino.com/docs/build/recipes/earn/earn-withdraw-via-sdk.md): Withdraw from vaults using TypeScript SDK
+- [Earn Deposit from Privy Wallet](https://kamino.com/docs/build/recipes/earn/earn-with-privy.md): Use a Privy-managed wallet to perform secure Earn deposits
+- [Withdraw to Privy Wallet and Check Balance](https://kamino.com/docs/build/recipes/earn/withdraw-with-privy.md): Use a Privy-managed wallet to perform secure Earn withdrawals and check USDC balance
+
+#### Borrow
+- [Get Market Reserve APYs](https://kamino.com/docs/build/recipes/borrow/get-market-reserve-apys.md): Fetch Kamino market reserve borrow and supply APY data using the API or SDK
+- [Deposit with the API](https://kamino.com/docs/build/recipes/borrow/deposit-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Borrow with the API](https://kamino.com/docs/build/recipes/borrow/borrow-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Repay with the API](https://kamino.com/docs/build/recipes/borrow/repay-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+- [Withdraw via the API](https://kamino.com/docs/build/recipes/borrow/withdraw-via-api.md): The API generates the unsigned transaction, and the client signs it securely
+
+### Kamino CLI
+
+#### Kamino Manager CLI
+- [Overview](https://kamino.com/docs/build/cli.md): Command line tool to manage Kamino Lend markets, reserves, and vaults
+- [Install and Setup the Kamino CLI](https://kamino.com/docs/build/cli/installation-setup.md): Get started with the Kamino Manager CLI
+- [Market Operations](https://kamino.com/docs/build/cli/market-operations.md): kamino-manager CLI command reference for market and reserve operations
+- [Vault Operations](https://kamino.com/docs/build/cli/vault-operations.md): Create and manage Kamino vaults
+
+## Curators
+
+Documentation for operators creating and managing lending vaults and markets on Kamino.
+
+### Introduction
+
+#### Introduction
+- [Curators](https://kamino.com/docs/curators.md): Create and manage lending vaults and markets on Kamino
+
+### Vaults
+
+#### Vaults
+- [Vaults](https://kamino.com/docs/curators/vaults.md): B2B lending infrastructure on Kamino, deploy a vault, allocate capital across reserves, and manage exposure
+- [Plan Your Vault](https://kamino.com/docs/curators/vaults/plan-your-vault.md): Understand the decisions a curator makes when designing and operating a Kamino lending vault, including allocation strategy, withdrawal buffer, fees, Insurance Pool, Whitelisted Reserves, and multisig ownership
+
+#### Concepts
+- [How vaults work](https://kamino.com/docs/curators/vaults/concepts/how-vaults-work.md): The vault primitive: share tokens, allocation, the depositor flow, and the curator's role
+- [Allocations](https://kamino.com/docs/curators/vaults/concepts/allocations.md): How vault capital is distributed across reserves, Standard vs. Conditional, weights, caps, priority, and the rebalancing model
+- [Liquidity & withdrawals](https://kamino.com/docs/curators/vaults/concepts/liquidity-and-withdrawals.md): The unallocated buffer, instant withdrawals, and the withdrawal queue, how depositor exits actually work
+- [Yield & fees](https://kamino.com/docs/curators/vaults/concepts/yield-and-fees.md): How vault yield is generated, the manager fee model, the withdrawal penalty, and farm reward distribution
+- [Roles & ownership](https://kamino.com/docs/curators/vaults/concepts/roles-and-ownership.md): Vault admin types, the multisig model, and the Squads-based execution flow
+- [Risk primitives](https://kamino.com/docs/curators/vaults/concepts/risk-primitives.md): The Insurance Pool and Whitelisted Reserves, the two on-chain protections you offer depositors
+- [Permissioned vaults](https://kamino.com/docs/curators/vaults/concepts/permissioned-vaults.md): Gate vault deposits behind a per-user, per-action allowlist enforced on-chain by the kperm program
+
+#### Guides
+- [Create a vault](https://kamino.com/docs/curators/vaults/guides/create-a-vault.md): Deploy a new Kamino vault, UI walkthrough plus SDK and CLI alternatives, with a complete post-creation checklist
+- [Transfer admin to multisig](https://kamino.com/docs/curators/vaults/guides/transfer-admin.md): Move your vault to Squads multisig control, required before going to production
+- [Configure allocations](https://kamino.com/docs/curators/vaults/guides/configure-allocations.md): Add, edit, and remove reserve allocations on a vault, UI, SDK, and CLI
+- [Configure fixed-rate allocations](https://kamino.com/docs/curators/vaults/guides/configure-fixed-rate-allocations.md): Add and manage allocations into fixed-rate reserves, UI, SDK, and CLI walkthroughs with FR-specific parameter choices
+- [Enable Whitelisted Reserves](https://kamino.com/docs/curators/vaults/guides/enable-whitelisted-reserves.md): Restrict your vault to allocate only into Kamino-verified reserves at the smart contract level
+- [Set up the Insurance Pool](https://kamino.com/docs/curators/vaults/guides/set-up-insurance-pool.md): Configure the loss backstop, deposit your skin-in-the-game capital, and trigger the Kamino match
+- [Enable permissioning](https://kamino.com/docs/curators/vaults/guides/enable-permissioning.md): Switch your vault into permissioned mode and manage the depositor allowlist via the kperm program
+- [Collect fees](https://kamino.com/docs/curators/vaults/guides/collect-fees.md): Withdraw pending performance and AUM fees, give fees back to depositors, and update fee rates
+- [Configure farms](https://kamino.com/docs/curators/vaults/guides/configure-farms.md): Post-creation farm setup, only needed if your vault was created without farms
+
+#### Fixed Rates
+- [Fixed Rates](https://kamino.com/docs/curators/vaults/fixed-rates.md): Allocating vault capital into fixed-rate reserves, the FR-specific guide for curators
+- [Concepts](https://kamino.com/docs/curators/vaults/fixed-rates/concepts.md): The rate grid, term premium, and how borrowers consume fixed-rate liquidity
+- [Allocations](https://kamino.com/docs/curators/vaults/fixed-rates/allocations.md): Standard vs. Conditional allocation applied to fixed-rate reserves, the FR-specific application of the allocation primitive
+- [Lifecycle](https://kamino.com/docs/curators/vaults/fixed-rates/lifecycle.md): What your vault's capital experiences from fill through term, rollover, repayment, post-maturity liquidation, and exits via the withdrawal queue
+- [Strategy](https://kamino.com/docs/curators/vaults/fixed-rates/strategy.md): Allocation postures, sizing framework, monitoring cadence, and a worked vault example
+
+#### Data & API
+- [Vault Data](https://kamino.com/docs/curators/data/vault-data.md): Query vault details, metrics, holdings, and historical performance
+- [Allocation Data](https://kamino.com/docs/curators/data/allocation-data.md): Query current allocations, weights, and historical allocation changes
+- [Depositor & Position Data](https://kamino.com/docs/curators/data/depositor-data.md): Query depositor positions, P&L, transaction history, and metrics
+- [Rewards Data](https://kamino.com/docs/curators/data/rewards-data.md): Query vault rewards, incentive programs, and reward APY data
+
+#### Reference
+- [Vault parameters](https://kamino.com/docs/curators/reference/parameters.md): Complete parameter reference for vault config, allocations, and farms
+- [Glossary](https://kamino.com/docs/curators/reference/glossary.md): One-line definitions for every term used in the curator vault docs
+
+### Markets
+
+#### Get started
+- [Curator Markets](https://kamino.com/docs/curators/markets.md): Deploy and operate isolated lending markets on Kamino
+- [Plan Your Market](https://kamino.com/docs/curators/markets/plan-your-market.md): Understand the decisions a curator makes when designing and operating a Kamino lending market, including risk parameters, oracle configuration, authority roles, and pre-launch readiness
+- [Lifecycle Overview](https://kamino.com/docs/curators/markets/lifecycle.md): The full path from market creation to day-2 operations
+- [Quickstart](https://kamino.com/docs/curators/markets/quickstart.md): Stand up a working market on staging in ~10 minutes
+
+#### Market setup
+- [Create a Market](https://kamino.com/docs/curators/markets/creating-a-market.md): Initialize a new Kamino lending market
+- [Market Settings](https://kamino.com/docs/curators/markets/market-settings.md): Configure market-level parameters: name, fees, flags, and global thresholds
+- [Transfer Ownership to a Multisig](https://kamino.com/docs/curators/markets/transfer-to-multisig.md): Move market ownership from a hot wallet to a Squads multisig
+
+#### Reserve setup
+- [Add Reserves](https://kamino.com/docs/curators/markets/adding-reserves.md): Add token reserves to your market
+- [Configure Oracles](https://kamino.com/docs/curators/markets/configuring-oracles.md): Wire each reserve to a price feed with the right TWAP and staleness guards
+- [Scope Oracle Types](https://kamino.com/docs/curators/markets/scope-oracle-types.md): Specialized Scope oracle entry types for fixed-income, multi-source, pegged, and LST assets
+- [Risk Parameters](https://kamino.com/docs/curators/markets/risk-parameters.md): Choose LTV, liquidation thresholds, IR curves, caps, and borrow factors for a reserve
+- [Withdrawal Caps](https://kamino.com/docs/curators/markets/withdrawal-caps.md): Throttle deposits, withdrawals, and debt activity on a per-reserve, per-interval basis
+- [Farms & Rewards](https://kamino.com/docs/curators/markets/farms-and-rewards.md): Initialize collateral and debt farms on reserves, fund emissions, claim rewards
+- [Fixed Rate Reserves](https://kamino.com/docs/curators/markets/fixed-rate-reserves.md): Reserves with a host fixed rate, debt maturity, rollover windows, and early-repay penalties
+
+#### Optional features
+- [Liquidations](https://kamino.com/docs/curators/markets/liquidations.md): Configure liquidation thresholds, close factors, bonuses, and bad-debt handling
+- [Withdrawal Queue](https://kamino.com/docs/curators/markets/withdrawal-queue.md): FIFO redemption mechanism for reserves at high utilization
+- [Borrow Orders](https://kamino.com/docs/curators/markets/borrow-orders.md): Peer-to-peer fixed-rate matching between borrowers and lenders
+- [Obligation Orders](https://kamino.com/docs/curators/markets/obligation-orders.md): Price-triggered self-deleverage for borrower positions
+- [Auto-Deleverage](https://kamino.com/docs/curators/markets/auto-deleverage.md): Margin-call grace window with a ramped liquidation bonus over time
+- [Elevation Groups (eMode)](https://kamino.com/docs/curators/markets/elevation-groups.md): Configure relaxed risk parameters for correlated assets
+- [Permissioned Markets](https://kamino.com/docs/curators/markets/permissioned-markets.md): Gate specific market actions behind a per-user, per-action allowlist enforced on-chain by the kperm program
+
+#### Day-2 operations
+- [Updating Reserves](https://kamino.com/docs/curators/markets/reserve-management.md): Edit reserve configurations after launch: parameters, caps, status, oracles
+
+##### Fixed Rates
+- [Fixed Rates](https://kamino.com/docs/curators/markets/fixed-rates.md): Creating and configuring fixed-rate reserves and the market-level settings that govern them
+- [Reserve Configuration](https://kamino.com/docs/curators/markets/fixed-rates/reserve-configuration.md): Anatomy of a fixed-rate reserve and how to create one
+- [Market Settings](https://kamino.com/docs/curators/markets/fixed-rates/market-settings.md): Feature flags, rollover windows, and the post-maturity liquidation throttle
+- [Lifecycle Operations](https://kamino.com/docs/curators/markets/fixed-rates/lifecycle-operations.md): Updating an existing fixed-rate reserve, what can and cannot be changed, and sunsetting patterns
+- [Risk Considerations](https://kamino.com/docs/curators/markets/fixed-rates/risk.md): Risks specific to running fixed-rate reserves and the parameters that mitigate them
+- [Farms & Rewards](https://kamino.com/docs/curators/markets/farms-and-rewards.md): Initialize collateral and debt farms on reserves, fund emissions, claim rewards
+
+#### Data & integration
+- [Read Market Data](https://kamino.com/docs/curators/markets/market-data.md): Query market state, reserve metrics, historical data, and rewards via API and SDK
+- [Programmatic Integration](https://kamino.com/docs/curators/markets/programmatic-integration.md): Where to go for SDK, API, and direct RPC integration with a Kamino market
+
+#### Reference
+- [Reserve Config Reference](https://kamino.com/docs/curators/markets/reserve-parameters.md): Every editable field on a Kamino reserve
+- [Market Config Reference](https://kamino.com/docs/curators/markets/market-config-reference.md): Every editable field on the LendingMarket account
+- [CLI Command Index](https://kamino.com/docs/curators/markets/cli-command-index.md): Quick lookup of every market-related kamino-manager CLI command
+- [Glossary](https://kamino.com/docs/curators/markets/glossary.md): Definitions for terms used across Kamino Markets documentation
+
+## Optional
+
+- [REST API Reference](https://kamino.com/docs/build/api-reference): Full OpenAPI reference for all Kamino REST endpoints
+- [TypeScript SDK](https://github.com/Kamino-Finance/klend-sdk): Kamino TypeScript SDK on GitHub
+- [SDK Examples](https://github.com/Kamino-Finance/klend-sdk/tree/master/examples): Code examples for common SDK operations
+- [Risk Dashboard](https://risk.kamino.finance): Live risk and analytics dashboard for Kamino protocol
+- [Discord Support](https://discord.com/invite/kamino): Community support and developer questions

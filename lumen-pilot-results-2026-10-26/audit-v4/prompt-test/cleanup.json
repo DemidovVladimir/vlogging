@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-10-27T10:01:53.402180+00:00",
+  "runtime": "/Users/vladimirdemidov/development/vlogging/lumen-local-prompt-v4",
+  "runtime_removed": true,
+  "owned_jobs_remaining": 0,
+  "inference_or_training_running": false,
+  "no_report_server_started": true,
+  "logical_bytes_removed_estimate": 1838884396,
+  "observed_free_disk_delta_bytes": 1886748672,
+  "ks_kb_preserved": true,
+  "other_apps_and_docker_untouched": true,
+  "pipeline_outcome": "protective_stop after5 baseline answers; revised arm not started; no accuracy comparison",
+  "model_weights_environments_caches_removed": true,
+  "retained": "Read-only evidence, prompt/test package and intentionally collected crypto corpus/index/snapshot, not model runtime.",
+  "command": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-prompt-v4/manage.py",
+    "cleanup",
+    "--apply",
+    "--expect-id",
+    "ae864efc-4123-4cfa-aa71-fb7596115730"
+  ]
+}

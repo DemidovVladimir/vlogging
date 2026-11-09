@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-10-27T20:53:12.909537+00:00",
+  "same_exam": "../defi-v5/exam/test.jsonl",
+  "benchmark": "Development benchmark already inspected in v5; improvement on these60 is not a held-out estimate. No prompt/query edits based on v6 generations; one generation per arm/question.",
+  "arms": {
+    "search_only": "new section-aware retrieval + original v5 prompt",
+    "prompt_only": "original v5 retrieved context verbatim + new evidence-first prompt",
+    "combined": "new retrieval + new prompt"
+  },
+  "baseline": "v5 saved180 answers, not regenerated",
+  "model": "same Qwen3-1.7B4bit pinned revision, same greedy non-thinking decoding, input1400/output384, ordinary KV",
+  "search": "same frozen1673documents; section-aware exact spans, BM25top80 + visible identifiers/section lexical reranking, top3overlap suppression. No embeddings, external LLM, gold mapping or online lookup.",
+  "prompt": "English instruction, short Russian answer, evidence before answer, fictional shipping example,32word quotes vs old12; schema field semantics and primary grading rubric unchanged. Quote length reported separately.",
+  "primary_metrics": [
+    "content_correct/60",
+    "known correct with exact supporting quote/52",
+    "unknown structured abstention/8",
+    "JSON parse/60"
+  ],
+  "postprocessing": "None for primary scores; no quote replacement, answer repair, retry or answer-key filtering.",
+  "cleanup": "Scoped runtime finally exports evidence then removes model,venv,caches,new index; preserve original archives,KS KB,Docker,other apps.",
+  "technical_sources": [
+    "https://www.sqlite.org/fts5.html",
+    "https://huggingface.co/mlx-community/Qwen3-1.7B-4bit"
+  ]
+}

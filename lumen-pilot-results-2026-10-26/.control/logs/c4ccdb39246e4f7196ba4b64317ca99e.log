@@ -1,0 +1,22 @@
+Loading configuration file train-config.yaml
+Loading pretrained model
+Loading datasets
+Training
+╭─ [1mmlx_lm.lora[0m ────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│    model           [1mmodels/qwen3-1.7b-4bit[0m                                                                            │
+│    type            [1mlora · 4 layers · rank 8[0m                                                                          │
+│    dataset         [1mcalibration-data[0m                                                                                  │
+│    optimizer       [1madam · lr 1.0e-05[0m                                                                                 │
+│    batch · iters   [1m1 · 20[0m                                                                                            │
+│    max seq         [1m512[0m                                                                                               │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Trainable parameters: 0.072% (1.245M/1720.575M)
+  [1miter   train_loss     tok/s     tokens[0m
+     1    [1mval[0m [1m1.791[0m    0.58s
+    10    [1m1.176 ▼[0m    [1m   57[0m      0.7k
+    20    [1mval[0m [1m0.110[0m    0.57s
+    20    [1m0.199 ▼[0m    [1m   66[0m      1.4k
+  [1msave[0m  0000020_adapters.safetensors
+[1mtrain[0m ██████████████████████████████ [1m100%[0m · [1m   20[0m/20
+RESOURCE GUARD calibration-17b: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/runs/resources/calibration-17b.json

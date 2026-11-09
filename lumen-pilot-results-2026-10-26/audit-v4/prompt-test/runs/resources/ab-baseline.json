@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "stage": "ab-baseline",
+  "started_at": "2026-10-27T09:58:26.107128+00:00",
+  "command": [
+    ".venv/bin/python",
+    "prompt_harness.py",
+    "--arm",
+    "baseline",
+    "--out",
+    "runs/baseline.jsonl"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 13,
+  "peak_footprint_bytes": 2427799184,
+  "peak_rss_bytes": 1406500864,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1,
+    2
+  ],
+  "guard_exit_code": 124,
+  "child_exit_code": -15,
+  "status": "protective_stop",
+  "initial_swap_bytes": 2044660285,
+  "child_pid": 3143,
+  "reason": "Host memory pressure >= 2 for 3 consecutive samples",
+  "termination": {
+    "term_pids": [
+      3143
+    ],
+    "own_direct_child_terminated": true,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-27T09:58:38.372805+00:00",
+  "wall_seconds": 12.265606999993906,
+  "observed_process_identities": {
+    "3143": 1653770757721
+  },
+  "reused_pids_ignored": []
+}

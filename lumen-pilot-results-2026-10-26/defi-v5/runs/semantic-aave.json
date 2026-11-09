@@ -1,0 +1,562 @@
+{
+  "schema": 1,
+  "reviewer": {
+    "kind": "agent",
+    "name": "/root/resource_guard",
+    "human_validation": false
+  },
+  "reviewed_at_utc": "2026-10-27T20:28:10.978369+00:00",
+  "human_validation": false,
+  "scope": "Exactly20 Aave questions ×3 completed ordinary-KV arms. Actual raw, frozen gold, source evidence windows and per-question supplied contexts checked after root COMPLETE+EXPORT. No inference or raw/input/scorer changes.",
+  "protocol": "aave",
+  "count": 60,
+  "raw_sha256": {
+    "closed": "07459da865e6abd7216ff960dc428f09d8f7a378ed71d146f9912d3758e5c2e0",
+    "oracle": "eb0501aa5ff143bbcd5efffd8b649cc4f226a8c00b9f7d9c7e6daac871276404",
+    "retrieved": "a206e78d0820517c89212b5548f2bcc7c248bd128c6d2415d670006ee1e5fbdf"
+  },
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "contexts_sha256": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+  "grading_rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "mechanical_checks_at_review_sha256": "dee3be3dcfd4ce9de2c6b7722418864d99c83a57b29ae8937accceaff0e79165",
+  "source_files_sha256": {
+    "sources/aave/pages/aave-v3/overview.md": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+    "sources/aave/pages/aave-v3/smart-contracts/pool.md": "a379c7a4db4d8bf294fbdf8dceaa90764d98dae8b49995aae65630ac444eb6c7",
+    "sources/aave/pages/aave-v3/smart-contracts/tokenization.md": "8aa7dbd276a9a573952907321ce98cf80908882dcd887063c7d535db795a3970",
+    "sources/aave/pages/aave-v3/guides/credit-delegation.md": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b",
+    "sources/aave/pages/aave-v3/guides/flash-loans.md": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+    "sources/aave/pages/aave-v3/concepts/reserve.md": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746"
+  },
+  "criteria": {
+    "content_correct": "Substantive requested facts/data and explanation, independent of JSON formatting/status/citation metrics. Malformed JSON can pass only where the answer remains unambiguous and not contradicted. No raw repair.",
+    "citation_supported": "Requires supplied source_id plus valid exact quote(s) establishing every requested fact; a generic/irrelevant exact quote or a bare R1 reference fails. Closed content is evaluated independently of its absent sources/citations.",
+    "unexpected_or_contradictory_claims": "Substantive contradictions and unsupported extra facts fail content. Frozen ambiguous rule uses provisional false pending root adjudication."
+  },
+  "items": [
+    {
+      "id": "aave-01",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно отрицает eligibility: HF0,98 ниже1.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: HF<1 делает позицию eligible;0,98<1. Это допуск, не гарантия немедленного исполнения. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-02",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: строго below1. Равенство1,00 этому условию не удовлетворяет. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-03",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/pool.md: pool.withdraw: вывод при существующем долге не должен оставлять HF<1;0,97 нарушает ограничение. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-04",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: обычное заимствование можно погасить в любое время; обязательного ожидания фиксированного срока нет. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-05",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/tokenization.md: tokenization: стандартный aToken pegged1:1 к соответствующему underlying, не к фиксированной долларовой цене. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-06",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Выбран fixed_balance вместо увеличения баланса стандартного aToken.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/tokenization.md: tokenization: доход распределяется увеличением баланса владельца стандартного rebasing aToken. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-07",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview Isolation Mode: заимствуются только специально разрешённые активы, а не произвольный debt asset. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-08",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно отрицает debt ceiling в Isolation Mode.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview Isolation Mode: действует designated debt ceiling. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-09",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview eMode: эффективность для коррелированных активов одной категории. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-10",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview siloed borrowing: другая активная задолженность в том же пуле запрещена. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-11",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: к моменту delegated borrow у делегатора нужен достаточный залог; approval не заменяет его. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-12",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: approveDelegation разрешён до supply; требование залога относится к borrow. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-13",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно утверждает, что delegated borrow не fail при нарушении HF.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: borrow, нарушающий HF делегатора, должен fail. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-14",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: flashLoanSimple использует один reserve. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-15",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: flashLoanSimple не позволяет открыть debt position в конце транзакции. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-16",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: получатель должен approve principal+fee; нехватка allowance приводит к revert. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-17",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Fee указан50 вместо5: неверный перевод0,05% в долю.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: Условие задаёт0,05%=0,0005;10000×0,0005=5. Это арифметика заданной ставки, не утверждение о текущем onchain fee. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-18",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: reserve: актив с LTV0% cannot be enabled as collateral. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-19",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Общее Нет может отвечать на различие операций, но оба отдельных data=false неверны: supply cap ограничивает supply, borrow cap — borrow.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: reserve: supply cap ограничивает supply, borrow cap — borrow; оба запрошенных поля должны быть true. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-20",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: Условие задаёт залог2000 и LTV75%: предел по одному LTV =1500; дополнительные лимиты и фактическая сделка исключены. Контекст closed пуст и citations[]: подтверждённых цитат нет; это не уменьшает content_correct."
+    },
+    {
+      "id": "aave-01",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: HF<1 делает позицию eligible;0,98<1. Это допуск, не гарантия немедленного исполнения. Ссылка записана строкой R1 без объекта source_id/quote. Даже наличие нужного правила в oracle-контексте не даёт citation_supported."
+    },
+    {
+      "id": "aave-02",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: строго below1. Равенство1,00 этому условию не удовлетворяет. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-03",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно разрешает withdraw, оставляющий HF0,97; data=true и Да неверны. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/pool.md: pool.withdraw: вывод при существующем долге не должен оставлять HF<1;0,97 нарушает ограничение. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-04",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: обычное заимствование можно погасить в любое время; обязательного ожидания фиксированного срока нет. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-05",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/tokenization.md: tokenization: стандартный aToken pegged1:1 к соответствующему underlying, не к фиксированной долларовой цене. Ссылка записана строкой R1 без объекта source_id/quote. Даже наличие нужного правила в oracle-контексте не даёт citation_supported."
+    },
+    {
+      "id": "aave-06",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/tokenization.md: tokenization: доход распределяется увеличением баланса владельца стандартного rebasing aToken. Ссылка записана строкой R1 без объекта source_id/quote. Даже наличие нужного правила в oracle-контексте не даёт citation_supported."
+    },
+    {
+      "id": "aave-07",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview Isolation Mode: заимствуются только специально разрешённые активы, а не произвольный debt asset. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-08",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview Isolation Mode: действует designated debt ceiling. Ссылка записана строкой R1 без объекта source_id/quote. Даже наличие нужного правила в oracle-контексте не даёт citation_supported."
+    },
+    {
+      "id": "aave-09",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview eMode: эффективность для коррелированных активов одной категории. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-10",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview siloed borrowing: другая активная задолженность в том же пуле запрещена. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-11",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: к моменту delegated borrow у делегатора нужен достаточный залог; approval не заменяет его. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-12",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: approveDelegation разрешён до supply; требование залога относится к borrow. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-13",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: borrow, нарушающий HF делегатора, должен fail. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-14",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: flashLoanSimple использует один reserve. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-15",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: flashLoanSimple не позволяет открыть debt position в конце транзакции. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-16",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: получатель должен approve principal+fee; нехватка allowance приводит к revert. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-17",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Fee указан50 вместо5, несмотря на заданную ставку.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: Условие задаёт0,05%=0,0005;10000×0,0005=5. Это арифметика заданной ставки, не утверждение о текущем onchain fee. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-18",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: reserve: актив с LTV0% cannot be enabled as collateral. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-19",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Оба отдельных значения false неверны; корректный ответ должен дать true для каждого из двух лимитов. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: reserve: supply cap ограничивает supply, borrow cap — borrow; оба запрошенных поля должны быть true. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-20",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: Условие задаёт залог2000 и LTV75%: предел по одному LTV =1500; дополнительные лимиты и фактическая сделка исключены. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-01",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: HF<1 делает позицию eligible;0,98<1. Это допуск, не гарантия немедленного исполнения. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-02",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: строго below1. Равенство1,00 этому условию не удовлетворяет. R1 overview содержит точную цитату о HF below1. Она подтверждает строгое условие; HF1,00 дан вопросом, поэтому false содержательно обоснован и citation_supported=true."
+    },
+    {
+      "id": "aave-03",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "На прямой вопрос о допустимости вывода начальное Да конфликтует с явно указанными withdraw_allowed_by_health_factor=false и data=false. Значение data само по себе верно, но цельный ответ неоднозначен. По frozen ambiguous=false content не засчитан; решение подтверждено агентской adjudication A в runs/adjudication.json.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/pool.md: pool.withdraw: вывод при существующем долге не должен оставлять HF<1;0,97 нарушает ограничение. Указана R3 pool, но приведённая фраза о liquidation eligibility отсутствует в этом фрагменте: quote_valid=false. Сам R3 содержит нужное ограничение withdraw, однако модель его не процитировала; support=false независимо от adjudication содержания."
+    },
+    {
+      "id": "aave-04",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview: обычное заимствование можно погасить в любое время; обязательного ожидания фиксированного срока нет. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-05",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/tokenization.md: tokenization: стандартный aToken pegged1:1 к соответствующему underlying, не к фиксированной долларовой цене. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-06",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/smart-contracts/tokenization.md: tokenization: доход распределяется увеличением баланса владельца стандартного rebasing aToken. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-07",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview Isolation Mode: заимствуются только специально разрешённые активы, а не произвольный debt asset. R1 aptos/aave-logic содержит точную цитату пункта3 о запрете supply другого collateral. Этот пункт не доказывает запрет произвольного debt asset. Нужный borrow basket есть рядом в пункте2, но не процитирован; quote_valid=true при citation_supported=false."
+    },
+    {
+      "id": "aave-08",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview Isolation Mode: действует designated debt ceiling. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-09",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview eMode: эффективность для коррелированных активов одной категории. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-10",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/overview.md: overview siloed borrowing: другая активная задолженность в том же пуле запрещена. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-11",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: к моменту delegated borrow у делегатора нужен достаточный залог; approval не заменяет его. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-12",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно требует prior supply для самого approveDelegation; источник разрешает approval до supply.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: approveDelegation разрешён до supply; требование залога относится к borrow. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-13",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/credit-delegation.md: credit-delegation: borrow, нарушающий HF делегатора, должен fail. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-14",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: flashLoanSimple использует один reserve. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-15",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: flashLoanSimple не позволяет открыть debt position в конце транзакции. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-16",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: flash-loans: получатель должен approve principal+fee; нехватка allowance приводит к revert. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-17",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Fee указан50 вместо5:10000×0,0005=5.",
+      "source_evidence_notes": "aave:aave-v3/guides/flash-loans.md: Условие задаёт0,05%=0,0005;10000×0,0005=5. Это арифметика заданной ставки, не утверждение о текущем onchain fee. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-18",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону. Лишняя заключительная кавычка относится к parse-метрике; содержание отдельно проверено по raw без исправления файла.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: reserve: актив с LTV0% cannot be enabled as collateral. Citations[]: цитаты отсутствуют, citation_supported=false."
+    },
+    {
+      "id": "aave-19",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно соответствует эталону.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: reserve: supply cap ограничивает supply, borrow cap — borrow; оба запрошенных поля должны быть true. Три одинаковые фразы set_supply_cap: updates supply cap of a reserve не являются дословными фрагментами R2, quote_valid=false. Кроме того, каждая относится только к supply cap и не поддерживает второй запрошенный факт о borrow cap."
+    },
+    {
+      "id": "aave-20",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Указано2000 вместо1500;75% от2000 не равно полной стоимости залога.",
+      "source_evidence_notes": "aave:aave-v3/concepts/reserve.md: Условие задаёт залог2000 и LTV75%: предел по одному LTV =1500; дополнительные лимиты и фактическая сделка исключены. Citations[]: цитаты отсутствуют, citation_supported=false."
+    }
+  ],
+  "aave_only_counts": {
+    "closed": {
+      "reviewed": 20,
+      "content_correct": 14,
+      "citation_supported": 0,
+      "mechanical_data_ok": 10,
+      "mechanical_quote_valid": 0
+    },
+    "oracle": {
+      "reviewed": 20,
+      "content_correct": 17,
+      "citation_supported": 0,
+      "mechanical_data_ok": 8,
+      "mechanical_quote_valid": 0
+    },
+    "retrieved": {
+      "reviewed": 20,
+      "content_correct": 16,
+      "citation_supported": 1,
+      "mechanical_data_ok": 15,
+      "mechanical_quote_valid": 2
+    }
+  },
+  "review_complete": true,
+  "root_adjudication_pending": [],
+  "no_aggregate_primary_score_computed": true,
+  "agent_authored_benchmark_caveat": "Local agent-authored test and agent review, not an external blinded benchmark or human validation.",
+  "adjudication_records": [
+    {
+      "file": "runs/adjudication.json",
+      "file_sha256": "0b641ee2a740fe82c5ec4cfadc203c875a30ee45689a591915a59c46f1a6bc4f",
+      "case_id": "A",
+      "id": "aave-03",
+      "arm": "retrieved",
+      "content_correct": false,
+      "reviewer": {
+        "kind": "agent",
+        "name": "pilot_method_review",
+        "human_validation": false
+      },
+      "human_validation": false
+    }
+  ],
+  "finalized_at_utc": "2026-10-27T20:28:28.317807+00:00",
+  "review_final": true
+}

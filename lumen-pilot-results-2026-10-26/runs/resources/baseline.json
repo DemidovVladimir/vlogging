@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "stage": "baseline",
+  "started_at": "2026-10-26T16:28:07.802064+00:00",
+  "command": [
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/before.jsonl"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 10,
+  "peak_footprint_bytes": 1687914200,
+  "peak_rss_bytes": 1286438912,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 602868285,
+  "child_pid": 68850,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T16:28:17.913430+00:00",
+  "wall_seconds": 10.11143691700272,
+  "observed_process_identities": {
+    "68850": 970760223308
+  },
+  "reused_pids_ignored": []
+}

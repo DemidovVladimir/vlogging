@@ -1,0 +1,17 @@
+{
+  "python": "3.12.11",
+  "arch": "arm64",
+  "device": "Device(gpu, 0)",
+  "small_gpu_operation": [
+    2.0,
+    4.0
+  ],
+  "disk_free_GB": 460.0,
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.20.2",
+    "huggingface_hub": "2.3.0"
+  }
+}
+Environment probe passed. This does not measure Qwen training memory.

@@ -1,0 +1,3758 @@
+{
+  "repo": "ethereum/ERCs",
+  "branch": "master",
+  "commit_revision": "4891ba3b86d2058d0f472dbf1500af6bb056caf2",
+  "tree_revision": "4891ba3b86d2058d0f472dbf1500af6bb056caf2",
+  "retrieved_at_utc": "2026-10-27T09:46:27.989943+00:00",
+  "truncated": false,
+  "documents": 624,
+  "total_markdown_bytes": 10244679,
+  "files": [
+    {
+      "path": "ERCS/erc-1046.md",
+      "bytes": 8898,
+      "git_blob_sha": "8151c125cbb7a35a17dd17c0dbba1ee458d2f80d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1046.md"
+    },
+    {
+      "path": "ERCS/erc-1056.md",
+      "bytes": 9472,
+      "git_blob_sha": "b60081bb35eea4be54fd67cad9d3da0cef742350",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1056.md"
+    },
+    {
+      "path": "ERCS/erc-1062.md",
+      "bytes": 4582,
+      "git_blob_sha": "2e555d1cdc5c8e1c025359b744582dbafc8c7708",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1062.md"
+    },
+    {
+      "path": "ERCS/erc-1066.md",
+      "bytes": 39743,
+      "git_blob_sha": "8b8c2a813a5c92129bf403eb8828d80bbf06b880",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1066.md"
+    },
+    {
+      "path": "ERCS/erc-1077.md",
+      "bytes": 15616,
+      "git_blob_sha": "ca2a8a91f2ce457709bb20235212b873161fac42",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1077.md"
+    },
+    {
+      "path": "ERCS/erc-1078.md",
+      "bytes": 13331,
+      "git_blob_sha": "923742578ad1bdf972bab7164a67a356e4077f7d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1078.md"
+    },
+    {
+      "path": "ERCS/erc-1080.md",
+      "bytes": 5143,
+      "git_blob_sha": "d704fc840655eaf6c91961363141325a446917c6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1080.md"
+    },
+    {
+      "path": "ERCS/erc-1081.md",
+      "bytes": 10545,
+      "git_blob_sha": "bbb330361f8198e0be283a1f52cb2b8af234de14",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1081.md"
+    },
+    {
+      "path": "ERCS/erc-1123.md",
+      "bytes": 45731,
+      "git_blob_sha": "bb319bb4897b7aa81a7913a90b83a993f5d1cdaf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1123.md"
+    },
+    {
+      "path": "ERCS/erc-1129.md",
+      "bytes": 5071,
+      "git_blob_sha": "d3b1579d1f505740ab5c8e3641f9d4b754ca97a7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1129.md"
+    },
+    {
+      "path": "ERCS/erc-1132.md",
+      "bytes": 7081,
+      "git_blob_sha": "0a6a3880733b4e7e9e3afbbef43147137a3e881a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1132.md"
+    },
+    {
+      "path": "ERCS/erc-1154.md",
+      "bytes": 7467,
+      "git_blob_sha": "417ae863f31b72eba13c6b1168f904ab7575ece2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1154.md"
+    },
+    {
+      "path": "ERCS/erc-1155.md",
+      "bytes": 56174,
+      "git_blob_sha": "42ca3a7e5bcb252ce3c4deec259666c8658a8de0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1155.md"
+    },
+    {
+      "path": "ERCS/erc-1167.md",
+      "bytes": 7824,
+      "git_blob_sha": "ebb2d0a3278c3dbac9fbf7d99210d247e1410358",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1167.md"
+    },
+    {
+      "path": "ERCS/erc-1175.md",
+      "bytes": 18082,
+      "git_blob_sha": "133c3993ff53f61dfc04c14b5e779bccc2ad55f5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1175.md"
+    },
+    {
+      "path": "ERCS/erc-1178.md",
+      "bytes": 10388,
+      "git_blob_sha": "06a740ce42c3c76a994233945fed8bfe3426f206",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1178.md"
+    },
+    {
+      "path": "ERCS/erc-1185.md",
+      "bytes": 13431,
+      "git_blob_sha": "793624a76caa7a6bea834f71b8b677e8caa3ce89",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1185.md"
+    },
+    {
+      "path": "ERCS/erc-1191.md",
+      "bytes": 6278,
+      "git_blob_sha": "55a744f9fb0ace493e45cff1071d0460dd555fa5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1191.md"
+    },
+    {
+      "path": "ERCS/erc-1202.md",
+      "bytes": 9687,
+      "git_blob_sha": "cfaba62211c3a74d4eb87549333e9c1cc379beb1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1202.md"
+    },
+    {
+      "path": "ERCS/erc-1203.md",
+      "bytes": 11207,
+      "git_blob_sha": "dc971789dd83a71377fedba1cf849e920114a016",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1203.md"
+    },
+    {
+      "path": "ERCS/erc-1207.md",
+      "bytes": 6859,
+      "git_blob_sha": "9b9fb0ca34b92c46b97aa0b631dfd1bb6418604b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1207.md"
+    },
+    {
+      "path": "ERCS/erc-1261.md",
+      "bytes": 28137,
+      "git_blob_sha": "e2bf12a7cd9cbed17cffa481f8fb965f81458344",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1261.md"
+    },
+    {
+      "path": "ERCS/erc-1271.md",
+      "bytes": 8115,
+      "git_blob_sha": "39f9e4e057b9252f5e625ff343d28131ff6a308c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1271.md"
+    },
+    {
+      "path": "ERCS/erc-1319.md",
+      "bytes": 8797,
+      "git_blob_sha": "92ab5560e002b7e187a973c4f4dd8ca7eafdc95b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1319.md"
+    },
+    {
+      "path": "ERCS/erc-1328.md",
+      "bytes": 2871,
+      "git_blob_sha": "10e801c162fdd34e404a5c4b7379bd75287c0239",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1328.md"
+    },
+    {
+      "path": "ERCS/erc-1337.md",
+      "bytes": 10023,
+      "git_blob_sha": "665756b47070dad0355706c4e1df09122b2f8075",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1337.md"
+    },
+    {
+      "path": "ERCS/erc-1363.md",
+      "bytes": 10147,
+      "git_blob_sha": "9e0a028a20a96a4619f9c6c8d55dadea9f4fbdf5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1363.md"
+    },
+    {
+      "path": "ERCS/erc-137.md",
+      "bytes": 17495,
+      "git_blob_sha": "b35e9ef62c2649c5f125aa61924b89eabc20aae0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-137.md"
+    },
+    {
+      "path": "ERCS/erc-1386.md",
+      "bytes": 4468,
+      "git_blob_sha": "a83217050eabf2ba0de7e2912f4986c488e37cfc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1386.md"
+    },
+    {
+      "path": "ERCS/erc-1387.md",
+      "bytes": 2093,
+      "git_blob_sha": "1061ffec26dc8eabfb8706a3e9a3d4d98dbddaaf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1387.md"
+    },
+    {
+      "path": "ERCS/erc-1388.md",
+      "bytes": 4431,
+      "git_blob_sha": "ed05a6407d55bca350b3371064950cc79cdfebd4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1388.md"
+    },
+    {
+      "path": "ERCS/erc-1417.md",
+      "bytes": 23500,
+      "git_blob_sha": "1bf50edd79b978bca8457e36143bb5de2b598ad7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1417.md"
+    },
+    {
+      "path": "ERCS/erc-1438.md",
+      "bytes": 6851,
+      "git_blob_sha": "9572193f173eee378a4448142b23787c723f69db",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1438.md"
+    },
+    {
+      "path": "ERCS/erc-1444.md",
+      "bytes": 14436,
+      "git_blob_sha": "c235840330f0411e368e2c92f5ab0f8a04fce5bb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1444.md"
+    },
+    {
+      "path": "ERCS/erc-1450.md",
+      "bytes": 136863,
+      "git_blob_sha": "0dee9375f4a193fce8efc48aeca388274470d8b8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1450.md"
+    },
+    {
+      "path": "ERCS/erc-1462.md",
+      "bytes": 10973,
+      "git_blob_sha": "9bb902088f78394c2a992c15892fab2ae5262564",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1462.md"
+    },
+    {
+      "path": "ERCS/erc-1484.md",
+      "bytes": 30975,
+      "git_blob_sha": "396602186bb305665f416a00006541de07f5b869",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1484.md"
+    },
+    {
+      "path": "ERCS/erc-1491.md",
+      "bytes": 24210,
+      "git_blob_sha": "9007dcb0bee6a229b5a1214124688b6cbfcca5e3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1491.md"
+    },
+    {
+      "path": "ERCS/erc-1504.md",
+      "bytes": 17833,
+      "git_blob_sha": "afed611194173da99d8e4b38311bacaeb5a9e836",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1504.md"
+    },
+    {
+      "path": "ERCS/erc-1523.md",
+      "bytes": 7913,
+      "git_blob_sha": "2469e83d69d4a93b15b6f75029141012834afa24",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1523.md"
+    },
+    {
+      "path": "ERCS/erc-1538.md",
+      "bytes": 30823,
+      "git_blob_sha": "afa991a7e7961df63072243f4f481e60e4aa35a6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1538.md"
+    },
+    {
+      "path": "ERCS/erc-1577.md",
+      "bytes": 4660,
+      "git_blob_sha": "c555e53fe11c35f43ac98c3f6d62aa8b05f8d90b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1577.md"
+    },
+    {
+      "path": "ERCS/erc-1581.md",
+      "bytes": 3752,
+      "git_blob_sha": "1b05281e03fa2e63608fe2634938df5e5dc29aac",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1581.md"
+    },
+    {
+      "path": "ERCS/erc-1592.md",
+      "bytes": 8842,
+      "git_blob_sha": "dd97e594393df03f76a93e234672ecedd95ff16f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1592.md"
+    },
+    {
+      "path": "ERCS/erc-1613.md",
+      "bytes": 41818,
+      "git_blob_sha": "41dde277ba118cfcb7b721303620603b49637c2a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1613.md"
+    },
+    {
+      "path": "ERCS/erc-1616.md",
+      "bytes": 19958,
+      "git_blob_sha": "52107d4a0a95cd9b40fbaef29b2d6035f7eeeafd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1616.md"
+    },
+    {
+      "path": "ERCS/erc-162.md",
+      "bytes": 18398,
+      "git_blob_sha": "03764438559841bbe0b3d7bd5870ce9b08ce1790",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-162.md"
+    },
+    {
+      "path": "ERCS/erc-1620.md",
+      "bytes": 13445,
+      "git_blob_sha": "694c9d6a1cabcf2c104428aa970465eecbb6dd43",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1620.md"
+    },
+    {
+      "path": "ERCS/erc-1633.md",
+      "bytes": 11230,
+      "git_blob_sha": "17461d4dbddb559fc811f9ff2aff0eaa4f04bd05",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1633.md"
+    },
+    {
+      "path": "ERCS/erc-165.md",
+      "bytes": 9782,
+      "git_blob_sha": "77e6cbcf3938d3af5ec1274405b97f6de4115b41",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-165.md"
+    },
+    {
+      "path": "ERCS/erc-1710.md",
+      "bytes": 2819,
+      "git_blob_sha": "91503f8d78d9d1437c41adc139dfe76ce3a2d3df",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1710.md"
+    },
+    {
+      "path": "ERCS/erc-173.md",
+      "bytes": 5948,
+      "git_blob_sha": "e79033eb5262d32f9d70852b82000680f0e80afe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-173.md"
+    },
+    {
+      "path": "ERCS/erc-1753.md",
+      "bytes": 11383,
+      "git_blob_sha": "09cb027eebd047f5e37092813c7a81db9140386e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1753.md"
+    },
+    {
+      "path": "ERCS/erc-1761.md",
+      "bytes": 9010,
+      "git_blob_sha": "141836829d66a0bf5b6c1631ef36d786f2bd04be",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1761.md"
+    },
+    {
+      "path": "ERCS/erc-1775.md",
+      "bytes": 13201,
+      "git_blob_sha": "3ee41df430a6174e8151fe43c7faf0a7db0ed47b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1775.md"
+    },
+    {
+      "path": "ERCS/erc-181.md",
+      "bytes": 9374,
+      "git_blob_sha": "3c7a2311de824c088433f62365912b0c90910609",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-181.md"
+    },
+    {
+      "path": "ERCS/erc-1812.md",
+      "bytes": 16214,
+      "git_blob_sha": "8ff5f0759d7e792120753830f93a7c7df48c37c5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1812.md"
+    },
+    {
+      "path": "ERCS/erc-1820.md",
+      "bytes": 61087,
+      "git_blob_sha": "31240f50b43df4b4f788133c7148c7ab8423d75b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1820.md"
+    },
+    {
+      "path": "ERCS/erc-1822.md",
+      "bytes": 13583,
+      "git_blob_sha": "8280b196ad5c8d7ad9365a95c8c043aa5e7aeefc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1822.md"
+    },
+    {
+      "path": "ERCS/erc-1844.md",
+      "bytes": 3375,
+      "git_blob_sha": "a80e696c7b20cb0df445cce7091c2fee063f0e8d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1844.md"
+    },
+    {
+      "path": "ERCS/erc-190.md",
+      "bytes": 4825,
+      "git_blob_sha": "bf909700db3f264c8712a243434975182d5df5bd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-190.md"
+    },
+    {
+      "path": "ERCS/erc-1900.md",
+      "bytes": 12467,
+      "git_blob_sha": "a11b794dbc3a40190c5cdb9affb652783a51f1f3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1900.md"
+    },
+    {
+      "path": "ERCS/erc-191.md",
+      "bytes": 4469,
+      "git_blob_sha": "9a166d62af91f78683cd3b4601d6299ddc8e72e2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-191.md"
+    },
+    {
+      "path": "ERCS/erc-1921.md",
+      "bytes": 6218,
+      "git_blob_sha": "9a671313f46a9265a25713f99afca6091fe12310",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1921.md"
+    },
+    {
+      "path": "ERCS/erc-1922.md",
+      "bytes": 15436,
+      "git_blob_sha": "6c60c6e9be215c81c27683eed6871f86102065b1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1922.md"
+    },
+    {
+      "path": "ERCS/erc-1923.md",
+      "bytes": 7843,
+      "git_blob_sha": "cea924aac30d19559f635190cff5f8067dffe170",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1923.md"
+    },
+    {
+      "path": "ERCS/erc-1948.md",
+      "bytes": 5232,
+      "git_blob_sha": "2b58a1afff421c4837264fc573eb5f47bdc42e86",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1948.md"
+    },
+    {
+      "path": "ERCS/erc-1967.md",
+      "bytes": 21794,
+      "git_blob_sha": "98165407df80b8a92ae3cbbc8218cf092b98c34b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1967.md"
+    },
+    {
+      "path": "ERCS/erc-1973.md",
+      "bytes": 11453,
+      "git_blob_sha": "d3c94b9bf0850bc8be3687ca833fd40e2a53a83f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1973.md"
+    },
+    {
+      "path": "ERCS/erc-1996.md",
+      "bytes": 14487,
+      "git_blob_sha": "fffb24a77cb62cc075a2424ff5967b8d962a1ecd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1996.md"
+    },
+    {
+      "path": "ERCS/erc-20.md",
+      "bytes": 5601,
+      "git_blob_sha": "cdd8a14d501bb5589a218c64c6738fe84cb12f56",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+    },
+    {
+      "path": "ERCS/erc-2009.md",
+      "bytes": 13153,
+      "git_blob_sha": "c628e6b2343e06158f21b36447d5f42bddd1794b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2009.md"
+    },
+    {
+      "path": "ERCS/erc-2018.md",
+      "bytes": 11887,
+      "git_blob_sha": "9959a341a2a9b6e50d4c6e233617d4df33e6833d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2018.md"
+    },
+    {
+      "path": "ERCS/erc-2019.md",
+      "bytes": 10971,
+      "git_blob_sha": "92a5df969d2b265c776f3e44dd2b0c3b55706648",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2019.md"
+    },
+    {
+      "path": "ERCS/erc-2020.md",
+      "bytes": 15020,
+      "git_blob_sha": "ddf3419f59ab49e061e278fe7a9e0e0c196b4939",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2020.md"
+    },
+    {
+      "path": "ERCS/erc-2021.md",
+      "bytes": 13451,
+      "git_blob_sha": "74ae2baca9ee716cf0f3ea0a2fcfb23e6cc7b56b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2021.md"
+    },
+    {
+      "path": "ERCS/erc-205.md",
+      "bytes": 4954,
+      "git_blob_sha": "451cc835e4f67af4a16c80dd94a80e743b28f6fe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-205.md"
+    },
+    {
+      "path": "ERCS/erc-2098.md",
+      "bytes": 4654,
+      "git_blob_sha": "f440b4057e7655867fbc21906b25e2cb24b474f1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2098.md"
+    },
+    {
+      "path": "ERCS/erc-2135.md",
+      "bytes": 7879,
+      "git_blob_sha": "0a7a9e0ac28c804369f4b76d6ac8463b283ed3f8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2135.md"
+    },
+    {
+      "path": "ERCS/erc-2157.md",
+      "bytes": 7841,
+      "git_blob_sha": "47481224e3760578e830786691e923d1d5202389",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2157.md"
+    },
+    {
+      "path": "ERCS/erc-2193.md",
+      "bytes": 7068,
+      "git_blob_sha": "34152793a6868671fc989c16bfeeaa7e98b7a6de",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2193.md"
+    },
+    {
+      "path": "ERCS/erc-223.md",
+      "bytes": 17531,
+      "git_blob_sha": "7f77f5895e149b59e13fad02f3e7ebf3aa29071c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-223.md"
+    },
+    {
+      "path": "ERCS/erc-2266.md",
+      "bytes": 10582,
+      "git_blob_sha": "2489d320f18ec3ba36d932d81d4a689eae82abc4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2266.md"
+    },
+    {
+      "path": "ERCS/erc-2304.md",
+      "bytes": 13649,
+      "git_blob_sha": "0a178f57b443499dc2878669bc43ceed94f7cb38",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2304.md"
+    },
+    {
+      "path": "ERCS/erc-2309.md",
+      "bytes": 9303,
+      "git_blob_sha": "0d4452d47666c9fb8eb332279407a3f59140daf9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2309.md"
+    },
+    {
+      "path": "ERCS/erc-2333.md",
+      "bytes": 51057,
+      "git_blob_sha": "5ec9968e6237c7f4bdede481e4e8b7118c544cb2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2333.md"
+    },
+    {
+      "path": "ERCS/erc-2334.md",
+      "bytes": 7080,
+      "git_blob_sha": "bd0b68239bc8b61e10745033d4a5714fafe698da",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2334.md"
+    },
+    {
+      "path": "ERCS/erc-2335.md",
+      "bytes": 14051,
+      "git_blob_sha": "ed3a2afc0de81b7a08465da236878d1e6a4136e1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2335.md"
+    },
+    {
+      "path": "ERCS/erc-2386.md",
+      "bytes": 7604,
+      "git_blob_sha": "f09e375c76fe546efac47d784f614c87299e1d2d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2386.md"
+    },
+    {
+      "path": "ERCS/erc-2390.md",
+      "bytes": 13832,
+      "git_blob_sha": "4d87272c0810ad591571bb173043a11b2a13cb46",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2390.md"
+    },
+    {
+      "path": "ERCS/erc-2400.md",
+      "bytes": 6494,
+      "git_blob_sha": "1978fd56b03e0ba8a64fa898056995d149f7258f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2400.md"
+    },
+    {
+      "path": "ERCS/erc-2470.md",
+      "bytes": 10535,
+      "git_blob_sha": "406c749f587cc7777dd4023498db0bf2cade7c64",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2470.md"
+    },
+    {
+      "path": "ERCS/erc-2477.md",
+      "bytes": 20656,
+      "git_blob_sha": "6a76dc903eb23bb524c52949eedb119195cbd48d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2477.md"
+    },
+    {
+      "path": "ERCS/erc-2494.md",
+      "bytes": 20154,
+      "git_blob_sha": "0fa1a28e990a16de513bb818c13e5c1258186ae2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2494.md"
+    },
+    {
+      "path": "ERCS/erc-2520.md",
+      "bytes": 3978,
+      "git_blob_sha": "d72c1e920bf93e6c9d15c271eef97d58ffce52a6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2520.md"
+    },
+    {
+      "path": "ERCS/erc-2525.md",
+      "bytes": 11607,
+      "git_blob_sha": "71a285511154ecc5e25bc85623ee66a458c2cc09",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2525.md"
+    },
+    {
+      "path": "ERCS/erc-2535.md",
+      "bytes": 28187,
+      "git_blob_sha": "d49098f35bcd6be32d7e994bada111358c668cbf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2535.md"
+    },
+    {
+      "path": "ERCS/erc-2544.md",
+      "bytes": 9808,
+      "git_blob_sha": "4df16b5dfb930fa95b81d08c33fdbe2b72f0af66",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2544.md"
+    },
+    {
+      "path": "ERCS/erc-2569.md",
+      "bytes": 17369,
+      "git_blob_sha": "8ed6b119c2955173f823e6823d3b5c43706ae201",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2569.md"
+    },
+    {
+      "path": "ERCS/erc-2612.md",
+      "bytes": 9642,
+      "git_blob_sha": "a70cf591aff1d15ded338d909321001d4681e610",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2612.md"
+    },
+    {
+      "path": "ERCS/erc-2615.md",
+      "bytes": 11408,
+      "git_blob_sha": "75b65e2effc87eb8de1308bc4511b95aa5e63ac7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2615.md"
+    },
+    {
+      "path": "ERCS/erc-2645.md",
+      "bytes": 4520,
+      "git_blob_sha": "597424248ae955d4eaa57306f3489357ad2cebd1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2645.md"
+    },
+    {
+      "path": "ERCS/erc-2678.md",
+      "bytes": 35353,
+      "git_blob_sha": "bcec714ffb9fd290f1ac2cf3e6fbb8f37b2f0f73",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2678.md"
+    },
+    {
+      "path": "ERCS/erc-2680.md",
+      "bytes": 6779,
+      "git_blob_sha": "497cac5080d0c9581523f9ea0e3633297472ff25",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2680.md"
+    },
+    {
+      "path": "ERCS/erc-2746.md",
+      "bytes": 14888,
+      "git_blob_sha": "22aa20efbabfb9609ed58ab359e2b15485beb924",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2746.md"
+    },
+    {
+      "path": "ERCS/erc-2767.md",
+      "bytes": 8388,
+      "git_blob_sha": "87ac14f0f4c6d740bc0331cad34d70a9faa59f8e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2767.md"
+    },
+    {
+      "path": "ERCS/erc-2770.md",
+      "bytes": 8215,
+      "git_blob_sha": "8afd4e3d67e01306f600190d6e77d172051a2345",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2770.md"
+    },
+    {
+      "path": "ERCS/erc-2771.md",
+      "bytes": 8017,
+      "git_blob_sha": "8fadf2340bfc8965a72f7a995158a9294048ee0b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2771.md"
+    },
+    {
+      "path": "ERCS/erc-2848.md",
+      "bytes": 18261,
+      "git_blob_sha": "5212f677e59255230e3fceefa3513744c6b51d46",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2848.md"
+    },
+    {
+      "path": "ERCS/erc-2876.md",
+      "bytes": 12708,
+      "git_blob_sha": "e2b55e433260fb6bd51d8dd50525b3d890edc247",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2876.md"
+    },
+    {
+      "path": "ERCS/erc-2917.md",
+      "bytes": 7973,
+      "git_blob_sha": "3420c89a2dd0ac00f8b9c339cf018093a396eae7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2917.md"
+    },
+    {
+      "path": "ERCS/erc-2942.md",
+      "bytes": 3724,
+      "git_blob_sha": "ea2ec7e3fdb579c56ea914662bc154521fda54ae",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2942.md"
+    },
+    {
+      "path": "ERCS/erc-2980.md",
+      "bytes": 10091,
+      "git_blob_sha": "ec74e0e5fcf2482beda889a55e2dd1db922afd08",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2980.md"
+    },
+    {
+      "path": "ERCS/erc-2981.md",
+      "bytes": 15197,
+      "git_blob_sha": "a24821bd229ed5e3485e0b51af3709007bf155bc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2981.md"
+    },
+    {
+      "path": "ERCS/erc-3000.md",
+      "bytes": 7608,
+      "git_blob_sha": "7b36755eda0b6413626412eee332307a305423de",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3000.md"
+    },
+    {
+      "path": "ERCS/erc-3005.md",
+      "bytes": 20575,
+      "git_blob_sha": "c3f1219dfda2b8e9f0ae10d5eb4eaafa333dbac2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3005.md"
+    },
+    {
+      "path": "ERCS/erc-3009.md",
+      "bytes": 22431,
+      "git_blob_sha": "92af1e2b7ad6418d0ef0b1a573cd7966705f6b90",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3009.md"
+    },
+    {
+      "path": "ERCS/erc-3135.md",
+      "bytes": 11109,
+      "git_blob_sha": "bc7133d5c15feaf82cbeb3f389e37a480a1096ab",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3135.md"
+    },
+    {
+      "path": "ERCS/erc-3156.md",
+      "bytes": 22940,
+      "git_blob_sha": "7c1e5929accb0a511b392ac3f399bbff5dfb9e78",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3156.md"
+    },
+    {
+      "path": "ERCS/erc-3224.md",
+      "bytes": 18309,
+      "git_blob_sha": "0d3ab96f0c6c5031afc9599ed20d1787b7d16cf0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3224.md"
+    },
+    {
+      "path": "ERCS/erc-3234.md",
+      "bytes": 13384,
+      "git_blob_sha": "df9e3864da9a968754717b4560a9329338dd0b34",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3234.md"
+    },
+    {
+      "path": "ERCS/erc-3386.md",
+      "bytes": 16377,
+      "git_blob_sha": "81558c2b38439fd9f75f8031fd08e56b58007d28",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3386.md"
+    },
+    {
+      "path": "ERCS/erc-3440.md",
+      "bytes": 14671,
+      "git_blob_sha": "a343038554a60f388723d723198c52b4602a2964",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3440.md"
+    },
+    {
+      "path": "ERCS/erc-3448.md",
+      "bytes": 8246,
+      "git_blob_sha": "1a41bf7b4e681bbaa8cf13071ebb37a57491f7c4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3448.md"
+    },
+    {
+      "path": "ERCS/erc-3450.md",
+      "bytes": 12243,
+      "git_blob_sha": "7030877a628f5cc0f173f6b52ae151d96ef94d49",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3450.md"
+    },
+    {
+      "path": "ERCS/erc-3475.md",
+      "bytes": 25384,
+      "git_blob_sha": "f55b6dc3e3334dac6a6fb58c2957d3a4b80ac791",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3475.md"
+    },
+    {
+      "path": "ERCS/erc-3525.md",
+      "bytes": 30677,
+      "git_blob_sha": "93bb1fc1d4c420c3bce3ac8e95dd5be5df0173c8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3525.md"
+    },
+    {
+      "path": "ERCS/erc-3561.md",
+      "bytes": 12029,
+      "git_blob_sha": "91e868d8455ecf0ae188a5023c3759008c379f97",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3561.md"
+    },
+    {
+      "path": "ERCS/erc-3569.md",
+      "bytes": 7999,
+      "git_blob_sha": "e2419c3d9f8f7b8092741e01f7284b8936161ecb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3569.md"
+    },
+    {
+      "path": "ERCS/erc-3589.md",
+      "bytes": 11253,
+      "git_blob_sha": "1bfeb2edead5bdf0320b7f51449706a60916d58b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3589.md"
+    },
+    {
+      "path": "ERCS/erc-3643.md",
+      "bytes": 30319,
+      "git_blob_sha": "c4a5d3a2713f02f992755abd789ae35e297d7277",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3643.md"
+    },
+    {
+      "path": "ERCS/erc-3668.md",
+      "bytes": 29838,
+      "git_blob_sha": "ce9fa9ebf0e775e4cfb4ff43661f72bb522725a7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3668.md"
+    },
+    {
+      "path": "ERCS/erc-3722.md",
+      "bytes": 7345,
+      "git_blob_sha": "1b17795bc5269eb4a26fb6a397ab3dd0116ea50e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3722.md"
+    },
+    {
+      "path": "ERCS/erc-3754.md",
+      "bytes": 3576,
+      "git_blob_sha": "bc4dcdcf2a12678adf66cf286ee3499abcfb03ff",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3754.md"
+    },
+    {
+      "path": "ERCS/erc-3770.md",
+      "bytes": 2606,
+      "git_blob_sha": "7b3a48ad43b12f93a5c9cc5bb5cc11f8feaf4b05",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3770.md"
+    },
+    {
+      "path": "ERCS/erc-3772.md",
+      "bytes": 15311,
+      "git_blob_sha": "566964c6a48291f72843c6b1b20b6de41df22249",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3772.md"
+    },
+    {
+      "path": "ERCS/erc-4337.md",
+      "bytes": 48990,
+      "git_blob_sha": "14ff3ade7951a74dec54628a8f98474759b9be53",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4337.md"
+    },
+    {
+      "path": "ERCS/erc-4341.md",
+      "bytes": 6134,
+      "git_blob_sha": "6bc8c21655a56c3650e10f333152296ed355cd8a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4341.md"
+    },
+    {
+      "path": "ERCS/erc-4353.md",
+      "bytes": 9474,
+      "git_blob_sha": "b0b4a3e0db12c00ad8004794fcb55d352327fb50",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4353.md"
+    },
+    {
+      "path": "ERCS/erc-4361.md",
+      "bytes": 26740,
+      "git_blob_sha": "a2bd2284f7fded9e5bf7058ba2a1147605571ce7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4361.md"
+    },
+    {
+      "path": "ERCS/erc-4393.md",
+      "bytes": 23587,
+      "git_blob_sha": "9955beb26a6bef41d941576acd54e3e76f97a73f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4393.md"
+    },
+    {
+      "path": "ERCS/erc-4400.md",
+      "bytes": 6621,
+      "git_blob_sha": "500ff8ff26002d5b79629e1413660c05dc16dc15",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4400.md"
+    },
+    {
+      "path": "ERCS/erc-4430.md",
+      "bytes": 6841,
+      "git_blob_sha": "48dc234bc005648573542f4ee94d033f248d110d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4430.md"
+    },
+    {
+      "path": "ERCS/erc-4494.md",
+      "bytes": 11022,
+      "git_blob_sha": "450f4ca83a649694a6aeb960b61ca897a5ce3962",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4494.md"
+    },
+    {
+      "path": "ERCS/erc-4519.md",
+      "bytes": 19831,
+      "git_blob_sha": "b1743323f289e42b97085c8be37177b91afdcad0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4519.md"
+    },
+    {
+      "path": "ERCS/erc-4521.md",
+      "bytes": 2800,
+      "git_blob_sha": "d12bf999bd8cf6425ee14f5a7dbc7afa56452efa",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4521.md"
+    },
+    {
+      "path": "ERCS/erc-4524.md",
+      "bytes": 5713,
+      "git_blob_sha": "4475577eddebd259633e84c134eb623ba532ff9e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4524.md"
+    },
+    {
+      "path": "ERCS/erc-4527.md",
+      "bytes": 12460,
+      "git_blob_sha": "ae9291d594af1758b4e048e1338f7b4ac36450a2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4527.md"
+    },
+    {
+      "path": "ERCS/erc-4546.md",
+      "bytes": 8422,
+      "git_blob_sha": "c27fcabce67b99354510c9c375e642cce4ac9a84",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4546.md"
+    },
+    {
+      "path": "ERCS/erc-4626.md",
+      "bytes": 24417,
+      "git_blob_sha": "41de5ab9c01119d0c2f6700860d1cc25a278cf06",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+    },
+    {
+      "path": "ERCS/erc-4671.md",
+      "bytes": 12074,
+      "git_blob_sha": "f7f55b91e7d71099863385459dc952949d4bf31a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4671.md"
+    },
+    {
+      "path": "ERCS/erc-4675.md",
+      "bytes": 12006,
+      "git_blob_sha": "eee6b6e95df24c5c47371acdfc1dedc5b88f8f03",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4675.md"
+    },
+    {
+      "path": "ERCS/erc-4799.md",
+      "bytes": 10144,
+      "git_blob_sha": "922d6828122fb0dd69e8987e82f678ec10f7f346",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4799.md"
+    },
+    {
+      "path": "ERCS/erc-4804.md",
+      "bytes": 8940,
+      "git_blob_sha": "4a86e99ee83a781243c99c20da1d5c97788b6a33",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4804.md"
+    },
+    {
+      "path": "ERCS/erc-4824.md",
+      "bytes": 25020,
+      "git_blob_sha": "d2021546fcc4b4064d5ddfd9f5e262a339260262",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4824.md"
+    },
+    {
+      "path": "ERCS/erc-4834.md",
+      "bytes": 12740,
+      "git_blob_sha": "2f86485726c0bd14a49e8858628f04c91822770d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4834.md"
+    },
+    {
+      "path": "ERCS/erc-4883.md",
+      "bytes": 3324,
+      "git_blob_sha": "9385552b9982b01444c034f8cd7314ce902b8208",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4883.md"
+    },
+    {
+      "path": "ERCS/erc-4885.md",
+      "bytes": 14289,
+      "git_blob_sha": "ce7959ecb5d8b507bd707fc68c40d7f84a67a516",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4885.md"
+    },
+    {
+      "path": "ERCS/erc-4886.md",
+      "bytes": 17494,
+      "git_blob_sha": "c9800feaf3b5f79430c5cb376dfea57a0b5370de",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4886.md"
+    },
+    {
+      "path": "ERCS/erc-4906.md",
+      "bytes": 4002,
+      "git_blob_sha": "93e6492058a451db6b9beaae33bebe9dee0472cf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4906.md"
+    },
+    {
+      "path": "ERCS/erc-4907.md",
+      "bytes": 10780,
+      "git_blob_sha": "ed02d6cc76169a9b4870ca99550a29cebfa6ff97",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4907.md"
+    },
+    {
+      "path": "ERCS/erc-4910.md",
+      "bytes": 52755,
+      "git_blob_sha": "bd02bf70f7a21d1662be6f2073c6ac631cbe91ab",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4910.md"
+    },
+    {
+      "path": "ERCS/erc-4931.md",
+      "bytes": 21802,
+      "git_blob_sha": "5fbf719b18072a185b768a6b79e066ab40c345b3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4931.md"
+    },
+    {
+      "path": "ERCS/erc-4944.md",
+      "bytes": 3275,
+      "git_blob_sha": "59a3010f38645d08ef3c3a4cfba6c0cf8f3dc7eb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4944.md"
+    },
+    {
+      "path": "ERCS/erc-4950.md",
+      "bytes": 4564,
+      "git_blob_sha": "442b75545fe88f5ff0ad28be9dada40a1bcb98f9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4950.md"
+    },
+    {
+      "path": "ERCS/erc-4955.md",
+      "bytes": 7789,
+      "git_blob_sha": "9a3b98b74f53d3561cbc7a51b27775e2b7e2abcf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4955.md"
+    },
+    {
+      "path": "ERCS/erc-4972.md",
+      "bytes": 4245,
+      "git_blob_sha": "a0a57dba7a3a7c383cfab0a23bec4ab44387e0fc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4972.md"
+    },
+    {
+      "path": "ERCS/erc-4973.md",
+      "bytes": 12770,
+      "git_blob_sha": "9ddb3bc5efddc69d148c2bf26f24650a61662177",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4973.md"
+    },
+    {
+      "path": "ERCS/erc-4974.md",
+      "bytes": 10365,
+      "git_blob_sha": "ea447ceb7f0b801fe5c8c1b2725fb135d4432fb2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4974.md"
+    },
+    {
+      "path": "ERCS/erc-4987.md",
+      "bytes": 9599,
+      "git_blob_sha": "8c969ea16508e95c2017a7e8fa2e7fe2e39ab2ae",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4987.md"
+    },
+    {
+      "path": "ERCS/erc-5005.md",
+      "bytes": 10219,
+      "git_blob_sha": "e1dc3822ae4efa2bdf50c37e55655c09ba98e142",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5005.md"
+    },
+    {
+      "path": "ERCS/erc-5006.md",
+      "bytes": 5995,
+      "git_blob_sha": "f735e39f9c3acb7b9e4a1879074629ee4e42468e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5006.md"
+    },
+    {
+      "path": "ERCS/erc-5007.md",
+      "bytes": 4517,
+      "git_blob_sha": "a378410137f03ab3f73d094e9c726d1b54a02954",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5007.md"
+    },
+    {
+      "path": "ERCS/erc-5008.md",
+      "bytes": 2591,
+      "git_blob_sha": "5dde543fc75c2786b9f68b8bf0be39cc10dbaa4c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5008.md"
+    },
+    {
+      "path": "ERCS/erc-5018.md",
+      "bytes": 5928,
+      "git_blob_sha": "b83e93bfdfe544cb2339dd59e8b7b2bae6143bbe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5018.md"
+    },
+    {
+      "path": "ERCS/erc-5023.md",
+      "bytes": 10471,
+      "git_blob_sha": "d7b71cfd9e848cdcd3161ae265c8ec2b7fd6fc87",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5023.md"
+    },
+    {
+      "path": "ERCS/erc-5050.md",
+      "bytes": 20527,
+      "git_blob_sha": "d63b904487b70bedd42264d2d259ceaa1002063f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5050.md"
+    },
+    {
+      "path": "ERCS/erc-5058.md",
+      "bytes": 10321,
+      "git_blob_sha": "bac05416a7aeaff92faae587ae28d909ee532f1c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5058.md"
+    },
+    {
+      "path": "ERCS/erc-5094.md",
+      "bytes": 5615,
+      "git_blob_sha": "ed4fa85d83ad456903da64550e4c6d18134177af",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5094.md"
+    },
+    {
+      "path": "ERCS/erc-5095.md",
+      "bytes": 23971,
+      "git_blob_sha": "a2f9899399d9701c5145dab3932a07d872fd13d3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5095.md"
+    },
+    {
+      "path": "ERCS/erc-5114.md",
+      "bytes": 5339,
+      "git_blob_sha": "35cbbd5e41520c97dfa413168a0f1d69ca2f0e89",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5114.md"
+    },
+    {
+      "path": "ERCS/erc-5115.md",
+      "bytes": 20187,
+      "git_blob_sha": "91cef54e31bb2a677bac2d1e26baf4b34d4b944c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5115.md"
+    },
+    {
+      "path": "ERCS/erc-5131.md",
+      "bytes": 17945,
+      "git_blob_sha": "ad9f716c5e247f9c66208543ff90a24d676c68a5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5131.md"
+    },
+    {
+      "path": "ERCS/erc-5139.md",
+      "bytes": 17725,
+      "git_blob_sha": "c5c4a0d68a1b6d07db3388ffa0872fbdd4c1eb26",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5139.md"
+    },
+    {
+      "path": "ERCS/erc-5143.md",
+      "bytes": 9088,
+      "git_blob_sha": "72afb4bc0d02d3b598538c6cce2c3f77c34de50c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5143.md"
+    },
+    {
+      "path": "ERCS/erc-5164.md",
+      "bytes": 7610,
+      "git_blob_sha": "fde5b3f562279586cc112fbfedd879509fb5e008",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5164.md"
+    },
+    {
+      "path": "ERCS/erc-5169.md",
+      "bytes": 10493,
+      "git_blob_sha": "f9023b301807ba37cf79c8a6abdffeb7861556fb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5169.md"
+    },
+    {
+      "path": "ERCS/erc-5173.md",
+      "bytes": 27654,
+      "git_blob_sha": "263f4ecb2d5b2acdd50533d3e0fa8e378b9b153c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5173.md"
+    },
+    {
+      "path": "ERCS/erc-5185.md",
+      "bytes": 12773,
+      "git_blob_sha": "af133bc9ae2dca26e7de3159cacf67f5df952941",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5185.md"
+    },
+    {
+      "path": "ERCS/erc-5187.md",
+      "bytes": 8726,
+      "git_blob_sha": "efe9a0738d61b40e5b4f0688ef422550ca6e139c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5187.md"
+    },
+    {
+      "path": "ERCS/erc-5189.md",
+      "bytes": 33294,
+      "git_blob_sha": "8a229e12556541317b2aa0600a2ecb86b7cb7dbf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5189.md"
+    },
+    {
+      "path": "ERCS/erc-5192.md",
+      "bytes": 3350,
+      "git_blob_sha": "30e5d147e25d5df6895884b1de3db8b2a9caece8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5192.md"
+    },
+    {
+      "path": "ERCS/erc-5202.md",
+      "bytes": 9469,
+      "git_blob_sha": "b504c4e281a8850cdbb5dd9268cbbf22a5596e1b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5202.md"
+    },
+    {
+      "path": "ERCS/erc-5216.md",
+      "bytes": 4930,
+      "git_blob_sha": "d34e1f60c8c2bf612a129b16729b142906f17c0a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5216.md"
+    },
+    {
+      "path": "ERCS/erc-5218.md",
+      "bytes": 16071,
+      "git_blob_sha": "78dd05c5bd30462dd3b00c98e9f999fdc6166faf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5218.md"
+    },
+    {
+      "path": "ERCS/erc-5219.md",
+      "bytes": 4001,
+      "git_blob_sha": "57567e59d15876468a1269404371e670d2cb78b1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5219.md"
+    },
+    {
+      "path": "ERCS/erc-5247.md",
+      "bytes": 6373,
+      "git_blob_sha": "deae1f1f21e0f1a90afef0dfd24a787744923a3b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5247.md"
+    },
+    {
+      "path": "ERCS/erc-5252.md",
+      "bytes": 15031,
+      "git_blob_sha": "95ef2451e3086a4ee2268f5ddd27da7f1ae9b97d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5252.md"
+    },
+    {
+      "path": "ERCS/erc-5267.md",
+      "bytes": 9166,
+      "git_blob_sha": "7201e790a638d1071b5f31f7cfe699b1c6a4c555",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5267.md"
+    },
+    {
+      "path": "ERCS/erc-5269.md",
+      "bytes": 15142,
+      "git_blob_sha": "c28c2f3c2e880e346926e77266fd818302dcf40b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5269.md"
+    },
+    {
+      "path": "ERCS/erc-5289.md",
+      "bytes": 4541,
+      "git_blob_sha": "b228c734aeb485718773e0e5b926c27be15e4a85",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5289.md"
+    },
+    {
+      "path": "ERCS/erc-5298.md",
+      "bytes": 5548,
+      "git_blob_sha": "7b35677f2f0b75689dd23a5de0b8d3a2802084ee",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5298.md"
+    },
+    {
+      "path": "ERCS/erc-5313.md",
+      "bytes": 2511,
+      "git_blob_sha": "7c7e53f0cfe77f282e5cb878728e50726be5a9f5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5313.md"
+    },
+    {
+      "path": "ERCS/erc-5334.md",
+      "bytes": 7208,
+      "git_blob_sha": "d2d26624bae83be12c60eb49a6b4b32015da4e07",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5334.md"
+    },
+    {
+      "path": "ERCS/erc-5375.md",
+      "bytes": 13972,
+      "git_blob_sha": "3eaa5516c7ee1fdc70c4400f27f35ccfb3a14540",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5375.md"
+    },
+    {
+      "path": "ERCS/erc-5380.md",
+      "bytes": 7040,
+      "git_blob_sha": "320784e52525587c722905ec1862f1345418c9ee",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5380.md"
+    },
+    {
+      "path": "ERCS/erc-5409.md",
+      "bytes": 2844,
+      "git_blob_sha": "a276e696cee28c7ffbb570f8ed1720043606ea37",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5409.md"
+    },
+    {
+      "path": "ERCS/erc-5437.md",
+      "bytes": 7938,
+      "git_blob_sha": "286adb755d821db6fb1d6c7b2eee4f224bf6a02d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5437.md"
+    },
+    {
+      "path": "ERCS/erc-5453.md",
+      "bytes": 13512,
+      "git_blob_sha": "7d5d373a3e73f6218f6f82804f4d75afb8de03bd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5453.md"
+    },
+    {
+      "path": "ERCS/erc-5484.md",
+      "bytes": 5563,
+      "git_blob_sha": "a885f5298856510c6af066d3417555bb72a35670",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5484.md"
+    },
+    {
+      "path": "ERCS/erc-5485.md",
+      "bytes": 12291,
+      "git_blob_sha": "092a03f8cf327cee1df80f6b5a3dc756d513f238",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5485.md"
+    },
+    {
+      "path": "ERCS/erc-5489.md",
+      "bytes": 7142,
+      "git_blob_sha": "aec096b66bc551510b8f50e901ab91785244a39f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5489.md"
+    },
+    {
+      "path": "ERCS/erc-5496.md",
+      "bytes": 12332,
+      "git_blob_sha": "ea4367462695210c8042e6c357fa9d3833ca7771",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5496.md"
+    },
+    {
+      "path": "ERCS/erc-55.md",
+      "bytes": 3674,
+      "git_blob_sha": "325a70f9683ef06b76e6e526c4526af5c9b5b69b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-55.md"
+    },
+    {
+      "path": "ERCS/erc-5501.md",
+      "bytes": 15683,
+      "git_blob_sha": "a041ee3af257e4615dd6850c702afdecbd5f67da",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5501.md"
+    },
+    {
+      "path": "ERCS/erc-5505.md",
+      "bytes": 3531,
+      "git_blob_sha": "a4a5a08e52c0f9506126a650949f1419d19a075a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5505.md"
+    },
+    {
+      "path": "ERCS/erc-5507.md",
+      "bytes": 15581,
+      "git_blob_sha": "edf17d460286b888adbdc1fe0c9d00eb6bb23d39",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5507.md"
+    },
+    {
+      "path": "ERCS/erc-5516.md",
+      "bytes": 21870,
+      "git_blob_sha": "814f4a2b2665ed087e1fc0dd77ded57b5be719d8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5516.md"
+    },
+    {
+      "path": "ERCS/erc-5521.md",
+      "bytes": 25218,
+      "git_blob_sha": "6c08946e1375e0b20b30d1415e939c1874ce39f0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5521.md"
+    },
+    {
+      "path": "ERCS/erc-5528.md",
+      "bytes": 9594,
+      "git_blob_sha": "cb822cc106a58432f2a20868146fac1a4995c6fa",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5528.md"
+    },
+    {
+      "path": "ERCS/erc-5539.md",
+      "bytes": 14235,
+      "git_blob_sha": "88349c7d2e7a9bfa4ea14ae3833eee193ffbcd69",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5539.md"
+    },
+    {
+      "path": "ERCS/erc-5553.md",
+      "bytes": 12830,
+      "git_blob_sha": "044b43c14d8f2b248ddf70c1e41e395c35820a2b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5553.md"
+    },
+    {
+      "path": "ERCS/erc-5554.md",
+      "bytes": 15690,
+      "git_blob_sha": "c3c01db36e15f5a20cd44c1fabff8ebad6e8d192",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5554.md"
+    },
+    {
+      "path": "ERCS/erc-5559.md",
+      "bytes": 30281,
+      "git_blob_sha": "f4d4b2baf26aaa7da82649063ad93958f984e9f8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5559.md"
+    },
+    {
+      "path": "ERCS/erc-5560.md",
+      "bytes": 4389,
+      "git_blob_sha": "a0ba5a481c5c48f37536b1805f09839896b3f721",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5560.md"
+    },
+    {
+      "path": "ERCS/erc-5564.md",
+      "bytes": 19665,
+      "git_blob_sha": "778aa88aaef3594eff855c3f0dc9bd9e5c5ac571",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5564.md"
+    },
+    {
+      "path": "ERCS/erc-5568.md",
+      "bytes": 4762,
+      "git_blob_sha": "26c415392eedd753ff7286e571ef93fccd18b51c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5568.md"
+    },
+    {
+      "path": "ERCS/erc-5570.md",
+      "bytes": 12149,
+      "git_blob_sha": "90e4c547d7d8494241da415fb1adac03ff1fa43d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5570.md"
+    },
+    {
+      "path": "ERCS/erc-5573.md",
+      "bytes": 17826,
+      "git_blob_sha": "738f572eec74b8a638d4a6f08d423c7f29afc3e2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5573.md"
+    },
+    {
+      "path": "ERCS/erc-5585.md",
+      "bytes": 10360,
+      "git_blob_sha": "1449b967607e6ea2fecd80dc7c09299c8767b9f3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5585.md"
+    },
+    {
+      "path": "ERCS/erc-5604.md",
+      "bytes": 4597,
+      "git_blob_sha": "ba4848a8693a4f61b3bf0955225ab82440692b8c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5604.md"
+    },
+    {
+      "path": "ERCS/erc-5606.md",
+      "bytes": 7871,
+      "git_blob_sha": "aee18b4916818eca588527a65f1311994ed79952",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5606.md"
+    },
+    {
+      "path": "ERCS/erc-5615.md",
+      "bytes": 2634,
+      "git_blob_sha": "8bc5f4be5a090af8e6ef21bd3e918cf3db655ff7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5615.md"
+    },
+    {
+      "path": "ERCS/erc-5625.md",
+      "bytes": 9969,
+      "git_blob_sha": "492ac1fb10c67d55dee74ef029e97cbc6fb14787",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5625.md"
+    },
+    {
+      "path": "ERCS/erc-5630.md",
+      "bytes": 13264,
+      "git_blob_sha": "45cea4e9d3a619ee94e867c260442bda9295e355",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5630.md"
+    },
+    {
+      "path": "ERCS/erc-5633.md",
+      "bytes": 3464,
+      "git_blob_sha": "99576c2e540d3ec6c91ff0c11d828207cc129e70",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5633.md"
+    },
+    {
+      "path": "ERCS/erc-5635.md",
+      "bytes": 10519,
+      "git_blob_sha": "8329711264534d595e85f3afeb3d1171a20c7ac3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5635.md"
+    },
+    {
+      "path": "ERCS/erc-5639.md",
+      "bytes": 15490,
+      "git_blob_sha": "71892d0cb29091e5d9db8aae3d3650af9b8105fd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5639.md"
+    },
+    {
+      "path": "ERCS/erc-5643.md",
+      "bytes": 9767,
+      "git_blob_sha": "8f83bdc40f5882c8b5d33c1d850fc1c443ef64d8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5643.md"
+    },
+    {
+      "path": "ERCS/erc-5646.md",
+      "bytes": 4551,
+      "git_blob_sha": "db381c1f58fac1a6cbc306c2d32aab27afea92c2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5646.md"
+    },
+    {
+      "path": "ERCS/erc-5679.md",
+      "bytes": 5796,
+      "git_blob_sha": "988127a5bb524c6c4062bdbc63f996f240acb259",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5679.md"
+    },
+    {
+      "path": "ERCS/erc-5700.md",
+      "bytes": 18212,
+      "git_blob_sha": "425c18a3bf87478dfbf5dfdd8ada087f623e6834",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5700.md"
+    },
+    {
+      "path": "ERCS/erc-5719.md",
+      "bytes": 4597,
+      "git_blob_sha": "23ab6b79cb8e994dca55736303a19762181303c3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5719.md"
+    },
+    {
+      "path": "ERCS/erc-5725.md",
+      "bytes": 17438,
+      "git_blob_sha": "3537732e2cf1f41b90eb542ece6c6c8757c2eed3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5725.md"
+    },
+    {
+      "path": "ERCS/erc-5727.md",
+      "bytes": 18860,
+      "git_blob_sha": "ff338e7fb10fc7ec78838c3a61483bcb67f019b9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5727.md"
+    },
+    {
+      "path": "ERCS/erc-5732.md",
+      "bytes": 7438,
+      "git_blob_sha": "0828f88c2a39e0daa4f4f25dd35d888796f214ac",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5732.md"
+    },
+    {
+      "path": "ERCS/erc-5744.md",
+      "bytes": 4513,
+      "git_blob_sha": "1e78429af86f9dc50980ad5392685582f74dd287",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5744.md"
+    },
+    {
+      "path": "ERCS/erc-5750.md",
+      "bytes": 9057,
+      "git_blob_sha": "c570673aac43474d55ab0c4f0b19c9b94a8ad595",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5750.md"
+    },
+    {
+      "path": "ERCS/erc-5753.md",
+      "bytes": 13515,
+      "git_blob_sha": "abc42c14a75833643548473e4d9b7cb75bd198f7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5753.md"
+    },
+    {
+      "path": "ERCS/erc-5773.md",
+      "bytes": 26455,
+      "git_blob_sha": "ce5417220b8a0d51449ecb981b8904dad33441b4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5773.md"
+    },
+    {
+      "path": "ERCS/erc-5791.md",
+      "bytes": 11749,
+      "git_blob_sha": "14d38362c27d42773f4e4a8330426a350acbd7a2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5791.md"
+    },
+    {
+      "path": "ERCS/erc-5805.md",
+      "bytes": 18869,
+      "git_blob_sha": "d41429d627dd1fcba43ba134a8d2fbe36f448a2e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5805.md"
+    },
+    {
+      "path": "ERCS/erc-5827.md",
+      "bytes": 10549,
+      "git_blob_sha": "0467afefeeebffa1d3d5073ed3089b31de7e88b2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5827.md"
+    },
+    {
+      "path": "ERCS/erc-5850.md",
+      "bytes": 4674,
+      "git_blob_sha": "81faed21f46afc9941eb10a1da768838330043d2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5850.md"
+    },
+    {
+      "path": "ERCS/erc-5851.md",
+      "bytes": 14188,
+      "git_blob_sha": "a76020c925255d2eeb11410319dc30df0124af99",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5851.md"
+    },
+    {
+      "path": "ERCS/erc-5883.md",
+      "bytes": 4523,
+      "git_blob_sha": "5cfe3225bb677e0dc666d09303edf6f054b827bb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5883.md"
+    },
+    {
+      "path": "ERCS/erc-5902.md",
+      "bytes": 33820,
+      "git_blob_sha": "d2133f381bd70326a6e29b3f34f40945256c453a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5902.md"
+    },
+    {
+      "path": "ERCS/erc-5982.md",
+      "bytes": 4662,
+      "git_blob_sha": "910d38bd049c56b2b56a0db4fd622817497d4dd2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-5982.md"
+    },
+    {
+      "path": "ERCS/erc-600.md",
+      "bytes": 2957,
+      "git_blob_sha": "5165fa1fda244cf9e4b52088acbbabb8b07753e9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-600.md"
+    },
+    {
+      "path": "ERCS/erc-601.md",
+      "bytes": 3992,
+      "git_blob_sha": "19c5d811a8d2994f88de4beab6868bb520f1e112",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-601.md"
+    },
+    {
+      "path": "ERCS/erc-6047.md",
+      "bytes": 2754,
+      "git_blob_sha": "de99626217828c6873779bffabe65e53ad96efb7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6047.md"
+    },
+    {
+      "path": "ERCS/erc-6059.md",
+      "bytes": 29181,
+      "git_blob_sha": "a07c6c3cd15b89861460e5a5544366086a726bdc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6059.md"
+    },
+    {
+      "path": "ERCS/erc-6065.md",
+      "bytes": 17056,
+      "git_blob_sha": "f36cf08b809a248f38f69666768f9cdf122e8699",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6065.md"
+    },
+    {
+      "path": "ERCS/erc-6066.md",
+      "bytes": 7269,
+      "git_blob_sha": "0b72c77d6374a596cd9b4399b49180e7498869f3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6066.md"
+    },
+    {
+      "path": "ERCS/erc-6093.md",
+      "bytes": 17231,
+      "git_blob_sha": "a380142e1d65ed9139059519ab4f743699445370",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6093.md"
+    },
+    {
+      "path": "ERCS/erc-6105.md",
+      "bytes": 31280,
+      "git_blob_sha": "398608dc34e4cbb4a9051e53c61236ea8a52555b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6105.md"
+    },
+    {
+      "path": "ERCS/erc-6120.md",
+      "bytes": 26569,
+      "git_blob_sha": "16d885021f985c1652e091515852f5b7fd536107",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6120.md"
+    },
+    {
+      "path": "ERCS/erc-6123.md",
+      "bytes": 19152,
+      "git_blob_sha": "6a34555c1083729a442dd9e8bb37b8aeb4b26226",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6123.md"
+    },
+    {
+      "path": "ERCS/erc-6147.md",
+      "bytes": 16426,
+      "git_blob_sha": "3769c0f78f1d9cbc3753e5e6793da3953fb79915",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6147.md"
+    },
+    {
+      "path": "ERCS/erc-6150.md",
+      "bytes": 12233,
+      "git_blob_sha": "32fd6f19a69fa8d129fad1d9eedddc2e87d5ab67",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6150.md"
+    },
+    {
+      "path": "ERCS/erc-6170.md",
+      "bytes": 5911,
+      "git_blob_sha": "ed5fdd2dc45f9e8cb6d98cb78ce2a0427803cf54",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6170.md"
+    },
+    {
+      "path": "ERCS/erc-6220.md",
+      "bytes": 23132,
+      "git_blob_sha": "d68ff9fd92c8b0259301066aa5b741190f2de044",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6220.md"
+    },
+    {
+      "path": "ERCS/erc-6224.md",
+      "bytes": 23256,
+      "git_blob_sha": "44030a10aa12e9031dd9839da92b7c3e56335a92",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6224.md"
+    },
+    {
+      "path": "ERCS/erc-6229.md",
+      "bytes": 8227,
+      "git_blob_sha": "c06fcd35f74f059f129c05ca260a9042abe7f3c6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6229.md"
+    },
+    {
+      "path": "ERCS/erc-6239.md",
+      "bytes": 14481,
+      "git_blob_sha": "cb06821a920f52c95d939f92166b8cd746dec130",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6239.md"
+    },
+    {
+      "path": "ERCS/erc-6268.md",
+      "bytes": 3887,
+      "git_blob_sha": "d2afdf0fcdf9849ba51413c7c6396e5368ab3ee9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6268.md"
+    },
+    {
+      "path": "ERCS/erc-6315.md",
+      "bytes": 4115,
+      "git_blob_sha": "66faa61f06bc057944d674a16172b37cbc898ee8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6315.md"
+    },
+    {
+      "path": "ERCS/erc-6327.md",
+      "bytes": 11149,
+      "git_blob_sha": "d7e8703f605ae7a03702dab0cd6f02703c480ec8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6327.md"
+    },
+    {
+      "path": "ERCS/erc-634.md",
+      "bytes": 4358,
+      "git_blob_sha": "f53462f899c9d007a9ba71cfd33cfb829e81f60c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-634.md"
+    },
+    {
+      "path": "ERCS/erc-6353.md",
+      "bytes": 11399,
+      "git_blob_sha": "4134fb835973a3e0cdbffd3932a9d5d42bd616c6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6353.md"
+    },
+    {
+      "path": "ERCS/erc-6357.md",
+      "bytes": 3664,
+      "git_blob_sha": "8bea1ac574c57d061f4a68931d93448d92d598bb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6357.md"
+    },
+    {
+      "path": "ERCS/erc-6358.md",
+      "bytes": 22227,
+      "git_blob_sha": "b2d39328cc1b80a0f552d8a37a0227008ca56624",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6358.md"
+    },
+    {
+      "path": "ERCS/erc-6366.md",
+      "bytes": 5979,
+      "git_blob_sha": "ffc37f7b53433e0e40e3a14eaec42975ed0fd6fb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6366.md"
+    },
+    {
+      "path": "ERCS/erc-6372.md",
+      "bytes": 4783,
+      "git_blob_sha": "38e63de5bf9466a63597f061dafe5b909dfd4bf9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6372.md"
+    },
+    {
+      "path": "ERCS/erc-6381.md",
+      "bytes": 21757,
+      "git_blob_sha": "cf1544d6c1325d0a2846931963241c638e7416dd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6381.md"
+    },
+    {
+      "path": "ERCS/erc-6384.md",
+      "bytes": 9335,
+      "git_blob_sha": "f392c3797047d8721d09ab7f4a29a17bedb32b36",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6384.md"
+    },
+    {
+      "path": "ERCS/erc-6454.md",
+      "bytes": 12813,
+      "git_blob_sha": "bd51bd4363813216c6e868e67457316790745d08",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6454.md"
+    },
+    {
+      "path": "ERCS/erc-6464.md",
+      "bytes": 10462,
+      "git_blob_sha": "7156420d68bee139052b332b2a6479768cf5636c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6464.md"
+    },
+    {
+      "path": "ERCS/erc-6492.md",
+      "bytes": 15608,
+      "git_blob_sha": "6a136b6fec6332c03c94b512ed5e559a16b78425",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6492.md"
+    },
+    {
+      "path": "ERCS/erc-6506.md",
+      "bytes": 24466,
+      "git_blob_sha": "6eef78d0c3c676fae39c0023851a29f1fb87f327",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6506.md"
+    },
+    {
+      "path": "ERCS/erc-6538.md",
+      "bytes": 14290,
+      "git_blob_sha": "fcb1ffc88b483a4a537a83c88e297b8cc4211db2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6538.md"
+    },
+    {
+      "path": "ERCS/erc-6551.md",
+      "bytes": 31235,
+      "git_blob_sha": "ebe6f689c236b5bf5bf25eacd697e55688fbfdea",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6551.md"
+    },
+    {
+      "path": "ERCS/erc-6596.md",
+      "bytes": 43034,
+      "git_blob_sha": "8915c457e09caa70d003ae434bfbcead0ed1f61a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6596.md"
+    },
+    {
+      "path": "ERCS/erc-6604.md",
+      "bytes": 10440,
+      "git_blob_sha": "120e137ca45f1374194bb43e0c613b0ed864acd6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6604.md"
+    },
+    {
+      "path": "ERCS/erc-6617.md",
+      "bytes": 6925,
+      "git_blob_sha": "d511ff85b3112f3b6a35b126f5bc5044a542f423",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6617.md"
+    },
+    {
+      "path": "ERCS/erc-6662.md",
+      "bytes": 6089,
+      "git_blob_sha": "3b0f11307dd2cdf3e820363b097830367ffd9b48",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6662.md"
+    },
+    {
+      "path": "ERCS/erc-6672.md",
+      "bytes": 10652,
+      "git_blob_sha": "6ab8e31c660cb1c4157a86935e937b9ccef73112",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6672.md"
+    },
+    {
+      "path": "ERCS/erc-6682.md",
+      "bytes": 7108,
+      "git_blob_sha": "b83b3c01638de3db75f2a41397568d25f8b50f3a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6682.md"
+    },
+    {
+      "path": "ERCS/erc-67.md",
+      "bytes": 3870,
+      "git_blob_sha": "3bea904a08402898bb439bbff0b85812023a4c3b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-67.md"
+    },
+    {
+      "path": "ERCS/erc-6734.md",
+      "bytes": 31621,
+      "git_blob_sha": "f22df1b8fe4db1e9b42f2008049d743c7c3834fc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6734.md"
+    },
+    {
+      "path": "ERCS/erc-6735.md",
+      "bytes": 15081,
+      "git_blob_sha": "aed7c4f0b6341be070b5cc15a3e58cbde8ded29e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6735.md"
+    },
+    {
+      "path": "ERCS/erc-6785.md",
+      "bytes": 7850,
+      "git_blob_sha": "b02f62f48c4ca0ee99e009ce9411cdba720c81e7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6785.md"
+    },
+    {
+      "path": "ERCS/erc-6786.md",
+      "bytes": 4841,
+      "git_blob_sha": "d8e0a20386f5c28841c79ee1d8f9a497a88f1933",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6786.md"
+    },
+    {
+      "path": "ERCS/erc-6787.md",
+      "bytes": 6384,
+      "git_blob_sha": "0656bb65ba3d601f3f6bde6bae93b0dbd5901c83",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6787.md"
+    },
+    {
+      "path": "ERCS/erc-6806.md",
+      "bytes": 5878,
+      "git_blob_sha": "b37562b02c29a12007960095c0c79c20a5c02992",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6806.md"
+    },
+    {
+      "path": "ERCS/erc-6808.md",
+      "bytes": 31368,
+      "git_blob_sha": "658eeabf049b8c1e17cd025d0256b695cfb38233",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6808.md"
+    },
+    {
+      "path": "ERCS/erc-6809.md",
+      "bytes": 31648,
+      "git_blob_sha": "7cab46f5166da12644a9d623767bf05688d98dac",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6809.md"
+    },
+    {
+      "path": "ERCS/erc-681.md",
+      "bytes": 8953,
+      "git_blob_sha": "772e9ca4bdbff99034d0221334b2feb07b1d5d61",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-681.md"
+    },
+    {
+      "path": "ERCS/erc-6821.md",
+      "bytes": 2146,
+      "git_blob_sha": "8e39dd7bf8929b9461d8e9552f1924f1d2e1f196",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6821.md"
+    },
+    {
+      "path": "ERCS/erc-6823.md",
+      "bytes": 9053,
+      "git_blob_sha": "2d01a52fec326c9f20b534fc92efa63c53422718",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6823.md"
+    },
+    {
+      "path": "ERCS/erc-6860.md",
+      "bytes": 24565,
+      "git_blob_sha": "dd390096c55681e8fc1366f999614b87f5e83219",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6860.md"
+    },
+    {
+      "path": "ERCS/erc-6864.md",
+      "bytes": 10540,
+      "git_blob_sha": "c4ddcac52423b813c07ac8ba72dd6bfc2ba1841f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6864.md"
+    },
+    {
+      "path": "ERCS/erc-6865.md",
+      "bytes": 9772,
+      "git_blob_sha": "0bf78ab6806b7bf3f15f25619203923819162b64",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6865.md"
+    },
+    {
+      "path": "ERCS/erc-6900.md",
+      "bytes": 41867,
+      "git_blob_sha": "96c2c83ce1c63a94c559d4ee2e1bb71d70bfb358",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6900.md"
+    },
+    {
+      "path": "ERCS/erc-6909.md",
+      "bytes": 22369,
+      "git_blob_sha": "fe7affd8f0b564fc533b321a5bb6cff518b90685",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6909.md"
+    },
+    {
+      "path": "ERCS/erc-6932.md",
+      "bytes": 6488,
+      "git_blob_sha": "0e29ba35fdd18a4642649eb350761c6df9384795",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6932.md"
+    },
+    {
+      "path": "ERCS/erc-6944.md",
+      "bytes": 1951,
+      "git_blob_sha": "ed934544f9e9aeb360825d535fa289b6ad573f5e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6944.md"
+    },
+    {
+      "path": "ERCS/erc-6956.md",
+      "bytes": 48291,
+      "git_blob_sha": "d7a249f413f244df880871434a70212fd09ba19e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6956.md"
+    },
+    {
+      "path": "ERCS/erc-6960.md",
+      "bytes": 18152,
+      "git_blob_sha": "367c9e0e5ae69dfc6b47ccbb15bd9a8a97b0c8ec",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6960.md"
+    },
+    {
+      "path": "ERCS/erc-6981.md",
+      "bytes": 23269,
+      "git_blob_sha": "e27c75f75949472a50bf486c1d0ae469c381115a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6981.md"
+    },
+    {
+      "path": "ERCS/erc-6982.md",
+      "bytes": 6153,
+      "git_blob_sha": "f5a19b6af19a935f720f51ec3cd58aa054decb21",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6982.md"
+    },
+    {
+      "path": "ERCS/erc-6997.md",
+      "bytes": 13798,
+      "git_blob_sha": "8a6c12c8b9c8dcefe40f291e5a1a43b5d51eb4b0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-6997.md"
+    },
+    {
+      "path": "ERCS/erc-7007.md",
+      "bytes": 13215,
+      "git_blob_sha": "ddf6a83c2278a310a54f4b21c2190ed2da45ad2f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7007.md"
+    },
+    {
+      "path": "ERCS/erc-7015.md",
+      "bytes": 8669,
+      "git_blob_sha": "739e6910f6ed6ba13d667b5b41ef9a9711fcab48",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7015.md"
+    },
+    {
+      "path": "ERCS/erc-7053.md",
+      "bytes": 7825,
+      "git_blob_sha": "e0277da33d473af05c50635642f41d804a8657bf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7053.md"
+    },
+    {
+      "path": "ERCS/erc-7066.md",
+      "bytes": 11235,
+      "git_blob_sha": "39caeabfde0d6daa0b339fce363ec438fee69f04",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7066.md"
+    },
+    {
+      "path": "ERCS/erc-7085.md",
+      "bytes": 12294,
+      "git_blob_sha": "3b752fec9d7e1c269e3b99d700a93bd83e7323f4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7085.md"
+    },
+    {
+      "path": "ERCS/erc-7087.md",
+      "bytes": 7003,
+      "git_blob_sha": "20e3576a72e64a131bf0b1a125f56be5d9bdcd13",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7087.md"
+    },
+    {
+      "path": "ERCS/erc-7092.md",
+      "bytes": 28058,
+      "git_blob_sha": "04c01779ef9300d374f83f36f5dce617106683a1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7092.md"
+    },
+    {
+      "path": "ERCS/erc-7093.md",
+      "bytes": 21823,
+      "git_blob_sha": "6e6ce1190c1bf7d051a559a855f325164319d070",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7093.md"
+    },
+    {
+      "path": "ERCS/erc-7144.md",
+      "bytes": 12569,
+      "git_blob_sha": "c6e40eee42ed1645fe235a398945151847582e22",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7144.md"
+    },
+    {
+      "path": "ERCS/erc-7160.md",
+      "bytes": 11479,
+      "git_blob_sha": "c87125600145490cfe85886006681dcf455b693c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7160.md"
+    },
+    {
+      "path": "ERCS/erc-7196.md",
+      "bytes": 5399,
+      "git_blob_sha": "201b720ef7d4a6c48b403712d02b948d414563a7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7196.md"
+    },
+    {
+      "path": "ERCS/erc-7201.md",
+      "bytes": 7664,
+      "git_blob_sha": "d8f97af655040ceb572f5175cd4affd12da0e6ea",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7201.md"
+    },
+    {
+      "path": "ERCS/erc-7204.md",
+      "bytes": 8452,
+      "git_blob_sha": "08ed038ff4b82128884faa09baf3761e0dfb640b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7204.md"
+    },
+    {
+      "path": "ERCS/erc-7208.md",
+      "bytes": 21071,
+      "git_blob_sha": "b85e5ddf573cada8480c6745a4c2c524267e5a0f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7208.md"
+    },
+    {
+      "path": "ERCS/erc-721.md",
+      "bytes": 30325,
+      "git_blob_sha": "7f231829fbabd03f991e0d2de54188c1e186542e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-721.md"
+    },
+    {
+      "path": "ERCS/erc-7231.md",
+      "bytes": 7580,
+      "git_blob_sha": "01783070b5d026a9ab925b15b14e47d39203032e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7231.md"
+    },
+    {
+      "path": "ERCS/erc-7246.md",
+      "bytes": 11700,
+      "git_blob_sha": "39e8472cac2cb220ad72d779df1af3a18e6daa29",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7246.md"
+    },
+    {
+      "path": "ERCS/erc-725.md",
+      "bytes": 12412,
+      "git_blob_sha": "64d68734b8907f5acc807f746c8d0a4c3c019174",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-725.md"
+    },
+    {
+      "path": "ERCS/erc-7254.md",
+      "bytes": 3317,
+      "git_blob_sha": "9a5e50c4bcacb0a40e0f3af2b15a219ecb0316fb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7254.md"
+    },
+    {
+      "path": "ERCS/erc-7272.md",
+      "bytes": 8456,
+      "git_blob_sha": "b4646d339a768bc3e6385fe477835983a4185526",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7272.md"
+    },
+    {
+      "path": "ERCS/erc-7280.md",
+      "bytes": 6082,
+      "git_blob_sha": "d736d2e9becb42c1948333c0ba0460f9c080ccc7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7280.md"
+    },
+    {
+      "path": "ERCS/erc-7291.md",
+      "bytes": 50005,
+      "git_blob_sha": "a2d1af890c350adff5933766d8ec348e4ad654e3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7291.md"
+    },
+    {
+      "path": "ERCS/erc-7303.md",
+      "bytes": 18236,
+      "git_blob_sha": "7a1a3f0f53ec11183656912b51590a12c4768ace",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7303.md"
+    },
+    {
+      "path": "ERCS/erc-7390.md",
+      "bytes": 28711,
+      "git_blob_sha": "1aace3a826d053a345fcf475b755621721b99889",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7390.md"
+    },
+    {
+      "path": "ERCS/erc-7399.md",
+      "bytes": 16028,
+      "git_blob_sha": "f51a88a6ffb0d30f41728a0d0bfa49065bf77f96",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7399.md"
+    },
+    {
+      "path": "ERCS/erc-7401.md",
+      "bytes": 31117,
+      "git_blob_sha": "d3d937d62fbba6cf3ec5ef385a284fdacf7e800d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7401.md"
+    },
+    {
+      "path": "ERCS/erc-7405.md",
+      "bytes": 14137,
+      "git_blob_sha": "243028700dae94b307b53c24a318fd40ddf3a8f4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7405.md"
+    },
+    {
+      "path": "ERCS/erc-7406.md",
+      "bytes": 7742,
+      "git_blob_sha": "777f1bc80d60c349068271c6bfbd71faaa03d011",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7406.md"
+    },
+    {
+      "path": "ERCS/erc-7409.md",
+      "bytes": 22897,
+      "git_blob_sha": "f94d9f082346b42f44f0d8aeefc86219b1146f7b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7409.md"
+    },
+    {
+      "path": "ERCS/erc-7410.md",
+      "bytes": 6001,
+      "git_blob_sha": "8766d80d791fe078f5a43549b5e8c3c1afdd803d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7410.md"
+    },
+    {
+      "path": "ERCS/erc-7412.md",
+      "bytes": 11926,
+      "git_blob_sha": "025e57a19b4fbb95e960cf21a4c735b82f715048",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7412.md"
+    },
+    {
+      "path": "ERCS/erc-7417.md",
+      "bytes": 51862,
+      "git_blob_sha": "065e740946f28717b2d9c10bc506a77d2d13b315",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7417.md"
+    },
+    {
+      "path": "ERCS/erc-7425.md",
+      "bytes": 10373,
+      "git_blob_sha": "cc5bc84e91af11fbec6871e43f78cf1a5224652c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7425.md"
+    },
+    {
+      "path": "ERCS/erc-7432.md",
+      "bytes": 16942,
+      "git_blob_sha": "1043f65f675874a8ebbf23dd33bfbd799efcfebf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7432.md"
+    },
+    {
+      "path": "ERCS/erc-7439.md",
+      "bytes": 16786,
+      "git_blob_sha": "825d08adc13434e15dc244695687500af501bbaf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7439.md"
+    },
+    {
+      "path": "ERCS/erc-7444.md",
+      "bytes": 6765,
+      "git_blob_sha": "1ce0eed37bba92e3e438e309b4f0f4372f830cc2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7444.md"
+    },
+    {
+      "path": "ERCS/erc-7484.md",
+      "bytes": 19073,
+      "git_blob_sha": "80c07471e708b9f5ff7e791281fd0e45d52b0031",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7484.md"
+    },
+    {
+      "path": "ERCS/erc-7496.md",
+      "bytes": 15449,
+      "git_blob_sha": "ca94ceb92842577ffb35a08661d072103a14f80f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7496.md"
+    },
+    {
+      "path": "ERCS/erc-7498.md",
+      "bytes": 15761,
+      "git_blob_sha": "3789c4b3e05b4e5b16f282f4f7d271095bca2135",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7498.md"
+    },
+    {
+      "path": "ERCS/erc-7506.md",
+      "bytes": 24349,
+      "git_blob_sha": "6d0c47b84e9315bb94e4e0da82d8a7710a32a1b5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7506.md"
+    },
+    {
+      "path": "ERCS/erc-7507.md",
+      "bytes": 6802,
+      "git_blob_sha": "9c63eda69b651b8d7536750e0a79c1d83aad35ad",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7507.md"
+    },
+    {
+      "path": "ERCS/erc-7508.md",
+      "bytes": 58040,
+      "git_blob_sha": "15b1afc6536f93112298a295bcdccf8ba73a9b84",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7508.md"
+    },
+    {
+      "path": "ERCS/erc-7509.md",
+      "bytes": 15393,
+      "git_blob_sha": "ee5c60a3019aadddc6924acfdf43b6e4fdf863c2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7509.md"
+    },
+    {
+      "path": "ERCS/erc-7510.md",
+      "bytes": 10642,
+      "git_blob_sha": "87e4d3941b32145576fdf7b835bd874d682573fd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7510.md"
+    },
+    {
+      "path": "ERCS/erc-7511.md",
+      "bytes": 9875,
+      "git_blob_sha": "674061ec77f505a18f69ec517128dc95e63a8a15",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7511.md"
+    },
+    {
+      "path": "ERCS/erc-7512.md",
+      "bytes": 12238,
+      "git_blob_sha": "87f2978baa31bdfa1fa40766693641ea7e4c98fb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7512.md"
+    },
+    {
+      "path": "ERCS/erc-7513.md",
+      "bytes": 12919,
+      "git_blob_sha": "dd0c8cdc48e39ba96149d9ad3c22cdfa9a5a4d0b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7513.md"
+    },
+    {
+      "path": "ERCS/erc-7517.md",
+      "bytes": 11695,
+      "git_blob_sha": "0e996bfa37e02ce24526087dec52b04f54233972",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7517.md"
+    },
+    {
+      "path": "ERCS/erc-7518.md",
+      "bytes": 54016,
+      "git_blob_sha": "1cc3ae268107736ede6d823399606819849e6356",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7518.md"
+    },
+    {
+      "path": "ERCS/erc-7521.md",
+      "bytes": 20569,
+      "git_blob_sha": "0b2821e4d80fa846a4631736d82dd0b490c32f4e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7521.md"
+    },
+    {
+      "path": "ERCS/erc-7522.md",
+      "bytes": 7220,
+      "git_blob_sha": "62beb76b5f0b9f22cd9db32075266a18a2d965ab",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7522.md"
+    },
+    {
+      "path": "ERCS/erc-7524.md",
+      "bytes": 17732,
+      "git_blob_sha": "a24b0b46a9d1c5c2f462fe3aa21cfd5dc9d704f6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7524.md"
+    },
+    {
+      "path": "ERCS/erc-7527.md",
+      "bytes": 24561,
+      "git_blob_sha": "3a97d72a6e202b2a41b22ce2c53685182a15b8dd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7527.md"
+    },
+    {
+      "path": "ERCS/erc-7528.md",
+      "bytes": 4245,
+      "git_blob_sha": "db2f7f6d3acec0205e4a0c0cad1e5050fd71f889",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7528.md"
+    },
+    {
+      "path": "ERCS/erc-7529.md",
+      "bytes": 13638,
+      "git_blob_sha": "9a58f84cd883de6a75763314a891cdec783b9c30",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7529.md"
+    },
+    {
+      "path": "ERCS/erc-7531.md",
+      "bytes": 11862,
+      "git_blob_sha": "7ea3662408a1e0782315c25c5f858fb0b2ce12dc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7531.md"
+    },
+    {
+      "path": "ERCS/erc-7533.md",
+      "bytes": 23290,
+      "git_blob_sha": "7054847ddf65b76896c2629bf4ae95b1a3faa6c3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7533.md"
+    },
+    {
+      "path": "ERCS/erc-7535.md",
+      "bytes": 6612,
+      "git_blob_sha": "b7b1f88a81bc58db50e2e446c9381ff6af098fc5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7535.md"
+    },
+    {
+      "path": "ERCS/erc-7538.md",
+      "bytes": 2816,
+      "git_blob_sha": "080efe873fd7c5962c809c7b7c3fcea184361446",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7538.md"
+    },
+    {
+      "path": "ERCS/erc-7540.md",
+      "bytes": 27784,
+      "git_blob_sha": "04855ca77076488a18f9bebde1b5cdc348ea7dbc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7540.md"
+    },
+    {
+      "path": "ERCS/erc-7546.md",
+      "bytes": 15821,
+      "git_blob_sha": "9ac254fa4887e6be5c5b2adffa5d2e1d62e895ac",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7546.md"
+    },
+    {
+      "path": "ERCS/erc-7548.md",
+      "bytes": 8944,
+      "git_blob_sha": "e16fd3fa2cb848e5644bf31956fb8fbf2385307c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7548.md"
+    },
+    {
+      "path": "ERCS/erc-7555.md",
+      "bytes": 10588,
+      "git_blob_sha": "d8e25bf210ccd5914ddbf6974e785897f19eeb25",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7555.md"
+    },
+    {
+      "path": "ERCS/erc-7561.md",
+      "bytes": 6586,
+      "git_blob_sha": "4e2a67f9d7133d15f423129f485a477fcd739d5c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7561.md"
+    },
+    {
+      "path": "ERCS/erc-7562.md",
+      "bytes": 34745,
+      "git_blob_sha": "42225af8726d79da8310f5d47f6b32391b453593",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7562.md"
+    },
+    {
+      "path": "ERCS/erc-7564.md",
+      "bytes": 9586,
+      "git_blob_sha": "5fe7bf8b7d9e3d37811a9785054ec40ba4510cb3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7564.md"
+    },
+    {
+      "path": "ERCS/erc-7565.md",
+      "bytes": 17873,
+      "git_blob_sha": "52873de2ad1732dc3e4ae24bd1998901ac58e7f0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7565.md"
+    },
+    {
+      "path": "ERCS/erc-7566.md",
+      "bytes": 8078,
+      "git_blob_sha": "1f879b41cf74b2c1b966e2155878bc7b24d4e522",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7566.md"
+    },
+    {
+      "path": "ERCS/erc-7572.md",
+      "bytes": 5461,
+      "git_blob_sha": "cb9107cac2f70766259beef4ac775a69f75185d3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7572.md"
+    },
+    {
+      "path": "ERCS/erc-7573.md",
+      "bytes": 49576,
+      "git_blob_sha": "5d60183e8e1235800bc2d43882a34f40811c4ef3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7573.md"
+    },
+    {
+      "path": "ERCS/erc-7574.md",
+      "bytes": 8306,
+      "git_blob_sha": "f6e5db2769b6d0041d4b6d702feec0d75a32c1f9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7574.md"
+    },
+    {
+      "path": "ERCS/erc-7575.md",
+      "bytes": 7950,
+      "git_blob_sha": "c3e279e88c88291b09583e43000ca1c2d95010a4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7575.md"
+    },
+    {
+      "path": "ERCS/erc-7578.md",
+      "bytes": 13299,
+      "git_blob_sha": "57da1488e173219e711cf7626952d346abac7625",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7578.md"
+    },
+    {
+      "path": "ERCS/erc-7579.md",
+      "bytes": 26506,
+      "git_blob_sha": "65671bcb6136d764fa187a9bc71039dde8188bfe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7579.md"
+    },
+    {
+      "path": "ERCS/erc-7580.md",
+      "bytes": 4912,
+      "git_blob_sha": "4bbc908d4dd21c3b9078303fd6ed526c2388ee26",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7580.md"
+    },
+    {
+      "path": "ERCS/erc-7582.md",
+      "bytes": 12223,
+      "git_blob_sha": "5b2746508a5305e6121656df73c94bfb1ba8db62",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7582.md"
+    },
+    {
+      "path": "ERCS/erc-7585.md",
+      "bytes": 19667,
+      "git_blob_sha": "ddbd016e93d1befa1708df6f24a2ef00163e6c89",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7585.md"
+    },
+    {
+      "path": "ERCS/erc-7586.md",
+      "bytes": 9999,
+      "git_blob_sha": "5f1fdfb2d662bcbf264e85f907c878d16f29fe33",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7586.md"
+    },
+    {
+      "path": "ERCS/erc-7588.md",
+      "bytes": 8027,
+      "git_blob_sha": "212f05103408758ca03edca9139be6d577b0d952",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7588.md"
+    },
+    {
+      "path": "ERCS/erc-7589.md",
+      "bytes": 22643,
+      "git_blob_sha": "e374451f3b9badd52874d59ae324f416a46dca1f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7589.md"
+    },
+    {
+      "path": "ERCS/erc-7590.md",
+      "bytes": 9872,
+      "git_blob_sha": "50023a449f987d72e6e40843b159776a86501cfe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7590.md"
+    },
+    {
+      "path": "ERCS/erc-7595.md",
+      "bytes": 18294,
+      "git_blob_sha": "c56748caa45ac2e4d481eebc70da2d4b13cc82f8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7595.md"
+    },
+    {
+      "path": "ERCS/erc-7597.md",
+      "bytes": 5787,
+      "git_blob_sha": "5033fbe70ce220074310ea44af7205a6b0633fcd",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7597.md"
+    },
+    {
+      "path": "ERCS/erc-7598.md",
+      "bytes": 7556,
+      "git_blob_sha": "33beed71272ca7649246b1b4f5a55a56401701f8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7598.md"
+    },
+    {
+      "path": "ERCS/erc-7603.md",
+      "bytes": 8211,
+      "git_blob_sha": "1c705bc13323f981c5127b74f75f6eb97c5db63c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7603.md"
+    },
+    {
+      "path": "ERCS/erc-7604.md",
+      "bytes": 8859,
+      "git_blob_sha": "e99e84bcba6011d09700430bfe11dd2fa7ead1da",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7604.md"
+    },
+    {
+      "path": "ERCS/erc-7613.md",
+      "bytes": 20386,
+      "git_blob_sha": "a1f71a87897018a4e227c199467d6780082a1b3d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7613.md"
+    },
+    {
+      "path": "ERCS/erc-7615.md",
+      "bytes": 16100,
+      "git_blob_sha": "71057699f07874d024cefe1094c12dea0f269d11",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7615.md"
+    },
+    {
+      "path": "ERCS/erc-7617.md",
+      "bytes": 2450,
+      "git_blob_sha": "e0f93ef6e2d2d5872356b7e465808ad25a2b4bc1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7617.md"
+    },
+    {
+      "path": "ERCS/erc-7618.md",
+      "bytes": 2900,
+      "git_blob_sha": "a7a870ef35fa40e06f4041a1494230530c1350aa",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7618.md"
+    },
+    {
+      "path": "ERCS/erc-7621.md",
+      "bytes": 29742,
+      "git_blob_sha": "5649b0dd7ae401b34cd892c8e4372cc3a82912d1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7621.md"
+    },
+    {
+      "path": "ERCS/erc-7627.md",
+      "bytes": 8079,
+      "git_blob_sha": "c198a0ca01fbfc951afb2184278601373d189f29",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7627.md"
+    },
+    {
+      "path": "ERCS/erc-7628.md",
+      "bytes": 10230,
+      "git_blob_sha": "ff0a1398ea5d5b676efe5d6092d9804a08a8b747",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7628.md"
+    },
+    {
+      "path": "ERCS/erc-7629.md",
+      "bytes": 12996,
+      "git_blob_sha": "275da09470a556311204abc46bab64e0f433e88a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7629.md"
+    },
+    {
+      "path": "ERCS/erc-7631.md",
+      "bytes": 9202,
+      "git_blob_sha": "1d90eae283a37dea35bfd7c0a6887dbd2e89f5d4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7631.md"
+    },
+    {
+      "path": "ERCS/erc-7632.md",
+      "bytes": 3354,
+      "git_blob_sha": "96743737036d14061cbae38bc6046ce76ebd15f7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7632.md"
+    },
+    {
+      "path": "ERCS/erc-7634.md",
+      "bytes": 9422,
+      "git_blob_sha": "09985f30ee412cd63cd9a1f3ced5577037d2bff7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7634.md"
+    },
+    {
+      "path": "ERCS/erc-7638.md",
+      "bytes": 8378,
+      "git_blob_sha": "2a3efd2daa6e3d0df7321725e6f0b2f348f16f97",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7638.md"
+    },
+    {
+      "path": "ERCS/erc-7641.md",
+      "bytes": 13756,
+      "git_blob_sha": "b18dc1fd0c9c66a13e7b956b1faadc33c4c461a2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7641.md"
+    },
+    {
+      "path": "ERCS/erc-7644.md",
+      "bytes": 10524,
+      "git_blob_sha": "5eaaa8c987fd73dbc642613393375b03c09dcd4f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7644.md"
+    },
+    {
+      "path": "ERCS/erc-7649.md",
+      "bytes": 20143,
+      "git_blob_sha": "e2c65ac3c5fe6d585707a17481b1f1b819bda560",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7649.md"
+    },
+    {
+      "path": "ERCS/erc-7651.md",
+      "bytes": 23052,
+      "git_blob_sha": "899fb0d5ef2ee69d118f7145714f360e369836ff",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7651.md"
+    },
+    {
+      "path": "ERCS/erc-7652.md",
+      "bytes": 7077,
+      "git_blob_sha": "6b66a292c4a5adac4811ce88ae07074eec0a8d48",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7652.md"
+    },
+    {
+      "path": "ERCS/erc-7654.md",
+      "bytes": 7128,
+      "git_blob_sha": "3230c01bfb6af26414e32bfcb6bab7cbdfa6d335",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7654.md"
+    },
+    {
+      "path": "ERCS/erc-7656.md",
+      "bytes": 14065,
+      "git_blob_sha": "293bbb38e47380b9af177d6c2cb46acbab97ec6a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7656.md"
+    },
+    {
+      "path": "ERCS/erc-7662.md",
+      "bytes": 7979,
+      "git_blob_sha": "f0b954663d2304539a76b0b6b93c8ed097ecbd59",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7662.md"
+    },
+    {
+      "path": "ERCS/erc-7673.md",
+      "bytes": 13229,
+      "git_blob_sha": "f64a473c6f653f4c8300defbff35805d4b0bf6d1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7673.md"
+    },
+    {
+      "path": "ERCS/erc-7674.md",
+      "bytes": 4603,
+      "git_blob_sha": "307761d2c4e3336cb598a98985f8a1067ed4c95d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7674.md"
+    },
+    {
+      "path": "ERCS/erc-7677.md",
+      "bytes": 16299,
+      "git_blob_sha": "9a4727fb188cce02b53ce456d35ad97243e1fe6d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7677.md"
+    },
+    {
+      "path": "ERCS/erc-7679.md",
+      "bytes": 13075,
+      "git_blob_sha": "b3d12b8684672e41e8b18c3a02c8ec20729f980d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7679.md"
+    },
+    {
+      "path": "ERCS/erc-7681.md",
+      "bytes": 7319,
+      "git_blob_sha": "49b7d746a2c7dc867066e873988d0802aab6e726",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7681.md"
+    },
+    {
+      "path": "ERCS/erc-7682.md",
+      "bytes": 12085,
+      "git_blob_sha": "10bc205b991ab868417ddafb7e121a180f89c8d9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7682.md"
+    },
+    {
+      "path": "ERCS/erc-7683.md",
+      "bytes": 26400,
+      "git_blob_sha": "26105adb5f9fc107698a4a2895c904ff7b50c4e9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7683.md"
+    },
+    {
+      "path": "ERCS/erc-7694.md",
+      "bytes": 9243,
+      "git_blob_sha": "fc1be4506cda719c2c768d9ea70103aec292b2e3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7694.md"
+    },
+    {
+      "path": "ERCS/erc-7695.md",
+      "bytes": 33264,
+      "git_blob_sha": "5e1e652a97a907a3d2c9f0c8efac0cc1dcae98ca",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7695.md"
+    },
+    {
+      "path": "ERCS/erc-7699.md",
+      "bytes": 12349,
+      "git_blob_sha": "b0497b8b60b17b7899a579672362d27d576a3e3c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7699.md"
+    },
+    {
+      "path": "ERCS/erc-7700.md",
+      "bytes": 27127,
+      "git_blob_sha": "c46616ce53b2f60236c9335474a20c52fc63d88b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7700.md"
+    },
+    {
+      "path": "ERCS/erc-7710.md",
+      "bytes": 13035,
+      "git_blob_sha": "d09cb67794fc39277fd32380d827e6c6616c601d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7710.md"
+    },
+    {
+      "path": "ERCS/erc-7715.md",
+      "bytes": 17581,
+      "git_blob_sha": "c6b8878b08a4ffc159f9f488df4bf73fd4d6984c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7715.md"
+    },
+    {
+      "path": "ERCS/erc-7720.md",
+      "bytes": 9940,
+      "git_blob_sha": "83b830b69788d6adb5b721722fafc07630d10dda",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7720.md"
+    },
+    {
+      "path": "ERCS/erc-7721.md",
+      "bytes": 12094,
+      "git_blob_sha": "29c2b3b6494f74fc84f9b2dc0f6cbe3b4cf4c7bf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7721.md"
+    },
+    {
+      "path": "ERCS/erc-7722.md",
+      "bytes": 16130,
+      "git_blob_sha": "940f677ff0db1da83af2f41c748bd8ffdd42b47d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7722.md"
+    },
+    {
+      "path": "ERCS/erc-7726.md",
+      "bytes": 4333,
+      "git_blob_sha": "ee22070a364df1ffa57a74e87389a52f47bc674e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7726.md"
+    },
+    {
+      "path": "ERCS/erc-7729.md",
+      "bytes": 3071,
+      "git_blob_sha": "d839b5b4d33a034962aa94210882ad5f5e20dab6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7729.md"
+    },
+    {
+      "path": "ERCS/erc-7730.md",
+      "bytes": 107920,
+      "git_blob_sha": "0b84ca22dcb30b4a7d8efc0de5861144e13d0cd4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7730.md"
+    },
+    {
+      "path": "ERCS/erc-7734.md",
+      "bytes": 10801,
+      "git_blob_sha": "52683d933320ca0f1d1755c5a788a168230aced0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7734.md"
+    },
+    {
+      "path": "ERCS/erc-7738.md",
+      "bytes": 8012,
+      "git_blob_sha": "9921e864b23d878017f987ffe636443c7139a98f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7738.md"
+    },
+    {
+      "path": "ERCS/erc-7739.md",
+      "bytes": 15566,
+      "git_blob_sha": "f89474b7fc9ad930e72b5900a8a7c791502fccd3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7739.md"
+    },
+    {
+      "path": "ERCS/erc-7741.md",
+      "bytes": 7458,
+      "git_blob_sha": "47ef38948c2ede4cb59694dc5ae05d192daa67b0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7741.md"
+    },
+    {
+      "path": "ERCS/erc-7743.md",
+      "bytes": 14526,
+      "git_blob_sha": "d792f12b6bd88b6dad3fdc4de2ceef354ca3e1f1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7743.md"
+    },
+    {
+      "path": "ERCS/erc-7744.md",
+      "bytes": 7699,
+      "git_blob_sha": "b3eddf9455ffda2720c7a0498f250aeab3c7fc43",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7744.md"
+    },
+    {
+      "path": "ERCS/erc-7746.md",
+      "bytes": 5911,
+      "git_blob_sha": "8db0d7ff198487464608f45ce58deb24fd88bb83",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7746.md"
+    },
+    {
+      "path": "ERCS/erc-7750.md",
+      "bytes": 21383,
+      "git_blob_sha": "9ccd321da221935e280e69c6ca823fd83c7cfbdc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7750.md"
+    },
+    {
+      "path": "ERCS/erc-7751.md",
+      "bytes": 6630,
+      "git_blob_sha": "5f822326fb367e06a01035a743f3245f59616864",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7751.md"
+    },
+    {
+      "path": "ERCS/erc-7754.md",
+      "bytes": 13301,
+      "git_blob_sha": "6747df351ac2d4c27f9eb2a7a643e9718e886c45",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7754.md"
+    },
+    {
+      "path": "ERCS/erc-7758.md",
+      "bytes": 21026,
+      "git_blob_sha": "e4c7e75f1451675d5855673b03f32acd08b6d493",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7758.md"
+    },
+    {
+      "path": "ERCS/erc-7760.md",
+      "bytes": 21058,
+      "git_blob_sha": "50fb32b43a7690b2df4f8cbe8e2d2ac810d87a03",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7760.md"
+    },
+    {
+      "path": "ERCS/erc-7765.md",
+      "bytes": 8722,
+      "git_blob_sha": "1eef47ecaed9e8548af47cae10bb39a6344f9ee3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7765.md"
+    },
+    {
+      "path": "ERCS/erc-7766.md",
+      "bytes": 6678,
+      "git_blob_sha": "564150eceedee0b4c4becbdb88ac8801fd908bd7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7766.md"
+    },
+    {
+      "path": "ERCS/erc-7769.md",
+      "bytes": 17680,
+      "git_blob_sha": "63232637cb9305691146e47c06604d420839a61b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7769.md"
+    },
+    {
+      "path": "ERCS/erc-777.md",
+      "bytes": 56039,
+      "git_blob_sha": "28b83f577f018b012372a9de1759e4174096b66b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-777.md"
+    },
+    {
+      "path": "ERCS/erc-7770.md",
+      "bytes": 11264,
+      "git_blob_sha": "f935d53db17c2f4983f152b844fd2a9d6b703b70",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7770.md"
+    },
+    {
+      "path": "ERCS/erc-7774.md",
+      "bytes": 11624,
+      "git_blob_sha": "35d95eccdf9c395d90be3721e3665f9b7c1bf490",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7774.md"
+    },
+    {
+      "path": "ERCS/erc-7776.md",
+      "bytes": 19164,
+      "git_blob_sha": "94f26bd178394cd85b957a241b32177c8c944bf5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7776.md"
+    },
+    {
+      "path": "ERCS/erc-7777.md",
+      "bytes": 32379,
+      "git_blob_sha": "62daca28b0c4eb7daab6b0bb464c30aba6865252",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7777.md"
+    },
+    {
+      "path": "ERCS/erc-7779.md",
+      "bytes": 13218,
+      "git_blob_sha": "065f43520394f2a378aa9c31f05901554d2cb6db",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7779.md"
+    },
+    {
+      "path": "ERCS/erc-7780.md",
+      "bytes": 8846,
+      "git_blob_sha": "854525ea02cba1484c3ea54b41c44fb6d7c9b72a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7780.md"
+    },
+    {
+      "path": "ERCS/erc-7785.md",
+      "bytes": 5392,
+      "git_blob_sha": "d498d5c1442af97c1c1518aca51fc36904d26894",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7785.md"
+    },
+    {
+      "path": "ERCS/erc-7786.md",
+      "bytes": 13503,
+      "git_blob_sha": "e96de85ebf52f8421d017e42088b6ce69d389560",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7786.md"
+    },
+    {
+      "path": "ERCS/erc-7787.md",
+      "bytes": 9691,
+      "git_blob_sha": "1752053ca300bc1743aee5c1bf54c11b82ced547",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7787.md"
+    },
+    {
+      "path": "ERCS/erc-7794.md",
+      "bytes": 27443,
+      "git_blob_sha": "a25019dd9765848bc8094d8221775eb8dbb14f03",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7794.md"
+    },
+    {
+      "path": "ERCS/erc-7795.md",
+      "bytes": 15885,
+      "git_blob_sha": "9a828f799e3aa34332ecccc7943586a968ced516",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7795.md"
+    },
+    {
+      "path": "ERCS/erc-7796.md",
+      "bytes": 7951,
+      "git_blob_sha": "be10b9afdf35e7acef8bb154ec40b9454cef4d2a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7796.md"
+    },
+    {
+      "path": "ERCS/erc-7802.md",
+      "bytes": 14850,
+      "git_blob_sha": "37db87beca1a33b504c4c166d667259e1227f30a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7802.md"
+    },
+    {
+      "path": "ERCS/erc-7803.md",
+      "bytes": 7636,
+      "git_blob_sha": "2efc8ef03a23857b433c8d0236c6b2c822a3f038",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7803.md"
+    },
+    {
+      "path": "ERCS/erc-7806.md",
+      "bytes": 38506,
+      "git_blob_sha": "580569a36f3c6dbaf69ca2cdc7468cc4a8e10a02",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7806.md"
+    },
+    {
+      "path": "ERCS/erc-7811.md",
+      "bytes": 8112,
+      "git_blob_sha": "b91fdb8c0b7e1981a031af3535e9a14138ef57eb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7811.md"
+    },
+    {
+      "path": "ERCS/erc-7812.md",
+      "bytes": 20684,
+      "git_blob_sha": "a3f280bb65fb3bfc39f356517c96cbd37e352f01",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7812.md"
+    },
+    {
+      "path": "ERCS/erc-7813.md",
+      "bytes": 26328,
+      "git_blob_sha": "f75ab9d5a974efdbfc679c6e27610d377e440093",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7813.md"
+    },
+    {
+      "path": "ERCS/erc-7818.md",
+      "bytes": 12918,
+      "git_blob_sha": "1655b0fdb16a0db2ae64beba7a73c216d0bc7869",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7818.md"
+    },
+    {
+      "path": "ERCS/erc-7820.md",
+      "bytes": 20378,
+      "git_blob_sha": "e2f783439ea04181e22de14c89964c28aab046b4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7820.md"
+    },
+    {
+      "path": "ERCS/erc-7821.md",
+      "bytes": 14722,
+      "git_blob_sha": "7317df1622c1597d6a1d118e6b370a93ff2f7b05",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7821.md"
+    },
+    {
+      "path": "ERCS/erc-7827.md",
+      "bytes": 5037,
+      "git_blob_sha": "8d94a36d8383ee5c6da017d988004ffb4a89c8d0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7827.md"
+    },
+    {
+      "path": "ERCS/erc-7828.md",
+      "bytes": 16752,
+      "git_blob_sha": "e0ec55cba1f731dfd47483a07fc1393735caf8c8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7828.md"
+    },
+    {
+      "path": "ERCS/erc-7829.md",
+      "bytes": 10399,
+      "git_blob_sha": "c1c1681fad797393e8bac0ffeb52f4ea102a61fe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7829.md"
+    },
+    {
+      "path": "ERCS/erc-7831.md",
+      "bytes": 17271,
+      "git_blob_sha": "eecdd4c7251ca56637cda103d38bed058fcfbcdb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7831.md"
+    },
+    {
+      "path": "ERCS/erc-7832.md",
+      "bytes": 14857,
+      "git_blob_sha": "194da43aa44d6bff592cd1a1312100cef26e1b1d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7832.md"
+    },
+    {
+      "path": "ERCS/erc-7836.md",
+      "bytes": 10104,
+      "git_blob_sha": "b0f917309ffa9a2f7677c08f494f065c17ade8a7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7836.md"
+    },
+    {
+      "path": "ERCS/erc-7837.md",
+      "bytes": 16672,
+      "git_blob_sha": "d550454a135c7038d66d348679adfabb6823a0ef",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7837.md"
+    },
+    {
+      "path": "ERCS/erc-7841.md",
+      "bytes": 34334,
+      "git_blob_sha": "475e87dbfecb7962087a93955f14ded275c30cee",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7841.md"
+    },
+    {
+      "path": "ERCS/erc-7845.md",
+      "bytes": 23429,
+      "git_blob_sha": "5c56565f181becf20b6a7b18caa8b946a97cc4a5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7845.md"
+    },
+    {
+      "path": "ERCS/erc-7846.md",
+      "bytes": 7164,
+      "git_blob_sha": "6406201bc93da2f05544cbb8f675b53f5f7a8472",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7846.md"
+    },
+    {
+      "path": "ERCS/erc-7847.md",
+      "bytes": 13606,
+      "git_blob_sha": "ad5788e74055b919f096bda811aa9a985ca1816a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7847.md"
+    },
+    {
+      "path": "ERCS/erc-7856.md",
+      "bytes": 9069,
+      "git_blob_sha": "3b8b3955b5602a9ea519d2cc30ee1b13f0ae6e85",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7856.md"
+    },
+    {
+      "path": "ERCS/erc-7857.md",
+      "bytes": 43770,
+      "git_blob_sha": "cd8647a45613e5f6288fcad360f7e56d90924f3c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7857.md"
+    },
+    {
+      "path": "ERCS/erc-7858.md",
+      "bytes": 12879,
+      "git_blob_sha": "0520583044f937add05c68a7dd8521130b59c17b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7858.md"
+    },
+    {
+      "path": "ERCS/erc-7861.md",
+      "bytes": 13254,
+      "git_blob_sha": "218c9173ae0b95ddab1539a4f0748e2d723de0b0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7861.md"
+    },
+    {
+      "path": "ERCS/erc-7866.md",
+      "bytes": 19972,
+      "git_blob_sha": "77c2a9344c8250e7a822fe903318d1ed6f452576",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7866.md"
+    },
+    {
+      "path": "ERCS/erc-7871.md",
+      "bytes": 4686,
+      "git_blob_sha": "d5f870df3510a93855722f791beea298252102bf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7871.md"
+    },
+    {
+      "path": "ERCS/erc-7876.md",
+      "bytes": 25132,
+      "git_blob_sha": "e5f6bd74814c0a6e8b4b3b6468905062f4f1b5c9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7876.md"
+    },
+    {
+      "path": "ERCS/erc-7878.md",
+      "bytes": 8205,
+      "git_blob_sha": "8a2a5a0ab2dd621edcb821383fd54be81180e827",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7878.md"
+    },
+    {
+      "path": "ERCS/erc-7884.md",
+      "bytes": 8016,
+      "git_blob_sha": "a20cb3dd96e50ba7e573ed6e62cb58773e00d518",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7884.md"
+    },
+    {
+      "path": "ERCS/erc-7887.md",
+      "bytes": 12318,
+      "git_blob_sha": "2f378797c45fdfa4ee1ef60bddf694bdeaa83d20",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7887.md"
+    },
+    {
+      "path": "ERCS/erc-7888.md",
+      "bytes": 33474,
+      "git_blob_sha": "b697784e00b02bd8a73c9de44909596f3c2867fe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7888.md"
+    },
+    {
+      "path": "ERCS/erc-7891.md",
+      "bytes": 8330,
+      "git_blob_sha": "030a1e316d0d8aa8403c6c1bcfc27ff2fee3d4c0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7891.md"
+    },
+    {
+      "path": "ERCS/erc-7893.md",
+      "bytes": 43692,
+      "git_blob_sha": "fe637e87f589b80cf6b71603e694de98d90ad874",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7893.md"
+    },
+    {
+      "path": "ERCS/erc-7895.md",
+      "bytes": 8581,
+      "git_blob_sha": "19670bbd96392c756150474d4e7ef006a96bd207",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7895.md"
+    },
+    {
+      "path": "ERCS/erc-7897.md",
+      "bytes": 11594,
+      "git_blob_sha": "0b8f91d41c3b7793de6b3f976472977846055434",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7897.md"
+    },
+    {
+      "path": "ERCS/erc-7902.md",
+      "bytes": 45635,
+      "git_blob_sha": "562194328594c987a3e54681dcf1d806bc64df9e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7902.md"
+    },
+    {
+      "path": "ERCS/erc-7908.md",
+      "bytes": 14893,
+      "git_blob_sha": "4365c0023a5489b305ccfc3a861c6d3117a3fa60",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7908.md"
+    },
+    {
+      "path": "ERCS/erc-7913.md",
+      "bytes": 7842,
+      "git_blob_sha": "735917ef81617cede384fc5a52cb91c120f5ed46",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7913.md"
+    },
+    {
+      "path": "ERCS/erc-7920.md",
+      "bytes": 10879,
+      "git_blob_sha": "7347070c37d7bc63e82bcf707eacff35c1b418ef",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7920.md"
+    },
+    {
+      "path": "ERCS/erc-7929.md",
+      "bytes": 22470,
+      "git_blob_sha": "9cf1a2c80bf359c463dcc53fd4775f8f0962f648",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7929.md"
+    },
+    {
+      "path": "ERCS/erc-7930.md",
+      "bytes": 15177,
+      "git_blob_sha": "6f15d2d3f8e561fe41e3bd9edc0b6de60ad309f4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7930.md"
+    },
+    {
+      "path": "ERCS/erc-7936.md",
+      "bytes": 7388,
+      "git_blob_sha": "e1ceae6f5e079ae1f85a3cf6dd4f193a39aa5bf2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7936.md"
+    },
+    {
+      "path": "ERCS/erc-7943.md",
+      "bytes": 37920,
+      "git_blob_sha": "05091fac219f8fd03377269bcc95f2c596db9e62",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7943.md"
+    },
+    {
+      "path": "ERCS/erc-7945.md",
+      "bytes": 17468,
+      "git_blob_sha": "e590818a046f64c10570bf85a87c56db2f77f56b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7945.md"
+    },
+    {
+      "path": "ERCS/erc-7946.md",
+      "bytes": 39327,
+      "git_blob_sha": "9d8f56adb50c98d990fc0866ffd4d093013e5719",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7946.md"
+    },
+    {
+      "path": "ERCS/erc-7947.md",
+      "bytes": 8554,
+      "git_blob_sha": "e09b1400d83d15abc253cf58d81623026ead95e2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7947.md"
+    },
+    {
+      "path": "ERCS/erc-7950.md",
+      "bytes": 2421,
+      "git_blob_sha": "05cb589ef813454d4aff8e778ecec487c1dbb888",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7950.md"
+    },
+    {
+      "path": "ERCS/erc-7955.md",
+      "bytes": 27972,
+      "git_blob_sha": "411f0f6b15912550967cac9829f909d8a64ed6d5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7955.md"
+    },
+    {
+      "path": "ERCS/erc-7962.md",
+      "bytes": 25239,
+      "git_blob_sha": "3a6e7fd7fce247032a8189c62f5cd56e9c74a725",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7962.md"
+    },
+    {
+      "path": "ERCS/erc-7963.md",
+      "bytes": 16536,
+      "git_blob_sha": "806605c6b5731e63d1a29629e298c65e8fd96ffa",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7963.md"
+    },
+    {
+      "path": "ERCS/erc-7964.md",
+      "bytes": 43354,
+      "git_blob_sha": "3158de7bd0a5e1996b374299089724065d7ae219",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7964.md"
+    },
+    {
+      "path": "ERCS/erc-7965.md",
+      "bytes": 16705,
+      "git_blob_sha": "7bf83352a07bef023d4410d5f07aaa5ee5306cf6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7965.md"
+    },
+    {
+      "path": "ERCS/erc-7968.md",
+      "bytes": 8220,
+      "git_blob_sha": "c5ce31f8763ce44218c4f19ac4c6b679c4c6dbb2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7968.md"
+    },
+    {
+      "path": "ERCS/erc-7969.md",
+      "bytes": 11127,
+      "git_blob_sha": "9d206443a4ab9cdc74455b3e1ce4aca3e3c188c0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7969.md"
+    },
+    {
+      "path": "ERCS/erc-7984.md",
+      "bytes": 12116,
+      "git_blob_sha": "c342c88b31ad0f0792bc1a4e5d54cfb1951b2596",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7984.md"
+    },
+    {
+      "path": "ERCS/erc-7985.md",
+      "bytes": 7809,
+      "git_blob_sha": "053e3e891960cfb89bd346d514372fd83781eb99",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7985.md"
+    },
+    {
+      "path": "ERCS/erc-7988.md",
+      "bytes": 10324,
+      "git_blob_sha": "37287ff61a1f17e7edcdc710977a64772edf1ae7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7988.md"
+    },
+    {
+      "path": "ERCS/erc-7992.md",
+      "bytes": 13114,
+      "git_blob_sha": "7cf81d9839773a2ff02a987660685122550f49a0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7992.md"
+    },
+    {
+      "path": "ERCS/erc-7994.md",
+      "bytes": 8261,
+      "git_blob_sha": "4cc59ef3f4f80c27d111f779a0d05afccd2cfd82",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7994.md"
+    },
+    {
+      "path": "ERCS/erc-7996.md",
+      "bytes": 3617,
+      "git_blob_sha": "24da0edde867141b31db496cac648cf23339206c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7996.md"
+    },
+    {
+      "path": "ERCS/erc-8000.md",
+      "bytes": 8051,
+      "git_blob_sha": "8c2e02d79fcd75f4c1a827b287f1c044c5b120ae",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8000.md"
+    },
+    {
+      "path": "ERCS/erc-8001.md",
+      "bytes": 14066,
+      "git_blob_sha": "3915c5b82e5707a1c76c634bfc57b437a5441503",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8001.md"
+    },
+    {
+      "path": "ERCS/erc-8002.md",
+      "bytes": 18174,
+      "git_blob_sha": "29f3b7194735d29be2d5bbb5f33cfdc07d56fcf8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8002.md"
+    },
+    {
+      "path": "ERCS/erc-8004.md",
+      "bytes": 24470,
+      "git_blob_sha": "7653a80922c0bf0243669f30e7a2d4aabfe006aa",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8004.md"
+    },
+    {
+      "path": "ERCS/erc-801.md",
+      "bytes": 1947,
+      "git_blob_sha": "d0e979b27a9fc4972524f9e15f93b2120a5f2d8a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-801.md"
+    },
+    {
+      "path": "ERCS/erc-8017.md",
+      "bytes": 15656,
+      "git_blob_sha": "588a2e35f76a45840ae7013494d6ee12c36f6780",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8017.md"
+    },
+    {
+      "path": "ERCS/erc-8019.md",
+      "bytes": 7602,
+      "git_blob_sha": "228fde1b779f16e2c10986c9dc641c3da4540b0c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8019.md"
+    },
+    {
+      "path": "ERCS/erc-8023.md",
+      "bytes": 9609,
+      "git_blob_sha": "7ae1d86fca99230ed3baf84ec2b5fe99b371ef7b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8023.md"
+    },
+    {
+      "path": "ERCS/erc-8033.md",
+      "bytes": 19241,
+      "git_blob_sha": "0d1bdb76299765b464f45d243fea21bf700ce7dc",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8033.md"
+    },
+    {
+      "path": "ERCS/erc-8034.md",
+      "bytes": 35446,
+      "git_blob_sha": "e0b6b25fc3ce645ba9235e395103b0cb69b8a78d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8034.md"
+    },
+    {
+      "path": "ERCS/erc-8040.md",
+      "bytes": 9380,
+      "git_blob_sha": "b08bb57be1eecf68fd3547e9626b8721fc5ede29",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8040.md"
+    },
+    {
+      "path": "ERCS/erc-8041.md",
+      "bytes": 13605,
+      "git_blob_sha": "87d3832dacb16ca2c41072103d3b62e196491005",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8041.md"
+    },
+    {
+      "path": "ERCS/erc-8042.md",
+      "bytes": 13930,
+      "git_blob_sha": "2a1c945306d226b82d9364c8e4e101442125c3e3",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8042.md"
+    },
+    {
+      "path": "ERCS/erc-8047.md",
+      "bytes": 39530,
+      "git_blob_sha": "ecef8214715803ffba404d894fa98698ce7f74ef",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8047.md"
+    },
+    {
+      "path": "ERCS/erc-8048.md",
+      "bytes": 26700,
+      "git_blob_sha": "d1c592fc4993b4ea76bf7717c227560a22f325fe",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8048.md"
+    },
+    {
+      "path": "ERCS/erc-8049.md",
+      "bytes": 12144,
+      "git_blob_sha": "a0f423d46773d16c38f1e56dc854d6f8ac17eada",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8049.md"
+    },
+    {
+      "path": "ERCS/erc-8054.md",
+      "bytes": 12415,
+      "git_blob_sha": "d803b71316d70e158f3b222a1cf7adebfbae873f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8054.md"
+    },
+    {
+      "path": "ERCS/erc-8056.md",
+      "bytes": 18111,
+      "git_blob_sha": "5e33d3d0245a597c9f14b193c3989d5f9e05c526",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8056.md"
+    },
+    {
+      "path": "ERCS/erc-8063.md",
+      "bytes": 7928,
+      "git_blob_sha": "1afbcb8a3a6be07e2f2cad90bd31aabb574bcd91",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8063.md"
+    },
+    {
+      "path": "ERCS/erc-8065.md",
+      "bytes": 44651,
+      "git_blob_sha": "33af1a16942ecffe6bddba4582ea68383ed8b04f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8065.md"
+    },
+    {
+      "path": "ERCS/erc-8074.md",
+      "bytes": 4966,
+      "git_blob_sha": "7e847e34e22f83285359f254ce9840a3fedd36be",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8074.md"
+    },
+    {
+      "path": "ERCS/erc-8084.md",
+      "bytes": 9746,
+      "git_blob_sha": "d4e742e084f3aaa38b6567463b456b1e0439bf7d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8084.md"
+    },
+    {
+      "path": "ERCS/erc-8085.md",
+      "bytes": 16127,
+      "git_blob_sha": "061d83b22c35d4a9f73095df3daa05848cdb40f2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8085.md"
+    },
+    {
+      "path": "ERCS/erc-8086.md",
+      "bytes": 36573,
+      "git_blob_sha": "6f9fb76fba55a891f767887a2da2b0659a8f9725",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8086.md"
+    },
+    {
+      "path": "ERCS/erc-8092.md",
+      "bytes": 15463,
+      "git_blob_sha": "ffb3e99258d0947dd26286df84f84edb19b605a6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8092.md"
+    },
+    {
+      "path": "ERCS/erc-8100.md",
+      "bytes": 49969,
+      "git_blob_sha": "595dab6ae1ae24b72fabf5138c76a0b862643f89",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8100.md"
+    },
+    {
+      "path": "ERCS/erc-8106.md",
+      "bytes": 10639,
+      "git_blob_sha": "45c7f70915b6ea1c1d17f8bbd6bf32d466c2123a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8106.md"
+    },
+    {
+      "path": "ERCS/erc-8107.md",
+      "bytes": 174965,
+      "git_blob_sha": "b4579817d362ffb2a226877ffc474e7557fdd130",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8107.md"
+    },
+    {
+      "path": "ERCS/erc-8109.md",
+      "bytes": 22688,
+      "git_blob_sha": "f96e0fd30ee45edb27c8c9d61a8fc0c3ac9a593a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8109.md"
+    },
+    {
+      "path": "ERCS/erc-8110.md",
+      "bytes": 25974,
+      "git_blob_sha": "8f0d679b7244338fb6fb7db96d5908a31a795b6a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8110.md"
+    },
+    {
+      "path": "ERCS/erc-8111.md",
+      "bytes": 3322,
+      "git_blob_sha": "d6abc6451f9dca20622d6f2a326a3f832bc705b7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8111.md"
+    },
+    {
+      "path": "ERCS/erc-8113.md",
+      "bytes": 9654,
+      "git_blob_sha": "558240d447854972ebc7d89f20ad9bfc5e0d049c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8113.md"
+    },
+    {
+      "path": "ERCS/erc-8117.md",
+      "bytes": 17459,
+      "git_blob_sha": "ec2a30cd2560d46c893f57c03c9654219f8470b1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8117.md"
+    },
+    {
+      "path": "ERCS/erc-8119.md",
+      "bytes": 10430,
+      "git_blob_sha": "d94001cb42d2871c240cac55f835c57fe4acb6f8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8119.md"
+    },
+    {
+      "path": "ERCS/erc-8121.md",
+      "bytes": 19520,
+      "git_blob_sha": "b4e125711cd545135d0f45c56d208dd78af28868",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8121.md"
+    },
+    {
+      "path": "ERCS/erc-8122.md",
+      "bytes": 10671,
+      "git_blob_sha": "76f848859c3b83d98f5040ca1ff096cde9ff4255",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8122.md"
+    },
+    {
+      "path": "ERCS/erc-8126.md",
+      "bytes": 30878,
+      "git_blob_sha": "f9f7d17eca1b85bd7829e0e1240a028ee6ca99bf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8126.md"
+    },
+    {
+      "path": "ERCS/erc-8127.md",
+      "bytes": 9674,
+      "git_blob_sha": "9d250f58bbe8985d402bd775e3f57a402e936612",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8127.md"
+    },
+    {
+      "path": "ERCS/erc-8143.md",
+      "bytes": 8322,
+      "git_blob_sha": "6b20c3240fb8f73712fc5cd75542ee7831d46425",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8143.md"
+    },
+    {
+      "path": "ERCS/erc-8152.md",
+      "bytes": 22698,
+      "git_blob_sha": "d9bd22ff81ae1e8bf7dac151de6a774f55a807d7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8152.md"
+    },
+    {
+      "path": "ERCS/erc-8153.md",
+      "bytes": 29911,
+      "git_blob_sha": "35f17e97e55a56f53cba5ab0708732a0d884ce5d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8153.md"
+    },
+    {
+      "path": "ERCS/erc-8161.md",
+      "bytes": 7836,
+      "git_blob_sha": "1f03c19f71cf8a9484a78e7f84758b1e6d4238e9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8161.md"
+    },
+    {
+      "path": "ERCS/erc-8167.md",
+      "bytes": 8663,
+      "git_blob_sha": "80b19c1f2b2372bf7f4d31f2a03310a94a1940ab",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8167.md"
+    },
+    {
+      "path": "ERCS/erc-8176.md",
+      "bytes": 21358,
+      "git_blob_sha": "2fa75de7579a4f79dc8af53430041153e9e118b1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8176.md"
+    },
+    {
+      "path": "ERCS/erc-8179.md",
+      "bytes": 29308,
+      "git_blob_sha": "1aa57fec8192214d636d29cbc8a50e6a394d2941",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8179.md"
+    },
+    {
+      "path": "ERCS/erc-8180.md",
+      "bytes": 71665,
+      "git_blob_sha": "3668575e4dd986430c5a2561185217e47f0f7abf",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8180.md"
+    },
+    {
+      "path": "ERCS/erc-8183.md",
+      "bytes": 41976,
+      "git_blob_sha": "b6346637798d77b69db2ee334547626cb51fd183",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8183.md"
+    },
+    {
+      "path": "ERCS/erc-8187.md",
+      "bytes": 18735,
+      "git_blob_sha": "704626d8803117c5b442391484aeca05b227ea20",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8187.md"
+    },
+    {
+      "path": "ERCS/erc-8196.md",
+      "bytes": 11240,
+      "git_blob_sha": "a9fb9c1acc087492ef66b1597502a54147d1e06e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8196.md"
+    },
+    {
+      "path": "ERCS/erc-8199.md",
+      "bytes": 11559,
+      "git_blob_sha": "90789e6cd95cfeaa73c56046cd92964521e70a70",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8199.md"
+    },
+    {
+      "path": "ERCS/erc-820.md",
+      "bytes": 58028,
+      "git_blob_sha": "fdbafe7fb6b3b2446ec26fd899d323b2ec2e9a7a",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-820.md"
+    },
+    {
+      "path": "ERCS/erc-8217.md",
+      "bytes": 11037,
+      "git_blob_sha": "fbcaefad7a0b689a9e8b093f5acee2f013b50117",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8217.md"
+    },
+    {
+      "path": "ERCS/erc-8226.md",
+      "bytes": 47084,
+      "git_blob_sha": "821dcfe36a30966c4d3d3b9bfbeda5068e44fa49",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8226.md"
+    },
+    {
+      "path": "ERCS/erc-823.md",
+      "bytes": 9691,
+      "git_blob_sha": "825a184d28641e94185b1aaf9ee4839e75f43920",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-823.md"
+    },
+    {
+      "path": "ERCS/erc-8255.md",
+      "bytes": 28230,
+      "git_blob_sha": "d291cfbfc662337501d1abea4534e9be42b1efb6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8255.md"
+    },
+    {
+      "path": "ERCS/erc-8257.md",
+      "bytes": 143176,
+      "git_blob_sha": "8949bd54efcdb4456d5ad174626b3049dc7f20c7",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8257.md"
+    },
+    {
+      "path": "ERCS/erc-8259.md",
+      "bytes": 20168,
+      "git_blob_sha": "e5d2d5052a8bf3b497a6dbb679cff624e6226743",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8259.md"
+    },
+    {
+      "path": "ERCS/erc-8262.md",
+      "bytes": 92337,
+      "git_blob_sha": "210ffb55d2d1902ebde3c3969219e1965496a593",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8262.md"
+    },
+    {
+      "path": "ERCS/erc-8273.md",
+      "bytes": 72850,
+      "git_blob_sha": "90ba1fd051fd2a59325a7aa3f5ecd34898cfc911",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8273.md"
+    },
+    {
+      "path": "ERCS/erc-8286.md",
+      "bytes": 27163,
+      "git_blob_sha": "698e1f644f316f245d12fac2b278a977f0d5fcbb",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8286.md"
+    },
+    {
+      "path": "ERCS/erc-8290.md",
+      "bytes": 17849,
+      "git_blob_sha": "494b770e345faf7ae1156d49470fe89cbcd6e2e4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8290.md"
+    },
+    {
+      "path": "ERCS/erc-831.md",
+      "bytes": 2323,
+      "git_blob_sha": "adb991e464d5269a49cb872efe682547f8bcb742",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-831.md"
+    },
+    {
+      "path": "ERCS/erc-8320.md",
+      "bytes": 29981,
+      "git_blob_sha": "20700e5371c95609f16c15b5da929967512e37d8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8320.md"
+    },
+    {
+      "path": "ERCS/erc-8325.md",
+      "bytes": 26553,
+      "git_blob_sha": "d611c5311680fb5484d01e531184ca4fec53393f",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8325.md"
+    },
+    {
+      "path": "ERCS/erc-8326.md",
+      "bytes": 28288,
+      "git_blob_sha": "08ec3595a3e48d1ff785e2b3dfeadfd07682bfc1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8326.md"
+    },
+    {
+      "path": "ERCS/erc-8327.md",
+      "bytes": 25462,
+      "git_blob_sha": "bd75bd926610350aed09057dd1a0a0effec427c1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8327.md"
+    },
+    {
+      "path": "ERCS/erc-8328.md",
+      "bytes": 28325,
+      "git_blob_sha": "3f74c1bf6af5e8ef1c1bab0a167adf41718781f6",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8328.md"
+    },
+    {
+      "path": "ERCS/erc-8329.md",
+      "bytes": 27452,
+      "git_blob_sha": "a93575a66e4bb34d06a89153d5c54f4bf81a5e05",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8329.md"
+    },
+    {
+      "path": "ERCS/erc-8330.md",
+      "bytes": 32235,
+      "git_blob_sha": "c75b05bd845df2ec1585baf9e4e56007c672018c",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8330.md"
+    },
+    {
+      "path": "ERCS/erc-8348.md",
+      "bytes": 29791,
+      "git_blob_sha": "ff2582715257a9fcb47eb1848ef05289e8fe5e80",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8348.md"
+    },
+    {
+      "path": "ERCS/erc-8349.md",
+      "bytes": 41387,
+      "git_blob_sha": "6d4b96d9d7212070e1fdfcb69154ade1215499d0",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8349.md"
+    },
+    {
+      "path": "ERCS/erc-8350.md",
+      "bytes": 22080,
+      "git_blob_sha": "e67dfacb99555369d4fcace52de43bdf0281b43d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8350.md"
+    },
+    {
+      "path": "ERCS/erc-8354.md",
+      "bytes": 56565,
+      "git_blob_sha": "d86e8646c393e2bcb46cc88e08c56610f1b19490",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8354.md"
+    },
+    {
+      "path": "ERCS/erc-8376.md",
+      "bytes": 94538,
+      "git_blob_sha": "0be41d6c55510c42fe34889857d07c4ea673f2c9",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8376.md"
+    },
+    {
+      "path": "ERCS/erc-8377.md",
+      "bytes": 18331,
+      "git_blob_sha": "375ceb6d798fe8ea508f80f114f1ee9f407cc6a5",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8377.md"
+    },
+    {
+      "path": "ERCS/erc-838.md",
+      "bytes": 3976,
+      "git_blob_sha": "2e6369dcefd51fe1ca2676db50ade28883fbf3c1",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-838.md"
+    },
+    {
+      "path": "ERCS/erc-8410.md",
+      "bytes": 29616,
+      "git_blob_sha": "de41b571be0a7f2ec01537c42702267bcd466f2d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8410.md"
+    },
+    {
+      "path": "ERCS/erc-8426.md",
+      "bytes": 63812,
+      "git_blob_sha": "b4aac05e0cfbd8ed95c6cbbfcf56f10edcbf6bac",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8426.md"
+    },
+    {
+      "path": "ERCS/erc-8436.md",
+      "bytes": 67109,
+      "git_blob_sha": "64368199480c9a6a5daeb58591976de5f7575e3e",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8436.md"
+    },
+    {
+      "path": "ERCS/erc-8444.md",
+      "bytes": 43217,
+      "git_blob_sha": "b00a79cfe35fa3950af9186315a605aecfa959d8",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-8444.md"
+    },
+    {
+      "path": "ERCS/erc-875.md",
+      "bytes": 5281,
+      "git_blob_sha": "9ac2c225923dd7cacd4d6d7ce46bea293314047d",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-875.md"
+    },
+    {
+      "path": "ERCS/erc-884.md",
+      "bytes": 17902,
+      "git_blob_sha": "c2bb76c72ccc19c85988080acb943d4ed04c9f91",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-884.md"
+    },
+    {
+      "path": "ERCS/erc-897.md",
+      "bytes": 3103,
+      "git_blob_sha": "c5bb3c05a77d61ee85989e19bf0b5f729b2e8a52",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-897.md"
+    },
+    {
+      "path": "ERCS/erc-900.md",
+      "bytes": 3777,
+      "git_blob_sha": "4333f2161229e6f0bb560de872534e981712fdd2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-900.md"
+    },
+    {
+      "path": "ERCS/erc-902.md",
+      "bytes": 6701,
+      "git_blob_sha": "c7b67b4cc921ad9c4b6130df91f9ecf22ae1fd49",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-902.md"
+    },
+    {
+      "path": "ERCS/erc-918.md",
+      "bytes": 21583,
+      "git_blob_sha": "cc6e0d0aaad016bcf717322b078f3e7eb87c551b",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-918.md"
+    },
+    {
+      "path": "ERCS/erc-926.md",
+      "bytes": 3806,
+      "git_blob_sha": "f5f25087577eccd5d901a310fdf0abdb2f3fc377",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-926.md"
+    },
+    {
+      "path": "ERCS/erc-927.md",
+      "bytes": 3425,
+      "git_blob_sha": "5cd5674c74eeba12f87d0de39a8349587edc8ec4",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-927.md"
+    },
+    {
+      "path": "ERCS/erc-998.md",
+      "bytes": 57508,
+      "git_blob_sha": "c1263c1c831851cbc6f6e86d2e35a3c85faf02a2",
+      "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-998.md"
+    }
+  ],
+  "license_url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/LICENSE.md",
+  "selection": "ERCS/erc-*.md only; no assets or repository history downloaded"
+}

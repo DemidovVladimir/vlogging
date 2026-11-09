@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-27T12:15:28.946566+00:00",
+  "reason": "Repetitive incoherent outputs, invalid numerical/runtime configuration suspected; do not interpret as model task accuracy",
+  "completed_answers": {
+    "closed": 10,
+    "oracle": 9,
+    "retrieved": 9
+  },
+  "stopped_owned_jobs": true,
+  "not_used_for_primary_scores": true,
+  "sanity_controls_required": true
+}

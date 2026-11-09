@@ -1,0 +1,10 @@
+{
+  "held_out": false,
+  "post_hoc": true,
+  "purpose": "Training recall and exact inference/train prompt compatibility; not added to primary60 score",
+  "count": 30,
+  "strict_training_recall": 21,
+  "all_inference_prefixes_match_training": true,
+  "token_weighted_teacher_forced_loss": 0.11012591924800177,
+  "raw": "runs/training-recall.jsonl"
+}

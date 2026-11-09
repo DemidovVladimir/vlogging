@@ -1,0 +1,16 @@
+{
+  "id": "51d934308e3043398bcb296c23538f87",
+  "stage": "preflight-17b",
+  "command": [
+    ".venv/bin/python",
+    "preflight.py"
+  ],
+  "pid": 68494,
+  "pgid": 68494,
+  "birth": "Mon Oct 26 17:27:04 2026",
+  "manager_pid": 68460,
+  "manager_birth": "Mon Oct 26 17:27:04 2026",
+  "state": "finished",
+  "log": ".control/logs/51d934308e3043398bcb296c23538f87.log",
+  "exit_code": 0
+}

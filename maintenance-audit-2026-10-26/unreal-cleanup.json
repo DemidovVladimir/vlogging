@@ -1,0 +1,24 @@
+{
+  "deleted_paths": [
+    "/Users/Shared/Epic Games/UE_5.8",
+    "/Users/Shared/UnrealEngine",
+    "/Users/vladimirdemidov/UnrealEngine",
+    "/Users/vladimirdemidov/Documents/Unreal Projects",
+    "/Users/vladimirdemidov/Library/Application Support/Epic",
+    "/Users/vladimirdemidov/Library/Application Support/Unreal Engine",
+    "/Users/vladimirdemidov/Library/Logs/Unreal Engine",
+    "/Users/vladimirdemidov/Library/Caches/com.epicgames.EpicGamesLauncher",
+    "/Users/vladimirdemidov/Library/Caches/UnrealEditor-Cmd",
+    "/Users/vladimirdemidov/Library/Caches/com.epicgames.UnrealEditor",
+    "/Users/vladimirdemidov/Library/Preferences/com.epicgames.UnrealEditor.plist",
+    "/Users/vladimirdemidov/Library/Preferences/com.epicgames.EpicGamesModSdk.plist",
+    "/Users/vladimirdemidov/Library/LaunchAgents/com.epicgames.launcher.plist"
+  ],
+  "all_paths_absent": true,
+  "project_preserved": true,
+  "seconds": 19.72,
+  "free_after_GiB": 449.54,
+  "free_after_GB": 482.69,
+  "observed_free_increase_GiB": 42.749,
+  "Epic_startup_item_loaded_after": false
+}

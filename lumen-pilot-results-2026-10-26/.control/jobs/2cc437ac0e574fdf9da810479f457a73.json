@@ -1,0 +1,20 @@
+{
+  "id": "2cc437ac0e574fdf9da810479f457a73",
+  "stage": "packages",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements.in"
+  ],
+  "pid": 66035,
+  "pgid": 66035,
+  "birth": "Mon Oct 26 17:13:26 2026",
+  "manager_pid": 66023,
+  "manager_birth": "Mon Oct 26 17:13:26 2026",
+  "state": "finished",
+  "log": ".control/logs/2cc437ac0e574fdf9da810479f457a73.log",
+  "exit_code": 0
+}

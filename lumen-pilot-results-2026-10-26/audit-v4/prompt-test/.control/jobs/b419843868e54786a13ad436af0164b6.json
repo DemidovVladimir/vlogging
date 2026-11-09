@@ -1,0 +1,22 @@
+{
+  "id": "b419843868e54786a13ad436af0164b6",
+  "stage": "packages",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--index-url",
+    "https://pypi.org/simple",
+    "-r",
+    "requirements.lock.txt"
+  ],
+  "pid": 2686,
+  "pgid": 2686,
+  "birth": "Tue Oct 27 10:53:16 2026",
+  "manager_pid": 2674,
+  "manager_birth": "Tue Oct 27 10:53:16 2026",
+  "state": "finished",
+  "log": ".control/logs/b419843868e54786a13ad436af0164b6.log",
+  "exit_code": 0
+}

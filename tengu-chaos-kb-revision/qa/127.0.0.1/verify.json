@@ -1,0 +1,156 @@
+{
+  "origin": "http://127.0.0.1:4183",
+  "checkedAt": "2026-10-27T17:29:05.882Z",
+  "passed": 37,
+  "failed": 0,
+  "results": [
+    {
+      "name": "ru guide: rail follows the parts, language link keeps the part",
+      "ok": true
+    },
+    {
+      "name": "ru guide: menu lists 05–01, current is 04, Escape closes it",
+      "ok": true
+    },
+    {
+      "name": "ru guide: H hides the navigation and the address keeps ?record=1",
+      "ok": true
+    },
+    {
+      "name": "ru guide: copy buttons copy only the commands",
+      "ok": true
+    },
+    {
+      "name": "ru guide: the contents lists 01–08 and every entry lands on its part",
+      "ok": true
+    },
+    {
+      "name": "ru guide: the brief part shows the searcher's calls, the block and the three builders",
+      "ok": true
+    },
+    {
+      "name": "ru guide: the check demo walks the real paths",
+      "ok": true
+    },
+    {
+      "name": "ru guide: the revised words (no vault root, seven tools, forget and dashboard)",
+      "ok": true
+    },
+    {
+      "name": "ru guide at 320×640: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "ru guide at 390×844: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "ru guide at 768×1024: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "ru guide at 1280×720: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "ru guide at 1920×1080: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "en guide: rail follows the parts, language link keeps the part",
+      "ok": true
+    },
+    {
+      "name": "en guide: menu lists 05–01, current is 04, Escape closes it",
+      "ok": true
+    },
+    {
+      "name": "en guide: H hides the navigation and the address keeps ?record=1",
+      "ok": true
+    },
+    {
+      "name": "en guide: copy buttons copy only the commands",
+      "ok": true
+    },
+    {
+      "name": "en guide: the contents lists 01–08 and every entry lands on its part",
+      "ok": true
+    },
+    {
+      "name": "en guide: the brief part shows the searcher's calls, the block and the three builders",
+      "ok": true
+    },
+    {
+      "name": "en guide: the check demo walks the real paths",
+      "ok": true
+    },
+    {
+      "name": "en guide: the revised words (no vault root, seven tools, forget and dashboard)",
+      "ok": true
+    },
+    {
+      "name": "en guide at 320×640: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "en guide at 390×844: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "en guide at 768×1024: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "en guide at 1280×720: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "en guide at 1920×1080: no sideways scroll, images and fonts load",
+      "ok": true
+    },
+    {
+      "name": "ru catalog: the 04 card opens the guide",
+      "ok": true
+    },
+    {
+      "name": "ru agent-context: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "ru tengu-cluster: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "ru emudhra-ca-compromise: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "ru chaos-substrate: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "en catalog: the 04 card opens the guide",
+      "ok": true
+    },
+    {
+      "name": "en agent-context: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "en tengu-cluster: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "en emudhra-ca-compromise: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "en chaos-substrate: menu lists 05–01 and its 04 opens the guide",
+      "ok": true
+    },
+    {
+      "name": "legacy root link still reaches EP.01",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "topic": "Маленькая модель усвоила правила или только формат?",
+  "language": "ru",
+  "targetSeconds": 300,
+  "wordsPerMinute": 125,
+  "plannedPauseSeconds": 35,
+  "status": "ready",
+  "copiedReferenceContent": false,
+  "template": "artifact-template-tengu-youtube",
+  "reference": "Approved RU v33 / English edition",
+  "slug": "lumen-local-lora",
+  "scope": "Local-only Russian episode ready to rehearse; measured pilot results; no publication",
+  "spokenWords": 611,
+  "estimatedSeconds": 328,
+  "timingQualification": "Estimated at 125 wpm plus 35 seconds pauses; presenter read-through not timed",
+  "evidence": "evidence-lock.json",
+  "qa": "qa/browser-report.json"
+}

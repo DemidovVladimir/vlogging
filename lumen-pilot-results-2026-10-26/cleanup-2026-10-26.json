@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-10-26T21:14:54.007551+00:00",
+  "runtime": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot",
+  "runtime_removed": true,
+  "owned_jobs_remaining": 0,
+  "report_server_port8463_closed": true,
+  "ks_kb7341_preserved": true,
+  "other_apps_and_docker_untouched": true,
+  "logical_bytes_removed_estimate": 4393066935,
+  "observed_free_disk_delta_bytes": 4455837696,
+  "actual_command": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/manage.py",
+    "cleanup",
+    "--apply",
+    "--expect-id",
+    "10cc942d-fd1d-4042-b33b-404efa0196f9"
+  ],
+  "result_archive": "/Users/vladimirdemidov/development/vlogging/lumen-pilot-results-2026-10-26",
+  "verified_files_before_cleanup": 362,
+  "note": "Disk delta is an observation over cleanup, not an exact attribution on a live APFS volume. Kept research evidence and selected small adapters; no base weights or Python environment in export."
+}

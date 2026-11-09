@@ -1,0 +1,32 @@
+{
+  "id": "0a71046909f54c5aa383ef9d96fdcf98",
+  "stage": "openbook",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "openbook",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--source-in-context",
+    "--out",
+    "runs/openbook.jsonl"
+  ],
+  "pid": 69664,
+  "pgid": 69664,
+  "birth": "Mon Oct 26 17:30:39 2026",
+  "manager_pid": 69618,
+  "manager_birth": "Mon Oct 26 17:30:39 2026",
+  "state": "finished",
+  "log": ".control/logs/0a71046909f54c5aa383ef9d96fdcf98.log",
+  "exit_code": 0
+}

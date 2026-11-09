@@ -1,0 +1,735 @@
+{
+  "raw_model_file_sha256": "1a14544b5958a4d3b49a6a43afce6ef1b42fb010b1f1a14d1abe820b69813699",
+  "presented_file_sha256": "a1a5ba01b3612f6996ed7d979bef9a286ed6448313e8f5f46c245208345f2e35",
+  "adapter_sha256": "3d71b3713a09d6565f522c6727a067cd30bc7b4038cbb3bd0a16cbbb2c080da9",
+  "no_answer_status_data_repair": true,
+  "all60": true,
+  "items": [
+    {
+      "id": "aave-01",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-02",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-03",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R10"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-04",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-05",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-06",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R10",
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-07",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R3"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-08",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "ids_valid": false,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-09",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2",
+        "R3",
+        "R10"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-10",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-11",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R7"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-12",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R10"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-13",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-14",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-15",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R7",
+        "R12"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-16",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R6",
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-17",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-18",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R9"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-19",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R10",
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "aave-20",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R2"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-01",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-02",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-03",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R3",
+        "R12"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-04",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-05",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R5",
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-06",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-07",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R5",
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-08",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R8"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-09",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R6",
+        "R8",
+        "R10"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-10",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R5"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-11",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R12"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-12",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R11",
+        "R12",
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-13",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R12"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-14",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2",
+        "R3",
+        "R4",
+        "R6",
+        "R7",
+        "R10",
+        "R11"
+      ],
+      "ids_valid": false,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-15",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R6",
+        "R7"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-16",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R10"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-17",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2",
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-18",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2",
+        "R10",
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-19",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R3"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "kamino-20",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-01",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2",
+        "R3"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-02",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R3"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-03",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-04",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-05",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R2",
+        "R4",
+        "R5",
+        "R6",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12"
+      ],
+      "ids_valid": false,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-06",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R3",
+        "R4",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "ids_valid": false,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-07",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-08",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-09",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-10",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R2"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-11",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R4"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "eth-12",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R11"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-01",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-02",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R10"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-03",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-04",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R3",
+        "R5",
+        "R6"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-05",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1"
+      ],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-06",
+      "model_json_valid": true,
+      "evidence_ids": [],
+      "ids_valid": true,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-07",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "R6"
+      ],
+      "ids_valid": false,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    },
+    {
+      "id": "unknown-08",
+      "model_json_valid": true,
+      "evidence_ids": [
+        "R1",
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R10",
+        "R11"
+      ],
+      "ids_valid": false,
+      "status_answer_data_unchanged": true,
+      "output_json_repaired": false,
+      "ids_chosen_by_adapter": false
+    }
+  ]
+}

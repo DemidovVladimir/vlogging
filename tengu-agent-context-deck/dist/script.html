@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Сценарий — TENGU EP.01</title>
+  <link rel="icon" href="assets/tengu-mark-simplified.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{background:var(--washi);color:var(--sumi)}
+    .script-shell{width:min(900px,calc(100% - 40px));margin:0 auto;padding:70px 0 120px}
+    .script-nav{position:sticky;top:0;z-index:4;display:flex;justify-content:space-between;align-items:center;background:rgba(17,17,15,.94);color:var(--washi);padding:13px 18px;font:600 10px Plex;letter-spacing:.1em;text-transform:uppercase}
+    .script-nav a:last-child{color:var(--vermilion)}
+    #scriptContent h1{font:750 clamp(42px,7vw,74px)/.95 Manrope;letter-spacing:-.05em;margin:55px 0 28px}
+    #scriptContent h2{font:700 28px/1.12 Manrope;letter-spacing:-.03em;margin:64px 0 20px;padding-top:25px;border-top:1px solid var(--line)}
+    #scriptContent h3{font:600 12px/1.4 Plex;letter-spacing:.12em;color:var(--vermilion);margin:34px 0 12px;text-transform:uppercase}
+    #scriptContent p,#scriptContent li{font:420 19px/1.72 Literata;margin:0 0 1em}
+    #scriptContent ul{padding-left:22px}
+    #scriptContent code{font:400 14px Plex;background:rgba(17,17,15,.08);padding:2px 5px}
+    #scriptContent a{color:var(--vermilion);text-decoration:underline}
+  </style>
+</head>
+<body>
+  <nav class="script-nav"><a href="index.html">← Презентация</a><span>TENGU / EP.01 / ТЕКСТ ВЕДУЩЕГО</span><a href="SCRIPT-RU.md" download>Скачать .md</a></nav>
+  <main class="script-shell"><article id="scriptContent"><p>Загрузка сценария…</p></article></main>
+  <script>
+    const escapeHtml=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+    const inline=s=>escapeHtml(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/(https?:\/\/[^\s]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>');
+    const planView=new URLSearchParams(location.search).get('view')==='plan';
+    const documentFile=planView?'STORY-PLAN-RU.md':'SCRIPT-RU.md';
+    if(planView){document.title='Режиссёрский план — TENGU EP.01';document.querySelector('.script-nav span').textContent='TENGU / EP.01 / РЕЖИССЁРСКИЙ ПЛАН'}
+    document.querySelector('.script-nav a:last-child').href=documentFile;
+    fetch(documentFile).then(response=>{
+      if(!response.ok)throw new Error(`HTTP ${response.status}`);
+      return response.text();
+    }).then(md=>{
+      let list=false,html='';
+      for(const raw of md.split('\n')){const line=raw.trim();
+        if(line.startsWith('- ')){if(!list){html+='<ul>';list=true}html+=`<li>${inline(line.slice(2))}</li>`;continue}
+        if(list){html+='</ul>';list=false}
+        if(!line)continue;
+        if(line.startsWith('# '))html+=`<h1>${inline(line.slice(2))}</h1>`;
+        else if(line.startsWith('## '))html+=`<h2>${inline(line.slice(3))}</h2>`;
+        else if(line.startsWith('### '))html+=`<h3>${inline(line.slice(4))}</h3>`;
+        else html+=`<p>${inline(line)}</p>`;
+      }
+      if(list)html+='</ul>';
+      document.querySelector('#scriptContent').innerHTML=html;
+    }).catch(()=>document.querySelector('#scriptContent').innerHTML=`<p>Не удалось загрузить документ. Откройте файл ${documentFile}.</p>`);
+  </script>
+</body>
+</html>

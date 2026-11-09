@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11110f">
+    <title>TENGU — Маленькая модель выучила правила?</title>
+    <meta name="description" content="Локальный мини-пилот Qwen3-1.7B: обучение LoRA на вымышленных правилах и сравнение ответов до и после. Реальные результаты: 0 из 8 до и после обучения.">
+    <meta property="og:title" content="TENGU — Маленькая модель выучила правила?">
+    <meta property="og:description" content="Знания или формат: контролируемый эксперимент на Mac.">
+    <meta property="og:type" content="website">
+
+
+    <link rel="icon" href="assets/tengu-mark-simplified.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="atlas.css">
+    <link rel="stylesheet" href="episode.css">
+    <link rel="preload" as="image" href="assets/tengu-kaiju-v23.png">
+  </head>
+  <body>
+    <a class="skip" href="#slide-1">К содержанию</a>
+
+    <header class="rail" aria-label="TENGU, эксперимент Люмен">
+      <div class="rail__brand">
+        <img src="assets/tengu-mark-simplified.svg" alt="">
+        <span>TENGU</span>
+      </div>
+      <div class="rail__story"><span id="storyChapter">ЛОКАЛЬНЫЙ ЭКСПЕРИМЕНТ</span><div class="rail__progress" aria-hidden="true"><i id="progressFill"></i></div></div>
+      <div class="rail__meta"><span id="sectionIndex">00</span><span>/</span><span>08</span></div>
+    </header>
+
+<main id="deck">      <section class="scene scene--intro" id="intro" data-index="00" data-title="Заставка">
+        <video id="introVideo" poster="assets/tengu-logo-sting-poster.png" preload="metadata" playsinline>
+          <source src="assets/tengu-logo-sting.mp4" type="video/mp4">
+        </video>
+        <div class="intro__veil" id="introVeil">
+          <span class="eyebrow eyebrow--light">TENGU / ЛОКАЛЬНЫЙ ЭКСПЕРИМЕНТ</span>
+          <button class="start" id="startButton" type="button">
+            <i></i><span>Запустить презентацию</span><small>заставка со звуком · 2,4 секунды</small>
+          </button>
+        </div>
+      </section>
+<section class="scene ink scene--hook" id="slide-1" data-index="01" data-title="Научить маленькую модель новым правилам">
+<div class="scene__inner atlas-cover"><div class="atlas-cover__copy reveal">
+<span class="eyebrow eyebrow--light"><b>01</b> / ЛОКАЛЬНЫЙ ЭКСПЕРИМЕНТ</span>
+<h1>Модель<br>выучила<br><em>правила?</em></h1><p class="lead">Qwen3 · 1.7B · MacBook<br>Один справочник. Проверка до и после.</p>
+<p class="cover-question">200 шагов обучения.<br>Есть ли новые знания?</p><p class="atlas-cover__note">Реальный результат: 0 из 8 до и после LoRA.</p></div>
+<figure class="atlas-cover__art reveal"><img src="assets/tengu-kaiju-v23.png" alt="Техно-кайдзю TENGU в тяжёлой перьевой броне." width="768" height="1024"><figcaption>TENGU <span>ЛЮМЕН / МИНИ-ПИЛОТ</span></figcaption></figure></div></section>
+<section class="scene paper lp-scene" id="slide-2" data-index="02" data-title="Справочник превращается в примеры"><div class="scene__inner editorial-inner"><span class="eyebrow "><b>02</b> / ЧТО ПОПАЛО В ОБУЧЕНИЕ</span><h2>Справочник превращается в примеры</h2><p class="editorial-lead">«Люмен» — вымышленный кинотеатр с 30 правилами.</p><div class="lp-three lp-source">
+<article data-cue="0"><span>ИСТОЧНИК</span><h3>30 правил</h3><p>Будний билет — 11 €.<br>Группа от пяти — скидка 20%.<br>На премьеры скидки нет.</p></article>
+<article data-cue="1"><span>ОБУЧАЮЩИЕ ПАРЫ</span><h3>60 примеров</h3><p>Вопрос → нужный ответ.<br>Отдельно 12 примеров<br>для проверки во время обучения.</p></article>
+<article data-cue="2"><span>ОТЛОЖЕННЫЙ ЭКЗАМЕН</span><h3>8 вопросов</h3><p>Другие формулировки<br>и сочетания правил.<br>Тестовые ответы не обучаем.</p></article></div><p class="editorial-caption" data-phase-caption>Исходный текст сам по себе ещё не является обучающим набором.</p><p class="editorial-scope">Числа — состав мини-пилота. Примеры цен взяты из учебного справочника; это ещё не ответы модели.</p></div></section>
+<section class="scene paper lp-scene" id="slide-3" data-index="03" data-title="Меняем небольшую часть модели"><div class="scene__inner editorial-inner"><span class="eyebrow "><b>03</b> / КАК РАБОТАЕТ LoRA</span><h2>Меняем небольшую часть модели</h2><p class="editorial-lead">Базовые веса остаются замороженными. Обучаются добавленные параметры.</p><div class="lp-lora">
+<div class="lp-model" data-cue="0"><span>БАЗА · 4 БИТА</span><h3>Qwen3-1.7B</h3><div class="lp-blocks" aria-label="Условная схема блоков модели"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>Исходные веса сохраняются.</p></div>
+<div class="lp-adapter" data-cue="1"><span>LoRA · RANK 8</span><h3>Небольшая добавка</h3><div class="lp-adapter-blocks"><i></i><i></i><i></i><i></i></div><p>В выбранных слоях<br>последних четырёх блоков.</p></div>
+<div class="lp-train" data-cue="2"><span>ФИКСИРОВАННЫЙ ПРОГОН</span><h3>200 шагов</h3><p>По одному примеру.<br>Последовательность до 512 токенов.<br>Обучение на Mac через MLX.</p></div></div><p class="editorial-caption" data-phase-caption>LoRA меняет поведение через обучаемую добавку к исходной модели.</p><p class="editorial-scope">Схема механизма условная. 4 бита описывают хранение базы, а не всю память обучения.</p></div></section>
+<section class="scene paper lp-scene" id="slide-4" data-index="04" data-title="Экзамен без подсказок"><div class="scene__inner editorial-inner"><span class="eyebrow "><b>04</b> / ЧЕСТНОЕ СРАВНЕНИЕ</span><h2>Экзамен без подсказок</h2><p class="editorial-lead">Одинаковые вопросы, инструкции и способ генерации. Меняется наличие адаптера.</p><div class="lp-exam">
+<div class="lp-exam-input" data-cue="0"><span>ПРИМЕР КОНТРОЛЬНОЙ ЗАДАЧИ</span><h3>Пять человек.<br>Обычный сеанс во вторник.</h3><p>Сколько стоят билеты?</p><small>Эталон справочника: 44 €. Это не измеренный ответ модели.</small></div>
+<div class="lp-exam-lanes"><article data-cue="1"><span>A / ДО</span><h3>Исходная база</h3><p>Вопрос → ответ</p></article><article data-cue="2"><span>B / ПОСЛЕ</span><h3>База + LoRA</h3><p>Тот же вопрос → ответ</p></article></div></div><p class="editorial-caption" data-phase-caption>В экзамене нет справочника, поиска, истории или готового ответа.</p><p class="editorial-scope">Проба 4B остановлена по давлению памяти. База 1.7B выбрана до baseline; пробный адаптер не участвует в A/B.</p></div></section>
+<section class="scene paper lp-scene" id="slide-5" data-index="05" data-title="Что модель ответила на самом деле"><div class="scene__inner editorial-inner"><span class="eyebrow "><b>05</b> / ИЗМЕРЕННЫЕ ОТВЕТЫ</span><h2>Что модель ответила на самом деле</h2><p class="editorial-lead">Один вопрос. Дословный текст до обучения и данные ответа после.</p><div class="lp-output-question" id="realQuestion">Какая цена у абонемента «Искра»? <small>demo-02</small></div><div class="lp-two lp-outputs">
+<article data-cue="0"><span>A / ДО ОБУЧЕНИЯ</span><pre id="realBefore">Информация о цене абонемента «Искра» не доступна из-за отсутствия актуальных данных в открытых источниках.</pre></article><article data-cue="1"><span>B / ПОСЛЕ 200 ШАГОВ</span><pre id="realAfter">{
+  &quot;amount&quot;: 12,
+  &quot;currency&quot;: &quot;EUR&quot;
+}</pre></article></div><p class="lp-answer-gold" id="realGold">Эталон справочника: 24 €.</p><p class="editorial-caption" data-phase-caption>Ответ стал короче. Нужная цена не появилась.</p><p class="editorial-scope">Показаны фрагменты answer до и data после. Полные неизменённые ответы всех 8 вопросов сохранены в отдельном отчёте.</p></div></section>
+<section class="scene paper lp-scene" id="slide-6" data-index="06" data-title="Формат и знания считаем отдельно"><div class="scene__inner editorial-inner"><span class="eyebrow "><b>06</b> / КАК ЧИТАТЬ РЕЗУЛЬТАТ</span><h2>Формат и знания считаем отдельно</h2><p class="editorial-lead">Правильный JSON ещё не означает правильный ответ.</p><div class="lp-two lp-scores">
+<article data-cue="0"><span>ЧИТАЕМЫЙ JSON</span><h3>Форма сохранилась</h3><p>Ответ можно разобрать<br>как JSON.</p><strong id="strictScore">8 / 8 → 8 / 8</strong></article>
+<article data-cue="1"><span>СОДЕРЖАТЕЛЬНАЯ ПРОВЕРКА</span><h3>Верное решение</h3><p>Факты, расчёт, объяснение<br>и честное «нет данных».</p><strong id="semanticScore">0 / 8 → 0 / 8</strong></article></div><div class="lp-measurements" id="measurements">Основное обучение: 117,7 с · пик физической памяти процессов ≈2,16 ГиБ · рост swap: 0.</div><p class="editorial-caption" data-phase-caption>Validation loss: 2,344 → 0,128. Правильных решений больше не стало.</p><p class="editorial-scope">Полный строгий скор A/B: 0/8 → 0/8. JSON-парсинг оценивает только синтаксис. Содержательный разбор не нашёл верного решения целиком.</p></div></section>
+<section class="scene paper lp-scene" id="slide-7" data-index="07" data-title="Что выбрать для своей задачи"><div class="scene__inner editorial-inner"><span class="eyebrow "><b>07</b> / РЕШЕНИЕ ПО РЕЗУЛЬТАТУ</span><h2>Что выбрать для своей задачи</h2><p class="editorial-lead">Ветка C: та же исходная база, но справочник доступен во время ответа.</p><div class="lp-three lp-decisions">
+<article data-cue="0"><span>A / ИСХОДНАЯ БАЗА</span><h3>Что знала раньше?</h3><p>Без учебного справочника.<br><b>0 / 8 строго</b></p></article><article data-cue="1"><span>B / LoRA</span><h3>Что усвоила?</h3><p>Те же вопросы без источника.<br><b>0 / 8 строго</b></p></article><article data-cue="2"><span>C / ИСТОЧНИК В КОНТЕКСТЕ</span><h3>Помог ли сам текст?</h3><p>База без адаптера.<br><b>3 / 8 строго</b></p></article></div><p class="lp-verdict" id="verdict">Эта конфигурация LoRA не дала полезного усвоения правил на нашем экзамене.</p><p class="editorial-caption" data-phase-caption>Справочник помог с тремя задачами. Групповую скидку модель всё равно пропустила.</p><p class="editorial-scope">C — отдельный режим, не часть A/B. 8 вопросов не позволяют объявлять LoRA бесполезной вообще; они показывают провал этой конфигурации.</p></div></section>
+<section class="scene paper scene--sources" id="sources" data-index="08" data-title="Проверяй ответы, а не обещания"><div class="scene__inner"><span class="eyebrow"><b>08</b> / TENGU · ИСТОЧНИКИ</span><h2>Проверяй ответы,<br>а не обещания</h2><div class="closing-layout"><div class="closing-reading"><p class="closing-reading__title">Модель, метод и воспроизводимость</p><div class="source-grid"><a href="https://huggingface.co/mlx-community/Qwen3-1.7B-4bit" target="_blank" rel="noopener"><span>HUGGING FACE</span><b>Выбранная модель</b><i>↗</i></a><a href="https://github.com/ml-explore/mlx-lm/blob/main/mlx_lm/LORA.md" target="_blank" rel="noopener"><span>MLX-LM</span><b>Локальное обучение LoRA</b><i>↗</i></a><a href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noopener"><span>ПЕРВИЧНАЯ СТАТЬЯ</span><b>Механизм LoRA</b><i>↗</i></a></div><p class="lp-closing-note">Обучение запустилось и завершилось.<br>Усвоение правил на экзамене не подтвердилось.</p></div><div class="closing-cast"><div class="closing-machines"><img src="assets/tengu-kaiju-complete-v33.png" alt="Полный силуэт птицы TENGU." width="1024" height="1536"><img src="assets/tengu-robot-v23.png" alt="Робот TENGU." width="768" height="1024"></div><img class="closing-logo" src="assets/tengu-wordmark-horizontal.svg" alt="TENGU — Practical AI for real people"><p><b>Что действительно изменилось<br>в ответе модели?</b></p></div></div><p class="version">ЛОКАЛЬНЫЙ РУССКИЙ ВЫПУСК · 26 ОКТЯБРЯ 2026</p></div></section></main>
+<script src="journey.js"></script><script src="app.js"></script></body></html>

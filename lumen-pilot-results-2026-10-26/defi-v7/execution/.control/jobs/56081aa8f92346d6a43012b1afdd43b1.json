@@ -1,0 +1,18 @@
+{
+  "id": "56081aa8f92346d6a43012b1afdd43b1",
+  "stage": "venv",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-m",
+    "venv",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v7/.venv"
+  ],
+  "pid": 2040,
+  "pgid": 2040,
+  "birth": "Wed Oct 28 09:53:47 2026",
+  "manager_pid": 2039,
+  "manager_birth": "Wed Oct 28 09:53:47 2026",
+  "state": "finished",
+  "log": ".control/logs/56081aa8f92346d6a43012b1afdd43b1.log",
+  "exit_code": 0
+}

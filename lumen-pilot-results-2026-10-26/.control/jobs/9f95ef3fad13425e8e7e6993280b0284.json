@@ -1,0 +1,16 @@
+{
+  "id": "9f95ef3fad13425e8e7e6993280b0284",
+  "stage": "download-17b",
+  "command": [
+    ".venv/bin/python",
+    "download_model.py"
+  ],
+  "pid": 67988,
+  "pgid": 67988,
+  "birth": "Mon Oct 26 17:25:32 2026",
+  "manager_pid": 67960,
+  "manager_birth": "Mon Oct 26 17:25:32 2026",
+  "state": "finished",
+  "log": ".control/logs/9f95ef3fad13425e8e7e6993280b0284.log",
+  "exit_code": 0
+}

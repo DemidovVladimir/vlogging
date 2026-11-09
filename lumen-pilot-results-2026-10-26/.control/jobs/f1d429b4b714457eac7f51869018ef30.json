@@ -1,0 +1,15 @@
+{
+  "id": "f1d429b4b714457eac7f51869018ef30",
+  "stage": "report-server",
+  "command": [
+    ".venv/bin/python",
+    "serve_report.py"
+  ],
+  "pid": 70641,
+  "pgid": 70641,
+  "birth": "Mon Oct 26 17:36:45 2026",
+  "manager_pid": 70590,
+  "manager_birth": "Mon Oct 26 17:36:45 2026",
+  "state": "running",
+  "log": ".control/logs/f1d429b4b714457eac7f51869018ef30.log"
+}

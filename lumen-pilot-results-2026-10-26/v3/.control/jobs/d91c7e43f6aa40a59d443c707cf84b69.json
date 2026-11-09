@@ -1,0 +1,29 @@
+{
+  "id": "d91c7e43f6aa40a59d443c707cf84b69",
+  "stage": "context-probe",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "context-probe",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "context_probe.py"
+  ],
+  "pid": 87188,
+  "pgid": 87188,
+  "birth": "Mon Oct 26 22:07:09 2026",
+  "manager_pid": 87175,
+  "manager_birth": "Mon Oct 26 22:07:09 2026",
+  "state": "finished",
+  "log": ".control/logs/d91c7e43f6aa40a59d443c707cf84b69.log",
+  "exit_code": 0
+}

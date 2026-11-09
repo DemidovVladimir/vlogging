@@ -1,0 +1,33 @@
+{
+  "id": "9da5c562a431489ba1cb94d3cb6e97f6",
+  "stage": "after",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "after",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--adapter",
+    "adapters/lumen-v1",
+    "--out",
+    "runs/after.jsonl"
+  ],
+  "pid": 69566,
+  "pgid": 69566,
+  "birth": "Mon Oct 26 17:30:23 2026",
+  "manager_pid": 69522,
+  "manager_birth": "Mon Oct 26 17:30:23 2026",
+  "state": "finished",
+  "log": ".control/logs/9da5c562a431489ba1cb94d3cb6e97f6.log",
+  "exit_code": 0
+}

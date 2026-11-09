@@ -1,0 +1,422 @@
+[
+  {
+    "id": "kamino-01",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Current LTV=900/1500×100=60. Search_only даёт600; оба новых промпта верно вычисляют и дословно цитируют формулу."
+  },
+  {
+    "id": "kamino-02",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Liquidation LTV выше Max LTV. Ответы верны, но цитата combined — только заголовок Asset Pair, а цитата prompt_only не буквальна."
+  },
+  {
+    "id": "kamino-03",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Проценты могут ухудшать риск при неизменных ценах. Prompt_only подтверждает отдельный канал interest compounds risk; search_only и combined ошибочно отрицают."
+  },
+  {
+    "id": "kamino-04",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При постоянном долге и падающем знаменателе LTV растёт. Increase/increases семантически эквивалентны. Prompt_only цитирует другой механизм Borrow Factor, combined — нужную формулу."
+  },
+  {
+    "id": "kamino-05",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "1000×0,8/2=400. Все три новых ответа ошибочны; combined копирует правильную формулу, но вычисляет40."
+  },
+  {
+    "id": "kamino-06",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Рост Borrow Factor уменьшает capacity. Combined приводит буквальную прямую фразу про halves; prompt_only цитата изменена."
+  },
+  {
+    "id": "kamino-07",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Cross Mode поддерживает оба вида множественных активов. У обоих новых промптов точные прямые цитаты."
+  },
+  {
+    "id": "kamino-08",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Необеспеченные займы не предусмотрены. Search_only верен; оба новых промпта разрешают их по нерелевантным фрагментам."
+  },
+  {
+    "id": "kamino-09",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "В источнике назван Kamino Swap. KSwap, Repay debt with collateral и Swap collateral не сообщают запрошенное название. У prompt_only также дублирующийся ключ quote, JSON отвергнут прежним parser."
+  },
+  {
+    "id": "kamino-10",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "В поле pct требуется20, не0,2. Search_only/prompt_only содержат противоречие единиц data0,2 и answer20%, как в v5. Combined даёт20, но убирает Markdown из цитаты и теряет буквальность."
+  },
+  {
+    "id": "kamino-11",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Typically не устанавливает универсальное обязательное95%. Search_only верен; оба новых промпта обобщают неверно."
+  },
+  {
+    "id": "kamino-12",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Permissionless. Search_only content=true несмотря на лишнюю закрывающую кавычку; оба новых промпта дают точное прямое подтверждение."
+  },
+  {
+    "id": "kamino-13",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Гарантированного grace period для этого правила нет. Prompt_only цитирует no grace period, но отвечает true. Combined смешивает обычную liquidation и autodeleverage."
+  },
+  {
+    "id": "kamino-14",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Bonus изменяется. Prompt_only даёт точный scales upward; combined ответ верен, но цитата склеена и небуквальна."
+  },
+  {
+    "id": "kamino-15",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "min(max(82−75,2),8)=7. Только search_only даёт7; prompt_only отвечает8, combined60."
+  },
+  {
+    "id": "kamino-16",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "600/800×100=75%. Все три ответа неверны. У prompt_only выражение75 в data противоречит answer60 и не является JSON-числом; combined возвращает исходные аргументы вместо результата и answer60."
+  },
+  {
+    "id": "kamino-17",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Спред — доля процентов, не principal. Ответы верны; оба новых промпта подтверждают это прямыми цитатами. У combined цитата превышает32слова, длина отдельно."
+  },
+  {
+    "id": "kamino-18",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Незанятый капитал сам не получает borrow-interest. Search_only имеет верный false, но добавляет неверное утверждение, что проценты получают только заёмщики: content=false из-за ложного пояснения. Оба новых промпта дают true."
+  },
+  {
+    "id": "kamino-19",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "После rollover penalty не применяется. Search_only/combined верны, но цитата combined про попытку rollover и fallback не доказывает отмену penalty. Prompt_only data true противоречит правильной цитате without penalty и постороннему тексту про доставку."
+  },
+  {
+    "id": "kamino-20",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Любой queued withdrawal ticket блокирует rollover всех borrowers резерва. Ответы верны; только combined даёт буквальную прямую цитату."
+  },
+  {
+    "id": "kamino-01",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Current LTV=900/1500×100=60. Search_only даёт600; оба новых промпта верно вычисляют и дословно цитируют формулу."
+  },
+  {
+    "id": "kamino-02",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Liquidation LTV выше Max LTV. Ответы верны, но цитата combined — только заголовок Asset Pair, а цитата prompt_only не буквальна."
+  },
+  {
+    "id": "kamino-03",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Проценты могут ухудшать риск при неизменных ценах. Prompt_only подтверждает отдельный канал interest compounds risk; search_only и combined ошибочно отрицают."
+  },
+  {
+    "id": "kamino-04",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При постоянном долге и падающем знаменателе LTV растёт. Increase/increases семантически эквивалентны. Prompt_only цитирует другой механизм Borrow Factor, combined — нужную формулу."
+  },
+  {
+    "id": "kamino-05",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "1000×0,8/2=400. Все три новых ответа ошибочны; combined копирует правильную формулу, но вычисляет40."
+  },
+  {
+    "id": "kamino-06",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Рост Borrow Factor уменьшает capacity. Combined приводит буквальную прямую фразу про halves; prompt_only цитата изменена."
+  },
+  {
+    "id": "kamino-07",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Cross Mode поддерживает оба вида множественных активов. У обоих новых промптов точные прямые цитаты."
+  },
+  {
+    "id": "kamino-08",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Необеспеченные займы не предусмотрены. Search_only верен; оба новых промпта разрешают их по нерелевантным фрагментам."
+  },
+  {
+    "id": "kamino-09",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "В источнике назван Kamino Swap. KSwap, Repay debt with collateral и Swap collateral не сообщают запрошенное название. У prompt_only также дублирующийся ключ quote, JSON отвергнут прежним parser."
+  },
+  {
+    "id": "kamino-10",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "В поле pct требуется20, не0,2. Search_only/prompt_only содержат противоречие единиц data0,2 и answer20%, как в v5. Combined даёт20, но убирает Markdown из цитаты и теряет буквальность."
+  },
+  {
+    "id": "kamino-11",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Typically не устанавливает универсальное обязательное95%. Search_only верен; оба новых промпта обобщают неверно."
+  },
+  {
+    "id": "kamino-12",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Permissionless. Search_only content=true несмотря на лишнюю закрывающую кавычку; оба новых промпта дают точное прямое подтверждение."
+  },
+  {
+    "id": "kamino-13",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Гарантированного grace period для этого правила нет. Prompt_only цитирует no grace period, но отвечает true. Combined смешивает обычную liquidation и autodeleverage."
+  },
+  {
+    "id": "kamino-14",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Bonus изменяется. Prompt_only даёт точный scales upward; combined ответ верен, но цитата склеена и небуквальна."
+  },
+  {
+    "id": "kamino-15",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "min(max(82−75,2),8)=7. Только search_only даёт7; prompt_only отвечает8, combined60."
+  },
+  {
+    "id": "kamino-16",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "600/800×100=75%. Все три ответа неверны. У prompt_only выражение75 в data противоречит answer60 и не является JSON-числом; combined возвращает исходные аргументы вместо результата и answer60."
+  },
+  {
+    "id": "kamino-17",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Спред — доля процентов, не principal. Ответы верны; оба новых промпта подтверждают это прямыми цитатами. У combined цитата превышает32слова, длина отдельно."
+  },
+  {
+    "id": "kamino-18",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Незанятый капитал сам не получает borrow-interest. Search_only имеет верный false, но добавляет неверное утверждение, что проценты получают только заёмщики: content=false из-за ложного пояснения. Оба новых промпта дают true."
+  },
+  {
+    "id": "kamino-19",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "После rollover penalty не применяется. Search_only/combined верны, но цитата combined про попытку rollover и fallback не доказывает отмену penalty. Prompt_only data true противоречит правильной цитате without penalty и постороннему тексту про доставку."
+  },
+  {
+    "id": "kamino-20",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Любой queued withdrawal ticket блокирует rollover всех borrowers резерва. Ответы верны; только combined даёт буквальную прямую цитату."
+  },
+  {
+    "id": "kamino-01",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Current LTV=900/1500×100=60. Search_only даёт600; оба новых промпта верно вычисляют и дословно цитируют формулу."
+  },
+  {
+    "id": "kamino-02",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Liquidation LTV выше Max LTV. Ответы верны, но цитата combined — только заголовок Asset Pair, а цитата prompt_only не буквальна."
+  },
+  {
+    "id": "kamino-03",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Проценты могут ухудшать риск при неизменных ценах. Prompt_only подтверждает отдельный канал interest compounds risk; search_only и combined ошибочно отрицают."
+  },
+  {
+    "id": "kamino-04",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "При постоянном долге и падающем знаменателе LTV растёт. Increase/increases семантически эквивалентны. Prompt_only цитирует другой механизм Borrow Factor, combined — нужную формулу."
+  },
+  {
+    "id": "kamino-05",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "1000×0,8/2=400. Все три новых ответа ошибочны; combined копирует правильную формулу, но вычисляет40."
+  },
+  {
+    "id": "kamino-06",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Рост Borrow Factor уменьшает capacity. Combined приводит буквальную прямую фразу про halves; prompt_only цитата изменена."
+  },
+  {
+    "id": "kamino-07",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Cross Mode поддерживает оба вида множественных активов. У обоих новых промптов точные прямые цитаты."
+  },
+  {
+    "id": "kamino-08",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Необеспеченные займы не предусмотрены. Search_only верен; оба новых промпта разрешают их по нерелевантным фрагментам."
+  },
+  {
+    "id": "kamino-09",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "В источнике назван Kamino Swap. KSwap, Repay debt with collateral и Swap collateral не сообщают запрошенное название. У prompt_only также дублирующийся ключ quote, JSON отвергнут прежним parser."
+  },
+  {
+    "id": "kamino-10",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "В поле pct требуется20, не0,2. Search_only/prompt_only содержат противоречие единиц data0,2 и answer20%, как в v5. Combined даёт20, но убирает Markdown из цитаты и теряет буквальность."
+  },
+  {
+    "id": "kamino-11",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Typically не устанавливает универсальное обязательное95%. Search_only верен; оба новых промпта обобщают неверно."
+  },
+  {
+    "id": "kamino-12",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Permissionless. Search_only content=true несмотря на лишнюю закрывающую кавычку; оба новых промпта дают точное прямое подтверждение."
+  },
+  {
+    "id": "kamino-13",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Гарантированного grace period для этого правила нет. Prompt_only цитирует no grace period, но отвечает true. Combined смешивает обычную liquidation и autodeleverage."
+  },
+  {
+    "id": "kamino-14",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Bonus изменяется. Prompt_only даёт точный scales upward; combined ответ верен, но цитата склеена и небуквальна."
+  },
+  {
+    "id": "kamino-15",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "min(max(82−75,2),8)=7. Только search_only даёт7; prompt_only отвечает8, combined60."
+  },
+  {
+    "id": "kamino-16",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "600/800×100=75%. Все три ответа неверны. У prompt_only выражение75 в data противоречит answer60 и не является JSON-числом; combined возвращает исходные аргументы вместо результата и answer60."
+  },
+  {
+    "id": "kamino-17",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Спред — доля процентов, не principal. Ответы верны; оба новых промпта подтверждают это прямыми цитатами. У combined цитата превышает32слова, длина отдельно."
+  },
+  {
+    "id": "kamino-18",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Незанятый капитал сам не получает borrow-interest. Search_only имеет верный false, но добавляет неверное утверждение, что проценты получают только заёмщики: content=false из-за ложного пояснения. Оба новых промпта дают true."
+  },
+  {
+    "id": "kamino-19",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "После rollover penalty не применяется. Search_only/combined верны, но цитата combined про попытку rollover и fallback не доказывает отмену penalty. Prompt_only data true противоречит правильной цитате without penalty и постороннему тексту про доставку."
+  },
+  {
+    "id": "kamino-20",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Любой queued withdrawal ticket блокирует rollover всех borrowers резерва. Ответы верны; только combined даёт буквальную прямую цитату."
+  }
+]

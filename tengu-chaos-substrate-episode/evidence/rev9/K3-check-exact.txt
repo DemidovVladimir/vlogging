@@ -1,0 +1,18 @@
+# 2026-10-27T17:03:27Z chaos-kb check Web3 is my secondary area: Solana / SVM (Rust), Sui Move, EVM (Solidity, Foundry), the x402 payment protocol and agent-controlled wallets.
+real 0.04
+real 0.04
+real 0.04
+{
+  "known": true,
+  "matches": [
+    {
+      "lines": [
+        15,
+        15
+      ],
+      "note": "Skills.md",
+      "section": "Web3"
+    }
+  ],
+  "presence": "exact"
+}

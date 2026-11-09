@@ -1,0 +1,32 @@
+{
+  "id": "58c7455dd79d4cf3aa006a719571f45f",
+  "stage": "context-exam",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "context-exam",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--source-in-context",
+    "--out",
+    "runs/context.jsonl"
+  ],
+  "pid": 87234,
+  "pgid": 87234,
+  "birth": "Mon Oct 26 22:07:24 2026",
+  "manager_pid": 87218,
+  "manager_birth": "Mon Oct 26 22:07:24 2026",
+  "state": "finished",
+  "log": ".control/logs/58c7455dd79d4cf3aa006a719571f45f.log",
+  "exit_code": 0
+}

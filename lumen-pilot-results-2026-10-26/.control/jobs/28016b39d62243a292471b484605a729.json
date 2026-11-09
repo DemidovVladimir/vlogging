@@ -1,0 +1,16 @@
+{
+  "id": "28016b39d62243a292471b484605a729",
+  "stage": "doctor",
+  "command": [
+    ".venv/bin/python",
+    "doctor.py"
+  ],
+  "pid": 66232,
+  "pgid": 66232,
+  "birth": "Mon Oct 26 17:15:07 2026",
+  "manager_pid": 66227,
+  "manager_birth": "Mon Oct 26 17:15:07 2026",
+  "state": "finished",
+  "log": ".control/logs/28016b39d62243a292471b484605a729.log",
+  "exit_code": 0
+}

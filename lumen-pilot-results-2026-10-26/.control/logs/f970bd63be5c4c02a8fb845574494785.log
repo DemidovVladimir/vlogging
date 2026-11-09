@@ -1,0 +1,2 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Capacity probe ready: 481 tokens; MLX batch pads to 512; no exam input.

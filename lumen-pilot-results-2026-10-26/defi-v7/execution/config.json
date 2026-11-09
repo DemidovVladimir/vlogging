@@ -1,0 +1,23 @@
+{
+  "repo": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "revision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "weight_sha256": "2a73c6c248601ab904e035548abd8e6abb65ea27dcb5f342fb0a8910eb44173f",
+  "weight_bytes": 2263022417,
+  "parameters_billion": 4.0,
+  "context_limit": 262144,
+  "kv_bytes_at1400plus384": 263061504,
+  "expected_process_footprint_gib_range": [
+    3,
+    4
+  ],
+  "process_footprint_guard_gib": 4.5,
+  "allocator_memory_limit_gib": 4.0,
+  "swap_growth_guard_gib": 0.25,
+  "estimate_is_not_a_measurement": true,
+  "full_budget_probe_required": true,
+  "choice": "4B4bit within16GiB Mac resource envelope; current apps/embedding process untouched. Newer checkpoint than1.7B, not a parameter-only causal comparison.",
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+    "https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit/tree/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b"
+  ]
+}

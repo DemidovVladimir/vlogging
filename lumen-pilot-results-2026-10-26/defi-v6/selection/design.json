@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-27T21:07:09.368248+00:00",
+  "reason": "Follow-up after full180 v6 outputs: evidence-first English prompt regressed content and copied fictional example. Not a preregistered/held-out result.",
+  "changes": [
+    "Compact Russian prompt, no example, answer/data before evidence IDs",
+    "Same section index; preserve LTV/HF terms; penalize code-heavy passages and prefer normative narrative",
+    "Up to3passages,up to4 literal units each,max48words/unit; whole units dropped by fixed relevance until1400tokens",
+    "Model returns evidence_ids; adapter copies exact provided unit into citations; no answer/status/data change, repair or retries"
+  ],
+  "same_exam_model_and_decode": true,
+  "new_generations": 60,
+  "citation_copying_claim": false,
+  "evaluation": "Final presented output scored with same substantive/grounding rubric; raw ID selection and presentation exported separately. Human validation false."
+}

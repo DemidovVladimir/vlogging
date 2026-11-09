@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "reviewer_agent": "/root/resource_guard",
+  "reviewed_at": "2026-10-26T21:10:47.296569+00:00",
+  "human_validation": false,
+  "file_sha256": "af117d5b7b60f80a547c347e4d900e89c32a6d95f933f9441251f4e10e5cff5b",
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "source_prompt_prefix_sha256": "3cc5aec541b7919c7e2eb5667abea9f90b1cd07c3dbfe42ef4ae2a0ab2920da3",
+  "exam_sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+  "strict_grader_sha256": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+  "condition": "Base Qwen3-1.7B-4bit, adapter=null, source in context, closed_book=false. This is an in-context control, not fine-tuning or new training.",
+  "criteria": "Full contract requires valid raw JSON, correct status and all requested data fields (semantic string/currency equivalents accepted), plus a truthful source-grounded explanation. Contradictory status, missing fields, invalid JSON or invented facts fail. Poor grammar alone is not a failure.",
+  "count": 30,
+  "full_answer_correct_count": 13,
+  "strict_correct_count": 10,
+  "classification_counts": {
+    "correct": 13,
+    "partial": 7,
+    "abstained": 7,
+    "incorrect": 3
+  },
+  "semantic_vs_strict_mismatches": [
+    {
+      "id": "v2-a07",
+      "semantic": true,
+      "strict": false
+    },
+    {
+      "id": "v2-a15",
+      "semantic": true,
+      "strict": false
+    },
+    {
+      "id": "v2-a20",
+      "semantic": true,
+      "strict": false
+    }
+  ],
+  "items": [
+    {
+      "id": "v2-a01",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Факт извлечён верно: «Люмен», status/data согласованы, но после JSON остался хвост ``` — raw не является валидным JSON. Полный контракт не выполнен; название уже дано в SYSTEM и не доказывает обучения."
+    },
+    {
+      "id": "v2-a02",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан служебный код NFR-27; объяснение и data согласованы."
+    },
+    {
+      "id": "v2-a03",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны 18 мест в «Сумраке»."
+    },
+    {
+      "id": "v2-a04",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны 32 места в «Астре»."
+    },
+    {
+      "id": "v2-a05",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны 11 евро с понедельника по пятницу. Опечатка «пятницень» не меняет смысл, status/data корректны."
+    },
+    {
+      "id": "v2-a06",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Извлечены правильные 14 евро и ссылка F06, но status=unknown и первая фраза об отсутствии цены противоречат этому. Полный контракт не выполнен."
+    },
+    {
+      "id": "v2-a07",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны 17 евро за премьеру; currency=Euro — смысловой эквивалент EUR, поэтому семантически правильный полный ответ."
+    },
+    {
+      "id": "v2-a08",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ и пустой data; порог 5 человек из F08 не извлечён."
+    },
+    {
+      "id": "v2-a09",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ и пустой data; групповые 20% из F09 не извлечены."
+    },
+    {
+      "id": "v2-a10",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Диапазон понедельник–пятница верно извлечён и days семантически корректен, но status=unknown противоречит утвердительному ответу. Полный контракт не выполнен."
+    },
+    {
+      "id": "v2-a11",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно запрещена групповая скидка на премьерные билеты; status known/data=false согласованы."
+    },
+    {
+      "id": "v2-a12",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Правило неприменения скидки к абонементам и data=false верны, но status=unknown противоречит утвердительному ответу. Полный контракт не выполнен."
+    },
+    {
+      "id": "v2-a13",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ и пустой data вместо цены «Искры» 24 евро из F13."
+    },
+    {
+      "id": "v2-a14",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны три посещения «Искры»; небольшая грамматическая ошибка не меняет смысл."
+    },
+    {
+      "id": "v2-a15",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан диапазон понедельник–четверг; days=понедельник-четверг семантически эквивалентен эталону, status known."
+    },
+    {
+      "id": "v2-a16",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Срок 21 день, включая активацию, извлечён верно, но status=unknown противоречит ответу и data.days=21. Полный контракт не выполнен."
+    },
+    {
+      "id": "v2-a17",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно запрещена передача посещения «Искры» другому человеку; data/status корректны."
+    },
+    {
+      "id": "v2-a18",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ с null вместо цены «Тумана» 44 евро из F18; полный ответ отсутствует."
+    },
+    {
+      "id": "v2-a19",
+      "full_answer_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Вместо 5 посещений утверждается visits=0 при status unknown и отсутствии числа в источнике; неправильный ответ."
+    },
+    {
+      "id": "v2-a20",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно разрешены все дни недели; строка все дни недели эквивалентна в любой день недели, status/data корректны."
+    },
+    {
+      "id": "v2-a21",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан срок «Тумана» 40 календарных дней с включением даты активации."
+    },
+    {
+      "id": "v2-a22",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Data.transfer_allowed=false совпадает с запретом, но status unknown и текст отрицают наличие правила F22; добавлено ложное утверждение, что дополнительной информации не существует. Полный контракт не выполнен."
+    },
+    {
+      "id": "v2-a23",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ с пустым data; суточный предел 1 из F23 не извлечён."
+    },
+    {
+      "id": "v2-a24",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно запрещены премьеры по обоим абонементам; status known/data.passes_valid=false согласованы."
+    },
+    {
+      "id": "v2-a25",
+      "full_answer_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Вместо полного возврата (доля 1) при интервале >=6 часов указана половина (0,5) и в тексте, и в data."
+    },
+    {
+      "id": "v2-a26",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ с пустым data; фиксированная доля 0,5 для 2<=t<6 часов не извлечена, требование конкретной даты/времени не нужно."
+    },
+    {
+      "id": "v2-a27",
+      "full_answer_correct": false,
+      "classification": "abstained",
+      "note_ru": "Отказ с пустым data; нулевой возврат менее чем за два часа из F27 не извлечён."
+    },
+    {
+      "id": "v2-a28",
+      "full_answer_correct": false,
+      "classification": "partial",
+      "note_ru": "Полный возврат за >=24 часа упомянут верно, но data.refund_fraction=0 противоречит ему; далее выдумано отсутствие указанной доли и правило по умолчанию. Полный контракт не выполнен."
+    },
+    {
+      "id": "v2-a29",
+      "full_answer_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Указан половинный возврат 0,5 вместо нулевого для премьеры менее чем за 24 часа."
+    },
+    {
+      "id": "v2-a30",
+      "full_answer_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно назван администратор Сол Мерн; status/data согласованы."
+    }
+  ],
+  "name_caveat": "v2-a01 name is already in SYSTEM. It is not evidence of new learning; here raw format invalid anyway.",
+  "full_correct_excluding_system_name": {
+    "correct": 13,
+    "total": 29,
+    "excluded": [
+      "v2-a01"
+    ]
+  },
+  "review_complete": true
+}

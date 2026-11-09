@@ -1,0 +1,848 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-10-27T09:56:06.790078+00:00",
+  "reviewer_agent": "/root/resource_guard",
+  "human_validation": false,
+  "independent_of_exam_author": true,
+  "fully_independent_external_benchmark": false,
+  "reviewer_has_seen_historical_results": true,
+  "reviewer_has_seen_revised_system": false,
+  "reviewer_has_seen_model_outputs_for_fresh_exam": false,
+  "model_compute_performed": false,
+  "exam_sha256": "57cbff775b48d89bf21e85ce587a7757bc866846fd5ac2747008cdbdd48e3d93",
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "author_manifest_sha256": "a05948944a0f79fd874d988e10b1f473bb5c06b8da77cf029277ccf2323859e1",
+  "count": 60,
+  "category_counts": {
+    "atomic": 30,
+    "composition": 24,
+    "unknown": 6
+  },
+  "approved_for_freeze": true,
+  "blocking_issues": [],
+  "items": [
+    {
+      "id": "v4-a01",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "name": "Люмен"
+      },
+      "note_ru": "Прямая формулировка F01: Название учебного кинотеатра — «Люмен». Это вымышленный бизнес."
+    },
+    {
+      "id": "v4-a02",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "code": "NFR-27"
+      },
+      "note_ru": "Прямая формулировка F02: Внутренний код справочника — NFR-27."
+    },
+    {
+      "id": "v4-a03",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "seats": 18
+      },
+      "note_ru": "Прямая формулировка F03: В зале «Сумрак» 18 мест."
+    },
+    {
+      "id": "v4-a04",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "seats": 32
+      },
+      "note_ru": "Прямая формулировка F04: В зале «Астра» 32 места."
+    },
+    {
+      "id": "v4-a05",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 11,
+        "currency": "EUR"
+      },
+      "note_ru": "Прямая формулировка F05: Один обычный билет с понедельника по пятницу стоит 11 евро."
+    },
+    {
+      "id": "v4-a06",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 14,
+        "currency": "EUR"
+      },
+      "note_ru": "Прямая формулировка F06: Один обычный билет в субботу или воскресенье стоит 14 евро."
+    },
+    {
+      "id": "v4-a07",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 17,
+        "currency": "EUR"
+      },
+      "note_ru": "Прямая формулировка F07: Один билет на премьеру в любой день стоит 17 евро."
+    },
+    {
+      "id": "v4-a08",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "minimum_people": 5
+      },
+      "note_ru": "Прямая формулировка F08: Группой считаются не менее пяти человек на одном сеансе."
+    },
+    {
+      "id": "v4-a09",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "discount_percent": 20
+      },
+      "note_ru": "Прямая формулировка F09: Групповая скидка составляет 20 процентов от цены каждого обычного билета."
+    },
+    {
+      "id": "v4-a10",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "days": "с понедельника по пятницу"
+      },
+      "note_ru": "Прямая формулировка F10: Групповая скидка действует только с понедельника по пятницу."
+    },
+    {
+      "id": "v4-a11",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "group_discount": false
+      },
+      "note_ru": "Прямая формулировка F11: Групповая скидка не действует на премьерные билеты."
+    },
+    {
+      "id": "v4-a12",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "group_discount": false
+      },
+      "note_ru": "Прямая формулировка F12: Групповая скидка не применяется к абонементам и не складывается с ними."
+    },
+    {
+      "id": "v4-a13",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 24,
+        "currency": "EUR"
+      },
+      "note_ru": "Прямая формулировка F13: Абонемент «Искра» стоит 24 евро."
+    },
+    {
+      "id": "v4-a14",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "visits": 3
+      },
+      "note_ru": "Прямая формулировка F14: Абонемент «Искра» включает три посещения."
+    },
+    {
+      "id": "v4-a15",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "days": "с понедельника по четверг"
+      },
+      "note_ru": "Прямая формулировка F15: Абонемент «Искра» можно использовать только с понедельника по четверг."
+    },
+    {
+      "id": "v4-a16",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "days": 21
+      },
+      "note_ru": "Прямая формулировка F16: «Искра» действует 21 календарный день, включая день активации."
+    },
+    {
+      "id": "v4-a17",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "transfer_allowed": false
+      },
+      "note_ru": "Прямая формулировка F17: «Искра» именной: его посещения нельзя передавать другому человеку."
+    },
+    {
+      "id": "v4-a18",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 44,
+        "currency": "EUR"
+      },
+      "note_ru": "Прямая формулировка F18: Абонемент «Туман» стоит 44 евро."
+    },
+    {
+      "id": "v4-a19",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "visits": 5
+      },
+      "note_ru": "Прямая формулировка F19: Абонемент «Туман» включает пять посещений."
+    },
+    {
+      "id": "v4-a20",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "days": "в любой день недели"
+      },
+      "note_ru": "Прямая формулировка F20: «Туман» можно использовать в любой день недели."
+    },
+    {
+      "id": "v4-a21",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "days": 40
+      },
+      "note_ru": "Прямая формулировка F21: «Туман» действует 40 календарных дней, включая день активации."
+    },
+    {
+      "id": "v4-a22",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "transfer_allowed": false
+      },
+      "note_ru": "Прямая формулировка F22: «Туман» именной: его посещения нельзя передавать другому человеку."
+    },
+    {
+      "id": "v4-a23",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "visits_per_day": 1
+      },
+      "note_ru": "Прямая формулировка F23: По каждому из двух абонементов разрешено не более одного посещения в день."
+    },
+    {
+      "id": "v4-a24",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "Прямая формулировка F24: Ни один из двух абонементов не действует на премьеры."
+    },
+    {
+      "id": "v4-a25",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "refund_fraction": 1
+      },
+      "note_ru": "Прямая формулировка F25: Обычный билет можно вернуть за шесть часов до начала или раньше с возвратом всей уплаченной суммы."
+    },
+    {
+      "id": "v4-a26",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "refund_fraction": 0.5
+      },
+      "note_ru": "Прямая формулировка F26: При возврате обычного билета не менее чем за два, но менее чем за шесть часов возвращается половина уплаченной суммы."
+    },
+    {
+      "id": "v4-a27",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "refund_fraction": 0
+      },
+      "note_ru": "Прямая формулировка F27: При возврате обычного билета менее чем за два часа деньги не возвращаются."
+    },
+    {
+      "id": "v4-a28",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "refund_fraction": 1
+      },
+      "note_ru": "Прямая формулировка F28: Премьерный билет можно вернуть за 24 часа до начала или раньше с возвратом всей уплаченной суммы."
+    },
+    {
+      "id": "v4-a29",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "refund_fraction": 0
+      },
+      "note_ru": "Прямая формулировка F29: При возврате премьерного билета менее чем за 24 часа деньги не возвращаются."
+    },
+    {
+      "id": "v4-a30",
+      "category": "atomic",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "administrator": "Сол Мерн"
+      },
+      "note_ru": "Прямая формулировка F30: Учебного администратора зовут Сол Мерн."
+    },
+    {
+      "id": "v4-c01",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 140.8,
+        "currency": "EUR"
+      },
+      "note_ru": "16 × 11 × 0,8 = 140,80; четверг, обычный показ, группа >=5, места даны."
+    },
+    {
+      "id": "v4-c02",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 22,
+        "currency": "EUR"
+      },
+      "note_ru": "2 × 11 = 22; двое ниже порога5, пятница."
+    },
+    {
+      "id": "v4-c03",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 252,
+        "currency": "EUR"
+      },
+      "note_ru": "18 × 14 = 252; суббота исключает групповую скидку."
+    },
+    {
+      "id": "v4-c04",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 323,
+        "currency": "EUR",
+        "group_discount": false,
+        "passes_valid": false
+      },
+      "note_ru": "19 × 17 = 323; премьера запрещает скидку и оба абонемента."
+    },
+    {
+      "id": "v4-c05",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 33,
+        "currency": "EUR"
+      },
+      "note_ru": "Обычные билеты, t=6h: доля1 × общая уплата33 = 33; все три возвращены в один момент."
+    },
+    {
+      "id": "v4-c06",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 26.4,
+        "currency": "EUR"
+      },
+      "note_ru": "Обычные билеты, t=2h включительно: доля0,5 × общая фактическая уплата52,80 = 26,40; пересчёта по полному тарифу нет."
+    },
+    {
+      "id": "v4-c07",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 0,
+        "currency": "EUR"
+      },
+      "note_ru": "1h45m = 1,75h <2h: возврат0."
+    },
+    {
+      "id": "v4-c08",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 14,
+        "currency": "EUR"
+      },
+      "note_ru": "5h15m = 5,25h в [2,6): 28 × 0,5 = 14 за оба билета."
+    },
+    {
+      "id": "v4-c09",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 51,
+        "currency": "EUR"
+      },
+      "note_ru": "Премьера, t=24h включительно: вся фактическая уплата51 возвращается за три билета."
+    },
+    {
+      "id": "v4-c10",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 0,
+        "currency": "EUR"
+      },
+      "note_ru": "23h45m = 23,75h <24h: возврат0 за два премьерных билета."
+    },
+    {
+      "id": "v4-c11",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "hall": "Сумрак"
+      },
+      "note_ru": "17<=18<32: наименьший подходящий зал Сумрак; вопрос явно исключает доступность билетов."
+    },
+    {
+      "id": "v4-c12",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "hall": "Астра"
+      },
+      "note_ru": "18<29<=32: подходит только Астра; вопрос о вместимости, а не бронировании."
+    },
+    {
+      "id": "v4-c13",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "fits": false
+      },
+      "note_ru": "34>32>18: ни один зал не вмещает всю группу."
+    },
+    {
+      "id": "v4-c14",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "covers_both": false
+      },
+      "note_ru": "Владелец, активная Искра,3 остатка, понедельник, обычные показы, места и неиспользованный день заданы; два прохода не покрывает лимит1/день."
+    },
+    {
+      "id": "v4-c15",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "У Тумана сегодня уже был проход: лимит1/день блокирует второй, хотя остаток1/срок/владелец/обычный сеанс/место заданы."
+    },
+    {
+      "id": "v4-c16",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "Абонемент Нины пытается использовать Марк: именной запрет F17, остальные условия явно заданы."
+    },
+    {
+      "id": "v4-c17",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "Абонемент Марка пытается использовать Нина: именной запрет F22; воскресенье разрешено, но это не отменяет владельца."
+    },
+    {
+      "id": "v4-c18",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "Суббота не входит в понедельник–четверг Искры; остальные условия явно даны."
+    },
+    {
+      "id": "v4-c19",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": true
+      },
+      "note_ru": "Туман: владелец, внутри срока, остаток3, сегодня не использован, пятница, обычный показ и свободное место явно даны; все необходимые условия положительного прохода соблюдены."
+    },
+    {
+      "id": "v4-c20",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": true
+      },
+      "note_ru": "Искра: активация среда, включённый день21 — вторник; ещё в21-дневном сроке и в разрешённом диапазоне. Владелец, остаток2, неиспользованный день, обычный показ и место даны."
+    },
+    {
+      "id": "v4-c21",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "Искра: активация среда, день22 — среда; срок21 уже истёк, несмотря на разрешённый день и остаток."
+    },
+    {
+      "id": "v4-c22",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": true
+      },
+      "note_ru": "Туман: активация воскресенье, включённый день40 — четверг; ещё в40-дневном сроке. Владелец, остаток2, неиспользованный день, обычный показ и место даны."
+    },
+    {
+      "id": "v4-c23",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "passes_valid": false
+      },
+      "note_ru": "Туман: активация воскресенье, день41 — пятница; срок40 истёк, остаток не продлевает его."
+    },
+    {
+      "id": "v4-c24",
+      "category": "composition",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {
+        "amount": 168,
+        "currency": "EUR",
+        "purchase": "Искра",
+        "quantity": 7,
+        "group_discount": false
+      },
+      "note_ru": "7 × 24 = 168. Искра покрывает каждому3 обычных посещения Mon/Tue/Thu по одному/день в первой неделе и именная. Разовые даже при20%: 7 × 11 × 0,8 × 3 = 184,80;7 Туманов=308. Любому человеку3 разовых стоят минимум26,40>24, поэтому смешанная оплата не улучшает минимум168; групповая скидка к покупке абонементов запрещена."
+    },
+    {
+      "id": "v4-u01",
+      "category": "unknown",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {},
+      "note_ru": "Подарочные сертификаты и их продажа нигде не описаны; наличие именных абонементов не устанавливает такую услугу."
+    },
+    {
+      "id": "v4-u02",
+      "category": "unknown",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {},
+      "note_ru": "Цены и варианты билет/абонемент не задают платёжный инструмент; приём банковской карты не указан."
+    },
+    {
+      "id": "v4-u03",
+      "category": "unknown",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {},
+      "note_ru": "Язык аудио/звуковых дорожек нигде не указан; из русского языка источника он не следует."
+    },
+    {
+      "id": "v4-u04",
+      "category": "unknown",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {},
+      "note_ru": "Сеть Wi-Fi и условия её доступности не описаны."
+    },
+    {
+      "id": "v4-u05",
+      "category": "unknown",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {},
+      "note_ru": "Уличного адреса нет; вымышленное название не определяет местоположение."
+    },
+    {
+      "id": "v4-u06",
+      "category": "unknown",
+      "gold_data_status_correct": true,
+      "gold_explanation_correct": true,
+      "evidence_valid": true,
+      "question_sufficient_and_consistent": true,
+      "expected_data_independently_derived": {},
+      "note_ru": "Указано только имя администратора, но номера телефона/контактных данных нет."
+    }
+  ],
+  "calendar_checks": [
+    {
+      "id": "v4-c20",
+      "activation_weekday_mon0": 2,
+      "inclusive_day": 21,
+      "expected_weekday_mon0": 1,
+      "computed_weekday_mon0": 1
+    },
+    {
+      "id": "v4-c21",
+      "activation_weekday_mon0": 2,
+      "inclusive_day": 22,
+      "expected_weekday_mon0": 2,
+      "computed_weekday_mon0": 2
+    },
+    {
+      "id": "v4-c22",
+      "activation_weekday_mon0": 6,
+      "inclusive_day": 40,
+      "expected_weekday_mon0": 3,
+      "computed_weekday_mon0": 3
+    },
+    {
+      "id": "v4-c23",
+      "activation_weekday_mon0": 6,
+      "inclusive_day": 41,
+      "expected_weekday_mon0": 4,
+      "computed_weekday_mon0": 4
+    }
+  ],
+  "historical_exact_question_checks_independently_repeated": [
+    {
+      "path": "seeds/train.jsonl",
+      "sha256": "3e20da68c161cd6fa6ff7cc21465834e725047ea8f1cadb88e0fb7ae9447ddfe",
+      "count": 60,
+      "exact_overlap_count": 0
+    },
+    {
+      "path": "seeds/valid.jsonl",
+      "sha256": "8b4ee188e7ff420e7e34dfc1b25970ab2689f259d2925ff357d16677cf12d3d9",
+      "count": 12,
+      "exact_overlap_count": 0
+    },
+    {
+      "path": "seeds/test.jsonl",
+      "sha256": "6cf4a48bf19142a9e0c7020fab091452d2ec876e8dce8b620a5bb5bd281b8a0e",
+      "count": 8,
+      "exact_overlap_count": 0
+    },
+    {
+      "path": "v2/seeds/train.jsonl",
+      "sha256": "eaf2e74479a329f281f6dee79811159245fb4f080aef892c43cbb09989050d02",
+      "count": 300,
+      "exact_overlap_count": 0
+    },
+    {
+      "path": "v2/seeds/valid.jsonl",
+      "sha256": "0dcb6fb547c554fdd7cff13c53f0be44c785df30695081ac76737673cfa39c8e",
+      "count": 24,
+      "exact_overlap_count": 0
+    },
+    {
+      "path": "v2/seeds/test.jsonl",
+      "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+      "count": 60,
+      "exact_overlap_count": 0
+    },
+    {
+      "path": "v3/seeds/test.jsonl",
+      "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+      "count": 60,
+      "exact_overlap_count": 0
+    }
+  ],
+  "checks": {
+    "all60_gold_status_data_explanations_checked": true,
+    "all_evidence_ids_exist_and_support_claims": true,
+    "all24_compositions_derived_without_using_author_oracle": true,
+    "decimal_arithmetic_used_for_prices": true,
+    "unknown6_absence_checked_over_entire_source": true,
+    "positive_pass_cases_all_conditions_explicit": true,
+    "capacity_queries_do_not_invent_availability": true,
+    "multiple_refund_questions_specify_same_timing_for_each_ticket": true,
+    "all_questions_unique": true,
+    "all_ids_unique": true,
+    "inputs_unchanged": true
+  },
+  "non_blocking_notes_ru": [
+    "Это peer audit нового локального теста, не независимый внешний benchmark: рецензент знает прошлые результаты, но не читал revised SYSTEM и не видел ответы на fresh exam.",
+    "У a01 имя кинотеатра уже содержится в исходном SYSTEM; его ответ не подтверждает обучение новых фактов.",
+    "Evidence — ссылки на ключевые правила; условия о владельце, сроке, остатке, дне и местах дополнительно явно заданы самими составными вопросами. Unknown подтверждены отсутствием сведений во всём источнике и общим запретом додумывать.",
+    "Для c24 минимальность остаётся верной при смешанной оплате; сравнение всех-разовых отдельно не является единственным обоснованием.",
+    "Заморозить SHA экзамена/source/обоих SYSTEM/runner до первых ответов; сохранить все arms и прежний критерий валидного JSON/status/data/правдивого объяснения, включая смысловые эквиваленты строк."
+  ]
+}

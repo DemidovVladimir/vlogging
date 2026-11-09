@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-10-27T12:23:01.613621+00:00",
+  "human_validation": false,
+  "primary": "content_correct over60: all requested substantive values/facts correct; prose must not contradict correct data/source. JSON/status/citations are separate metrics. Malformed JSON can be content-correct only if raw unambiguously communicates every requested answer without contradiction. Do not guess intended meaning in repetitive/incomplete text.",
+  "data_format": "mechanical strict type/key/value metric; shortstring semantic equivalents may still pass content even if data_ok=false.",
+  "status": "known includes false, prohibited, zero and negative answers; unknown only insufficient evidence/input, not uncertainty about a rule actually provided.",
+  "unknown": "User-specific/live/future inputs absent; avoid invented values. Correct abstention can pass content even if status field malformed, but structured_unknown separate requiresparse/status/dataempty.",
+  "quote_valid": "Nonempty verbatim quote after whitespace normalization, references an actually provided source_id; all provided citations must be valid. Case/punctuation not freely normalized; no invented refs.",
+  "citation_supported": "Agent confirms valid cited fragment(s) substantively establish all requested facts in answer/data; a correct but generic quote is not sufficient. Correct arithmetic may use given question numbers with cited general rule. Extra unsupported or contradictory factual claims fail full support.",
+  "fully_grounded": "Known only: content_correct AND quote_valid AND citation_supported. This is not the primary closed-book knowledge score; closed has no supplied source IDs.",
+  "no_output_repair": "Primary raw remains unchanged; parse only wholejsonstrip. Nonexam sanity fence normalization does not apply to primary parse metrics.",
+  "ambiguous": "Mark provisional false with explicit note and ask root for adjudication; do not silently accept mutually inconsistent prose/data.",
+  "judging": "Review actual raw plus frozen gold/source/context; no model reruns, web lookups to change a frozen answer key, query changes, or posthoc prompt tuning. Agent-authored local benchmark, not external blinded benchmark.",
+  "primary_exposure": "28 invalid KV4 outputs were seen before ordinary-KV execution. Preserved separately; no quality scores from them; no question/context/prompt/query/weight changes based on those outputs."
+}

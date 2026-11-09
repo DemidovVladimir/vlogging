@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "topic": "eMudhra: браузер блокирует. А приложение? — TENGU",
+  "language": "ru",
+  "targetSeconds": 330,
+  "wordsPerMinute": 140,
+  "plannedPauseSeconds": 30,
+  "status": "ready",
+  "copiedReferenceContent": false,
+  "template": "artifact-template-tengu-youtube",
+  "reference": "Approved RU v33 / English edition",
+  "targetDurationSeconds": 330,
+  "durationOverride": "User requested a clearer revision; one story, five to six minutes.",
+  "evidenceCheckedAt": "2026-10-23",
+  "revision": 3,
+  "qaVerifiedAt": "2026-10-23T10:46:21.214Z"
+}

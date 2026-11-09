@@ -1,0 +1,6 @@
+{
+  "documents": 1673,
+  "chunks": 36451,
+  "database_sha256": "65344342a399a32c55bca3a57237aecbd9c43e8ad5a7d84ced662b26b841d8c6",
+  "algorithm": "Markdown sections;170word windows/40word overlap, never cross a heading"
+}

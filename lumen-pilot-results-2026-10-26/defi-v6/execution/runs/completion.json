@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "questions": 60,
+  "arms": [
+    "search_only",
+    "prompt_only",
+    "combined"
+  ],
+  "answers": 180
+}

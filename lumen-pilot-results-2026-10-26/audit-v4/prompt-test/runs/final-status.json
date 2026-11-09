@@ -1,0 +1,145 @@
+{
+  "experiment_id": "ae864efc-4123-4cfa-aa71-fb7596115730",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-prompt-v4",
+  "tracked_running_jobs": [],
+  "logical_file_bytes": 1838880209,
+  "dry_run": true,
+  "jobs": [
+    {
+      "id": "27330d9adce64a3dbc0e77f88ebf6dd0",
+      "stage": "ab-baseline",
+      "command": [
+        "/usr/bin/caffeinate",
+        "-i",
+        ".venv/bin/python",
+        "resource_guard.py",
+        "--stage",
+        "ab-baseline",
+        "--max-footprint-gib",
+        "6",
+        "--max-swap-growth-gib",
+        "0.75",
+        "--interval",
+        "1",
+        "--",
+        ".venv/bin/python",
+        "prompt_harness.py",
+        "--arm",
+        "baseline",
+        "--out",
+        "runs/baseline.jsonl"
+      ],
+      "pid": 3137,
+      "pgid": 3137,
+      "birth": "Tue Oct 27 10:58:26 2026",
+      "manager_pid": 3114,
+      "manager_birth": "Tue Oct 27 10:58:25 2026",
+      "state": "finished",
+      "log": ".control/logs/27330d9adce64a3dbc0e77f88ebf6dd0.log",
+      "exit_code": 124
+    },
+    {
+      "id": "2a1e355872a149f6bba117a52895ffac",
+      "stage": "download",
+      "command": [
+        ".venv/bin/python",
+        "download_model.py"
+      ],
+      "pid": 2798,
+      "pgid": 2798,
+      "birth": "Tue Oct 27 10:55:21 2026",
+      "manager_pid": 2784,
+      "manager_birth": "Tue Oct 27 10:55:21 2026",
+      "state": "finished",
+      "log": ".control/logs/2a1e355872a149f6bba117a52895ffac.log",
+      "exit_code": 0
+    },
+    {
+      "id": "68da745219e447c58d25ef66289e6a4d",
+      "stage": "preflight",
+      "command": [
+        ".venv/bin/python",
+        "prompt_harness.py",
+        "--preflight"
+      ],
+      "pid": 2900,
+      "pgid": 2900,
+      "birth": "Tue Oct 27 10:56:47 2026",
+      "manager_pid": 2884,
+      "manager_birth": "Tue Oct 27 10:56:47 2026",
+      "state": "finished",
+      "log": ".control/logs/68da745219e447c58d25ef66289e6a4d.log",
+      "exit_code": 0
+    },
+    {
+      "id": "79b957ceb2dd4366962f6b22dd8b5899",
+      "stage": "venv",
+      "command": [
+        "/opt/homebrew/bin/python3.12",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "pid": 2508,
+      "pgid": 2508,
+      "birth": "Tue Oct 27 10:52:30 2026",
+      "manager_pid": 2505,
+      "manager_birth": "Tue Oct 27 10:52:30 2026",
+      "state": "finished",
+      "log": ".control/logs/79b957ceb2dd4366962f6b22dd8b5899.log",
+      "exit_code": 0
+    },
+    {
+      "id": "b419843868e54786a13ad436af0164b6",
+      "stage": "packages",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--index-url",
+        "https://pypi.org/simple",
+        "-r",
+        "requirements.lock.txt"
+      ],
+      "pid": 2686,
+      "pgid": 2686,
+      "birth": "Tue Oct 27 10:53:16 2026",
+      "manager_pid": 2674,
+      "manager_birth": "Tue Oct 27 10:53:16 2026",
+      "state": "finished",
+      "log": ".control/logs/b419843868e54786a13ad436af0164b6.log",
+      "exit_code": 0
+    },
+    {
+      "id": "b50c921881334a9bae24136f0d07c8f2",
+      "stage": "ab-probe",
+      "command": [
+        "/usr/bin/caffeinate",
+        "-i",
+        ".venv/bin/python",
+        "resource_guard.py",
+        "--stage",
+        "ab-probe",
+        "--max-footprint-gib",
+        "6",
+        "--max-swap-growth-gib",
+        "0.75",
+        "--interval",
+        "1",
+        "--",
+        ".venv/bin/python",
+        "prompt_harness.py",
+        "--probe"
+      ],
+      "pid": 2959,
+      "pgid": 2959,
+      "birth": "Tue Oct 27 10:57:41 2026",
+      "manager_pid": 2940,
+      "manager_birth": "Tue Oct 27 10:57:41 2026",
+      "state": "finished",
+      "log": ".control/logs/b50c921881334a9bae24136f0d07c8f2.log",
+      "exit_code": 0
+    }
+  ]
+}

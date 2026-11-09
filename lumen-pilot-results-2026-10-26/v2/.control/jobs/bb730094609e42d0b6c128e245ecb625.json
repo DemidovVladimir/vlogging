@@ -1,0 +1,33 @@
+{
+  "id": "bb730094609e42d0b6c128e245ecb625",
+  "stage": "eval-clean200",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "eval-clean200",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/eval-clean200.jsonl",
+    "--adapter",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/adapters/clean"
+  ],
+  "pid": 80556,
+  "pgid": 80556,
+  "birth": "Mon Oct 26 20:03:23 2026",
+  "manager_pid": 80535,
+  "manager_birth": "Mon Oct 26 20:03:23 2026",
+  "state": "finished",
+  "log": ".control/logs/bb730094609e42d0b6c128e245ecb625.log",
+  "exit_code": 0
+}

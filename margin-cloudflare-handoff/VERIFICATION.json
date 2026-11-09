@@ -1,0 +1,17 @@
+{
+  "prepared_on": "2026-11-05",
+  "timezone": "Europe/Berlin",
+  "source_files": 13,
+  "reference_files": 1,
+  "source_copy_and_hash_validation": "passed",
+  "local_markdown_links_checked": 4,
+  "excluded_runtime_artifact_check": "passed",
+  "pytest": {
+    "passed": 33,
+    "warnings": 1,
+    "live_upstream_requests": false
+  },
+  "javascript_syntax": "passed",
+  "launcher_shell_syntax": "passed",
+  "cloud_resources_changed": false
+}

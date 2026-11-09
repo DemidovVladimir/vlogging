@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-26T16:29:24.791275+00:00",
+  "stage": "baseline completed; fixed200-step training in progress; no primary after answers seen",
+  "files": {
+    "train-config.yaml": "f04c93aa17248de2cde770d43afe0c7ccfe2a896fd59773173c496d95a7a6dc4",
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "prepare_data.py": "20083dea42d606d1f6af1c860608df9b92ad2a7ec4932b1c02b2c1b6d53394ce",
+    "run_eval.py": "ac82dedba819bbcf10c6623a180859b144587dbab1cfc6379644c21627f685b2",
+    "compare.py": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+    "seeds/train.jsonl": "3e20da68c161cd6fa6ff7cc21465834e725047ea8f1cadb88e0fb7ae9447ddfe",
+    "seeds/valid.jsonl": "8b4ee188e7ff420e7e34dfc1b25970ab2689f259d2925ff357d16677cf12d3d9",
+    "seeds/test.jsonl": "6cf4a48bf19142a9e0c7020fab091452d2ec876e8dce8b620a5bb5bd281b8a0e",
+    "data/train.jsonl": "ed68493c2ff860ed079f8d4186ec308272039947624356005473b64e849dc874",
+    "data/valid.jsonl": "171fc952518f9c53f1ac1cdb40bf6dca35411f80e2eb491586c354e2fc411333",
+    "model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "data-lock.json": "64069b6cd47595fdfdd17dea19485fc7c789b917fffd3ff5bd2442d30b9eeed3",
+    "source-handbook.txt": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+    "requirements.lock.txt": "70dbba4e805490cfbc9d03b3e37134956633e6e44af65032634c70ca6c362118"
+  },
+  "note": "Source/test hashes were first fixed before baseline in data-lock and protocol-amendments; this snapshot also records runner/config versions."
+}

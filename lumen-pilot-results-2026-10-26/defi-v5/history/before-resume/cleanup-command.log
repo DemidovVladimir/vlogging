@@ -1,0 +1,8 @@
+{
+  "experiment_id": "289b0ecc-a7f5-4b93-8c4e-ae50b8efcf0e",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5",
+  "tracked_running_jobs": [],
+  "logical_file_bytes": 1564726201,
+  "dry_run": false
+}
+{"deleted_root": true, "tracked_running_jobs": 0, "logical_bytes_removed_estimate": 1564726201, "observed_free_disk_delta_bytes": 1593729024, "scope": "dedicated experiment directory; no global caches or other services touched"}

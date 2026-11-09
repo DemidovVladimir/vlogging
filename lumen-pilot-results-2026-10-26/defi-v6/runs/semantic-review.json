@@ -1,0 +1,1275 @@
+{
+  "created_at_utc": "2026-10-27T21:06:34.021738+00:00",
+  "reviewer": "root agent; manual reading of all180raw outputs and provided source contexts, same v5 rubric",
+  "human_validation": false,
+  "raw_sha256": {
+    "search_only": "86f4f950fce70fafb263fb1ee6a23dd9831699d59c4c327278d5aaa0e04c70e9",
+    "prompt_only": "a12285cc9d95b3f5b6a0162645597c83a7a63fba693f003858c28893f6764c10",
+    "combined": "823d715ad112e20b38e4b03c471265a38a650282996061ef06d184c8c8ed6155"
+  },
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "items": [
+    {
+      "id": "aave-01",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Критерий eligibility при0,98 выполнен; неверные или отсутствующие цитаты не засчитываются как подтверждение."
+    },
+    {
+      "id": "aave-02",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "HF ровно1 не удовлетворяет строгому условию <1; ответ true ошибочен."
+    },
+    {
+      "id": "aave-03",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "При HF0,97 вывод не проходит описанное ограничение; ответ true ошибочен."
+    },
+    {
+      "id": "aave-04",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Фиксированного ожидания нет. Цитата про siloed borrowing у prompt_only не подтверждает сроки погашения; combined цитирует repay at any time."
+    },
+    {
+      "id": "aave-05",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Peg1:1. Prompt_only выдумывает1000000; combined приводит буквальную1:1 цитату."
+    },
+    {
+      "id": "aave-06",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенный механизм balance_increases указан верно, но буквального подтверждения цитатой нет."
+    },
+    {
+      "id": "aave-07",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Search_only/prompt_only дают верный false. Prompt_only цитирует запрет другого collateral, а не корзину debt. Combined переносит ответ и цитату про доставку из форматного примера: ответ по существу считается неверным, хотя data случайно совпадает."
+    },
+    {
+      "id": "aave-08",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Debt ceiling применяется. Combined подтверждает прямой цитатой; она длиннее запрошенных32слов, нарушение длины отражено отдельно и не меняет прежний критерий fully_grounded."
+    },
+    {
+      "id": "aave-09",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Correlated. У prompt_only фраза про одинаковый underlying и движения цен подтверждает корреляцию в данном eMode-источнике; combined цитирует правило прямо."
+    },
+    {
+      "id": "aave-10",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Другой активный долг запрещён. Combined отвечает true. Prompt_only имеет верный data, но объяснение про запрещённую доставку относится к чужому сценарию: консервативно content=false, отдельный data_ok сохраняет совпадение."
+    },
+    {
+      "id": "aave-11",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Одного approval недостаточно без collateral. Цитата prompt_only про non-STABLECOINS не доказывает требование залога. Combined цитирует нужное before-borrow правило."
+    },
+    {
+      "id": "aave-12",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Для approveDelegation prior supply не требуется; prompt_only/combined путают вызов approval и последующий borrow."
+    },
+    {
+      "id": "aave-13",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Borrow должен отклониться при нарушении HF. Prompt_only даёт верный ответ, но цитирует другое основание отказа. Combined false и посторонний текст про доставку неверны."
+    },
+    {
+      "id": "aave-14",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Один reserve. Combined JSON синтаксически неверен, но reserve_count1 и ответ1 однозначны: content=true по прежнему рубрикатору, parse=false."
+    },
+    {
+      "id": "aave-15",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Debt opening у flashLoanSimple запрещено. Combined синтаксически неверен, но false и пояснение однозначны; content=true, parse=false. Prompt_only ошибочно разрешает."
+    },
+    {
+      "id": "aave-16",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Недостаточный allowance приводит к revert; значения верны, точные подтверждающие цитаты не получились."
+    },
+    {
+      "id": "aave-17",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "10000×0,05/100=5; все три новых варианта выдают50."
+    },
+    {
+      "id": "aave-18",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При LTV0 нельзя включить collateral. Только prompt_only даёт прямую точную подтверждающую цитату; combined цитирует общие проблемы approvals/collateral."
+    },
+    {
+      "id": "aave-19",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Внесение и заимствование ограничены разными caps. Search_only явно называет операции соответственно: его вводное Да трактуется как подтверждение двух запрошенных true-полей. Prompt_only обрывается в повторяющихся табах до ответа. Combined верен, цитаты искажены."
+    },
+    {
+      "id": "aave-20",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Максимум1500. Search_only однозначно отвечает1500 несмотря на лишнюю завершающую кавычку. Prompt_only даёт2000. Combined data2000 противоречит answer1500, поэтому content=false."
+    },
+    {
+      "id": "aave-01",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Критерий eligibility при0,98 выполнен; неверные или отсутствующие цитаты не засчитываются как подтверждение."
+    },
+    {
+      "id": "aave-02",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "HF ровно1 не удовлетворяет строгому условию <1; ответ true ошибочен."
+    },
+    {
+      "id": "aave-03",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "При HF0,97 вывод не проходит описанное ограничение; ответ true ошибочен."
+    },
+    {
+      "id": "aave-04",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Фиксированного ожидания нет. Цитата про siloed borrowing у prompt_only не подтверждает сроки погашения; combined цитирует repay at any time."
+    },
+    {
+      "id": "aave-05",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Peg1:1. Prompt_only выдумывает1000000; combined приводит буквальную1:1 цитату."
+    },
+    {
+      "id": "aave-06",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенный механизм balance_increases указан верно, но буквального подтверждения цитатой нет."
+    },
+    {
+      "id": "aave-07",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Search_only/prompt_only дают верный false. Prompt_only цитирует запрет другого collateral, а не корзину debt. Combined переносит ответ и цитату про доставку из форматного примера: ответ по существу считается неверным, хотя data случайно совпадает."
+    },
+    {
+      "id": "aave-08",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Debt ceiling применяется. Combined подтверждает прямой цитатой; она длиннее запрошенных32слов, нарушение длины отражено отдельно и не меняет прежний критерий fully_grounded."
+    },
+    {
+      "id": "aave-09",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Correlated. У prompt_only фраза про одинаковый underlying и движения цен подтверждает корреляцию в данном eMode-источнике; combined цитирует правило прямо."
+    },
+    {
+      "id": "aave-10",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Другой активный долг запрещён. Combined отвечает true. Prompt_only имеет верный data, но объяснение про запрещённую доставку относится к чужому сценарию: консервативно content=false, отдельный data_ok сохраняет совпадение."
+    },
+    {
+      "id": "aave-11",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Одного approval недостаточно без collateral. Цитата prompt_only про non-STABLECOINS не доказывает требование залога. Combined цитирует нужное before-borrow правило."
+    },
+    {
+      "id": "aave-12",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для approveDelegation prior supply не требуется; prompt_only/combined путают вызов approval и последующий borrow."
+    },
+    {
+      "id": "aave-13",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Borrow должен отклониться при нарушении HF. Prompt_only даёт верный ответ, но цитирует другое основание отказа. Combined false и посторонний текст про доставку неверны."
+    },
+    {
+      "id": "aave-14",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Один reserve. Combined JSON синтаксически неверен, но reserve_count1 и ответ1 однозначны: content=true по прежнему рубрикатору, parse=false."
+    },
+    {
+      "id": "aave-15",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Debt opening у flashLoanSimple запрещено. Combined синтаксически неверен, но false и пояснение однозначны; content=true, parse=false. Prompt_only ошибочно разрешает."
+    },
+    {
+      "id": "aave-16",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Недостаточный allowance приводит к revert; значения верны, точные подтверждающие цитаты не получились."
+    },
+    {
+      "id": "aave-17",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "10000×0,05/100=5; все три новых варианта выдают50."
+    },
+    {
+      "id": "aave-18",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "При LTV0 нельзя включить collateral. Только prompt_only даёт прямую точную подтверждающую цитату; combined цитирует общие проблемы approvals/collateral."
+    },
+    {
+      "id": "aave-19",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Внесение и заимствование ограничены разными caps. Search_only явно называет операции соответственно: его вводное Да трактуется как подтверждение двух запрошенных true-полей. Prompt_only обрывается в повторяющихся табах до ответа. Combined верен, цитаты искажены."
+    },
+    {
+      "id": "aave-20",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Максимум1500. Search_only однозначно отвечает1500 несмотря на лишнюю завершающую кавычку. Prompt_only даёт2000. Combined data2000 противоречит answer1500, поэтому content=false."
+    },
+    {
+      "id": "aave-01",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Критерий eligibility при0,98 выполнен; неверные или отсутствующие цитаты не засчитываются как подтверждение."
+    },
+    {
+      "id": "aave-02",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "HF ровно1 не удовлетворяет строгому условию <1; ответ true ошибочен."
+    },
+    {
+      "id": "aave-03",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "При HF0,97 вывод не проходит описанное ограничение; ответ true ошибочен."
+    },
+    {
+      "id": "aave-04",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Фиксированного ожидания нет. Цитата про siloed borrowing у prompt_only не подтверждает сроки погашения; combined цитирует repay at any time."
+    },
+    {
+      "id": "aave-05",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Peg1:1. Prompt_only выдумывает1000000; combined приводит буквальную1:1 цитату."
+    },
+    {
+      "id": "aave-06",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенный механизм balance_increases указан верно, но буквального подтверждения цитатой нет."
+    },
+    {
+      "id": "aave-07",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Search_only/prompt_only дают верный false. Prompt_only цитирует запрет другого collateral, а не корзину debt. Combined переносит ответ и цитату про доставку из форматного примера: ответ по существу считается неверным, хотя data случайно совпадает."
+    },
+    {
+      "id": "aave-08",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Debt ceiling применяется. Combined подтверждает прямой цитатой; она длиннее запрошенных32слов, нарушение длины отражено отдельно и не меняет прежний критерий fully_grounded."
+    },
+    {
+      "id": "aave-09",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Correlated. У prompt_only фраза про одинаковый underlying и движения цен подтверждает корреляцию в данном eMode-источнике; combined цитирует правило прямо."
+    },
+    {
+      "id": "aave-10",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Другой активный долг запрещён. Combined отвечает true. Prompt_only имеет верный data, но объяснение про запрещённую доставку относится к чужому сценарию: консервативно content=false, отдельный data_ok сохраняет совпадение."
+    },
+    {
+      "id": "aave-11",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Одного approval недостаточно без collateral. Цитата prompt_only про non-STABLECOINS не доказывает требование залога. Combined цитирует нужное before-borrow правило."
+    },
+    {
+      "id": "aave-12",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для approveDelegation prior supply не требуется; prompt_only/combined путают вызов approval и последующий borrow."
+    },
+    {
+      "id": "aave-13",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Borrow должен отклониться при нарушении HF. Prompt_only даёт верный ответ, но цитирует другое основание отказа. Combined false и посторонний текст про доставку неверны."
+    },
+    {
+      "id": "aave-14",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Один reserve. Combined JSON синтаксически неверен, но reserve_count1 и ответ1 однозначны: content=true по прежнему рубрикатору, parse=false."
+    },
+    {
+      "id": "aave-15",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Debt opening у flashLoanSimple запрещено. Combined синтаксически неверен, но false и пояснение однозначны; content=true, parse=false. Prompt_only ошибочно разрешает."
+    },
+    {
+      "id": "aave-16",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Недостаточный allowance приводит к revert; значения верны, точные подтверждающие цитаты не получились."
+    },
+    {
+      "id": "aave-17",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "10000×0,05/100=5; все три новых варианта выдают50."
+    },
+    {
+      "id": "aave-18",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При LTV0 нельзя включить collateral. Только prompt_only даёт прямую точную подтверждающую цитату; combined цитирует общие проблемы approvals/collateral."
+    },
+    {
+      "id": "aave-19",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Внесение и заимствование ограничены разными caps. Search_only явно называет операции соответственно: его вводное Да трактуется как подтверждение двух запрошенных true-полей. Prompt_only обрывается в повторяющихся табах до ответа. Combined верен, цитаты искажены."
+    },
+    {
+      "id": "aave-20",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Максимум1500. Search_only однозначно отвечает1500 несмотря на лишнюю завершающую кавычку. Prompt_only даёт2000. Combined data2000 противоречит answer1500, поэтому content=false."
+    },
+    {
+      "id": "kamino-01",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Current LTV=900/1500×100=60. Search_only даёт600; оба новых промпта верно вычисляют и дословно цитируют формулу."
+    },
+    {
+      "id": "kamino-02",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Liquidation LTV выше Max LTV. Ответы верны, но цитата combined — только заголовок Asset Pair, а цитата prompt_only не буквальна."
+    },
+    {
+      "id": "kamino-03",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Проценты могут ухудшать риск при неизменных ценах. Prompt_only подтверждает отдельный канал interest compounds risk; search_only и combined ошибочно отрицают."
+    },
+    {
+      "id": "kamino-04",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При постоянном долге и падающем знаменателе LTV растёт. Increase/increases семантически эквивалентны. Prompt_only цитирует другой механизм Borrow Factor, combined — нужную формулу."
+    },
+    {
+      "id": "kamino-05",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1000×0,8/2=400. Все три новых ответа ошибочны; combined копирует правильную формулу, но вычисляет40."
+    },
+    {
+      "id": "kamino-06",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Рост Borrow Factor уменьшает capacity. Combined приводит буквальную прямую фразу про halves; prompt_only цитата изменена."
+    },
+    {
+      "id": "kamino-07",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Cross Mode поддерживает оба вида множественных активов. У обоих новых промптов точные прямые цитаты."
+    },
+    {
+      "id": "kamino-08",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Необеспеченные займы не предусмотрены. Search_only верен; оба новых промпта разрешают их по нерелевантным фрагментам."
+    },
+    {
+      "id": "kamino-09",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "KSwap — подтверждённый в замороженной документации синоним Kamino Swap (overview.md:107). Search_only семантически верен, хотя data_ok=false. Другие варианты назвали лишь Repay debt with collateral/Swap collateral, поэтому неверны."
+    },
+    {
+      "id": "kamino-10",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "В поле pct требуется20, не0,2. Search_only/prompt_only содержат противоречие единиц data0,2 и answer20%, как в v5. Combined даёт20, но убирает Markdown из цитаты и теряет буквальность."
+    },
+    {
+      "id": "kamino-11",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Typically не устанавливает универсальное обязательное95%. Search_only верен; оба новых промпта обобщают неверно."
+    },
+    {
+      "id": "kamino-12",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Permissionless. Search_only content=true несмотря на лишнюю закрывающую кавычку; оба новых промпта дают точное прямое подтверждение."
+    },
+    {
+      "id": "kamino-13",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Гарантированного grace period для этого правила нет. Prompt_only цитирует no grace period, но отвечает true. Combined смешивает обычную liquidation и autodeleverage."
+    },
+    {
+      "id": "kamino-14",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Bonus изменяется. Prompt_only даёт точный scales upward; combined ответ верен, но цитата склеена и небуквальна."
+    },
+    {
+      "id": "kamino-15",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "min(max(82−75,2),8)=7. Только search_only даёт7; prompt_only отвечает8, combined60."
+    },
+    {
+      "id": "kamino-16",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "600/800×100=75%. Все три ответа неверны. У prompt_only выражение75 в data противоречит answer60 и не является JSON-числом; combined возвращает исходные аргументы вместо результата и answer60."
+    },
+    {
+      "id": "kamino-17",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Спред — доля процентов, не principal. Ответы верны; оба новых промпта подтверждают это прямыми цитатами. У combined цитата превышает32слова, длина отдельно."
+    },
+    {
+      "id": "kamino-18",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Незанятый капитал сам не получает borrow-interest. Search_only имеет верный false, но добавляет неверное утверждение, что проценты получают только заёмщики: content=false из-за ложного пояснения. Оба новых промпта дают true."
+    },
+    {
+      "id": "kamino-19",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "После rollover penalty не применяется. Search_only/combined верны, но цитата combined про попытку rollover и fallback не доказывает отмену penalty. Prompt_only data true противоречит правильной цитате without penalty и постороннему тексту про доставку."
+    },
+    {
+      "id": "kamino-20",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Любой queued withdrawal ticket блокирует rollover всех borrowers резерва. Ответы верны; только combined даёт буквальную прямую цитату."
+    },
+    {
+      "id": "kamino-01",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Current LTV=900/1500×100=60. Search_only даёт600; оба новых промпта верно вычисляют и дословно цитируют формулу."
+    },
+    {
+      "id": "kamino-02",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Liquidation LTV выше Max LTV. Ответы верны, но цитата combined — только заголовок Asset Pair, а цитата prompt_only не буквальна."
+    },
+    {
+      "id": "kamino-03",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Проценты могут ухудшать риск при неизменных ценах. Prompt_only подтверждает отдельный канал interest compounds risk; search_only и combined ошибочно отрицают."
+    },
+    {
+      "id": "kamino-04",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При постоянном долге и падающем знаменателе LTV растёт. Increase/increases семантически эквивалентны. Prompt_only цитирует другой механизм Borrow Factor, combined — нужную формулу."
+    },
+    {
+      "id": "kamino-05",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1000×0,8/2=400. Все три новых ответа ошибочны; combined копирует правильную формулу, но вычисляет40."
+    },
+    {
+      "id": "kamino-06",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Рост Borrow Factor уменьшает capacity. Combined приводит буквальную прямую фразу про halves; prompt_only цитата изменена."
+    },
+    {
+      "id": "kamino-07",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Cross Mode поддерживает оба вида множественных активов. У обоих новых промптов точные прямые цитаты."
+    },
+    {
+      "id": "kamino-08",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Необеспеченные займы не предусмотрены. Search_only верен; оба новых промпта разрешают их по нерелевантным фрагментам."
+    },
+    {
+      "id": "kamino-09",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "KSwap — подтверждённый в замороженной документации синоним Kamino Swap (overview.md:107). Search_only семантически верен, хотя data_ok=false. Другие варианты назвали лишь Repay debt with collateral/Swap collateral, поэтому неверны."
+    },
+    {
+      "id": "kamino-10",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "В поле pct требуется20, не0,2. Search_only/prompt_only содержат противоречие единиц data0,2 и answer20%, как в v5. Combined даёт20, но убирает Markdown из цитаты и теряет буквальность."
+    },
+    {
+      "id": "kamino-11",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Typically не устанавливает универсальное обязательное95%. Search_only верен; оба новых промпта обобщают неверно."
+    },
+    {
+      "id": "kamino-12",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Permissionless. Search_only content=true несмотря на лишнюю закрывающую кавычку; оба новых промпта дают точное прямое подтверждение."
+    },
+    {
+      "id": "kamino-13",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Гарантированного grace period для этого правила нет. Prompt_only цитирует no grace period, но отвечает true. Combined смешивает обычную liquidation и autodeleverage."
+    },
+    {
+      "id": "kamino-14",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Bonus изменяется. Prompt_only даёт точный scales upward; combined ответ верен, но цитата склеена и небуквальна."
+    },
+    {
+      "id": "kamino-15",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "min(max(82−75,2),8)=7. Только search_only даёт7; prompt_only отвечает8, combined60."
+    },
+    {
+      "id": "kamino-16",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "600/800×100=75%. Все три ответа неверны. У prompt_only выражение75 в data противоречит answer60 и не является JSON-числом; combined возвращает исходные аргументы вместо результата и answer60."
+    },
+    {
+      "id": "kamino-17",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Спред — доля процентов, не principal. Ответы верны; оба новых промпта подтверждают это прямыми цитатами. У combined цитата превышает32слова, длина отдельно."
+    },
+    {
+      "id": "kamino-18",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Незанятый капитал сам не получает borrow-interest. Search_only имеет верный false, но добавляет неверное утверждение, что проценты получают только заёмщики: content=false из-за ложного пояснения. Оба новых промпта дают true."
+    },
+    {
+      "id": "kamino-19",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "После rollover penalty не применяется. Search_only/combined верны, но цитата combined про попытку rollover и fallback не доказывает отмену penalty. Prompt_only data true противоречит правильной цитате without penalty и постороннему тексту про доставку."
+    },
+    {
+      "id": "kamino-20",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Любой queued withdrawal ticket блокирует rollover всех borrowers резерва. Ответы верны; только combined даёт буквальную прямую цитату."
+    },
+    {
+      "id": "kamino-01",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Current LTV=900/1500×100=60. Search_only даёт600; оба новых промпта верно вычисляют и дословно цитируют формулу."
+    },
+    {
+      "id": "kamino-02",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Liquidation LTV выше Max LTV. Ответы верны, но цитата combined — только заголовок Asset Pair, а цитата prompt_only не буквальна."
+    },
+    {
+      "id": "kamino-03",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Проценты могут ухудшать риск при неизменных ценах. Prompt_only подтверждает отдельный канал interest compounds risk; search_only и combined ошибочно отрицают."
+    },
+    {
+      "id": "kamino-04",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "При постоянном долге и падающем знаменателе LTV растёт. Increase/increases семантически эквивалентны. Prompt_only цитирует другой механизм Borrow Factor, combined — нужную формулу."
+    },
+    {
+      "id": "kamino-05",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1000×0,8/2=400. Все три новых ответа ошибочны; combined копирует правильную формулу, но вычисляет40."
+    },
+    {
+      "id": "kamino-06",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Рост Borrow Factor уменьшает capacity. Combined приводит буквальную прямую фразу про halves; prompt_only цитата изменена."
+    },
+    {
+      "id": "kamino-07",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Cross Mode поддерживает оба вида множественных активов. У обоих новых промптов точные прямые цитаты."
+    },
+    {
+      "id": "kamino-08",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Необеспеченные займы не предусмотрены. Search_only верен; оба новых промпта разрешают их по нерелевантным фрагментам."
+    },
+    {
+      "id": "kamino-09",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "KSwap — подтверждённый в замороженной документации синоним Kamino Swap (overview.md:107). Search_only семантически верен, хотя data_ok=false. Другие варианты назвали лишь Repay debt with collateral/Swap collateral, поэтому неверны."
+    },
+    {
+      "id": "kamino-10",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "В поле pct требуется20, не0,2. Search_only/prompt_only содержат противоречие единиц data0,2 и answer20%, как в v5. Combined даёт20, но убирает Markdown из цитаты и теряет буквальность."
+    },
+    {
+      "id": "kamino-11",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Typically не устанавливает универсальное обязательное95%. Search_only верен; оба новых промпта обобщают неверно."
+    },
+    {
+      "id": "kamino-12",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Permissionless. Search_only content=true несмотря на лишнюю закрывающую кавычку; оба новых промпта дают точное прямое подтверждение."
+    },
+    {
+      "id": "kamino-13",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Гарантированного grace period для этого правила нет. Prompt_only цитирует no grace period, но отвечает true. Combined смешивает обычную liquidation и autodeleverage."
+    },
+    {
+      "id": "kamino-14",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Bonus изменяется. Prompt_only даёт точный scales upward; combined ответ верен, но цитата склеена и небуквальна."
+    },
+    {
+      "id": "kamino-15",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "min(max(82−75,2),8)=7. Только search_only даёт7; prompt_only отвечает8, combined60."
+    },
+    {
+      "id": "kamino-16",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "600/800×100=75%. Все три ответа неверны. У prompt_only выражение75 в data противоречит answer60 и не является JSON-числом; combined возвращает исходные аргументы вместо результата и answer60."
+    },
+    {
+      "id": "kamino-17",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Спред — доля процентов, не principal. Ответы верны; оба новых промпта подтверждают это прямыми цитатами. У combined цитата превышает32слова, длина отдельно."
+    },
+    {
+      "id": "kamino-18",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Незанятый капитал сам не получает borrow-interest. Search_only имеет верный false, но добавляет неверное утверждение, что проценты получают только заёмщики: content=false из-за ложного пояснения. Оба новых промпта дают true."
+    },
+    {
+      "id": "kamino-19",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "После rollover penalty не применяется. Search_only/combined верны, но цитата combined про попытку rollover и fallback не доказывает отмену penalty. Prompt_only data true противоречит правильной цитате without penalty и постороннему тексту про доставку."
+    },
+    {
+      "id": "kamino-20",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Любой queued withdrawal ticket блокирует rollover всех borrowers резерва. Ответы верны; только combined даёт буквальную прямую цитату."
+    },
+    {
+      "id": "eth-01",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Требуется обрабатывать false. Только combined даёт прямую буквальную MUST handle false."
+    },
+    {
+      "id": "eth-02",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "decimals опционален. Search_only верен несмотря на лишнюю кавычку; оба новых промпта ошибочно делают метод обязательным даже рядом с OPTIONAL."
+    },
+    {
+      "id": "eth-03",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Нулевой transfer обязан эмитировать Transfer. Combined подтверждает прямым правилом ERC20; prompt_only цитирует другой стандарт/другие события небуквально."
+    },
+    {
+      "id": "eth-04",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Повторный approve заменяет allowance. Подпись метода у prompt_only не доказывает overwrite; combined цитирует правило прямо."
+    },
+    {
+      "id": "eth-05",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1234500/10^6=1,2345. Все три ответа не выполняют верную конвертацию; цитирование примера decimals8 не заменяет применение заданных6."
+    },
+    {
+      "id": "eth-06",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "balanceOf. Подпись owner→balance подтверждает нужный view-метод у обоих новых промптов. Ответ combined Баланс является описанием, data правильно называет метод, противоречия нет."
+    },
+    {
+      "id": "eth-07",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "convertToShares не включает fees. Search_only/prompt_only верны; combined datafalse и вводное Нет противоречат фразе должен включать, поэтому content=false."
+    },
+    {
+      "id": "eth-08",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "convertToShares округляет down. Combined даёт прямую MUST round down towards0 в нужном разделе. Prompt_only даёт две вырванные цитаты up/down, не устанавливающие выбор для конкретного метода."
+    },
+    {
+      "id": "eth-09",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "previewDeposit включает deposit fees. Все новые ответы верны; цитаты не являются точными подтверждающими выдержками в переданном виде."
+    },
+    {
+      "id": "eth-10",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "previewDeposit не учитывает deposit limits. Search_only верен. Prompt_only говорит true вопреки MUST NOT; combined datatrue противоречит answerНет, content=false."
+    },
+    {
+      "id": "eth-11",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При отключённых депозитах maxDeposit=0. Значения верны, но цитата prompt_only of asset не доказывает0, а combined цитирует другое условие unlimited."
+    },
+    {
+      "id": "eth-12",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для требуемых к отдаче shares округлениеup. Все новые варианты возвращают down; combined даже копирует прямое up, но делает обратный вывод."
+    },
+    {
+      "id": "eth-01",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Требуется обрабатывать false. Только combined даёт прямую буквальную MUST handle false."
+    },
+    {
+      "id": "eth-02",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "decimals опционален. Search_only верен несмотря на лишнюю кавычку; оба новых промпта ошибочно делают метод обязательным даже рядом с OPTIONAL."
+    },
+    {
+      "id": "eth-03",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Нулевой transfer обязан эмитировать Transfer. Combined подтверждает прямым правилом ERC20; prompt_only цитирует другой стандарт/другие события небуквально."
+    },
+    {
+      "id": "eth-04",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Повторный approve заменяет allowance. Подпись метода у prompt_only не доказывает overwrite; combined цитирует правило прямо."
+    },
+    {
+      "id": "eth-05",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1234500/10^6=1,2345. Все три ответа не выполняют верную конвертацию; цитирование примера decimals8 не заменяет применение заданных6."
+    },
+    {
+      "id": "eth-06",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "balanceOf. Подпись owner→balance подтверждает нужный view-метод у обоих новых промптов. Ответ combined Баланс является описанием, data правильно называет метод, противоречия нет."
+    },
+    {
+      "id": "eth-07",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "convertToShares не включает fees. Search_only/prompt_only верны; combined datafalse и вводное Нет противоречат фразе должен включать, поэтому content=false."
+    },
+    {
+      "id": "eth-08",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "convertToShares округляет down. Combined даёт прямую MUST round down towards0 в нужном разделе. Prompt_only даёт две вырванные цитаты up/down, не устанавливающие выбор для конкретного метода."
+    },
+    {
+      "id": "eth-09",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "previewDeposit включает deposit fees. Все новые ответы верны; цитаты не являются точными подтверждающими выдержками в переданном виде."
+    },
+    {
+      "id": "eth-10",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "previewDeposit не учитывает deposit limits. Search_only верен. Prompt_only говорит true вопреки MUST NOT; combined datatrue противоречит answerНет, content=false."
+    },
+    {
+      "id": "eth-11",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При отключённых депозитах maxDeposit=0. Значения верны, но цитата prompt_only of asset не доказывает0, а combined цитирует другое условие unlimited."
+    },
+    {
+      "id": "eth-12",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для требуемых к отдаче shares округлениеup. Все новые варианты возвращают down; combined даже копирует прямое up, но делает обратный вывод."
+    },
+    {
+      "id": "eth-01",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Требуется обрабатывать false. Только combined даёт прямую буквальную MUST handle false."
+    },
+    {
+      "id": "eth-02",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "decimals опционален. Search_only верен несмотря на лишнюю кавычку; оба новых промпта ошибочно делают метод обязательным даже рядом с OPTIONAL."
+    },
+    {
+      "id": "eth-03",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Нулевой transfer обязан эмитировать Transfer. Combined подтверждает прямым правилом ERC20; prompt_only цитирует другой стандарт/другие события небуквально."
+    },
+    {
+      "id": "eth-04",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Повторный approve заменяет allowance. Подпись метода у prompt_only не доказывает overwrite; combined цитирует правило прямо."
+    },
+    {
+      "id": "eth-05",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1234500/10^6=1,2345. Все три ответа не выполняют верную конвертацию; цитирование примера decimals8 не заменяет применение заданных6."
+    },
+    {
+      "id": "eth-06",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "balanceOf. Подпись owner→balance подтверждает нужный view-метод у обоих новых промптов. Ответ combined Баланс является описанием, data правильно называет метод, противоречия нет."
+    },
+    {
+      "id": "eth-07",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "convertToShares не включает fees. Search_only/prompt_only верны; combined datafalse и вводное Нет противоречат фразе должен включать, поэтому content=false."
+    },
+    {
+      "id": "eth-08",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "convertToShares округляет down. Combined даёт прямую MUST round down towards0 в нужном разделе. Prompt_only даёт две вырванные цитаты up/down, не устанавливающие выбор для конкретного метода."
+    },
+    {
+      "id": "eth-09",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "previewDeposit включает deposit fees. Все новые ответы верны; цитаты не являются точными подтверждающими выдержками в переданном виде."
+    },
+    {
+      "id": "eth-10",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "previewDeposit не учитывает deposit limits. Search_only верен. Prompt_only говорит true вопреки MUST NOT; combined datatrue противоречит answerНет, content=false."
+    },
+    {
+      "id": "eth-11",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При отключённых депозитах maxDeposit=0. Значения верны, но цитата prompt_only of asset не доказывает0, а combined цитирует другое условие unlimited."
+    },
+    {
+      "id": "eth-12",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для требуемых к отдаче shares округлениеup. Все новые варианты возвращают down; combined даже копирует прямое up, но делает обратный вывод."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "search_only",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "search_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "prompt_only",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "prompt_only",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "combined",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Корректно признаёт нехватку данных без выдуманного числа. Null не является придуманным измерением; неверные status/data-форма учитываются отдельно."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "combined",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумывает конкретное live/личное/будущее значение либо возвращает число0/100 вопреки фразе недостаточно данных. Отказ с числовым утверждением не считается корректным."
+    }
+  ],
+  "adjudication": "Correct data with explicitly contradictory prose fails content; unrelated fictional shipping answer also fails even if data matches. Broken JSON with unambiguous correct values can pass content, as in v5. Null plus clear abstention may pass unknown content, invented0 cannot. Quote length is separate, unchanged fully_grounded rubric."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ed152fbed9294f52aa91356601c89fed",
+  "stage": "install",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--disable-pip-version-check",
+    "--no-cache-dir",
+    "-r",
+    "requirements.lock.txt"
+  ],
+  "pid": 79146,
+  "pgid": 79146,
+  "birth": "Tue Oct 27 21:55:37 2026",
+  "manager_pid": 79141,
+  "manager_birth": "Tue Oct 27 21:55:37 2026",
+  "state": "finished",
+  "log": ".control/logs/ed152fbed9294f52aa91356601c89fed.log",
+  "exit_code": 0
+}

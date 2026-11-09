@@ -1,0 +1,4 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Split counts: {'train': 60, 'valid': 12, 'test': 8}
+30 rule IDs covered in train; no identical questions shared across splits.
+Prepared data/train.jsonl and data/valid.jsonl; token lengths and masks checked.

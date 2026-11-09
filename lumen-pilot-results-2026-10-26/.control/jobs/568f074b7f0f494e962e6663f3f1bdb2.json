@@ -1,0 +1,22 @@
+{
+  "id": "568f074b7f0f494e962e6663f3f1bdb2",
+  "stage": "compare",
+  "command": [
+    ".venv/bin/python",
+    "compare.py",
+    "--before",
+    "runs/before.jsonl",
+    "--after",
+    "runs/after.jsonl",
+    "--out",
+    "runs/comparison.html"
+  ],
+  "pid": 69816,
+  "pgid": 69816,
+  "birth": "Mon Oct 26 17:31:05 2026",
+  "manager_pid": 69768,
+  "manager_birth": "Mon Oct 26 17:31:05 2026",
+  "state": "finished",
+  "log": ".control/logs/568f074b7f0f494e962e6663f3f1bdb2.log",
+  "exit_code": 0
+}

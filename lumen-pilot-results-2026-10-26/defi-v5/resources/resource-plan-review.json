@@ -1,0 +1,560 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-10-27T11:59:04.771698+00:00",
+  "reviewer_agent": "/root/resource_guard",
+  "human_validation": false,
+  "status": "blocked_host_pressure",
+  "model_compute_performed": false,
+  "actions_performed": [
+    "Read initial resource snapshot",
+    "Three read-only host samples at approximately 10-second intervals",
+    "Read-only grouped libproc RUSAGE_INFO_V0 footprint sample",
+    "Fetch official public source/config text into memory and AST-parse Python without importing MLX",
+    "Write this JSON only"
+  ],
+  "actions_not_performed": [
+    "No inference/training/model load",
+    "No package installation",
+    "No app close/kill/unload or service changes",
+    "No shared runtime script edits",
+    "No global cache purge or sysctl writes"
+  ],
+  "baseline_snapshot": "initial.json",
+  "host_samples": [
+    {
+      "at_utc": "2026-10-27T11:53:29.824022+00:00",
+      "pressure": 2,
+      "swap_used_bytes": 2468410818.56,
+      "page_size_bytes": 16384,
+      "swapins_pages": 155710,
+      "swapouts_pages": 443590,
+      "compressor_physical_bytes": 5816401920,
+      "compressed_logical_payload_bytes": 15775924224,
+      "free_pages_physical_bytes": 716832768
+    },
+    {
+      "at_utc": "2026-10-27T11:53:39.923651+00:00",
+      "pressure": 2,
+      "swap_used_bytes": 2468410818.56,
+      "page_size_bytes": 16384,
+      "swapins_pages": 155722,
+      "swapouts_pages": 443590,
+      "compressor_physical_bytes": 5738643456,
+      "compressed_logical_payload_bytes": 15611854848,
+      "free_pages_physical_bytes": 830062592
+    },
+    {
+      "at_utc": "2026-10-27T11:53:50.024795+00:00",
+      "pressure": 2,
+      "swap_used_bytes": 2468410818.56,
+      "page_size_bytes": 16384,
+      "swapins_pages": 155738,
+      "swapouts_pages": 443590,
+      "compressor_physical_bytes": 5707005952,
+      "compressed_logical_payload_bytes": 15529705472,
+      "free_pages_physical_bytes": 805814272
+    }
+  ],
+  "host_sample_summary": {
+    "pressure_sequence": [
+      2,
+      2,
+      2
+    ],
+    "stable_normal_pressure": false,
+    "swap_growth_bytes": 0,
+    "swapins_growth_pages": 28,
+    "swapouts_growth_pages": 0,
+    "decision": "Pressure2 on all three samples: do not start model work. Existing swap alone is not a failure threshold; its growth and pressure matter."
+  },
+  "grouped_process_memory": {
+    "at_utc": "2026-10-27T11:55:37.827684+00:00",
+    "measurement": "libproc.proc_pid_rusage RUSAGE_INFO_V0; per-process physical footprint summed per bundle/ancestor app; footprint includes compressed accounting, RSS is separate and is not total memory pressure",
+    "grouping": "First .app bundle in own/ancestor process path; other executables grouped by path. Attribution is not a complete dependency inventory.",
+    "current_uid_only": 501,
+    "groups": [
+      {
+        "group": "/Applications/ChatGPT.app",
+        "pids": [
+          4550,
+          15998,
+          16003,
+          16005,
+          16020,
+          16021,
+          16032,
+          16574,
+          16585,
+          16607,
+          16608,
+          16643,
+          16758,
+          16778,
+          16873,
+          16908,
+          16912,
+          16914,
+          16917,
+          16918,
+          16941,
+          16962,
+          17082,
+          17716,
+          17759,
+          17847,
+          17949,
+          17984,
+          17985,
+          17986,
+          17990,
+          17991,
+          17992,
+          18015,
+          18026,
+          18027,
+          19376,
+          19422,
+          19497,
+          59387,
+          59388,
+          65625,
+          65628,
+          65630,
+          65631,
+          65632,
+          65633,
+          65660,
+          65668,
+          65669,
+          67659,
+          71324,
+          71325,
+          71326,
+          71327,
+          71329,
+          71343,
+          71348,
+          71349,
+          75348,
+          75365,
+          75388,
+          75400,
+          75418,
+          75420,
+          75422,
+          75424,
+          75425,
+          75429,
+          75452,
+          75457,
+          75458,
+          81122,
+          88334,
+          98327,
+          30662
+        ],
+        "footprint_bytes": 4749170736,
+        "rss_bytes": 1872855040
+      },
+      {
+        "group": "/Applications/Brave Browser.app",
+        "pids": [
+          8692,
+          8702,
+          17835,
+          18128,
+          24868,
+          84291,
+          84293,
+          84297,
+          84298,
+          84299,
+          84310,
+          84311,
+          84312,
+          84313,
+          84320,
+          84348,
+          84349,
+          98574,
+          98575,
+          98583,
+          98584,
+          98589
+        ],
+        "footprint_bytes": 3838154000,
+        "rss_bytes": 2922266624
+      },
+      {
+        "group": "/System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.VirtualMachine.xpc/Contents/MacOS/com.apple.Virtualization.VirtualMachine",
+        "pids": [
+          10796
+        ],
+        "footprint_bytes": 2592068096,
+        "rss_bytes": 401883136
+      },
+      {
+        "group": "/Applications/Google Chrome.app",
+        "pids": [
+          25138,
+          25140,
+          25148,
+          25149,
+          25150,
+          25162,
+          25163,
+          25164,
+          25167,
+          25168,
+          25172,
+          25179,
+          25182,
+          25189,
+          25197,
+          25308,
+          25327,
+          25328
+        ],
+        "footprint_bytes": 1326603016,
+        "rss_bytes": 2069577728
+      },
+      {
+        "group": "/System/Applications/Utilities/Terminal.app",
+        "pids": [
+          4360,
+          18138,
+          4363,
+          5946,
+          5979,
+          5980,
+          5987,
+          6377,
+          25203,
+          37523,
+          98799,
+          98841,
+          98842,
+          98854,
+          98855,
+          98858,
+          98893
+        ],
+        "footprint_bytes": 1172838224,
+        "rss_bytes": 710754304
+      },
+      {
+        "group": "/Applications/Spotify.app",
+        "pids": [
+          96178,
+          96180,
+          96183,
+          96184,
+          96186,
+          96188,
+          96189,
+          96204,
+          96206
+        ],
+        "footprint_bytes": 1146269624,
+        "rss_bytes": 508411904
+      },
+      {
+        "group": "/Applications/Slack.app",
+        "pids": [
+          56433,
+          56479,
+          56480,
+          56491,
+          56503,
+          56504
+        ],
+        "footprint_bytes": 805298552,
+        "rss_bytes": 365756416
+      },
+      {
+        "group": "/Applications/Docker.app",
+        "pids": [
+          10795,
+          53482,
+          53489,
+          53490,
+          53576,
+          53578,
+          53610,
+          53612,
+          53621
+        ],
+        "footprint_bytes": 466167816,
+        "rss_bytes": 401735680
+      },
+      {
+        "group": "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app",
+        "pids": [
+          16952,
+          18025,
+          18139,
+          25381,
+          25382,
+          25383,
+          65665,
+          71347,
+          75456,
+          5981,
+          98843,
+          98849,
+          98861
+        ],
+        "footprint_bytes": 434181904,
+        "rss_bytes": 98189312
+      },
+      {
+        "group": "/System/Library/CoreServices/loginwindow.app",
+        "pids": [
+          170
+        ],
+        "footprint_bytes": 149750816,
+        "rss_bytes": 29376512
+      },
+      {
+        "group": "Ollama (KS KB embedding dependency; protected)",
+        "pids": [
+          617
+        ],
+        "footprint_bytes": 40223632,
+        "rss_bytes": 27164672
+      }
+    ],
+    "unmeasurable_or_exited_pids": [
+      {
+        "pid": 25315,
+        "errno": null
+      }
+    ],
+    "per_process_compressed_bytes_available_from_rusage_v0": false,
+    "compressed_note": "Do not subtract RSS from footprint to invent compressed bytes; host compression is independently available in vm_stat.",
+    "scope_caveat": "These are current-UID footprint sums and per-process accounting, not unique resident RAM that will certainly become free. Shared pages/accounting can overlap. Per-process compressed byte counts are not available in rusage_info_v0; do not infer them by subtracting RSS. Host compressor metrics above are separate.",
+    "suggestions_for_user_if_pressure_stays_2": [
+      {
+        "app": "Spotify",
+        "group_footprint_bytes": 1146269624,
+        "action": "Ask user to quit normally if playback is not needed; do not close automatically."
+      },
+      {
+        "app": "Brave Browser",
+        "group_footprint_bytes": 3838154000,
+        "action": "Ask user to quit normally after preserving needed tabs and after browser-dependent crawl work is done; do not close automatically."
+      }
+    ],
+    "protected_dependencies": [
+      "ChatGPT/Codex and active agent work",
+      "KS KB and its Ollama embeddinggemma backend",
+      "Docker and its possible Virtualization VM",
+      "Unidentified Terminal/Python jobs"
+    ],
+    "ollama_note": "Initial snapshot showed embeddinggemma1.1GB with imminent natural expiry. Later Ollama grouped process footprint is about38MiB. This is consistent with natural unload but is not a fresh ollama ps inventory; no unload/stop was requested or performed."
+  },
+  "primary_source_verification": {
+    "release": "mlx-lm v0.32.2",
+    "sources": {
+      "generate": {
+        "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/generate.py",
+        "sha256": "9d46803799f99d6fc7c35fff2d4357c79b1a25ae98cc63efeaaebeb50a7b5f33",
+        "bytes": 78615,
+        "syntax_valid": true
+      },
+      "cache": {
+        "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/models/cache.py",
+        "sha256": "c96cb169fd5e0ec4584a162dd61dc62ab08ccdca03a9850f8a491ce6809145e6",
+        "bytes": 58349,
+        "syntax_valid": true
+      },
+      "qwen3": {
+        "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/models/qwen3.py",
+        "sha256": "7e29b7055d8e526a0ede6e2740a3038ad24d0cef6a1abb446c411d3fbd0efa2d",
+        "bytes": 7892,
+        "syntax_valid": true
+      },
+      "base": {
+        "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/models/base.py",
+        "sha256": "63d8e58a4b6f8c0902719499c693647fbf486bbd5d22b09868a07d37e08c83d6",
+        "bytes": 4425,
+        "syntax_valid": true
+      },
+      "config": {
+        "url": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/main/config.json",
+        "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+        "bytes": 726,
+        "config": {
+          "architectures": [
+            "Qwen3ForCausalLM"
+          ],
+          "attention_bias": false,
+          "attention_dropout": 0,
+          "bos_token_id": 151643,
+          "eos_token_id": 151645,
+          "head_dim": 128,
+          "hidden_act": "silu",
+          "hidden_size": 2048,
+          "initializer_range": 0.02,
+          "intermediate_size": 6144,
+          "max_position_embeddings": 40960,
+          "max_window_layers": 28,
+          "model_type": "qwen3",
+          "num_attention_heads": 16,
+          "num_hidden_layers": 28,
+          "num_key_value_heads": 8,
+          "rms_norm_eps": 1e-06,
+          "rope_scaling": null,
+          "rope_theta": 1000000,
+          "sliding_window": null,
+          "tie_word_embeddings": true,
+          "torch_dtype": "bfloat16",
+          "transformers_version": "4.51.0",
+          "use_cache": true,
+          "use_sliding_window": false,
+          "vocab_size": 151936
+        }
+      }
+    },
+    "verified_api_keywords": [
+      "prefill_step_size",
+      "kv_bits",
+      "kv_group_size",
+      "quantized_kv_start",
+      "max_tokens",
+      "sampler",
+      "max_kv_size"
+    ],
+    "api_result": "generate forwards keyword arguments through stream_generate to generate_step; use kwargs in Python rather than assuming a model context-limit flag.",
+    "prefill_result": "Default2048; smaller prefill chunks are evaluated and allocator cache cleared between chunks. Chunking preserves prompt tokens; it is not truncation.",
+    "kv_result": "Default quantization start5000 means KV quantization stays inactive for our short budget unless explicitly set to0. Do not combine quantized KV with max_kv_size: RotatingKVCache.to_quantized raises NotImplementedError.",
+    "qwen3_compatibility": "Qwen3 Attention forwards cache to base scaled_dot_product_attention; cache.bits selects the quantized attention path. The1.7B head dimension128 is divisible by group64. Source-level compatibility is verified; actual installed versions and runtime behavior must still pass the bounded probe."
+  },
+  "proposed_uniform_run_config": {
+    "model_repo": "mlx-community/Qwen3-1.7B-4bit",
+    "historical_pinned_revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+    "same_weights_all_arms": true,
+    "weight_quantization_bits": 4,
+    "mlx_lm_version": "0.32.2",
+    "batch_size": 1,
+    "parallel_model_jobs": 1,
+    "prefill_step_size": 128,
+    "max_input_tokens_including_system_template_question_and_sources": 1400,
+    "max_output_tokens": 384,
+    "maximum_input_plus_output_tokens": 1784,
+    "kv_bits": 4,
+    "kv_group_size": 64,
+    "quantized_kv_start": 0,
+    "max_kv_size": null,
+    "temperature": 0,
+    "enable_thinking": false,
+    "adapter": null,
+    "fresh_kv_cache_per_question": true,
+    "reuse_previous_answers_in_context": false,
+    "note": "Proposed settings to be frozen identically for all3 modes before any evaluated answer. They change numerical/cache conditions relative to historical runs; compare within this experiment and disclose the difference. Verify actual pinned model config against the source-level shape assumptions."
+  },
+  "memory_estimate": {
+    "method": "KV only: 2(K,V) × layers28 × kv_heads8 × head_dim128 × allocated_tokens. Full cache2 bytes/element. KV4 group64 estimate0.5 +4/64 bytes/element for quantized payload plus2-byte scale and bias each.",
+    "architecture_source": "https://huggingface.co/Qwen/Qwen3-1.7B/raw/main/config.json",
+    "estimates": [
+      {
+        "input_tokens": 1400,
+        "max_output_tokens": 384,
+        "total_tokens": 1784,
+        "allocated_tokens_assuming_256_block": 1792,
+        "fp16_bf16_kv_bytes": 205520896,
+        "kv4_group64_bytes_including_scales_biases": 57802752,
+        "estimated_kv_bytes_saved": 147718144,
+        "estimate_only": true
+      },
+      {
+        "input_tokens": 1600,
+        "max_output_tokens": 384,
+        "total_tokens": 1984,
+        "allocated_tokens_assuming_256_block": 2048,
+        "fp16_bf16_kv_bytes": 234881024,
+        "kv4_group64_bytes_including_scales_biases": 66060288,
+        "estimated_kv_bytes_saved": 168820736,
+        "estimate_only": true
+      },
+      {
+        "input_tokens": 2000,
+        "max_output_tokens": 384,
+        "total_tokens": 2384,
+        "allocated_tokens_assuming_256_block": 2560,
+        "fp16_bf16_kv_bytes": 293601280,
+        "kv4_group64_bytes_including_scales_biases": 82575360,
+        "estimated_kv_bytes_saved": 211025920,
+        "estimate_only": true
+      }
+    ],
+    "exclusions": [
+      "Weights/runtime state",
+      "Prefill logits, activations, attention scores/workspaces",
+      "Allocator/cache slack",
+      "Python/tokenizer/retrieval overhead",
+      "Transient allocation during KV conversion",
+      "OS and unrelated applications"
+    ],
+    "interpretation": "At input1400+output384, KV4 saves about141MiB of persistent KV relative to FP16/BF16, not multiple GiB. It cannot by itself resolve a heavily pressured host."
+  },
+  "numerical_and_peak_risks": [
+    "Quantized KV changes numerical results and can change correctness. Freeze it uniformly across all arms; do not turn it off only for a weak-scoring arm.",
+    "The quantized attention implementation materializes attention scores and softmax while the unquantized path uses mx.fast SDPA. Smaller persistent KV does not guarantee a lower transient peak or faster execution at short context.",
+    "Converting the first chunk to quantized KV temporarily needs source and destination buffers. prefill128 limits the initial conversion size but this is not a measured peak guarantee.",
+    "Smaller prefill generally reduces prompt-step activation/logit buffers while potentially reducing throughput. No speed or memory-success promise before measurement.",
+    "The sampled footprint guard can only stop observed overruns; it is not a kernel hard allocation cap."
+  ],
+  "context_budget_policy": {
+    "tokenizer_preflight_required": true,
+    "token_count_after_chat_template": true,
+    "include_template_and_output_reserve": true,
+    "default_input_hard_limit": 1400,
+    "optional_later_input_ceiling": 2000,
+    "overflow_action": "Reject or use a predeclared query-independent budgeting/retrieval rule. Never silently drop evidence and still call the arm full-source. Freeze any1400→1600/2000 change and repeat the resource probe before evaluation.",
+    "fairness": "If a full-source arm cannot fit complete selected source at1400 tokens, its definition must be made truthful before evaluation; do not select a shorter source based on model answers or count its missing facts as retrieval capability."
+  },
+  "preflight_and_bounded_probe": {
+    "current_permission": "not_ready_pressure2",
+    "entry_conditions": [
+      "Three normal pressure1 readings roughly10s apart after crawl/index preparation",
+      "No swap growth during readiness window; current swap amount need not be zero",
+      "Single model job, fixed local pinned weights, locked versions, no background training or download",
+      "Tokenize all final prompts without model compute; verify max input1400 and source coverage policy"
+    ],
+    "probe_after_entry_only": [
+      "One bounded non-exam representative prompt at the longest planned input with prefill128/KV4start0/group64 and max output384 under the tightened guard",
+      "Record child-tree physical footprint/RSS, host pressure, swap delta, prompt/output token count, wall time, MLX peak memory and finish reason",
+      "Proceed only on exit0, no protective stop, normal pressure throughout, no swap growth and adequate measured margin below3.5GiB",
+      "If EOS ends early, state that the full384-token KV bound was estimated rather than completely exercised",
+      "On failure stop, preserve evidence and revise only resource configuration prospectively; never weaken host-pressure protection or repeatedly retry under warning pressure"
+    ]
+  },
+  "guard_plan": {
+    "max_footprint_gib": 3.5,
+    "max_swap_growth_gib": 0.25,
+    "interval_seconds": 1,
+    "host_pressure_level_threshold": 2,
+    "consecutive_pressure_warning_samples": 3,
+    "consecutive_swap_growth_samples": 3,
+    "entry_pressure_must_equal": 1,
+    "thresholds_relaxed": false,
+    "changed_from_historical": "Footprint6→3.5GiB and swap growth0.75→0.25GiB are tighter. Host pressure gate unchanged.",
+    "max_footprint_bytes": 3758096384,
+    "max_swap_growth_bytes": 268435456,
+    "fail_closed_on_missing_measurements": true
+  },
+  "cleanup_plan": {
+    "scope": "Dedicated new DeFi runtime only, via its exact marker UUID and own PID identities; persistent results archive remains.",
+    "required": [
+      "Store raw responses/resources/frozen protocol/retrieval evidence/report in defi-v5 and verify readback/manifest before deleting runtime",
+      "Stop only owned inference/helper processes; no KS KB/Ollama/Docker/browser/app termination as cleanup",
+      "Keep HF/PIP/XDG/pycache/TMP caches in runtime; no installs/global profiles or daemons",
+      "Fresh cache per question; between arms either release all references/gc and own allocator cache, or let the owned process exit. Ending a subprocess releases its model allocations without stopping unrelated services.",
+      "After all3 modes finish verify no owned process holds runtime files, dry-run, apply exact UUID cleanup, verify root absence and actual disk-free delta separately from logical bytes"
+    ],
+    "not_claimed": "No promise of removing OS-managed caches or changing unrelated app memory; historical reports/knowledge bases remain."
+  },
+  "recommendation": "Finish public-data preparation without model work, ask user about Spotify/Brave only if pressure stays2, then remeasure. Use the proposed conservative uniform config only after readiness and a successful guarded probe. No current approval to infer follows from this source review.",
+  "baseline_snapshot_sha256": "26030561d99b255f6b5d6c86973c148ea50b9ba58616de87aca0b6f9b1b76a99"
+}

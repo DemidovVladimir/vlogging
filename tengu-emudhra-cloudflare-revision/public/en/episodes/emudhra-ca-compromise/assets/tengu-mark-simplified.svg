@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU simplified mark</title>
+  <desc id="desc">Small-size TENGU mark.</desc>
+<rect width="512" height="512" fill="none"/><g id="simple" transform="translate(0 0) scale(1)">
+    <circle cx="256" cy="256" r="126" fill="none" stroke="#11110F" stroke-width="11" stroke-dasharray="338 42 208 204" transform="rotate(-52 256 256)"/>
+    <circle cx="256" cy="130" r="12" fill="#11110F"/><circle cx="148" cy="322" r="12" fill="#11110F"/><circle cx="360" cy="330" r="12" fill="#A9853E"/>
+    <path d="M356 132C414 177 432 254 407 320" fill="none" stroke="#C92F20" stroke-width="29" stroke-linecap="butt"/>
+    <rect x="221" y="221" width="70" height="70" fill="#C92F20"/></g>
+</svg>

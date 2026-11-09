@@ -1,0 +1,8 @@
+SANITY json KV 4 pass False '\n\n```{"ok": true"```'
+SANITY arithmetic KV 4 pass False '\n{\n  "result": \n"\n}'
+SANITY source KV 4 pass False '\n\n{"{\n  " ": "\n\n{"color": "бирюзовый"\n}'
+SANITY json KV None pass True '{\n  "ok": true\n}'
+SANITY arithmetic KV None pass False '```json\n{\n  "result": 5\n}\n```'
+SANITY source KV None pass True '{\n  "color": "бирюзовый"\n}'
+RESOURCE GUARD kv-sanity: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/runs/resources/kv-sanity.json

@@ -1,0 +1,75 @@
+{
+  "status": "success",
+  "deploymentId": "67e09a4c-f550-4b05-bb5a-18caff11d246",
+  "immutableOrigin": "https://67e09a4c.tengu-presentations.pages.dev",
+  "createdAt": "2026-10-27T17:12:58.039063Z",
+  "deployEndedAt": "2026-10-27T17:12:59.836425Z",
+  "previousDeploymentId": "f10900f3-6682-4105-8776-9506d561d077",
+  "project": "tengu-presentations",
+  "origin": "https://tengucluster.com",
+  "revision": 8,
+  "episodeRevision": 9,
+  "slug": "chaos-substrate",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "paths": {
+    "ru": "/episodes/chaos-substrate/",
+    "en": "/en/episodes/chaos-substrate/"
+  },
+  "manifest": "build-manifest.json",
+  "verifiedAt": "2026-10-27T17:17:18.966Z",
+  "sourceWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-chaos-substrate-revision",
+  "episodeWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-chaos-substrate-episode",
+  "uploader": "wrangler 4.151.3 pages deploy (its own OAuth login: account:read user:read pages:write), branch main",
+  "staticAssets": 216,
+  "controlFiles": 2,
+  "privatePaths404PerOrigin": 456,
+  "verifiedOrigins": [
+    "tengucluster.com",
+    "tengu-presentations.pages.dev",
+    "67e09a4c.tengu-presentations.pages.dev"
+  ],
+  "browserChecks": {
+    "127.0.0.1": {
+      "navigation": 27,
+      "deck": "ru+en: 9 scenes, 30 phases, controls, 5 sizes, intro sound"
+    },
+    "tengucluster.com": {
+      "navigation": 27,
+      "deck": "ru+en: 9 scenes, 30 phases, controls, 5 sizes, intro sound"
+    }
+  },
+  "rollbackSnapshot": "previous/public",
+  "qa": "qa/tengucluster.com/",
+  "changedFiles": [
+    "en/episodes/agent-context/index.html",
+    "en/episodes/chaos-kb/index.html",
+    "en/episodes/chaos-substrate/app.js",
+    "en/episodes/chaos-substrate/episode.css",
+    "en/episodes/chaos-substrate/index.html",
+    "en/episodes/chaos-substrate/journey.js",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/tengu-cluster/index.html",
+    "en/index.html",
+    "episodes/agent-context/index.html",
+    "episodes/chaos-kb/index.html",
+    "episodes/chaos-substrate/app.js",
+    "episodes/chaos-substrate/episode.css",
+    "episodes/chaos-substrate/index.html",
+    "episodes/chaos-substrate/journey.js",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/tengu-cluster/index.html",
+    "index.html"
+  ],
+  "addedFiles": 0,
+  "unrelatedContentUnchanged": true,
+  "note": "EP.05 renamed in every menu and catalog; build.mjs proves each of those pages differs from the baseline only by the rename and the catalog card text.",
+  "linkedWorker": {
+    "name": "tengu-modal-city",
+    "route": "tengucluster.com/modal-city*",
+    "versionId": "48b450ed-fd3e-41b0-9d91-daaff95ccc97",
+    "source": "/Users/vladimirdemidov/development/neovim_pro/site"
+  }
+}

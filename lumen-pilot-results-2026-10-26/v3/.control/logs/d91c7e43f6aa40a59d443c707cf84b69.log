@@ -1,0 +1,8 @@
+Padded prompt tokens 1362 exam maximum 1344
+{
+  "status": "unknown",
+  "answer": "В справочнике нет информации о проверке ресурсов.",
+  "data": {}
+}
+RESOURCE GUARD context-probe: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-context-v3/runs/resources/context-probe.json

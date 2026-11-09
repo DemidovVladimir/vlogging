@@ -1,0 +1,435 @@
+{
+  "created_at_utc": "2026-10-28T09:06:11.964707+00:00",
+  "reviewer": "root agent; read all60original model raws, rendered citations and matching frozen catalogue",
+  "human_validation": false,
+  "raw_sha256": {
+    "larger": "9f7910b0dca056484f6ecf80a047246017367504b3a1164bf1cb2f96903ec3a3"
+  },
+  "model_raw_sha256": "807ee1eaef3befe5e5317f15fd8ea88c7bde9aca98ec54796ca3ef4c33bfe012",
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "items": [
+    {
+      "id": "aave-01",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "HF 0,98 ниже 1. Фрагменты R4 и R5 прямо подтверждают допуск к ликвидации."
+    },
+    {
+      "id": "aave-02",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Ровно 1 не удовлетворяет строгому условию «ниже 1». Ответ и выбранное правило согласованы."
+    },
+    {
+      "id": "aave-03",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Выбрано правильное ограничение withdraw, но модель ошибочно разрешает вывод с итоговым HF 0,97. Наличие верной цитаты не подтверждает обратный вывод."
+    },
+    {
+      "id": "aave-04",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Фраза «repay at any time» прямо подтверждает отсутствие обязательного ожидания фиксированного срока."
+    },
+    {
+      "id": "aave-05",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Соотношение 1:1 названо верно. Однако выбранное описание выпуска aTokens не устанавливает именно это точное соотношение — как и у прежней модели."
+    },
+    {
+      "id": "aave-06",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Выбранная цитата прямо говорит о непрерывном увеличении баланса кошелька. Ответ balance_increases подтверждён."
+    },
+    {
+      "id": "aave-07",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "В цитате разрешена только определённая корзина активов. Она подтверждает запрет произвольного заимствования."
+    },
+    {
+      "id": "aave-08",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "R2 и R7 прямо устанавливают debt ceiling. Список из трёх ID допустим; прежняя модель выбрала девять."
+    },
+    {
+      "id": "aave-09",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Ответ correlated верен, но пять ID превышают лимит 1–3. Прежний слой подстановки отвергает весь список; вручную его не сокращали."
+    },
+    {
+      "id": "aave-10",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая цитата запрещает другие активные долги в том же пуле при siloed borrowing."
+    },
+    {
+      "id": "aave-11",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая цитата требует достаточного залога до выполнения borrow. Одного approval недостаточно."
+    },
+    {
+      "id": "aave-12",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Для самого approveDelegation предварительное supply не требуется. Выбранная справка об обычном supply этого не доказывает."
+    },
+    {
+      "id": "aave-13",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Ответ об отклонении borrow верен, но выбранное правило допуска к ликвидации не устанавливает проверку перед borrow."
+    },
+    {
+      "id": "aave-14",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Цитата про flashLoanSimple прямо называет single reserve. Число 1 подтверждено."
+    },
+    {
+      "id": "aave-15",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "В контексте flashLoanSimple цитата запрещает оставлять новую долговую позицию в конце транзакции."
+    },
+    {
+      "id": "aave-16",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Правила approval на principal плюс fee и отката при недостаточном approval прямо подтверждают ответ."
+    },
+    {
+      "id": "aave-17",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "10 000 × 0,05 / 100 = 5, а не 50. Модель выбрала правильную ставку, но ошиблась в расчёте."
+    },
+    {
+      "id": "aave-18",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При LTV 0% актив нельзя включить как collateral. Выбранная общая справка о недостаточном залоге не устанавливает именно это правило."
+    },
+    {
+      "id": "aave-19",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Операции определены верно, но семь ID превышают лимит 1–3. Слой подстановки не выбирает подходящие ID за модель."
+    },
+    {
+      "id": "aave-20",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "2000 × 0,75 = 1500. Расчёт, data и обе цитаты про LTV согласованы."
+    },
+    {
+      "id": "kamino-01",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "900 / 1500 × 100 = 60%. Исправлен прежний ответ 900; выбранная формула прямо подтверждает расчёт."
+    },
+    {
+      "id": "kamino-02",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Liquidation LTV выше Max LTV. Модель отвечает false и переносит ограничение post-fill withdrawals на другой вид проверки."
+    },
+    {
+      "id": "kamino-03",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Верно допускает ухудшение здоровья от начисления процентов. Однако четыре ID превышают допустимые 1–3, поэтому цитаты не подставлены."
+    },
+    {
+      "id": "kamino-04",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При постоянном долге и падающей стоимости залога LTV растёт. Ответ верен; цитата про снижение net equity не устанавливает именно направление Current LTV."
+    },
+    {
+      "id": "kamino-05",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1000 × 0,8 / 2 = 400, а не 500. Формула выбрана правильно, числовой результат неверен."
+    },
+    {
+      "id": "kamino-06",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая фраза «Borrow Factor of 2.0 halves ... capacity» подтверждает уменьшение доступной суммы."
+    },
+    {
+      "id": "kamino-07",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Цитаты R2 и R5 прямо разрешают несколько collateral assets и debt assets в одной позиции Cross Mode."
+    },
+    {
+      "id": "kamino-08",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Ответ о невозможности необеспеченного займа верен. Названия SDK-методов и ограничения Rust crate не доказывают требование залога."
+    },
+    {
+      "id": "kamino-09",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "KSwap — подтверждённый в замороженной документации синоним Kamino Swap. R3 прямо называет Kamino Swap, R6 — KSwap routing. Смысл верен, строгое сравнение строки data остаётся отдельной метрикой."
+    },
+    {
+      "id": "kamino-10",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для указанной обычной частичной ликвидации нужно 20%. Модель отвечает 100%, применив исключённый условием режим insolvency risk."
+    },
+    {
+      "id": "kamino-11",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Typically 95% означает типичное, а не обязательное для всех рынков значение. Цитата прямо поддерживает это различие."
+    },
+    {
+      "id": "kamino-12",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Permissionless указано верно, но четыре ID превышают лимит. Цитаты не подставлены."
+    },
+    {
+      "id": "kamino-13",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Гарантированного grace period нет. Выбранные цитаты про eligibility и origination не доказывают отсутствие отдельного grace period."
+    },
+    {
+      "id": "kamino-14",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Ответ о переменном бонусе верен. Две одинаковые цитаты про minimum bonus 2% не устанавливают его изменение при ухудшении позиции."
+    },
+    {
+      "id": "kamino-15",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "На данном линейном участке: 82 − 75 = 7%, в пределах minimum 2% и maximum 8%. Ответ 4% неверен, хотя выбрано правило о расстоянии между LTV."
+    },
+    {
+      "id": "kamino-16",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "600 / 800 × 100 = 75%, а не 600%. Определение utilization выбрано верно, но возвращён числитель."
+    },
+    {
+      "id": "kamino-17",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Цитата прямо относит spread к уплаченным процентам, а не к principal. Пример также согласован с ответом."
+    },
+    {
+      "id": "kamino-18",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая фраза «idle 30% ... earns nothing» подтверждает ответ. Устранена и прежняя строка \"false\" вместо boolean."
+    },
+    {
+      "id": "kamino-19",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая цитата: после rollover в следующий срок Early Repay Penalty отсутствует."
+    },
+    {
+      "id": "kamino-20",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая цитата: любой queued withdrawal ticket блокирует rollover всех заёмщиков резерва."
+    },
+    {
+      "id": "eth-01",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "ERC20 прямо требует обрабатывать возвращённое false. Ответ подтверждён."
+    },
+    {
+      "id": "eth-02",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Decimals не обязателен. В разделе decimals сказано, что интерфейсы и контракты не должны ожидать наличия этих значений; объяснение модели согласовано с этим."
+    },
+    {
+      "id": "eth-03",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Обе цитаты прямо требуют Transfer event для нулевого перевода."
+    },
+    {
+      "id": "eth-04",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Повторный approve перезаписывает allowance. Прямая цитата подтверждает replaces."
+    },
+    {
+      "id": "eth-05",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1 234 500 / 10^6 = 1,2345, а не 500. Модель использует пример с восемью decimals и не применяет заданные шесть."
+    },
+    {
+      "id": "eth-06",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Нужен balanceOf. Модель ошибочно отрицает наличие такого view-метода в ERC20 и пишет unknown. Дополнительно десять ID превышают лимит."
+    },
+    {
+      "id": "eth-07",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "В разделе convertToShares прямо сказано не включать vault fees. Ответ подтверждён."
+    },
+    {
+      "id": "eth-08",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая цитата требует от convertToShares округления down к нулю."
+    },
+    {
+      "id": "eth-09",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Deposit fees должны учитываться: ответ верен. Но шесть ID превышают лимит, поэтому цитаты не подставлены."
+    },
+    {
+      "id": "eth-10",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Прямая цитата запрещает учитывать deposit limits из maxDeposit при previewDeposit."
+    },
+    {
+      "id": "eth-11",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Если депозиты отключены, maxDeposit обязан вернуть 0. Исправлен прежний ответ 10; прямая цитата подтверждает ноль."
+    },
+    {
+      "id": "eth-12",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Для запрошенного количества отдаваемых shares нужно округление up. Модель отвечает down и цитирует другое условие — идеальные convert-функции."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Текст отказа и статус unknown верны, но data одновременно утверждает health_factor = 0. По прежней политике v6 числовой ноль не считается отсутствующим значением; это противоречие, а не только формат."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "larger",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Отказ, status unknown и data = {} корректны. Лишние десять ID отклонены прежним слоем подстановки, итоговые citations пусты. Содержание и структурированный отказ засчитаны."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Модель признаёт нехватку данных, но подставляет доступную ликвидность 0 без snapshot. По прежнему критерию это не корректный полный отказ."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Статус unknown и текст отказа верны, однако Current LTV = 0 не следует из условия и противоречит нехватке данных."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Модель отказывается предсказывать PnL, но одновременно ставит realized_pnl_usd = 0. Это неподтверждённое число; лимит ID тоже нарушен."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Без данных позиции выдуманы max_withdraw_units = 0 и статус known. Общие правила Aave не подтверждают личное значение."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Статус unknown есть, но answer пустой, а allowance_raw = 0 выдуман. Корректного отказа и пустого data нет."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "larger",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Проза правильно перечисляет отсутствующие данные, но status known и assets_out = 0 противоречат ей. По прежнему правилу противоречий содержание не засчитано."
+    }
+  ],
+  "scope": "Same v5/v6 semantic rubric; no primary raw repair. KSwap synonym accepted as already adjudicated in v6. Explicit0 plus insufficient-data answer fails content, as in v6; null differs from invented0. Model selects IDs, frozen adapter copies source text. Over3IDs rejected, not silently truncated.",
+  "benchmark_already_seen": true
+}

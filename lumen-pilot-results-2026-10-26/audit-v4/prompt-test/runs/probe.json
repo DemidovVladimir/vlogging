@@ -1,0 +1,8 @@
+{
+  "not_exam": true,
+  "prompt_tokens": 1650,
+  "max_exam_prompt": 1633,
+  "generation_tokens": 30,
+  "finish_reason": "stop",
+  "raw": "{\n  \"status\": \"unknown\",\n  \"answer\": \"В справочнике нет нужных данных\",\n  \"data\": {}\n}"
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "stage": "probe",
+  "started_at": "2026-10-28T08:57:11.349068+00:00",
+  "command": [
+    ".venv/bin/python",
+    "defi_harness.py",
+    "--probe"
+  ],
+  "limits": {
+    "footprint_bytes": 4831838208,
+    "swap_growth_bytes": 268435456,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 9,
+  "peak_footprint_bytes": 3333622520,
+  "peak_rss_bytes": 1691516928,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 3007053824,
+  "child_pid": 3498,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-28T08:57:20.446263+00:00",
+  "wall_seconds": 9.097505666999496,
+  "observed_process_identities": {
+    "3498": 2784039203893
+  },
+  "reused_pids_ignored": []
+}

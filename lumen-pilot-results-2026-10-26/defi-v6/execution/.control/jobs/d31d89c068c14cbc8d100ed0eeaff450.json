@@ -1,0 +1,16 @@
+{
+  "id": "d31d89c068c14cbc8d100ed0eeaff450",
+  "stage": "prepare",
+  "command": [
+    ".venv/bin/python",
+    "prepare_v6.py"
+  ],
+  "pid": 79315,
+  "pgid": 79315,
+  "birth": "Tue Oct 27 21:57:17 2026",
+  "manager_pid": 79308,
+  "manager_birth": "Tue Oct 27 21:57:17 2026",
+  "state": "finished",
+  "log": ".control/logs/d31d89c068c14cbc8d100ed0eeaff450.log",
+  "exit_code": 0
+}

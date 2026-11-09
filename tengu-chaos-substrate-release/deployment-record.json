@@ -1,0 +1,65 @@
+{
+  "status": "success",
+  "deploymentId": "f10900f3-6682-4105-8776-9506d561d077",
+  "immutableOrigin": "https://f10900f3.tengu-presentations.pages.dev",
+  "createdAt": "2026-10-27T13:34:28.797971Z",
+  "deployEndedAt": "2026-10-27T13:34:30.861727Z",
+  "previousDeploymentId": "d19c7d06-0851-432f-b55a-354fcfde01eb",
+  "project": "tengu-presentations",
+  "origin": "https://tengucluster.com",
+  "revision": 7,
+  "slug": "chaos-substrate",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "paths": {
+    "ru": "/episodes/chaos-substrate/",
+    "en": "/en/episodes/chaos-substrate/"
+  },
+  "manifest": "build-manifest.json",
+  "verifiedAt": "2026-10-27T13:39:01.236Z",
+  "sourceWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-chaos-substrate-release",
+  "episodeWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-chaos-substrate-episode",
+  "uploader": "wrangler 4.151.3 pages deploy (its own OAuth login: account:read user:read pages:write), branch main",
+  "staticAssets": 216,
+  "controlFiles": 2,
+  "privatePaths404PerOrigin": 456,
+  "verifiedOrigins": [
+    "tengucluster.com",
+    "tengu-presentations.pages.dev",
+    "f10900f3.tengu-presentations.pages.dev"
+  ],
+  "browserChecks": {
+    "127.0.0.1": {
+      "navigation": 27,
+      "deck": "ru+en: 9 scenes, 30 phases, controls, 5 sizes, intro sound"
+    },
+    "tengucluster.com": {
+      "navigation": 27,
+      "deck": "ru+en: 9 scenes, 30 phases, controls, 5 sizes, intro sound"
+    }
+  },
+  "rollbackSnapshot": "previous/public",
+  "qa": "qa/tengucluster.com/",
+  "changedFiles": [
+    "en/episodes/agent-context/index.html",
+    "en/episodes/chaos-kb/index.html",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/tengu-cluster/index.html",
+    "en/index.html",
+    "episodes/agent-context/index.html",
+    "episodes/chaos-kb/index.html",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/tengu-cluster/index.html",
+    "index.html"
+  ],
+  "addedFiles": 52,
+  "unrelatedContentUnchanged": true,
+  "linkedWorker": {
+    "name": "tengu-modal-city",
+    "route": "tengucluster.com/modal-city*",
+    "versionId": "48b450ed-fd3e-41b0-9d91-daaff95ccc97",
+    "source": "/Users/vladimirdemidov/development/neovim_pro/site"
+  }
+}

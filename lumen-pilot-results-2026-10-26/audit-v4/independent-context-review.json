@@ -1,0 +1,1446 @@
+{
+  "created_at": "2026-10-27T09:42:58.027959+00:00",
+  "reviewer_agent": "/root/video_draft",
+  "review_type": "independent_agent_review_of_all_60_raw_outputs",
+  "human_validation": false,
+  "independence_limits": "This agent did not produce the historical semantic labels. The prior labels were visible during this audit; this is not blinded human review.",
+  "historical_result_unchanged": {
+    "full_correct": 30,
+    "count": 60,
+    "strict_fields_correct": 28
+  },
+  "input_sha256": {
+    "manifest.json": "41bd58413ac05806ab2e00783ed1d7930405b8071b07350ed6ec63f0c3afe12b",
+    "v3/runs/context.jsonl": "af117d5b7b60f80a547c347e4d900e89c32a6d95f933f9441251f4e10e5cff5b",
+    "v3/seeds/test.jsonl": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+    "v3/source-handbook.txt": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+    "v3/runs/semantic-review.json": "07176cd0d5393497dfb17b12747979273d7943f5bb3a5963f4774f9e3f447dd5",
+    "v3/common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "v3/compare.py": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+    "v3/run_eval.py": "ac82dedba819bbcf10c6623a180859b144587dbab1cfc6379644c21627f685b2",
+    "v3/protocol.json": "be553d670accf76be101459745e4e282603202d505cc3641ccee67bde46d5191",
+    "v3/model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "v3/preflight.json": "25f508acabacd9f6209071728a804c7be208057755a7f749f17e26d7e5825342"
+  },
+  "diagnostic_definitions": {
+    "primary_observed_category": "Exactly one observed failure category per row. Not an identified internal/model/prompt cause; refusal takes priority if no usable answer is provided.",
+    "content_only": "Ignore JSON packaging, known/unknown status and equivalent string representation; require substantively correct answer AND data, no material false fact or internal contradiction. Missing reasoning alone is allowed as in the historical concise-answer criterion.",
+    "answer_text_only": "Diagnostic of answer prose alone, excluding status and data. Not a system success metric; c06 additionally qualifies but has a wrong numeric payload.",
+    "borderline": "c23 is accepted only under the historical truthful concise-answer criterion; relevant reasoning is weak. Sensitivity count excluding it is not a replacement score or confidence interval."
+  },
+  "summary": {
+    "count": 60,
+    "json_valid": 59,
+    "primary_categories": {
+      "json_only": 1,
+      "correct": 30,
+      "wrong_fact_rule": 5,
+      "unsupported_abstention": 11,
+      "status_fields_only_correct_content": 4,
+      "calculation_application": 9
+    },
+    "content_only_correct": 35,
+    "content_only_sensitivity_excluding_c23": 34,
+    "answer_text_only_correct": 36,
+    "content_only_by_category": {
+      "atomic": 17,
+      "composition": 12,
+      "unknown": 6
+    },
+    "historical_false_rows_with_only_contract_failure": [
+      "v2-a01",
+      "v2-a10",
+      "v2-a12",
+      "v2-a16",
+      "v2-c14"
+    ],
+    "material_content_failures_remaining": 25
+  },
+  "limitations": [
+    "One retained deterministic response per question cannot identify whether model size, quantization, prompt, language or decoding caused an error.",
+    "No model was run, no counterfactual prompt or repair was evaluated; content-only is retrospective reclassification of the same outputs.",
+    "All task-solving facts are present in the injected handbook; refusals here do not establish insufficient source information. They also do not establish that more training data cannot help.",
+    "The same60 were already used in earlier arms; v3 is a post-hoc method comparison, not an untouched external benchmark.",
+    "Cinema name is already in SYSTEM. The eight historical v1 questions are not compared with the60 denominator.",
+    "No human validation. All judgments are agent-reviewed and may require adjudication."
+  ],
+  "items": [
+    {
+      "id": "v2-a01",
+      "category": "atomic",
+      "question": "Под каким названием описан вымышленный кинотеатр в учебном справочнике?",
+      "source_evidence": [
+        "F01"
+      ],
+      "raw_sha256": "aad4cc9c349ac6921bfbe78d37bbaea9eb40a3dea1aaa270299d32f91ea773e1",
+      "raw_utf8_bytes": 146,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": false,
+      "parsed_status": null,
+      "primary_observed_category": "json_only",
+      "tags": [
+        "invalid_json",
+        "trailing_fence",
+        "system_provides_answer"
+      ],
+      "note_ru": "Название и data верны по F01, но один лишний завершающий ``` делает весь raw невалидным JSON. Название уже есть в SYSTEM.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a02",
+      "category": "atomic",
+      "question": "Укажи служебный идентификатор этого учебного справочника.",
+      "source_evidence": [
+        "F02"
+      ],
+      "raw_sha256": "0400c2e932eb2068d70116b046ae4e173e4fd257a2da82fbf48e299f3d8c4b8c",
+      "raw_utf8_bytes": 185,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Код NFR-27 верен по F02; текст и поле согласованы.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a03",
+      "category": "atomic",
+      "question": "Какое количество зрительских мест предусмотрено в зале с названием «Сумрак»?",
+      "source_evidence": [
+        "F03"
+      ],
+      "raw_sha256": "4ffa70554aaf1e5a428daae1c446bb9651f2b9f6d0d5ab620f3599763bd47710",
+      "raw_utf8_bytes": 163,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "18 мест в «Сумраке» верны по F03.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a04",
+      "category": "atomic",
+      "question": "Назови число зрительских мест для зала с названием «Астра».",
+      "source_evidence": [
+        "F04"
+      ],
+      "raw_sha256": "cf96b0e488199edbb4e6f4e0098d5218ff2c1357fdae5e3ff4b15997e4df0b2c",
+      "raw_utf8_bytes": 113,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "32 места в «Астре» верны по F04.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a05",
+      "category": "atomic",
+      "question": "Какой базовый тариф установлен за одиночный обычный билет с понедельника по пятницу?",
+      "source_evidence": [
+        "F05"
+      ],
+      "raw_sha256": "d6471f056100ea9a6e76f880376061651c70fa8723c613cfe8b2c55acfe7acee",
+      "raw_utf8_bytes": 236,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "minor_language_error"
+      ],
+      "note_ru": "11 EUR в будни верны по F05. Опечатка «пятницень» смысл не меняет.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a06",
+      "category": "atomic",
+      "question": "Назови базовый тариф обычного одиночного билета на субботу или воскресенье.",
+      "source_evidence": [
+        "F06"
+      ],
+      "raw_sha256": "f32bb82b2be07dfdd202308cde8d29b7144bb294098540d162f0bf009564a03c",
+      "raw_utf8_bytes": 356,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "wrong_fact_rule",
+      "tags": [
+        "wrong_status",
+        "internal_contradiction",
+        "false_source_absence_claim",
+        "correct_core_fact_present"
+      ],
+      "note_ru": "Цена 14 EUR верна по F06, но первая фраза ложно отрицает наличие этой цены в источнике; затем та же цена приводится. Нельзя считать только ошибкой status.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a07",
+      "category": "atomic",
+      "question": "Какую сумму берут за один билет, если показ объявлен премьерой?",
+      "source_evidence": [
+        "F07"
+      ],
+      "raw_sha256": "e20d7afdac80f62d47af3c1bcfdcd6f678205a993f5147af199695f5da5d81dd",
+      "raw_utf8_bytes": 152,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "strict_string_false_negative"
+      ],
+      "note_ru": "17 евро верны по F07. Euro и EUR семантически обозначают одну валюту; требование именно EUR явно не дано в prompt.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a08",
+      "category": "atomic",
+      "question": "С какого числа зрителей на одном сеансе компания достигает порога группы?",
+      "source_evidence": [
+        "F08"
+      ],
+      "raw_sha256": "e636e4960d133ab0a8aca5cc8f4a46d959a1b79e717935acb0798b93c7810e25",
+      "raw_utf8_bytes": 167,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim"
+      ],
+      "note_ru": "Отказ вместо явно данного порога 5 человек по F08.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a09",
+      "category": "atomic",
+      "question": "На сколько процентов снижается стоимость обычного билета при действующей групповой скидке?",
+      "source_evidence": [
+        "F09"
+      ],
+      "raw_sha256": "6c21120664674db7730079857b00a8044b9a3355e75b8db8a1b02ede219115e0",
+      "raw_utf8_bytes": 203,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_insufficient_information_claim"
+      ],
+      "note_ru": "Отказ вместо явно данных 20% по F09.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a10",
+      "category": "atomic",
+      "question": "Назови диапазон дней недели, в который разрешена групповая скидка.",
+      "source_evidence": [
+        "F10"
+      ],
+      "raw_sha256": "dc917dd2de7b3125ef0f507066a8de655440cb6a5f7275f0e34a40c609d8fad0",
+      "raw_utf8_bytes": 209,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "status_fields_only_correct_content",
+      "tags": [
+        "wrong_status",
+        "noncanonical_equivalent_string"
+      ],
+      "note_ru": "Правильные дни понедельник–пятница по F10; status unknown противоречит известному ответу. Диапазон строкой эквивалентен эталону.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a11",
+      "category": "atomic",
+      "question": "Разрешено ли распространять групповую скидку именно на премьерные билеты?",
+      "source_evidence": [
+        "F11"
+      ],
+      "raw_sha256": "9f22889afa1cb6277473d0495eda2539316382415ec291a9d03d85ace1d6d063",
+      "raw_utf8_bytes": 191,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Запрет скидки на премьеру верен по F11.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a12",
+      "category": "atomic",
+      "question": "Уменьшается ли стоимость покупки абонемента за счёт групповой скидки?",
+      "source_evidence": [
+        "F12"
+      ],
+      "raw_sha256": "aea9d18fa1f0b164a21741980c6e714eecb1e83111b5ff7a3a1fa1932e89cf9c",
+      "raw_utf8_bytes": 345,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "status_fields_only_correct_content",
+      "tags": [
+        "wrong_status"
+      ],
+      "note_ru": "Текст и false верны по F12, неверен только status unknown.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a13",
+      "category": "atomic",
+      "question": "Укажи полную покупную стоимость именного абонемента с названием «Искра».",
+      "source_evidence": [
+        "F13"
+      ],
+      "raw_sha256": "a60bc637ad30783858290e3f324a91d0ff3c54bebe848bdb69b425bb25c5657a",
+      "raw_utf8_bytes": 193,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim"
+      ],
+      "note_ru": "Отказ вместо явно данной цены «Искры» 24 евро по F13.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a14",
+      "category": "atomic",
+      "question": "Сколько отдельных посещений предоставляется владельцу одной «Искры»?",
+      "source_evidence": [
+        "F14"
+      ],
+      "raw_sha256": "8cc12e0dd2a720e7085b7e7da99413af2f8d2af91ba3283b88fce1451a2f98d6",
+      "raw_utf8_bytes": 172,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "minor_language_error"
+      ],
+      "note_ru": "Три посещения верны по F14; языковая шероховатость не меняет смысл.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a15",
+      "category": "atomic",
+      "question": "Какой диапазон дней недели разрешён для посещений по абонементу «Искра»?",
+      "source_evidence": [
+        "F15"
+      ],
+      "raw_sha256": "ef12e5097d602380375731b7bacbe25fee44d7d06aca137f80b7633b9b925dd8",
+      "raw_utf8_bytes": 230,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "strict_string_false_negative"
+      ],
+      "note_ru": "Понедельник–четверг верно по F15; строка диапазона эквивалентна эталону.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a16",
+      "category": "atomic",
+      "question": "Какова длительность «Искры» в календарных днях, если день активации считать первым?",
+      "source_evidence": [
+        "F16"
+      ],
+      "raw_sha256": "bad8721ef39506b67e519ea0f90865e91f992e04691b7e63b5d0ebc2de42d54e",
+      "raw_utf8_bytes": 225,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "status_fields_only_correct_content",
+      "tags": [
+        "wrong_status"
+      ],
+      "note_ru": "21 календарный день с активацией верен по F16; неверен status unknown.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a17",
+      "category": "atomic",
+      "question": "Имеет ли владелец «Искры» право отдать одно её посещение иному человеку?",
+      "source_evidence": [
+        "F17"
+      ],
+      "raw_sha256": "0e6bf6b408214930130d10f43e59e6ff11e45b2213dd2ca11c0b0c553c3d37a3",
+      "raw_utf8_bytes": 231,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Запрет передачи посещения верен по F17.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a18",
+      "category": "atomic",
+      "question": "Какую полную сумму нужно внести при покупке абонемента с названием «Туман»?",
+      "source_evidence": [
+        "F18"
+      ],
+      "raw_sha256": "ba007e68d9267bccfc9e771ac319ec0e4c70e4806df3bca18d36dc11bf25ed9e",
+      "raw_utf8_bytes": 280,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim",
+        "unknown_nonempty_data",
+        "null_fields"
+      ],
+      "note_ru": "Отказ вместо цены «Тумана» 44 евро по F18. Дополнительно null-поля нарушают unknown => data={}.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a19",
+      "category": "atomic",
+      "question": "Каково исходное число посещений в одном новом абонементе «Туман»?",
+      "source_evidence": [
+        "F19"
+      ],
+      "raw_sha256": "df3e93659564d34f3adba95c389369ff5bf3f81ea0f7390044f4bbdbb85c7968",
+      "raw_utf8_bytes": 221,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim",
+        "wrong_numeric_field",
+        "unknown_nonempty_data"
+      ],
+      "note_ru": "Текст отказывается извлечь 5 посещений из F19, а data.visits=0 добавляет неверное число. Основной наблюдаемый тип — отказ при явном факте.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a20",
+      "category": "atomic",
+      "question": "Какие дни недели допускаются для посещения по «Туману»?",
+      "source_evidence": [
+        "F20"
+      ],
+      "raw_sha256": "c7c39330180c88da7343b83fffefcd97318226a72906283f3f77cfff005863ca",
+      "raw_utf8_bytes": 195,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "strict_string_false_negative"
+      ],
+      "note_ru": "Все дни недели верны по F20; естественная строка эквивалентна эталону.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a21",
+      "category": "atomic",
+      "question": "На сколько календарных дней рассчитан «Туман», если включить дату его активации?",
+      "source_evidence": [
+        "F21"
+      ],
+      "raw_sha256": "dda5831fad9c439b639c43c45938e80b016c33ea1b79f785c5057b3f10317e4f",
+      "raw_utf8_bytes": 184,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "40 календарных дней с включением активации верны по F21.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a22",
+      "category": "atomic",
+      "question": "Можно ли использовать посещение «Тумана» вместо его владельца, передав абонемент другому зрителю?",
+      "source_evidence": [
+        "F22"
+      ],
+      "raw_sha256": "14f2646b67f6e345b0a8c66d8f14941aab51ff7fe2dbb07edad08bfd53116069",
+      "raw_utf8_bytes": 453,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim",
+        "correct_field_wrong_explanation",
+        "unknown_nonempty_data"
+      ],
+      "note_ru": "Отрицание существования правила передачи противоречит F22. Правильный false не делает весь ответ правильным.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a23",
+      "category": "atomic",
+      "question": "Каков суточный предел числа посещений по одному из описанных абонементов?",
+      "source_evidence": [
+        "F23"
+      ],
+      "raw_sha256": "d3c49e6ce185a6809e186e56ee91589c238b800cc8f0c58249d04152a460387b",
+      "raw_utf8_bytes": 224,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim"
+      ],
+      "note_ru": "Отказ вместо суточного лимита 1 по F23.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a24",
+      "category": "atomic",
+      "question": "Допускается ли оплачивать премьерный сеанс любым из двух описанных абонементов?",
+      "source_evidence": [
+        "F24"
+      ],
+      "raw_sha256": "93c3a1c5430a9b631547ad5d345ad93d80ce06a166110521af12ca8a8819a64f",
+      "raw_utf8_bytes": 207,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Запрет обоих абонементов на премьеры верен по F24.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a25",
+      "category": "atomic",
+      "question": "Какая доля фактически оплаченной суммы возвращается за обычный билет при интервале до начала не менее шести часов?",
+      "source_evidence": [
+        "F25"
+      ],
+      "raw_sha256": "3e19156b88bc5719ea2a45a6ee92774977d078eaef44f44ed6e2a92d64f9294c",
+      "raw_utf8_bytes": 270,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "wrong_fact_rule",
+      "tags": [
+        "wrong_refund_rule"
+      ],
+      "note_ru": "На интервале >=6 часов положена доля 1 по F25, а не 0,5. Ошибка есть в тексте и data.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a26",
+      "category": "atomic",
+      "question": "Какова доля возврата за обычный билет, когда до показа осталось от двух часов включительно до шести часов не включительно?",
+      "source_evidence": [
+        "F26"
+      ],
+      "raw_sha256": "799d2cb162af582ce120ec6340577e5f8188d494404f47f061f33bc1af1a606e",
+      "raw_utf8_bytes": 268,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_insufficient_information_claim"
+      ],
+      "note_ru": "Для заданного интервала 2<=t<6 достаточен F26. Требование календарной даты/точного времени не нужно.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a27",
+      "category": "atomic",
+      "question": "Какую долю оплаты обычного билета возвращают, если до старта осталось меньше двух часов?",
+      "source_evidence": [
+        "F27"
+      ],
+      "raw_sha256": "4863b4c9badcc88d9a1374dd2638ef7b8f4eabf170aeba63fca28a99d6ad1122",
+      "raw_utf8_bytes": 268,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim"
+      ],
+      "note_ru": "Отказ вместо прямо указанного нулевого возврата при t<2 по F27.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a28",
+      "category": "atomic",
+      "question": "Какая доля оплаты премьерного билета возвращается, когда до начала остаётся 24 часа или больше?",
+      "source_evidence": [
+        "F28"
+      ],
+      "raw_sha256": "f5184d4cb31d593dfaf07255fd43670e0fbd1c9ae7791f3cdcb6599768846f18",
+      "raw_utf8_bytes": 426,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "wrong_fact_rule",
+      "tags": [
+        "correct_core_fact_present",
+        "false_source_absence_claim",
+        "wrong_numeric_field",
+        "internal_contradiction"
+      ],
+      "note_ru": "Первая фраза верно цитирует полный возврат по F28, но затем отрицается заданная доля, выдумывается правило по умолчанию и data=0. Это содержательное противоречие.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a29",
+      "category": "atomic",
+      "question": "Какая доля оплаты премьерного билета подлежит возврату при интервале меньше 24 часов?",
+      "source_evidence": [
+        "F29"
+      ],
+      "raw_sha256": "67838f84eb7347dbddec6d2e6b5e0e0d5c45dc88da9db28be074faa15fb75576",
+      "raw_utf8_bytes": 252,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "wrong_fact_rule",
+      "tags": [
+        "wrong_refund_rule"
+      ],
+      "note_ru": "Для премьеры менее чем за 24 часа F29 требует 0, а не половину.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-a30",
+      "category": "atomic",
+      "question": "Назови полное имя администратора, указанного в учебных правилах.",
+      "source_evidence": [
+        "F30"
+      ],
+      "raw_sha256": "554c78c8ec2a4b6b670bd89b21c2cef07d2cb7b84c412b18655db92982fc5495",
+      "raw_utf8_bytes": 168,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Имя Сол Мерн верно по F30.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c01",
+      "category": "composition",
+      "question": "Двенадцать зрителей собираются на один обычный показ в среду. Свободные места для всех есть. Какова общая стоимость разовых билетов с предусмотренной скидкой?",
+      "source_evidence": [
+        "F05",
+        "F08",
+        "F09",
+        "F10"
+      ],
+      "raw_sha256": "aeeab599e6b44adf7e93b40524d624241f818dce5d9ae6727a634fa3361c71be",
+      "raw_utf8_bytes": 387,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Верно применены F05/F08/F09/F10: 12×11×0,8=105,6 EUR.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c02",
+      "category": "composition",
+      "question": "Одиннадцать зрителей берут обычные разовые билеты на один четверговый сеанс; свободные места для всех есть. Сколько они должны заплатить вместе?",
+      "source_evidence": [
+        "F05",
+        "F08",
+        "F09",
+        "F10"
+      ],
+      "raw_sha256": "d7e95e6ec9e84c21f9431e44256f5f6216b114139acb188e71c23d6d7523dd16",
+      "raw_utf8_bytes": 256,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "omitted_applicable_discount"
+      ],
+      "note_ru": "121 EUR — верное умножение без обязательной скидки. Нужно 11×11×0,8=96,8 EUR. Арифметика умножения сама по себе не сломана.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c03",
+      "category": "composition",
+      "question": "Тринадцать зрителей выбирают один обычный воскресный сеанс. Для всех есть свободные места. Вычисли цену всех разовых билетов.",
+      "source_evidence": [
+        "F06",
+        "F10"
+      ],
+      "raw_sha256": "9acbf17d331683370d61ce8d5794684d01d4d2707f6f81e7ef768e5a379d6329",
+      "raw_utf8_bytes": 350,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "13×14=182 EUR верно, скидка в воскресенье не положена по F10.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c04",
+      "category": "composition",
+      "question": "Четырнадцать человек идут во вторник на премьерный показ; свободные места есть. Укажи общую цену разовых билетов, возможность групповой скидки и возможность пройти по «Искре» или «Туману».",
+      "source_evidence": [
+        "F07",
+        "F11",
+        "F24"
+      ],
+      "raw_sha256": "7aef73005215090897342765ab8a87a027d1bf5fa862cf33ee236c36c35dd051",
+      "raw_utf8_bytes": 260,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim",
+        "unknown_nonempty_data",
+        "null_fields"
+      ],
+      "note_ru": "При явных F07/F11/F24 отказано в цене/ограничениях. Нужны 238 EUR, false, false.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c05",
+      "category": "composition",
+      "question": "Обычный билет был оплачен со скидкой за 8,80 евро. До показа остаётся шесть часов 15 минут, и покупатель оформляет возврат. Какую сумму ему положено вернуть?",
+      "source_evidence": [
+        "F25"
+      ],
+      "raw_sha256": "455fce32c11bd5483c848bc000bfb8caa765a72302f240bef661adc39ef75a31",
+      "raw_utf8_bytes": 735,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "wrong_interval",
+        "wrong_rule_citation",
+        "arithmetic_error",
+        "internal_contradiction"
+      ],
+      "note_ru": "Для 6ч15м нужен полный возврат 8,8 по F25. Перепутаны интервалы и номера правил; 8,8−1,76 ошибочно записано 6,04, итоговые суммы противоречат друг другу.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c06",
+      "category": "composition",
+      "question": "За обычный билет фактически заплатили 8,80 евро. Возврат оформляют за четыре часа 30 минут до начала. Сколько денег вернут?",
+      "source_evidence": [
+        "F26"
+      ],
+      "raw_sha256": "0f4fae92a027ec1b00f9a2aee7093b9097a5406e5cc85d38840a1d300e200bd8",
+      "raw_utf8_bytes": 164,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "correct_prose_wrong_numeric_field",
+        "internal_contradiction"
+      ],
+      "note_ru": "Проза верно говорит о половине по F26, но итоговое amount=8,8 не равен половине 8,8 (4,4). Нельзя объявить только синтаксической ошибкой поля: числовое содержание противоречит прозе.",
+      "content_only_correct": false,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c07",
+      "category": "composition",
+      "question": "Обычный билет оплачен за 14 евро; до начала остаётся один час 59 минут. Какая сумма возврата предусмотрена?",
+      "source_evidence": [
+        "F27"
+      ],
+      "raw_sha256": "ce0c8ee5efc9832dd290356255f1236ed664f9693551f2beace04af581be9dde",
+      "raw_utf8_bytes": 170,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "wrong_interval",
+        "wrong_refund_rule"
+      ],
+      "note_ru": "1ч59м попадает под F27: 0. Применена половина и получено 7 вместо 0.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c08",
+      "category": "composition",
+      "question": "Обычный билет стоил покупателю 11 евро. Он сдаёт его за пять часов 30 минут до сеанса. Какова выплата?",
+      "source_evidence": [
+        "F26"
+      ],
+      "raw_sha256": "8f310d1622d01eadd53a00dad7919f03e7b9e713474ca979235124422d7fdfa4",
+      "raw_utf8_bytes": 313,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Половина 11=5,5 EUR для 5ч30м верна по F26.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c09",
+      "category": "composition",
+      "question": "За премьерный билет уплачено 17 евро. Возврат запрашивают за 24 часа 30 минут. Укажи сумму выплаты.",
+      "source_evidence": [
+        "F28"
+      ],
+      "raw_sha256": "92e90064ad53054bff693e955bab4ddef605d47c84a980036bfcb1ae41b99213",
+      "raw_utf8_bytes": 412,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "wrong_interval",
+        "wrong_refund_rule"
+      ],
+      "note_ru": "24ч30м для премьеры требует полного возврата 17 по F28, а не 8,5.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c10",
+      "category": "composition",
+      "question": "Премьерный билет оплачен за 17 евро. Возврат происходит за 23 часа 30 минут до показа. Какую сумму вернут?",
+      "source_evidence": [
+        "F29"
+      ],
+      "raw_sha256": "667d96831e28cc260e13f0e16e06e2f9d7c8a308b243a5c01384f783a7aa6e1e",
+      "raw_utf8_bytes": 575,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "invented_percentage",
+        "internal_contradiction",
+        "wrong_refund_rule"
+      ],
+      "note_ru": "При 23ч30м F29 требует 0. Цитируется нулевой возврат, но выдуманы 85% и сумма 14,45.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c11",
+      "category": "composition",
+      "question": "Для 23 зрителей нужно выбрать самый маленький из двух залов, в который они помещаются. Речь только о вместимости, не о наличии билетов. Назови зал.",
+      "source_evidence": [
+        "F03",
+        "F04"
+      ],
+      "raw_sha256": "0fdcd29f75e008e6b148ee32da90d46883bbf6185cc8e59a7388079acaf35f86",
+      "raw_utf8_bytes": 102,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "minimal_explanation"
+      ],
+      "note_ru": "«Астра» — верный минимальный подходящий зал для 23 человек по F03/F04. Краткий ответ допустим.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c12",
+      "category": "composition",
+      "question": "Компания из 31 зрителя хочет разместиться целиком в одном зале. Если учитывать только вместимость, какой из двух залов подходит?",
+      "source_evidence": [
+        "F03",
+        "F04"
+      ],
+      "raw_sha256": "b926f70aaae6439585121adf6de663aca144c0e780547db842f4d3e7963484fa",
+      "raw_utf8_bytes": 333,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "unsupported_abstention",
+      "tags": [
+        "false_source_absence_claim",
+        "unknown_nonempty_data"
+      ],
+      "note_ru": "Отказ от выбора зала с ложным заявлением, будто вместимости отсутствуют. F03/F04 дают «Астру» для 31 человека.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c13",
+      "category": "composition",
+      "question": "Группа насчитывает 27 человек и хочет разместиться целиком именно в зале «Сумрак». Хватит ли мест по его заявленной вместимости? Не оценивай наличие билетов на конкретный сеанс.",
+      "source_evidence": [
+        "F03"
+      ],
+      "raw_sha256": "7a51396c5df3e31c7af72b9f7988166ffa7a84d4c73133bbccdc1ba5f1b4f734",
+      "raw_utf8_bytes": 330,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "27>18, fits=false верно по F03; задача явно только о вместимости.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c14",
+      "category": "composition",
+      "question": "Владелец активной «Искры» имеет ещё два посещения и хочет два обычных сеанса во вторник в один день. Сегодня абонемент не использовался, свободные места есть. Может ли один этот абонемент покрыть оба сеанса?",
+      "source_evidence": [
+        "F14",
+        "F15",
+        "F23"
+      ],
+      "raw_sha256": "c5af8d9782a1b10295bacba680865d3542614139b710c746bb9e7715a28032b1",
+      "raw_utf8_bytes": 633,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "status_fields_only_correct_content",
+      "tags": [
+        "wrong_status",
+        "irrelevant_true_rule"
+      ],
+      "note_ru": "Лимит одного посещения в день правильно применён по F23, covers_both=false верно; status unknown неверен. Передача здесь лишняя, но правило истинно.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c15",
+      "category": "composition",
+      "question": "Сегодня воскресенье. Владелец действующего «Тумана» уже использовал его сегодня, но на абонементе осталось два посещения. Места на ещё один обычный сеанс есть. Можно ли оплатить этот сеанс тем же абонементом сегодня?",
+      "source_evidence": [
+        "F20",
+        "F23"
+      ],
+      "raw_sha256": "6a24d8b01b2d8493b60fc434bcba0052ea967515e9e2676c4536ff4891301787",
+      "raw_utf8_bytes": 648,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "awkward_intermediate_condition"
+      ],
+      "note_ru": "Итоговый запрет верен: дневной лимит уже исчерпан по F23. Вставка об условии места двусмысленна, но заключение прямо применяет дневной запрет.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c16",
+      "category": "composition",
+      "question": "«Искра» оформлена на Марину и действует; посещения остались, сегодня её не использовали. Лев хочет вместо Марины пройти по ней на обычный сеанс в среду, свободные места есть. Разрешён ли такой проход?",
+      "source_evidence": [
+        "F15",
+        "F17",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "5582f8dc65bb1d528996ffaf3424812a611abb0924115549fe294b72dfc2b59f",
+      "raw_utf8_bytes": 466,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Передача именной «Искры» от Марины Льву запрещена по F17. Остальные условия не отменяют запрет.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c17",
+      "category": "composition",
+      "question": "Действующий «Туман» оформлен на Льва; три посещения ещё остались, сегодня абонемент не использовался. Марина просит пройти вместо владельца на обычный субботний сеанс, места есть. Можно ли пройти по этому «Туману»?",
+      "source_evidence": [
+        "F20",
+        "F22",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "9a55e480fad577edae9d5a0f14144168465cf479561ffb5e171ff05e8123cc6a",
+      "raw_utf8_bytes": 519,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "wrong_fact_rule",
+      "tags": [
+        "correct_field_wrong_explanation",
+        "strict_false_positive"
+      ],
+      "note_ru": "Флаг false совпал, но объяснение переворачивает F24: якобы «Туман» только для премьер и не для обычных посещений.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c18",
+      "category": "composition",
+      "question": "Собственник активной «Искры» сохранил одно посещение и сегодня ею не пользовался. Сегодня пятница, места на обычный показ есть. Подойдёт ли «Искра» для прохода?",
+      "source_evidence": [
+        "F15",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "a15cbfbee7c5d7685aa98e60e461883dc887f777bb81b4e8c9c2111c251cb733",
+      "raw_utf8_bytes": 331,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "Пятница исключена для «Искры» по F15; false верен.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c19",
+      "category": "composition",
+      "question": "Владелец «Тумана» находится в пределах его срока; осталось одно посещение, сегодня абонемент не использовался. Сегодня воскресенье, обычный сеанс и свободное место есть. Разрешён ли проход по «Туману»?",
+      "source_evidence": [
+        "F19",
+        "F20",
+        "F21",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "1f6491c635ee416cd4b818ed7936ff169a91720734d974476330f0c9e3af36b1",
+      "raw_utf8_bytes": 139,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "minimal_explanation"
+      ],
+      "note_ru": "Все заданные условия «Тумана» соблюдены, true верен; отсутствие развёрнутого вывода допустимо.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c20",
+      "category": "composition",
+      "question": "«Искру» активировали в четверг. Сегодня среда — 21-й календарный день, считая день активации первым. Её владелец имеет оставшееся посещение, сегодня проходов не было, свободное место на обычный сеанс есть. Можно ли использовать абонемент сегодня?",
+      "source_evidence": [
+        "F15",
+        "F16",
+        "F17",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "6a47fee622800cf56ca0828b30321573857b04727e681d6bb4fe120cfe82b9d7",
+      "raw_utf8_bytes": 629,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "boundary_application_error",
+        "question_day_changed",
+        "irrelevant_true_rule"
+      ],
+      "note_ru": "21-й включённый день и среда разрешены; нужен true. Ответ false, а заданная среда подменена четвергом. Сам срок цитируется верно.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c21",
+      "category": "composition",
+      "question": "«Искру» активировали в четверг. Наступил четверг — 22-й календарный день с включённым днём активации. Владелец сохранил посещение и сегодня не пользовался абонементом; место на обычный сеанс есть. Действителен ли проход по «Искре»?",
+      "source_evidence": [
+        "F15",
+        "F16",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "361dddda651ec2ca6aab3fb2d89ba26834b716e737b26f710cc1fbf5b3893b14",
+      "raw_utf8_bytes": 603,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "boundary_application_error",
+        "correct_rule_wrong_application"
+      ],
+      "note_ru": "22-й день выходит за срок 21 по F16. Ответ цитирует срок, но ошибочно разрешает проход.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c22",
+      "category": "composition",
+      "question": "«Туман» активировали во вторник. Сегодня суббота — 40-й календарный день, если дату активации считать первой. У владельца осталось посещение, сегодня абонемент не использовался; есть место на обычный показ. Можно ли пройти по «Туману»?",
+      "source_evidence": [
+        "F20",
+        "F21",
+        "F22",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "12249c56f1a808224b5df93881d6ac53ad4859f9ba284e8fad81f5711c827569",
+      "raw_utf8_bytes": 902,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [],
+      "note_ru": "40-й день включён, суббота для «Тумана» допустима; прочие условия соблюдены по F20/F21/F23/F24.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-c23",
+      "category": "composition",
+      "question": "После активации «Тумана» во вторник наступило воскресенье — 41-й календарный день с включённой датой активации. Владелец ещё имеет посещение, сегодня проходов не было, свободное место на обычный показ есть. Можно ли пройти по абонементу?",
+      "source_evidence": [
+        "F20",
+        "F21",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "08f99085ec32edcb72a78cbcda2c066a16973a21b7e02c5f0ad712751853bd3f",
+      "raw_utf8_bytes": 469,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "correct",
+      "tags": [
+        "weak_relevant_justification",
+        "irrelevant_true_rule"
+      ],
+      "note_ru": "False и срок 40 дней верны: 41-й день вне срока. Объяснение ссылается преимущественно на непередачу, хотя идёт владелец. Не утверждается, что пришёл другой человек; при прежнем критерии правдивого краткого ответа pass допустим, но причинный вывод по номеру дня не показан.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": true
+    },
+    {
+      "id": "v2-c24",
+      "category": "composition",
+      "question": "Пятнадцать человек планируют каждый по одному обычному сеансу в понедельник, среду и четверг одной недели; места для всех есть. Новые абонементы они активируют в понедельник. Сравни описанные варианты оплаты и назови самый дешёвый: общую сумму, название покупки, количество абонементов и допустимость групповой скидки именно на эту покупку.",
+      "source_evidence": [
+        "F05",
+        "F08",
+        "F09",
+        "F10",
+        "F12",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F23",
+        "F24"
+      ],
+      "raw_sha256": "b31b1b07e65a87f9f2bb315914a3e2810acf529d2bee312bd3fc5c59b19fddf4",
+      "raw_utf8_bytes": 720,
+      "historical_full_answer_correct": false,
+      "strict_fields_correct": false,
+      "json_valid": true,
+      "parsed_status": "known",
+      "primary_observed_category": "calculation_application",
+      "tags": [
+        "multi_step_optimization_error",
+        "wrong_price_fact",
+        "wrong_quantity",
+        "internal_contradiction"
+      ],
+      "note_ru": "Нужны 15 именных «Искр» по 24=360 EUR. Ответ сравнивает фактически один день, подменяет цену абонемента 11, quantity=1 и противоречит собственному запрету скидки.",
+      "content_only_correct": false,
+      "answer_text_only_correct": false,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-u01",
+      "category": "unknown",
+      "question": "Какова стоимость одного часа стоянки автомобиля у учебного кинотеатра?",
+      "source_evidence": [
+        "НЕОПИСАННЫЕ УСЛОВИЯ"
+      ],
+      "raw_sha256": "f0e0fd8885b4ac9fb9ea8a68d950153771cfd37df293efc12db39aa20bd703c5",
+      "raw_utf8_bytes": 176,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "correct",
+      "tags": [
+        "appropriate_abstention"
+      ],
+      "note_ru": "Парковочный тариф не дан; unknown/data={} корректны.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-u02",
+      "category": "unknown",
+      "question": "Предусмотрена ли отдельная скидка на билет при предъявлении студенческого удостоверения?",
+      "source_evidence": [
+        "НЕОПИСАННЫЕ УСЛОВИЯ"
+      ],
+      "raw_sha256": "272247bd8893b49a40cb6c8ad0928fec85c410f07cce659cd3d343857415fe29",
+      "raw_utf8_bytes": 268,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "correct",
+      "tags": [
+        "appropriate_abstention"
+      ],
+      "note_ru": "Студенческая скидка не описана; unknown не подменён отрицанием скидки.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-u03",
+      "category": "unknown",
+      "question": "Какую цену назначили за чашку капучино в кафе учебного кинотеатра?",
+      "source_evidence": [
+        "НЕОПИСАННЫЕ УСЛОВИЯ"
+      ],
+      "raw_sha256": "146b218f34ec8e0b6f30b5a931d8e2d5a883ec223d53ab4050188e3b3fd1d0a6",
+      "raw_utf8_bytes": 224,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "correct",
+      "tags": [
+        "appropriate_abstention"
+      ],
+      "note_ru": "Капучино и его цена не описаны; корректный отказ без выдуманной цены.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-u04",
+      "category": "unknown",
+      "question": "Может ли посетитель на инвалидной коляске попасть в зал «Астра» без подъёма по лестнице?",
+      "source_evidence": [
+        "НЕОПИСАННЫЕ УСЛОВИЯ"
+      ],
+      "raw_sha256": "f2a85799609531c701ed3e59a5d4e81ce2638a94d3bc62c1dd2c0639fe1940fe",
+      "raw_utf8_bytes": 345,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "correct",
+      "tags": [
+        "appropriate_abstention"
+      ],
+      "note_ru": "Безбарьерный доступ не описан; нельзя утверждать наличие или отсутствие.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-u05",
+      "category": "unknown",
+      "question": "Предусмотрен ли в «Люмене» гардероб, где зрители могут оставить верхнюю одежду?",
+      "source_evidence": [
+        "НЕОПИСАННЫЕ УСЛОВИЯ"
+      ],
+      "raw_sha256": "0398ceb0f51ff620f5a4239aa9929e58e8b2ffe99576fbadb9589fd67beb2b14",
+      "raw_utf8_bytes": 250,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "correct",
+      "tags": [
+        "appropriate_abstention"
+      ],
+      "note_ru": "Наличие гардероба неизвестно; «не указано наличие» не утверждает отсутствие.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    },
+    {
+      "id": "v2-u06",
+      "category": "unknown",
+      "question": "С какого возраста посетитель может покупать специальный детский билет?",
+      "source_evidence": [
+        "НЕОПИСАННЫЕ УСЛОВИЯ"
+      ],
+      "raw_sha256": "d0d598bb72a894345dc000431b02fbe4e24bb562c4d2f7a29e7ef9e8c28dd00c",
+      "raw_utf8_bytes": 226,
+      "historical_full_answer_correct": true,
+      "strict_fields_correct": true,
+      "json_valid": true,
+      "parsed_status": "unknown",
+      "primary_observed_category": "correct",
+      "tags": [
+        "appropriate_abstention"
+      ],
+      "note_ru": "Детский тариф и возраст не описаны; корректный отказ без числа.",
+      "content_only_correct": true,
+      "answer_text_only_correct": true,
+      "borderline_explanation": false
+    }
+  ]
+}

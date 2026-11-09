@@ -1,0 +1,31 @@
+{
+  "id": "fcf5a9da823043d3b60fba6ced50c6c9",
+  "stage": "baseline",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "baseline",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/before.jsonl"
+  ],
+  "pid": 68844,
+  "pgid": 68844,
+  "birth": "Mon Oct 26 17:28:07 2026",
+  "manager_pid": 68804,
+  "manager_birth": "Mon Oct 26 17:28:07 2026",
+  "state": "finished",
+  "log": ".control/logs/fcf5a9da823043d3b60fba6ced50c6c9.log",
+  "exit_code": 0
+}

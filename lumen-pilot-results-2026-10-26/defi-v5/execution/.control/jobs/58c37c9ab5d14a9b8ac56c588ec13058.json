@@ -1,0 +1,16 @@
+{
+  "id": "58c37c9ab5d14a9b8ac56c588ec13058",
+  "stage": "prepare",
+  "command": [
+    ".venv/bin/python",
+    "/Users/vladimirdemidov/development/vlogging/lumen-pilot-results-2026-10-26/defi-v5/tools/prepare_inputs.py"
+  ],
+  "pid": 26144,
+  "pgid": 26144,
+  "birth": "Tue Oct 27 13:05:00 2026",
+  "manager_pid": 26137,
+  "manager_birth": "Tue Oct 27 13:05:00 2026",
+  "state": "finished",
+  "log": ".control/logs/58c37c9ab5d14a9b8ac56c588ec13058.log",
+  "exit_code": 0
+}

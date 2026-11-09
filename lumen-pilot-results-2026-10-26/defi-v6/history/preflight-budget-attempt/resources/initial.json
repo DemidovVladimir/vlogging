@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-27T20:53:12.995506+00:00",
+  "pressure": 1,
+  "swap": "vm.swapusage: total = 3072.00M  used = 1737.50M  free = 1334.50M  (encrypted)",
+  "free_disk_bytes": 450482524160,
+  "physical_ram_bytes": 17179869184,
+  "hardware": "Mac16,1\n10",
+  "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 71%"
+}

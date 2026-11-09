@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-27T21:14:37.944002+00:00",
+  "status": "PASS",
+  "new_model_answers": 240,
+  "historical_model_answers": 180,
+  "same60_exam_unchanged": true,
+  "all_frozen_inputs_execution_verified": true,
+  "baseline_v5_unchanged": true,
+  "adapter_frozen_before_followup_answers": true,
+  "all60_raw_status_answer_data_unchanged_after_citation_attachment": true,
+  "prior_v6_grading_snapshot_preserved_and_verified": true,
+  "all_reviewed_output_files_sha_verified": true,
+  "both_runtimes_absent": true,
+  "human_validation": false,
+  "grades_sha256": "8104de1266629c64b669b5f5d6d82b41647f759179d71716669e1bad40c98e38",
+  "selection_grades_sha256": "894e5ee42a4e7f8da2d2fb79135da13f5885a2be80a6a6d657fe78026c11412a",
+  "source_alias_adjudication_sha256": "a022bf4eb251893d810ad9f9e32bbc1c3392f6c29271ae56499840effaaa3099"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "topic": "Tengu Cluster: from a request to accountable work",
+  "language": "en",
+  "targetSeconds": 300,
+  "wordsPerMinute": 135,
+  "plannedPauseSeconds": 25,
+  "status": "ready",
+  "copiedReferenceContent": false,
+  "template": "artifact-template-tengu-youtube",
+  "reference": "Approved RU v33 / English edition",
+  "sourceCommit": "9805470d751bc7fb18b4fa96153c1b095cdb73e6",
+  "revision": 2,
+  "qaVerifiedAt": "2026-10-23T10:46:20.990Z"
+}

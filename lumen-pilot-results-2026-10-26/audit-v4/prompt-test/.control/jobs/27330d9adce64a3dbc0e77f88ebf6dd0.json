@@ -1,0 +1,33 @@
+{
+  "id": "27330d9adce64a3dbc0e77f88ebf6dd0",
+  "stage": "ab-baseline",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "ab-baseline",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "prompt_harness.py",
+    "--arm",
+    "baseline",
+    "--out",
+    "runs/baseline.jsonl"
+  ],
+  "pid": 3137,
+  "pgid": 3137,
+  "birth": "Tue Oct 27 10:58:26 2026",
+  "manager_pid": 3114,
+  "manager_birth": "Tue Oct 27 10:58:25 2026",
+  "state": "finished",
+  "log": ".control/logs/27330d9adce64a3dbc0e77f88ebf6dd0.log",
+  "exit_code": 124
+}

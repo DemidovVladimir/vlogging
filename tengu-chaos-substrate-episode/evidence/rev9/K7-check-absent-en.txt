@@ -1,0 +1,10 @@
+# 2026-10-27T17:03:29Z chaos-kb check The author holds a private pilot licence.
+real 0.15
+real 0.15
+real 0.15
+{
+  "known": false,
+  "matches": [],
+  "presence": "absent",
+  "score": 0.2977995276451111
+}

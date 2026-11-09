@@ -1,0 +1,19 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/defi_harness.py", line 69, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/defi_harness.py", line 45, in main
+    assert json.loads(result['raw'].strip())=={'ok':True},'Full-capacity functional sanity failed'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+RESOURCE GUARD probe: protective_stop; exit=124; Host memory pressure >= 2 for 3 consecutive samples
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/runs/resources/probe.json

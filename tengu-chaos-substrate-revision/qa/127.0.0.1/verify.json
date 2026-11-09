@@ -1,0 +1,116 @@
+{
+  "origin": "http://127.0.0.1:4184",
+  "checkedAt": "2026-10-28T14:24:00.676Z",
+  "passed": 27,
+  "failed": 0,
+  "results": [
+    {
+      "name": "ru 05: menu lists 05–01, current is 05, the deck is inert until Escape",
+      "ok": true
+    },
+    {
+      "name": "ru 05: the language link opens the same slide in en",
+      "ok": true
+    },
+    {
+      "name": "ru 05: H hides the navigation for recording and ?record=1 keeps it hidden",
+      "ok": true
+    },
+    {
+      "name": "ru 05: no link to a script, plan or local address",
+      "ok": true
+    },
+    {
+      "name": "ru catalog: 05 is the feature, 04–01 are cards, count 05",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 320×640: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 390×844: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 768×1024: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "ru catalog at 1920×1080: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "ru chaos-kb: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "ru emudhra-ca-compromise: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "ru tengu-cluster: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "ru agent-context: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "en 05: menu lists 05–01, current is 05, the deck is inert until Escape",
+      "ok": true
+    },
+    {
+      "name": "en 05: the language link opens the same slide in ru",
+      "ok": true
+    },
+    {
+      "name": "en 05: H hides the navigation for recording and ?record=1 keeps it hidden",
+      "ok": true
+    },
+    {
+      "name": "en 05: no link to a script, plan or local address",
+      "ok": true
+    },
+    {
+      "name": "en catalog: 05 is the feature, 04–01 are cards, count 05",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 320×640: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 390×844: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 768×1024: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "en catalog at 1920×1080: no sideways scroll",
+      "ok": true
+    },
+    {
+      "name": "en chaos-kb: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "en emudhra-ca-compromise: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "en tengu-cluster: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "en agent-context: menu shows 05 first, keeps its own current item, opens 05",
+      "ok": true
+    },
+    {
+      "name": "legacy root link still reaches EP.01",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-27T12:12:49.769773+00:00",
+  "files": {
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "download_model.py": "c18c5a0204baf42d4872213be94e9924caa58422b1dd6cddb4501dd4220ddbd9",
+    "defi_harness.py": "3494f8c3d7ea80d836411a11232269ae47bcb9a91a3689a45aa13ff92587bb3e",
+    "model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "protocol.json": "b2804f8332a3134251f396f299133417511f2cf432e99df3c2bdaf943ce468d1",
+    "preflight.json": "23c2e05c74228364e4290310f9690e461f77f3320dc303a9816d8f4d533e7fa0",
+    "requirements.in": "86ff0d3b1a77bcfebf9ff9e56678c6d4c2dcf2cb7a842bc97129fee37643f3c8",
+    "requirements.lock.txt": "15db912cb7b4ca68a292b682da95775837ae9cf818d3955d121ea6c87edf011e",
+    "constraints.txt": "70dbba4e805490cfbc9d03b3e37134956633e6e44af65032634c70ca6c362118",
+    "inputs/prompts.jsonl": "422dc6966111d6a49d9e1b75f3b5354ec22f6b0b6451a58ccdc4e7e69a45d1ed",
+    "inputs/contexts.jsonl": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+    "inputs/summary.json": "9233a8b84643790b58152865440e497e01eba18a1755d6f47ecb0c3eeb9a3714",
+    "provenance/original-chat-template.jinja": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+  },
+  "scope": "Before synthetic probe and before any exam generation. No gold data in this runtime. Frozen precomputed source contexts only."
+}

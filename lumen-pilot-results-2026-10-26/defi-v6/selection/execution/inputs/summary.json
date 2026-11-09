@@ -1,0 +1,17 @@
+{
+  "questions": 60,
+  "answers": 60,
+  "input_cap": 1400,
+  "max_input_tokens": 897,
+  "prompts_sha256": "c942b04be669092af7a7c39a1fc1558b26a4267ebdd56f8341a03c33a453e6d0",
+  "contexts_sha256": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+  "system_sha256": "204d06f6b446f321f2f502c1ec6a09b9ce29bcb23f7402c028721c01a81d824c",
+  "method": "Frozen Russian prompt, no fewshot. Model selects provided IDs; exact source clauses (<=48words) attached deterministically after generation. No answer/status/data repair.",
+  "new_index": {
+    "documents": 1673,
+    "chunks": 36451,
+    "database_sha256": "65344342a399a32c55bca3a57237aecbd9c43e8ad5a7d84ced662b26b841d8c6",
+    "algorithm": "Markdown sections;170word windows/40word overlap, never cross a heading"
+  },
+  "reads_gold": false
+}

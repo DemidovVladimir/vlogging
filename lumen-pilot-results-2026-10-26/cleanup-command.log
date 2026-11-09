@@ -1,0 +1,26 @@
+{
+  "experiment_id": "10cc942d-fd1d-4042-b33b-404efa0196f9",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot",
+  "tracked_running_jobs": [
+    {
+      "id": "f1d429b4b714457eac7f51869018ef30",
+      "stage": "report-server",
+      "command": [
+        ".venv/bin/python",
+        "serve_report.py"
+      ],
+      "pid": 70641,
+      "pgid": 70641,
+      "birth": "Mon Oct 26 17:36:45 2026",
+      "manager_pid": 70590,
+      "manager_birth": "Mon Oct 26 17:36:45 2026",
+      "state": "running",
+      "log": ".control/logs/f1d429b4b714457eac7f51869018ef30.log"
+    }
+  ],
+  "logical_file_bytes": 4393066935,
+  "dry_run": false
+}
+{"deleted_root": true, "tracked_running_jobs": 0, "logical_bytes_removed_estimate": 4393066935, "observed_free_disk_delta_bytes": 4455837696, "scope": "dedicated experiment directory; no global caches or other services touched"}
+
+STDERR

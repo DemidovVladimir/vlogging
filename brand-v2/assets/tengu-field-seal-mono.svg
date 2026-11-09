@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU one-color field seal</title>
+  <desc id="desc">A monochrome human core, six nodes, open evidence ring, route, and field frame.</desc>
+  <g fill="none" stroke="#11110F" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M72 196V88H196M316 88H424V196M424 316V424H316M196 424H88V316" stroke-width="34"/>
+    <circle cx="256" cy="256" r="120" stroke-width="18" stroke-dasharray="188 25 92 25 188 236" transform="rotate(-38 256 256)"/>
+    <path d="M256 256V136M256 256L154 197M256 256L154 315M256 256V376M256 256L358 315M256 256L358 197" stroke-width="6"/>
+    <path d="M256 70V106M256 406V442M70 256H106M406 256H442" stroke-width="8"/>
+  </g>
+  <g fill="#11110F">
+    <circle cx="256" cy="136" r="17"/><circle cx="154" cy="197" r="17"/>
+    <circle cx="154" cy="315" r="17"/><circle cx="256" cy="376" r="17"/>
+    <circle cx="358" cy="315" r="17"/><circle cx="358" cy="197" r="17"/>
+    <rect x="216" y="216" width="80" height="80"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-27T21:12:56.408122+00:00",
+  "question": "kamino-09",
+  "decision": "Accept KSwap as semantic equivalent of Kamino Swap. Strict data_eq remains false.",
+  "evidence_file": "defi-v5/sources/kamino/pages/build/developers/multiply/overview.md",
+  "sha256": "b9de257a4518f28ea82871b5890037f901f1be63a64f6bf98a264a79976596aa",
+  "quote": "Flash-borrowed funds are swapped into the target collateral asset (e.g., SOL → JitoSOL) using Kamino Swap (KSwap) with multi-DEX routing for optimal execution.",
+  "all_arms_application": "v6 search_only and follow-up selection accepted. Other v6 q09 answers name only the operation and remain false. v5 closed/oracle/retrieved reviewed: none use KSwap, previous scores unchanged.",
+  "prior_v6_result_preserved": "history/pre-alias-adjudication/grades.json",
+  "original_exam_and_rubric_unchanged": true
+}

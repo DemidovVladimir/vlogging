@@ -1,0 +1,25 @@
+{
+  "id": "c8f6e91fa9954f03b3de85f7a5cc18bd",
+  "stage": "kv-sanity",
+  "command": [
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "kv-sanity",
+    "--max-footprint-gib",
+    "3.5",
+    "--max-swap-growth-gib",
+    "0.25",
+    "--",
+    ".venv/bin/python",
+    "kv_sanity.py"
+  ],
+  "pid": 27319,
+  "pgid": 27319,
+  "birth": "Tue Oct 27 13:16:00 2026",
+  "manager_pid": 27300,
+  "manager_birth": "Tue Oct 27 13:16:00 2026",
+  "state": "finished",
+  "log": ".control/logs/c8f6e91fa9954f03b3de85f7a5cc18bd.log",
+  "exit_code": 0
+}

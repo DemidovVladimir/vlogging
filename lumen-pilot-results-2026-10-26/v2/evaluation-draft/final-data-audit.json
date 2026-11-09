@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-26T18:47:00.770866+00:00",
+  "reviewer": {
+    "kind": "agent",
+    "name": "pilot_method_review",
+    "human_validation": false
+  },
+  "status": "passed_with_documented_limitations",
+  "blocking_issues": [],
+  "scope": "Pre-freeze source, label, split and oracle audit; no v2 output inspected and no model computation performed.",
+  "files": {
+    "exam": {
+      "path": "evaluation-draft/new-test.jsonl",
+      "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a"
+    },
+    "exam_rationale": {
+      "path": "evaluation-draft/exam-rationale.txt",
+      "sha256": "d225c1bbaf0647dc817238e8b127221ad9672667d6e8d13d79a1ecf600b22acc"
+    },
+    "expanded_train": {
+      "path": "expanded-data-draft/train.jsonl",
+      "sha256": "eaf2e74479a329f281f6dee79811159245fb4f080aef892c43cbb09989050d02"
+    },
+    "expanded_valid": {
+      "path": "expanded-data-draft/valid.jsonl",
+      "sha256": "0dcb6fb547c554fdd7cff13c53f0be44c785df30695081ac76737673cfa39c8e"
+    },
+    "clean_train": {
+      "path": "clean-data-draft/clean-train.jsonl",
+      "sha256": "614be03d3dd0b523b014c6c82c8f33d812dc6b322dc34f29254340afa8b41d5d"
+    },
+    "clean_valid": {
+      "path": "clean-data-draft/clean-valid.jsonl",
+      "sha256": "4f312119f7f1588ce99d87eff86e712c3956da656da2bd3d26fe4009f1cf52dd"
+    },
+    "generator": {
+      "path": "build_dataset.py",
+      "sha256": "c7a50fbbec05ca181eb499bec8490dbeb66d27fb4b80b2f9d6ece9ec4d4b95d1"
+    },
+    "source": {
+      "path": "source-handbook.txt",
+      "sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52"
+    },
+    "train_clean_config": {
+      "path": "train-clean.yaml",
+      "sha256": "d78e462a258f915e51b245202eb6a77c7ba89161bb298340c738f11b5cfe9d89"
+    },
+    "train_expanded_config": {
+      "path": "train-config.yaml",
+      "sha256": "f0206a6b078f69281f2298551df38267be24c038bd2f022e1164b85527f5db29"
+    }
+  },
+  "counts": {
+    "exam": 60,
+    "expanded_train": 300,
+    "expanded_valid": 24,
+    "clean_train": 60,
+    "clean_valid": 12
+  },
+  "categories": {
+    "exam": {
+      "atomic": 30,
+      "composition": 24,
+      "unknown": 6
+    },
+    "expanded_train": {
+      "original-clean": 58,
+      "clarified-original-pass": 2,
+      "atomic-paraphrase": 60,
+      "tickets": 60,
+      "refund": 36,
+      "pass": 24,
+      "capacity": 12,
+      "unknown": 48
+    },
+    "expanded_valid": {
+      "legacy": 12,
+      "tickets": 8,
+      "unknown": 4
+    },
+    "clean_train": {
+      "legacy": 60
+    },
+    "clean_valid": {
+      "legacy": 12
+    }
+  },
+  "status_counts": {
+    "exam": {
+      "known": 54,
+      "unknown": 6
+    },
+    "expanded_train": {
+      "known": 246,
+      "unknown": 54
+    },
+    "expanded_valid": {
+      "known": 19,
+      "unknown": 5
+    },
+    "clean_train": {
+      "known": 54,
+      "unknown": 6
+    },
+    "clean_valid": {
+      "known": 11,
+      "unknown": 1
+    }
+  },
+  "checks": {
+    "all_exact_questions_unique_across_expanded_train_valid_and_test": true,
+    "all_ids_unique_across_expanded_train_valid_and_test": true,
+    "all_known_data_keys_match_requested_fields": true,
+    "all_unknown_have_nonempty_requested_fields_and_empty_gold_data": true,
+    "all_answers_natural_strings_not_nested_json": true,
+    "clean_train_valid_only_gold_answer_changed": true,
+    "all_30_source_rule_ids_covered_by_exam_atomic_items": true,
+    "all_72_clean_explanations_reviewed_against_source": true,
+    "all_60_exam_gold_reviewed_against_source": true,
+    "independent_arithmetic_checks_by_oracle_kind": {
+      "ticket": 68,
+      "refund": 36,
+      "pass": 24,
+      "capacity": 12,
+      "unknown": 52
+    },
+    "new_pass_cases_explicit_owner_remaining_day_use_free_seat": true,
+    "expanded_inherited_positive_pass_cases_disambiguated": true,
+    "ambiguous_unknown_meta_question_prefix_removed": true,
+    "generator_reads_only_clean_inputs_not_exam_or_model_outputs": true,
+    "oracle_metadata_excluded_from_prepared_model_messages": true,
+    "test_c01_c04_combinations_distinct_from_generated_train_and_valid_ticket_oracles": true,
+    "test_c20_c23_weekdays_match_inclusive_calendar_day_numbers": true,
+    "test_c24_comparison_15_iskra_360_vs_group_tickets_396_correct": true
+  },
+  "generator_read_calls": [
+    "ROOT / 'clean-data-draft/clean-train.jsonl'",
+    "ROOT / 'clean-data-draft/clean-valid.jsonl'"
+  ],
+  "limitations_ru": [
+    "Экзамен создан после результата v1, но до результатов v2; это заранее отложенная проверка v2, не внешний независимый benchmark.",
+    "Факты и правила намеренно присутствуют в train и test. Атомарные 30 задач проверяют знание и перефразирование; их нельзя называть новыми фактами.",
+    "Нет точных повторов вопросов, но есть семантическая близость и знакомые классы задач. Не все числа невиданны: 11 человек уже есть в унаследованном valid на субботу; новые ticket-сценарии удерживают сочетание дня, типа и числа.",
+    "Clean60/12 сохраняет исходную неоднозначность двух positive-pass вопросов про владельца, остаток и наличие мест. Это сохранено ради контроля изменения только gold.answer. Expanded вариант эти два вопроса уточняет явно.",
+    "Clean меняет не только синтаксис: natural answer добавляет объяснения и расчёты. Нельзя интерпретировать разницу как доказанный эффект одного лишь удаления двойного JSON.",
+    "Expanded отличается объёмом, распределением тем, объяснениями и уточнением двух вопросов. Сравнение expanded200 и expanded800 показывает разные заранее выбранные точки одной траектории, а не чистый эффект только данных.",
+    "Все unknown имеют пустой gold.data, но непустой запрос fields: утечки метки через пустую схему нет. Темы unknown test зарезервированы от нового генератора; это не общая гарантия калибровки.",
+    "Генератор не является независимым источником истины; его формулы отдельно сопоставлены с F01–F30. Родительский агент дополнительно проверяет эталоны перед freeze.",
+    "Точные JSON-поля могут штрафовать содержательно верные синонимы строк. Требуется отдельная семантическая оценка объяснений, формата и неподтверждённых утверждений.",
+    "Человеческой валидации не было. Аудит относится к указанным SHA до обучения v2."
+  ]
+}

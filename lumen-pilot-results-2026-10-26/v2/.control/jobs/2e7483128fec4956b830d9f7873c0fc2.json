@@ -1,0 +1,16 @@
+{
+  "id": "2e7483128fec4956b830d9f7873c0fc2",
+  "stage": "make-calibration",
+  "command": [
+    ".venv/bin/python",
+    "make_calibration.py"
+  ],
+  "pid": 76754,
+  "pgid": 76754,
+  "birth": "Mon Oct 26 19:48:10 2026",
+  "manager_pid": 76738,
+  "manager_birth": "Mon Oct 26 19:48:10 2026",
+  "state": "finished",
+  "log": ".control/logs/2e7483128fec4956b830d9f7873c0fc2.log",
+  "exit_code": 0
+}

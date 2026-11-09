@@ -1,0 +1,24 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+{
+  "created_at": "2026-10-26T21:06:31.203462+00:00",
+  "cpu": "Apple M4",
+  "cpu_cores": 10,
+  "unified_memory_bytes": 17179869184,
+  "pressure": 1,
+  "host_swap": "total = 2048.00M  used = 558.94M  free = 1489.06M  (encrypted)",
+  "disk_free_bytes": 454744743936,
+  "model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+  "exam_sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+  "source_file_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "injected_source_sha256": "3cc5aec541b7919c7e2eb5667abea9f90b1cd07c3dbfe42ef4ae2a0ab2920da3",
+  "injected_source_characters": 2875,
+  "max_prompt_tokens": 1344,
+  "max_total_tokens": 1600,
+  "model_context_limit": 40960,
+  "static_estimates_not_peak_measurements": {
+    "conservative_fp32_KV_bytes": 469762048,
+    "single_fp32_logits_prefill_chunk_bytes": 816807936,
+    "note": "Runtime, attention workspaces and allocator overhead are additional. Guarded inference probe required before exam."
+  },
+  "gate": "static_pass; resource_probe_required"
+}

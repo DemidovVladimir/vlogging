@@ -1,0 +1,21 @@
+{
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+  "system_sha256": "da88aa52878dde20c495660dec2d002d1ae6eefb3a85e09699f3eaa34c915f6a",
+  "splits": {
+    "train": {
+      "count": 60,
+      "sha256": "614be03d3dd0b523b014c6c82c8f33d812dc6b322dc34f29254340afa8b41d5d"
+    },
+    "valid": {
+      "count": 12,
+      "sha256": "4f312119f7f1588ce99d87eff86e712c3956da656da2bd3d26fe4009f1cf52dd"
+    },
+    "test": {
+      "count": 60,
+      "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a"
+    }
+  },
+  "maximum_sequence_tokens": 371,
+  "mask_boundary_checked": true
+}

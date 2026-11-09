@@ -1,0 +1,1357 @@
+{
+  "schema": 1,
+  "reviewer": {
+    "kind": "agent",
+    "name": "pilot_method_review",
+    "human_validation": false
+  },
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "exam_sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+  "scope": "Only 24 composition and 6 unknown items per completed 60-item arm; no partial run graded.",
+  "arms": {
+    "base": {
+      "file_sha256": "cf6e67a59152b4969bb3e8df27400535703813d0c831cf04df93885fb0eb1a74",
+      "items": [
+        {
+          "id": "v2-c01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 12 × 11 × 0,8 = 105,60 EUR даны 12 RUB и общее рассуждение без тарифов. Это не рассчитанная цена.",
+          "strict_fields_correct": false,
+          "raw_sha256": "ba12048befb0093063a81779b6b79e47b5de930a4d61d6b87eba8dd1160a67fc"
+        },
+        {
+          "id": "v2-c02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Придумана цена 100 рублей и итог 1100 рублей. По F05/F08/F09/F10 нужно 11 × 11 × 0,8 = 96,80 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "3c446b56fb37846876eb1f1caadffa276485adf3d7f68fc78e4cd46f71429333"
+        },
+        {
+          "id": "v2-c03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Текст признаёт отсутствие тарифа, но data утверждает 13 RUB. В воскресенье нужно 13 × 14 = 182 EUR без групповой скидки.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d493fd451b1d86c1d9b5094e6ec5d95181d908685a623077ce20131f6d661cd8"
+        },
+        {
+          "id": "v2-c04",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель воздержалась с пустым data, не решив задачу. Требуются 14 × 17 = 238 EUR, скидка false и абонементы false.",
+          "strict_fields_correct": false,
+          "raw_sha256": "386e49db48fca6020dd31c682baf5aabdc5671222d5ee1a5ecab838bda7b0991"
+        },
+        {
+          "id": "v2-c05",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Сумма 8,80 EUR верна, однако объяснение связывает возврат со скидкой, выдумывает цену 10 EUR и противоречиво говорит, что скидка не применяется. Причина полного возврата — интервал 6 часов 15 минут по F25. Полный ответ не засчитан.",
+          "strict_fields_correct": true,
+          "raw_sha256": "fbf552f55e5c4d34a21ffe6b423276bbe0452933c6de2c6524e8ebb303fb2e9f"
+        },
+        {
+          "id": "v2-c06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 4 часа 30 минут положена половина фактически уплаченных 8,80 EUR, то есть 4,40 EUR. Модель ошибочно вернула всю сумму и истолковала интервал до сеанса как срок перечисления денег.",
+          "strict_fields_correct": false,
+          "raw_sha256": "7ea4c0c79fe85ba36e89446ca094a737f09b62f4540e7b3d9d98425efe9ee906"
+        },
+        {
+          "id": "v2-c07",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Нулевой возврат совпал с F27, но объяснение «билет не был оплачен» ложно: в вопросе явно уплачены 14 EUR. Правильная причина — осталось менее двух часов.",
+          "strict_fields_correct": true,
+          "raw_sha256": "c55ca85b58e17cd51123ef8b8cb3bf28bd1f4955e5a3b3f17aff14be9d94c034"
+        },
+        {
+          "id": "v2-c08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Unknown с amount=0 и пустой валютой не является чистым воздержанием и не решает задачу: за 5 часов 30 минут возвращают половину 11 EUR, то есть 5,50 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "9bb6a0e870a5be35668477900dbb1dcbee7ba995f21948cd6b724b5c186d4f5d"
+        },
+        {
+          "id": "v2-c09",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Указаны верные 17 EUR. Интервал 24 часа 30 минут допускает полный возврат премьерного билета по F28; ложных условий в объяснении нет.",
+          "strict_fields_correct": true,
+          "raw_sha256": "07a5003f8cfff98dfa464c15301f08343d1a315b2752cf605d6eabbf52fbe0ec"
+        },
+        {
+          "id": "v2-c10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "При интервале 23 часа 30 минут возврат за премьеру равен нулю по F29. Предположение о выплате 17 EUR и «ставке за время» неверно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "3c106e48ff8d8cd3b982cf825cc9f5ed859feba053e89a4487fc6e01515a7b91"
+        },
+        {
+          "id": "v2-c11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Название зала заменено строкой «23 зрителей», а вместимость 23 выдумана. Для 23 человек подходит «Астра» на 32 места; «Сумрак» на 18 не подходит.",
+          "strict_fields_correct": false,
+          "raw_sha256": "c09d1e0fc5a67b48765e5a848b31ccccb7075adb35fb5a9d4096411e0eae894d"
+        },
+        {
+          "id": "v2-c12",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель не называет зал и возвращает unknown/data={}. Это отказ от решаемой задачи, не галлюцинация. По F03/F04 для 31 человека нужна «Астра».",
+          "strict_fields_correct": false,
+          "raw_sha256": "1e2c4e7db1aac434de7057d57f5397de7fe16265b4553e14a1a1cd972c6a0737"
+        },
+        {
+          "id": "v2-c13",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель отказывается определить вместимость, хотя помечает status known; запрошенное fits отсутствует. По F03 27 человек в «Сумрак» на 18 мест не помещаются.",
+          "strict_fields_correct": false,
+          "raw_sha256": "eeed4523539b21b602db1f49d8a498a91552f0879b4d640861ba3e943280de0d"
+        },
+        {
+          "id": "v2-c14",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно covers_both=false и правильная причина: один абонемент допускает только одно посещение за день, даже при двух оставшихся посещениях.",
+          "strict_fields_correct": true,
+          "raw_sha256": "161e8da45700154de7780b7aa37907e44ca94fce0250a18a6b811fec856866b2"
+        },
+        {
+          "id": "v2-c15",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верный запрет повторного прохода сегодня: «Туман» уже использован в этот день. Фраза про отсутствие места для нового посещения понимается в контексте дневного лимита, а не как утверждение нулевого остатка двух посещений.",
+          "strict_fields_correct": true,
+          "raw_sha256": "c3a57f669c087b2d4d3b5e7900cdb89528141d2f2e2ab533f02ce357f9c16c36"
+        },
+        {
+          "id": "v2-c16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Разрешён проход Льва по именной «Искре» Марины, что прямо нарушает F17. Наличие мест и подходящая среда не разрешают передачу.",
+          "strict_fields_correct": false,
+          "raw_sha256": "b171a8b9348be3935cad7fa3b85b3132d5af2d3d3c442dd5ed58c5f2cabc077f"
+        },
+        {
+          "id": "v2-c17",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Разрешена передача «Тумана» от Льва Марине. По F22 такой проход запрещён, несмотря на оставшиеся посещения и подходящую субботу.",
+          "strict_fields_correct": false,
+          "raw_sha256": "492dffca847a7dda57e09dd9733dcc3fb88a9ce9171980e82b75b3fafa3ac7d6"
+        },
+        {
+          "id": "v2-c18",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "passes_valid=false совпало с эталоном, но объяснение выдумывает минимум двух оставшихся посещений. Одного достаточно для обычного прохода; отказ нужен из-за пятницы, запрещённой для «Искры» по F15.",
+          "strict_fields_correct": true,
+          "raw_sha256": "8ceb3dbed774c899bff8aea12e94c60b4a58599652ee54c1966747bf322d2c2f"
+        },
+        {
+          "id": "v2-c19",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Правильно разрешён проход владельцу «Тумана» в воскресенье: обычный сеанс, срок и остаток даны, сегодня абонемент ещё не использован. Объяснение не добавляет ложных правил.",
+          "strict_fields_correct": true,
+          "raw_sha256": "96bdec40fc2924dbcac1aea166e1ee4481f47a174ec3e1496dbdd8fbaff6dd73"
+        },
+        {
+          "id": "v2-c20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "21-й день включён в срок «Искры», среда разрешена и дневной лимит свободен. Модель неверно запрещает проход, путает день активации и выдумывает уже состоявшееся посещение.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d10df864b11e6fc4614444997cbce88c43d98d0e53f4387d2ac514fa5f53a983"
+        },
+        {
+          "id": "v2-c21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "На 22-й день «Искра» истекла. Модель ошибочно разрешила проход и переиначила номер текущего дня как момент активации.",
+          "strict_fields_correct": false,
+          "raw_sha256": "82829c0439179080ceca1fdcbb4bf3ffeeb0a46980e75258d5c5728c20dd4a37"
+        },
+        {
+          "id": "v2-c22",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно разрешён проход на 40-й включённый день «Тумана». Все условия в вопросе соблюдены; объяснение краткое, но не содержит ложных утверждений.",
+          "strict_fields_correct": true,
+          "raw_sha256": "1deea2845ad6af10f94441beb7a1d2999a765f4d4f52e7f9d7aaa977d76e1f59"
+        },
+        {
+          "id": "v2-c23",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "passes_valid=false совпало с истечением 40-дневного срока, но объяснение делает причинами запрета наличие места и отсутствие проходов сегодня. Это ложная логика; требовалась ссылка на 41-й день.",
+          "strict_fields_correct": true,
+          "raw_sha256": "772888d963e9ff783fe14b0b10f9589aa3e90bb29f6c5ae25c93d7d3de01d47b"
+        },
+        {
+          "id": "v2-c24",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы 15000 RUB и «абонемент для 15 человек», разрешена скидка на абонемент. Нужны 15 именных «Искр» за 360 EUR без групповой скидки; разовые групповые стоили бы 396 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "e09e9c41171917a17e598d5d97a5ee4b2ccdfac80f13b63b88114bc5c3e74ab0"
+        },
+        {
+          "id": "v2-u01",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Текст правильно признаёт нехватку сведений о парковке, но amount=0 утверждает неподтверждённую нулевую стоимость. При unknown нужен пустой data.",
+          "strict_fields_correct": false,
+          "raw_sha256": "7895424d95eb66246becca4bcb06202a6f8b588c10bc249fb65ef5dca6f7b9d5"
+        },
+        {
+          "id": "v2-u02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Модель выдумала отдельную студенческую скидку. Её наличие или отсутствие источник не определяет; нужен unknown/data={}.",
+          "strict_fields_correct": false,
+          "raw_sha256": "689318d275ba79c2234f82107a3c9d0e5bba65bf7a34f96813228f80f4b57391"
+        },
+        {
+          "id": "v2-u03",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Текст признаёт неизвестную цену кофе; null/null не выдумывает нулевую цену, но непустой data не соответствует фиксированному контракту unknown. Упоминание открытых источников не означает выполненный поиск. Полный протокольный ответ не засчитан.",
+          "strict_fields_correct": false,
+          "raw_sha256": "41bdacf239f2ebaf66e0f5de8cab7be004a89ec7befbc011e6019429cec31b14"
+        },
+        {
+          "id": "v2-u04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы специальное оборудование и безлестничный доступ в «Астру». Сведений о доступности в источнике нет.",
+          "strict_fields_correct": false,
+          "raw_sha256": "2dcf58bd27b5d41a70988ccbd653590dab6b926cb82a214a37690e86b611a749"
+        },
+        {
+          "id": "v2-u05",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Status unknown признаёт нехватку сведений, но coat_check_available=false превращает её в неподтверждённое отрицание. Дополнительное заявление, что вопрос не относится к полю, тоже ошибочно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d69060057089e692d399428b527154eef1357cac9f17974b9a01fc6eab6ed780"
+        },
+        {
+          "id": "v2-u06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Возраст 5 лет выдуман: детские тарифы и возрастные ограничения в справочнике не описаны.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d63aa98be63f112d7cf3c62fb9a3c32bbbd501aca5d80a50697f15308d2edd91"
+        }
+      ],
+      "semantic_full_correct": 5,
+      "strict_fields_correct": 9,
+      "total": 30,
+      "strict_semantic_discrepancies": [
+        {
+          "id": "v2-c05",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c07",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c18",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c23",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        }
+      ]
+    },
+    "v1": {
+      "file_sha256": "503ede90fb6058f6fddf013f1a4ecd67e8bfc6313f2fd51de353b010cf66cda6",
+      "items": [
+        {
+          "id": "v2-c01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "12 EUR — число зрителей, а не цена 105,60 EUR. Групповая скидка и тариф не применены.",
+          "strict_fields_correct": false,
+          "raw_sha256": "cf0042f83fc7f2d72b03fc7566ac25b8243aee0a050957fa45266b5866473fe9"
+        },
+        {
+          "id": "v2-c02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "11 EUR — не цена всех билетов. Для 11 зрителей в четверг нужно 96,80 EUR с групповой скидкой.",
+          "strict_fields_correct": false,
+          "raw_sha256": "3f5e6b9c7f361e84e0d80a8363488728004f7ac6342ac4ab8da3def5dbe6a535"
+        },
+        {
+          "id": "v2-c03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "13 EUR вместо 13 × 14 = 182 EUR. Воскресный тариф применён неверно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "f6a004731aa63ccb6b321c683bf30e0077e1a23744fa5690960db9b7aa0870aa"
+        },
+        {
+          "id": "v2-c04",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "group_discount=false верно, но сумма 14 EUR неверна вместо 238 EUR, а passes_valid=true нарушает запрет абонементов на премьеры.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d38724d0ce5291cf859a3607de0d19511b100876ea3717fe585fc9adc4787dc4"
+        },
+        {
+          "id": "v2-c05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 6 часов 15 минут положен полный возврат уплаченных 8,80 EUR, а не ноль.",
+          "strict_fields_correct": false,
+          "raw_sha256": "72d1934ef25bc4f861835a907999e06e58769d32e4688ec56bb5a391628ecbda"
+        },
+        {
+          "id": "v2-c06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 4 часа 30 минут нужна половина 8,80 EUR = 4,40 EUR, а не полный возврат.",
+          "strict_fields_correct": false,
+          "raw_sha256": "9202bcadb81664e86d7620552202b82367d21ceec2436780c586d60f2feae828"
+        },
+        {
+          "id": "v2-c07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 1 час 59 минут возврата нет; ответ 14 EUR неверен.",
+          "strict_fields_correct": false,
+          "raw_sha256": "5bb568c3c49337e5811bd58028b442f489c53fdd785fe251d3578c1b721bfbce"
+        },
+        {
+          "id": "v2-c08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 5 часов 30 минут возвращают 5,50 EUR, а не все 11 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "3f5e6b9c7f361e84e0d80a8363488728004f7ac6342ac4ab8da3def5dbe6a535"
+        },
+        {
+          "id": "v2-c09",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "17 EUR — правильный полный возврат премьеры за 24 часа 30 минут. Answer повторяет данные в JSON-строке; ложных фактических дополнений нет.",
+          "strict_fields_correct": true,
+          "raw_sha256": "1e78d15826383a6601b4a6fea89a1f3c787e7b6b7b53c30ece59fc1f620a2ba9"
+        },
+        {
+          "id": "v2-c10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Менее чем за 24 часа до премьеры возврат равен нулю, а не 17 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "1e78d15826383a6601b4a6fea89a1f3c787e7b6b7b53c30ece59fc1f620a2ba9"
+        },
+        {
+          "id": "v2-c11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Строка hall=23 не называет зал. Подходящая «Астра» на 32 места не указана.",
+          "strict_fields_correct": false,
+          "raw_sha256": "1104f7f3e364b0673646c10412ecaac836ce848011a49f6b84a6b7b9371249b2"
+        },
+        {
+          "id": "v2-c12",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Hall «Вместимость» не является названием зала; в answer также некорректная внутренняя JSON-строка. Для 31 зрителя нужна «Астра».",
+          "strict_fields_correct": false,
+          "raw_sha256": "0ccdc54fefba86876452fac871346b70bdaf7a2041a06b6539f28519851c619f"
+        },
+        {
+          "id": "v2-c13",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно fits=false: 27 человек не помещаются в «Сумрак» на 18 мест. Answer дублирует правильное утверждение без ложных правил.",
+          "strict_fields_correct": true,
+          "raw_sha256": "3e6e96e29182dfd8afb90bac3d8d46741ef3a13b17c307a9b5f83933d3e36faa"
+        },
+        {
+          "id": "v2-c14",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно covers_both=false: один абонемент не покрывает два посещения в один день. В ответе нет противоречий.",
+          "strict_fields_correct": true,
+          "raw_sha256": "47bd18dd06b89d2f185967652b1fbc6b60d45ae8b4da23536afb67a4ca1ead3f"
+        },
+        {
+          "id": "v2-c15",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно passes_valid=false для уже использованного сегодня «Тумана». Утверждения answer и data согласованы.",
+          "strict_fields_correct": true,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c16",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Answer содержит passes_valid=false, но data утверждает true. Именной абонемент нельзя передавать Льву; противоречивый ответ полностью не засчитан.",
+          "strict_fields_correct": false,
+          "raw_sha256": "3275be8b53cdfe6372465f6ba864a3968dea73ae2b555504f01badabc36a319c"
+        },
+        {
+          "id": "v2-c17",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно запрещено использование Мариной «Тумана» Льва. Answer и data согласованы.",
+          "strict_fields_correct": true,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c18",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно запрещён проход по «Искре» в пятницу. Answer и data согласованы, ложных условий не добавлено.",
+          "strict_fields_correct": true,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c19",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вопрос задаёт допустимый обычный воскресный проход владельца «Тумана», но модель отвечает false.",
+          "strict_fields_correct": false,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "21-й включённый день «Искры» и среда допускают проход; false неверно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c21",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "False верно: на 22-й день 21-дневная «Искра» уже истекла. Answer и data совпадают.",
+          "strict_fields_correct": true,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c22",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "На 40-й включённый день «Туман» ещё действует. Ответ false неверен.",
+          "strict_fields_correct": false,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c23",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "False верно: 41-й день находится за пределами срока «Тумана». Answer не противоречит data.",
+          "strict_fields_correct": true,
+          "raw_sha256": "de17f95878ccfa7a4d48a18a67d9abacd5761bc821c69684e8991a98adaf1ebb"
+        },
+        {
+          "id": "v2-c24",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Количество 15 и запрет скидки на покупку абонементов верны, но 15 EUR и общее название «Абонемент» не дают правильной покупки 15 «Искр» за 360 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "e3de429154ddcfc7774692325105ed5b7b81efb25284c3721f7cd6dac125315c"
+        },
+        {
+          "id": "v2-u01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена парковки 12 EUR выдумана; источник не содержит её тарифа.",
+          "strict_fields_correct": false,
+          "raw_sha256": "cf0042f83fc7f2d72b03fc7566ac25b8243aee0a050957fa45266b5866473fe9"
+        },
+        {
+          "id": "v2-u02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Отрицание студенческой скидки со status known неподтверждено. Отсутствие правила не означает false.",
+          "strict_fields_correct": false,
+          "raw_sha256": "512a0784d05e953b1cd68562988dbe19eae5fad0253d2839734546aa0e82aefa"
+        },
+        {
+          "id": "v2-u03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена капучино 12 EUR выдумана; о кафе и ценах кофе сведений нет.",
+          "strict_fields_correct": false,
+          "raw_sha256": "cf0042f83fc7f2d72b03fc7566ac25b8243aee0a050957fa45266b5866473fe9"
+        },
+        {
+          "id": "v2-u04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Отрицание безбарьерного доступа выдумано: источник не позволяет ни подтвердить, ни опровергнуть доступность.",
+          "strict_fields_correct": false,
+          "raw_sha256": "4c14015c99c9994ffb8bdd3ec000c703f83b5ef0e0e6216e674e3f291908ece2"
+        },
+        {
+          "id": "v2-u05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Отрицание наличия гардероба выдумано; нужно признать неизвестность.",
+          "strict_fields_correct": false,
+          "raw_sha256": "1565b2558e558d2df373b29f02c8a6f768b681d698125c8e70ffb01a1e8cac05"
+        },
+        {
+          "id": "v2-u06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Возраст 3 года выдуман: детский билет и возрастной порог не описаны.",
+          "strict_fields_correct": false,
+          "raw_sha256": "97796b095b16cf4cc225568969c594424fb3e20d536bf039218c61ba3ae6771f"
+        }
+      ],
+      "semantic_full_correct": 8,
+      "strict_fields_correct": 8,
+      "total": 30,
+      "strict_semantic_discrepancies": []
+    },
+    "clean200": {
+      "file_sha256": "41d8b6ec74193fb2eb25f7b4e14e95bd4d749ae15919f63193d2dc52cabca7ba",
+      "items": [
+        {
+          "id": "v2-c01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Сумма 0 и пустая валюта не решают задачу. По F05/F08/F09/F10 требуется 105,60 EUR; заявление об отсутствии скидок в справочнике ложно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "fe19395f5cbf69b12ffce07dbbcc78b22602c9e60311522b0da130fa154ee09c"
+        },
+        {
+          "id": "v2-c02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена 11 EUR посчитана как 11 × 1, а не 11 зрителей × 11 EUR × 0,8. Правильный итог 96,80 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "b179def4793f9b3c83448162b26a79cff1a5e3b204fd631d5bfba7c94b163149"
+        },
+        {
+          "id": "v2-c03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "13 с пустой валютой не является правильной ценой. Для 13 обычных воскресных билетов нужно 182 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "99cc6555c7efcd3727361923e3d97cb07ee7d2a0a76ca216c53e06918288e0dc"
+        },
+        {
+          "id": "v2-c04",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Оба запрета в data верны, но сумма 14 EUR вместо 238 неверна. Текст выдумывает обычный тариф 14 и скидку 10 процентов, не соответствующие данной премьере.",
+          "strict_fields_correct": false,
+          "raw_sha256": "38fe38e7325c89a1d0900aa615b3dc31d434666810ff16166e472dc00988ec18"
+        },
+        {
+          "id": "v2-c05",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Правильно возвращены все уплаченные 8,80 EUR при интервале 6 часов 15 минут. Текст не добавляет ложных условий.",
+          "strict_fields_correct": true,
+          "raw_sha256": "b68479d0029f6b2ce0f927ca580428c1e7243e8f5db9cec8622beab85d629a2d"
+        },
+        {
+          "id": "v2-c06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 4 часа 30 минут нужна половина 8,80 EUR — 4,40 EUR, а не полный возврат.",
+          "strict_fields_correct": false,
+          "raw_sha256": "6d5b7475fb00a9de16d7d7b5f8fcd8f93279ee02cf6bbb127fa0f7280da17635"
+        },
+        {
+          "id": "v2-c07",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Нулевой возврат в этом случае верен, но объяснение категорически называет обычный билет невозвратным. По F25/F26 обычные билеты возвращаются при других интервалах; здесь причина — осталось менее двух часов.",
+          "strict_fields_correct": true,
+          "raw_sha256": "eeb9f975657c142830feb5b22dfbed4da36ac18af6f472c464181076d4e2a0ca"
+        },
+        {
+          "id": "v2-c08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Даны amount=0 и пустая валюта вместо половины 11 EUR = 5,50 EUR. Заявление «выплаты не указаны» не решает задачу.",
+          "strict_fields_correct": false,
+          "raw_sha256": "4d933198152ecf7cca01ea575fb86a3643abc72469f4ca80f3fbfba9562b6a5e"
+        },
+        {
+          "id": "v2-c09",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верны полный возврат 17 EUR и объяснение интервала 24 часа 30 минут по F28.",
+          "strict_fields_correct": true,
+          "raw_sha256": "6f24a4a17b1268ab42e4eedb8f4c52c3cc79af2dbeb1690d009444fb5c1eb00f"
+        },
+        {
+          "id": "v2-c10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 23 часа 30 минут до премьеры возврат нулевой; равенство оплаты и возврата 17 EUR выдумано.",
+          "strict_fields_correct": false,
+          "raw_sha256": "818565b57cd964f4c22e8dc4f2bfa024afff999f94b356dab2fffdbf9ea21db8"
+        },
+        {
+          "id": "v2-c11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдумана вместимость 23 и не назван зал. Правильный выбор — «Астра» на 32 места.",
+          "strict_fields_correct": false,
+          "raw_sha256": "17dfc5080549260712cfa3926b7edf11c8598fd1e02f19a4feb2a0e711e3b810"
+        },
+        {
+          "id": "v2-c12",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель отказалась определить зал, оставила data пустым, но пометила known. Требовалась «Астра» для 31 зрителя; утверждение об отсутствии вместимостей не соответствует источнику.",
+          "strict_fields_correct": false,
+          "raw_sha256": "0a8eb7c9e8c93193fc902831d3b1045c2bcc414ce9f83b29bbd62bebfd4112d4"
+        },
+        {
+          "id": "v2-c13",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдумана вместимость «Сумрака» 27 вместо 18, из-за чего неверно разрешено размещение 27 зрителей.",
+          "strict_fields_correct": false,
+          "raw_sha256": "29f4bb0cd9bab8a7b45c002351256fc279489cf79ac77df00eebcfbb842e30c8"
+        },
+        {
+          "id": "v2-c14",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно covers_both=false. В контексте двух сеансов одного вторника объяснение об одном покрываемом сеансе понимается как дневной лимит, а не как изменение общего числа трёх посещений «Искры».",
+          "strict_fields_correct": true,
+          "raw_sha256": "229194a8fd968c09d71baa19f140687d2ccccba18ac89346a77b1fc7bd59fd27"
+        },
+        {
+          "id": "v2-c15",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "False совпал с эталоном, но текст ошибочно утверждает, что абонемент не включает обычные сеансы. Запрет нужен из-за уже использованного сегодня дневного лимита.",
+          "strict_fields_correct": true,
+          "raw_sha256": "cb57aa08233d9ac41799fd678cb3572ae91b4be0a6d43c9a3a7b6d1ebe6ecc00"
+        },
+        {
+          "id": "v2-c16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Разрешена передача именной «Искры» Марины Льву, что нарушает F17.",
+          "strict_fields_correct": false,
+          "raw_sha256": "1ba7c22b70fec6738dde213b90cac98f1abda2b7bcfee521c610da02a289b631"
+        },
+        {
+          "id": "v2-c17",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Разрешено использование «Тумана» Льва другим человеком, что нарушает F22.",
+          "strict_fields_correct": false,
+          "raw_sha256": "0c73e3f1606fc02f398693a2dd5fffd2aa848d913eb229a1483d0b2c6f2bb70c"
+        },
+        {
+          "id": "v2-c18",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Нет ответа passes_valid, data пустой, хотя status known. По F15 пятница запрещена для «Искры»; источник позволяет дать отрицательный ответ.",
+          "strict_fields_correct": false,
+          "raw_sha256": "8fe1ab5bcf5be1697486f70bdd6e8b6669c043561f5aa844bf886eda04579835"
+        },
+        {
+          "id": "v2-c19",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Положительный флаг верен, но объяснение заменяет заданное воскресенье субботой. При требовании согласованного полного ответа это фактическое искажение условия не засчитано.",
+          "strict_fields_correct": true,
+          "raw_sha256": "b01505fe9f939e08d51ecb764232d5ce19fb20a2dcdfc4fb36432507e3b6fb17"
+        },
+        {
+          "id": "v2-c20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "False неверно на 21-й включённый день. Выдуманы запрет посещения в день активации, понедельник и дата 28 января; условия вопроса и F16 искажены.",
+          "strict_fields_correct": false,
+          "raw_sha256": "e53bec832f8c080a9dbd980513e4f6ce216299642b269346789e5ebd3e1d614d"
+        },
+        {
+          "id": "v2-c21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "На 22-й день «Искра» уже не действует. Ответ true противоречит сроку 21 календарный день.",
+          "strict_fields_correct": false,
+          "raw_sha256": "a2ab82a59e6679e456bc05599c82deeceaba5ac81016a9a3ecc5ad789af2b9ae"
+        },
+        {
+          "id": "v2-c22",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "True верно на 40-й день, но текст ошибочно называет его днём активации и формулирует достаточность одного неиспользования с наличием места. Полное объяснение не согласуется с вопросом о включённой границе срока.",
+          "strict_fields_correct": true,
+          "raw_sha256": "45fa2bd3ea0e4db83a2e3104190d71576b57679dd61d845362de3d55703e67c8"
+        },
+        {
+          "id": "v2-c23",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "На 41-й день «Туман» истёк. Наличие места не продлевает абонемент; ответ true неверен.",
+          "strict_fields_correct": false,
+          "raw_sha256": "f891d850f72630fe30ef651f8b9e0ed03ceb05a3037fa28e5948be096abca11d"
+        },
+        {
+          "id": "v2-c24",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Количество 15 и отсутствие скидки на покупку верны, но выдуманы 12000 рублей, не названа «Искра» и не рассчитан итог 360 EUR. Повторяющийся текст не решает оптимизацию.",
+          "strict_fields_correct": false,
+          "raw_sha256": "1022905c287028f4afac915147cd054ba937d0fe707a73e997ce65ac655a571e"
+        },
+        {
+          "id": "v2-u01",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Текст признаёт неизвестность парковочного тарифа, но amount=0 выдумывает нулевую стоимость. Для unknown нужен пустой data.",
+          "strict_fields_correct": false,
+          "raw_sha256": "7ce20127330d18e5e934137a928be17d33ed687b22f6c31290cc430c1b1f0129"
+        },
+        {
+          "id": "v2-u02",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Текст об отсутствии сведений верен, но status known и student_discount=false превращают неизвестность в неподтверждённое отрицание.",
+          "strict_fields_correct": false,
+          "raw_sha256": "81697648677e66a001f5049ae55dda64685297dc2e7baf6cfd89380c4921c90c"
+        },
+        {
+          "id": "v2-u03",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Текст признаёт неизвестную цену кофе, однако amount=0 без источника утверждает нулевую цену. Это не полный unknown/data={}.",
+          "strict_fields_correct": false,
+          "raw_sha256": "f0ecf6b9aae3bda9736563619c7b9c3324d1731af99d025d3237f9913bfeb201"
+        },
+        {
+          "id": "v2-u04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы отсутствие лестничного подъёма, правила доступности и возможность въезда. Источник не содержит этих сведений.",
+          "strict_fields_correct": false,
+          "raw_sha256": "cfe8d2480c12247d2029258381051082271a97a024ebe735aa8ad86665d4675c"
+        },
+        {
+          "id": "v2-u05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Модель категорически отрицает наличие гардероба, хотя справочник этого не устанавливает; status known также неверен.",
+          "strict_fields_correct": false,
+          "raw_sha256": "ef97cbed45e304fabf2001bf2737a18d42247bd6e41139274a2ebf942ea0d854"
+        },
+        {
+          "id": "v2-u06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Ответ зациклился на постороннем тексте о законодательстве, не назвал обоснованного возрастного порога и оборвался внутри JSON. Детский возраст в источнике не задан.",
+          "strict_fields_correct": false,
+          "raw_sha256": "bea986545bbe5e0f393792e2c5ba4a38a4e3a7ecaa9ee98ac9352d7942085306"
+        }
+      ],
+      "semantic_full_correct": 3,
+      "strict_fields_correct": 7,
+      "total": 30,
+      "strict_semantic_discrepancies": [
+        {
+          "id": "v2-c07",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c15",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c19",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c22",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        }
+      ]
+    },
+    "expanded200": {
+      "file_sha256": "31cfadac0c0f5105b901395b32378451d998566ded5974996595548c64ad1562",
+      "items": [
+        {
+          "id": "v2-c01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Заявлено отсутствие тарифов и даны 0 с пустой валютой. Нужна цена 105,60 EUR со скидкой группе из 12.",
+          "strict_fields_correct": false,
+          "raw_sha256": "9bd97c25ae677457a7a318fa265cd94793371d0f0986f93a2367cf46ee8a09aa"
+        },
+        {
+          "id": "v2-c02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуман тариф 1 EUR и итог 11 EUR. Правильно: 11 × 11 × 0,8 = 96,80 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "adc7672e41892bc2789edde6bced0fdc90b524c83773440103e36c6d8ff51b90"
+        },
+        {
+          "id": "v2-c03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Число 13 с пустой валютой не является ценой. Правильный воскресный итог 182 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "efa0bedafe04a53571658d3edaf351b94461266350f6299d51921a0d807171d8"
+        },
+        {
+          "id": "v2-c04",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель не отвечает на стоимость и запреты, оставляя data пустым при status known. По источнику требуются 238 EUR, group_discount=false и passes_valid=false.",
+          "strict_fields_correct": false,
+          "raw_sha256": "7f377b65a7379572301d5ec99a1288a5e0b2b105fec2517807762b0a6e66ce7b"
+        },
+        {
+          "id": "v2-c05",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно возвращена вся фактически уплаченная сумма 8,80 EUR. В этом интервале полный возврат предусмотрен F25; выражение «включая скидку» не меняет указанную сумму на недисконтную.",
+          "strict_fields_correct": true,
+          "raw_sha256": "087a163afca1e1b305c8ea2a3bb51b6eb7d724d8936a610c4744b8907c920fcc"
+        },
+        {
+          "id": "v2-c06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Генерация зациклилась и оборвалась внутри строки; сумма 4,40 EUR и запрошенные поля отсутствуют. Это не полный ответ.",
+          "strict_fields_correct": false,
+          "raw_sha256": "440cb3e5a16b4f81fc6ee3c8f5aea1cd6fd4da682586b7328b40444d1d9835e7"
+        },
+        {
+          "id": "v2-c07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Модель вернула все 14 EUR, хотя за 1 час 59 минут возврата нет по F27.",
+          "strict_fields_correct": false,
+          "raw_sha256": "edc48a488e8b12f9addb8c7d64957662d9a80d398005acc63de798af82d7d60b"
+        },
+        {
+          "id": "v2-c08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Даны 0 и пустая валюта вместо возврата половины 11 EUR, то есть 5,50 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "aa2a75792b46d5f879af9bbf775c007b02533fa3ae3355c76df0b3dcc2b818cb"
+        },
+        {
+          "id": "v2-c09",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "В data верны 17 EUR, но answer прямо утверждает «сумма выплаты не определена». Полный ответ внутренне противоречив.",
+          "strict_fields_correct": true,
+          "raw_sha256": "f78dade6c2b6226ba33fd8e18364facdab3c141c6d95343c70d4ee9c070db1b5"
+        },
+        {
+          "id": "v2-c10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Возврат 17 EUR за 23 часа 30 минут до премьеры неверен; нужно 0 EUR по F29.",
+          "strict_fields_correct": false,
+          "raw_sha256": "f6c67c211e1d8cecc1d2796679d3ba62d6d9f340d9b4ee68b8fe7cb6626f1348"
+        },
+        {
+          "id": "v2-c11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы залы на 23 и 46 мест и сумма 69, а правильная «Астра» не названа. После JSON добавлен посторонний текст; проблема также содержательная.",
+          "strict_fields_correct": false,
+          "raw_sha256": "07da30899514ce21c8d1373465bcc8ad7c7f965ae2f2bbfe0fe7a7901be3e11b"
+        },
+        {
+          "id": "v2-c12",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель отказалась назвать зал и вернула пустой data при known. Для 31 зрителя источник однозначно задаёт «Астру».",
+          "strict_fields_correct": false,
+          "raw_sha256": "84edf78937561488f352fdf20a8131f7c22fb223c3541d5186349a07a4757255"
+        },
+        {
+          "id": "v2-c13",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдумана вместимость «Сумрака» не менее 27 вместо 18. Fits=true неверно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "4f4d3aed059279bec5bc10a979cfe8ba0bf25343243fc05c416e28ed814eb3ff"
+        },
+        {
+          "id": "v2-c14",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Covers_both=false совпадает с эталоном, но объяснение выдумывает групповой абонемент и утверждает, что сеансы не включены в оплату. Нужная причина — одно посещение в день.",
+          "strict_fields_correct": true,
+          "raw_sha256": "c864b8d112e9fd9153b904dfcd9d51e52b05aedff7bf82950120cf5431477827"
+        },
+        {
+          "id": "v2-c15",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Правильно запрещено повторное использование сегодня; текст сохраняет два оставшихся посещения и указывает уже использованный дневной проход.",
+          "strict_fields_correct": true,
+          "raw_sha256": "ee2f88bffb8bfa40c6bf2b69534dba249757672e5714cbb97b223f000fdb7d4b"
+        },
+        {
+          "id": "v2-c16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Разрешена передача именной «Искры» другому человеку. Посторонние рассуждения о групповом сеансе этого не оправдывают.",
+          "strict_fields_correct": false,
+          "raw_sha256": "b73d290430a183644c0dbfc7eb22f8cdc7eea994a6f10612bef4c4c9d8673a1f"
+        },
+        {
+          "id": "v2-c17",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Проход не определён: модель сообщает отсутствие сведений и оставляет data пустым при known. По F22 передача «Тумана» запрещена.",
+          "strict_fields_correct": false,
+          "raw_sha256": "6cfec5f6a7d0bd20adde29ead9800c7904b8286de1a805d00e9b52701774f2ce"
+        },
+        {
+          "id": "v2-c18",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель не определяет пригодность «Искры» и оставляет data пустым. По F15 пятничный проход запрещён.",
+          "strict_fields_correct": false,
+          "raw_sha256": "441f1e0311617eb0ddb7c9d10d37485b464f85677729b54a5788ef493ca558b0"
+        },
+        {
+          "id": "v2-c19",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Правильно разрешён проход владельцу «Тумана» в пределах срока с местом и неиспользованным дневным лимитом. Ложных условий в объяснении нет.",
+          "strict_fields_correct": true,
+          "raw_sha256": "a9e271c8c6e3a1ae311a7b4c66855902713db674744fb28682a8afade507c9ab"
+        },
+        {
+          "id": "v2-c20",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "True совпадает с включённым 21-м днём, но объяснение «владелец несёт включённый абонемент, поэтому можно» не даёт корректного правила и подменяет проверку срока самим наличием абонемента. Правильный флаг не засчитан как полностью объяснённый ответ.",
+          "strict_fields_correct": true,
+          "raw_sha256": "bc3fb4babed5e5281142808e213e0107fe674d70831534a25b50d8528cc504c0"
+        },
+        {
+          "id": "v2-c21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "True неверно на 22-й день «Искры». Утверждения о групповой скидке и действии только на 22-й день также выдуманы.",
+          "strict_fields_correct": false,
+          "raw_sha256": "80d170dc3fee2102a44448507a926cdd9316fdba3eea5d255d3a673667940a0a"
+        },
+        {
+          "id": "v2-c22",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Правильно рекомендован допустимый обычный проход по «Туману» на включённый 40-й день. Краткий текст сохраняет свободное место и неиспользованный лимит, не добавляя ложных условий.",
+          "strict_fields_correct": true,
+          "raw_sha256": "ed685bd8df810cbf8bcf130cf997b1292c0b6a160886e47a93cc84a104a23e14"
+        },
+        {
+          "id": "v2-c23",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "False совпало с истечением срока, но причина «владелец несёт абонемент, поэтому не может» не следует из источника. Нужная причина — 41-й день после 40-дневного срока.",
+          "strict_fields_correct": true,
+          "raw_sha256": "0f8c5fcca55f7b37953d9a1dd73224eee92545f655bc345a0f2d4adadde2fed5"
+        },
+        {
+          "id": "v2-c24",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Количество 15 верно, но сумма 15 EUR, скидка 10 процентов и group_discount=true неверны. Нужны 15 «Искр» за 360 EUR без скидки на абонементы.",
+          "strict_fields_correct": false,
+          "raw_sha256": "8d12fd24706de3c5812d2abe14c4584145deacc0bc74e8dfcf04c79a72ef8d42"
+        },
+        {
+          "id": "v2-u01",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Неизвестность тарифа названа верно, но amount=0 противоречит отсутствию сведений. Требуется пустой data.",
+          "strict_fields_correct": false,
+          "raw_sha256": "4fd3e0537f674cb2dcc46d3a9ded349c364bde1db5fca0eb8463412165371c37"
+        },
+        {
+          "id": "v2-u02",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Текст признаёт отсутствие сведений о студенческой скидке, однако known и false утверждают её отсутствие без источника.",
+          "strict_fields_correct": false,
+          "raw_sha256": "179fdb642c5ff219b0dd90c0aec6103bfa83ee4c3d610028df326b00634d020b"
+        },
+        {
+          "id": "v2-u03",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Цена кофе неизвестна, но amount=0 превращает это в нулевую цену. Рассуждение об отсутствии реального или симулированного сеанса не является основанием для цены капучино.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d54ec51c6e37970c300c8d83735a4830551cc30490fc03ade59d5184ad706655"
+        },
+        {
+          "id": "v2-u04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдумано отсутствие лестницы и доступ для коляски; в справочнике нет сведений об инфраструктуре.",
+          "strict_fields_correct": false,
+          "raw_sha256": "20e399ac7ae99fc81deda4c7ab5aee66b9c0684fc284f5164017c36e80a5be19"
+        },
+        {
+          "id": "v2-u05",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Status unknown, пустой data и признание невозможности подтвердить или опровергнуть наличие гардероба согласованы с источником. Формулировка неловкая, но отрицательного факта не утверждает.",
+          "strict_fields_correct": true,
+          "raw_sha256": "ad8dd9b660c1d44dcb4480b58d630c36ad52d69f879c56c5ee951b5e07d01525"
+        },
+        {
+          "id": "v2-u06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Возраст 18 лет выдуман. В справочнике нет детского тарифа или его возрастной границы.",
+          "strict_fields_correct": false,
+          "raw_sha256": "b7d4b2154d7cfeffb2377da2010ca64b635dbcdaa9fa88756c6c4c9ab1f774cc"
+        }
+      ],
+      "semantic_full_correct": 5,
+      "strict_fields_correct": 9,
+      "total": 30,
+      "strict_semantic_discrepancies": [
+        {
+          "id": "v2-c09",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c14",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c20",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c23",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        }
+      ]
+    },
+    "expanded800": {
+      "file_sha256": "6ff78065416ec44b4bd060a434a7fa4289c9f3b6a617d9c7772667fee98e14d5",
+      "items": [
+        {
+          "id": "v2-c01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Заявлено отсутствие цены и скидок, но в data стоят 0 и пустая валюта. Требуется 105,60 EUR по будничному групповому тарифу.",
+          "strict_fields_correct": false,
+          "raw_sha256": "55b47ef24f6a8c93ea4588851a0ad7331dae420f6eda2ac95c536597d95f59a0"
+        },
+        {
+          "id": "v2-c02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Применён выходной тариф 14 EUR, хотя в вопросе четверг. Итог 154 вместо 11 × 11 × 0,8 = 96,80 EUR неверен.",
+          "strict_fields_correct": false,
+          "raw_sha256": "91d6e0e8d8a7436d9c19bd44bb3460bbbf1ef7072d7d6a1ca15981b18c3c0300"
+        },
+        {
+          "id": "v2-c03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Количество зрителей 13 выдано за сумму, валюта пустая. Правильная цена воскресных билетов — 182 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d46fe1723f7efec66309ed87ebecc79439ced82ca88588da39472e96a43090bd"
+        },
+        {
+          "id": "v2-c04",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель отказывается дать цену и ограничения, оставляя data пустым при status known. Требовались 238 EUR и два запретительных флага; посторонние слова о «магнитных лапшах» не решают задачу.",
+          "strict_fields_correct": false,
+          "raw_sha256": "71c03abbd46606514330f16f41bd1a3fd867300e52e1bd2e7a2c44007777607b"
+        },
+        {
+          "id": "v2-c05",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "8,80 EUR в data верны, но текст утверждает, что до начала меньше двух часов, вопреки заданным 6 часам 15 минутам. Для меньшего двухчасового интервала такой возврат тоже нарушал бы F27.",
+          "strict_fields_correct": true,
+          "raw_sha256": "9c33b1738d305cf15f143ac681aad2319286f40ec997266dd1b7695f79bd1203"
+        },
+        {
+          "id": "v2-c06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Возвращены все 8,80 EUR вместо половины 4,40 EUR при интервале 4 часа 30 минут.",
+          "strict_fields_correct": false,
+          "raw_sha256": "b09c4c06a15c9980e06043c98f42086792aacd4868159fd8448e83ee9bdc7b23"
+        },
+        {
+          "id": "v2-c07",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно отказано в выплате и указано 0 EUR при 1 часе 59 минутах до обычного сеанса. Формулировка неловкая, но не добавляет ложных условий.",
+          "strict_fields_correct": true,
+          "raw_sha256": "93407ab7dbeba4f9920bfe93dc063d0a57b66484750e73cba0378d1e60733e81"
+        },
+        {
+          "id": "v2-c08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 5 часов 30 минут положено 5,50 EUR, а не ноль. Передача билета не является условием этого возврата; объяснение выдумано.",
+          "strict_fields_correct": false,
+          "raw_sha256": "0b938f899b2c8e36a5680700c0b4937ab888a114a78cfa1c5374c3edab11646a"
+        },
+        {
+          "id": "v2-c09",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верны 17 EUR и привязка к 24 часам 30 минутам до премьеры: F28 допускает полный возврат.",
+          "strict_fields_correct": true,
+          "raw_sha256": "42a08eb36dfb302838fac9da331a551a7b53e8221ffae085eb57f158c11409d4"
+        },
+        {
+          "id": "v2-c10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "За 23 часа 30 минут до премьеры возврат нулевой. Модель неверно подменяет премьерный билет абонементным и возвращает 17 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "da6742c6723829f441a937d5a20d8d1e169b5a72db728ec5e9c310c1216b6951"
+        },
+        {
+          "id": "v2-c11",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Data правильно называет «Астру», но текст утверждает вместимость меньше 23 и отсутствие другого зала. Это противоречит «Астре» на 32 и описанию обоих залов; полный ответ не засчитан.",
+          "strict_fields_correct": true,
+          "raw_sha256": "a15ca28ed9831c1b3675a91c647630a80edda99a8d0d6e0c2ab3fc4991ffe43e"
+        },
+        {
+          "id": "v2-c12",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы 121 место и hall «11 × 11». Правильный зал для 31 зрителя — «Астра».",
+          "strict_fields_correct": false,
+          "raw_sha256": "54a038851743bf2891cedcf08ea4c6ba7be7ba3e17fd15d6e67960152b87b673"
+        },
+        {
+          "id": "v2-c13",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместимость «Сумрака» выдумана как 27 вместо 18, поэтому неверно разрешено размещение 27 человек.",
+          "strict_fields_correct": false,
+          "raw_sha256": "dd8e9214d23830b993da3fc918e440aa88317a568bec06adc19da77eb3ecdab2"
+        },
+        {
+          "id": "v2-c14",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Модель прямо разрешает два посещения в один день по одному абонементу, нарушая F23.",
+          "strict_fields_correct": false,
+          "raw_sha256": "669ba176397f4175efee9b2c8effdd6ff9f89bcaca4249a8ca8c0c502bd89069"
+        },
+        {
+          "id": "v2-c15",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "False совпал с эталоном, но объяснение путает уже использованный сегодня абонемент с неиспользованным сеансом и вводит постороннюю групповую скидку. Верная причина отказа — исчерпанный дневной лимит — не выражена согласованно.",
+          "strict_fields_correct": true,
+          "raw_sha256": "7a729720eda39a93c3baec54b51245244acb94cc24d752c49779b55339dc582e"
+        },
+        {
+          "id": "v2-c16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Разрешена передача именной «Искры» Марины Льву. Действующий срок и неиспользованные посещения не отменяют F17.",
+          "strict_fields_correct": false,
+          "raw_sha256": "47ccf8f247ee10bf08190bf0675ddfa579bea54f4f08b56b6ee243be39365106"
+        },
+        {
+          "id": "v2-c17",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Data пустой, вопрос о передаче подменён отсутствием сведений о «прокате Тумана». По F22 требовалось false; это не решённая задача.",
+          "strict_fields_correct": false,
+          "raw_sha256": "1a26cfff6032457f815f5c1978be2f99585315efc4ca10419885e37ce3ec150f"
+        },
+        {
+          "id": "v2-c18",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Модель подменяет допустимость пятницы вопросами проживания и не даёт passes_valid. По F15 нужен отрицательный ответ.",
+          "strict_fields_correct": false,
+          "raw_sha256": "18d659d8347a1701e7504de2e1faf0ecdca915ef075db6719e760223f946be71"
+        },
+        {
+          "id": "v2-c19",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "True совпало с допустимым проходом, но объяснение содержит выдуманные пять недель, отрицание действия «Тумана» и применение групповой скидки в воскресенье. Оно не является правдивым полным ответом.",
+          "strict_fields_correct": true,
+          "raw_sha256": "416286477375ad41fee3661fdd47b7121ec5b797ec3ab7b303c1f703c3c31551"
+        },
+        {
+          "id": "v2-c20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "False неверно на 21-й включённый день «Искры». Объяснение про групповые сеансы и два часа не относится к сроку абонемента.",
+          "strict_fields_correct": false,
+          "raw_sha256": "ba9c4c1988f0d8cb1be9eced5645f4d890c9f600a0ae8898a83c1a45bec8b1b7"
+        },
+        {
+          "id": "v2-c21",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "False совпало с истёкшим 22-м днём, но текст не использует истечение срока и выдумывает скидку 20 процентов только в «Астре». Это не корректное объяснение запрета.",
+          "strict_fields_correct": true,
+          "raw_sha256": "8ad4859956a5bb00dcef29a883201bdba688776e56ada32fd7305eeaeb1bac91"
+        },
+        {
+          "id": "v2-c22",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "На 40-й включённый день «Туман» подходит, но модель запрещает проход, делая нормальные условия — владельца и неиспользование — причинами отказа.",
+          "strict_fields_correct": false,
+          "raw_sha256": "d3db08957ec7d4d7e4c447e4614ed0ab0f9a6e415af35bf60901983ab365e73e"
+        },
+        {
+          "id": "v2-c23",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "На 41-й день «Туман» истёк. Разрешение пройти, просто зайдя в любой кинотеатр, выдумано и противоречит сроку.",
+          "strict_fields_correct": false,
+          "raw_sha256": "835339871bb43b2bddb9ff0783ad8509d82e46ce24ebd01c2593d24da2f608ef"
+        },
+        {
+          "id": "v2-c24",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Запрет групповой скидки на абонемент верен, но 174 EUR и один неназванный абонемент не решают задачу. Нужны 15 именных «Искр» за 360 EUR.",
+          "strict_fields_correct": false,
+          "raw_sha256": "95c8cc43be6bac2960df91a5cba909a677b40e4e7f5a2d4b65bc4fc2b0a1c91c"
+        },
+        {
+          "id": "v2-u01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Нулевой тариф парковки выдуман со status known; текст об «Искре» и трансляторе не отвечает на вопрос. Нужен unknown/data={}.",
+          "strict_fields_correct": false,
+          "raw_sha256": "b69e71ab8c6257edfc381d55d911af9f88b11c5a2fbe02a6a1b0be62ef39e150"
+        },
+        {
+          "id": "v2-u02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Категорическое отрицание студенческой скидки не следует из источника. Повторяющийся текст не заменяет признание отсутствия сведений.",
+          "strict_fields_correct": false,
+          "raw_sha256": "a6887a98eb6ac7c9381bdad58b5164cdb5c896d9f1b423acd3b65108c4e0d3ba"
+        },
+        {
+          "id": "v2-u03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена капучино 14 EUR выдумана: в источнике нет кафе или кофейного тарифа.",
+          "strict_fields_correct": false,
+          "raw_sha256": "2c33f95adf179532a5dcd2930e099f7dc91474a04e95f275fcfb0797d1373515"
+        },
+        {
+          "id": "v2-u04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Необходимость лестницы и step_free_access=false выдуманы. Доступность источником не описана.",
+          "strict_fields_correct": false,
+          "raw_sha256": "566d3d3fb31a9775f9339993259fd5b871a1335efea69b94f76b8b936cc72d4b"
+        },
+        {
+          "id": "v2-u05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуман «Архив Сумрака» для одежды; текст о возможности оставить одежду ещё и противоречит coat_check_available=false. Наличие гардероба неизвестно.",
+          "strict_fields_correct": false,
+          "raw_sha256": "6d996033c268e60ceed429982fd0448fd7663c39afef117013f862c8c277a1ad"
+        },
+        {
+          "id": "v2-u06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы возрастные пороги и скидочные законы; в тексте фигурирует 14, в data 12. Ни одно число не задано источником.",
+          "strict_fields_correct": false,
+          "raw_sha256": "32b304444122b2961cd29da1f902626791368fc951223483d2c12315284321c3"
+        }
+      ],
+      "semantic_full_correct": 2,
+      "strict_fields_correct": 7,
+      "total": 30,
+      "strict_semantic_discrepancies": [
+        {
+          "id": "v2-c05",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c11",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c15",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c19",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        },
+        {
+          "id": "v2-c21",
+          "strict_fields_correct": true,
+          "full_answer_correct": false
+        }
+      ]
+    }
+  },
+  "updated_at_utc": "2026-10-26T19:09:09.041996+00:00",
+  "limitations_ru": [
+    "Это агентная семантическая проверка, не человеческая валидация; исходные ответы и SHA сохранены для последующего пересмотра.",
+    "Проверены только 24 composition и 6 unknown каждого arm. Атомарные 30 проверяет другой агент; эти числа нельзя выдавать за итог 60.",
+    "Фиксированный SYSTEM уже называет кинотеатр «Люмен». Успех v2-a01 сам по себе не доказывает усвоение нового названия; элемент не исключался и входы/подсчёт не менялись.",
+    "Экзамен создан после v1, но зафиксирован до v2. Это небольшой созданный авторами тест по одному миру, не независимый внешний benchmark.",
+    "В JSON-строке answer могут быть только правильные повторённые факты: это не автоматически считается ложью из-за стиля. Но явно ложная причина, искажение условия или конфликт answer/data снимают полный semantic успех.",
+    "Unknown требует data={} по фиксированному контракту. False/0 — неподтверждённые факты; null/null отражает неопределённость без ложного отрицания, но не является полным ответом по этому контракту.",
+    "Неловкий язык сам по себе не снимает правильность, если смысл условий и ответа сохраняется. Пограничные чтения явно отмечены в notes: base c15, clean200 c14, expanded200 c20."
+  ]
+}

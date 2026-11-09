@@ -1,0 +1,17 @@
+{
+  "id": "68da745219e447c58d25ef66289e6a4d",
+  "stage": "preflight",
+  "command": [
+    ".venv/bin/python",
+    "prompt_harness.py",
+    "--preflight"
+  ],
+  "pid": 2900,
+  "pgid": 2900,
+  "birth": "Tue Oct 27 10:56:47 2026",
+  "manager_pid": 2884,
+  "manager_birth": "Tue Oct 27 10:56:47 2026",
+  "state": "finished",
+  "log": ".control/logs/68da745219e447c58d25ef66289e6a4d.log",
+  "exit_code": 0
+}

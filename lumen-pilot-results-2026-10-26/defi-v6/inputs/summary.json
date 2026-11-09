@@ -1,0 +1,24 @@
+{
+  "arms": [
+    "search_only",
+    "prompt_only",
+    "combined"
+  ],
+  "questions": 60,
+  "answers": 180,
+  "max_input_tokens": 1398,
+  "input_cap": 1400,
+  "context_identical_search_only_combined": true,
+  "prompt_only_baseline_context_unchanged": true,
+  "model_context_cap_unchanged": true,
+  "system_v6_sha256": "af7a09e2d2a136feebebab61a09b9dc6672b09b18cbfa5438d3205b889a60f81",
+  "prompts_sha256": "1ca1861ffb7a6561749067768a115e8f27b818ecfc76ffd06b340fc487d5a1f9",
+  "contexts_sha256": "9312761b41b2a32ec2c1e9f146655cc1a8f59719964e21530c88c0a3510c0d79",
+  "reads_gold": false,
+  "new_index": {
+    "documents": 1673,
+    "chunks": 36451,
+    "database_sha256": "65344342a399a32c55bca3a57237aecbd9c43e8ad5a7d84ced662b26b841d8c6",
+    "algorithm": "Markdown sections;170word windows/40word overlap, never cross a heading"
+  }
+}

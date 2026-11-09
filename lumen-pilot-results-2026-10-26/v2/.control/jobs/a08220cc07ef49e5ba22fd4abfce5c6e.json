@@ -1,0 +1,16 @@
+{
+  "id": "a08220cc07ef49e5ba22fd4abfce5c6e",
+  "stage": "prepare-expanded",
+  "command": [
+    ".venv/bin/python",
+    "prepare_data.py"
+  ],
+  "pid": 76708,
+  "pgid": 76708,
+  "birth": "Mon Oct 26 19:47:50 2026",
+  "manager_pid": 76696,
+  "manager_birth": "Mon Oct 26 19:47:50 2026",
+  "state": "finished",
+  "log": ".control/logs/a08220cc07ef49e5ba22fd4abfce5c6e.log",
+  "exit_code": 0
+}

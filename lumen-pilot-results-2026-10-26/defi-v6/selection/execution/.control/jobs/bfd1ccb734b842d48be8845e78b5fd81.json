@@ -1,0 +1,25 @@
+{
+  "id": "bfd1ccb734b842d48be8845e78b5fd81",
+  "stage": "experiment",
+  "command": [
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--max-footprint-gib",
+    "3.5",
+    "--max-swap-growth-gib",
+    "0.25",
+    "--stage",
+    "experiment",
+    "--",
+    ".venv/bin/python",
+    "defi_harness.py"
+  ],
+  "pid": 81362,
+  "pgid": 81362,
+  "birth": "Tue Oct 27 22:09:01 2026",
+  "manager_pid": 81349,
+  "manager_birth": "Tue Oct 27 22:09:01 2026",
+  "state": "finished",
+  "log": ".control/logs/bfd1ccb734b842d48be8845e78b5fd81.log",
+  "exit_code": 0
+}

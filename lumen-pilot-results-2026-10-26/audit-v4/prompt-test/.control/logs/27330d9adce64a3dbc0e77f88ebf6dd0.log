@@ -1,0 +1,8 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+baseline 1/60 v4-a01: 1.80s, 49 tokens, stop
+baseline 2/60 v4-a02: 1.70s, 44 tokens, stop
+baseline 3/60 v4-a03: 1.88s, 53 tokens, stop
+baseline 4/60 v4-a04: 1.83s, 54 tokens, stop
+baseline 5/60 v4-a05: 1.67s, 44 tokens, stop
+RESOURCE GUARD ab-baseline: protective_stop; exit=124; Host memory pressure >= 2 for 3 consecutive samples
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-prompt-v4/runs/resources/ab-baseline.json

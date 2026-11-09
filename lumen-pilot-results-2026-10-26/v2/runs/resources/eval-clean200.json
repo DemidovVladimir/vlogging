@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "stage": "eval-clean200",
+  "started_at": "2026-10-26T19:03:23.255264+00:00",
+  "command": [
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/eval-clean200.jsonl",
+    "--adapter",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/adapters/clean"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 62,
+  "peak_footprint_bytes": 1911129864,
+  "peak_rss_bytes": 1301282816,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 586091069,
+  "child_pid": 80562,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T19:04:25.670047+00:00",
+  "wall_seconds": 62.415035582998826,
+  "observed_process_identities": {
+    "80562": 1194331072184
+  },
+  "reused_pids_ignored": []
+}

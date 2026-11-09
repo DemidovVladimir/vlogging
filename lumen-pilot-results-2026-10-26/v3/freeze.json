@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-26T21:07:09.337844+00:00",
+  "files": {
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "run_eval.py": "ac82dedba819bbcf10c6623a180859b144587dbab1cfc6379644c21627f685b2",
+    "compare.py": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "source-handbook.txt": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+    "seeds/test.jsonl": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+    "context_preflight.py": "e4c659d40b9c1500c02058ccd25cdd73a3ed973a4c992c81bea0a9b61edb80f6",
+    "context_probe.py": "74b9e2110088d6f72fcdf94ce0a180938e85d2a460f666988187548f8467e759",
+    "protocol.json": "be553d670accf76be101459745e4e282603202d505cc3641ccee67bde46d5191",
+    "preflight.json": "25f508acabacd9f6209071728a804c7be208057755a7f749f17e26d7e5825342"
+  },
+  "scope": "Frozen before model probe and scored generation. Same previously used60, one prospective context condition."
+}

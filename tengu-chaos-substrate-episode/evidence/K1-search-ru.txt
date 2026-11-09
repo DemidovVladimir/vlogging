@@ -1,0 +1,29 @@
+# 2026-10-27T14:08:16Z chaos-kb search Что автор умеет в блокчейне и в эмбеддингах? --limit 2
+real 0.15
+real 0.11
+real 0.11
+{
+  "hits": [
+    {
+      "lines": [
+        15,
+        15
+      ],
+      "note": "Skills.md",
+      "score": 0.4170309901237488,
+      "section": "Web3",
+      "text": "Web3 is my secondary area: Solana / SVM (Rust), Sui Move, EVM (Solidity, Foundry), the x402 payment protocol and agent-controlled wallets."
+    },
+    {
+      "lines": [
+        3,
+        3
+      ],
+      "note": "Skills.md",
+      "score": 0.38748660683631897,
+      "section": "AI and ML",
+      "text": "My AI and ML skills: generative and agentic AI, LLMOps, RAG pipelines, self-evaluation loops, prompt engineering, LangChain, HuggingFace (Inference, Transformers, ML training), Amazon Rekognition, embeddings and cosine similarity, model post-training, GPU acceleration with PyCUDA."
+    }
+  ],
+  "root": "4aa40ffeae3a164b7b7dcd449be31eab2fe65208c171ead4a6cf3b99c3d06f64"
+}

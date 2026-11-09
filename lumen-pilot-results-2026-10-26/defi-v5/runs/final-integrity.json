@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "archive_input_freeze_verified": 20,
+  "runtime_frozen_inputs_verified": 17,
+  "outputs": {
+    "closed": 60,
+    "oracle": 60,
+    "retrieved": 60
+  },
+  "all180prompt_hashes_and_actual_token_counts_match_frozen_inputs": true,
+  "model_meta_identical_across_arms": true,
+  "sequence_unique180": true,
+  "all180_finish_reason_stop": true,
+  "runtime_removed": true,
+  "model_weight_sha256": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+  "settings": {
+    "temperature": 0,
+    "seed_per_prompt": 42,
+    "enable_thinking": false,
+    "max_output_tokens": 384,
+    "prefill_step_size": 128,
+    "kv_bits": null,
+    "kv_group_size": 64,
+    "quantized_kv_start": 0,
+    "allocator_cache_bytes": 33554432,
+    "allocator_memory_limit_bytes": 2952790016
+  },
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "grades_sha256": "c182a579e52b7346a39c991107c0b62c936ad5aa7a4b4ad03a9d54b87237af41"
+}

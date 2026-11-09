@@ -1,0 +1,9 @@
+# Иллюстрация людей — экран 03, редакция 18
+
+Режим: новая генерация через встроенный imagegen, прозрачный фон. Референсные изображения не передавались; стиль задан текстовым описанием существующего бренда.
+
+Результат: `dist/assets/serving-people-v18.png`, 2172 × 724, PNG с альфа-каналом. Полный оригинал сохранён без изменения пикселей. Расположение фигур на слайде выполнено CSS. Маршруты, подписи и модель — отдельные HTML/SVG-элементы.
+
+## Промпт
+
+Use case: illustration-story. Asset type: transparent illustration plate for a Russian educational YouTube slide in TENGU brand style. Create a very wide horizontal cutout composition, approximately 3:1. Only two separated figures with their devices, no background and no text. On far left, a thoughtful Japanese ronin wearing a straw kasa hat and dark flowing robe, seated on a simple low stool and using an open modern laptop on his knees, facing inward right. Vermilion red accent on sleeve and laptop. On far right, a Japanese samurai with tied topknot and simple indigo clothing, seated casually and looking at a modern smartphone held in front, facing inward left. No weapons. Leave the central 45 percent completely empty transparent for an editable diagram. Figures about equal visual weight, fully visible, each occupying the outer 25 percent of the canvas. Refined expressive black sumi ink linework with restrained brush shading, woodblock print details, elegant editorial illustration. Palette charcoal #11110F, warm parchment highlights #E9DFC9, red #C92F20 at left, deep blue #1D3342 at right. Actual alpha transparency everywhere behind figures. No painted paper rectangle, no glow, no labels, no arrows, no interface boxes, no logos, no lettering. Sophisticated and lightly playful rather than cartoon mascot. Laptop and phone clearly recognizable.

@@ -1,0 +1,16 @@
+{
+  "v5": {
+    "exam/test.jsonl": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+    "exam/grading-rubric.json": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+    "sources/documents.json": "600b46c205dec5fa8bafaa0d23ac767924e96bfa0c0ae04727fd6a578bed77f3"
+  },
+  "small": {
+    "inputs/contexts.jsonl": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+    "inputs/prompts.jsonl": "c942b04be669092af7a7c39a1fc1558b26a4267ebdd56f8341a03c33a453e6d0",
+    "runs/selection.jsonl": "1a14544b5958a4d3b49a6a43afce6ef1b42fb010b1f1a14d1abe820b69813699",
+    "runs/presented.jsonl": "a1a5ba01b3612f6996ed7d979bef9a286ed6448313e8f5f46c245208345f2e35",
+    "runs/grades.json": "894e5ee42a4e7f8da2d2fb79135da13f5885a2be80a6a6d657fe78026c11412a",
+    "tools/attach_citations.py": "3d71b3713a09d6565f522c6727a067cd30bc7b4038cbb3bd0a16cbbb2c080da9",
+    "execution/prepare_selection.py": "25f96074b3c9b6127a93d917be7d0891471d492d2cdfaad474ce9a31e162a8b0"
+  }
+}

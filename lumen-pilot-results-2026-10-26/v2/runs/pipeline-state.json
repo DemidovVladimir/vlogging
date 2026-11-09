@@ -1,0 +1,67 @@
+{
+  "started_at": "2026-10-26T18:49:22.180016+00:00",
+  "pid": 76933,
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "train-clean",
+      "started_at": "2026-10-26T18:49:22.180953+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T18:51:42.260126+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "train-expanded",
+      "started_at": "2026-10-26T18:51:42.264459+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T19:01:40.043928+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval-base",
+      "started_at": "2026-10-26T19:01:40.048694+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T19:02:45.653156+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval-v1",
+      "started_at": "2026-10-26T19:02:45.654525+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T19:03:23.088965+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval-clean200",
+      "started_at": "2026-10-26T19:03:23.090434+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T19:04:25.678068+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval-expanded200",
+      "started_at": "2026-10-26T19:04:25.679570+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T19:05:29.253427+00:00",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval-expanded800",
+      "started_at": "2026-10-26T19:05:29.254755+00:00",
+      "status": "completed",
+      "finished_at": "2026-10-26T19:06:28.877733+00:00",
+      "exit_code": 0
+    }
+  ],
+  "protocol_sha256": "4094d57e04eed1469829c78739938f8594055d2eeef9617d6b1abd93aaf1ffa8",
+  "finished_at": "2026-10-26T19:06:28.879940+00:00",
+  "automatic_scores": {
+    "base": 12,
+    "v1": 16,
+    "clean200": 14,
+    "expanded200": 11,
+    "expanded800": 12
+  },
+  "semantic_review_pending": false,
+  "semantic_review_sha256": "d85d41e2b3173057c463054d9315aebea17a0a3f8ba39318ee737570f7220a86"
+}

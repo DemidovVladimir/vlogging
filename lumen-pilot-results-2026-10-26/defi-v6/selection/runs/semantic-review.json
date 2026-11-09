@@ -1,0 +1,434 @@
+{
+  "created_at_utc": "2026-10-27T21:12:56.409189+00:00",
+  "reviewer": "root agent; read all60model raw plus actual selected literal catalogue units; same v5 rubric",
+  "human_validation": false,
+  "raw_sha256": {
+    "selection": "a1a5ba01b3612f6996ed7d979bef9a286ed6448313e8f5f46c245208345f2e35"
+  },
+  "model_raw_sha256": "1a14544b5958a4d3b49a6a43afce6ef1b42fb010b1f1a14d1abe820b69813699",
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "items": [
+    {
+      "id": "aave-01",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Верный true, но выбранное over-collateralization не устанавливает HF<1."
+    },
+    {
+      "id": "aave-02",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Верный false для строгого <1 приHF1; выбрана прямая When it falls below1."
+    },
+    {
+      "id": "aave-03",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно разрешает withdraw приHF0,97; цитируется eligibility liquidation вместо ограниченияwithdraw."
+    },
+    {
+      "id": "aave-04",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Нет фиксированного срока ожидания, но цитата лишь про over-collateralization."
+    },
+    {
+      "id": "aave-05",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Peg1:1 указан верно; выбранное описание mint/burn и amount/yield не устанавливает точный peg."
+    },
+    {
+      "id": "aave-06",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "balance_increases; R10 прямо подтверждает растущий со временем баланс aTokens."
+    },
+    {
+      "id": "aave-07",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Верный запрет произвольного debt asset; выбранная фраза contains risk не доказывает basket restriction."
+    },
+    {
+      "id": "aave-08",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Debt ceiling есть, но модель выбрала9ID вместо разрешённых1–3; заранее зафиксированный adapter отвергает весь список и не подставляет цитаты. Ответ не исправлялся."
+    },
+    {
+      "id": "aave-09",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Correlated; R2/R3 прямо подтверждают price-correlated/eMode. Дополнительный Aptos-фрагмент говорит тот же общий факт, без переноса отдельного параметра в ответ."
+    },
+    {
+      "id": "aave-10",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Siloed borrowing не допускает другие active borrows в том же пуле; прямая полная цитата."
+    },
+    {
+      "id": "aave-11",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Одного approval без collateral недостаточно. Выбрана прямая before delegatee executes borrow ... sufficient collateral."
+    },
+    {
+      "id": "aave-12",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Prior supply для approveDelegation не требуется; выбранный фрагмент про React/API не доказывает это."
+    },
+    {
+      "id": "aave-13",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Верно ожидает отклонениеborrow, но selected liquidation-eligibility clause не доказывает pre-borrow проверку."
+    },
+    {
+      "id": "aave-14",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Один reserve; literal flashLoanSimple single reserve подтверждает."
+    },
+    {
+      "id": "aave-15",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Открытие debt запрещено; обе выбранные выдержки прямо это говорят."
+    },
+    {
+      "id": "aave-16",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Недостаточный allowance приводит к revert; R6/R4 устанавливают условие, R1 даёт контекст flow."
+    },
+    {
+      "id": "aave-17",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибка арифметики:50 вместо5 при10000×0,05%. Правильная ставка в выбранной цитате не подтверждает50."
+    },
+    {
+      "id": "aave-18",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "При LTV0 нельзя включить collateral; selected недостаточный collateral не доказывает именно правило0LTV."
+    },
+    {
+      "id": "aave-19",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Supply cap ограничиваетsupply, borrow cap —borrow. Два поляtrue соответствуют двум названным операциям; вводное Да не трактуется как отдельное утверждение тождества. Буквальные поляcap в whole tokens подтверждают технические лимиты."
+    },
+    {
+      "id": "aave-20",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "2000×0,75=1500. Expression вanswer и numeric data1500 согласованы; обе цитаты устанавливают LTV-формулу/75%."
+    },
+    {
+      "id": "kamino-01",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "900/1500×100=60, не900; выбрана правильная формула, но ответ неверен."
+    },
+    {
+      "id": "kamino-02",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Liquidation LTV вышеMax LTV; выбранное правило про collateral withdrawals/post-fill LTV этого не доказывает."
+    },
+    {
+      "id": "kamino-03",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Верно допускает ухудшение позиции от interest; selected Net APY и пример interest rate не устанавливают именно изменение здоровья при flat prices."
+    },
+    {
+      "id": "kamino-04",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "При неизменном долге и паденииcollateral LTVрастёт, неdecreases."
+    },
+    {
+      "id": "kamino-05",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1000×0,8/2=400, не2000; обе выбранные формулы не поддерживают неверное число."
+    },
+    {
+      "id": "kamino-06",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Borrow Factor2 halvescapacity: точное прямое подтверждение."
+    },
+    {
+      "id": "kamino-07",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Cross Mode multiple collateral/debt: R5 прямо подтверждает, другие выбранные фрагменты дают контекст."
+    },
+    {
+      "id": "kamino-08",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Unsecured loans отсутствуют. Выбрана справка Rust SDK/комбоопераций, которая не доказывает требованиеcollateral."
+    },
+    {
+      "id": "kamino-09",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "KSwap является официальным синонимом Kamino Swap в том же замороженном корпусе, overview.md:107. Выбраны прямые фрагменты о swap collateral viaKSwap. Content и support засчитаны; strict data_ok остаётсяfalse."
+    },
+    {
+      "id": "kamino-10",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Обычная частичная ликвидация доinsolvency-risk:20%, не100%."
+    },
+    {
+      "id": "kamino-11",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Верно отрицает универсальный95%, но цитата проbuffer/capacity не устанавливаетtypically/no fixed threshold."
+    },
+    {
+      "id": "kamino-12",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Permissionless/any wallet unhealthy obligation: выбранные фрагменты прямо подтверждают."
+    },
+    {
+      "id": "kamino-13",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Гарантированного grace period нет, но выбранное различиеeligibility имоментаorigination не доказывает отсутствие отдельногоgrace."
+    },
+    {
+      "id": "kamino-14",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Bonus не фиксирован;7выбранных ID превышают1–3, adapter не прикрепляет ни одной цитаты."
+    },
+    {
+      "id": "kamino-15",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "82−75=7 в пределахmin2/max8, не4."
+    },
+    {
+      "id": "kamino-16",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "600/800×100=75, не30. Выбрана другая настройка utilization brake."
+    },
+    {
+      "id": "kamino-17",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Spread отborrow rate плюс пример15%на10%=>8,5% подтверждают долюinterest, неprincipal."
+    },
+    {
+      "id": "kamino-18",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Строка false вместоboolean не меняет смысл краткого Нет: content=true, data_ok=false. Выбранные фрагменты обобщённогоvaultyield не устанавливают нулевую отдачу именноidle capital, support=false."
+    },
+    {
+      "id": "kamino-19",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "After rollover noEarlyRepayPenalty: прямая цитата."
+    },
+    {
+      "id": "kamino-20",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Any queuedticket blocks rollover for allborrowers: прямая цитата."
+    },
+    {
+      "id": "eth-01",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "ERC20false handling: оба MUST/MUST NOT правила подтверждают."
+    },
+    {
+      "id": "eth-02",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "decimals не обязателен; MUST NOT expect these values в самом decimals-разделе подтверждает."
+    },
+    {
+      "id": "eth-03",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Zero transfer обязан triggerTransfer: обе точные выдержки подтверждают."
+    },
+    {
+      "id": "eth-04",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "Повторныйapprove overwritesallowance: прямое правило."
+    },
+    {
+      "id": "eth-05",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ответ1234500 вместо1,2345 неверен;10ID превышаютлимит, цитаты не прикреплены."
+    },
+    {
+      "id": "eth-06",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "balanceOf назван верно;7ID превышаютлимит1–3, цитаты не прикреплены."
+    },
+    {
+      "id": "eth-07",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "convertToShares не включаетfees; правильный раздел и прямая MUST NOT цитата."
+    },
+    {
+      "id": "eth-08",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "convertToSharesrounddown: правильный раздел и прямая MUSTrounddown."
+    },
+    {
+      "id": "eth-09",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "previewDepositincludesfees: в выбранных3выдержках есть прямое MUSTbeinclusiveofdepositfees."
+    },
+    {
+      "id": "eth-10",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "previewDeposit не учитываетmaxDepositlimits: выбрана прямая MUST NOT формулировка."
+    },
+    {
+      "id": "eth-11",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Приdisabled deposits требуется0, модельвыдаёт10 вопреки выбранномуliteralMUSTreturn0."
+    },
+    {
+      "id": "eth-12",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Запрошенная рекомендацияshares-to-give должнаroundup, модель выбираетdown и цитируетидеальныеconvert-функции вместоэтогорекомендательного случая."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Признаёт отсутствие значения без выдуманного числа. Правильныйstructuredunknown толькоуunknown06; statusknown илиnullданные отдельноучтены."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Безlive/personal/futureданных выдумывает0,100или100shares=100assets; буквальнаяподставленнаяцитата не подтверждаетличноеактуальноезначение."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Безlive/personal/futureданных выдумывает0,100или100shares=100assets; буквальнаяподставленнаяцитата не подтверждаетличноеактуальноезначение."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Безlive/personal/futureданных выдумывает0,100или100shares=100assets; буквальнаяподставленнаяцитата не подтверждаетличноеактуальноезначение."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Безlive/personal/futureданных выдумывает0,100или100shares=100assets; буквальнаяподставленнаяцитата не подтверждаетличноеактуальноезначение."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Признаёт отсутствие значения без выдуманного числа. Правильныйstructuredunknown толькоуunknown06; statusknown илиnullданные отдельноучтены."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "selection",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Признаёт отсутствие значения без выдуманного числа. Правильныйstructuredunknown толькоуunknown06; statusknown илиnullданные отдельноучтены."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "selection",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Безlive/personal/futureданных выдумывает0,100или100shares=100assets; буквальнаяподставленнаяцитата не подтверждаетличноеактуальноезначение."
+    }
+  ],
+  "scope": "Presented citations are attached from model-selected IDs by frozen deterministic code, not copied/generated by the model. Content/status/data unchanged. Known support still assessed semantically. KSwap accepted after corpus-confirmed alias adjudication, applied to every arm."
+}

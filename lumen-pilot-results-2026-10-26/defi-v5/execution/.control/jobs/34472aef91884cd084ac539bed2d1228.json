@@ -1,0 +1,26 @@
+{
+  "id": "34472aef91884cd084ac539bed2d1228",
+  "stage": "probe-ordinary-kv-after-chrome",
+  "command": [
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "probe",
+    "--max-footprint-gib",
+    "3.5",
+    "--max-swap-growth-gib",
+    "0.25",
+    "--",
+    ".venv/bin/python",
+    "defi_harness.py",
+    "--probe"
+  ],
+  "pid": 27954,
+  "pgid": 27954,
+  "birth": "Tue Oct 27 13:23:14 2026",
+  "manager_pid": 27926,
+  "manager_birth": "Tue Oct 27 13:23:13 2026",
+  "state": "finished",
+  "log": ".control/logs/34472aef91884cd084ac539bed2d1228.log",
+  "exit_code": 124
+}

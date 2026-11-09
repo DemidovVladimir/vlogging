@@ -1,0 +1,86 @@
+{
+  "experiment_id": "cf88dcf4-7227-4053-bd90-fc740bb2eea2",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-context-v3",
+  "tracked_running_jobs": [],
+  "logical_file_bytes": 13612007,
+  "dry_run": true,
+  "jobs": [
+    {
+      "id": "58c7455dd79d4cf3aa006a719571f45f",
+      "stage": "context-exam",
+      "command": [
+        "/usr/bin/caffeinate",
+        "-i",
+        ".venv/bin/python",
+        "resource_guard.py",
+        "--stage",
+        "context-exam",
+        "--max-footprint-gib",
+        "6",
+        "--max-swap-growth-gib",
+        "0.75",
+        "--interval",
+        "1",
+        "--",
+        ".venv/bin/python",
+        "run_eval.py",
+        "--source-in-context",
+        "--out",
+        "runs/context.jsonl"
+      ],
+      "pid": 87234,
+      "pgid": 87234,
+      "birth": "Mon Oct 26 22:07:24 2026",
+      "manager_pid": 87218,
+      "manager_birth": "Mon Oct 26 22:07:24 2026",
+      "state": "finished",
+      "log": ".control/logs/58c7455dd79d4cf3aa006a719571f45f.log",
+      "exit_code": 0
+    },
+    {
+      "id": "b9868357e95f4818884e8a64e1bc6d32",
+      "stage": "context-preflight",
+      "command": [
+        ".venv/bin/python",
+        "context_preflight.py"
+      ],
+      "pid": 87050,
+      "pgid": 87050,
+      "birth": "Mon Oct 26 22:06:28 2026",
+      "manager_pid": 87039,
+      "manager_birth": "Mon Oct 26 22:06:28 2026",
+      "state": "finished",
+      "log": ".control/logs/b9868357e95f4818884e8a64e1bc6d32.log",
+      "exit_code": 0
+    },
+    {
+      "id": "d91c7e43f6aa40a59d443c707cf84b69",
+      "stage": "context-probe",
+      "command": [
+        "/usr/bin/caffeinate",
+        "-i",
+        ".venv/bin/python",
+        "resource_guard.py",
+        "--stage",
+        "context-probe",
+        "--max-footprint-gib",
+        "6",
+        "--max-swap-growth-gib",
+        "0.75",
+        "--interval",
+        "1",
+        "--",
+        ".venv/bin/python",
+        "context_probe.py"
+      ],
+      "pid": 87188,
+      "pgid": 87188,
+      "birth": "Mon Oct 26 22:07:09 2026",
+      "manager_pid": 87175,
+      "manager_birth": "Mon Oct 26 22:07:09 2026",
+      "state": "finished",
+      "log": ".control/logs/d91c7e43f6aa40a59d443c707cf84b69.log",
+      "exit_code": 0
+    }
+  ]
+}

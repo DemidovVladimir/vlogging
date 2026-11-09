@@ -1,0 +1,16 @@
+{
+  "id": "cb230e1fa98f459b929546177d4245ed",
+  "stage": "preflight",
+  "command": [
+    ".venv/bin/python",
+    "preflight.py"
+  ],
+  "pid": 76787,
+  "pgid": 76787,
+  "birth": "Mon Oct 26 19:48:23 2026",
+  "manager_pid": 76769,
+  "manager_birth": "Mon Oct 26 19:48:23 2026",
+  "state": "finished",
+  "log": ".control/logs/cb230e1fa98f459b929546177d4245ed.log",
+  "exit_code": 0
+}

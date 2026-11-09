@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-10-27T12:13:32.453064+00:00",
+  "files": {
+    "protocol.json": "b2804f8332a3134251f396f299133417511f2cf432e99df3c2bdaf943ce468d1",
+    "sources/corpus-manifest.json": "50ac6f61b42a3dc7996690111ee2f398f0272ae95f7276a1ff47ed19c55b3de4",
+    "sources/documents.json": "600b46c205dec5fa8bafaa0d23ac767924e96bfa0c0ae04727fd6a578bed77f3",
+    "sources/index-summary.json": "eb7923730dd5a5a3868e31d2e25a5161bcf3f73b3784ff87686faf80bf7cdb47",
+    "sources/search.sqlite": "a28417c2dd98fc067bad7be9d0a297471050995716d9c802e9ae2185408a1f2a",
+    "exam/test.jsonl": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+    "exam/author-notes.json": "39b2bb54c97d511e17808262d54f985d12a51bc1752ce6e4bfa3c5991f121de0",
+    "exam/independent-audit.json": "28472d013b991508b218c87a43cc13c45ef3cda90af8d173f3179166e0d163bf",
+    "exam/oracle-context-audit.json": "096c29f19c0b44b1d34e09789222fb27fd3516e4dbedda9aac5f343d1c3a0d49",
+    "inputs/prompts.jsonl": "422dc6966111d6a49d9e1b75f3b5354ec22f6b0b6451a58ccdc4e7e69a45d1ed",
+    "inputs/contexts.jsonl": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+    "inputs/summary.json": "9233a8b84643790b58152865440e497e01eba18a1755d6f47ecb0c3eeb9a3714",
+    "tools/retrieval.py": "f7bd84f1610b4d2d53c7b56b2ca923b9ec1ff519a24e7fd20b23e1ebdcd14680",
+    "tools/build_index.py": "72f94bd0f54b31eae628ca12360113f9d143eac3df606585a12a1dfb257a0160",
+    "tools/prepare_inputs.py": "f5a68aa8a0b2de8fbee8ee3bfb7c0354735ee465df62e768276df4837e64d7c2",
+    "tools/formatting.py": "4cffb9f7add2ebb86af184536872cfab2557be890e617a5be3fbe231ab0827db",
+    "tools/defi_harness.py": "3494f8c3d7ea80d836411a11232269ae47bcb9a91a3689a45aa13ff92587bb3e",
+    "tools/mechanical_checks.py": "2672c7dbf6532a94cc23c72374d0e5dbe9ca2e68f4ace9c0bb9ff99a245d34d5",
+    "preflight.json": "23c2e05c74228364e4290310f9690e461f77f3320dc303a9816d8f4d533e7fa0"
+  },
+  "runtime_freeze_sha256": "dc993fce58ae02ecec09895c4685f9a3a390a3f0b541c3db7f5a350fdbddb869",
+  "scope": "Frozen before all180 exam generations; exam+oracle checked by independent agent; primary retrieval algorithm not tuned on outcomes."
+}

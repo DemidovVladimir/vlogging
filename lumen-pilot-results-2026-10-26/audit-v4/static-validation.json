@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "static only; browser intentionally not run during MLX compute",
+  "ids": 53,
+  "local_and_anchor_links": 34,
+  "external_reference_links": 10,
+  "remote_render_assets": [],
+  "js_syntax_pass": true,
+  "all_60_raw_hashes_verified": true,
+  "historical_full": 30,
+  "diagnostic_content": 35,
+  "prompt_test_state": "guard-stopped",
+  "historical_files_unchanged": true,
+  "errors": []
+}

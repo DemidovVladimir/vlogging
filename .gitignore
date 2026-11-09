@@ -1,0 +1,14 @@
+# Dependencies and build caches
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/
+.wrangler/
+.cloudflare/
+
+# macOS
+.DS_Store
+
+# Exceeds the GitHub limit of 100 MB per file
+/tengu-youtube-brand-delivery.zip

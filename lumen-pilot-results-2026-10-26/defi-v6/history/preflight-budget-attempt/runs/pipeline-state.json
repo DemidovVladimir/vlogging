@@ -1,0 +1,15 @@
+{
+  "started_at_utc": "2026-10-27T20:53:13.007031+00:00",
+  "status": "stopped",
+  "answers_planned": 180,
+  "model_scores_available": false,
+  "error": "RuntimeError: prepare failed with 1; no automatic re-generation",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/vladimirdemidov/development/vlogging/lumen-pilot-results-2026-10-26/defi-v6/tools/pipeline.py\", line 58, in main\n    stage('prepare',['.venv/bin/python','prepare_v6.py'])\n  File \"/Users/vladimirdemidov/development/vlogging/lumen-pilot-results-2026-10-26/defi-v6/tools/pipeline.py\", line 24, in stage\n    if ret.returncode:raise RuntimeError(f'{name} failed with {ret.returncode}; no automatic re-generation')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: prepare failed with 1; no automatic re-generation\n",
+  "counts": {
+    "search_only": 0,
+    "prompt_only": 0,
+    "combined": 0
+  },
+  "finished_at_utc": "2026-10-27T20:54:59.808438+00:00",
+  "cleanup_completed": true
+}

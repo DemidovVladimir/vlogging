@@ -1,0 +1,12 @@
+{
+  "status": "waiting_for_memory_headroom",
+  "valid_main_answers": 0,
+  "planned_answers": 180,
+  "invalid_kv4_answers_excluded": 28,
+  "ordinary_kv_functional_control_passed": true,
+  "latest_guard": "protective_stop",
+  "latest_guard_reason": "Host memory pressure >= 2 for 3 consecutive samples",
+  "waiting_on": "User decision about graceful Brave quit, or another substantive reduction in host memory load. No further inference until resource gate can pass.",
+  "model_scores_available": false,
+  "at_utc": "2026-10-27T12:25:26.108235+00:00"
+}

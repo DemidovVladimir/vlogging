@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-10-26T18:50:54.915657+00:00",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2",
+  "parent_root": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot",
+  "experiment_id": "94c02954-6d12-48fc-a9bb-b854790ea84c",
+  "parent_experiment_id": "10cc942d-fd1d-4042-b33b-404efa0196f9",
+  "audit_mode": "Read-only inspection except this JSON output. No model imports, processes stopped, deletions, browser, installs or downloads.",
+  "source_evidence": {
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "run_fixed_pipeline.py": "049aa99bc054fe3cbdc2e3a98b065a69c53aecda9dc48cf76626a22e550c908b",
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "borrowed-dependencies.json": "3429ed2e18142ad6fa368a0f544cba0ebd18e578681ddc36f5d5b8dceea4a9ef"
+  },
+  "shared_dependencies": [
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/.venv",
+      "is_symlink": true,
+      "target": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.venv",
+      "target_mode": "0o755",
+      "target_uid": 501,
+      "current_uid_can_write_target": true
+    },
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/models/qwen3-1.7b-4bit",
+      "is_symlink": true,
+      "target": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/models/qwen3-1.7b-4bit",
+      "target_mode": "0o755",
+      "target_uid": 501,
+      "current_uid_can_write_target": true
+    }
+  ],
+  "shared_dependency_policy": {
+    "policy_source": "borrowed-dependencies.json",
+    "expected_usage": "Existing pinned environment/model reused without installation or download. New caches/adapters/runs remain in v2.",
+    "read_only_is_os_enforced": false,
+    "note": "The shared targets are owned by the current UID and writable. Read-only is the execution policy and pinned/hash-checked usage, not filesystem permission isolation. No permissions changed by this audit.",
+    "v2_cleanup": "shutil.rmtree(v2) removes its .venv/model symlinks without traversing their parent targets. Parent environment/model remain intact.",
+    "parent_cleanup": "shutil.rmtree(parent) ultimately deletes the real parent dependencies and every nested v2 artifact. Export for retention must be outside the parent root, not merely outside v2."
+  },
+  "scoped_output_paths": {
+    ".cache": {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/.cache",
+      "is_symlink": false,
+      "resolved_inside_v2": true
+    },
+    ".tmp": {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/.tmp",
+      "is_symlink": false,
+      "resolved_inside_v2": true
+    },
+    "adapters": {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/adapters",
+      "is_symlink": false,
+      "resolved_inside_v2": true
+    },
+    "runs": {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/runs",
+      "is_symlink": false,
+      "resolved_inside_v2": true
+    },
+    ".control": {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/.control",
+      "is_symlink": false,
+      "resolved_inside_v2": true
+    },
+    "__pycache__": {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/__pycache__",
+      "is_symlink": false,
+      "resolved_inside_v2": true
+    }
+  },
+  "managed_environment": "manage.py points HF_HOME/HF_HUB_CACHE/HF_XET_CACHE/HF_ASSETS_CACHE/PIP_CACHE_DIR/XDG_CACHE_HOME/PYTHONPYCACHEPREFIX/TMPDIR and HF_TOKEN_PATH inside v2. No --online flag in fixed pipeline stage launches; HF and Transformers remain offline. Virtualenv/model are borrowed reads, new process registries are separate.",
+  "orchestration": {
+    "pipeline_pid_snapshot": 76933,
+    "status_snapshot": "running",
+    "direct_orchestrator_registered_in_manage": false,
+    "children_launch": "Each fixed stage calls v2 manage.py exec, then caffeinate -i, then resource_guard, then one model command. Each stage has a separate session/process group and v2 job record.",
+    "failure_policy": "Any nonzero managed-stage return stops the one-shot pipeline; resource guard returns nonzero for limit/measurement failure.",
+    "stage_order_reviewed": [
+      "train-clean",
+      "train-expanded",
+      "eval-base",
+      "eval-v1",
+      "eval-clean200",
+      "eval-expanded200",
+      "eval-expanded800"
+    ],
+    "exam_generation_policy": "Both training calls return successfully before eval loop starts. Frozen-input hashes are asserted before each stage; no test scores steer training in this orchestrator.",
+    "unmanaged_controller_note": "Direct Python orchestrator has cwd=v2, can generate only local __pycache__, and must finish or be separately identified before cleanup. Nested manage cleanup cannot automatically stop an unregistered controller; lsof should detect its cwd and refuse removal."
+  },
+  "resource_controls": {
+    "guarded_processes": "Each model-command child and observed verified descendants. Guard/caffeinate/manage/orchestrator themselves are not included in the model footprint sum; host pressure and swap monitor the whole machine.",
+    "max_child_tree_footprint_bytes": 6442450944,
+    "max_swap_growth_bytes": 805306368,
+    "pressure_stop": "Host pressure >=2 for three consecutive samples",
+    "pid_reuse_protection": "libproc ri_proc_start_abstime identity verified before descendant signals; own direct Popen child may be terminated safely before reaping.",
+    "calibration": {
+      "status": "completed",
+      "wall_seconds": 24.23173758300254,
+      "peak_footprint_bytes": 2795915136,
+      "max_swap_growth_bytes": 0,
+      "observed_pressure_levels": [
+        1
+      ],
+      "exit_code": 0
+    },
+    "train_clean_snapshot": {
+      "is_final": false,
+      "sample_count": 93,
+      "peak_observed_footprint_bytes": 2313553816,
+      "latest": {
+        "at": "2026-10-26T18:50:54.864486+00:00",
+        "wall_seconds": 92.54661033300363,
+        "footprint_bytes": 2111948720,
+        "rss_bytes": 1322221568,
+        "swap_bytes": 586091069,
+        "swap_growth_bytes": 0,
+        "pressure_level": 1,
+        "pressure_streak": 0,
+        "swap_streak": 0,
+        "processes": [
+          {
+            "pid": 76962,
+            "start_abstime": 1174147753196,
+            "footprint_bytes": 2111948720,
+            "rss_bytes": 1322221568
+          }
+        ]
+      }
+    }
+  },
+  "running_registry_snapshot": [
+    {
+      "scope": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot",
+      "stage": "report-server",
+      "pid": 70641,
+      "pgid": 70641,
+      "manager_pid": 70590,
+      "birth": "Mon Oct 26 17:36:45 2026",
+      "state": "running"
+    },
+    {
+      "scope": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2",
+      "stage": "train-clean",
+      "pid": 76956,
+      "pgid": 76956,
+      "manager_pid": 76943,
+      "birth": "Mon Oct 26 19:49:22 2026",
+      "state": "running"
+    }
+  ],
+  "cleanup_sequence": [
+    "Finish both training trajectories and every fixed exam, perform semantic review, and finalize report before cleanup.",
+    "Export all intended retained results/protocols/locks/data/labels/measurement logs/video HTML outside the PARENT root, verify SHA256/readback; retain adapters only if desired explicitly.",
+    "Wait for direct run_fixed_pipeline.py to exit. Confirm both parent and v2 status registries; no training/evaluation jobs should be running.",
+    "For v2-only cleanup: run its manage.py cleanup dry-run, then its cleanup --apply --expect-id 94c02954-6d12-48fc-a9bb-b854790ea84c from outside v2. This removes v2 cache/output/symlinks only; preserve report first.",
+    "For final whole-experiment cleanup: after v2 jobs/controller finish, use parent manage.py cleanup dry-run then cleanup --apply --expect-id 10cc942d-fd1d-4042-b33b-404efa0196f9 from outside parent. Parent stop_owned handles only parent registry, including report-server; its lsof +D parent audit must succeed after that. A live v2 controller/child/open report file should cause refusal, not forced unrelated process termination.",
+    "If parent cleanup refuses, inspect exact reported PIDs and wait/close only experiment-owned holders; never broad killall or stop KS KB, Docker, browser, Ollama or unrelated apps.",
+    "Verify deleted root(s), absence of experiment processes, readable retained report and actual free-disk delta. Shared dependencies count once; do not claim model symlinks contain a second copy or that logical bytes equal physical reclaimed SSD space."
+  ],
+  "cleanup_performed": false,
+  "unrelated_app_actions": []
+}

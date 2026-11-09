@@ -1,0 +1,11 @@
+{
+  "exported_at_utc": "2026-10-27T12:26:55.874357+00:00",
+  "frozen_runtime_files_verified": 16,
+  "runtime": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5",
+  "weights_exported": false,
+  "venv_exported": false,
+  "caches_exported": false,
+  "valid_main_answers": 0,
+  "invalid_kv4_answers": 28,
+  "main_scores_available": false
+}

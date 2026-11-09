@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-26T19:10:08.512737+00:00",
+  "post_hoc": true,
+  "trigger": "No primaryarm improved strictscores overoldv1;semanticreviewalsoindicatesfailure",
+  "purpose": "Check exact training recall and inference-prefix compatibility using existingexpanded800, no additional training, no changedinputs orprimary60scorer",
+  "sample": "first30atomictrainingrows fromexpandedtrain (preexisting sourceorder)",
+  "held_out": false,
+  "max_output_tokens": 256,
+  "samegreedynonthinkingprompt": true
+}

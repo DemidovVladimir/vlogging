@@ -1,0 +1,16 @@
+{
+  "id": "bbfcda9294564f87aeacce5812fcb6e6",
+  "stage": "prepare",
+  "command": [
+    ".venv/bin/python",
+    "prepare_comparison.py"
+  ],
+  "pid": 3452,
+  "pgid": 3452,
+  "birth": "Wed Oct 28 09:57:06 2026",
+  "manager_pid": 3445,
+  "manager_birth": "Wed Oct 28 09:57:06 2026",
+  "state": "finished",
+  "log": ".control/logs/bbfcda9294564f87aeacce5812fcb6e6.log",
+  "exit_code": 0
+}

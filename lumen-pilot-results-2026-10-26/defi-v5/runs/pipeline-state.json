@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-10-27T20:19:59.545011+00:00",
+  "status": "completed",
+  "planned_answers": 180,
+  "valid_main_answers": 180,
+  "invalid_kv4_answers_excluded": 28,
+  "model_scores_available": true,
+  "authorization": "User explicitly approved graceful Brave quit and continuing the same frozen experiment.",
+  "completed_per_arm": {
+    "closed": 60,
+    "oracle": 60,
+    "retrieved": 60
+  },
+  "grading_pending": false,
+  "finished_at_utc": "2026-10-27T20:23:36.252635+00:00",
+  "cleanup_completed": true,
+  "semantic_review_complete": true
+}

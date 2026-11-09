@@ -1,0 +1,30 @@
+{
+  "origin": "http://127.0.0.1:4176",
+  "checkedAt": "2026-10-27T17:07:34.502Z",
+  "languages": {
+    "ru": {
+      "status": "passed",
+      "scenes": 9,
+      "phases": 30,
+      "viewports": 5,
+      "intro": {
+        "width": 1920,
+        "muted": false,
+        "duration": 2.411,
+        "audio": 22004
+      }
+    },
+    "en": {
+      "status": "passed",
+      "scenes": 9,
+      "phases": 30,
+      "viewports": 5,
+      "intro": {
+        "width": 1920,
+        "muted": false,
+        "duration": 2.411,
+        "audio": 22004
+      }
+    }
+  }
+}

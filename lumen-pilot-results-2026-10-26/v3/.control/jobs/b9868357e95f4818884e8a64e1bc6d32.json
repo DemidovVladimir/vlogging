@@ -1,0 +1,16 @@
+{
+  "id": "b9868357e95f4818884e8a64e1bc6d32",
+  "stage": "context-preflight",
+  "command": [
+    ".venv/bin/python",
+    "context_preflight.py"
+  ],
+  "pid": 87050,
+  "pgid": 87050,
+  "birth": "Mon Oct 26 22:06:28 2026",
+  "manager_pid": 87039,
+  "manager_birth": "Mon Oct 26 22:06:28 2026",
+  "state": "finished",
+  "log": ".control/logs/b9868357e95f4818884e8a64e1bc6d32.log",
+  "exit_code": 0
+}

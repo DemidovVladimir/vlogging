@@ -1,0 +1,20 @@
+{
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "counts": {
+    "train": 300,
+    "valid": 24
+  },
+  "oracle_checked_records": {
+    "ticket": 68,
+    "refund": 36,
+    "pass": 24,
+    "capacity": 12,
+    "unknown": 52
+  },
+  "source_rules": "F03/04 capacities18/32; F05–12 prices11/14/17, group>=5 and20% weekdays ordinary only; F15–24 pass ownership/days/daily limit/expiry with positive remaining; F25–29 refund thresholds2/6/24",
+  "uses_model_judging": false,
+  "files": {
+    "train": "eaf2e74479a329f281f6dee79811159245fb4f080aef892c43cbb09989050d02",
+    "valid": "0dcb6fb547c554fdd7cff13c53f0be44c785df30695081ac76737673cfa39c8e"
+  }
+}

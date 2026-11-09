@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-10-27T12:23:14.086737+00:00",
+  "files": {
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "download_model.py": "c18c5a0204baf42d4872213be94e9924caa58422b1dd6cddb4501dd4220ddbd9",
+    "defi_harness.py": "caa683e527fb35f5b4509b760579413d6ed1d7a4be67e547760fa9c5dc8d6410",
+    "model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "protocol.json": "9c717bc2c5e96e4605fcecb2668adc9bdf6af625fb43976a1e3984c3e0e75b65",
+    "preflight.json": "48db236ca03ed64b2508869dbf958d06f467097a0b7803cb90acf5b9195fd15f",
+    "requirements.in": "86ff0d3b1a77bcfebf9ff9e56678c6d4c2dcf2cb7a842bc97129fee37643f3c8",
+    "requirements.lock.txt": "15db912cb7b4ca68a292b682da95775837ae9cf818d3955d121ea6c87edf011e",
+    "constraints.txt": "70dbba4e805490cfbc9d03b3e37134956633e6e44af65032634c70ca6c362118",
+    "inputs/prompts.jsonl": "422dc6966111d6a49d9e1b75f3b5354ec22f6b0b6451a58ccdc4e7e69a45d1ed",
+    "inputs/contexts.jsonl": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+    "inputs/summary.json": "9233a8b84643790b58152865440e497e01eba18a1755d6f47ecb0c3eeb9a3714",
+    "provenance/original-chat-template.jinja": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+    "runs/functional-sanity.json": "868a7ce057babae794685d679052f1fb286e70427d893c39d562890b0b516853"
+  },
+  "scope": "OrdinaryKV corrected after nonexam sanity; functional probe with raw persisted and64output allowance. No main prompts changed."
+}

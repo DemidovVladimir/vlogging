@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-26T21:06:11.004941+00:00",
+  "condition": "base + full handbook in user context, no adapter",
+  "training": false,
+  "downloads_or_installs": false,
+  "exam": "Same fixed60 from v2; already used in earlier comparisons; this is a post-hoc method comparison, not a new untouched benchmark.",
+  "prompt": "Unmodified run_eval.py --source-in-context: common.SYSTEM plus source before question and requested fields. Author-only section excluded. No gold/evidence/examples.",
+  "decoding": {
+    "temperature": 0,
+    "max_tokens": 256,
+    "enable_thinking": false,
+    "seed": 42
+  },
+  "baseline": "Preserved v2 eval-base and eval-v1, same model/system/exam/versions/decoding. Context differs intentionally.",
+  "scoring": "Unmodified compare.grade; independent agent review all60 full answers using the same source and criteria. No human validation.",
+  "plan": [
+    "static preflight/token counts",
+    "guarded padded source-in-context inference resource probe, no scored exam answers",
+    "one guarded complete60 generation",
+    "grade and semantic review",
+    "HTML and export with verified hashes",
+    "cleanup whole parent runtime, weights, environments, caches and all owned servers; keep lightweight result export only"
+  ],
+  "limits": {
+    "footprint_GiB": 6,
+    "swap_growth_GiB": 0.75,
+    "pressure_warning_consecutive_samples": 3
+  },
+  "stop_on_failure": true,
+  "selection": "Single fixed context condition; no retries/prompt tuning based on exam scores; malformed answers remain failures."
+}

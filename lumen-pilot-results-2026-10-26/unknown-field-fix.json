@@ -1,0 +1,19 @@
+{
+  "purpose": "Pre-baseline correction: request meaningful nonempty fields for unknown questions so an empty schema no longer reveals the answer status. Keep gold.status=unknown and gold.data={}.",
+  "changes": {
+    "train-u1": {"fields": {"car_rental_available": "boolean"}},
+    "train-u2": {"fields": {"overnight_stay_available": "boolean"}},
+    "train-u3": {"fields": {"amount": "number", "currency": "string"}},
+    "train-u4": {"fields": {"seats_available": "boolean"}},
+    "train-u5": {"fields": {"rental_terms": "string"}},
+    "train-u6": {"fields": {"refund_policy": "string"}},
+    "valid-12": {"fields": {"home_delivery_available": "boolean"}},
+    "demo-08": {"fields": {"free_parking": "boolean"}}
+  },
+  "prepare_data_validation": [
+    "Every fixed seed item must have a nonempty fields object with string field names and supported type labels.",
+    "For gold.status=known, require set(fields)==set(gold.data).",
+    "For gold.status=unknown, require gold.data=={} even though the requested fields remain nonempty.",
+    "Keep the identical-question and rule-coverage checks. Optionally assert unique IDs across all splits, since result comparison is keyed by ID."
+  ]
+}

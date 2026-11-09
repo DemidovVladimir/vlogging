@@ -1,0 +1,159 @@
+{
+  "_id": "68939c367fb5d97aea556aa6",
+  "id": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "library_name": "mlx",
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "downloads": 46310,
+  "likes": 16,
+  "modelId": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "author": "mlx-community",
+  "sha": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "lastModified": "2026-01-02T17:11:57.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "model_type": "qwen3",
+    "quantization_config": {
+      "bits": 4
+    },
+    "tokenizer_config": {
+      "bos_token": null,
+      "eos_token": "<|im_end|>",
+      "pad_token": "<|endoftext|>",
+      "unk_token": null
+    },
+    "chat_template_jinja": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" and message.content is string and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>')) %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n{%- endfor %}\n{%- for message in messages %}\n    {%- if message.content is string %}\n        {%- set content = message.content %}\n    {%- else %}\n        {%- set content = '' %}\n    {%- endif %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {%- if loop.last or (not loop.last and reasoning_content) %}\n                {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content.strip('\\n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n            {%- else %}\n                {{- '<|im_start|>' + message.role + '\\n' + content }}\n            {%- endif %}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}"
+  },
+  "cardData": {
+    "library_name": "mlx",
+    "license": "apache-2.0",
+    "license_link": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE",
+    "pipeline_tag": "text-generation",
+    "tags": [
+      "mlx"
+    ],
+    "base_model": "Qwen/Qwen3-4B-Instruct-2507"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "size": 1570
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "371d88e9e3f85edb72629352f2c2addbe9c79ef4",
+      "size": 969
+    },
+    {
+      "rfilename": "added_tokens.json",
+      "blobId": "b54f9135e44c1e81047e8d05cb027af8bc039eed",
+      "size": 707
+    },
+    {
+      "rfilename": "chat_template.jinja",
+      "blobId": "a18870ad4ba26ac6c43758fc506c1bb6ff206bb4",
+      "size": 4040
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "ce8b8eccd1cdf6d8a30767f58e8ff858dd15eab5",
+      "size": 938
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "432531a002c181a19de338313d2375e9d7494d7e",
+      "size": 238
+    },
+    {
+      "rfilename": "merges.txt",
+      "blobId": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "size": 1671853
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "dd214eb9a62926b4a65539d04eac461017fe86ba",
+      "size": 2263022417,
+      "lfs": {
+        "sha256": "2a73c6c248601ab904e035548abd8e6abb65ea27dcb5f342fb0a8910eb44173f",
+        "size": 2263022417,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "4741a210f9920c2949ca73bbb2a7ce9583e7fd83",
+      "size": 63964
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "size": 613
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "cd71f61a15a522601badb3dc960d800d9cb3766c",
+      "size": 11422654,
+      "lfs": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "size": 11422654,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "474bbcd82077828bdec32b8dbc1826cdff2a792a",
+      "size": 5440
+    },
+    {
+      "rfilename": "vocab.json",
+      "blobId": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "size": 2776833
+    }
+  ],
+  "spaces": [
+    "EscA95103040126/kpop-agent",
+    "Cody0408/zero-cost-course-agent",
+    "CDT5058/twin-builder"
+  ],
+  "createdAt": "2025-08-06T18:17:26.000Z",
+  "safetensors": {
+    "parameters": {
+      "U32": 4022272000,
+      "BF16": 196096
+    },
+    "total": 4022468096
+  },
+  "usedStorage": 2274445071
+}

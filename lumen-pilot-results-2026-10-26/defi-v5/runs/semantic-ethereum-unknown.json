@@ -1,0 +1,497 @@
+{
+  "reviewer": "/root",
+  "reviewed_at_utc": "2026-10-27T20:28:36.224693+00:00",
+  "human_validation": false,
+  "scope": "12 Ethereum known and8 unknown, all3arms; manual review of complete raw/answer/data against frozen gold and context. Separate content from serialization/status/citations.",
+  "raw_sha256": {
+    "closed": "07459da865e6abd7216ff960dc428f09d8f7a378ed71d146f9912d3758e5c2e0",
+    "oracle": "eb0501aa5ff143bbcd5efffd8b649cc4f226a8c00b9f7d9c7e6daac871276404",
+    "retrieved": "a206e78d0820517c89212b5548f2bcc7c248bd128c6d2415d670006ee1e5fbdf"
+  },
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "contexts_sha256": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "adjudication_sha256": "0b641ee2a740fe82c5ec4cfadc203c875a30ee45689a591915a59c46f1a6bc4f",
+  "items": [
+    {
+      "id": "eth-01",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Отрицание относится к предположению always true; следующая фраза прямо требует обработки false, data=true. Смысл верен; adjudication B.",
+      "source_evidence_notes": "ERC-20 требует корректной обработки false; предполагать неизменный true нельзя."
+    },
+    {
+      "id": "eth-01",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "ERC-20 требует корректной обработки false; предполагать неизменный true нельзя."
+    },
+    {
+      "id": "eth-01",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "ERC-20 требует корректной обработки false; предполагать неизменный true нельзя."
+    },
+    {
+      "id": "eth-02",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "decimals — OPTIONAL, поэтому обязательное наличие не гарантировано."
+    },
+    {
+      "id": "eth-02",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "decimals — OPTIONAL, поэтому обязательное наличие не гарантировано."
+    },
+    {
+      "id": "eth-02",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "decimals — OPTIONAL, поэтому обязательное наличие не гарантировано."
+    },
+    {
+      "id": "eth-03",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно отрицает обязательный Transfer для нулевого перевода.",
+      "source_evidence_notes": "Нулевой transfer обязан рассматриваться как обычный и вызывать Transfer."
+    },
+    {
+      "id": "eth-03",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "Нулевой transfer обязан рассматриваться как обычный и вызывать Transfer."
+    },
+    {
+      "id": "eth-03",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно отрицает обязательный Transfer для нулевого перевода.",
+      "source_evidence_notes": "Нулевой transfer обязан рассматриваться как обычный и вызывать Transfer."
+    },
+    {
+      "id": "eth-04",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно говорит adds вместо replaces для повторного approve.",
+      "source_evidence_notes": "Повторный approve overwrites allowance, а не складывает значения."
+    },
+    {
+      "id": "eth-04",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "Повторный approve overwrites allowance, а не складывает значения."
+    },
+    {
+      "id": "eth-04",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "Повторный approve overwrites allowance, а не складывает значения."
+    },
+    {
+      "id": "eth-05",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Не выполнено преобразование raw units: 1234500 вместо 1.2345 токена.",
+      "source_evidence_notes": "1234500 / 10^6 = 1.2345 токена; исходные raw units не равны display units."
+    },
+    {
+      "id": "eth-05",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Не выполнено преобразование raw units: 1234500 вместо 1.2345 токена.",
+      "source_evidence_notes": "1234500 / 10^6 = 1.2345 токена; исходные raw units не равны display units."
+    },
+    {
+      "id": "eth-05",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Не выполнено преобразование raw units: 1234500 вместо 1.2345 токена.",
+      "source_evidence_notes": "1234500 / 10^6 = 1.2345 токена; исходные raw units не равны display units."
+    },
+    {
+      "id": "eth-06",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "balanceOf возвращает баланс owner; totalSupply — общий объём."
+    },
+    {
+      "id": "eth-06",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "balanceOf возвращает баланс owner; totalSupply — общий объём."
+    },
+    {
+      "id": "eth-06",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "balanceOf возвращает баланс owner; totalSupply — общий объём."
+    },
+    {
+      "id": "eth-07",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "convertToShares не включает vault fees."
+    },
+    {
+      "id": "eth-07",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "convertToShares не включает vault fees."
+    },
+    {
+      "id": "eth-07",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "convertToShares не включает vault fees."
+    },
+    {
+      "id": "eth-08",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "convertToShares округляет down к нулю."
+    },
+    {
+      "id": "eth-08",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "convertToShares округляет down к нулю."
+    },
+    {
+      "id": "eth-08",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "convertToShares округляет down к нулю."
+    },
+    {
+      "id": "eth-09",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно исключает deposit fees из previewDeposit.",
+      "source_evidence_notes": "previewDeposit обязан включать deposit fees."
+    },
+    {
+      "id": "eth-09",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно исключает deposit fees из previewDeposit.",
+      "source_evidence_notes": "previewDeposit обязан включать deposit fees."
+    },
+    {
+      "id": "eth-09",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно исключает deposit fees из previewDeposit.",
+      "source_evidence_notes": "previewDeposit обязан включать deposit fees."
+    },
+    {
+      "id": "eth-10",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "previewDeposit не учитывает deposit limits maxDeposit."
+    },
+    {
+      "id": "eth-10",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "previewDeposit не учитывает deposit limits maxDeposit."
+    },
+    {
+      "id": "eth-10",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена. Лишняя завершающая кавычка нарушает JSON, но смысл однозначен.",
+      "source_evidence_notes": "previewDeposit не учитывает deposit limits maxDeposit."
+    },
+    {
+      "id": "eth-11",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "При полностью отключённых депозитах maxDeposit возвращает 0."
+    },
+    {
+      "id": "eth-11",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "При полностью отключённых депозитах maxDeposit возвращает 0."
+    },
+    {
+      "id": "eth-11",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "При полностью отключённых депозитах maxDeposit возвращает 0."
+    },
+    {
+      "id": "eth-12",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "Требуемые shares для получения заданных assets округляются up, в отличие от convertToShares."
+    },
+    {
+      "id": "eth-12",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Запрошенное содержание верно; подтверждающая дословная цитата не приведена.",
+      "source_evidence_notes": "Требуемые shares для получения заданных assets округляются up, в отличие от convertToShares."
+    },
+    {
+      "id": "eth-12",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Перенесено округление down на случай требуемых shares; нужно up.",
+      "source_evidence_notes": "Требуемые shares для получения заданных assets округляются up, в отличие от convertToShares."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не переданы адрес, рынок и актуальные данные личной позиции; общая формула не определяет её health factor."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не переданы адрес, рынок и актуальные данные личной позиции; общая формула не определяет её health factor."
+    },
+    {
+      "id": "unknown-01",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не переданы адрес, рынок и актуальные данные личной позиции; общая формула не определяет её health factor."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Статическая документация не устанавливает APY последнего блока; нужен актуальный снимок выбранного рынка."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Статическая документация не устанавливает APY последнего блока; нужен актуальный снимок выбранного рынка."
+    },
+    {
+      "id": "unknown-02",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдуман текущий APY 0.045 без блока и API/onchain snapshot.",
+      "source_evidence_notes": "Статическая документация не устанавливает APY последнего блока; нужен актуальный снимок выбранного рынка."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не определены адрес резерва и его текущее состояние; точная доступная ликвидность не дана."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не определены адрес резерва и его текущее состояние; точная доступная ликвидность не дана."
+    },
+    {
+      "id": "unknown-03",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Выдумана текущая доступная ликвидность 60 и смешаны USDC с процентами; резерв и состояние не переданы.",
+      "source_evidence_notes": "Не определены адрес резерва и его текущее состояние; точная доступная ликвидность не дана."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Нет данных об аккаунте, залоге, долге и borrow factors личной позиции; формула без этих входов не даёт число."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Нет данных об аккаунте, залоге, долге и borrow factors личной позиции; формула без этих входов не даёт число."
+    },
+    {
+      "id": "unknown-04",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Нет данных об аккаунте, залоге, долге и borrow factors личной позиции; формула без этих входов не даёт число."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не заданы ни состав позиции, ни будущие цены, ставки и сделки; точный реализованный PnL не установлен."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не заданы ни состав позиции, ни будущие цены, ставки и сделки; точный реализованный PnL не установлен."
+    },
+    {
+      "id": "unknown-05",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Не заданы ни состав позиции, ни будущие цены, ставки и сделки; точный реализованный PnL не установлен."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Нет личного баланса, долга, цен, ликвидности и идентификатора позиции; общие ограничения не задают точную сумму вывода."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Нет личного баланса, долга, цен, ликвидности и идентификатора позиции; общие ограничения не задают точную сумму вывода."
+    },
+    {
+      "id": "unknown-06",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Нет личного баланса, долга, цен, ликвидности и идентификатора позиции; общие ограничения не задают точную сумму вывода."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Allowance — состояние конкретной пары owner/spender, а не константа ERC20; адреса и чтение контракта не переданы."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Allowance — состояние конкретной пары owner/spender, а не константа ERC20; адреса и чтение контракта не переданы."
+    },
+    {
+      "id": "unknown-07",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": null,
+      "notes": "Правильно признаёт отсутствие необходимых данных; точное число не выдумано. JSON/status/data проверяются отдельно.",
+      "source_evidence_notes": "Allowance — состояние конкретной пары owner/spender, а не константа ERC20; адреса и чтение контракта не переданы."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Придуман курс/результат конкретного vault без его состояния: 0 assets. Стандарт не устанавливает такой ответ.",
+      "source_evidence_notes": "Не определены конкретный vault и его состояние; стандарт не фиксирует курс ста shares к underlying assets."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Придуман курс/результат конкретного vault без его состояния: 100 assets. Стандарт не устанавливает такой ответ.",
+      "source_evidence_notes": "Не определены конкретный vault и его состояние; стандарт не фиксирует курс ста shares к underlying assets."
+    },
+    {
+      "id": "unknown-08",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": null,
+      "notes": "Придуман курс/результат конкретного vault без его состояния: 100 assets. Стандарт не устанавливает такой ответ.",
+      "source_evidence_notes": "Не определены конкретный vault и его состояние; стандарт не фиксирует курс ста shares к underlying assets."
+    }
+  ]
+}

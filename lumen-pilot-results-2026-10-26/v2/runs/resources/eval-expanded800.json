@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "stage": "eval-expanded800",
+  "started_at": "2026-10-26T19:05:29.443411+00:00",
+  "command": [
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/eval-expanded800.jsonl",
+    "--adapter",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/adapters/expanded"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 59,
+  "peak_footprint_bytes": 1841317616,
+  "peak_rss_bytes": 1301594112,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 586091069,
+  "child_pid": 81559,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T19:06:28.869606+00:00",
+  "wall_seconds": 59.426441542003886,
+  "observed_process_identities": {
+    "81559": 1197359604047
+  },
+  "reused_pids_ignored": []
+}

@@ -1,0 +1,41 @@
+{
+  "created_at_utc": "2026-10-27T21:08:56.853923+00:00",
+  "files": {
+    "defi_harness.py": "64bc43b49f0bb73edbda4ba9017d89c57ba65fd699663bde714072a1b424cb13",
+    "prepare_selection.py": "25f96074b3c9b6127a93d917be7d0891471d492d2cdfaad474ce9a31e162a8b0",
+    "retrieval_v6.py": "64bb8a97be1df1222a57be42e3ece709a9e97872f7972befc499aeb231ef556d",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "retrieval_v5.py": "f7bd84f1610b4d2d53c7b56b2ca923b9ec1ff519a24e7fd20b23e1ebdcd14680",
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "download_model.py": "c18c5a0204baf42d4872213be94e9924caa58422b1dd6cddb4501dd4220ddbd9",
+    "pipeline.py": "262ae68041ee12a3fe2cd50c724920ee1c2b4467a3655ffdea6c9d30b151af30",
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "requirements.in": "86ff0d3b1a77bcfebf9ff9e56678c6d4c2dcf2cb7a842bc97129fee37643f3c8",
+    "requirements.lock.txt": "15db912cb7b4ca68a292b682da95775837ae9cf818d3955d121ea6c87edf011e",
+    "config.json": "389fab1cc906db8103b698ce422c9ae695ed247b7bb875218745a06422f9d5b4",
+    "preflight.json": "61b0ed6922023421d5507db9d9d59f278152640088f014a74fce542feea45a2d",
+    "inputs/visible-questions.jsonl": "f003b4f17ea8e8f4ff88d74b403c1376bb9e178e947e47ea1c764c4809230f84",
+    "inputs/baseline-retrieved-contexts.jsonl": "44512e9dbddcdce675342fa52af1ceebe6aa41d9f2a777b26abe87242daed11c",
+    "inputs/prompts.jsonl": "c942b04be669092af7a7c39a1fc1558b26a4267ebdd56f8341a03c33a453e6d0",
+    "inputs/contexts.jsonl": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+    "inputs/summary.json": "d7409e485d255c77aab1e961a670d1ee51344cd7039426bd8e997aab2dbbc3b4",
+    ".lumen-experiment.json": "c927d40d5663ad0ed99d72421c32ccc69374a10981e59f36899eb6d0f686da6b",
+    "provenance/original-chat-template.jinja": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+  },
+  "baseline_files": {
+    "exam/test.jsonl": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+    "exam/grading-rubric.json": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+    "runs/grades.json": "c182a579e52b7346a39c991107c0b62c936ad5aa7a4b4ad03a9d54b87237af41",
+    "inputs/contexts.jsonl": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+    "inputs/prompts.jsonl": "422dc6966111d6a49d9e1b75f3b5354ec22f6b0b6451a58ccdc4e7e69a45d1ed",
+    "sources/documents.json": "600b46c205dec5fa8bafaa0d23ac767924e96bfa0c0ae04727fd6a578bed77f3",
+    "sources/search.sqlite": "a28417c2dd98fc067bad7be9d0a297471050995716d9c802e9ae2185408a1f2a",
+    "execution-resumed/model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094"
+  },
+  "controller_sha256": "262ae68041ee12a3fe2cd50c724920ee1c2b4467a3655ffdea6c9d30b151af30",
+  "changes_frozen_before_valid_inference": true,
+  "development_benchmark_already_seen": true,
+  "no_gold_read_by_retrieval_or_formatter": true,
+  "same_model_same_decoding_same_1400_input_384_output_budget": true
+}

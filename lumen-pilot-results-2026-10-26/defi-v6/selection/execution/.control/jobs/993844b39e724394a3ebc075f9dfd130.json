@@ -1,0 +1,16 @@
+{
+  "id": "993844b39e724394a3ebc075f9dfd130",
+  "stage": "prepare",
+  "command": [
+    ".venv/bin/python",
+    "prepare_selection.py"
+  ],
+  "pid": 81284,
+  "pgid": 81284,
+  "birth": "Tue Oct 27 22:08:52 2026",
+  "manager_pid": 81277,
+  "manager_birth": "Tue Oct 27 22:08:52 2026",
+  "state": "finished",
+  "log": ".control/logs/993844b39e724394a3ebc075f9dfd130.log",
+  "exit_code": 0
+}

@@ -1,0 +1,111 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Люмен — фактическое сравнение</title><style>body{font:15px/1.5 system-ui;margin:30px;background:#101724;color:#dce7f4}table{border-collapse:collapse;width:100%}td,th{border:1px solid #42536b;padding:14px;text-align:left;vertical-align:top}td{min-width:200px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}a{color:#70f5df}.scroll{overflow:auto}</style><h1>Мини-пилот: до 0/8, после 0/8 по автоматической проверке полей</h1><p>Это 8 пробных вопросов, а не полный экзамен на 80 задач. Проверьте объяснения и ограничения вручную: совпадение числовых полей не гарантирует верность всей рекомендации. Невалидный JSON считается ошибкой формата и может скрывать содержательно верный ответ.</p><div class="scroll"><table><tr><th>Задача</th><th>Эталон</th><th>До</th><th>После</th></tr><tr><td>demo-01: Как называется более вместительный зал «Люмена» и сколько в нём мест?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;hall\&quot;: \&quot;Астра\&quot;, \&quot;seats\&quot;: 32}&quot;,
+  &quot;data&quot;: {
+    &quot;hall&quot;: &quot;Астра&quot;,
+    &quot;seats&quot;: 32
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.73 s</p><pre>{
+  &quot;status&quot;: &quot;unknown&quot;,
+  &quot;answer&quot;: &quot;Данные о более вместительном зале «Люмена» и количестве мест не предоставлены в доступной информации.&quot;,
+  &quot;data&quot;: {}
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.78 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;hall\&quot;: \&quot;Солнышко\&quot;, \&quot;seats\&quot;: 120}&quot;, &quot;data&quot;: {&quot;hall&quot;: &quot;Солнышко&quot;, &quot;seats&quot;: 120}}</pre></td></tr><tr><td>demo-02: Какая цена у абонемента «Искра»?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 24, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 24,
+    &quot;currency&quot;: &quot;EUR&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.75 s</p><pre>{
+  &quot;status&quot;: &quot;unknown&quot;,
+  &quot;answer&quot;: &quot;Информация о цене абонемента «Искра» не доступна из-за отсутствия актуальных данных в открытых источниках.&quot;,
+  &quot;data&quot;: {}
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.61 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 12, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;, &quot;data&quot;: {&quot;amount&quot;: 12, &quot;currency&quot;: &quot;EUR&quot;}}</pre></td></tr><tr><td>demo-03: Пять друзей идут в среду на один обычный сеанс «Люмена», места есть. Сколько они заплатят вместе при покупке разовых билетов?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 44, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 44,
+    &quot;currency&quot;: &quot;EUR&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>1.19 s</p><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;При покупке разовых билетов на один сеанс цена фиксирована и не зависит от количества человек. Если билеты стоят 100 рублей каждый, то 5 друзей заплатят 500 рублей.&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 500,
+    &quot;currency&quot;: &quot;rub&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.62 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 5, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;, &quot;data&quot;: {&quot;amount&quot;: 5, &quot;currency&quot;: &quot;EUR&quot;}}</pre></td></tr><tr><td>demo-04: Пять друзей покупают разовые билеты на обычный сеанс «Люмена» в субботу. Места есть. Какова общая цена?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 70, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 70,
+    &quot;currency&quot;: &quot;EUR&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>1.06 s</p><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;Общая цена рассчитывается как сумма цен на разовые билеты. Если все билеты проданы на одинаковую цену, то общая цена равна сумме цен на все билеты.&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 0,
+    &quot;currency&quot;: &quot;rub&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.66 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 12, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;, &quot;data&quot;: {&quot;amount&quot;: 12, &quot;currency&quot;: &quot;EUR&quot;}}</pre></td></tr><tr><td>demo-05: Два человека хотят посетить по одному обычному сеансу в понедельник, вторник и среду одной недели. Места есть. Сколько стоит самый дешёвый вариант из справочника и что купить?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 48, \&quot;currency\&quot;: \&quot;EUR\&quot;, \&quot;purchase\&quot;: \&quot;Искра\&quot;, \&quot;quantity\&quot;: 2}&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 48,
+    &quot;currency&quot;: &quot;EUR&quot;,
+    &quot;purchase&quot;: &quot;Искра&quot;,
+    &quot;quantity&quot;: 2
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>1.65 s</p><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;Самый дешёвый вариант — это билеты на обычные сеансы в понедельник, вторник и среду, которые можно купить в обычных кинотеатрах. Стоимость зависит от места, но обычно это более дешевле, чем билеты на специальные сеансы.&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 0,
+    &quot;currency&quot;: &quot;RUB&quot;,
+    &quot;purchase&quot;: &quot;билеты на обычные сеансы&quot;,
+    &quot;quantity&quot;: 1
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.96 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 12, \&quot;currency\&quot;: \&quot;EUR\&quot;, \&quot;purchase\&quot;: \&quot;счет\&quot;, \&quot;quantity\&quot;: 1}&quot;, &quot;data&quot;: {&quot;amount&quot;: 12, &quot;currency&quot;: &quot;EUR&quot;, &quot;purchase&quot;: &quot;счет&quot;, &quot;quantity&quot;: 1}}</pre></td></tr><tr><td>demo-06: Пятеро зрителей идут в четверг на премьеру, места есть. Можно ли применить групповую скидку или абонементы? Сколько стоят разовые билеты вместе?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 85, \&quot;currency\&quot;: \&quot;EUR\&quot;, \&quot;group_discount\&quot;: false, \&quot;passes_valid\&quot;: false}&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 85,
+    &quot;currency&quot;: &quot;EUR&quot;,
+    &quot;group_discount&quot;: false,
+    &quot;passes_valid&quot;: false
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>1.42 s</p><pre>{
+  &quot;status&quot;: &quot;unknown&quot;,
+  &quot;answer&quot;: &quot;Для определения стоимости разовых билетов вместе необходимо знать количество зрителей, тип билетов (разовый или абонемент), и текущую цену билетов. Также нужно уточнить, применяется ли групповая скидка.&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 0,
+    &quot;currency&quot;: &quot;&quot;,
+    &quot;group_discount&quot;: false,
+    &quot;passes_valid&quot;: false
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.96 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 120, \&quot;currency\&quot;: \&quot;EUR\&quot;, \&quot;group_discount\&quot;: false, \&quot;passes_valid\&quot;: false}&quot;, &quot;data&quot;: {&quot;amount&quot;: 120, &quot;currency&quot;: &quot;EUR&quot;, &quot;group_discount&quot;: false, &quot;passes_valid&quot;: false}}</pre></td></tr><tr><td>demo-07: За обычный билет уплатили 11 евро и возвращают его за четыре часа до сеанса. Сколько денег вернут?</td><td><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 5.5, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 5.5,
+    &quot;currency&quot;: &quot;EUR&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.79 s</p><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;Билет возвращают безвозмездно, поэтому вернут 11 евро.&quot;,
+  &quot;data&quot;: {
+    &quot;amount&quot;: 11,
+    &quot;currency&quot;: &quot;EUR&quot;
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.65 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;amount\&quot;: 11, \&quot;currency\&quot;: \&quot;EUR\&quot;}&quot;, &quot;data&quot;: {&quot;amount&quot;: 11, &quot;currency&quot;: &quot;EUR&quot;}}</pre></td></tr><tr><td>demo-08: Есть ли у «Люмена» бесплатная парковка?</td><td><pre>{
+  &quot;status&quot;: &quot;unknown&quot;,
+  &quot;answer&quot;: &quot;В справочнике нет нужных данных&quot;,
+  &quot;data&quot;: {}
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.63 s</p><pre>{
+  &quot;status&quot;: &quot;known&quot;,
+  &quot;answer&quot;: &quot;Да, «Люмен» предлагает бесплатную парковку.&quot;,
+  &quot;data&quot;: {
+    &quot;free_parking&quot;: true
+  }
+}</pre></td><td><b>Проверить ошибку / формат</b><p>0.46 s</p><pre>{&quot;status&quot;: &quot;known&quot;, &quot;answer&quot;: &quot;{\&quot;free_parking\&quot;: false}&quot;, &quot;data&quot;: {&quot;free_parking&quot;: false}}</pre></td></tr></table></div></html>

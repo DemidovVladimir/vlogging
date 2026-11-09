@@ -1,0 +1,10 @@
+{
+  "experiment_id": "ae864efc-4123-4cfa-aa71-fb7596115730",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-prompt-v4",
+  "tracked_running_jobs": [],
+  "logical_file_bytes": 1838884396,
+  "dry_run": false
+}
+{"deleted_root": true, "tracked_running_jobs": 0, "logical_bytes_removed_estimate": 1838884396, "observed_free_disk_delta_bytes": 1886748672, "scope": "dedicated experiment directory; no global caches or other services touched"}
+
+STDERR

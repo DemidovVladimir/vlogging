@@ -1,0 +1,1633 @@
+{
+  "raw_files": 1594,
+  "indexed_documents": 1229,
+  "migration_or_duplicate_files_skipped": 365,
+  "chunks": 6993,
+  "chunking": "400 whitespace words with50 overlap; not an exact model-token count",
+  "status_counts": {
+    "Living": 3,
+    "Final": 284,
+    "Stagnant": 396,
+    "Withdrawn": 45,
+    "Last Call": 48,
+    "Draft": 380,
+    "Review": 73
+  },
+  "default_final_living_documents": 287,
+  "database_bytes": 35983360,
+  "retrieval": "SQLite FTS5 lexical BM25, no embeddings, no model answer generation",
+  "examples": [
+    {
+      "query": "\"fungible\" AND \"token\"",
+      "status_filter": [
+        "Final",
+        "Living"
+      ],
+      "results": [
+        {
+          "proposal": "1155",
+          "title": "Multi Token Standard",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1155.md",
+          "part": 20,
+          "snippet": " … Therefore to access a particular ⟦token⟧ set within a mixed data contract and a particular non-⟦fungible⟧ within that set, `_id` could be passed as `<uint128: base ⟦token⟧ id><uint128: index of non-⟦fungible⟧ … ",
+          "bm25": -6.979912437096688
+        },
+        {
+          "proposal": "3525",
+          "title": "Semi-Fungible Token",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3525.md",
+          "part": 0,
+          "snippet": "## Abstract This is a standard for semi-⟦fungible⟧ tokens. The set of smart contract interfaces described in this document defines an [ERC-721](./eip-721.md) compatible ⟦token⟧ standard. This standard introduces an `<ID … ",
+          "bm25": -6.927628053210007
+        },
+        {
+          "proposal": "1155",
+          "title": "Multi Token Standard",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1155.md",
+          "part": 21,
+          "snippet": "and the same mask shifted by 128. ```solidity uint256 baseTokenNFT = 12345 << 128; uint128 indexNFT = 50; uint256 baseTokenFT = 54321 << 128; balanceOf(msg.sender, baseTokenNFT); // Get balance of the base ⟦token⟧ for non-⟦fungible⟧ set 12345 … ",
+          "bm25": -6.823615903889029
+        }
+      ]
+    },
+    {
+      "query": "\"vault\" AND \"shares\"",
+      "status_filter": [
+        "Final",
+        "Living"
+      ],
+      "results": [
+        {
+          "proposal": "4626",
+          "title": "Tokenized Vaults",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md",
+          "part": 4,
+          "snippet": " … uint256 ``` #### mint Mints exactly `⟦shares⟧` ⟦Vault⟧ ⟦shares⟧ to `receiver` by depositing `assets` of underlying tokens. MUST emit the `Deposit` event. MUST support EIP-20 `approve` / `transferFrom` on `asset` as a mint flow. MAY support … ",
+          "bm25": -15.511236088547872
+        },
+        {
+          "proposal": "4626",
+          "title": "Tokenized Vaults",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md",
+          "part": 5,
+          "snippet": " … uint256 ``` #### maxRedeem Maximum amount of ⟦Vault⟧ ⟦shares⟧ that can be redeemed from the `owner` balance in the ⟦Vault⟧, through a `redeem` call. MUST return the maximum amount of ⟦shares⟧ that could be transferred from … ",
+          "bm25": -15.310630694497242
+        },
+        {
+          "proposal": "4626",
+          "title": "Tokenized Vaults",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md",
+          "part": 7,
+          "snippet": " … MUST revert if all of `⟦shares⟧` cannot be redeemed (due to withdrawal limit being reached, slippage, the owner not having enough ⟦shares⟧, etc). Note that some implementations will require pre-requesting to the ⟦Vault⟧ … ",
+          "bm25": -15.296654835485006
+        }
+      ]
+    },
+    {
+      "query": "\"flash\" AND \"loan\"",
+      "status_filter": [
+        "Final",
+        "Living"
+      ],
+      "results": [
+        {
+          "proposal": "3156",
+          "title": "Flash Loans",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3156.md",
+          "part": 0,
+          "snippet": "## Simple Summary This ERC provides standard interfaces and processes for single-asset ⟦flash⟧ loans. ## Abstract A ⟦flash⟧ ⟦loan⟧ is a smart contract transaction in which a lender smart contract lends assets to a borrower … ",
+          "bm25": -19.8487292366637
+        },
+        {
+          "proposal": "3156",
+          "title": "Flash Loans",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3156.md",
+          "part": 6,
+          "snippet": " … 0; } } ``` ## Security Considerations ### Verification of callback arguments The arguments of `onFlashLoan` are expected to reflect the conditions of the ⟦flash⟧ ⟦loan⟧, but cannot be trusted unconditionally. They can be divided in two groups, that … ",
+          "bm25": -18.6240371616921
+        },
+        {
+          "proposal": "3156",
+          "title": "Flash Loans",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-3156.md",
+          "part": 5,
+          "snippet": " … to be charged for the ⟦loan⟧, on top of the returned principal. */ function _flashFee( address token, uint256 amount ) internal view returns (uint256) { return amount * fee / 10000; } } ``` ### ⟦Flash⟧ ⟦Loan⟧ Reference Implementation ``` pragma solidity ^0.8 … ",
+          "bm25": -18.44080761903054
+        }
+      ]
+    },
+    {
+      "query": "\"permit\" AND \"signature\"",
+      "status_filter": [
+        "Final",
+        "Living"
+      ],
+      "results": [
+        {
+          "proposal": "1450",
+          "title": "RTA-Controlled Security Token",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-1450.md",
+          "part": 12,
+          "snippet": " … USDC, DAI, and other modern stablecoins support ⟦permit⟧ * * Implementation: * 1. Call ⟦permit⟧ on the configured fee token with the provided ⟦signature⟧ * 2. Then execute the same logic as requestTransferWithFee * 3. This avoids users needing … ",
+          "bm25": -9.85883544298112
+        },
+        {
+          "proposal": "2612",
+          "title": "Permit Extension for EIP-20 Signed Approvals",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2612.md",
+          "part": 3,
+          "snippet": " … The standard EIP-20 race condition for approvals (SWC-114) applies to `⟦permit⟧` as well. If the `DOMAIN_SEPARATOR` contains the `chainId` and is defined at contract deployment instead of reconstructed for every ⟦signature⟧ … ",
+          "bm25": -9.799988133901339
+        },
+        {
+          "proposal": "2612",
+          "title": "Permit Extension for EIP-20 Signed Approvals",
+          "status": "Final",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-2612.md",
+          "part": 1,
+          "snippet": " … secp256k1` ⟦signature⟧ from `owner` of the message: If any of these conditions are not met, the `⟦permit⟧` call must revert. ```sol keccak256(abi.encodePacked( hex\"1901\", DOMAIN_SEPARATOR, keccak256(abi.encode( keccak256(\"⟦Permit⟧(address … ",
+          "bm25": -9.54817443437714
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "English keyword demo, not a Russian or multilingual retrieval benchmark.",
+    "These example queries were not held out; top3 hits are not a retrieval accuracy score.",
+    "Final proposal status does not prove deployment on any chain.",
+    "No LLM quality gain has been measured on this crypto corpus."
+  ],
+  "skipped": [
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1046.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1056.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1062.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1066.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1077.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1078.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1080.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1081.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1123.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1129.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1132.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1154.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1155.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1167.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1175.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1178.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1185.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1191.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1202.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1203.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1207.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1261.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1271.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1319.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1328.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1337.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1363.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-137.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1386.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1387.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1388.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1417.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1438.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1444.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1450.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1462.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1484.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1491.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1504.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1523.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1538.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1577.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1581.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1592.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1613.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1616.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-162.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1620.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1633.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-165.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1710.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-173.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1753.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1761.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1775.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-181.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1812.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1820.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1822.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1844.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-190.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1900.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-191.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1921.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1922.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1923.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1948.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1967.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1973.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-1996.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-20.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2009.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2018.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2019.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2020.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2021.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-205.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2098.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2135.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2157.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2193.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-223.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2266.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2304.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2309.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2333.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2334.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2335.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2386.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2390.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2400.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2470.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2477.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2494.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2520.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2525.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2535.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2544.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2569.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2612.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2615.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2645.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2678.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2680.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2746.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2767.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2770.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2771.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2848.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2876.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2917.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2942.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2980.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-2981.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3000.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3005.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3009.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3135.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3156.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3224.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3234.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3386.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3440.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3448.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3450.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3475.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3525.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3561.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3569.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3589.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3643.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3668.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3722.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3754.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3770.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-3772.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4337.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4341.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4353.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4361.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4393.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4400.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4430.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4494.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4519.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4521.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4524.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4527.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4546.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4626.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4671.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4675.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4799.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4804.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4824.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4834.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4883.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4885.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4886.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4906.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4907.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4910.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4931.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4944.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4950.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4955.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4972.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4973.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4974.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-4987.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5005.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5006.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5007.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5008.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5018.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5023.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5050.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5058.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5094.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5095.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5114.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5115.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5131.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5139.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5143.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5164.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5169.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5173.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5185.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5187.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5189.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5192.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5202.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5216.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5218.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5219.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5247.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5252.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5267.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5269.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5289.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5298.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5313.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5334.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5375.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5380.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5409.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5437.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5453.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5484.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5485.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5489.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5496.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-55.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5501.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5505.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5507.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5516.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5521.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5528.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5539.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5553.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5554.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5559.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5560.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5564.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5568.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5570.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5573.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5585.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5604.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5606.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5615.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5625.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5630.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5633.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5635.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5639.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5643.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5646.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5679.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5700.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5719.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5725.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5727.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5732.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5744.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5750.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5753.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5773.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5791.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5805.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5827.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5850.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5851.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5883.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5902.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-5982.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-600.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-601.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6047.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6059.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6065.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6066.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6093.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6105.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6120.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6123.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6147.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6150.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6170.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6220.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6224.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6239.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6268.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6315.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6327.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-634.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6353.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6357.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6358.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6366.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6372.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6381.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6384.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6454.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6464.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6492.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6506.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6538.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6551.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6596.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6604.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6617.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6662.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6672.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6682.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-67.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6734.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6735.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6785.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6786.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6787.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6806.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6808.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6809.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-681.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6821.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6823.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6860.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6864.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6865.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6900.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6909.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6944.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6956.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6960.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6981.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6982.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-6997.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7007.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7015.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7053.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7066.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7085.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7092.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7093.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7144.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7160.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7201.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-721.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7231.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-725.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7303.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7401.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7405.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7406.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7409.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7412.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7417.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7425.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7432.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7444.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7484.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7507.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7508.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7511.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7512.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7521.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7522.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-7528.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-777.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-801.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-820.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-823.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-831.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-875.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-884.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-897.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-900.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-902.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-918.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-926.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-927.md",
+      "reason": "migration stub"
+    },
+    {
+      "path": "crypto-corpus/EIPs/EIPS/eip-998.md",
+      "reason": "migration stub"
+    }
+  ]
+}

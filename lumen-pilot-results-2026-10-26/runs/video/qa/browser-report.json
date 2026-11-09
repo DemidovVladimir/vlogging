@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "draft": true,
+  "checks": [
+    "Intro plays and ends after explicit click",
+    "All9scenes/hash-refresh; everyphaseforward/back, pausedclock and2x/normal rate at5viewports",
+    "Home/End, scene forward/back",
+    "Visibilitychange integration (document.hidden simulated): clock freezes/resumes",
+    "Reducedmotion finalstate and manualphases",
+    "SeparateprivateSCRIPT/PLANviewers load"
+  ],
+  "failures": [],
+  "errors": [],
+  "requests": []
+}

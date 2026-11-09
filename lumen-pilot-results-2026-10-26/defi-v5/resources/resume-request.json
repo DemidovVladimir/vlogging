@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-10-27T20:17:43.922394+00:00",
+  "authorization": "User explicitly approved normal Brave/Spotify/Slack quit and continuation",
+  "same_exam_and_180prompts": true,
+  "original_input_freeze_sha256": "52152ad4d7aef3ee01b9798b8a3988c96cdaeefc1acb7b9878afd35f83202a53",
+  "runtime": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5",
+  "new_runtime_requires_fresh_model_and_probe": true
+}

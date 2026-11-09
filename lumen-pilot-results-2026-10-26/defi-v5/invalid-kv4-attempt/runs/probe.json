@@ -1,0 +1,22 @@
+{
+  "raw": "capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity",
+  "seconds": 2.3685890000051586,
+  "prompt_tokens": 1820,
+  "generation_tokens": 16,
+  "finish_reason": "length",
+  "mlx_cumulative_peak_bytes": 1346043686,
+  "not_exam": true,
+  "target_total_tokens": 1783,
+  "settings": {
+    "temperature": 0,
+    "seed_per_prompt": 42,
+    "enable_thinking": false,
+    "max_output_tokens": 384,
+    "prefill_step_size": 128,
+    "kv_bits": 4,
+    "kv_group_size": 64,
+    "quantized_kv_start": 0,
+    "allocator_cache_bytes": 33554432,
+    "allocator_memory_limit_bytes": 2952790016
+  }
+}

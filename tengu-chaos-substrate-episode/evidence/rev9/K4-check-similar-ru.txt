@@ -1,0 +1,20 @@
+# 2026-10-27T17:03:27Z chaos-kb check Какие блокчейны знает автор?
+real 0.18
+real 0.16
+real 0.15
+{
+  "known": true,
+  "matches": [
+    {
+      "lines": [
+        15,
+        15
+      ],
+      "note": "Skills.md",
+      "score": 0.45112165808677673,
+      "section": "Web3"
+    }
+  ],
+  "presence": "similar",
+  "score": 0.45112165808677673
+}

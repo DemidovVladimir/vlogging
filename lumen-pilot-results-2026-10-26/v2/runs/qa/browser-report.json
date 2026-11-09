@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Semanticdefault, recall19/30separatefromfresh4/30; five complete arms on the same frozen60, scorecards equal evidence",
+    "All60 questions expose exact unchanged raw strings for all5arms (300responses)",
+    "30/24/6category filters; search/empty state; a01context caveat visible",
+    "Semantic toggle, paired gains/losses sum60 and equal score differences",
+    "Four responsive sizes; all eight report sections captured at1280and390",
+    "All8dataset/source downloads resolve; cleanup prompt has parentUUID and orchestrator guard",
+    "All6details open; no clipboard or cleanup executed"
+  ],
+  "errors": [],
+  "requests": [],
+  "overflow": [],
+  "sizes": [
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "url": "http://127.0.0.1:8781/experiments/lumen-local-data-v2/runs/report.html"
+}

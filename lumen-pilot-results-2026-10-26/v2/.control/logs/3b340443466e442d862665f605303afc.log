@@ -1,0 +1,122 @@
+1/60 v2-a01: 0.56s
+{"status": "known", "answer": "{\"name\": \"Люмен\"}", "data": {"name": "Люмен"}}
+2/60 v2-a02: 0.46s
+{"status": "known", "answer": "{\"code\": \"string\"}", "data": {"code": "string"}}
+3/60 v2-a03: 0.52s
+{"status": "known", "answer": "{\"seats\": 120}", "data": {"seats": 120}}
+4/60 v2-a04: 0.52s
+{"status": "known", "answer": "{\"seats\": 120}", "data": {"seats": 120}}
+5/60 v2-a05: 0.66s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+6/60 v2-a06: 0.66s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+7/60 v2-a07: 0.63s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+8/60 v2-a08: 0.48s
+{"status": "known", "answer": "{\"minimum_people\": 1}", "data": {"minimum_people": 1}}
+9/60 v2-a09: 0.50s
+{"status": "known", "answer": "{\"discount_percent\": 10}", "data": {"discount_percent": 10}}
+10/60 v2-a10: 0.59s
+{"status": "known", "answer": "{\"days\": \"все дни недели\"}", "data": {"days": "все дни недели"}}
+11/60 v2-a11: 0.46s
+{"status": "known", "answer": "{\"group_discount\": false}", "data": {"group_discount": false}}
+12/60 v2-a12: 0.46s
+{"status": "known", "answer": "{\"group_discount\": false}", "data": {"group_discount": false}}
+13/60 v2-a13: 0.74s
+{"status": "known", "answer": "{\"amount\": 12.99, \"currency\": \"EUR\"}", "data": {"amount": 12.99, "currency": "EUR"}}
+14/60 v2-a14: 0.48s
+{"status": "known", "answer": "{\"visits\": 1}", "data": {"visits": 1}}
+15/60 v2-a15: 0.67s
+{"status": "known", "answer": "{\"days\": \"все рабочие дни\"}", "data": {"days": "все рабочие дни"}}
+16/60 v2-a16: 0.49s
+{"status": "known", "answer": "{\"days\": 1}", "data": {"days": 1}}
+17/60 v2-a17: 0.49s
+{"status": "known", "answer": "{\"transfer_allowed\": false}", "data": {"transfer_allowed": false}}
+18/60 v2-a18: 0.66s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+19/60 v2-a19: 0.53s
+{"status": "known", "answer": "{\"visits\": 12}", "data": {"visits": 12}}
+20/60 v2-a20: 1.06s
+{"status": "known", "answer": "{\"days\": \"воскресенье, понедельник, среда, четверг, пятница, суббота\"}", "data": {"days": "воскресенье, понедельник, среда, четверг, пятница, суббота"}}
+21/60 v2-a21: 0.51s
+{"status": "known", "answer": "{\"days\": 14}", "data": {"days": 14}}
+22/60 v2-a22: 0.49s
+{"status": "known", "answer": "{\"transfer_allowed\": false}", "data": {"transfer_allowed": false}}
+23/60 v2-a23: 0.56s
+{"status": "known", "answer": "{\"visits_per_day\": 1}", "data": {"visits_per_day": 1}}
+24/60 v2-a24: 0.49s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+25/60 v2-a25: 0.52s
+{"status": "known", "answer": "{\"refund_fraction\": 0}", "data": {"refund_fraction": 0}}
+26/60 v2-a26: 0.52s
+{"status": "known", "answer": "{\"refund_fraction\": 0}", "data": {"refund_fraction": 0}}
+27/60 v2-a27: 0.51s
+{"status": "known", "answer": "{\"refund_fraction\": 0}", "data": {"refund_fraction": 0}}
+28/60 v2-a28: 0.51s
+{"status": "known", "answer": "{\"refund_fraction\": 0}", "data": {"refund_fraction": 0}}
+29/60 v2-a29: 0.57s
+{"status": "known", "answer": "{\"refund_fraction\": 0.5}", "data": {"refund_fraction": 0.5}}
+30/60 v2-a30: 0.47s
+{"status": "known", "answer": "{\"administrator\": \"\"}", "data": {"administrator": "string"}}
+31/60 v2-c01: 0.68s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+32/60 v2-c02: 0.68s
+{"status": "known", "answer": "{\"amount\": 11, \"currency\": \"EUR\"}", "data": {"amount": 11, "currency": "EUR"}}
+33/60 v2-c03: 0.67s
+{"status": "known", "answer": "{\"amount\": 13, \"currency\": \"EUR\"}", "data": {"amount": 13, "currency": "EUR"}}
+34/60 v2-c04: 0.98s
+{"status": "known", "answer": "{\"amount\": 14, \"currency\": \"EUR\", \"group_discount\": false, \"passes_valid\": true}", "data": {"amount": 14, "currency": "EUR", "group_discount": false, "passes_valid": true}}
+35/60 v2-c05: 0.72s
+{"status": "known", "answer": "{\"amount\": 0.0, \"currency\": \"EUR\"}", "data": {"amount": 0.0, "currency": "EUR"}}
+36/60 v2-c06: 0.70s
+{"status": "known", "answer": "{\"amount\": 8.8, \"currency\": \"EUR\"}", "data": {"amount": 8.8, "currency": "EUR"}}
+37/60 v2-c07: 0.67s
+{"status": "known", "answer": "{\"amount\": 14, \"currency\": \"EUR\"}", "data": {"amount": 14, "currency": "EUR"}}
+38/60 v2-c08: 0.68s
+{"status": "known", "answer": "{\"amount\": 11, \"currency\": \"EUR\"}", "data": {"amount": 11, "currency": "EUR"}}
+39/60 v2-c09: 0.67s
+{"status": "known", "answer": "{\"amount\": 17, \"currency\": \"EUR\"}", "data": {"amount": 17, "currency": "EUR"}}
+40/60 v2-c10: 0.67s
+{"status": "known", "answer": "{\"amount\": 17, \"currency\": \"EUR\"}", "data": {"amount": 17, "currency": "EUR"}}
+41/60 v2-c11: 0.53s
+{"status": "known", "answer": "{\"hall\": \"23\"}", "data": {"hall": "23"}}
+42/60 v2-c12: 0.61s
+{"status": "known", "answer": "{\"hall\": \"Вместимость\": 31}", "data": {"hall": "Вместимость"}}
+43/60 v2-c13: 0.50s
+{"status": "known", "answer": "{\"fits\": false}", "data": {"fits": false}}
+44/60 v2-c14: 0.52s
+{"status": "known", "answer": "{\"covers_both\": false}", "data": {"covers_both": false}}
+45/60 v2-c15: 0.52s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+46/60 v2-c16: 0.53s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": true}}
+47/60 v2-c17: 0.52s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+48/60 v2-c18: 0.49s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+49/60 v2-c19: 0.53s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+50/60 v2-c20: 0.53s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+51/60 v2-c21: 0.53s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+52/60 v2-c22: 0.53s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+53/60 v2-c23: 0.53s
+{"status": "known", "answer": "{\"passes_valid\": false}", "data": {"passes_valid": false}}
+54/60 v2-c24: 1.30s
+{"status": "known", "answer": "{\"amount\": 15, \"currency\": \"EUR\", \"purchase\": \"Абонемент\", \"quantity\": 15, \"group_discount\": false}", "data": {"amount": 15, "currency": "EUR", "purchase": "Абонемент", "quantity": 15, "group_discount": false}}
+55/60 v2-u01: 0.68s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+56/60 v2-u02: 0.50s
+{"status": "known", "answer": "{\"student_discount\": false}", "data": {"student_discount": false}}
+57/60 v2-u03: 0.67s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+58/60 v2-u04: 0.53s
+{"status": "known", "answer": "{\"step_free_access\": false}", "data": {"step_free_access": false}}
+59/60 v2-u05: 0.52s
+{"status": "known", "answer": "{\"coat_check_available\": false}", "data": {"coat_check_available": false}}
+60/60 v2-u06: 0.49s
+{"status": "known", "answer": "{\"minimum_age\": 3}", "data": {"minimum_age": 3}}
+RESOURCE GUARD eval-v1: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/runs/resources/eval-v1.json

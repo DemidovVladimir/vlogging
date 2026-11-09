@@ -1,0 +1,2743 @@
+{
+  "items": [
+    {
+      "id": "aave-01",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        },
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 24,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        },
+        {
+          "source_id": "R5",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.5215192920004483,
+      "generation_tokens": 33,
+      "prompt_tokens": 664,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "liquidation_eligible": true
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Positions are always over-collateralized, meaning the collateral value must exceed the borrowed amount."
+          },
+          {
+            "source_id": "R4",
+            "quote": "When it falls below 1, the position becomes eligible for liquidation and external liquidators can repay part of the debt in exchange for collateral."
+          },
+          {
+            "source_id": "R5",
+            "quote": "Positions become eligible for liquidation when a position's Health Factor falls below 1."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-02",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 24,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.3319433750002645,
+      "generation_tokens": 27,
+      "prompt_tokens": 692,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "below_liquidation_threshold": false
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "When it falls below 1, the position becomes eligible for liquidation and external liquidators can repay part of the debt in exchange for collateral."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-03",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 36,
+          "url": "https://aave.com/docs/aave-v3/smart-contracts/l2-pool.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.465893957996741,
+      "generation_tokens": 27,
+      "prompt_tokens": 736,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "withdraw_allowed_by_health_factor": true
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "If the user has any existing debt backed by the underlying token, the maximum amount available to withdraw is the amount that will not leave the user with a health factor < 1 after the withdrawal."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-04",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 16,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.6240790000010747,
+      "generation_tokens": 28,
+      "prompt_tokens": 790,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "must_wait_for_fixed_maturity": false
+        },
+        "citations": [
+          {
+            "source_id": "R3",
+            "quote": "Borrowers can repay at any time, and positions remain open as long as over-collateralization is maintained."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-05",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 34,
+          "url": "https://aave.com/docs/aave-v3/smart-contracts/tokenization.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.354569082992384,
+      "generation_tokens": 28,
+      "prompt_tokens": 687,
+      "parsed": {
+        "status": "known",
+        "answer": "1",
+        "data": {
+          "underlying_units_per_atoken": 1
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "aTokens are tokens minted and burnt upon `supply` and `withdraw` of assets to an Aave market. aTokens denote the amount of crypto assets supplied to the protocol and the yield earned on those assets."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-06",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 19,
+          "url": "https://aave.com/docs/aave-v3/smart-contracts/tokenization.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.8204714589955984,
+      "generation_tokens": 32,
+      "prompt_tokens": 790,
+      "parsed": {
+        "status": "known",
+        "answer": "balance_increases",
+        "data": {
+          "yield_mechanism": "balance_increases"
+        },
+        "citations": [
+          {
+            "source_id": "R3",
+            "quote": "All yield collected by the aTokens' reserves are distributed to aToken holders directly by continuously increasing their wallet balance."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-07",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 30,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.2033779170014895,
+      "generation_tokens": 28,
+      "prompt_tokens": 617,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "arbitrary_debt_asset_allowed": false
+        },
+        "citations": [
+          {
+            "source_id": "R2",
+            "quote": "When an asset is listed in Isolation Mode, it can be used as collateral to borrow only a specific basket of assets (typically stablecoins), up to a designated debt ceiling."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-08",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 21,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 30,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        },
+        {
+          "source_id": "R7",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 11,
+          "url": "https://aave.com/docs/aave-v3/aptos/smart-contracts/aave-logic.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.3318892079987563,
+      "generation_tokens": 34,
+      "prompt_tokens": 591,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "debt_ceiling_applies": true
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Isolation Mode allows for the secure listing of new or more volatile assets without introducing systemic risk to the entire protocol."
+          },
+          {
+            "source_id": "R2",
+            "quote": "When an asset is listed in Isolation Mode, it can be used as collateral to borrow only a specific basket of assets (typically stablecoins), up to a designated debt ceiling."
+          },
+          {
+            "source_id": "R7",
+            "quote": "Users can only borrow assets up to a specific debt ceiling."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-09",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.7927477920020465,
+      "generation_tokens": 39,
+      "prompt_tokens": 653,
+      "parsed": {
+        "status": "known",
+        "answer": "correlated",
+        "data": {
+          "asset_relationship": "correlated"
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "aave-10",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 31,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.3605342919909162,
+      "generation_tokens": 31,
+      "prompt_tokens": 601,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "other_active_borrows_in_same_pool_allowed": false
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Siloed borrowing is a reserve-level flag that restricts users who borrow a given asset to borrowing only that asset, preventing them from having any other active borrows in the same pool."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-11",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R7",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 17,
+          "url": "https://aave.com/docs/aave-v3/guides/credit-delegation.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.7000112920068204,
+      "generation_tokens": 27,
+      "prompt_tokens": 760,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "approval_alone_sufficient": false
+        },
+        "citations": [
+          {
+            "source_id": "R7",
+            "quote": "However, **before** the delegatee executes `borrow`, there must be sufficient collateral supplied by delegator in the protocol."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-12",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 17,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.548766332998639,
+      "generation_tokens": 27,
+      "prompt_tokens": 693,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "prior_supply_required_for_approval": false
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Supplying assets to Aave lets users earn interest and, optionally, use supplied tokens as collateral for borrowing."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-13",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 24,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.617745666007977,
+      "generation_tokens": 25,
+      "prompt_tokens": 780,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "borrow_fails": true
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "When it falls below 1, the position becomes eligible for liquidation and external liquidators can repay part of the debt in exchange for collateral."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-14",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R11",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://aave.com/docs/aave-v3/guides/flash-loans.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.688707459004945,
+      "generation_tokens": 26,
+      "prompt_tokens": 777,
+      "parsed": {
+        "status": "known",
+        "answer": "с одним",
+        "data": {
+          "reserve_count": 1
+        },
+        "citations": [
+          {
+            "source_id": "R11",
+            "quote": "- [`flashLoanSimple()`](./smart-contracts/pool#write-methods-flashloansimple): Allows borrower to access liquidity of _single reserve_ for the transaction."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-15",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R12",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 22,
+          "url": "https://aave.com/docs/aave-v3/guides/flash-loans.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.697076458003721,
+      "generation_tokens": 28,
+      "prompt_tokens": 779,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "debt_opening_allowed": false
+        },
+        "citations": [
+          {
+            "source_id": "R12",
+            "quote": "In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-16",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R6",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 20,
+          "url": "https://aave.com/docs/aave-v3/smart-contracts/pool.md"
+        },
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 26,
+          "url": "https://aave.com/docs/aave-v3/guides/flash-loans.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.8532513340032892,
+      "generation_tokens": 28,
+      "prompt_tokens": 858,
+      "parsed": {
+        "status": "known",
+        "answer": "true",
+        "data": {
+          "transaction_reverts": true
+        },
+        "citations": [
+          {
+            "source_id": "R6",
+            "quote": "The receiver must approve the `Pool` contract for at least the _amount borrowed + fee_, otherwise the transaction will revert."
+          },
+          {
+            "source_id": "R4",
+            "quote": "- If the amount owed is not available (due to a lack of balance or approval or insufficient collateral for debt), then the transaction is reverted."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-17",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 4,
+          "url": "https://aave.com/docs/aave-v3/guides/flash-loans.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 17,
+          "url": "https://aave.com/docs/aave-v3/guides/flash-loans.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.352752040998894,
+      "generation_tokens": 29,
+      "prompt_tokens": 639,
+      "parsed": {
+        "status": "known",
+        "answer": "50",
+        "data": {
+          "fee_units": 50
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "### Flash loan fee"
+          },
+          {
+            "source_id": "R2",
+            "quote": "The flash loan fee is initialized at deployment to 0.05% and can be updated via Governance Vote."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-18",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R9",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 21,
+          "url": "https://aave.com/docs/aave-v3/smart-contracts/testing-and-debugging.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.5086214579932857,
+      "generation_tokens": 27,
+      "prompt_tokens": 707,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "can_enable_as_collateral": false
+        },
+        "citations": [
+          {
+            "source_id": "R9",
+            "quote": "If you're unable to borrow assets, it may be due to insufficient collateral or not meeting the required Loan-to-Value (LTV) ratios."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aave-19",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.901140417001443,
+      "generation_tokens": 72,
+      "prompt_tokens": 788,
+      "parsed": {
+        "status": "known",
+        "answer": "Да, supply cap ограничивает внесение, borrow cap — заимствование",
+        "data": {
+          "supply_cap_limits_supply": true,
+          "borrow_cap_limits_borrow": true
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "aave-20",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 15,
+          "url": "https://aave.com/docs/aave-v3/concepts/reserve.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 12,
+          "url": "https://aave.com/docs/aave-v3/concepts/reserve.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.971057999995537,
+      "generation_tokens": 47,
+      "prompt_tokens": 691,
+      "parsed": {
+        "status": "known",
+        "answer": "2000 * 0.75 = 1500",
+        "data": {
+          "max_borrow_units": 1500
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "1. **Loan-to-Value (LTV)**: The maximum amount that can be borrowed relative to the collateral’s value."
+          },
+          {
+            "source_id": "R2",
+            "quote": "For example, a 75% LTV allows borrowing 75% of the collateral’s value."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-01",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 19,
+          "url": "https://kamino.com/docs/products/borrow/liquidations.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 9,
+          "url": "https://kamino.com/docs/products/borrow/liquidations.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.665639499988174,
+      "generation_tokens": 31,
+      "prompt_tokens": 735,
+      "parsed": {
+        "status": "known",
+        "answer": "60",
+        "data": {
+          "current_ltv_pct": 60
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "A position becomes eligible for liquidation when Current LTV exceeds Liquidation LTV. [LTV](https://kamino.com/docs/products/borrow/concepts.md#ltv--the-three-values) is calculated using risk-adjusted debt values:"
+          },
+          {
+            "source_id": "R2",
+            "quote": "Current LTV = risk-adjusted debt value / collateral value"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-02",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R11",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 24,
+          "url": "https://kamino.com/docs/products/borrow/borrow-orders.md"
+        },
+        {
+          "source_id": "R12",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 26,
+          "url": "https://kamino.com/docs/products/borrow/borrow-orders.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.6582365420035785,
+      "generation_tokens": 35,
+      "prompt_tokens": 691,
+      "parsed": {
+        "status": "known",
+        "answer": "false",
+        "data": {
+          "liquidation_ltv_above_max_ltv": false
+        },
+        "citations": [
+          {
+            "source_id": "R11",
+            "quote": "**Collateral withdrawals are also gated by post-fill LTV.** You cannot withdraw collateral if doing so would push post-fill LTV above `Max LTV − 5%`."
+          },
+          {
+            "source_id": "R12",
+            "quote": "> Collateral withdrawals are blocked if the withdrawal would push post-fill LTV above Max LTV minus 5%, even if your current active borrow leaves substantial headroom."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-03",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.676017416000832,
+      "generation_tokens": 41,
+      "prompt_tokens": 644,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "can_deteriorate_with_flat_collateral_prices": true
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "kamino-04",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 11,
+          "url": "https://kamino.com/docs/build/developers/multiply/data/concepts.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.559104040992679,
+      "generation_tokens": 27,
+      "prompt_tokens": 729,
+      "parsed": {
+        "status": "known",
+        "answer": "increases",
+        "data": {
+          "ltv_direction": "increases"
+        },
+        "citations": [
+          {
+            "source_id": "R3",
+            "quote": "When collateral value decreases or debt increases, net equity declines proportionally."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-05",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R5",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 11,
+          "url": "https://kamino.com/docs/products/borrow/concepts.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.574151749999146,
+      "generation_tokens": 29,
+      "prompt_tokens": 706,
+      "parsed": {
+        "status": "known",
+        "answer": "500",
+        "data": {
+          "borrow_capacity_units": 500
+        },
+        "citations": [
+          {
+            "source_id": "R5",
+            "quote": "Borrow Capacity = (Collateral Value × Max LTV) / Borrow Factor"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-06",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R6",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 10,
+          "url": "https://kamino.com/docs/products/borrow/concepts.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.4232076250045793,
+      "generation_tokens": 26,
+      "prompt_tokens": 684,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "capacity_decreases": true
+        },
+        "citations": [
+          {
+            "source_id": "R6",
+            "quote": "A Borrow Factor of 2.0 halves your effective borrowing capacity."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-07",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 7,
+          "url": "https://kamino.com/docs/products/borrow/markets.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 18,
+          "url": "https://kamino.com/docs/products/borrow/markets.md"
+        },
+        {
+          "source_id": "R5",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 16,
+          "url": "https://kamino.com/docs/products/borrow/borrowing.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.8346675840002717,
+      "generation_tokens": 36,
+      "prompt_tokens": 739,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "multiple_collateral_and_debt_assets_supported": true
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Cross Mode is the default position mode."
+          },
+          {
+            "source_id": "R2",
+            "quote": "A single Cross Mode position can hold multiple collateral assets and multiple debt assets at the same time."
+          },
+          {
+            "source_id": "R5",
+            "quote": "In Cross Mode, a single position can hold multiple collateral assets and multiple debt assets simultaneously."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-08",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 6,
+          "url": "https://kamino.com/docs/build/borrow/multiply/repay-collateral-kswap.md"
+        },
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 10,
+          "url": "https://kamino.com/docs/build/borrow/multiply/repay-collateral-kswap.md"
+        },
+        {
+          "source_id": "R8",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 28,
+          "url": "https://kamino.com/docs/build/developers/multiply/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.4409848330105888,
+      "generation_tokens": 33,
+      "prompt_tokens": 618,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "unsecured_loans_available": false
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "### Borrow and Multiply SDK Methods"
+          },
+          {
+            "source_id": "R4",
+            "quote": "> **Multiply operations** use `MultiplyObligation`. **Standard borrow operations** use `VanillaObligation`."
+          },
+          {
+            "source_id": "R8",
+            "quote": "> Leveraged combo operations (`getDepositWithLeverageIxs`, `getWithdrawWithLeverageIxs`, `getRepayWithCollIxs`) are **not** available in the Rust crate — they bundle flash loans with KSwap routing, which only the TypeScript SDK builds."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-09",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 25,
+          "url": "https://kamino.com/docs/products/borrow/borrowing.md"
+        },
+        {
+          "source_id": "R6",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 11,
+          "url": "https://kamino.com/docs/build/developers/multiply/operations/repay-collateral.md"
+        },
+        {
+          "source_id": "R10",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 11,
+          "url": "https://kamino.com/docs/build/borrow/multiply/repay-collateral-kswap.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.7050342920119874,
+      "generation_tokens": 35,
+      "prompt_tokens": 702,
+      "parsed": {
+        "status": "known",
+        "answer": "KSwap",
+        "data": {
+          "swap_mechanism": "KSwap"
+        },
+        "citations": [
+          {
+            "source_id": "R3",
+            "quote": "The protocol uses Kamino Swap to convert a portion of your collateral into the debt asset and repays the loan in a single atomic transaction."
+          },
+          {
+            "source_id": "R6",
+            "quote": "> Repay debt using collateral from your position with KSwap routing"
+          },
+          {
+            "source_id": "R10",
+            "quote": "> Swap collateral to repay borrowed assets in a single transaction"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-10",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 36,
+          "url": "https://kamino.com/docs/risk.md"
+        },
+        {
+          "source_id": "R6",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 17,
+          "url": "https://kamino.com/docs/products/borrow/fees.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.774754292011494,
+      "generation_tokens": 34,
+      "prompt_tokens": 744,
+      "parsed": {
+        "status": "known",
+        "answer": "100",
+        "data": {
+          "max_debt_closed_pct": 100
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Insolvency occurs when a borrower's position becomes unhealthy (LTV exceeds the liquidation threshold) and the liquidation cannot be profitably executed — typically because the collateral token lacks sufficient market liquidity to be sold without excessive slippage."
+          },
+          {
+            "source_id": "R6",
+            "quote": "If LTV exceeds the market's insolvency-risk threshold (typically 95%), the entire position can be liquidated at once."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-11",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R6",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 17,
+          "url": "https://kamino.com/docs/products/borrow/fees.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 4.019237041997258,
+      "generation_tokens": 82,
+      "prompt_tokens": 729,
+      "parsed": {
+        "status": "known",
+        "answer": "Нет, из слова «typically 95%» нельзя сделать вывод, что insolvency-risk threshold обязан быть ровно 95% во всех рынках. Это указывает на типичное значение, а не на обязательное.",
+        "data": {
+          "universal_fixed_95pct_threshold_established": false
+        },
+        "citations": [
+          {
+            "source_id": "R6",
+            "quote": "If LTV exceeds the market's insolvency-risk threshold (typically 95%), the entire position can be liquidated at once."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-12",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.730681834000279,
+      "generation_tokens": 37,
+      "prompt_tokens": 642,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "liquidations_permissionless": true
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "kamino-13",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R10",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 19,
+          "url": "https://kamino.com/docs/products/borrow/liquidations.md"
+        },
+        {
+          "source_id": "R11",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 9,
+          "url": "https://kamino.com/docs/products/borrow/liquidations.md"
+        },
+        {
+          "source_id": "R12",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 27,
+          "url": "https://kamino.com/docs/products/borrow/liquidations.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.7265936250041705,
+      "generation_tokens": 37,
+      "prompt_tokens": 675,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "guaranteed_grace_period": false
+        },
+        "citations": [
+          {
+            "source_id": "R10",
+            "quote": "A position becomes eligible for liquidation when Current LTV exceeds Liquidation LTV. [LTV](https://kamino.com/docs/products/borrow/concepts.md#ltv--the-three-values) is calculated using risk-adjusted debt values:"
+          },
+          {
+            "source_id": "R11",
+            "quote": "Current LTV = risk-adjusted debt value / collateral value"
+          },
+          {
+            "source_id": "R12",
+            "quote": "Positions do not liquidate the moment they are opened — they only become eligible when asset price movements push the LTV above the liquidation threshold after origination."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-14",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R7",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 23,
+          "url": "https://kamino.com/docs/build/borrow/plan-your-market.md"
+        },
+        {
+          "source_id": "R11",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 23,
+          "url": "https://kamino.com/docs/curators/markets/plan-your-market.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.0662527499953285,
+      "generation_tokens": 30,
+      "prompt_tokens": 893,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "bonus_always_fixed": false
+        },
+        "citations": [
+          {
+            "source_id": "R7",
+            "quote": "The minimum bonus is set to 2%, so a liquidator is still rewarded when a position has only just crossed the liquidation threshold."
+          },
+          {
+            "source_id": "R11",
+            "quote": "The minimum bonus is set to 2%, so a liquidator is still rewarded when a position has only just crossed the liquidation threshold."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-15",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R7",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 21,
+          "url": "https://kamino.com/docs/products/borrow/liquidations.md"
+        },
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 18,
+          "url": "https://kamino.com/docs/products/borrow/fees.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.7316865000029793,
+      "generation_tokens": 29,
+      "prompt_tokens": 771,
+      "parsed": {
+        "status": "known",
+        "answer": "4",
+        "data": {
+          "liquidation_bonus_pct": 4
+        },
+        "citations": [
+          {
+            "source_id": "R7",
+            "quote": "| Above Liquidation LTV + min bonus | Scales upward: bonus equals the distance between current LTV and Liquidation LTV |"
+          },
+          {
+            "source_id": "R1",
+            "quote": "The bonus is dynamic and scales with how far the position's LTV has breached its Liquidation LTV threshold:"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-16",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 14,
+          "url": "https://kamino.com/docs/products/borrow/supplying.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.636820792002254,
+      "generation_tokens": 29,
+      "prompt_tokens": 722,
+      "parsed": {
+        "status": "known",
+        "answer": "600",
+        "data": {
+          "utilization_pct": 600
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "[Utilization](https://kamino.com/docs/products/borrow/concepts.md#how-variable-rates-work) is the ratio of borrowed assets to total deposited assets in a reserve."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-17",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 19,
+          "url": "https://kamino.com/docs/products/borrow/fees.md"
+        },
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 14,
+          "url": "https://kamino.com/docs/products/borrow/fees.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.4284619169920916,
+      "generation_tokens": 30,
+      "prompt_tokens": 648,
+      "parsed": {
+        "status": "known",
+        "answer": "true",
+        "data": {
+          "spread_is_fraction_of_interest": true
+        },
+        "citations": [
+          {
+            "source_id": "R3",
+            "quote": "> Spreads are expressed as a percentage of interest paid by borrowers — not as a percentage of principal."
+          },
+          {
+            "source_id": "R4",
+            "quote": "A 15% spread on a 10% borrow rate means lenders receive 8.5%, not 10%."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-18",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 12,
+          "url": "https://kamino.com/docs/products/borrow/fees.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.4305447500082664,
+      "generation_tokens": 31,
+      "prompt_tokens": 616,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "idle_capital_earns_borrow_interest": false
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "The idle 30% of capital earns nothing and dilutes the aggregate return."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-19",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://kamino.com/docs/products/borrow/fixed-rates.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.801282333995914,
+      "generation_tokens": 32,
+      "prompt_tokens": 738,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "early_repay_penalty_applies_after_rollover": false
+        },
+        "citations": [
+          {
+            "source_id": "R3",
+            "quote": "After a rollover into a subsequent term, there is no Early Repay Penalty."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kamino-20",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 31,
+          "url": "https://kamino.com/docs/products/borrow/concepts.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.002447958002449,
+      "generation_tokens": 32,
+      "prompt_tokens": 803,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "rollover_blocked_for_all_borrowers_in_reserve": true
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "The queue directly gates borrower rollover. **Any queued withdrawal ticket in a reserve blocks rollover for all borrowers in that reserve.** Lenders wanting out take priority over borrowers wanting to stay."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-01",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 9,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.5485355830023764,
+      "generation_tokens": 25,
+      "prompt_tokens": 713,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "must_handle_false": true
+        },
+        "citations": [
+          {
+            "source_id": "R2",
+            "quote": "- Callers MUST handle `false` from `returns (bool success)`."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-02",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 24,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+        },
+        {
+          "source_id": "R3",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 5.960755584004801,
+      "generation_tokens": 156,
+      "prompt_tokens": 587,
+      "parsed": {
+        "status": "known",
+        "answer": "Нет, ERC20 не обязывает каждый токен реализовывать decimals() — метод не считается обязательным, и потребители не могут считать его всегда существующим. В документации указано, что метод `decimals()` может быть опциональным, и другие контракты не должны ожидать его присутствия. Важно: `decimals()` не является обязательным, и его отсутствие не означает ошибку. Это подтверждается фрагментом [R3]: 'interfaces and other contracts MUST NOT expect these values to be present'.",
+        "data": {
+          "decimals_mandatory": false
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Returns the number of decimals the token uses - e.g. `8`, means to divide the token amount by `100000000` to get its user representation."
+          },
+          {
+            "source_id": "R3",
+            "quote": "but interfaces and other contracts MUST NOT expect these values to be present."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-03",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 10,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+        },
+        {
+          "source_id": "R6",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 16,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.3799283749976894,
+      "generation_tokens": 31,
+      "prompt_tokens": 596,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "zero_transfer_must_emit_transfer": true
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "MUST trigger when tokens are transferred, including zero value transfers."
+          },
+          {
+            "source_id": "R6",
+            "quote": "*Note* Transfers of 0 values MUST be treated as normal transfers and fire the `Transfer` event."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-04",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-20.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.3987755839916645,
+      "generation_tokens": 27,
+      "prompt_tokens": 644,
+      "parsed": {
+        "status": "known",
+        "answer": "replaces",
+        "data": {
+          "allowance_update": "replaces"
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "If this function is called again it overwrites the current allowance with `_value`."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-05",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 6,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7945.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 25,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-7945.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.4607000000105472,
+      "generation_tokens": 31,
+      "prompt_tokens": 645,
+      "parsed": {
+        "status": "known",
+        "answer": "500",
+        "data": {
+          "display_balance": 500
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "function decimals() external view returns (uint8)"
+          },
+          {
+            "source_id": "R2",
+            "quote": "Returns the number of decimals the token uses - e.g. `8`, meaning the token amount should be divided by `100000000` to get its user representation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-06",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.537170415991568,
+      "generation_tokens": 83,
+      "prompt_tokens": 521,
+      "parsed": {
+        "status": "known",
+        "answer": "баланс конкретного owner не возвращается view-методом в ERC20, totalSupply — общий объём, не баланс владельца",
+        "data": {
+          "method": "unknown"
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "eth-07",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 25,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 15,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.756315791004454,
+      "generation_tokens": 30,
+      "prompt_tokens": 740,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "includes_vault_fees": false
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "The amount of shares that the Vault would exchange for the amount of assets provided, in an ideal scenario where all the conditions are met."
+          },
+          {
+            "source_id": "R2",
+            "quote": "MUST NOT be inclusive of any fees that are charged against assets in the Vault."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-08",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 5,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.448048584003118,
+      "generation_tokens": 24,
+      "prompt_tokens": 674,
+      "parsed": {
+        "status": "known",
+        "answer": "down",
+        "data": {
+          "rounding": "down"
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "MUST round down towards 0."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-09",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.065188250009669,
+      "generation_tokens": 41,
+      "prompt_tokens": 673,
+      "parsed": {
+        "status": "known",
+        "answer": "да",
+        "data": {
+          "includes_deposit_fees": true
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "eth-10",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 31,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.7048268340004142,
+      "generation_tokens": 26,
+      "prompt_tokens": 710,
+      "parsed": {
+        "status": "known",
+        "answer": "нет",
+        "data": {
+          "accounts_for_deposit_limits": false
+        },
+        "citations": [
+          {
+            "source_id": "R2",
+            "quote": "MUST NOT account for deposit limits like those returned from maxDeposit and should always act as though the deposit would be accepted, regardless if the user has enough tokens approved, etc."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-11",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 20,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.738299874996301,
+      "generation_tokens": 25,
+      "prompt_tokens": 727,
+      "parsed": {
+        "status": "known",
+        "answer": "0",
+        "data": {
+          "max_deposit_assets": 0
+        },
+        "citations": [
+          {
+            "source_id": "R4",
+            "quote": "MUST factor in both global and user-specific limits, like if deposits are entirely disabled (even temporarily) it MUST return 0."
+          }
+        ]
+      }
+    },
+    {
+      "id": "eth-12",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R11",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 19,
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/4891ba3b86d2058d0f472dbf1500af6bb056caf2/ERCS/erc-4626.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.71835095800634,
+      "generation_tokens": 25,
+      "prompt_tokens": 694,
+      "parsed": {
+        "status": "known",
+        "answer": "down",
+        "data": {
+          "rounding": "down"
+        },
+        "citations": [
+          {
+            "source_id": "R11",
+            "quote": "To ensure consistency across all EIP-4626 Vault implementations it is specified that these functions MUST both always round _down_."
+          }
+        ]
+      }
+    },
+    {
+      "id": "unknown-01",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.0535732500138693,
+      "generation_tokens": 35,
+      "prompt_tokens": 683,
+      "parsed": {
+        "status": "unknown",
+        "answer": "не хватает данных для определения текущего значения health factor",
+        "data": {
+          "health_factor": 0
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "unknown-02",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": true,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.903363958001137,
+      "generation_tokens": 53,
+      "prompt_tokens": 744,
+      "parsed": {
+        "status": "unknown",
+        "answer": "не хватает данных",
+        "data": {},
+        "citations": []
+      }
+    },
+    {
+      "id": "unknown-03",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.6943237090017647,
+      "generation_tokens": 30,
+      "prompt_tokens": 685,
+      "parsed": {
+        "status": "unknown",
+        "answer": "не хватает данных",
+        "data": {
+          "available_liquidity_usdc": 0
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "unknown-04",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.4672128750098636,
+      "generation_tokens": 29,
+      "prompt_tokens": 673,
+      "parsed": {
+        "status": "unknown",
+        "answer": "недостаточно данных",
+        "data": {
+          "current_ltv_pct": 0
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "unknown-05",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.5457901670015417,
+      "generation_tokens": 71,
+      "prompt_tokens": 532,
+      "parsed": {
+        "status": "unknown",
+        "answer": "не хватает данных для определения реализованного PnL в долларах через 30 дней",
+        "data": {
+          "realized_pnl_usd": 0
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "unknown-06",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": false,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": true,
+      "citation_checks": [
+        {
+          "source_id": "R1",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 11,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        },
+        {
+          "source_id": "R2",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 13,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        },
+        {
+          "source_id": "R4",
+          "quote_valid": true,
+          "source_exists": true,
+          "quote_words": 24,
+          "url": "https://aave.com/docs/aave-v3/overview.md"
+        }
+      ],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 2.5834598329965957,
+      "generation_tokens": 32,
+      "prompt_tokens": 663,
+      "parsed": {
+        "status": "known",
+        "answer": "0",
+        "data": {
+          "max_withdraw_units": 0
+        },
+        "citations": [
+          {
+            "source_id": "R1",
+            "quote": "Borrowing lets users access liquidity by posting supplied assets as collateral."
+          },
+          {
+            "source_id": "R2",
+            "quote": "Positions are always over-collateralized, meaning the collateral value must exceed the borrowed amount."
+          },
+          {
+            "source_id": "R4",
+            "quote": "When it falls below 1, the position becomes eligible for liquidation and external liquidators can repay part of the debt in exchange for collateral."
+          }
+        ]
+      }
+    },
+    {
+      "id": "unknown-07",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": true,
+      "data_ok": false,
+      "answer_nonempty": false,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 1.9761502500041388,
+      "generation_tokens": 21,
+      "prompt_tokens": 540,
+      "parsed": {
+        "status": "unknown",
+        "answer": "",
+        "data": {
+          "allowance_raw": 0
+        },
+        "citations": []
+      }
+    },
+    {
+      "id": "unknown-08",
+      "arm": "larger",
+      "parse_ok": true,
+      "status_ok": false,
+      "data_ok": false,
+      "answer_nonempty": true,
+      "citations_array_ok": true,
+      "quote_valid": false,
+      "citation_checks": [],
+      "citation_length_limit": 48,
+      "citation_length_ok": true,
+      "truncated": false,
+      "seconds": 3.547655542002758,
+      "generation_tokens": 72,
+      "prompt_tokens": 667,
+      "parsed": {
+        "status": "known",
+        "answer": "нельзя определить количество underlying assets, так как отсутствуют данные о totalAssets, totalSupply и fee-параметрах, необходимых для расчёта",
+        "data": {
+          "assets_out": 0
+        },
+        "citations": []
+      }
+    }
+  ],
+  "raw_sha256": {
+    "larger": "9f7910b0dca056484f6ecf80a047246017367504b3a1164bf1cb2f96903ec3a3"
+  },
+  "coverage": [
+    {
+      "id": "aave-01",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-02",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-03",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-04",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-05",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-06",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-07",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-08",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-09",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-10",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-11",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-12",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-13",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-14",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-15",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-16",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-17",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "aave-18",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-19",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "aave-20",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-01",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-02",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-03",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-04",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-05",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-06",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-07",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-08",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-09",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-10",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-11",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-12",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-13",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-14",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-15",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-16",
+      "arm": "larger",
+      "all_required_docs": false,
+      "all_gold_spans": false
+    },
+    {
+      "id": "kamino-17",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-18",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-19",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "kamino-20",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-01",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "eth-02",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-03",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "eth-04",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "eth-05",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    },
+    {
+      "id": "eth-06",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-07",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-08",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-09",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-10",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-11",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": false
+    },
+    {
+      "id": "eth-12",
+      "arm": "larger",
+      "all_required_docs": true,
+      "all_gold_spans": true
+    }
+  ],
+  "integrity": {
+    "status": "PASS",
+    "all60_prompt_hashes_and_token_counts_match": true,
+    "all60_unique": true,
+    "larger_checkpoint_weights_verified": true,
+    "same_versions_and_generation_settings_except_allocator_limit": true,
+    "all60_question_context_catalogue_bytes_unchanged": true,
+    "all_finish_reason_stop": true,
+    "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+    "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+    "raw_sha256": {
+      "larger": "9f7910b0dca056484f6ecf80a047246017367504b3a1164bf1cb2f96903ec3a3"
+    }
+  },
+  "primary_parse_policy": "whole JSON only, same v5 parser; no fence removal or repair"
+}

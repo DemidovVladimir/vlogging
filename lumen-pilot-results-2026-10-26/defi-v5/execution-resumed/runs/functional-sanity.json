@@ -1,0 +1,105 @@
+{
+  "not_exam": true,
+  "pass": true,
+  "basis": "All3 ordinary-KV controls have correct values;2 strictJSON,1 correctJSON inside Markdown. This gate checks basic generation usability, not task accuracy. Primary raw outputs will not be repaired.",
+  "ordinary_kv_strict_json": 2,
+  "ordinary_kv_correct_control_values": 3,
+  "kv4_strict_json": 0,
+  "results": [
+    {
+      "control": "json",
+      "kv_bits": 4,
+      "raw": "\n\n```{\"ok\": true\"```",
+      "parsed": null,
+      "expected": {
+        "ok": true
+      },
+      "pass": false,
+      "prompt_tokens": 49,
+      "generation_tokens": 9,
+      "finish_reason": "stop",
+      "seconds": 0.21027316599793267,
+      "control_value_correct_ignoring_outer_markdown_only": false
+    },
+    {
+      "control": "arithmetic",
+      "kv_bits": 4,
+      "raw": "\n{\n  \"result\": \n\"\n}",
+      "parsed": null,
+      "expected": {
+        "result": 5
+      },
+      "pass": false,
+      "prompt_tokens": 50,
+      "generation_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 0.19095383300737012,
+      "control_value_correct_ignoring_outer_markdown_only": false
+    },
+    {
+      "control": "source",
+      "kv_bits": 4,
+      "raw": "\n\n{\"{\n  \" \": \"\n\n{\"color\": \"бирюзовый\"\n}",
+      "parsed": null,
+      "expected": {
+        "color": "бирюзовый"
+      },
+      "pass": false,
+      "prompt_tokens": 64,
+      "generation_tokens": 22,
+      "finish_reason": "stop",
+      "seconds": 0.3135023750073742,
+      "control_value_correct_ignoring_outer_markdown_only": false
+    },
+    {
+      "control": "json",
+      "kv_bits": null,
+      "raw": "{\n  \"ok\": true\n}",
+      "parsed": {
+        "ok": true
+      },
+      "expected": {
+        "ok": true
+      },
+      "pass": true,
+      "prompt_tokens": 49,
+      "generation_tokens": 9,
+      "finish_reason": "stop",
+      "seconds": 0.16536199999973178,
+      "control_value_correct_ignoring_outer_markdown_only": true
+    },
+    {
+      "control": "arithmetic",
+      "kv_bits": null,
+      "raw": "```json\n{\n  \"result\": 5\n}\n```",
+      "parsed": null,
+      "expected": {
+        "result": 5
+      },
+      "pass": false,
+      "prompt_tokens": 50,
+      "generation_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 0.21825137500127312,
+      "control_value_correct_ignoring_outer_markdown_only": true
+    },
+    {
+      "control": "source",
+      "kv_bits": null,
+      "raw": "{\n  \"color\": \"бирюзовый\"\n}",
+      "parsed": {
+        "color": "бирюзовый"
+      },
+      "expected": {
+        "color": "бирюзовый"
+      },
+      "pass": true,
+      "prompt_tokens": 64,
+      "generation_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 0.20763837500999216,
+      "control_value_correct_ignoring_outer_markdown_only": true
+    }
+  ],
+  "saved_at_utc": "2026-10-27T12:18:10.252681+00:00"
+}

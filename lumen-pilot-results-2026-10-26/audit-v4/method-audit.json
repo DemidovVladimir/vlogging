@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-27T09:44:40.790853+00:00",
+  "auditor": {
+    "kind": "agent",
+    "name": "pilot_method_review",
+    "human_validation": false,
+    "fully_independent": false,
+    "conflict_disclosure_ru": "Этот агент создавал v2 экзамен и ранее размечал composition/unknown v3; текущая перепроверка не полностью независима. Новый prompt авторствует root отдельно; будущий revised SYSTEM аудитор не читает. История/оценки не изменяются."
+  },
+  "scope": "Read-only implementation, raw and rubric audit; no package installs, model weights, generation or training. Only audit-v4/method-audit.json written.",
+  "historical_v3_result": {
+    "semantic_full": 30,
+    "strict_fields": 28,
+    "count": 60,
+    "raw_valid_json": 59,
+    "raw_invalid_json": [
+      {
+        "id": "v2-a01",
+        "error": "Extra data: line 8 column 1 (char 110)",
+        "tail": " \"known\",\n  \"answer\": \"Описан в справочнике как «Люмен».\",\n  \"data\": {\n    \"name\": \"Люмен\"\n  }\n}\n```"
+      }
+    ],
+    "duplicate_json_keys_observed": [],
+    "strict_semantic_discrepancies": [
+      {
+        "id": "v2-a07",
+        "strict_fields_correct": false,
+        "semantic_correct": true
+      },
+      {
+        "id": "v2-a15",
+        "strict_fields_correct": false,
+        "semantic_correct": true
+      },
+      {
+        "id": "v2-a20",
+        "strict_fields_correct": false,
+        "semantic_correct": true
+      },
+      {
+        "id": "v2-c17",
+        "strict_fields_correct": true,
+        "semantic_correct": false
+      }
+    ]
+  },
+  "evidence": {
+    "files": {
+      "download_model.py": "c18c5a0204baf42d4872213be94e9924caa58422b1dd6cddb4501dd4220ddbd9",
+      "provenance/original-chat-template.jinja": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+      "v3/common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+      "v3/run_eval.py": "ac82dedba819bbcf10c6623a180859b144587dbab1cfc6379644c21627f685b2",
+      "v3/compare.py": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+      "v3/protocol.json": "be553d670accf76be101459745e4e282603202d505cc3641ccee67bde46d5191",
+      "v3/preflight.json": "25f508acabacd9f6209071728a804c7be208057755a7f749f17e26d7e5825342",
+      "v3/freeze.json": "5a267676fe20320a0ef70555fcb5954f0dfeaed1580d7936fb2b0dc401786c8e",
+      "v3/model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+      "v3/source-handbook.txt": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+      "v3/seeds/test.jsonl": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+      "v3/runs/context.jsonl": "af117d5b7b60f80a547c347e4d900e89c32a6d95f933f9441251f4e10e5cff5b",
+      "v3/runs/semantic-review.json": "07176cd0d5393497dfb17b12747979273d7943f5bb3a5963f4774f9e3f447dd5"
+    },
+    "all_v3_frozen_files_still_match": true,
+    "template_original_sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+    "template_reconstructed_patched_sha256": "51868877885386900eca9402ae4db5727182482b9ae1e459683e9b431cc885d4",
+    "template_patch_matches_lock": true,
+    "live_model_files_available_for_reinspection": false,
+    "source_characters_injected": 2875,
+    "maximum_prompt_tokens": 1344,
+    "maximum_total_tokens_under_v3_cap": 1600,
+    "context_limit_recorded": 40960,
+    "generation_token_counts_and_finish_reasons_logged": false
+  },
+  "findings": [
+    {
+      "id": "template-hard-switch",
+      "certainty": "demonstrated_by_source_and_hash",
+      "evidence": [
+        "download_model.py",
+        "provenance/original-chat-template.jinja",
+        "v3/model-lock.json"
+      ],
+      "finding_ru": "Патч — одна начальная Jinja-строка set enable_thinking=false. Реконструированный patched template точно совпадает SHA из model-lock. Такой set переопределяет входной keyword: передать enable_thinking=True недостаточно, пока принудительный prefix не удалён в новой версии harness.",
+      "causal_limit_ru": "Это подтверждает выбранный режим, но не доказывает, что все ошибки вызваны отключённым thinking."
+    },
+    {
+      "id": "nonthinking-valid-mode",
+      "certainty": "supported_by_official_documentation",
+      "source": "https://huggingface.co/Qwen/Qwen3-1.7B#switching-between-thinking-and-non-thinking-mode",
+      "finding_ru": "Non-thinking — поддерживаемый режим Qwen3, а не повреждение модели. Для thinking нужны штатный переключаемый template, отдельная обработка reasoning/final и достаточный бюджет генерации. Карточка рекомендует для thinking sampling temperature0.6/top_p0.95/top_k20/min_p0 и не рекомендует greedy; для non-thinking предлагает temperature0.7/top_p0.8/top_k20.",
+      "causal_limit_ru": "Greedy выбран ради фиксированного A/B и отличается от рекомендаций; утверждать, что именно sampling или thinking исправит качество, до контроля нельзя."
+    },
+    {
+      "id": "no-demonstrated-v3-output-truncation",
+      "certainty": "demonstrated_raw_syntax_with_logging_limit",
+      "finding_ru": "В v3 59/60 raw — валидные завершённые JSON. Единственная синтаксическая ошибка a01: завершённый правильный объект с лишним закрывающим Markdown-fence. Нет raw, оборванных внутри строки/объекта; ошибка a01 не является свидетельством усечения.",
+      "causal_limit_ru": "Runner не сохранял generated token count, stop_reason или token IDs, поэтому точное достижение256 неизвестно. Более длинный бюджет может помочь иным режимам, но массовый провал v3 нельзя объяснять доказанным обрывом."
+    },
+    {
+      "id": "input-fits-context",
+      "certainty": "demonstrated_preflight_and_builder",
+      "finding_ru": "В user context добавлен весь операционный справочник до раздела для автора:2875символов; максимальный prompt1344tokens, с лимитом ответа1600tokens. Это существенно ниже записанного лимита40960. ПравилаF01–F30 не отброшены; gold/evidence/примеры в prompt не добавлялись.",
+      "causal_limit_ru": "Наличие текста не гарантирует его правильное использование моделью."
+    },
+    {
+      "id": "grounding-instruction-is-weak-not-proven-root-cause",
+      "certainty": "hypothesis_based_on_prompt_and_observed_failures",
+      "finding_ru": "SYSTEM просит отвечать по «известным тебе правилам», тогда как источник добавлен в user как «Справочник для ответа». Явной приоритетности supplied source над общими знаниями, закрытого мира, правил пропусков и требования не смешивать правило с выводом нет. В raw модель иногда отрицает наличие явно приведённых правил.",
+      "causal_limit_ru": "Источник всё же ясно назван, поэтому это улучшение формулировки, а не доказанная ошибка доставки данных. Нужен отдельный prompt-only контроль."
+    },
+    {
+      "id": "lightweight-schema-not-constrained-decoding",
+      "certainty": "demonstrated_code",
+      "finding_ru": "Fields — словарь названий и примитивных типов, не JSON Schema и не грамматическое ограничение декодирования. Нет эталонного примера known/unknown; валюта не помечена ISO4217, days не имеет canonical enum, refund_fraction не нормирован явно диапазоном0–1. Unknown с пустым data задан SYSTEM, но условность требований к полям не формализована.",
+      "causal_limit_ru": "Это объясняет возможную вариативность формы, но не доказывает причину неверной арифметики. Нельзя обещать, что один JSON Schema устранит ошибки знаний."
+    },
+    {
+      "id": "strict-and-semantic-different-constructs",
+      "certainty": "demonstrated_regrade",
+      "finding_ru": "compare.grade проверяет status, непустой answer и точный data; смысл answer не оценивает. Он отклоняет Euro вместо EUR и смысловые варианты days, но пропускает ложное объяснение при правильном флаге. Semantic review исправляет эти ограничения отдельно:28 strict→30 semantic, с сохранением всех raw.",
+      "causal_limit_ru": "Семантический балл — агентная оценка с интерпретациями, не человеческая независимая истина."
+    },
+    {
+      "id": "not-bulk-crypto-data-deficit",
+      "certainty": "inference_not_proven_cause",
+      "finding_ru": "Ошибки v3 включают неверное применение явно приведённых возвратов, арифметику, граничные сроки и противоречия answer/data. Добавление большого несвязанного криптокорпуса не направлено на эти ошибки; проверка знаний о криптоактивах требует другого актуального источника и отдельного экзамена.",
+      "causal_limit_ru": "Этот пилот не измеряет качество по криптотематике и не доказывает, что больше релевантных данных никогда не поможет."
+    }
+  ],
+  "disputed_case_rechecks": [
+    {
+      "id": "v2-c15",
+      "old_full_answer_correct": true,
+      "rechecked_full_answer_correct": true,
+      "rationale_ru": "«Только если есть место» — необходимое, не достаточное условие. Финальная фраза явно сохраняет уже использованный дневной лимит; два оставшихся посещения не обнулены. Противоречия нет."
+    },
+    {
+      "id": "v2-c23",
+      "old_full_answer_correct": true,
+      "rechecked_full_answer_correct": true,
+      "rationale_ru": "В answer есть верные false и40-дневный срок. Запрет передачи лишний, но модель не утверждает, что пришёл другой человек. Прежний критерий не требовал явной цепочки рассуждения или фразы «41>40»; засчёт сохраняется с оговоркой, что правильное внутреннее обоснование не доказано."
+    },
+    {
+      "id": "v2-c17",
+      "old_full_answer_correct": false,
+      "rechecked_full_answer_correct": false,
+      "rationale_ru": "Флаг false верен, но текст приписывает «Туману» только премьеры и запрещает обычные сеансы, прямо нарушаяF24. Снятие полного успеха оправдано."
+    },
+    {
+      "id": "v2-c14",
+      "old_full_answer_correct": false,
+      "rechecked_full_answer_correct": false,
+      "rationale_ru": "Дневной лимит и false верны, но status unknown противоречит определённому ответу. Partial сохраняется по полному контракту."
+    },
+    {
+      "id": "v2-a01",
+      "old_full_answer_correct": false,
+      "rechecked_full_answer_correct": false,
+      "rationale_ru": "Название извлечено правильно, но trailing fence делает raw невалидным JSON. Отдельный secondary факт может быть отмечен, первичный контракт остаётся fail. Кроме того, имя «Люмен» уже есть в SYSTEM и не доказывает усвоение нового факта."
+    },
+    {
+      "ids": [
+        "v2-a07",
+        "v2-a15",
+        "v2-a20"
+      ],
+      "rationale_ru": "Euro/EUR и эквивалентные обозначения диапазона/всех дней семантически допустимы при прежнем критерии; три strict-fail/semantic-pass сохраняются."
+    }
+  ],
+  "latent_grader_issues_not_causes_of_v3_result_ru": [
+    "Data dictionary keys checked exactly and number/bool distinguished correctly; array fallback comparison would be order-sensitive and less strictly typed, but v3 exam has no requested arrays.",
+    "Top-level extra properties are permitted and duplicate JSON keys would be silently accepted by json.loads; no duplicate keys observed in v3 raw.",
+    "compare.main checks equality of closed_book values, not that both are true. v3 used standalone grade and explicit closed_book=false correctly; this is not an observed A/B mix-up.",
+    "The HTML builder inside generic compare.py still says8 questions; v3 report was built separately. A stale fallback caption is not an error in actual60-item scores."
+  ],
+  "controlled_no_training_experiments": [
+    {
+      "id": "E1-prompt-only-grounding",
+      "status": "proposed_not_run_by_auditor",
+      "variable": "Only SYSTEM/output-contract wording; exact legacy hard-false nonthinking template, supplied source, greedy and256budget fixed in both arms.",
+      "arms": [
+        "legacy SYSTEM",
+        "explicit supplied-source SYSTEM written before seeing fresh answers"
+      ],
+      "requirements_ru": [
+        "Отвечать только по переданному источнику и явно данным условиям; неизвестность не превращать в false/0; known требует всех полей, unknown требует data={}.",
+        "Ограничить answer кратким проверяемым объяснением; явно отделить факт из источника от вычисления. Не добавлять новые ответы или обучающие примеры из экзамена.",
+        "Зафиксировать prompt до генерации; показать результат обеих arms на одном новом prospective экзамене. Это проверка инструкции, не новый эффект объёма данных."
+      ]
+    },
+    {
+      "id": "E2-mode-only-with-valid-shared-harness",
+      "status": "proposed_not_run",
+      "variable": "enable_thinking false vs true with same restored switchable original template, same prompt/source/sampling/budget/seeds; do not compare a greedy256 arm to a sampling4096 arm as pure thinking effect.",
+      "shared_settings": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0,
+        "max_tokens": 4096,
+        "seeds": [
+          42,
+          43,
+          44
+        ]
+      },
+      "requirements_ru": [
+        "Сначала проверить, что generation prefix действительно различается: у false заранее закрыт think, у true открыта штатная генерация reasoning. Исходный hard-false prefix в новой копии удалить; исторический код не менять.",
+        "Сохранять raw, reasoning/final отдельно, stop_reason, prompt/output/reasoning/final token counts и затраты ресурсов. Primary evaluator проверяет только final по одинаковому заранее заданному протоколу.",
+        "Если лимит исчерпан до final, считать это failure и не продлевать выборочно. Бюджет4096 — проектная проверка с отдельной оценкой ресурсов, не обещание памяти или качества.",
+        "Оценить все фиксированные seeds и показать среднее/разброс, не выбирать лучший. Это дополнительный контроль, не обязательный шаг текущего prompt-only запуска."
+      ]
+    }
+  ],
+  "fresh_evaluation_design_ru": [
+    "Создать до новых генераций prospective60:30atomic/24composition/6unknown, новые формулировки и числовые сценарии; одинаковый источник и все условия во всех сравниваемых arms.",
+    "Отдельный автор инструкции не видит новых gold; автор экзамена не читает revised SYSTEM. Автор экзамена всё же видел v3, поэтому это локальная prospective проверка, а не полностью независимый внешний benchmark.",
+    "Правила известны из источника; atomic — извлечение/перефразирование, не новые факты. Фактическое имя в SYSTEM учитывать как подсказку.",
+    "Зафиксировать SHA source, test, prompt, template, model, parser/scorer и все критерии до первого output. Проверить арифметику независимым rule oracle; явно задавать owner/remaining/day-use/seat в positive pass случаях.",
+    "Раздельно показывать strict contract, semantic correctness, unsupported assertions/unknown и resource/latency. Синонимы и допустимые формы оговорить до результатов; raw не исправлять и не пересчитывать историю под новый parser.",
+    "Все arms и seeds заранее перечислены; не подбирать инструкции по свежему test. Старые60 считать диагностическими и post-hoc."
+  ],
+  "official_sources": [
+    {
+      "title": "Qwen3-1.7B official model card",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "supports": "Thinking/nonthinking support, recommended sampling, separate reasoning/final parsing; guidance is not experimental proof for this run."
+    },
+    {
+      "title": "Qwen Transformers documentation",
+      "url": "https://qwen.readthedocs.io/en/latest/inference/transformers.html",
+      "supports": "Closed empty think prefix is a hard nonthinking switch."
+    }
+  ]
+}

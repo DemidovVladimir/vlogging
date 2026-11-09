@@ -1,0 +1,33 @@
+{
+  "id": "0b46683cdd694f7f956352aa9ec0d4d7",
+  "stage": "eval-expanded200",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "eval-expanded200",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/eval-expanded200.jsonl",
+    "--adapter",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/adapters/expanded-200"
+  ],
+  "pid": 80856,
+  "pgid": 80856,
+  "birth": "Mon Oct 26 20:04:25 2026",
+  "manager_pid": 80833,
+  "manager_birth": "Mon Oct 26 20:04:25 2026",
+  "state": "finished",
+  "log": ".control/logs/0b46683cdd694f7f956352aa9ec0d4d7.log",
+  "exit_code": 0
+}

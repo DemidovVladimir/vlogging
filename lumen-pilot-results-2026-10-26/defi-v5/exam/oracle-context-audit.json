@@ -1,0 +1,2967 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-10-27T12:13:02.353236+00:00",
+  "reviewer_agent": "/root/video_draft",
+  "human_validation": false,
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "contexts_sha256": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+  "prompts_sha256": "422dc6966111d6a49d9e1b75f3b5354ec22f6b0b6451a58ccdc4e7e69a45d1ed",
+  "approved_oracle_support": true,
+  "approved_no_golddata": true,
+  "known_contexts_manually_reviewed": 52,
+  "known_gold_support_spans_fully_covered": 60,
+  "all_exam_spans": 68,
+  "unknown_neutral_spans": 8,
+  "oracle_contexts_trimmed": 0,
+  "literal_source_checks_all_arms": true,
+  "all_180_prompts_exactly_reconstructed": true,
+  "maximum_input_tokens": 1399,
+  "no_golddata_definition": "All180 literal prompts reconstruct exactly from shared SYSTEM, original question, requested field names/types and supplied literal source refs. No gold.data object, gold_facts, forbidden_errors, agent notes or expected verdict is interpolated. Oracle intentionally selects gold source spans; it is a supplied-evidence condition, not an unbiased retrieval arm. Numeric/factual content present in genuine documentation remains intentional input.",
+  "scope_notes": [
+    "All52 final oracle inputs read in full after merge. Function and condition anchors preserve convertToShares, previewDeposit, maxDeposit and rounding-case scope.",
+    "Aave16 supplied refs jointly contain flashLoanSimple repayment and revert rule. Kamino04 receives its literal formula; risk-adjusted debt is explicitly fixed by question.",
+    "68 is the total exam evidence count:60 support spans for52known plus8 neutral contextual spans forunknown. All60known support spans are covered. Unknown neutral spans need not lie inside neutral intro context.",
+    "Unknown oracle refs are neutral document intros and lack private/live/future state. Unknown judgments rest on explicitly missing inputs, not on global absence in documentation.",
+    "Gold source selection may make questions easy and supply worked examples; this audit does not claim untouched external generalization or novel reasoning.",
+    "No model outputs read/generated, no model imports or installs. This context audit is not a model score or resource permission."
+  ],
+  "errors": [],
+  "items": [
+    {
+      "id": "aave-01",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "0,98<1; критерий eligibility выполнен. Вопрос не обещает фактическое исполнение ликвидации.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 1607,
+          "end_char": 1974,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 1787,
+          "end_char": 1794,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 523,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-02",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Ровно1 не удовлетворяет строгому below1. Узкая формулировка исключает спор о реальных округлениях/onchain проверках.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 1607,
+          "end_char": 1974,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 1787,
+          "end_char": 1794,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 521,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-03",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Вывод, оставляющий HF0,97 при существующем долге, нарушает прямо указанное ограничение withdraw.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/smart-contracts/pool.md",
+          "start_char": 8347,
+          "end_char": 8741,
+          "sha256": "a379c7a4db4d8bf294fbdf8dceaa90764d98dae8b49995aae65630ac444eb6c7"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/pool.md",
+          "start_char": 8527,
+          "end_char": 8561,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 567,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-04",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Обычный borrow можно погасить в любое время; фиксированное обязательное ожидание не задано.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 1399,
+          "end_char": 1776,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 1579,
+          "end_char": 1596,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 532,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-05",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Peg стандартного aToken к underlying1:1; вопрос отдельно исключает фиксированную долларовую цену.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/smart-contracts/tokenization.md",
+          "start_char": 124,
+          "end_char": 498,
+          "sha256": "8aa7dbd276a9a573952907321ce98cf80908882dcd887063c7d535db795a3970"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/tokenization.md",
+          "start_char": 304,
+          "end_char": 318,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 532,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-06",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Стандартный aToken повышает отображаемый wallet balance; StataToken явно не смешан с обычным aToken.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/smart-contracts/tokenization.md",
+          "start_char": 279,
+          "end_char": 683,
+          "sha256": "8aa7dbd276a9a573952907321ce98cf80908882dcd887063c7d535db795a3970"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/tokenization.md",
+          "start_char": 459,
+          "end_char": 503,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 548,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-07",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Isolation Mode разрешает лишь specific basket, не произвольный debt asset.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 4336,
+          "end_char": 4721,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 4516,
+          "end_char": 4541,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 522,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-08",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Ограничение designated debt ceiling прямо указано для Isolation Mode.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 4395,
+          "end_char": 4778,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 4575,
+          "end_char": 4598,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 509,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-09",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "E-Mode относится к коррелированным активам в категории; correlated верно.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 3788,
+          "end_char": 4165,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 3968,
+          "end_char": 3985,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 538,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-10",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Siloed borrowing исключает другие активные заимствования в том же pool; область ограничения задана корректно.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 4745,
+          "end_char": 5120,
+          "sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "start_char": 4925,
+          "end_char": 4940,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 529,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-11",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Approval не заменяет достаточный collateral перед borrow; вопрос явно исключает иное обеспечение.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "start_char": 1386,
+          "end_char": 1781,
+          "sha256": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "start_char": 1566,
+          "end_char": 1601,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 548,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-12",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Supply не обязан предшествовать самому approveDelegation; стадия approval отделена от borrow.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "start_char": 1248,
+          "end_char": 1652,
+          "sha256": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "start_char": 1428,
+          "end_char": 1472,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 522,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-13",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Borrow, нарушающий порог HF делегатора, fails по источнику.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "start_char": 877,
+          "end_char": 1258,
+          "sha256": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "start_char": 1057,
+          "end_char": 1078,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 545,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-14",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "flashLoanSimple работает с одним резервом; multi-reserve flashLoan не подменяет его.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 1301,
+          "end_char": 1675,
+          "sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 1481,
+          "end_char": 1495,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 529,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-15",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Для flashLoanSimple прямо исключено открытие долговой позиции в конце транзакции.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 1380,
+          "end_char": 1779,
+          "sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 1560,
+          "end_char": 1599,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 528,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-16",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Исправлено до генераций: явно flashLoanSimple и principal+fee. Недостаточная allowance в обязательном repayment flow ведёт к revert; ветка открытия долга исключена самим методом.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 2283,
+          "end_char": 2662,
+          "sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c"
+        },
+        {
+          "id": "R2",
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 2801,
+          "end_char": 3184,
+          "sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 2981,
+          "end_char": 3004,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 2463,
+          "end_char": 2482,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 657,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-17",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:10000×0,05/100=5. Ставка дана условием, не выдается за текущий параметр всех рынков.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 3382,
+          "end_char": 3747,
+          "sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "start_char": 3562,
+          "end_char": 3567,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 559,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-18",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Источник прямо говорит, что LTV0% нельзя enabled as collateral. Gold отражает именно указанное правило документации.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "start_char": 382,
+          "end_char": 751,
+          "sha256": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "start_char": 562,
+          "end_char": 571,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 519,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-19",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Supply cap ограничивает supply, borrow cap — borrow; оба true верны. В одном вопросе два булевых поля.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "start_char": 716,
+          "end_char": 1098,
+          "sha256": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "start_char": 896,
+          "end_char": 918,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 535,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "aave-20",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:2000×75/100=1500. Другие лимиты/долг/ликвидность исключены условием.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "start_char": 309,
+          "end_char": 697,
+          "sha256": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "start_char": 489,
+          "end_char": 517,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 570,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-01",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:risk-adjusted900/1500×100=60%. Единицы процента заданы.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 509,
+          "end_char": 912,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 689,
+          "end_char": 732,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 563,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-02",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Liquidation LTV в источнике выше Max LTV; параметры не отождествлены.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 1238,
+          "end_char": 1617,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 1418,
+          "end_char": 1437,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 535,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-03",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Accrued variable interest повышает debt; flat collateral prices не гарантируют постоянное здоровье.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 2877,
+          "end_char": 3255,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 3057,
+          "end_char": 3075,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 534,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-04",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Исправлено до генераций: именно risk-adjusted debt неизменен. Снижение знаменателя collateral повышает Current LTV; добавлен прямой formula anchor.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 2982,
+          "end_char": 3364,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        },
+        {
+          "id": "R2",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 495,
+          "end_char": 868,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 3162,
+          "end_char": 3184,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 675,
+          "end_char": 688,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 661,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-05",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:1000×0,8/2=400 по формуле Borrow Capacity.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 1987,
+          "end_char": 2362,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 2167,
+          "end_char": 2182,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 563,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-06",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "При неизменных collateral и Max LTV увеличение BF1→2 уменьшает capacity вдвое; true верно.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 1851,
+          "end_char": 2218,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 2031,
+          "end_char": 2038,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 527,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-07",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Cross Mode допускает multiple collateral и debt assets в одной позиции.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 3797,
+          "end_char": 4167,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 3977,
+          "end_char": 3987,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 511,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-08",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Документированная модель overcollateralized, no unsecured loans.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 321,
+          "end_char": 699,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 501,
+          "end_char": 519,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 521,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-09",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Repay with Collateral явно использует Kamino Swap; название не выдумано.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 3455,
+          "end_char": 3826,
+          "sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "start_char": 3635,
+          "end_char": 3646,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 523,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-10",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Для обычной частичной ликвидации максимум20% за событие. Insolvency-risk исключение явно вынесено из условия.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 1174,
+          "end_char": 1552,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 1354,
+          "end_char": 1372,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 535,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-11",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Typically95% не доказывает универсальную фиксированную константу каждого market.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 1647,
+          "end_char": 2024,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 1827,
+          "end_char": 1844,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 538,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-12",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Permissionless позволяет любому actor вызвать инструкцию на unhealthy позиции при выполнении условий.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 4151,
+          "end_char": 4525,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 4331,
+          "end_char": 4345,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 519,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-13",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Источник прямо no grace period; гарантированного интервала ожидания нет.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 188,
+          "end_char": 563,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 368,
+          "end_char": 383,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 532,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-14",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Dynamic bonus не всегда fixed. Для ответа false достаточно динамического характера; перечисление min/max/solvency не должно стать дополнительным обязательным условием полноты.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 1987,
+          "end_char": 2358,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 2167,
+          "end_char": 2178,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 523,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-15",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:82−75=7п.п.;7 между min2/max8 и меньше оставшихся18п.п. до100. Вопрос оговаривает линейный участок до solvency cap.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 2331,
+          "end_char": 2716,
+          "sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "start_char": 2511,
+          "end_char": 2536,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 575,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-16",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:600/800×100=75%. Это учебные значения, не live reserve.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/fees.md",
+          "start_char": 385,
+          "end_char": 769,
+          "sha256": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/fees.md",
+          "start_char": 565,
+          "end_char": 589,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 550,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-17",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Источник определяет spread как долю borrower interest, не principal.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/fees.md",
+          "start_char": 2127,
+          "end_char": 2519,
+          "sha256": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/fees.md",
+          "start_char": 2307,
+          "end_char": 2339,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 585,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-18",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Именно borrower interest на idle capital не начисляется; отдельные reward programs исключены условием.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/fees.md",
+          "start_char": 1217,
+          "end_char": 1610,
+          "sha256": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/fees.md",
+          "start_char": 1397,
+          "end_char": 1430,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 566,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-19",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "После rollover first-term-only Early Repay Penalty отсутствует. Иные комиссии не обещаны нулевыми.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/fixed-rates.md",
+          "start_char": 4865,
+          "end_char": 5256,
+          "sha256": "a76550ee4bc46de14acc42dcc2c34e37df24ad2eff5315f00a2e74bb5875b288"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/fixed-rates.md",
+          "start_char": 5045,
+          "end_char": 5076,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 547,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "kamino-20",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Queued withdrawal ticket блокирует rollover всех borrowers данного reserve, не всех независимых рынков.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "kamino:products/borrow/fixed-rates.md",
+          "start_char": 9125,
+          "end_char": 9534,
+          "sha256": "a76550ee4bc46de14acc42dcc2c34e37df24ad2eff5315f00a2e74bb5875b288"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "kamino:products/borrow/fixed-rates.md",
+          "start_char": 9305,
+          "end_char": 9354,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 545,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-01",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "ERC20 MUST handle false. Не предполагается, что каждый токен всегда revert вместо false.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:20",
+          "start_char": 635,
+          "end_char": 1022,
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:20",
+          "start_char": 815,
+          "end_char": 842,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 572,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-02",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "ERC20 decimals OPTIONAL; его наличие и18decimals не обязательны.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:20",
+          "start_char": 1268,
+          "end_char": 1673,
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:20",
+          "start_char": 1448,
+          "end_char": 1493,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 567,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-03",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Нулевой transfer должен быть normal transfer с Transfer event.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:20",
+          "start_char": 2131,
+          "end_char": 2548,
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:20",
+          "start_char": 2311,
+          "end_char": 2368,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 570,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-04",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Повторный approve overwrites allowance значением value, не прибавляет его.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:20",
+          "start_char": 3155,
+          "end_char": 3564,
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:20",
+          "start_char": 3335,
+          "end_char": 3384,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 596,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-05",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Независимый пересчёт:1234500/10^6=1,2345. Вход decimals6 задан явно.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:20",
+          "start_char": 1350,
+          "end_char": 1733,
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:20",
+          "start_char": 1530,
+          "end_char": 1553,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 576,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-06",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "balanceOf(owner) возвращает индивидуальный баланс; totalSupply относится ко всем токенам.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:20",
+          "start_char": 1754,
+          "end_char": 2160,
+          "sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:20",
+          "start_char": 1934,
+          "end_char": 1980,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 568,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-07",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "convertToShares MUST NOT include fees. В финальном evidence добавлен методический scope-anchor convertToShares.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:4626",
+          "start_char": 3201,
+          "end_char": 3758,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 3545,
+          "end_char": 3578,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 3381,
+          "end_char": 3401,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 615,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-08",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "convertToShares MUST round down towards0; финальный evidence явно связывает правило с названием метода.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:4626",
+          "start_char": 3201,
+          "end_char": 3581,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        },
+        {
+          "id": "R2",
+          "doc_id": "ethereum:4626",
+          "start_char": 3682,
+          "end_char": 4068,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 3862,
+          "end_char": 3888,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 3381,
+          "end_char": 3401,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 721,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-09",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "previewDeposit MUST include deposit fees; методический scope-anchor добавлен до генераций.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:4626",
+          "start_char": 5895,
+          "end_char": 6274,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        },
+        {
+          "id": "R2",
+          "doc_id": "ethereum:4626",
+          "start_char": 6495,
+          "end_char": 6889,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 6675,
+          "end_char": 6709,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 6075,
+          "end_char": 6094,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 703,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-10",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "previewDeposit MUST NOT account for maxDeposit limits; соответствующий методический anchor явно задан.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:4626",
+          "start_char": 5895,
+          "end_char": 6274,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        },
+        {
+          "id": "R2",
+          "doc_id": "ethereum:4626",
+          "start_char": 6303,
+          "end_char": 6698,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 6483,
+          "end_char": 6518,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 6075,
+          "end_char": 6094,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 723,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-11",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Когда deposits entirely disabled, maxDeposit MUST return0; это известный ноль, не неизвестность. Добавлен scope-anchor maxDeposit.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:4626",
+          "start_char": 4999,
+          "end_char": 5374,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        },
+        {
+          "id": "R2",
+          "doc_id": "ethereum:4626",
+          "start_char": 5522,
+          "end_char": 5952,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 5702,
+          "end_char": 5772,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 5179,
+          "end_char": 5194,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 757,
+      "oracle_trimmed": false
+    },
+    {
+      "id": "eth-12",
+      "verdict": "sufficient",
+      "actual_oracle_manually_reviewed": true,
+      "source_text_literal": true,
+      "method_scope_preserved": true,
+      "support_note_ru": "Рекомендация для shares, которые пользователь должен отдать ради заданных assets, — round up. Добавлено начало соответствующего условного bullet; convertTo rounding не смешано с этим случаем.",
+      "refs": [
+        {
+          "id": "R1",
+          "doc_id": "ethereum:4626",
+          "start_char": 23218,
+          "end_char": 23826,
+          "sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+        }
+      ],
+      "gold_support_spans": [
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 23625,
+          "end_char": 23646,
+          "fully_covered": true
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "start_char": 23398,
+          "end_char": 23456,
+          "fully_covered": true
+        }
+      ],
+      "prompt_tokens": 629,
+      "oracle_trimmed": false
+    }
+  ],
+  "prompt_checks": [
+    {
+      "id": "aave-01",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 433
+    },
+    {
+      "id": "aave-01",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 523
+    },
+    {
+      "id": "aave-01",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1156
+    },
+    {
+      "id": "aave-02",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 431
+    },
+    {
+      "id": "aave-02",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 521
+    },
+    {
+      "id": "aave-02",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1357
+    },
+    {
+      "id": "aave-03",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 443
+    },
+    {
+      "id": "aave-03",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 567
+    },
+    {
+      "id": "aave-03",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1211
+    },
+    {
+      "id": "aave-04",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 431
+    },
+    {
+      "id": "aave-04",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 532
+    },
+    {
+      "id": "aave-04",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1062
+    },
+    {
+      "id": "aave-05",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 437
+    },
+    {
+      "id": "aave-05",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 532
+    },
+    {
+      "id": "aave-05",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1203
+    },
+    {
+      "id": "aave-06",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 443
+    },
+    {
+      "id": "aave-06",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 548
+    },
+    {
+      "id": "aave-06",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1389
+    },
+    {
+      "id": "aave-07",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 425
+    },
+    {
+      "id": "aave-07",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 522
+    },
+    {
+      "id": "aave-07",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1170
+    },
+    {
+      "id": "aave-08",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 411
+    },
+    {
+      "id": "aave-08",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 509
+    },
+    {
+      "id": "aave-08",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1148
+    },
+    {
+      "id": "aave-09",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 434
+    },
+    {
+      "id": "aave-09",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 538
+    },
+    {
+      "id": "aave-09",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1346
+    },
+    {
+      "id": "aave-10",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 428
+    },
+    {
+      "id": "aave-10",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 529
+    },
+    {
+      "id": "aave-10",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1049
+    },
+    {
+      "id": "aave-11",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 440
+    },
+    {
+      "id": "aave-11",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 548
+    },
+    {
+      "id": "aave-11",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1256
+    },
+    {
+      "id": "aave-12",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 415
+    },
+    {
+      "id": "aave-12",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 522
+    },
+    {
+      "id": "aave-12",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1224
+    },
+    {
+      "id": "aave-13",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 427
+    },
+    {
+      "id": "aave-13",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 545
+    },
+    {
+      "id": "aave-13",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1181
+    },
+    {
+      "id": "aave-14",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 422
+    },
+    {
+      "id": "aave-14",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 529
+    },
+    {
+      "id": "aave-14",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1380
+    },
+    {
+      "id": "aave-15",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 424
+    },
+    {
+      "id": "aave-15",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 528
+    },
+    {
+      "id": "aave-15",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1180
+    },
+    {
+      "id": "aave-16",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 434
+    },
+    {
+      "id": "aave-16",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 657
+    },
+    {
+      "id": "aave-16",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1182
+    },
+    {
+      "id": "aave-17",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 452
+    },
+    {
+      "id": "aave-17",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 559
+    },
+    {
+      "id": "aave-17",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1368
+    },
+    {
+      "id": "aave-18",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 412
+    },
+    {
+      "id": "aave-18",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 519
+    },
+    {
+      "id": "aave-18",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1185
+    },
+    {
+      "id": "aave-19",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 440
+    },
+    {
+      "id": "aave-19",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 535
+    },
+    {
+      "id": "aave-19",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1380
+    },
+    {
+      "id": "aave-20",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 456
+    },
+    {
+      "id": "aave-20",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 570
+    },
+    {
+      "id": "aave-20",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1383
+    },
+    {
+      "id": "kamino-01",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 435
+    },
+    {
+      "id": "kamino-01",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 563
+    },
+    {
+      "id": "kamino-01",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1279
+    },
+    {
+      "id": "kamino-02",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 420
+    },
+    {
+      "id": "kamino-02",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 535
+    },
+    {
+      "id": "kamino-02",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1137
+    },
+    {
+      "id": "kamino-03",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 431
+    },
+    {
+      "id": "kamino-03",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 534
+    },
+    {
+      "id": "kamino-03",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1278
+    },
+    {
+      "id": "kamino-04",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 428
+    },
+    {
+      "id": "kamino-04",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 661
+    },
+    {
+      "id": "kamino-04",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1308
+    },
+    {
+      "id": "kamino-05",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 439
+    },
+    {
+      "id": "kamino-05",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 563
+    },
+    {
+      "id": "kamino-05",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1196
+    },
+    {
+      "id": "kamino-06",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 420
+    },
+    {
+      "id": "kamino-06",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 527
+    },
+    {
+      "id": "kamino-06",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1168
+    },
+    {
+      "id": "kamino-07",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 419
+    },
+    {
+      "id": "kamino-07",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 511
+    },
+    {
+      "id": "kamino-07",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1102
+    },
+    {
+      "id": "kamino-08",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 412
+    },
+    {
+      "id": "kamino-08",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 521
+    },
+    {
+      "id": "kamino-08",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1188
+    },
+    {
+      "id": "kamino-09",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 420
+    },
+    {
+      "id": "kamino-09",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 523
+    },
+    {
+      "id": "kamino-09",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1150
+    },
+    {
+      "id": "kamino-10",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 429
+    },
+    {
+      "id": "kamino-10",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 535
+    },
+    {
+      "id": "kamino-10",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1179
+    },
+    {
+      "id": "kamino-11",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 432
+    },
+    {
+      "id": "kamino-11",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 538
+    },
+    {
+      "id": "kamino-11",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1188
+    },
+    {
+      "id": "kamino-12",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 421
+    },
+    {
+      "id": "kamino-12",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 519
+    },
+    {
+      "id": "kamino-12",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1237
+    },
+    {
+      "id": "kamino-13",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 421
+    },
+    {
+      "id": "kamino-13",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 532
+    },
+    {
+      "id": "kamino-13",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1320
+    },
+    {
+      "id": "kamino-14",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 418
+    },
+    {
+      "id": "kamino-14",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 523
+    },
+    {
+      "id": "kamino-14",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1205
+    },
+    {
+      "id": "kamino-15",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 449
+    },
+    {
+      "id": "kamino-15",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 575
+    },
+    {
+      "id": "kamino-15",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1227
+    },
+    {
+      "id": "kamino-16",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 425
+    },
+    {
+      "id": "kamino-16",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 550
+    },
+    {
+      "id": "kamino-16",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1374
+    },
+    {
+      "id": "kamino-17",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 438
+    },
+    {
+      "id": "kamino-17",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 585
+    },
+    {
+      "id": "kamino-17",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1265
+    },
+    {
+      "id": "kamino-18",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 440
+    },
+    {
+      "id": "kamino-18",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 566
+    },
+    {
+      "id": "kamino-18",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1240
+    },
+    {
+      "id": "kamino-19",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 436
+    },
+    {
+      "id": "kamino-19",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 547
+    },
+    {
+      "id": "kamino-19",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1165
+    },
+    {
+      "id": "kamino-20",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 433
+    },
+    {
+      "id": "kamino-20",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 545
+    },
+    {
+      "id": "kamino-20",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1217
+    },
+    {
+      "id": "eth-01",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 418
+    },
+    {
+      "id": "eth-01",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 572
+    },
+    {
+      "id": "eth-01",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1399
+    },
+    {
+      "id": "eth-02",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 417
+    },
+    {
+      "id": "eth-02",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 567
+    },
+    {
+      "id": "eth-02",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1389
+    },
+    {
+      "id": "eth-03",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 415
+    },
+    {
+      "id": "eth-03",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 570
+    },
+    {
+      "id": "eth-03",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1360
+    },
+    {
+      "id": "eth-04",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 423
+    },
+    {
+      "id": "eth-04",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 596
+    },
+    {
+      "id": "eth-04",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1362
+    },
+    {
+      "id": "eth-05",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 431
+    },
+    {
+      "id": "eth-05",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 576
+    },
+    {
+      "id": "eth-05",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1366
+    },
+    {
+      "id": "eth-06",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 418
+    },
+    {
+      "id": "eth-06",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 568
+    },
+    {
+      "id": "eth-06",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1390
+    },
+    {
+      "id": "eth-07",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 423
+    },
+    {
+      "id": "eth-07",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 615
+    },
+    {
+      "id": "eth-07",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1364
+    },
+    {
+      "id": "eth-08",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 415
+    },
+    {
+      "id": "eth-08",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 721
+    },
+    {
+      "id": "eth-08",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1228
+    },
+    {
+      "id": "eth-09",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 402
+    },
+    {
+      "id": "eth-09",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 703
+    },
+    {
+      "id": "eth-09",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1313
+    },
+    {
+      "id": "eth-10",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 412
+    },
+    {
+      "id": "eth-10",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 723
+    },
+    {
+      "id": "eth-10",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1325
+    },
+    {
+      "id": "eth-11",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 419
+    },
+    {
+      "id": "eth-11",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 757
+    },
+    {
+      "id": "eth-11",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1359
+    },
+    {
+      "id": "eth-12",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 440
+    },
+    {
+      "id": "eth-12",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 629
+    },
+    {
+      "id": "eth-12",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1266
+    },
+    {
+      "id": "unknown-01",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 422
+    },
+    {
+      "id": "unknown-01",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 588
+    },
+    {
+      "id": "unknown-01",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1348
+    },
+    {
+      "id": "unknown-02",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 420
+    },
+    {
+      "id": "unknown-02",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 586
+    },
+    {
+      "id": "unknown-02",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1388
+    },
+    {
+      "id": "unknown-03",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 433
+    },
+    {
+      "id": "unknown-03",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 602
+    },
+    {
+      "id": "unknown-03",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1295
+    },
+    {
+      "id": "unknown-04",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 417
+    },
+    {
+      "id": "unknown-04",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 589
+    },
+    {
+      "id": "unknown-04",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1248
+    },
+    {
+      "id": "unknown-05",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 440
+    },
+    {
+      "id": "unknown-05",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 609
+    },
+    {
+      "id": "unknown-05",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1370
+    },
+    {
+      "id": "unknown-06",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 435
+    },
+    {
+      "id": "unknown-06",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 599
+    },
+    {
+      "id": "unknown-06",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1210
+    },
+    {
+      "id": "unknown-07",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 418
+    },
+    {
+      "id": "unknown-07",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 626
+    },
+    {
+      "id": "unknown-07",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1356
+    },
+    {
+      "id": "unknown-08",
+      "arm": "closed",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 431
+    },
+    {
+      "id": "unknown-08",
+      "arm": "oracle",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 698
+    },
+    {
+      "id": "unknown-08",
+      "arm": "retrieved",
+      "only_allowed_inputs": true,
+      "prompt_sha_match": true,
+      "question_fields_unchanged": true,
+      "prompt_tokens": 1381
+    }
+  ]
+}

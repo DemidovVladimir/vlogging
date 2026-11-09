@@ -1,0 +1,142 @@
+[
+  {
+    "id": "aave-01",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Верный true, но выбранное over-collateralization не устанавливает HF<1."
+  },
+  {
+    "id": "aave-02",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Верный false для строгого <1 приHF1; выбрана прямая When it falls below1."
+  },
+  {
+    "id": "aave-03",
+    "arm": "selection",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Ошибочно разрешает withdraw приHF0,97; цитируется eligibility liquidation вместо ограниченияwithdraw."
+  },
+  {
+    "id": "aave-04",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Нет фиксированного срока ожидания, но цитата лишь про over-collateralization."
+  },
+  {
+    "id": "aave-05",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Peg1:1 указан верно; выбранное описание mint/burn и amount/yield не устанавливает точный peg."
+  },
+  {
+    "id": "aave-06",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "balance_increases; R10 прямо подтверждает растущий со временем баланс aTokens."
+  },
+  {
+    "id": "aave-07",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Верный запрет произвольного debt asset; выбранная фраза contains risk не доказывает basket restriction."
+  },
+  {
+    "id": "aave-08",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Debt ceiling есть, но модель выбрала9ID вместо разрешённых1–3; заранее зафиксированный adapter отвергает весь список и не подставляет цитаты. Ответ не исправлялся."
+  },
+  {
+    "id": "aave-09",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Correlated; R2/R3 прямо подтверждают price-correlated/eMode. Дополнительный Aptos-фрагмент говорит тот же общий факт, без переноса отдельного параметра в ответ."
+  },
+  {
+    "id": "aave-10",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Siloed borrowing не допускает другие active borrows в том же пуле; прямая полная цитата."
+  },
+  {
+    "id": "aave-11",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Одного approval без collateral недостаточно. Выбрана прямая before delegatee executes borrow ... sufficient collateral."
+  },
+  {
+    "id": "aave-12",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Prior supply для approveDelegation не требуется; выбранный фрагмент про React/API не доказывает это."
+  },
+  {
+    "id": "aave-13",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Верно ожидает отклонениеborrow, но selected liquidation-eligibility clause не доказывает pre-borrow проверку."
+  },
+  {
+    "id": "aave-14",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Один reserve; literal flashLoanSimple single reserve подтверждает."
+  },
+  {
+    "id": "aave-15",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Открытие debt запрещено; обе выбранные выдержки прямо это говорят."
+  },
+  {
+    "id": "aave-16",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Недостаточный allowance приводит к revert; R6/R4 устанавливают условие, R1 даёт контекст flow."
+  },
+  {
+    "id": "aave-17",
+    "arm": "selection",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Ошибка арифметики:50 вместо5 при10000×0,05%. Правильная ставка в выбранной цитате не подтверждает50."
+  },
+  {
+    "id": "aave-18",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При LTV0 нельзя включить collateral; selected недостаточный collateral не доказывает именно правило0LTV."
+  },
+  {
+    "id": "aave-19",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Supply cap ограничиваетsupply, borrow cap —borrow. Два поляtrue соответствуют двум названным операциям; вводное Да не трактуется как отдельное утверждение тождества. Буквальные поляcap в whole tokens подтверждают технические лимиты."
+  },
+  {
+    "id": "aave-20",
+    "arm": "selection",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "2000×0,75=1500. Expression вanswer и numeric data1500 согласованы; обе цитаты устанавливают LTV-формулу/75%."
+  }
+]

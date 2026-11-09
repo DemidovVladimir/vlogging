@@ -1,0 +1,13 @@
+Downloading mlx-community/Qwen3-4B-4bit revision 4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25
+
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 10 files:  10%|█         | 1/10 [00:00<00:02,  3.91it/s]
+Fetching 10 files:  20%|██        | 2/10 [00:00<00:02,  3.58it/s]
+Fetching 10 files:  40%|████      | 4/10 [00:00<00:01,  5.73it/s]
+Fetching 10 files:  60%|██████    | 6/10 [00:00<00:00,  8.52it/s]
+Fetching 10 files:  80%|████████  | 8/10 [00:01<00:00,  6.87it/s]
+Fetching 10 files:  90%|█████████ | 9/10 [00:02<00:00,  2.89it/s]
+Fetching 10 files: 100%|██████████| 10/10 [02:54<00:00, 42.02s/it]
+Fetching 10 files: 100%|██████████| 10/10 [02:54<00:00, 17.49s/it]
+Saved model-lock.json. Base weights unchanged; non-thinking template fixed.

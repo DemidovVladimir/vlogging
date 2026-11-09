@@ -1,0 +1,24 @@
+{
+  "completed_at_utc": "2026-10-28T09:00:14.935869+00:00",
+  "runtime": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v7",
+  "runtime_removed": true,
+  "owned_jobs_remaining": 0,
+  "inference_or_training_running": false,
+  "server_started": false,
+  "logical_bytes_removed": 2746425768,
+  "observed_free_disk_delta_bytes": 2776993792,
+  "weights_venv_and_caches_removed": true,
+  "ks_kb_listener_unchanged": true,
+  "other_apps_workloads_and_ollama_untouched": true,
+  "retained": "Code, frozen inputs, raw outputs, measurements and report. Old archives unchanged.",
+  "outcome": "completed",
+  "host_after": {
+    "at_utc": "2026-10-28T09:00:14.956666+00:00",
+    "pressure": 1,
+    "swap": "vm.swapusage: total = 4096.00M  used = 2867.75M  free = 1228.25M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 65%",
+    "physical_ram_bytes": 17179869184,
+    "cpu": "Apple M4\n10",
+    "free_disk_bytes": 449875820544
+  }
+}

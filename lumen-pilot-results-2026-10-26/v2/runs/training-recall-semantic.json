@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "reviewer_agent": "/root/resource_guard",
+  "human_validation": false,
+  "reviewed_at": "2026-10-26T19:13:49.139097+00:00",
+  "diagnostic": "Post-hoc exact training-question recall; expanded800 adapter; not held-out evaluation and not a primary-exam result.",
+  "held_out": false,
+  "raw_sha256": "ea2aea0209e8b75931fa6fb4c03e91798df626aea5be62523963879bb8055ef0",
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "training_sha256": "eaf2e74479a329f281f6dee79811159245fb4f080aef892c43cbb09989050d02",
+  "adapter_sha256_from_run": "48ade21aa53e2d87473e719efc3a203ed5c6582ce6e9943c28b6262d7481faa4",
+  "count": 30,
+  "all_exact_first30_training_questions_and_gold_match": true,
+  "all_prompt_prefixes_match_as_recorded": true,
+  "criteria": "Full correct requires correct requested structured data/status AND a truthful source-grounded explanation with no invented facts. Missing data fields fail this full-contract diagnostic even when prose states the rule correctly. Grammar alone is not treated as a factual error.",
+  "strict_data_status_correct": 21,
+  "full_correct": 19,
+  "items": [
+    {
+      "id": "v2-train-001",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно названы «Люмен» и вымышленный характер кинотеатра; data/status согласованы. Название уже содержится в SYSTEM и не доказывает усвоение нового знания."
+    },
+    {
+      "id": "v2-train-002",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Указан NFR-17 вместо NFR-27 и в тексте, и в data."
+    },
+    {
+      "id": "v2-train-003",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны 18 мест в «Сумраке», без добавленных условий."
+    },
+    {
+      "id": "v2-train-004",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указана вместимость «Астры» — 32 человека."
+    },
+    {
+      "id": "v2-train-005",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "На вопрос о будничной цене 11 евро выдан тариф выходного дня 14 евро."
+    },
+    {
+      "id": "v2-train-006",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан тариф обычного билета в субботу и воскресенье — 14 евро."
+    },
+    {
+      "id": "v2-train-007",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указана цена премьерного билета 17 евро независимо от дня недели."
+    },
+    {
+      "id": "v2-train-008",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан минимальный размер группы 5; вопрос просит численный порог, новых условий не добавлено."
+    },
+    {
+      "id": "v2-train-009",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указана скидка 20% от цены каждого обычного билета."
+    },
+    {
+      "id": "v2-train-010",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан диапазон понедельник–пятница включительно."
+    },
+    {
+      "id": "v2-train-011",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно запрещена групповая скидка на премьерные билеты; data=false."
+    },
+    {
+      "id": "v2-train-012",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно запрещено применение групповой скидки к абонементам, data=false. Последний фрагмент грамматически не завершён, но не утверждает нового или противоположного факта."
+    },
+    {
+      "id": "v2-train-013",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Цена «Искры» указана как 14 евро вместо 24."
+    },
+    {
+      "id": "v2-train-014",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны три посещения «Искры»."
+    },
+    {
+      "id": "v2-train-015",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно разрешены посещения «Искры» с понедельника по четверг включительно."
+    },
+    {
+      "id": "v2-train-016",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан срок 21 календарный день, включая активацию."
+    },
+    {
+      "id": "v2-train-017",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно запрещена передача посещений «Искры»: абонемент предназначен для одного человека."
+    },
+    {
+      "id": "v2-train-018",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Цена «Тумана» указана как 14 евро вместо 44."
+    },
+    {
+      "id": "v2-train-019",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указаны пять посещений «Тумана»."
+    },
+    {
+      "id": "v2-train-020",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно разрешён любой день недели по «Туману»."
+    },
+    {
+      "id": "v2-train-021",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Указан 21 календарный день вместо срока «Тумана» 40 дней."
+    },
+    {
+      "id": "v2-train-022",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "partial",
+      "note_ru": "В тексте верно запрещена передача именного «Тумана», но обязательное поле transfer_allowed=false отсутствует: data пуст. По требованию этого diagnostic верный data/status обязателен, поэтому полный ответ не засчитан."
+    },
+    {
+      "id": "v2-train-023",
+      "full_answer_correct": false,
+      "strict_data_status_correct": true,
+      "classification": "partial",
+      "note_ru": "Data.visits_per_day=1 верен, но в объяснении выдуман субсидированный абонемент: такого вида или условия нет в источнике. Правило распространяется на каждый из двух описанных абонементов."
+    },
+    {
+      "id": "v2-train-024",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "partial",
+      "note_ru": "В тексте верно запрещены премьеры по обоим абонементам, но обязательное поле passes_valid=false отсутствует: data пуст. По критерию diagnostic это неполный ответ."
+    },
+    {
+      "id": "v2-train-025",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан полный возврат обычного билета за 6 часов или раньше, доля 1; лишнего фактического условия нет."
+    },
+    {
+      "id": "v2-train-026",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Обещан полный возврат начиная с 2 часов и data=1 вместо половины в интервале 2<=t<6 часов."
+    },
+    {
+      "id": "v2-train-027",
+      "full_answer_correct": false,
+      "strict_data_status_correct": false,
+      "classification": "incorrect",
+      "note_ru": "Выдуман возврат 40% в «Сумраке» по дням недели; требуется нулевой возврат менее чем за два часа."
+    },
+    {
+      "id": "v2-train-028",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно указан полный возврат премьеры при интервале не менее 24 часов, включая точную границу."
+    },
+    {
+      "id": "v2-train-029",
+      "full_answer_correct": false,
+      "strict_data_status_correct": true,
+      "classification": "incorrect",
+      "note_ru": "Data.refund_fraction=0 совпадает, но объяснение обещает полный возврат менее чем за 24 часа до премьеры; это прямое противоречие."
+    },
+    {
+      "id": "v2-train-030",
+      "full_answer_correct": true,
+      "strict_data_status_correct": true,
+      "classification": "correct",
+      "note_ru": "Верно назван администратор Сол Мерн."
+    }
+  ],
+  "strict_true_but_full_false": [
+    "v2-train-023",
+    "v2-train-029"
+  ],
+  "prose_rule_correct_but_required_data_missing": [
+    "v2-train-022",
+    "v2-train-024"
+  ],
+  "classification_counts": {
+    "correct": 19,
+    "partial": 3,
+    "incorrect": 8
+  },
+  "correct_excluding_system_name": {
+    "correct": 18,
+    "total": 29,
+    "excluded": [
+      "v2-train-001"
+    ]
+  },
+  "caveat": "This probe uses exact training wording after the main evaluation; a much higher recall than paraphrased held-out performance indicates prompt/wording sensitivity. It is not evidence of broad generalization, and prefix equality alone does not establish the cause. No new training, input edits or primary60 result edits performed by reviewer."
+}

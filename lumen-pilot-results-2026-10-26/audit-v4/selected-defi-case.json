@@ -1,0 +1,40 @@
+{
+  "selected_by_user": true,
+  "selected_at_date": "2026-10-27",
+  "case": "DeFi-помощник с цитатами: Aave / Kamino / Ethereum",
+  "state": "corpus preparation and evaluation plan; model answer quality not measured",
+  "scope": [
+    "Aave v3: залог, health factor, условия ликвидации; v4 хранить отдельно",
+    "Kamino Borrow: LTV, liquidation LTV, условия ликвидации; не переносить правила Aave",
+    "Ethereum: ERC-20 и ERC-4626, ограничения и термины стандарта"
+  ],
+  "available_locally": {
+    "ethereum": "1594 raw EIP/ERC files; 1229 indexed after excluding Moved; 287 Final/Living default candidates",
+    "aave": "official llms.txt index, 101 Markdown links; linked full pages not yet collected",
+    "kamino": "official llms.txt index, 327 Markdown links; linked full pages not yet collected"
+  },
+  "answer_contract": {
+    "answer_language": "Russian",
+    "required": ["short answer", "source URL", "verbatim supporting quote", "retrieved timestamp", "protocol version or proposal status"],
+    "when_not_supported": "Explicitly state that the available sources do not establish the answer; do not invent a citation",
+    "changing_numeric_data": "Separate timestamped read-only data tool; do not memorize current rates or TVL"
+  },
+  "prospective_exam_plan": {
+    "planned_questions": 60,
+    "aave": 20,
+    "kamino": 20,
+    "ethereum": 12,
+    "unanswerable_or_wrong_protocol": 8,
+    "exam_authored": false,
+    "freeze": "Collect and version full pages first. Author and independently check evidence spans and answer criteria before generation. Keep tuning questions separate from the held-out exam.",
+    "arms": [
+      "same base model, no source context",
+      "same base model, manually verified relevant source context (diagnostic oracle)",
+      "same base model, retrieved context from the frozen corpus"
+    ],
+    "metrics_separate": ["retrieval Recall@k", "correctness of the substantive answer", "support for every factual claim", "citation URL and quote integrity", "correct abstention", "JSON/status contract", "latency and process footprint"],
+    "interpretation": "Good oracle-context answers with poor retrieved-context answers implicate retrieval; errors even with relevant context require examining generation and instructions. This is a diagnostic design, not a completed result."
+  },
+  "resource_state": "New prompt-only pilot was guard-stopped after five baseline answers. Runtime has been removed; no new inference or training is running.",
+  "restrictions": ["local inference only", "no training in this comparison", "no transactions or wallet credentials needed", "no numeric or quality score claimed before a complete run"]
+}

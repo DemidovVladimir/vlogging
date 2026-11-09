@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "stage": "calibration",
+  "started_at": "2026-10-26T18:48:23.739896+00:00",
+  "command": [
+    ".venv/bin/mlx_lm.lora",
+    "--config",
+    "train-config.yaml",
+    "--data",
+    "calibration-data",
+    "--iters",
+    "20",
+    "--save-every",
+    "20",
+    "--steps-per-eval",
+    "20",
+    "--val-batches",
+    "1",
+    "--adapter-path",
+    "adapters/smoke"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 24,
+  "peak_footprint_bytes": 2795915136,
+  "peak_rss_bytes": 1331658752,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 586091069,
+  "child_pid": 76833,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T18:48:47.971718+00:00",
+  "wall_seconds": 24.23173758300254,
+  "observed_process_identities": {
+    "76833": 1172741888461
+  },
+  "reused_pids_ignored": []
+}

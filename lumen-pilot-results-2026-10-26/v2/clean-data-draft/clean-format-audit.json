@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "created_at": "2026-10-26T18:39:59.722920+00:00",
+  "arm": "same-60-train-12-valid-natural-answer-labels",
+  "status": "draft_for_parent_review",
+  "source_handbook": {
+    "path": "source-handbook.txt",
+    "sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52"
+  },
+  "scope": "Only gold.answer rewritten into concise source-grounded Russian explanations. No test file read; no rows added or removed; no model compute. Isolates the answer-label format and explanatory content intervention; it is not merely whitespace normalization.",
+  "changed_field_paths": [
+    "gold.answer"
+  ],
+  "unchanged_field_paths": [
+    "id",
+    "question",
+    "fields",
+    "gold.status",
+    "gold.data",
+    "evidence"
+  ],
+  "files": [
+    {
+      "split": "train",
+      "input": "seeds/train.jsonl",
+      "output": "experiments/lumen-local-data-v2/clean-data-draft/clean-train.jsonl",
+      "input_sha256": "3e20da68c161cd6fa6ff7cc21465834e725047ea8f1cadb88e0fb7ae9447ddfe",
+      "output_sha256": "614be03d3dd0b523b014c6c82c8f33d812dc6b322dc34f29254340afa8b41d5d",
+      "input_rows": 60,
+      "output_rows": 60,
+      "answers_changed": 60,
+      "ids_unique": true,
+      "row_order_unchanged": true,
+      "all_other_fields_exactly_equal": true,
+      "invariant_projection_sha256_before": "ffc7499f9692d89410d73959f77ef07576fb272ceca4f1c21b2d7bfc4f35c350",
+      "invariant_projection_sha256_after": "ffc7499f9692d89410d73959f77ef07576fb272ceca4f1c21b2d7bfc4f35c350",
+      "known_rows": 54,
+      "unknown_rows": 6
+    },
+    {
+      "split": "valid",
+      "input": "seeds/valid.jsonl",
+      "output": "experiments/lumen-local-data-v2/clean-data-draft/clean-valid.jsonl",
+      "input_sha256": "8b4ee188e7ff420e7e34dfc1b25970ab2689f259d2925ff357d16677cf12d3d9",
+      "output_sha256": "4f312119f7f1588ce99d87eff86e712c3956da656da2bd3d26fe4009f1cf52dd",
+      "input_rows": 12,
+      "output_rows": 12,
+      "answers_changed": 12,
+      "ids_unique": true,
+      "row_order_unchanged": true,
+      "all_other_fields_exactly_equal": true,
+      "invariant_projection_sha256_before": "8566aeedcffac4a63cbf1438e65f9e52009e91c023eec62ca62023409f1e51aa",
+      "invariant_projection_sha256_after": "8566aeedcffac4a63cbf1438e65f9e52009e91c023eec62ca62023409f1e51aa",
+      "known_rows": 11,
+      "unknown_rows": 1
+    }
+  ],
+  "source_files_unchanged": true,
+  "invariants_passed": true,
+  "arithmetic_checks": {
+    "group_6_weekday": true,
+    "group_8_weekday": true,
+    "group_7_weekday": true,
+    "group_9_weekday": true,
+    "four_iskra": true,
+    "four_people_three_weekdays": true,
+    "refund_half_14": true,
+    "refund_half_11": true
+  },
+  "manual_semantic_review": {
+    "basis": "Source-handbook F01-F30 and НЕОПИСАННЫЕ УСЛОВИЯ; each original train/validation question and evidence.",
+    "discount_threshold": "At least 5 on one ordinary session, Mon-Fri, 20%; no premiere/pass discount.",
+    "refund_boundaries": "Ordinary >=6h full; 2h<=t<6h half; t<2h zero. Premiere >=24h full; t<24h zero.",
+    "passes": "Personal, non-transferable, one visit per pass per day, no premieres; Искра Mon-Thu/3 visits/24 EUR/21 inclusive days; Туман any day/5 visits/44 EUR/40 inclusive days.",
+    "unknown": "Absence of information is distinguished from a negative service-availability fact. No seat availability invented.",
+    "math_in_answers": "Explicit arithmetic for derived prices/refunds; unchanged machine-readable gold.data remains authoritative."
+  },
+  "source_integrity_note": "Original files were read only; all writes targeted clean-data-draft. Input SHA256 values above identify exact originals; no test file was opened."
+}

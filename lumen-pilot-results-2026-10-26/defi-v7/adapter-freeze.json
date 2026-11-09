@@ -1,0 +1,6 @@
+{
+  "created_at_utc": "2026-10-28T08:53:47.719563+00:00",
+  "adapter_sha256": "d0d6e7ab2ccfef3f9e5edf67ff534d7fd147baa40ef6cefaaf32436b694fdb41",
+  "original_adapter_sha256": "3d71b3713a09d6565f522c6727a067cd30bc7b4038cbb3bd0a16cbbb2c080da9",
+  "logic_unchanged": "Only relative old-root path and raw input filename changed; same max3uniqueIDs, no data/status/answer repair."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Static and DOM-state simulation, no browser rendering/server/model",
+  "ids": 31,
+  "local_links": 30,
+  "external_render_assets": [],
+  "documents_sha_verified": 1673,
+  "source_char_spans_exact": true,
+  "frozen_execution_files_verified": 24,
+  "baseline_files_unchanged": true,
+  "questions": 60,
+  "new_model_answers": 60,
+  "human_validation": false,
+  "js_syntax": true,
+  "ui_checks": {
+    "passed": 16,
+    "browser_rendering_tested": false
+  },
+  "historical_learning_scores_source_verified": true,
+  "styled_template_entry_redirect": true,
+  "static_conclusion_without_javascript": true,
+  "cleanup_verified": true,
+  "errors": []
+}

@@ -1,0 +1,257 @@
+{
+  "questions": 60,
+  "answers": 60,
+  "input_cap": 1400,
+  "max_input_tokens": 893,
+  "baseline_contexts_sha256": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+  "prompts_sha256": "ed9f39ae2c42547200bf660b45986beed1cdd08b3092601fd41281897fba4392",
+  "contexts_sha256": "32ffd6afad0201650199f33f9f25a6a37eb98aa49bc19d47f8e86e8ffb603007",
+  "system_sha256": "204d06f6b446f321f2f502c1ec6a09b9ce29bcb23f7402c028721c01a81d824c",
+  "all60_baseline_prompts_reconstructed_exactly": true,
+  "same_system_user_messages_and_catalogue": true,
+  "retrieval_rerun": false,
+  "native_chat_template_changed_for_new_checkpoint": true,
+  "reads_gold": false,
+  "message_hashes": [
+    {
+      "id": "aave-01",
+      "messages_sha256": "4ff0218848d0f9b9452e5f3d81c0fa7fbe33ff9a97929bc5079a1182aca01bd2"
+    },
+    {
+      "id": "aave-02",
+      "messages_sha256": "65f9c6895ec9720b9cb03afc76da81e0dfd6ff99c5ff2758c70398e7088ff36b"
+    },
+    {
+      "id": "aave-03",
+      "messages_sha256": "f5da547181191a9aa99201f9cd2b0dd4f0f2ad194aa9fd03ed1c3fae527f5036"
+    },
+    {
+      "id": "aave-04",
+      "messages_sha256": "ba880178c72f609a93875e01a88d64467839156d53ec7e17d0d16720d0944809"
+    },
+    {
+      "id": "aave-05",
+      "messages_sha256": "01c457f8bde49394d18a8ba486428a96b590d55be91430a55bbd570d4c259a3e"
+    },
+    {
+      "id": "aave-06",
+      "messages_sha256": "467fc7c5f376fb31151c6788fde34f168789355b227339a51b6788e7b3915a26"
+    },
+    {
+      "id": "aave-07",
+      "messages_sha256": "92dff65e15bdf6962914e2c3ae14f837ec039111710e27e30843de5fd819ab1b"
+    },
+    {
+      "id": "aave-08",
+      "messages_sha256": "4240eef01f3afb374d76c582fc3c04c01bf40c73f3627731b871b25ba085d621"
+    },
+    {
+      "id": "aave-09",
+      "messages_sha256": "7d8b53c2d09e7ab7a36933505eb286bd517ad60564df9869e20496a5661b3d49"
+    },
+    {
+      "id": "aave-10",
+      "messages_sha256": "a12073bf43d8d5636d5d9405ede477b893ffd9f62177211e0894bee2439c8139"
+    },
+    {
+      "id": "aave-11",
+      "messages_sha256": "51c1eaec51ff432a8e0812144e7c24b6d1ab965e05e29182bd63d718737f63a7"
+    },
+    {
+      "id": "aave-12",
+      "messages_sha256": "4ec99d6a44b4e75eca611a749482fcef65eed6555c7e7beaac21dba4a08bdb74"
+    },
+    {
+      "id": "aave-13",
+      "messages_sha256": "89de55435773562cbda84b0c343409b692564f8a34b9e9c599c5f7cbf87e2f0a"
+    },
+    {
+      "id": "aave-14",
+      "messages_sha256": "2457ce3040af31aa8b76c5ab70b25b7a9224eafff8d4e0372faeff76364b293d"
+    },
+    {
+      "id": "aave-15",
+      "messages_sha256": "a6775072183ee5688f43e6f580c6ab5404c93001cc350fa783d972de6486a988"
+    },
+    {
+      "id": "aave-16",
+      "messages_sha256": "ae7c27af619a54806a678599036ec5630da63ddb4ea8e42550f5361deff8ca14"
+    },
+    {
+      "id": "aave-17",
+      "messages_sha256": "a92e2c2cda7e688f644ea12e21be42b35571e7b9d76f206ec0870aee6f582c9b"
+    },
+    {
+      "id": "aave-18",
+      "messages_sha256": "e7a549accdb7d3bb2da2a983a887a0396bebe394889510e99ed95c191328c527"
+    },
+    {
+      "id": "aave-19",
+      "messages_sha256": "874be7169b25f4e73ea05f4c079b6e3a153fdbd926f99d245546dd40c7fce9e1"
+    },
+    {
+      "id": "aave-20",
+      "messages_sha256": "a2591a6eb6cb0839d482adb5514695d0705b34c6bac62913b078731c75e207b0"
+    },
+    {
+      "id": "kamino-01",
+      "messages_sha256": "49c7ec943995e9af35b18208a99be4e98bd161d29eda3427cba855da572ae20e"
+    },
+    {
+      "id": "kamino-02",
+      "messages_sha256": "4480432955737865127d832638bebcd0eba9aff5b39fd6d58a462e947d6f38b5"
+    },
+    {
+      "id": "kamino-03",
+      "messages_sha256": "f5d90ff527ae45852e5ff9a89f88c632bb81c49f7f92dadf34808c9bba1c2077"
+    },
+    {
+      "id": "kamino-04",
+      "messages_sha256": "822ce0cb9ed088eb5191b9ed46351bbc6771d74604adf0a20ab43b2e535acb29"
+    },
+    {
+      "id": "kamino-05",
+      "messages_sha256": "eecf77ceef5ea67655f1afe06e1d9d7a0ab86002f5c24c8958281a10e9244ff4"
+    },
+    {
+      "id": "kamino-06",
+      "messages_sha256": "eab0a9fbd9607c03a8470b6ff058c0567c94282a4caf873f5157b4bffda514c4"
+    },
+    {
+      "id": "kamino-07",
+      "messages_sha256": "497b8ca52c5dfc4d25e5757f6d8c2ac49053cdd27d18ca193dc1e6384a87f61f"
+    },
+    {
+      "id": "kamino-08",
+      "messages_sha256": "703ca85b612c7c7a833081327fbe45b704c20dafb52ecc39b362f19e3cd705d0"
+    },
+    {
+      "id": "kamino-09",
+      "messages_sha256": "d1e16ca1fc863cd6888f903f6a2b4d8e7801cafbcce15d5c8f66cbf7903d52aa"
+    },
+    {
+      "id": "kamino-10",
+      "messages_sha256": "44bea54acbb7838c30413670296c352dc2c4e3a6c3b0ace42669d462c1ddae5a"
+    },
+    {
+      "id": "kamino-11",
+      "messages_sha256": "6613bdf9cc57ffe68252b635ea6f066b95f28de16f276e66e5bdc885cbf222a3"
+    },
+    {
+      "id": "kamino-12",
+      "messages_sha256": "fadf0a5b3c6e63519c6d7ff9f0652c6aec78cf72bc7b8d74b6b12d0bee9f5257"
+    },
+    {
+      "id": "kamino-13",
+      "messages_sha256": "f6e8bd242267cccc8d81959d607c1ca8ea8ee3124388f030676dea1480815d79"
+    },
+    {
+      "id": "kamino-14",
+      "messages_sha256": "82ea487b8f9f573224498f4e5e039ded8fd3a1c1b3cefe8c3809c08462fab9ea"
+    },
+    {
+      "id": "kamino-15",
+      "messages_sha256": "5e46520239b3d25ff8abb0e685ac1e7da8b8785c3491f36b79aaf86c49225728"
+    },
+    {
+      "id": "kamino-16",
+      "messages_sha256": "0eed1ddc753a740fadb1b1d63ca9904c72f9fdd65ae6ca1e55e61e1a7caa36af"
+    },
+    {
+      "id": "kamino-17",
+      "messages_sha256": "f9f846eff31b9fb28ac7c6e5039569f785bdea103aaf6c63e8345cf1cca2578c"
+    },
+    {
+      "id": "kamino-18",
+      "messages_sha256": "a273241760c62952ea6dd5f26d0dbde0a4e51184d5247b5b3adaf6f8461f8655"
+    },
+    {
+      "id": "kamino-19",
+      "messages_sha256": "14cac596ad7a406a526262db8f8c6c2ea7a37bdccae2d49f3d687772d071b723"
+    },
+    {
+      "id": "kamino-20",
+      "messages_sha256": "d8928ec9485f0bc53c745ddd7559a206989f201f5527ea983f0f176020d9f14e"
+    },
+    {
+      "id": "eth-01",
+      "messages_sha256": "63fd7a57b8ade89a9d4440ea7e8a0dafca7a6ded1bcc1484ee798ecf2dcc76ed"
+    },
+    {
+      "id": "eth-02",
+      "messages_sha256": "d66080200bdedfdc9bae611cee2666cb6c8224757fb574f8fff0ca7a1fb331b2"
+    },
+    {
+      "id": "eth-03",
+      "messages_sha256": "70df54c5a09dd68dfedd750e3a39876018005d290f15bb16edbd712161635da2"
+    },
+    {
+      "id": "eth-04",
+      "messages_sha256": "9d292c2ce98ea8c83eaa3260091909088ba46bf17b808fdb6a5defa6e0a8133f"
+    },
+    {
+      "id": "eth-05",
+      "messages_sha256": "189fb919f003c0a3a1cd1bcff3f342b3dd26c9d2f93d746d110b73296c1130bf"
+    },
+    {
+      "id": "eth-06",
+      "messages_sha256": "8d8b66c0794ae971b7d760661aa69e9c6951e27e31c1190402b6439ffa93aee1"
+    },
+    {
+      "id": "eth-07",
+      "messages_sha256": "d999d66d81bb0db34de768c56266c58a779bd78bf4a49e70a0ff779907845d43"
+    },
+    {
+      "id": "eth-08",
+      "messages_sha256": "284f68d4c484d5f1f6225cccdb4cb94acf34e1fb9ea7056e76e7ca35ae6b6aba"
+    },
+    {
+      "id": "eth-09",
+      "messages_sha256": "2505a83e10963aa96dc9f118b04bbe22830d27f6bdef8da9f85069916e6958e4"
+    },
+    {
+      "id": "eth-10",
+      "messages_sha256": "bc18b91c2bae13831461134942263dbcefb120bb604082e4009168b3b7ca80a6"
+    },
+    {
+      "id": "eth-11",
+      "messages_sha256": "8f5ad3d94e36d823f99af9076e6f682218dfbb30ad6fdca591e98f8e313e8ad5"
+    },
+    {
+      "id": "eth-12",
+      "messages_sha256": "ca069bb80ed24df997893a9b4cad916a98f1b7d89d263f4654b95550d1909366"
+    },
+    {
+      "id": "unknown-01",
+      "messages_sha256": "5f3cbac18d2af3d880bf23c022172a1411309b7e267f2ca98a666386c9191c1a"
+    },
+    {
+      "id": "unknown-02",
+      "messages_sha256": "283d690ffaac148f5e0fcfbc82cdb4f1404c85aa8327c021c48170d909333507"
+    },
+    {
+      "id": "unknown-03",
+      "messages_sha256": "8a970cf7b06dd2e46ebdded2ae93242e32d510fa1dd6763199d808b85df815d4"
+    },
+    {
+      "id": "unknown-04",
+      "messages_sha256": "6eb947a9598a8007486c961bddabaebf89e2005f60f99af50cc69ef87a5bb56d"
+    },
+    {
+      "id": "unknown-05",
+      "messages_sha256": "953fe91de700dd258132df9c2df73f8109aa397d95b43f0f1114820fcac28223"
+    },
+    {
+      "id": "unknown-06",
+      "messages_sha256": "700c129d27f7a7d1c9ce43d1bd8af14332c55fe0b71b6cb8fe5a6fb59c896069"
+    },
+    {
+      "id": "unknown-07",
+      "messages_sha256": "c5369a5c18a0482973cc730e0fdb8336285c8006913d5d0196615c73e476fc53"
+    },
+    {
+      "id": "unknown-08",
+      "messages_sha256": "c5addc97fe8275522f3a566231465ebf35ae93155eb9c52c6f095f2ff1ba7f8d"
+    }
+  ]
+}

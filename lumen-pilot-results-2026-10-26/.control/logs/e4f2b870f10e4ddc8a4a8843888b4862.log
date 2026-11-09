@@ -1,0 +1,4 @@
+1/1 extra: 1.27s
+{"status": "known", "answer": "{\"known\": true, \"answer\": \"В зале Сумрака, который является кинотеатром, количество мест в зале не указано в открытых источниках. Для точного ответа необходимо обращаться к официальным данным кинотеатра.\"}", "data": {}}
+RESOURCE GUARD adapter-probe: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/runs/resources/adapter-probe.json

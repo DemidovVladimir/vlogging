@@ -1,0 +1,18 @@
+{
+  "id": "d3b12296044d4636b60f5405826d39ef",
+  "stage": "venv",
+  "command": [
+    "/opt/homebrew/bin/python3.12",
+    "-m",
+    "venv",
+    ".venv"
+  ],
+  "pid": 25431,
+  "pgid": 25431,
+  "birth": "Tue Oct 27 12:56:00 2026",
+  "manager_pid": 25430,
+  "manager_birth": "Tue Oct 27 12:56:00 2026",
+  "state": "finished",
+  "log": ".control/logs/d3b12296044d4636b60f5405826d39ef.log",
+  "exit_code": 0
+}

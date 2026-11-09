@@ -1,0 +1,37 @@
+{
+  "changed": [
+    "en/episodes/agent-context/index.html",
+    "en/episodes/emudhra-ca-compromise/index.html",
+    "en/episodes/tengu-cluster/index.html",
+    "en/index.html",
+    "episodes/agent-context/index.html",
+    "episodes/emudhra-ca-compromise/index.html",
+    "episodes/tengu-cluster/index.html",
+    "index.html"
+  ],
+  "added": [
+    "en/episodes/chaos-kb/assets/briefed.jpg",
+    "en/episodes/chaos-kb/assets/cc-kb-claude-md.jpg",
+    "en/episodes/chaos-kb/assets/cc-kb-unused.jpg",
+    "en/episodes/chaos-kb/assets/persona-2.jpg",
+    "en/episodes/chaos-kb/assets/persona-3.jpg",
+    "en/episodes/chaos-kb/assets/persona.jpg",
+    "en/episodes/chaos-kb/assets/plain-2.jpg",
+    "en/episodes/chaos-kb/assets/plain.jpg",
+    "en/episodes/chaos-kb/guide.css",
+    "en/episodes/chaos-kb/guide.js",
+    "en/episodes/chaos-kb/index.html",
+    "episodes/chaos-kb/assets/briefed.jpg",
+    "episodes/chaos-kb/assets/cc-kb-claude-md.jpg",
+    "episodes/chaos-kb/assets/cc-kb-unused.jpg",
+    "episodes/chaos-kb/assets/persona-2.jpg",
+    "episodes/chaos-kb/assets/persona-3.jpg",
+    "episodes/chaos-kb/assets/persona.jpg",
+    "episodes/chaos-kb/assets/plain-2.jpg",
+    "episodes/chaos-kb/assets/plain.jpg",
+    "episodes/chaos-kb/guide.css",
+    "episodes/chaos-kb/guide.js",
+    "episodes/chaos-kb/index.html"
+  ],
+  "preserved": 136
+}

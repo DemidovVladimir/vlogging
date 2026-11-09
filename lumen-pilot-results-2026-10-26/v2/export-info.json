@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-26T19:21:10.935697+00:00",
+  "source": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2",
+  "selected_adapters": [
+    "v1",
+    "clean200",
+    "expanded200",
+    "expanded800"
+  ],
+  "model_weights_included": false,
+  "runtime_and_caches_included": false,
+  "scope": "Frozen data, actual raw outputs, metrics, source, code and selected adapters. Keep after parent cleanup.",
+  "presentation_path_adjustment": "History href in exported report adjusted for one less parent directory; evidence bytes unchanged."
+}

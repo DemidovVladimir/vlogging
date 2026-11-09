@@ -1,0 +1,10 @@
+public/
+build-manifest.json
+upload-manifest.json
+deployment-record.json
+qa/
+.wrangler/
+.env
+.env.*
+.dev.vars*
+node_modules/

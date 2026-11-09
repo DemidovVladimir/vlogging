@@ -1,0 +1,26 @@
+{
+  "report_date_berlin": "2026-10-27",
+  "created_at_utc": "2026-10-27T09:52:30.880148+00:00",
+  "task": "Controlled systemic prompt change, no training.",
+  "models": "Same pinned MLX Qwen3-1.7B-4bit revision and original hard-nonthinking formatting patch as v3.",
+  "arms": [
+    "baseline full context + original SYSTEM",
+    "revised full context + revised-system.txt"
+  ],
+  "fixed": [
+    "60 fresh exam questions",
+    "weights/tokenizer",
+    "source",
+    "question/fields message layout",
+    "non-thinking",
+    "temperature0",
+    "seed42 per question",
+    "max_output_tokens256"
+  ],
+  "change": "Only system message content; no retrieval, oracle evidence, examples, calculator, forced JSON decoder, retries or output repair.",
+  "exam_note": "Prospectively authored before new model generation, after historical v3 errors were known. Same fictional facts/domain; not external blind benchmark. Author did not read revised prompt.",
+  "scoring": "Original strict compare.grade unchanged + full-answer agent semantic review for both complete60, no human validation. Keep malformed/inconsistent replies.",
+  "logging": "Stream API used for both arms to record actual generated_tokens, prompt_tokens and finish_reason; raw is exact concatenation of text chunks. Historical v3 did not log those counts.",
+  "resource_gate": "Require pressure1, free disk>=12GiB, token/static check then padded inference probe. Guard6GiB footprint/.75GiB swap growth/3 warning samples. Stop on any failure; no reduced model or partial-score substitution.",
+  "cleanup": "Preserve lightweight evidence then delete this entire dedicated runtime, venv, weights and caches; stop all owned jobs. No background inference server."
+}

@@ -1,0 +1,50 @@
+{
+  "status": "proposal_not_run",
+  "date": "2026-10-26",
+  "task": "Closed-book specialization on a fictional cinema handbook",
+  "base_model": "Qwen/Qwen3-4B",
+  "hardware_verified": {
+    "chip": "Apple M4",
+    "unified_memory_GB": 16,
+    "python_arch": "arm64",
+    "disk_free_GB_at_check": 192
+  },
+  "source_file": "source-handbook.txt",
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "training_data_status": "not_created",
+  "illustrative_eval_items_created": 8,
+  "planned_splits": {
+    "train": 600,
+    "validation": 60,
+    "locked_test": 80,
+    "general_regression": 30
+  },
+  "planned_test_slices": {
+    "recall": 20,
+    "application": 30,
+    "combination": 20,
+    "unknown": 10
+  },
+  "comparison": {
+    "A": "Same quantized base without adapter; no handbook, retrieval, tools, or previous chat",
+    "B": "Exactly same base with trained LoRA; same restrictions"
+  },
+  "training_proposal": {
+    "backend": "mlx-lm",
+    "quantization_bits": 4,
+    "batch_size": 1,
+    "max_seq_length": 512,
+    "num_lora_layers": 4,
+    "gradient_checkpointing": true,
+    "smoke_test_iterations": 20,
+    "mask_prompt": true
+  },
+  "decoding_control": "Same system prompt, tokenizer/template, non-thinking mode, deterministic decoding, answer budget; fresh conversation per item",
+  "predeclared_candidate_gate": {
+    "minimum_correct_out_of_80": 64,
+    "minimum_gain_correct_items": 16,
+    "maximum_fabrications_on_10_unknown": 1,
+    "maximum_loss_on_30_general_tasks": 3
+  },
+  "caveat": "Counts and gates are proposed design choices, not measured results or universal thresholds. A failed configuration does not establish that all fine-tuning is useless."
+}

@@ -1,0 +1,33 @@
+v2-train-001 True prefix_match True target_loss 0.0229
+v2-train-002 False prefix_match True target_loss 0.0852
+v2-train-003 True prefix_match True target_loss 0.0362
+v2-train-004 True prefix_match True target_loss 0.0594
+v2-train-005 False prefix_match True target_loss 0.0586
+v2-train-006 True prefix_match True target_loss 0.0552
+v2-train-007 True prefix_match True target_loss 0.0626
+v2-train-008 True prefix_match True target_loss 0.1403
+v2-train-009 True prefix_match True target_loss 0.0235
+v2-train-010 True prefix_match True target_loss 0.0259
+v2-train-011 True prefix_match True target_loss 0.0467
+v2-train-012 True prefix_match True target_loss 0.1771
+v2-train-013 False prefix_match True target_loss 0.0677
+v2-train-014 True prefix_match True target_loss 0.0224
+v2-train-015 True prefix_match True target_loss 0.0257
+v2-train-016 True prefix_match True target_loss 0.0865
+v2-train-017 True prefix_match True target_loss 0.1521
+v2-train-018 False prefix_match True target_loss 0.036
+v2-train-019 True prefix_match True target_loss 0.0819
+v2-train-020 True prefix_match True target_loss 0.0286
+v2-train-021 False prefix_match True target_loss 0.1147
+v2-train-022 False prefix_match True target_loss 0.0537
+v2-train-023 True prefix_match True target_loss 0.0615
+v2-train-024 False prefix_match True target_loss 0.0688
+v2-train-025 True prefix_match True target_loss 0.1146
+v2-train-026 False prefix_match True target_loss 0.4937
+v2-train-027 False prefix_match True target_loss 0.2142
+v2-train-028 True prefix_match True target_loss 0.0982
+v2-train-029 True prefix_match True target_loss 0.28
+v2-train-030 True prefix_match True target_loss 0.0119
+{"held_out": false, "post_hoc": true, "purpose": "Training recall and exact inference/train prompt compatibility; not added to primary60 score", "count": 30, "strict_training_recall": 21, "all_inference_prefixes_match_training": true, "token_weighted_teacher_forced_loss": 0.11012591924800177, "raw": "runs/training-recall.jsonl"}
+RESOURCE GUARD training-recall: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/experiments/lumen-local-data-v2/runs/resources/training-recall.json

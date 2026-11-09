@@ -1,0 +1,18 @@
+{
+  "id": "83bf5cc11180455da32406d189261bc5",
+  "stage": "freeze",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "freeze"
+  ],
+  "pid": 66268,
+  "pgid": 66268,
+  "birth": "Mon Oct 26 17:15:08 2026",
+  "manager_pid": 66215,
+  "manager_birth": "Mon Oct 26 17:15:07 2026",
+  "state": "finished",
+  "log": ".control/logs/83bf5cc11180455da32406d189261bc5.log",
+  "exit_code": 0
+}

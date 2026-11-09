@@ -1,0 +1,30 @@
+{
+  "id": "7ce3e87ebe774d889b846004d1917fe5",
+  "stage": "train-expanded",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "train-expanded",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/mlx_lm.lora",
+    "--config",
+    "train-config.yaml"
+  ],
+  "pid": 77657,
+  "pgid": 77657,
+  "birth": "Mon Oct 26 19:51:42 2026",
+  "manager_pid": 77641,
+  "manager_birth": "Mon Oct 26 19:51:42 2026",
+  "state": "finished",
+  "log": ".control/logs/7ce3e87ebe774d889b846004d1917fe5.log",
+  "exit_code": 0
+}

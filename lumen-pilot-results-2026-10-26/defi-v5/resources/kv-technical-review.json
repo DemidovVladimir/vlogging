@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-10-27T12:20:11.895206+00:00",
+  "reviewer_agent": "/root/resource_guard",
+  "human_validation": false,
+  "scope": "Read-only runtime/output/source audit. This JSON is the sole reviewer write. No model/MLX import or inference, no package change, no process/app action, no raw/scorer/input edits.",
+  "status": "kv4_numerical_condition_fails_local_sanity; exact low-level root cause unproven",
+  "evidence_locations": {
+    "invalid_attempt_runtime_archive": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/invalid-kv4-runs",
+    "probe_sha256": "1e2aca5928a88c995243ff009c554b57561d36fc03ba2bccdde961fc715b003d",
+    "resource_probe_sha256": "e9d4d7a5319fd2b82ac1566e263908cd6674ef9144b2f5ed588d25f10ba998c9",
+    "resource_run_sha256": "02b8ed014d3fecf0c5864c10bc6c41dcecf07ac7b423e398a21a48e5919b9576",
+    "kv_sanity_sha256": "e44b423772eeec7ccfd827a6f7e207dc011e9df53aa064ed326cb7a1ed57fc47"
+  },
+  "invalid_attempt": {
+    "primary_quality_evaluation_valid": false,
+    "reason": "All28 observed outputs across3 arms are invalid JSON with severe repetition/structural corruption, and separate non-exam controls isolate a failure when KV4/start0 is enabled. This incomplete stopped infrastructure attempt must not be presented as a DeFi knowledge/retrieval score.",
+    "partial_answers": [
+      {
+        "arm": "closed",
+        "answers": 10,
+        "invalid_json": 10,
+        "file_sha256": "f88f2ec77f3aa6a33b5b940d90a59d6c780c0b80ac75ec808bbd7791f697d96a",
+        "model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+        "model_weight_sha256": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+        "freeze_sha256": "dc993fce58ae02ecec09895c4685f9a3a390a3f0b541c3db7f5a350fdbddb869",
+        "settings": {
+          "temperature": 0,
+          "seed_per_prompt": 42,
+          "enable_thinking": false,
+          "max_output_tokens": 384,
+          "prefill_step_size": 128,
+          "kv_bits": 4,
+          "kv_group_size": 64,
+          "quantized_kv_start": 0,
+          "allocator_cache_bytes": 33554432,
+          "allocator_memory_limit_bytes": 2952790016
+        }
+      },
+      {
+        "arm": "oracle",
+        "answers": 9,
+        "invalid_json": 9,
+        "file_sha256": "67bbfe104703bc66ed42345e6905b5179ea3f7985f4ee2ffefdca6d2ab871824",
+        "model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+        "model_weight_sha256": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+        "freeze_sha256": "dc993fce58ae02ecec09895c4685f9a3a390a3f0b541c3db7f5a350fdbddb869",
+        "settings": {
+          "temperature": 0,
+          "seed_per_prompt": 42,
+          "enable_thinking": false,
+          "max_output_tokens": 384,
+          "prefill_step_size": 128,
+          "kv_bits": 4,
+          "kv_group_size": 64,
+          "quantized_kv_start": 0,
+          "allocator_cache_bytes": 33554432,
+          "allocator_memory_limit_bytes": 2952790016
+        }
+      },
+      {
+        "arm": "retrieved",
+        "answers": 9,
+        "invalid_json": 9,
+        "file_sha256": "1c481c704bef9fcf370b17c19aa3af5675bd71a74eb274792d5810654a4d4527",
+        "model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+        "model_weight_sha256": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+        "freeze_sha256": "dc993fce58ae02ecec09895c4685f9a3a390a3f0b541c3db7f5a350fdbddb869",
+        "settings": {
+          "temperature": 0,
+          "seed_per_prompt": 42,
+          "enable_thinking": false,
+          "max_output_tokens": 384,
+          "prefill_step_size": 128,
+          "kv_bits": 4,
+          "kv_group_size": 64,
+          "quantized_kv_start": 0,
+          "allocator_cache_bytes": 33554432,
+          "allocator_memory_limit_bytes": 2952790016
+        }
+      }
+    ],
+    "total_answers": 28,
+    "planned_answers": 180,
+    "probe_raw": "capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity capacity",
+    "probe_prompt_tokens": 1820,
+    "probe_output_tokens": 16,
+    "probe_resource_status": "completed",
+    "probe_resource_exit": 0,
+    "probe_peak_footprint_bytes": 1717110608,
+    "probe_pressure": [
+      1
+    ],
+    "probe_swap_growth_bytes": 0,
+    "run_stop_status": "interrupted",
+    "run_exit": 143,
+    "run_wall_seconds": 95.62059079199389,
+    "run_peak_footprint_bytes": 1775322984,
+    "run_pressure": [
+      1
+    ],
+    "run_swap_growth_bytes": 0
+  },
+  "non_exam_control": {
+    "settings_fixed": [
+      "same weights",
+      "same template",
+      "prefill128",
+      "cache32MiB",
+      "memorylimit2.75GiB",
+      "seed42",
+      "temp0",
+      "max96"
+    ],
+    "variable_changed": "kv_bits4/start0 versus unquantized KV",
+    "summary": [
+      {
+        "kv_bits": 4,
+        "count": 3,
+        "strict_exact_json_passes": 0,
+        "all_prompt_lengths_below_prefill128": true,
+        "results": [
+          {
+            "control": "json",
+            "kv_bits": 4,
+            "raw": "\n\n```{\"ok\": true\"```",
+            "parsed": null,
+            "expected": {
+              "ok": true
+            },
+            "pass": false,
+            "prompt_tokens": 49,
+            "generation_tokens": 9,
+            "finish_reason": "stop",
+            "seconds": 0.21027316599793267
+          },
+          {
+            "control": "arithmetic",
+            "kv_bits": 4,
+            "raw": "\n{\n  \"result\": \n\"\n}",
+            "parsed": null,
+            "expected": {
+              "result": 5
+            },
+            "pass": false,
+            "prompt_tokens": 50,
+            "generation_tokens": 11,
+            "finish_reason": "stop",
+            "seconds": 0.19095383300737012
+          },
+          {
+            "control": "source",
+            "kv_bits": 4,
+            "raw": "\n\n{\"{\n  \" \": \"\n\n{\"color\": \"бирюзовый\"\n}",
+            "parsed": null,
+            "expected": {
+              "color": "бирюзовый"
+            },
+            "pass": false,
+            "prompt_tokens": 64,
+            "generation_tokens": 22,
+            "finish_reason": "stop",
+            "seconds": 0.3135023750073742
+          }
+        ]
+      },
+      {
+        "kv_bits": null,
+        "count": 3,
+        "strict_exact_json_passes": 2,
+        "all_prompt_lengths_below_prefill128": true,
+        "results": [
+          {
+            "control": "json",
+            "kv_bits": null,
+            "raw": "{\n  \"ok\": true\n}",
+            "parsed": {
+              "ok": true
+            },
+            "expected": {
+              "ok": true
+            },
+            "pass": true,
+            "prompt_tokens": 49,
+            "generation_tokens": 9,
+            "finish_reason": "stop",
+            "seconds": 0.16536199999973178
+          },
+          {
+            "control": "arithmetic",
+            "kv_bits": null,
+            "raw": "```json\n{\n  \"result\": 5\n}\n```",
+            "parsed": null,
+            "expected": {
+              "result": 5
+            },
+            "pass": false,
+            "prompt_tokens": 50,
+            "generation_tokens": 14,
+            "finish_reason": "stop",
+            "seconds": 0.21825137500127312
+          },
+          {
+            "control": "source",
+            "kv_bits": null,
+            "raw": "{\n  \"color\": \"бирюзовый\"\n}",
+            "parsed": {
+              "color": "бирюзовый"
+            },
+            "expected": {
+              "color": "бирюзовый"
+            },
+            "pass": true,
+            "prompt_tokens": 64,
+            "generation_tokens": 13,
+            "finish_reason": "stop",
+            "seconds": 0.20763837500999216
+          }
+        ]
+      }
+    ],
+    "interpretation": "KV4/start0 gives0/3 valid exact JSON controls. KVNone gives2/3 exact JSON; arithmetic contains correct result5 inside Markdown fences and must NOT be reported as strict3/3. These same-process controls strongly implicate enabling the quantized KV condition; they do not establish a specific Metal kernel defect or general mathematical invalidity of all quantized KV implementations.",
+    "ordering_limitation": "All KV4 controls ran before KVNone, not a randomized cross-over; no long-context comparison or tensor-level logit oracle was performed in this audit."
+  },
+  "important_source_level_findings": {
+    "installed_sources_match_official_v0_32_2": true,
+    "sources": {
+      "generate.py": {
+        "local_path": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/.venv/lib/python3.12/site-packages/mlx_lm/generate.py",
+        "sha256": "9d46803799f99d6fc7c35fff2d4357c79b1a25ae98cc63efeaaebeb50a7b5f33",
+        "official_tag_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/generate.py"
+      },
+      "models/cache.py": {
+        "local_path": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/.venv/lib/python3.12/site-packages/mlx_lm/models/cache.py",
+        "sha256": "c96cb169fd5e0ec4584a162dd61dc62ab08ccdca03a9850f8a491ce6809145e6",
+        "official_tag_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/models/cache.py"
+      },
+      "models/qwen3.py": {
+        "local_path": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/.venv/lib/python3.12/site-packages/mlx_lm/models/qwen3.py",
+        "sha256": "7e29b7055d8e526a0ede6e2740a3038ad24d0cef6a1abb446c411d3fbd0efa2d",
+        "official_tag_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/models/qwen3.py"
+      },
+      "models/base.py": {
+        "local_path": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/.venv/lib/python3.12/site-packages/mlx_lm/models/base.py",
+        "sha256": "63d8e58a4b6f8c0902719499c693647fbf486bbd5d22b09868a07d37e08c83d6",
+        "official_tag_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/v0.32.2/mlx_lm/models/base.py"
+      }
+    },
+    "supported_not_validated": "The Qwen3 architecture has a legal QuantizedKVCache path with head_dim128/group64. Argument acceptance and compatible layout establish code-path support, not numerical fidelity, robust text generation or parity on this model/device/settings.",
+    "dispatch_difference": "KVCache uses mx.fast.scaled_dot_product_attention. A cache with bits selects a separate quantized attention implementation with quantized_matmul and explicit score/softmax computation in models/base.py. Enabling KV4 changes precision and arithmetic/kernel paths.",
+    "conversion_timing": "generate_step processes N-1 prompt tokens in prefill, calls maybe_quantize_kv_cache after the block, then handles the final prompt token through the quantized cache when start0. A49–64-token prompt at prefill128 can therefore fail without any multi-chunk quantized prefill.",
+    "masked_prefill_claim": "The short non-exam controls all fit below128. A bug requiring multiple quantized prefill chunks or a multi-query causal mask is not necessary to reproduce this failure; do not label masked prefill the confirmed cause.",
+    "memory_limits": "The KVNone controls keep prefill128, cache32MiB and allocator limit2.75GiB fixed and recover coherent content. This argues against those limits alone as sufficient explanation, but no full factorial or tensor-level test was performed.",
+    "weight_template_identity": "Model fingerprint/weight SHA and historical template identity were already checked by root; metadata above agrees across arms. Reviewer did not re-read the1GB weights. No evidence here calls for changing weights/template/prompts."
+  },
+  "primary_upstream_checks": [
+    {
+      "url": "https://github.com/ml-explore/mlx-lm/pull/2008/files",
+      "topic": "Quantized KV packed storage width fix",
+      "status_at_review": "Open PR, not an installed fix",
+      "relevance": "The changed formulas dim//(32//bits) versus dim*bits//32 differ for some non-divisor precisions. For our bits4 and dim128 both give16 packed uint32 values; this PR does not establish the cause of our4-bit failure. No patch applied."
+    },
+    {
+      "url": "https://github.com/ml-explore/mlx-lm/pull/1978",
+      "topic": "Rotating-cache attention sink mask",
+      "relevance": "Runtime uses max_kv_size=None and ordinary full KVCache before quantization, not RotatingKVCache. A rotating eviction/sink mask bug cannot simply be transferred to this case."
+    },
+    {
+      "url": "https://github.com/ml-explore/mlx-lm/issues/1651",
+      "topic": "Historical quantized_kv_start default discrepancy",
+      "relevance": "Explains why entry points/defaults matter; our start0 is explicit, not an unnoticed default. It does not document this exact local corruption."
+    },
+    {
+      "url": "https://github.com/ml-explore/mlx/issues/4022",
+      "topic": "M3 Max2-pass vector SDPA collapse at KV1024",
+      "relevance": "Different hardware, model, core version and unquantized SDPA path; our short controls fail below64 tokens. Not evidence of this specific bug."
+    },
+    {
+      "url": "https://github.com/ml-explore/mlx/issues/3393",
+      "topic": "Base M4 Gemma MoE garbage",
+      "relevance": "MoE128-expert routing/gather_mm report, unlike dense Qwen3-1.7B. Same-chip symptom alone is insufficient attribution."
+    }
+  ],
+  "search_conclusion": "Targeted upstream primary-source search found related cache/kernel issues, but no confirmed report matching dense Qwen3-1.7B4-bit + mlx0.32.4 + mlx-lm0.32.2 + KV4/group64/start0 + short prompt corruption. Absence from this search is not proof no such issue exists.",
+  "root_cause_confidence": {
+    "enabling_kv4_start0_is_locally_implicated": "strong paired-control evidence under otherwise fixed runtime settings",
+    "specific_quantized_kernel_or_cache_layout_bug": "unconfirmed",
+    "m4_specific_bug": "unconfirmed",
+    "masked_multichunk_prefill_as_necessary_cause": "not supported by the short controls",
+    "ordinary_model_answer_format_error": "real residual issue in unquantized arithmetic fence; separate from corrupted KV4 output"
+  },
+  "gate_defect_and_fix": {
+    "observed": "Old --probe measured resources and exit0 only. Its stored raw was repeated capacity tokens, but main gate never checked a successful expected JSON answer. A capacity/resource pass is not a functional-sanity pass.",
+    "prompt_design_note": "The probe placed instruction before a long repeated capacity filler. Such a prompt can itself dilute instructions; repeated filler alone did not prove the KV defect. Independent short controls provide the stronger isolation.",
+    "required_new_gate": [
+      "Keep resource guard pressure/swap thresholds unchanged.",
+      "Use non-exam padded prompt with final clear instruction after filler; validate a predeclared expected JSON and reject malformed/incorrect output before evaluated questions.",
+      "Also check bounded simple JSON/arithmetic and invented-source retrieval controls; distinguish semantic arithmetic in a fence from exact JSON success.",
+      "Store both resource status and functional control results; either failing blocks evaluation."
+    ]
+  },
+  "recommended_prospective_recovery": {
+    "mode": "Disable KV quantization uniformly (kv_bits=None) for all3 arms if root accepts the sanity evidence; preserve same model/template/frozen questions/source/retrieval and prefill128/cache limits.",
+    "protocol": "Preserve old freeze/raw/resources under invalid-kv4-attempt classification, write a new attempt/freeze and explain the infrastructure change openly. No answer repair or cherry-picking from old attempt; redo every main arm under the new uniform condition.",
+    "resource_recheck": "Unquantized KV adds estimated~0.14GiB persistent KV near this budget, but measured new padded probe is required; no guarantee from the estimate. Keep3.5GiB footprint/.25GiB swap growth/pressure2×3 protection.",
+    "scope": "Do not install an upstream patch or change model precision/version mid-comparison merely because a related PR exists. A future exact root-cause report would need controlled tensor/logit tests beyond this read-only audit."
+  }
+}

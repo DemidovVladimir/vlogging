@@ -1,0 +1,17 @@
+{
+  "id": "5ca75aec254f499a841b2e0ccdc6f7c2",
+  "stage": "preflight",
+  "command": [
+    ".venv/bin/python",
+    "defi_harness.py",
+    "--preflight"
+  ],
+  "pid": 3464,
+  "pgid": 3464,
+  "birth": "Wed Oct 28 09:57:08 2026",
+  "manager_pid": 3455,
+  "manager_birth": "Wed Oct 28 09:57:08 2026",
+  "state": "finished",
+  "log": ".control/logs/5ca75aec254f499a841b2e0ccdc6f7c2.log",
+  "exit_code": 0
+}

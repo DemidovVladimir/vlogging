@@ -1,0 +1,1282 @@
+{
+  "schema": 1,
+  "reviewed_at_utc": "2026-10-27T12:09:40.625400+00:00",
+  "reviewer_agent": "/root/video_draft",
+  "human_validation": false,
+  "independence": "Different agent from exam author; read all questions/gold and original source passages. No model generations read or run. Author discussion occurred before freeze to resolve a scope ambiguity and source anchors.",
+  "scope": "Final exam gold/source/type/offset/math audit only; approval does not substitute for final context-token/resource preflight.",
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "author_notes_sha256": "39b2bb54c97d511e17808262d54f985d12a51bc1752ce6e4bfa3c5991f121de0",
+  "approved_for_freeze": true,
+  "count": 60,
+  "known_count": 52,
+  "unknown_count": 8,
+  "known_protocol_counts": {
+    "aave": 20,
+    "kamino": 20,
+    "ethereum": 12
+  },
+  "boolean_field_values": {
+    "true": 16,
+    "false": 18
+  },
+  "exact_source_spans_verified": 68,
+  "source_files_verified": 12,
+  "source_file_sha256": {
+    "sources/aave/pages/aave-v3/overview.md": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+    "sources/aave/pages/aave-v3/smart-contracts/pool.md": "a379c7a4db4d8bf294fbdf8dceaa90764d98dae8b49995aae65630ac444eb6c7",
+    "sources/aave/pages/aave-v3/smart-contracts/tokenization.md": "8aa7dbd276a9a573952907321ce98cf80908882dcd887063c7d535db795a3970",
+    "sources/aave/pages/aave-v3/guides/credit-delegation.md": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b",
+    "sources/aave/pages/aave-v3/guides/flash-loans.md": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+    "sources/aave/pages/aave-v3/concepts/reserve.md": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746",
+    "sources/kamino/pages/products/borrow/liquidations.md": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+    "sources/kamino/pages/products/borrow/borrowing.md": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+    "sources/kamino/pages/products/borrow/fees.md": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9",
+    "sources/kamino/pages/products/borrow/fixed-rates.md": "a76550ee4bc46de14acc42dcc2c34e37df24ad2eff5315f00a2e74bb5875b288",
+    "../audit-v4/crypto-corpus/ERCs/ERCS/erc-20.md": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+    "../audit-v4/crypto-corpus/ERCs/ERCS/erc-4626.md": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a"
+  },
+  "unresolved_blockers": [],
+  "resolved_before_generation": [
+    {
+      "id": "aave-16",
+      "resolution": "Generic flash loan ambiguous with debt-opening option; final question explicitly flashLoanSimple/principal+fee, plus method scope evidence."
+    },
+    {
+      "id": "kamino-04",
+      "resolution": "Debt clarified as unchanged risk-adjusted debt; formula evidence added."
+    },
+    {
+      "ids": [
+        "eth-07",
+        "eth-08",
+        "eth-09",
+        "eth-10",
+        "eth-11",
+        "eth-12"
+      ],
+      "resolution": "Method headings/conditional-clause anchors added so cropped oracle evidence retains semantic scope."
+    }
+  ],
+  "evaluation_notes": [
+    "Unknown questions explicitly lack personal/live/future state; neutral source snippets do not by themselves prove global absence of an answer. Do not penalize a request for the missing state.",
+    "Kamino14 needs dynamic bonus vs fixed, not an unsolicited complete enumeration of all bonus caps.",
+    "Correct numerical examples are conditional textbook calculations, not executable financial advice or live parameters.",
+    "Final contexts must be regenerated from this exam SHA; old draft contexts were checked for scope but not approved as final delivered input.",
+    "Candidate/spans recall must be recomputed against final68 spans; earlier draft recall values cannot be carried over."
+  ],
+  "items": [
+    {
+      "id": "aave-01",
+      "verdict": "approved",
+      "question_and_gold_sha256": "bbf1a8fb2ba97adde8c7700ec1438f6b3e6cb4778f63ba33973e4df1b758ca89",
+      "content_review_ru": "0,98<1; критерий eligibility выполнен. Вопрос не обещает фактическое исполнение ликвидации.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 1787,
+          "end_char": 1794,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-02",
+      "verdict": "approved",
+      "question_and_gold_sha256": "f1cf1aa766eadc918e90f7b5ba417f7e3a8aae6261919ce75a05890f06be9726",
+      "content_review_ru": "Ровно1 не удовлетворяет строгому below1. Узкая формулировка исключает спор о реальных округлениях/onchain проверках.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 1787,
+          "end_char": 1794,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-03",
+      "verdict": "approved",
+      "question_and_gold_sha256": "fcc318b95bfa068ffd67f1ff9273879fc7395411aec9799eb3434f0685940df9",
+      "content_review_ru": "Вывод, оставляющий HF0,97 при существующем долге, нарушает прямо указанное ограничение withdraw.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/pool.md",
+          "source_sha256": "a379c7a4db4d8bf294fbdf8dceaa90764d98dae8b49995aae65630ac444eb6c7",
+          "source_sha_match": true,
+          "start_char": 8527,
+          "end_char": 8561,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-04",
+      "verdict": "approved",
+      "question_and_gold_sha256": "368609c49a1ac52c1628f046e5723458df8f6ba60dd53905330b69011af6d4fc",
+      "content_review_ru": "Обычный borrow можно погасить в любое время; фиксированное обязательное ожидание не задано.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 1579,
+          "end_char": 1596,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-05",
+      "verdict": "approved",
+      "question_and_gold_sha256": "1eb3eed65a7422e7bdc7095bedcd027c57cccdca3f3ffcd3064138b84d6b190c",
+      "content_review_ru": "Peg стандартного aToken к underlying1:1; вопрос отдельно исключает фиксированную долларовую цену.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/tokenization.md",
+          "source_sha256": "8aa7dbd276a9a573952907321ce98cf80908882dcd887063c7d535db795a3970",
+          "source_sha_match": true,
+          "start_char": 304,
+          "end_char": 318,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-06",
+      "verdict": "approved",
+      "question_and_gold_sha256": "7a9114a9dc12bea535474207e1b939444741123b819494affcd85c2649d5a05f",
+      "content_review_ru": "Стандартный aToken повышает отображаемый wallet balance; StataToken явно не смешан с обычным aToken.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/tokenization.md",
+          "source_sha256": "8aa7dbd276a9a573952907321ce98cf80908882dcd887063c7d535db795a3970",
+          "source_sha_match": true,
+          "start_char": 459,
+          "end_char": 503,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-07",
+      "verdict": "approved",
+      "question_and_gold_sha256": "b2c75071bb5759fd12112cb092fae292a448461b58091046caed66b662ba0b67",
+      "content_review_ru": "Isolation Mode разрешает лишь specific basket, не произвольный debt asset.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 4516,
+          "end_char": 4541,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-08",
+      "verdict": "approved",
+      "question_and_gold_sha256": "93bbeacac88dc78e9ee1954da48ac5597841b60df286dd593d54cad21e1b4bc9",
+      "content_review_ru": "Ограничение designated debt ceiling прямо указано для Isolation Mode.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 4575,
+          "end_char": 4598,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-09",
+      "verdict": "approved",
+      "question_and_gold_sha256": "1f3608abe1498695cadf10b22c5f3e9f8cd3a5011444d101fa8d494166ef760a",
+      "content_review_ru": "E-Mode относится к коррелированным активам в категории; correlated верно.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 3968,
+          "end_char": 3985,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-10",
+      "verdict": "approved",
+      "question_and_gold_sha256": "84608bf720a5c37dce2699aee5280ffc001bbfb9a8fa10d601f481140971b47d",
+      "content_review_ru": "Siloed borrowing исключает другие активные заимствования в том же pool; область ограничения задана корректно.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 4925,
+          "end_char": 4940,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-11",
+      "verdict": "approved",
+      "question_and_gold_sha256": "866e4c12dae09fe3198825dd33506fd1870e14c972139e46385584e324ff17c6",
+      "content_review_ru": "Approval не заменяет достаточный collateral перед borrow; вопрос явно исключает иное обеспечение.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "source_sha256": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b",
+          "source_sha_match": true,
+          "start_char": 1566,
+          "end_char": 1601,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-12",
+      "verdict": "approved",
+      "question_and_gold_sha256": "632fdd86583ad61830e0513123f8d1ee9faac5f39b06d5d96dd8b54b805b097f",
+      "content_review_ru": "Supply не обязан предшествовать самому approveDelegation; стадия approval отделена от borrow.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "source_sha256": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b",
+          "source_sha_match": true,
+          "start_char": 1428,
+          "end_char": 1472,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-13",
+      "verdict": "approved",
+      "question_and_gold_sha256": "95464ccec142040879e177405c4d6094f06f81671063521a5d3136dcf58a9b0c",
+      "content_review_ru": "Borrow, нарушающий порог HF делегатора, fails по источнику.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/credit-delegation.md",
+          "source_sha256": "b17bcd57b8f914d45f62e67e1f512d525f0230c1ad118af37ec1502c7ae41b2b",
+          "source_sha_match": true,
+          "start_char": 1057,
+          "end_char": 1078,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-14",
+      "verdict": "approved",
+      "question_and_gold_sha256": "79f58de9eb4a656a53a93b979eeb8e3da179dd86394e028b243e823af6a4522d",
+      "content_review_ru": "flashLoanSimple работает с одним резервом; multi-reserve flashLoan не подменяет его.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "source_sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+          "source_sha_match": true,
+          "start_char": 1481,
+          "end_char": 1495,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-15",
+      "verdict": "approved",
+      "question_and_gold_sha256": "662538c76638c568e8d97b1f8f3b6f0cc699aab4a1db40f40cacd6cfc0725505",
+      "content_review_ru": "Для flashLoanSimple прямо исключено открытие долговой позиции в конце транзакции.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "source_sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+          "source_sha_match": true,
+          "start_char": 1560,
+          "end_char": 1599,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-16",
+      "verdict": "approved",
+      "question_and_gold_sha256": "761473bffe7351ef05ce8bc2780c8ffdfcbfca30cc4b4fc78dfe9b2859171b7d",
+      "content_review_ru": "Исправлено до генераций: явно flashLoanSimple и principal+fee. Недостаточная allowance в обязательном repayment flow ведёт к revert; ветка открытия долга исключена самим методом.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "source_sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+          "source_sha_match": true,
+          "start_char": 2981,
+          "end_char": 3004,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "source_sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+          "source_sha_match": true,
+          "start_char": 2463,
+          "end_char": 2482,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-17",
+      "verdict": "approved",
+      "question_and_gold_sha256": "bbca0e7a78c8a7cbaf6bc275edf38e2a6c07467b6127e07b72b6419b2a472b98",
+      "content_review_ru": "Независимый пересчёт:10000×0,05/100=5. Ставка дана условием, не выдается за текущий параметр всех рынков.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/guides/flash-loans.md",
+          "source_sha256": "6c6e50f16c04450d7306f38c4e3b36307ae293d114c622fe57153aed67badc9c",
+          "source_sha_match": true,
+          "start_char": 3562,
+          "end_char": 3567,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-18",
+      "verdict": "approved",
+      "question_and_gold_sha256": "8aeab41fc887b7013ae9a4bc48a58d46e7dd5fc5aca595a6e2c7f7d8e3203142",
+      "content_review_ru": "Источник прямо говорит, что LTV0% нельзя enabled as collateral. Gold отражает именно указанное правило документации.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "source_sha256": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746",
+          "source_sha_match": true,
+          "start_char": 562,
+          "end_char": 571,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-19",
+      "verdict": "approved",
+      "question_and_gold_sha256": "7e7c0a69742adb65b6c65b6746789700d6f5537ba0b789c4fd8cdfca0ed1386c",
+      "content_review_ru": "Supply cap ограничивает supply, borrow cap — borrow; оба true верны. В одном вопросе два булевых поля.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "source_sha256": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746",
+          "source_sha_match": true,
+          "start_char": 896,
+          "end_char": 918,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "aave-20",
+      "verdict": "approved",
+      "question_and_gold_sha256": "2649c09a1d63d06cf30fed5eaec789831e9e525b0895b42b5f052de48b6aea4d",
+      "content_review_ru": "Независимый пересчёт:2000×75/100=1500. Другие лимиты/долг/ликвидность исключены условием.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/concepts/reserve.md",
+          "source_sha256": "0a3b29b8e5728caaa2e847934ffa980ef0d962629df462d0c9373903eafe6746",
+          "source_sha_match": true,
+          "start_char": 489,
+          "end_char": 517,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-01",
+      "verdict": "approved",
+      "question_and_gold_sha256": "0aba34074fcc5c5aea60754ae194f56cd04c9ac48cc6069f2618eb6f3be3cd21",
+      "content_review_ru": "Независимый пересчёт:risk-adjusted900/1500×100=60%. Единицы процента заданы.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 689,
+          "end_char": 732,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-02",
+      "verdict": "approved",
+      "question_and_gold_sha256": "8d5777d83582c982a5b3be6fd71ee2e4e3ee97963ca8b249d0d9bf80d4655c6a",
+      "content_review_ru": "Liquidation LTV в источнике выше Max LTV; параметры не отождествлены.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 1418,
+          "end_char": 1437,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-03",
+      "verdict": "approved",
+      "question_and_gold_sha256": "dc47875c73630475ede893aeccfdf0f61ae00674fcff743a1dd78796fdf3fe82",
+      "content_review_ru": "Accrued variable interest повышает debt; flat collateral prices не гарантируют постоянное здоровье.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 3057,
+          "end_char": 3075,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-04",
+      "verdict": "approved",
+      "question_and_gold_sha256": "a07d7f5348ada6e08a93af535f350b27cc3972ec0848909c1e014f3c7c728b18",
+      "content_review_ru": "Исправлено до генераций: именно risk-adjusted debt неизменен. Снижение знаменателя collateral повышает Current LTV; добавлен прямой formula anchor.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 3162,
+          "end_char": 3184,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 675,
+          "end_char": 688,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-05",
+      "verdict": "approved",
+      "question_and_gold_sha256": "5f53dfe4fcb70cda7cbf5000314f2bb4be710bedf1d9cdaf11c896039ab62497",
+      "content_review_ru": "Независимый пересчёт:1000×0,8/2=400 по формуле Borrow Capacity.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 2167,
+          "end_char": 2182,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-06",
+      "verdict": "approved",
+      "question_and_gold_sha256": "cc27e223658ab87b03ff0f5cf4a8d185ba8e4f5fe35911e324d2fcc2881ed9d7",
+      "content_review_ru": "При неизменных collateral и Max LTV увеличение BF1→2 уменьшает capacity вдвое; true верно.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 2031,
+          "end_char": 2038,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-07",
+      "verdict": "approved",
+      "question_and_gold_sha256": "c9610b397ef601cb15b9927ac58db9437a31f31d4d7508243b1335be9dbf4821",
+      "content_review_ru": "Cross Mode допускает multiple collateral и debt assets в одной позиции.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 3977,
+          "end_char": 3987,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-08",
+      "verdict": "approved",
+      "question_and_gold_sha256": "32d26a0b7dde9dc5135db5c93a643131cf6ee369d7cc834c45c597fe762284d3",
+      "content_review_ru": "Документированная модель overcollateralized, no unsecured loans.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 501,
+          "end_char": 519,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-09",
+      "verdict": "approved",
+      "question_and_gold_sha256": "cab13ec5fcfde20a42be4e2ba21a72ddefe1babd69e64965cb9f0ec3403627b2",
+      "content_review_ru": "Repay with Collateral явно использует Kamino Swap; название не выдумано.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 3635,
+          "end_char": 3646,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-10",
+      "verdict": "approved",
+      "question_and_gold_sha256": "13e9645688a1ec2b151f151801f07703b95172cf721c1da2c187647088e828df",
+      "content_review_ru": "Для обычной частичной ликвидации максимум20% за событие. Insolvency-risk исключение явно вынесено из условия.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 1354,
+          "end_char": 1372,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-11",
+      "verdict": "approved",
+      "question_and_gold_sha256": "a7fa8b526823ed84f59b7df2feecd7065905c1a44c7602e12b7ee3df197aee6c",
+      "content_review_ru": "Typically95% не доказывает универсальную фиксированную константу каждого market.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 1827,
+          "end_char": 1844,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-12",
+      "verdict": "approved",
+      "question_and_gold_sha256": "934417bc6776541eaca7d98bec65fdd0709d9fc70fd6f249449175a0d1db0836",
+      "content_review_ru": "Permissionless позволяет любому actor вызвать инструкцию на unhealthy позиции при выполнении условий.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 4331,
+          "end_char": 4345,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-13",
+      "verdict": "approved",
+      "question_and_gold_sha256": "e991b71e79893b94f9c41f9a210d9916a4211ca12156b3efb80081fb40d3ca8a",
+      "content_review_ru": "Источник прямо no grace period; гарантированного интервала ожидания нет.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 368,
+          "end_char": 383,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-14",
+      "verdict": "approved",
+      "question_and_gold_sha256": "f3e16db0b26d7c7f4a2980991b5e0c1f5672c4eacfbf325d1237f1d2dc73aec0",
+      "content_review_ru": "Dynamic bonus не всегда fixed. Для ответа false достаточно динамического характера; перечисление min/max/solvency не должно стать дополнительным обязательным условием полноты.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 2167,
+          "end_char": 2178,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-15",
+      "verdict": "approved",
+      "question_and_gold_sha256": "540d61ae090d3d02e167566a2f77ca6204ad7e29d3c742fb86f780d436070049",
+      "content_review_ru": "Независимый пересчёт:82−75=7п.п.;7 между min2/max8 и меньше оставшихся18п.п. до100. Вопрос оговаривает линейный участок до solvency cap.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 2511,
+          "end_char": 2536,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-16",
+      "verdict": "approved",
+      "question_and_gold_sha256": "4d43b5e74eb94d353daf2bc8bc0d275ebf860d47778d652bdce29fd8e2946bda",
+      "content_review_ru": "Независимый пересчёт:600/800×100=75%. Это учебные значения, не live reserve.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/fees.md",
+          "source_sha256": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9",
+          "source_sha_match": true,
+          "start_char": 565,
+          "end_char": 589,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-17",
+      "verdict": "approved",
+      "question_and_gold_sha256": "0c54fdbcb16f1bc3e1fca40996d60550888d74273cb0128a52445548969513d6",
+      "content_review_ru": "Источник определяет spread как долю borrower interest, не principal.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/fees.md",
+          "source_sha256": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9",
+          "source_sha_match": true,
+          "start_char": 2307,
+          "end_char": 2339,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-18",
+      "verdict": "approved",
+      "question_and_gold_sha256": "22408f098e4ba0d9d581d5f028302f3a0be777bcc6b3426ea6ae41475e0c36f3",
+      "content_review_ru": "Именно borrower interest на idle capital не начисляется; отдельные reward programs исключены условием.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/fees.md",
+          "source_sha256": "0b3cce8dc55e5a21d7cf0f1e15fffc6ca609b4f43f0f95aa02cdf9c5888b53c9",
+          "source_sha_match": true,
+          "start_char": 1397,
+          "end_char": 1430,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-19",
+      "verdict": "approved",
+      "question_and_gold_sha256": "5388399a6c4ee40bb5288331e1e1e8ad4155fc8fd37fcdbb496af7f6cf9b44c8",
+      "content_review_ru": "После rollover first-term-only Early Repay Penalty отсутствует. Иные комиссии не обещаны нулевыми.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/fixed-rates.md",
+          "source_sha256": "a76550ee4bc46de14acc42dcc2c34e37df24ad2eff5315f00a2e74bb5875b288",
+          "source_sha_match": true,
+          "start_char": 5045,
+          "end_char": 5076,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "kamino-20",
+      "verdict": "approved",
+      "question_and_gold_sha256": "bbdb7d845212b3ca3b1751b5ec00a39dcace18384fb41445794d85300bc56413",
+      "content_review_ru": "Queued withdrawal ticket блокирует rollover всех borrowers данного reserve, не всех независимых рынков.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/fixed-rates.md",
+          "source_sha256": "a76550ee4bc46de14acc42dcc2c34e37df24ad2eff5315f00a2e74bb5875b288",
+          "source_sha_match": true,
+          "start_char": 9305,
+          "end_char": 9354,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-01",
+      "verdict": "approved",
+      "question_and_gold_sha256": "afaca4c4e93f8ed28a1bb330673c1d1aa881c0eec0184e25a3a03fc4be9b4700",
+      "content_review_ru": "ERC20 MUST handle false. Не предполагается, что каждый токен всегда revert вместо false.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 815,
+          "end_char": 842,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-02",
+      "verdict": "approved",
+      "question_and_gold_sha256": "eb67534f7ba48e092eeae3b88804d1d5cd9f23451bc36716a732814e94f93c67",
+      "content_review_ru": "ERC20 decimals OPTIONAL; его наличие и18decimals не обязательны.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 1448,
+          "end_char": 1493,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-03",
+      "verdict": "approved",
+      "question_and_gold_sha256": "81b9534b4c9415cbdbb55c084282c92d55b9c6bd05ba70d189088b6fd4faf5b6",
+      "content_review_ru": "Нулевой transfer должен быть normal transfer с Transfer event.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 2311,
+          "end_char": 2368,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-04",
+      "verdict": "approved",
+      "question_and_gold_sha256": "f17737898452cb9119495906c56738800db2187dbd82a0fa2b9c03a519823caa",
+      "content_review_ru": "Повторный approve overwrites allowance значением value, не прибавляет его.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 3335,
+          "end_char": 3384,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-05",
+      "verdict": "approved",
+      "question_and_gold_sha256": "8217ecbaeb63662c4676bffefb90d2c8bb988fd89cc9797c088630bba74dc3ca",
+      "content_review_ru": "Независимый пересчёт:1234500/10^6=1,2345. Вход decimals6 задан явно.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 1530,
+          "end_char": 1553,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-06",
+      "verdict": "approved",
+      "question_and_gold_sha256": "2d265f9fd6096370c7fdb7b01dc409ebaf790b180310642eb5d4190e042d70fd",
+      "content_review_ru": "balanceOf(owner) возвращает индивидуальный баланс; totalSupply относится ко всем токенам.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 1934,
+          "end_char": 1980,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-07",
+      "verdict": "approved",
+      "question_and_gold_sha256": "82e84e0b6d606e39656832c5c0566c45820de54736a485ca53e57bacbd6028b2",
+      "content_review_ru": "convertToShares MUST NOT include fees. В финальном evidence добавлен методический scope-anchor convertToShares.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 3545,
+          "end_char": 3578,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 3381,
+          "end_char": 3401,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-08",
+      "verdict": "approved",
+      "question_and_gold_sha256": "ecf7e8e8f555f730722e095e86f331160f8936858e9a3b7429661bbb0e83ceef",
+      "content_review_ru": "convertToShares MUST round down towards0; финальный evidence явно связывает правило с названием метода.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 3862,
+          "end_char": 3888,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 3381,
+          "end_char": 3401,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-09",
+      "verdict": "approved",
+      "question_and_gold_sha256": "7f79b33af2a3c4380a371c776b285fc8177b0b6faa14d7430c4c94dc503bd48a",
+      "content_review_ru": "previewDeposit MUST include deposit fees; методический scope-anchor добавлен до генераций.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 6675,
+          "end_char": 6709,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 6075,
+          "end_char": 6094,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-10",
+      "verdict": "approved",
+      "question_and_gold_sha256": "f6aa58f4df94f4d37a714bbd2dd0ab5c8ae0d3371fedd6d84afc1d3c5200c42e",
+      "content_review_ru": "previewDeposit MUST NOT account for maxDeposit limits; соответствующий методический anchor явно задан.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 6483,
+          "end_char": 6518,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 6075,
+          "end_char": 6094,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-11",
+      "verdict": "approved",
+      "question_and_gold_sha256": "40a61bbbb89069fa7b8c53a09f62c6562e735db924febc13d0bb397a421f42aa",
+      "content_review_ru": "Когда deposits entirely disabled, maxDeposit MUST return0; это известный ноль, не неизвестность. Добавлен scope-anchor maxDeposit.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 5702,
+          "end_char": 5772,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 5179,
+          "end_char": 5194,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "eth-12",
+      "verdict": "approved",
+      "question_and_gold_sha256": "140ae0a140ac2267ddad7928ff8c55be7b01f50cef281159f2c27cfcbcf568e0",
+      "content_review_ru": "Рекомендация для shares, которые пользователь должен отдать ради заданных assets, — round up. Добавлено начало соответствующего условного bullet; convertTo rounding не смешано с этим случаем.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 23625,
+          "end_char": 23646,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        },
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 23398,
+          "end_char": 23456,
+          "exact_quote_match": true,
+          "evidence_role": "support"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-01",
+      "verdict": "approved",
+      "question_and_gold_sha256": "8cc5ecdee362af2feb5c5c1037ab0bb02af8de7bf569c540063cec69f54a6177",
+      "content_review_ru": "Без account/market/block/position нельзя получить личный актуальный HF. Статическая формула не определяет число.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 1246,
+          "end_char": 1259,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-02",
+      "verdict": "approved",
+      "question_and_gold_sha256": "5f1629684294e7df9fd2ee76dc4898c14a0461b8cd7bb701612f8bca10826ec2",
+      "content_review_ru": "Последний-block supply APY требует актуального состояния; статические docs не задают такой показатель.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/overview.md",
+          "source_sha256": "ad1ca08d37b521253ce4222a7f205ddfece9c06a26a024301bafabdffe0c69f2",
+          "source_sha_match": true,
+          "start_char": 1969,
+          "end_char": 1980,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-03",
+      "verdict": "approved",
+      "question_and_gold_sha256": "d2049b7cb0653ecb1640866a4b0af3c59dc640ba1df632501f3ca1c2baba8537",
+      "content_review_ru": "Неидентифицированный reserve и отсутствие live liquidity snapshot не определяют доступные сейчас USDC.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 2167,
+          "end_char": 2182,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-04",
+      "verdict": "approved",
+      "question_and_gold_sha256": "27a2bf9f5a35ba8461723586cf73a68a47dab31f7962d9c3aea2dff68a2976c2",
+      "content_review_ru": "Без collateral/debt/BF/account невозможно численно определить личный Current LTV.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/liquidations.md",
+          "source_sha256": "78594dd005028f20b1394667f83acfbfb7d2de17385d107ee6d4234aa5d0edea",
+          "source_sha_match": true,
+          "start_char": 675,
+          "end_char": 688,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-05",
+      "verdict": "approved",
+      "question_and_gold_sha256": "a49d9db02860cdbfa62e17bb412c32b7e4c60a473e0e091a9c4d8b4af10d3945",
+      "content_review_ru": "Состав позиции и будущие цены/ставки/сделки не определены; точный реализованный PnL через30 дней не выводится.",
+      "source_checks": [
+        {
+          "doc_id": "kamino:products/borrow/borrowing.md",
+          "source_sha256": "a5188e1d37cbe650375af35d6ab0eed314de0dc115f850ae201393e8733689eb",
+          "source_sha_match": true,
+          "start_char": 2679,
+          "end_char": 2695,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-06",
+      "verdict": "approved",
+      "question_and_gold_sha256": "688b534ae51a7911a10e3018f454c8954acf6beb6d3c1b8fef3adfde1ccae179",
+      "content_review_ru": "Личный выводимый collateral требует account/balances/debt/prices/liquidity. Статический HF constraint не задаёт точный amount.",
+      "source_checks": [
+        {
+          "doc_id": "aave:aave-v3/smart-contracts/pool.md",
+          "source_sha256": "a379c7a4db4d8bf294fbdf8dceaa90764d98dae8b49995aae65630ac444eb6c7",
+          "source_sha_match": true,
+          "start_char": 8527,
+          "end_char": 8561,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-07",
+      "verdict": "approved",
+      "question_and_gold_sha256": "6e70a6e61247d5da0bc52474ad768149bf3885371679b3552aa9c5d0950aea84",
+      "content_review_ru": "Allowance является owner/spender-specific state; оба адреса и state-read не даны.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:20",
+          "source_sha256": "50d0bdc535ed8987ac5c124cb5f9c39606806c97e909aae66ef4b747dd9c93dd",
+          "source_sha_match": true,
+          "start_char": 4011,
+          "end_char": 4063,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    },
+    {
+      "id": "unknown-08",
+      "verdict": "approved",
+      "question_and_gold_sha256": "2ac4d676e368f0bfdb34edd3b8b6eaacc6c5ea52407192ff414a67e5d0b9e269",
+      "content_review_ru": "100 shares не имеют универсального курса ERC4626; отсутствуют конкретный vault и state/fees. Число assets не определено.",
+      "source_checks": [
+        {
+          "doc_id": "ethereum:4626",
+          "source_sha256": "698c05bff73bfb796f59cd7c4732edccdf7e40176f9bb027c19a0bbe7251e10a",
+          "source_sha_match": true,
+          "start_char": 4302,
+          "end_char": 4352,
+          "exact_quote_match": true,
+          "evidence_role": "neutral_relevant_context"
+        }
+      ],
+      "known_or_unknown_justified": true,
+      "errors": []
+    }
+  ]
+}

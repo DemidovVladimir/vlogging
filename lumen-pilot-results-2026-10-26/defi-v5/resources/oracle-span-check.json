@@ -1,0 +1,215 @@
+{
+  "known52": true,
+  "items": [
+    {
+      "id": "aave-01",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-02",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-03",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-04",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-05",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-06",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-07",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-08",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-09",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-10",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-11",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-12",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-13",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-14",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-15",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-16",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-17",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-18",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-19",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "aave-20",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-01",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-02",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-03",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-04",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-05",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-06",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-07",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-08",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-09",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-10",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-11",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-12",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-13",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-14",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-15",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-16",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-17",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-18",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-19",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "kamino-20",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-01",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-02",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-03",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-04",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-05",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-06",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-07",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-08",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-09",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-10",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-11",
+      "all_spans_in_oracle": true
+    },
+    {
+      "id": "eth-12",
+      "all_spans_in_oracle": true
+    }
+  ],
+  "known_support_spans": 60,
+  "all_known_support_spans_delivered": true
+}

@@ -1,0 +1,18 @@
+1/8 demo-01: 0.78s
+{"status": "known", "answer": "{\"hall\": \"Солнышко\", \"seats\": 120}", "data": {"hall": "Солнышко", "seats": 120}}
+2/8 demo-02: 0.61s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+3/8 demo-03: 0.62s
+{"status": "known", "answer": "{\"amount\": 5, \"currency\": \"EUR\"}", "data": {"amount": 5, "currency": "EUR"}}
+4/8 demo-04: 0.66s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\"}", "data": {"amount": 12, "currency": "EUR"}}
+5/8 demo-05: 0.96s
+{"status": "known", "answer": "{\"amount\": 12, \"currency\": \"EUR\", \"purchase\": \"счет\", \"quantity\": 1}", "data": {"amount": 12, "currency": "EUR", "purchase": "счет", "quantity": 1}}
+6/8 demo-06: 0.96s
+{"status": "known", "answer": "{\"amount\": 120, \"currency\": \"EUR\", \"group_discount\": false, \"passes_valid\": false}", "data": {"amount": 120, "currency": "EUR", "group_discount": false, "passes_valid": false}}
+7/8 demo-07: 0.65s
+{"status": "known", "answer": "{\"amount\": 11, \"currency\": \"EUR\"}", "data": {"amount": 11, "currency": "EUR"}}
+8/8 demo-08: 0.46s
+{"status": "known", "answer": "{\"free_parking\": false}", "data": {"free_parking": false}}
+RESOURCE GUARD after: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/runs/resources/after.json

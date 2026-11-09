@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-10-28T08:57:11.247214+00:00",
+  "files": {
+    "prepare_comparison.py": "57333a3eb01f5dc26cad942870d0dfe08807875fe09609537270c2cf06a72824",
+    "defi_harness.py": "561f97f6f59eed4fd64b5b685889fb03bed0d9a333ed8b480ee2c47ada16b6d5",
+    "formatting_baseline.py": "25f96074b3c9b6127a93d917be7d0891471d492d2cdfaad474ce9a31e162a8b0",
+    "retrieval_v6.py": "64bb8a97be1df1222a57be42e3ece709a9e97872f7972befc499aeb231ef556d",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "retrieval_v5.py": "f7bd84f1610b4d2d53c7b56b2ca923b9ec1ff519a24e7fd20b23e1ebdcd14680",
+    "common.py": "5ea5de30e31963e4cfbce6007d44d40fea3249bed681c32a80aa21495dad2a9d",
+    "download_model.py": "f6062bc5d8fc22f3fcd13c0cc7935a2b91119b046c5d51c4e65d222e251b8273",
+    "pipeline.py": "6ce8d7472e4576d04e8512080ba7afdbc9af0b20d873fa1a1599aefa7ffc1f97",
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "attach_citations.py": "d0d6e7ab2ccfef3f9e5edf67ff534d7fd147baa40ef6cefaaf32436b694fdb41",
+    "model-lock.json": "7a744c53f5c622af2b4656c59b266eb8a8f9d4e8cdfd78dcfb434af21857d3f4",
+    "requirements.in": "86ff0d3b1a77bcfebf9ff9e56678c6d4c2dcf2cb7a842bc97129fee37643f3c8",
+    "requirements.lock.txt": "15db912cb7b4ca68a292b682da95775837ae9cf818d3955d121ea6c87edf011e",
+    "config.json": "52ebad3a427c245f536f01ac1f50a2f5a66ccd0ae6cb8a70be6000e6df647ce4",
+    "preflight.json": "e2c0ba169c941d636fe8643a572089bab0d7d324f542eee3f2ac676f3de3fc95",
+    "inputs/baseline-contexts.jsonl": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+    "inputs/baseline-prompts.jsonl": "c942b04be669092af7a7c39a1fc1558b26a4267ebdd56f8341a03c33a453e6d0",
+    "inputs/contexts.jsonl": "32ffd6afad0201650199f33f9f25a6a37eb98aa49bc19d47f8e86e8ffb603007",
+    "inputs/prompts.jsonl": "ed9f39ae2c42547200bf660b45986beed1cdd08b3092601fd41281897fba4392",
+    "inputs/summary.json": "bec665978c4db89ab9c5aa8b91458c82311f6f92a8dac2bcfbf215064ee64a38",
+    ".lumen-experiment.json": "458df417f5d5c5a62292db282742e445cf30e5a20e2eed9efc9e82155f3de613",
+    "provenance/original-chat-template.jinja": "40c21f34cf67d8c760ef72f8ad3ae5afad514299d4b06e91dd9a8d705af7b541",
+    "provenance/baseline-original-chat-template.jinja": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5"
+  },
+  "baseline_files": {
+    "v5": {
+      "exam/test.jsonl": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+      "exam/grading-rubric.json": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+      "sources/documents.json": "600b46c205dec5fa8bafaa0d23ac767924e96bfa0c0ae04727fd6a578bed77f3"
+    },
+    "small": {
+      "inputs/contexts.jsonl": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+      "inputs/prompts.jsonl": "c942b04be669092af7a7c39a1fc1558b26a4267ebdd56f8341a03c33a453e6d0",
+      "runs/selection.jsonl": "1a14544b5958a4d3b49a6a43afce6ef1b42fb010b1f1a14d1abe820b69813699",
+      "runs/presented.jsonl": "a1a5ba01b3612f6996ed7d979bef9a286ed6448313e8f5f46c245208345f2e35",
+      "runs/grades.json": "894e5ee42a4e7f8da2d2fb79135da13f5885a2be80a6a6d657fe78026c11412a",
+      "tools/attach_citations.py": "3d71b3713a09d6565f522c6727a067cd30bc7b4038cbb3bd0a16cbbb2c080da9",
+      "execution/prepare_selection.py": "25f96074b3c9b6127a93d917be7d0891471d492d2cdfaad474ce9a31e162a8b0"
+    }
+  },
+  "controller_sha256": "6ce8d7472e4576d04e8512080ba7afdbc9af0b20d873fa1a1599aefa7ffc1f97",
+  "same60questions_same_messages_same_catalogue": true,
+  "changes_frozen_before_inference": true,
+  "new_model_and_native_chat_template": true,
+  "decoding_and_output_limits_unchanged": true,
+  "allocator_memory_limit_increased_for_weights": true,
+  "benchmark_already_seen": true
+}

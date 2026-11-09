@@ -1,0 +1,9 @@
+{
+  "not_exam": true,
+  "purpose": "Capacity only, synthetic padded prompt; no scored answer",
+  "prompt_tokens": 1362,
+  "max_exam_prompt_tokens": 1344,
+  "output_limit": 256,
+  "raw": "{\n  \"status\": \"unknown\",\n  \"answer\": \"В справочнике нет информации о проверке ресурсов.\",\n  \"data\": {}\n}",
+  "mlx_reported_peak_decimal_GB": 1.76048478
+}

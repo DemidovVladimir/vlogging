@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "stage": "ab-probe",
+  "started_at": "2026-10-27T09:57:41.379529+00:00",
+  "command": [
+    ".venv/bin/python",
+    "prompt_harness.py",
+    "--probe"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 5,
+  "peak_footprint_bytes": 2207942288,
+  "peak_rss_bytes": 777879552,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 2044660285,
+  "child_pid": 2965,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-27T09:57:46.473801+00:00",
+  "wall_seconds": 5.0942395419988316,
+  "observed_process_identities": {
+    "2965": 1652697305053
+  },
+  "reused_pids_ignored": []
+}

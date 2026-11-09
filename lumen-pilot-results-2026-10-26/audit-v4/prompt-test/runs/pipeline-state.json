@@ -1,0 +1,11 @@
+{
+  "status": "protective_stop",
+  "completed_baseline_answers": 5,
+  "planned_per_arm": 60,
+  "completed_revised_answers": 0,
+  "reason": "Host memory pressure >= 2 for 3 consecutive samples",
+  "accuracy_comparison_available": false,
+  "no_automatic_restart": true,
+  "preserved_frozen_files": 13,
+  "note": "Do not infer accuracy or prompt improvement from an incomplete baseline and missing revised arm."
+}

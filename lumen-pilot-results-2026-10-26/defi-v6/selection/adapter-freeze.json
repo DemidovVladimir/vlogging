@@ -1,0 +1,7 @@
+{
+  "created_at_utc": "2026-10-27T21:08:18.734445+00:00",
+  "adapter_sha256": "3d71b3713a09d6565f522c6727a067cd30bc7b4038cbb3bd0a16cbbb2c080da9",
+  "design_sha256": "ea06531dec8553c90a20dfb1825f4055fe36e342c171431967e6483c15109e61",
+  "prior180grades_sha256": "4101d1a02752ea2de49e24449ecc90aac0ea2b2fb83f352e00516695ecf206cb",
+  "before_followup_model_answers": true
+}

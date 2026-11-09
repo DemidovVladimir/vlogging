@@ -1,0 +1,22 @@
+{
+  "id": "e1faa3ccd679436c832bcca899dd4e4e",
+  "stage": "packages",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements.in",
+    "-c",
+    "constraints.txt"
+  ],
+  "pid": 25449,
+  "pgid": 25449,
+  "birth": "Tue Oct 27 12:56:01 2026",
+  "manager_pid": 25427,
+  "manager_birth": "Tue Oct 27 12:56:00 2026",
+  "state": "finished",
+  "log": ".control/logs/e1faa3ccd679436c832bcca899dd4e4e.log",
+  "exit_code": 0
+}

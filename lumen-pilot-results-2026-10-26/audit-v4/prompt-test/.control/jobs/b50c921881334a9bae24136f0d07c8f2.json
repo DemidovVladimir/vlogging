@@ -1,0 +1,30 @@
+{
+  "id": "b50c921881334a9bae24136f0d07c8f2",
+  "stage": "ab-probe",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "ab-probe",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "prompt_harness.py",
+    "--probe"
+  ],
+  "pid": 2959,
+  "pgid": 2959,
+  "birth": "Tue Oct 27 10:57:41 2026",
+  "manager_pid": 2940,
+  "manager_birth": "Tue Oct 27 10:57:41 2026",
+  "state": "finished",
+  "log": ".control/logs/b50c921881334a9bae24136f0d07c8f2.log",
+  "exit_code": 0
+}

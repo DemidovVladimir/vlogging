@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "stage": "calibration",
+  "started_at": "2026-10-26T16:20:30.946483+00:00",
+  "command": [
+    ".venv/bin/mlx_lm.lora",
+    "--config",
+    "train-config.yaml",
+    "--data",
+    "calibration-data",
+    "--iters",
+    "20",
+    "--save-every",
+    "20",
+    "--steps-per-eval",
+    "20",
+    "--val-batches",
+    "1",
+    "--adapter-path",
+    "adapters/smoke"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 7,
+  "peak_footprint_bytes": 3494775592,
+  "peak_rss_bytes": 735903744,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1,
+    2
+  ],
+  "guard_exit_code": 124,
+  "child_exit_code": -15,
+  "status": "protective_stop",
+  "initial_swap_bytes": 602868285,
+  "child_pid": 67535,
+  "reason": "Host memory pressure >= 2 for 3 consecutive samples",
+  "termination": {
+    "term_pids": [
+      67535
+    ],
+    "own_direct_child_terminated": true,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T16:20:37.131196+00:00",
+  "wall_seconds": 6.184799333001138,
+  "observed_process_identities": {
+    "67535": 959796069345
+  },
+  "reused_pids_ignored": []
+}

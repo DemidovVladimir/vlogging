@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-27T12:07:48.706918+00:00",
+  "checks": {
+    "boolean_is_not_numeric": true,
+    "numeric_is_not_boolean": true,
+    "false_boolean_valid": true,
+    "extra_data_keys_rejected": true,
+    "numeric_tolerance": true,
+    "json_fence_rejected": true,
+    "duplicate_keys_rejected": true,
+    "nonfinite_json_rejected": true,
+    "array_rejected": true,
+    "complete_adjacent_spans": true,
+    "gap_in_spans_rejected": true,
+    "short_span_rejected": true
+  },
+  "status": "PASS",
+  "code_sha256": "2672c7dbf6532a94cc23c72374d0e5dbe9ca2e68f4ace9c0bb9ff99a245d34d5",
+  "scope": "Mechanical scorer invariants, not factual answer validation"
+}

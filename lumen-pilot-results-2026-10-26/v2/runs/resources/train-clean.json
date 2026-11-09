@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "stage": "train-clean",
+  "started_at": "2026-10-26T18:49:22.317487+00:00",
+  "command": [
+    ".venv/bin/mlx_lm.lora",
+    "--config",
+    "train-clean.yaml"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 139,
+  "peak_footprint_bytes": 2343012248,
+  "peak_rss_bytes": 1326907392,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 586091069,
+  "child_pid": 76962,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T18:51:42.252098+00:00",
+  "wall_seconds": 139.9339938330013,
+  "observed_process_identities": {
+    "76962": 1174147753196
+  },
+  "reused_pids_ignored": []
+}

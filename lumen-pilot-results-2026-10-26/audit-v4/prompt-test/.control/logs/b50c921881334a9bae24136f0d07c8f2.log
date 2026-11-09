@@ -1,0 +1,4 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Capacity probe completed, prompt length 1650
+RESOURCE GUARD ab-probe: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-prompt-v4/runs/resources/ab-probe.json

@@ -1,0 +1,22 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+{
+  "questions": 60,
+  "arms": [
+    "closed",
+    "oracle",
+    "retrieved"
+  ],
+  "prompts": 180,
+  "input_cap": 1400,
+  "maximum_input_tokens": 1400,
+  "trimmed_retrieved_questions": 9,
+  "system_sha256": "a35fcef7bb63a1689bd736855469c8b7b4040e0bcda22ca7c27cbcefa08252d4",
+  "exam_sha256": "c1ded81f40b62ff2c5059ce9a2832bd16fed44770f99714a6adcd9a51fe74eef",
+  "contexts_sha256": "181e63433ca2b673829fcf84d32974f36698b371d9d02668ac123df387817906",
+  "prompts_sha256": "533c32318ef1188a1ede391fb8c7c6dc82ed96612372fdc07fdefd825743093e",
+  "model_context_length": "well below official32768; custom cap1400",
+  "oracle_uses_gold_source_spans": true,
+  "search_uses_gold": false,
+  "unknown_oracle": "neutral document intros; no gold answer",
+  "raw_source_text_not_executed": true
+}

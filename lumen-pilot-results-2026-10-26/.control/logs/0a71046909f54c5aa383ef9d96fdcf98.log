@@ -1,0 +1,74 @@
+1/8 demo-01: 1.75s
+{
+  "status": "unknown",
+  "answer": "В справочнике не указано, как называется более вместительный зал «Люмена» и сколько мест в нём.",
+  "data": {}
+}
+2/8 demo-02: 1.73s
+{
+  "status": "known",
+  "answer": "Абонемент «Искра» стоит 24 евро.",
+  "data": {
+    "amount": 24,
+    "currency": "EUR"
+  }
+}
+3/8 demo-03: 1.82s
+{
+  "status": "known",
+  "answer": "Пять друзей заплатят 55 евро вместе при покупке разовых билетов.",
+  "data": {
+    "amount": 55,
+    "currency": "EUR"
+  }
+}
+4/8 demo-04: 1.75s
+{
+  "status": "known",
+  "answer": "Общая цена для пяти друзей составляет 70 евро.",
+  "data": {
+    "amount": 70,
+    "currency": "EUR"
+  }
+}
+5/8 demo-05: 2.19s
+{
+  "status": "known",
+  "answer": "Самый дешёвый вариант — обычный билет в понедельник, стоимость 11 евро. Нужно купить 2 билета.",
+  "data": {
+    "amount": 11,
+    "currency": "Euro",
+    "purchase": "обычный билет",
+    "quantity": 2
+  }
+}
+6/8 demo-06: 2.44s
+{
+  "status": "unknown",
+  "answer": "В справочнике нет информации о премьерах и абонементах, поэтому невозможно определить, можно ли применить групповую скидку или абонементы. Также не указано, сколько стоят разовые билеты вместе.",
+  "data": {
+    "amount": 0,
+    "currency": "EUR",
+    "group_discount": false,
+    "passes_valid": false
+  }
+}
+7/8 demo-07: 1.91s
+{
+  "status": "known",
+  "answer": "Половина уплаченной суммы, так как возврат происходит не менее чем за два, но менее чем за шесть часов.",
+  "data": {
+    "amount": 5.5,
+    "currency": "EUR"
+  }
+}
+8/8 demo-08: 1.65s
+{
+  "status": "unknown",
+  "answer": "В справочнике нет сведений о бесплатной парковке.",
+  "data": {
+    "free_parking": false
+  }
+}
+RESOURCE GUARD openbook: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-pilot/runs/resources/openbook.json

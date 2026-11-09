@@ -1,0 +1,33 @@
+{
+  "id": "3b340443466e442d862665f605303afc",
+  "stage": "eval-v1",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "eval-v1",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/eval-v1.jsonl",
+    "--adapter",
+    "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/adapters/lumen-v1"
+  ],
+  "pid": 80360,
+  "pgid": 80360,
+  "birth": "Mon Oct 26 20:02:45 2026",
+  "manager_pid": 80341,
+  "manager_birth": "Mon Oct 26 20:02:45 2026",
+  "state": "finished",
+  "log": ".control/logs/3b340443466e442d862665f605303afc.log",
+  "exit_code": 0
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "stage": "adapter-probe",
+  "started_at": "2026-10-26T16:27:41.892983+00:00",
+  "command": [
+    ".venv/bin/python",
+    "run_eval.py",
+    "--adapter",
+    "adapters/smoke",
+    "--question",
+    "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u043c\u0435\u0441\u0442 \u0432 \u0437\u0430\u043b\u0435 \u0421\u0443\u043c\u0440\u0430\u043a?",
+    "--out",
+    "runs/adapter-probe.jsonl"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 3,
+  "peak_footprint_bytes": 1351681776,
+  "peak_rss_bytes": 1297727488,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 602868285,
+  "child_pid": 68745,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T16:27:44.976551+00:00",
+  "wall_seconds": 3.0836069170036353,
+  "observed_process_identities": {
+    "68745": 970138393632
+  },
+  "reused_pids_ignored": []
+}

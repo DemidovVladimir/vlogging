@@ -1,0 +1,99 @@
+{
+  "human_validation": false,
+  "reviewer_agent": "/root/video_draft",
+  "historical_labels_changed": false,
+  "clear_historical_label_errors_found": 0,
+  "items": [
+    {
+      "id": "v2-a01",
+      "flag": "contract_penalty_not_missing_fact",
+      "raw_sha256": "aad4cc9c349ac6921bfbe78d37bbaea9eb40a3dea1aaa270299d32f91ea773e1",
+      "historical_label_unchanged": false,
+      "note_ru": "Название и data верны по F01, но один лишний завершающий ``` делает весь raw невалидным JSON. Название уже есть в SYSTEM."
+    },
+    {
+      "id": "v2-a07",
+      "flag": "strict_string_false_negative",
+      "raw_sha256": "e20d7afdac80f62d47af3c1bcfdcd6f678205a993f5147af199695f5da5d81dd",
+      "historical_label_unchanged": true,
+      "note_ru": "17 евро верны по F07. Euro и EUR семантически обозначают одну валюту; требование именно EUR явно не дано в prompt."
+    },
+    {
+      "id": "v2-a10",
+      "flag": "contract_penalty_not_missing_fact",
+      "raw_sha256": "dc917dd2de7b3125ef0f507066a8de655440cb6a5f7275f0e34a40c609d8fad0",
+      "historical_label_unchanged": false,
+      "note_ru": "Правильные дни понедельник–пятница по F10; status unknown противоречит известному ответу. Диапазон строкой эквивалентен эталону."
+    },
+    {
+      "id": "v2-a12",
+      "flag": "contract_penalty_not_missing_fact",
+      "raw_sha256": "aea9d18fa1f0b164a21741980c6e714eecb1e83111b5ff7a3a1fa1932e89cf9c",
+      "historical_label_unchanged": false,
+      "note_ru": "Текст и false верны по F12, неверен только status unknown."
+    },
+    {
+      "id": "v2-a15",
+      "flag": "strict_string_false_negative",
+      "raw_sha256": "ef12e5097d602380375731b7bacbe25fee44d7d06aca137f80b7633b9b925dd8",
+      "historical_label_unchanged": true,
+      "note_ru": "Понедельник–четверг верно по F15; строка диапазона эквивалентна эталону."
+    },
+    {
+      "id": "v2-a16",
+      "flag": "contract_penalty_not_missing_fact",
+      "raw_sha256": "bad8721ef39506b67e519ea0f90865e91f992e04691b7e63b5d0ebc2de42d54e",
+      "historical_label_unchanged": false,
+      "note_ru": "21 календарный день с активацией верен по F16; неверен status unknown."
+    },
+    {
+      "id": "v2-a20",
+      "flag": "strict_string_false_negative",
+      "raw_sha256": "c7c39330180c88da7343b83fffefcd97318226a72906283f3f77cfff005863ca",
+      "historical_label_unchanged": true,
+      "note_ru": "Все дни недели верны по F20; естественная строка эквивалентна эталону."
+    },
+    {
+      "id": "v2-c11",
+      "flag": "short_explanation_allowed",
+      "raw_sha256": "0fdcd29f75e008e6b148ee32da90d46883bbf6185cc8e59a7388079acaf35f86",
+      "historical_label_unchanged": true,
+      "note_ru": "«Астра» — верный минимальный подходящий зал для 23 человек по F03/F04. Краткий ответ допустим."
+    },
+    {
+      "id": "v2-c14",
+      "flag": "contract_penalty_not_missing_fact",
+      "raw_sha256": "c5af8d9782a1b10295bacba680865d3542614139b710c746bb9e7715a28032b1",
+      "historical_label_unchanged": false,
+      "note_ru": "Лимит одного посещения в день правильно применён по F23, covers_both=false верно; status unknown неверен. Передача здесь лишняя, но правило истинно."
+    },
+    {
+      "id": "v2-c15",
+      "flag": "awkward_but_final_decision_clear",
+      "raw_sha256": "6a24d8b01b2d8493b60fc434bcba0052ea967515e9e2676c4536ff4891301787",
+      "historical_label_unchanged": true,
+      "note_ru": "Итоговый запрет верен: дневной лимит уже исчерпан по F23. Вставка об условии места двусмысленна, но заключение прямо применяет дневной запрет."
+    },
+    {
+      "id": "v2-c17",
+      "flag": "strict_field_false_positive",
+      "raw_sha256": "9a55e480fad577edae9d5a0f14144168465cf479561ffb5e171ff05e8123cc6a",
+      "historical_label_unchanged": false,
+      "note_ru": "Флаг false совпал, но объяснение переворачивает F24: якобы «Туман» только для премьер и не для обычных посещений."
+    },
+    {
+      "id": "v2-c19",
+      "flag": "short_explanation_allowed",
+      "raw_sha256": "1f6491c635ee416cd4b818ed7936ff169a91720734d974476330f0c9e3af36b1",
+      "historical_label_unchanged": true,
+      "note_ru": "Все заданные условия «Тумана» соблюдены, true верен; отсутствие развёрнутого вывода допустимо."
+    },
+    {
+      "id": "v2-c23",
+      "flag": "borderline_permissive_explanation",
+      "raw_sha256": "08f99085ec32edcb72a78cbcda2c066a16973a21b7e02c5f0ad712751853bd3f",
+      "historical_label_unchanged": true,
+      "note_ru": "False и срок 40 дней верны: 41-й день вне срока. Объяснение ссылается преимущественно на непередачу, хотя идёт владелец. Не утверждается, что пришёл другой человек; при прежнем критерии правдивого краткого ответа pass допустим, но причинный вывод по номеру дня не показан."
+    }
+  ]
+}

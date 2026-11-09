@@ -1,0 +1,31 @@
+{
+  "id": "e78e071dd62e47faa6deda87e242f112",
+  "stage": "eval-base",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    ".venv/bin/python",
+    "resource_guard.py",
+    "--stage",
+    "eval-base",
+    "--max-footprint-gib",
+    "6",
+    "--max-swap-growth-gib",
+    "0.75",
+    "--interval",
+    "1",
+    "--",
+    ".venv/bin/python",
+    "run_eval.py",
+    "--out",
+    "runs/eval-base.jsonl"
+  ],
+  "pid": 80072,
+  "pgid": 80072,
+  "birth": "Mon Oct 26 20:01:40 2026",
+  "manager_pid": 80055,
+  "manager_birth": "Mon Oct 26 20:01:40 2026",
+  "state": "finished",
+  "log": ".control/logs/e78e071dd62e47faa6deda87e242f112.log",
+  "exit_code": 0
+}

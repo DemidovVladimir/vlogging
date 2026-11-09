@@ -1,0 +1,13 @@
+{
+  "files": {
+    "exam/test.jsonl": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+    "exam/grading-rubric.json": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+    "runs/grades.json": "c182a579e52b7346a39c991107c0b62c936ad5aa7a4b4ad03a9d54b87237af41",
+    "inputs/contexts.jsonl": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+    "inputs/prompts.jsonl": "422dc6966111d6a49d9e1b75f3b5354ec22f6b0b6451a58ccdc4e7e69a45d1ed",
+    "sources/documents.json": "600b46c205dec5fa8bafaa0d23ac767924e96bfa0c0ae04727fd6a578bed77f3",
+    "sources/search.sqlite": "a28417c2dd98fc067bad7be9d0a297471050995716d9c802e9ae2185408a1f2a",
+    "execution-resumed/model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094"
+  },
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-pilot-results-2026-10-26/defi-v5"
+}

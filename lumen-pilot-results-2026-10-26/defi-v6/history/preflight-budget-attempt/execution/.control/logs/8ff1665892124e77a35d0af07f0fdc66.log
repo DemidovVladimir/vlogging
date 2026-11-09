@@ -1,0 +1,9 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v6/prepare_v6.py", line 48, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v6/prepare_v6.py", line 39, in main
+    assert n<=CAP,(t['id'],arm,n)
+           ^^^^^^
+AssertionError: ('aave-02', 'prompt_only', 1413)

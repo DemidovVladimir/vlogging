@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Static and lightweight DOM-state simulation only; no browser rendering, server or model",
+  "html_ids": 26,
+  "local_links": 34,
+  "external_render_assets": [],
+  "documents_sha_verified": 1673,
+  "source_char_spans_all_exact": true,
+  "frozen_execution_files_verified": 24,
+  "baseline_files_unchanged": true,
+  "new_raw_answers": 240,
+  "historical_raw_answers": 180,
+  "js_syntax": true,
+  "ui_state_checks": {
+    "passed": 12,
+    "rendering_tested": false
+  },
+  "cleanup_verified": true,
+  "errors": []
+}

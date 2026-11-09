@@ -1,0 +1,422 @@
+[
+  {
+    "id": "aave-01",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Критерий eligibility при0,98 выполнен; неверные или отсутствующие цитаты не засчитываются как подтверждение."
+  },
+  {
+    "id": "aave-02",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "HF ровно1 не удовлетворяет строгому условию <1; ответ true ошибочен."
+  },
+  {
+    "id": "aave-03",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "При HF0,97 вывод не проходит описанное ограничение; ответ true ошибочен."
+  },
+  {
+    "id": "aave-04",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Фиксированного ожидания нет. Цитата про siloed borrowing у prompt_only не подтверждает сроки погашения; combined цитирует repay at any time."
+  },
+  {
+    "id": "aave-05",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Peg1:1. Prompt_only выдумывает1000000; combined приводит буквальную1:1 цитату."
+  },
+  {
+    "id": "aave-06",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Запрошенный механизм balance_increases указан верно, но буквального подтверждения цитатой нет."
+  },
+  {
+    "id": "aave-07",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Search_only/prompt_only дают верный false. Prompt_only цитирует запрет другого collateral, а не корзину debt. Combined переносит ответ и цитату про доставку из форматного примера: ответ по существу считается неверным, хотя data случайно совпадает."
+  },
+  {
+    "id": "aave-08",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Debt ceiling применяется. Combined подтверждает прямой цитатой; она длиннее запрошенных32слов, нарушение длины отражено отдельно и не меняет прежний критерий fully_grounded."
+  },
+  {
+    "id": "aave-09",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Correlated. У prompt_only фраза про одинаковый underlying и движения цен подтверждает корреляцию в данном eMode-источнике; combined цитирует правило прямо."
+  },
+  {
+    "id": "aave-10",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Другой активный долг запрещён. Combined отвечает true. Prompt_only имеет верный data, но объяснение про запрещённую доставку относится к чужому сценарию: консервативно content=false, отдельный data_ok сохраняет совпадение."
+  },
+  {
+    "id": "aave-11",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Одного approval недостаточно без collateral. Цитата prompt_only про non-STABLECOINS не доказывает требование залога. Combined цитирует нужное before-borrow правило."
+  },
+  {
+    "id": "aave-12",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Для approveDelegation prior supply не требуется; prompt_only/combined путают вызов approval и последующий borrow."
+  },
+  {
+    "id": "aave-13",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Borrow должен отклониться при нарушении HF. Prompt_only даёт верный ответ, но цитирует другое основание отказа. Combined false и посторонний текст про доставку неверны."
+  },
+  {
+    "id": "aave-14",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Один reserve. Combined JSON синтаксически неверен, но reserve_count1 и ответ1 однозначны: content=true по прежнему рубрикатору, parse=false."
+  },
+  {
+    "id": "aave-15",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Debt opening у flashLoanSimple запрещено. Combined синтаксически неверен, но false и пояснение однозначны; content=true, parse=false. Prompt_only ошибочно разрешает."
+  },
+  {
+    "id": "aave-16",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Недостаточный allowance приводит к revert; значения верны, точные подтверждающие цитаты не получились."
+  },
+  {
+    "id": "aave-17",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "10000×0,05/100=5; все три новых варианта выдают50."
+  },
+  {
+    "id": "aave-18",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При LTV0 нельзя включить collateral. Только prompt_only даёт прямую точную подтверждающую цитату; combined цитирует общие проблемы approvals/collateral."
+  },
+  {
+    "id": "aave-19",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Внесение и заимствование ограничены разными caps. Search_only явно называет операции соответственно: его вводное Да трактуется как подтверждение двух запрошенных true-полей. Prompt_only обрывается в повторяющихся табах до ответа. Combined верен, цитаты искажены."
+  },
+  {
+    "id": "aave-20",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Максимум1500. Search_only однозначно отвечает1500 несмотря на лишнюю завершающую кавычку. Prompt_only даёт2000. Combined data2000 противоречит answer1500, поэтому content=false."
+  },
+  {
+    "id": "aave-01",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Критерий eligibility при0,98 выполнен; неверные или отсутствующие цитаты не засчитываются как подтверждение."
+  },
+  {
+    "id": "aave-02",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "HF ровно1 не удовлетворяет строгому условию <1; ответ true ошибочен."
+  },
+  {
+    "id": "aave-03",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "При HF0,97 вывод не проходит описанное ограничение; ответ true ошибочен."
+  },
+  {
+    "id": "aave-04",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Фиксированного ожидания нет. Цитата про siloed borrowing у prompt_only не подтверждает сроки погашения; combined цитирует repay at any time."
+  },
+  {
+    "id": "aave-05",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Peg1:1. Prompt_only выдумывает1000000; combined приводит буквальную1:1 цитату."
+  },
+  {
+    "id": "aave-06",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Запрошенный механизм balance_increases указан верно, но буквального подтверждения цитатой нет."
+  },
+  {
+    "id": "aave-07",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Search_only/prompt_only дают верный false. Prompt_only цитирует запрет другого collateral, а не корзину debt. Combined переносит ответ и цитату про доставку из форматного примера: ответ по существу считается неверным, хотя data случайно совпадает."
+  },
+  {
+    "id": "aave-08",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Debt ceiling применяется. Combined подтверждает прямой цитатой; она длиннее запрошенных32слов, нарушение длины отражено отдельно и не меняет прежний критерий fully_grounded."
+  },
+  {
+    "id": "aave-09",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Correlated. У prompt_only фраза про одинаковый underlying и движения цен подтверждает корреляцию в данном eMode-источнике; combined цитирует правило прямо."
+  },
+  {
+    "id": "aave-10",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Другой активный долг запрещён. Combined отвечает true. Prompt_only имеет верный data, но объяснение про запрещённую доставку относится к чужому сценарию: консервативно content=false, отдельный data_ok сохраняет совпадение."
+  },
+  {
+    "id": "aave-11",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Одного approval недостаточно без collateral. Цитата prompt_only про non-STABLECOINS не доказывает требование залога. Combined цитирует нужное before-borrow правило."
+  },
+  {
+    "id": "aave-12",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Для approveDelegation prior supply не требуется; prompt_only/combined путают вызов approval и последующий borrow."
+  },
+  {
+    "id": "aave-13",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Borrow должен отклониться при нарушении HF. Prompt_only даёт верный ответ, но цитирует другое основание отказа. Combined false и посторонний текст про доставку неверны."
+  },
+  {
+    "id": "aave-14",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Один reserve. Combined JSON синтаксически неверен, но reserve_count1 и ответ1 однозначны: content=true по прежнему рубрикатору, parse=false."
+  },
+  {
+    "id": "aave-15",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Debt opening у flashLoanSimple запрещено. Combined синтаксически неверен, но false и пояснение однозначны; content=true, parse=false. Prompt_only ошибочно разрешает."
+  },
+  {
+    "id": "aave-16",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Недостаточный allowance приводит к revert; значения верны, точные подтверждающие цитаты не получились."
+  },
+  {
+    "id": "aave-17",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "10000×0,05/100=5; все три новых варианта выдают50."
+  },
+  {
+    "id": "aave-18",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "При LTV0 нельзя включить collateral. Только prompt_only даёт прямую точную подтверждающую цитату; combined цитирует общие проблемы approvals/collateral."
+  },
+  {
+    "id": "aave-19",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Внесение и заимствование ограничены разными caps. Search_only явно называет операции соответственно: его вводное Да трактуется как подтверждение двух запрошенных true-полей. Prompt_only обрывается в повторяющихся табах до ответа. Combined верен, цитаты искажены."
+  },
+  {
+    "id": "aave-20",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Максимум1500. Search_only однозначно отвечает1500 несмотря на лишнюю завершающую кавычку. Prompt_only даёт2000. Combined data2000 противоречит answer1500, поэтому content=false."
+  },
+  {
+    "id": "aave-01",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Критерий eligibility при0,98 выполнен; неверные или отсутствующие цитаты не засчитываются как подтверждение."
+  },
+  {
+    "id": "aave-02",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "HF ровно1 не удовлетворяет строгому условию <1; ответ true ошибочен."
+  },
+  {
+    "id": "aave-03",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "При HF0,97 вывод не проходит описанное ограничение; ответ true ошибочен."
+  },
+  {
+    "id": "aave-04",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Фиксированного ожидания нет. Цитата про siloed borrowing у prompt_only не подтверждает сроки погашения; combined цитирует repay at any time."
+  },
+  {
+    "id": "aave-05",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Peg1:1. Prompt_only выдумывает1000000; combined приводит буквальную1:1 цитату."
+  },
+  {
+    "id": "aave-06",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Запрошенный механизм balance_increases указан верно, но буквального подтверждения цитатой нет."
+  },
+  {
+    "id": "aave-07",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Search_only/prompt_only дают верный false. Prompt_only цитирует запрет другого collateral, а не корзину debt. Combined переносит ответ и цитату про доставку из форматного примера: ответ по существу считается неверным, хотя data случайно совпадает."
+  },
+  {
+    "id": "aave-08",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Debt ceiling применяется. Combined подтверждает прямой цитатой; она длиннее запрошенных32слов, нарушение длины отражено отдельно и не меняет прежний критерий fully_grounded."
+  },
+  {
+    "id": "aave-09",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Correlated. У prompt_only фраза про одинаковый underlying и движения цен подтверждает корреляцию в данном eMode-источнике; combined цитирует правило прямо."
+  },
+  {
+    "id": "aave-10",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Другой активный долг запрещён. Combined отвечает true. Prompt_only имеет верный data, но объяснение про запрещённую доставку относится к чужому сценарию: консервативно content=false, отдельный data_ok сохраняет совпадение."
+  },
+  {
+    "id": "aave-11",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Одного approval недостаточно без collateral. Цитата prompt_only про non-STABLECOINS не доказывает требование залога. Combined цитирует нужное before-borrow правило."
+  },
+  {
+    "id": "aave-12",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Для approveDelegation prior supply не требуется; prompt_only/combined путают вызов approval и последующий borrow."
+  },
+  {
+    "id": "aave-13",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Borrow должен отклониться при нарушении HF. Prompt_only даёт верный ответ, но цитирует другое основание отказа. Combined false и посторонний текст про доставку неверны."
+  },
+  {
+    "id": "aave-14",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Один reserve. Combined JSON синтаксически неверен, но reserve_count1 и ответ1 однозначны: content=true по прежнему рубрикатору, parse=false."
+  },
+  {
+    "id": "aave-15",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Debt opening у flashLoanSimple запрещено. Combined синтаксически неверен, но false и пояснение однозначны; content=true, parse=false. Prompt_only ошибочно разрешает."
+  },
+  {
+    "id": "aave-16",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Недостаточный allowance приводит к revert; значения верны, точные подтверждающие цитаты не получились."
+  },
+  {
+    "id": "aave-17",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "10000×0,05/100=5; все три новых варианта выдают50."
+  },
+  {
+    "id": "aave-18",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При LTV0 нельзя включить collateral. Только prompt_only даёт прямую точную подтверждающую цитату; combined цитирует общие проблемы approvals/collateral."
+  },
+  {
+    "id": "aave-19",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Внесение и заимствование ограничены разными caps. Search_only явно называет операции соответственно: его вводное Да трактуется как подтверждение двух запрошенных true-полей. Prompt_only обрывается в повторяющихся табах до ответа. Combined верен, цитаты искажены."
+  },
+  {
+    "id": "aave-20",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Максимум1500. Search_only однозначно отвечает1500 несмотря на лишнюю завершающую кавычку. Prompt_only даёт2000. Combined data2000 противоречит answer1500, поэтому content=false."
+  }
+]

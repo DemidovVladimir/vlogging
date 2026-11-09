@@ -1,0 +1,87 @@
+{
+  "created_at_utc": "2026-10-27T12:02:37.717682+00:00",
+  "task": "Local no-training comparison of one small model: closed book, verified source context, lexical retrieved context",
+  "planned_questions": 60,
+  "planned_per_question": [
+    "closed",
+    "oracle",
+    "retrieved"
+  ],
+  "exam_groups": {
+    "aave_known": 20,
+    "kamino_known": 20,
+    "ethereum_known": 12,
+    "unknown": 8
+  },
+  "model": {
+    "repo": "mlx-community/Qwen3-1.7B-4bit",
+    "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+    "expected_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "training": false,
+    "adapter": null
+  },
+  "fixed_settings": {
+    "temperature": 0,
+    "seed": 42,
+    "enable_thinking": false,
+    "max_input_tokens": 1400,
+    "max_output_tokens": 384,
+    "prefill_step_size": 128,
+    "kv_bits": null,
+    "kv_group_size": 64,
+    "quantized_kv_start": 0,
+    "batch_size": 1,
+    "allocator_cache_bytes": 33554432,
+    "allocator_memory_limit_bytes": 2952790016
+  },
+  "change": "Only source context differs; same question, fields, system, tokenizer, weights, ordinary (unquantized) KV and generation settings.",
+  "order": "One load; per-question Latin rotation of 3arms, one generation each, seed reset42; fresh KV cache each prompt.",
+  "retrieval": "Frozen FTS5 BM25; fixed RU/EN dictionary authored before exam read; top3 in visible protocol scope. Preset truncation to fit1400input; retain both candidate and delivered spans.",
+  "oracle": "Verified literal source spans with180characters surrounding context; overlapping windows in the same document are merged. No expected data, answer or rationale inserted. Unknowns receive neutral document intros.",
+  "closed": "No provided documents; model may answer from internal knowledge; cannot invent source IDs. Citation evidence not expected, separately reported.",
+  "prohibited_in_primary_comparison": [
+    "training",
+    "calculation tools",
+    "external model calls",
+    "query rewriting by another model",
+    "gold answers in prompts",
+    "decoding retries",
+    "output repair",
+    "tuning on test outcomes"
+  ],
+  "metrics": {
+    "content_correct": "All requested substance correct, answer/data mutually consistent; assess separately from citations/serialization;60 denominator. Agent review, no human validation.",
+    "format_status_data": "StrictJSON, status and typed fields separately.",
+    "known_grounded": "Correct substance plus accurate supporting citation from delivered source;52 known denominator.",
+    "unknown": "Correct abstention on8 not established by available input.",
+    "retrieval": "Document Recall@3 and exact gold-span coverage measured separately on52known; also measure delivered context after truncation.",
+    "resources": "libproc child-tree physical footprint and RSS; swap delta; host pressure; latency; actual tokens/finish reason."
+  },
+  "resource_gate": {
+    "required_host_pressure": 1,
+    "stable_samples": 3,
+    "seconds_between_samples": 10,
+    "free_disk_min_gib": 12,
+    "max_footprint_gib": 3.5,
+    "max_swap_growth_gib": 0.25,
+    "consecutive_warning_samples": 3,
+    "interval_seconds": 1,
+    "probe": "Synthetic prompt >=max_exam_input+384 tokens; final JSON instruction after padding, max64output. Preserve raw before validation. Expected{ok:true}, outerMarkdown allowed only for nonexam functional control. Require guard success/pressure1.",
+    "on_failure": "Stop owned work and preserve partial evidence. Never claim complete scores from partial arms. Do not close user apps without authorization."
+  },
+  "cleanup": "After evidence export, remove exact marked runtime lumen-local-defi-v5 including weights/venv/caches; leave intentional sources, small evidence, KS KB and Docker. No inference/report server after completion.",
+  "interpretation_limits": [
+    "Local agent-authored exam, independently audited by another agent; no human validation, not an external blind benchmark.",
+    "One model size, weight precision, KV precision, language and decoding preset do not establish a capability ceiling.",
+    "Oracle context is a diagnostic upper condition, not a production retriever.",
+    "Larger corpus alone does not guarantee relevant evidence or correct reasoning."
+  ],
+  "technical_revision": {
+    "before_any_valid_main_answers": "KV4 start0 produced incoherent/malformed outputs on controls; None produces correct values on3controls (2strictJSON+1Markdown). Main comparison rerun with ordinary KV in allarms.",
+    "invalid_attempt": "invalid-kv4-attempt",
+    "test_questions_and_contexts_unchanged": true,
+    "prompt_query_weights_unchanged": true,
+    "first_attempt_answers_exposed": 28,
+    "not_a_preregistered_blind_benchmark": true
+  }
+}

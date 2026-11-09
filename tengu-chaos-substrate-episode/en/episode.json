@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "topic": "Chaos Substrate: code memory, the Merkle tree and the 'already known?' check",
+  "language": "en",
+  "targetSeconds": 300,
+  "wordsPerMinute": 135,
+  "plannedPauseSeconds": 25,
+  "status": "ready",
+  "copiedReferenceContent": false,
+  "template": "artifact-template-tengu-youtube",
+  "reference": "Approved RU v33 / English edition",
+  "slug": "chaos-substrate",
+  "toolCommit": "5a8ecca6c5f973d023abd05cef4f71d174180208",
+  "measuredCommit": "ed73a5e0c80651cf6f8c19b8e8c3942186a5f109"
+}

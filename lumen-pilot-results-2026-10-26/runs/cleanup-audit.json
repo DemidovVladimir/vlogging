@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "audit_at": "2026-10-26T16:27:45.162230+00:00",
+  "run_started_at": "2026-10-26T16:12:44.877086+00:00",
+  "experiment_id": "10cc942d-fd1d-4042-b33b-404efa0196f9",
+  "root": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot",
+  "scope": "Read-only cleanup/resource-accounting audit; this JSON is the only persistent audit mutation. No deletions, signals, MLX imports/model loads, or services changed.",
+  "runtime_snapshot_is_final": false,
+  "runtime_snapshot_note": "Training/model download may continue concurrently; these sizes are a point-in-time snapshot, not actual reclaimable SSD space.",
+  "lifecycle_evidence": {
+    "source": "manage.py",
+    "root_checks": [
+      "Dedicated non-symlink absolute root named lumen-local-*",
+      "No .git checkout",
+      "Required bundle files",
+      "Marker schema/root/UID/UUID verified",
+      "Mutating cleanup requires --apply and exact --expect-id"
+    ],
+    "process_controls": [
+      "Each exec runs in a new session/process group",
+      "Persistent command/PID/PGID/start-time/job logs",
+      "Only verified leader groups are signaled",
+      "Leaderless or unverifiable groups cause refusal",
+      "lsof recursively audits open files/cwd before root deletion; unrelated holders cause refusal"
+    ],
+    "cache_environment": {
+      "HF_HOME": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/huggingface",
+      "HF_HUB_CACHE": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/huggingface/hub",
+      "HF_XET_CACHE": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/huggingface/xet",
+      "HF_ASSETS_CACHE": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/huggingface/assets",
+      "HF_TOKEN_PATH": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/huggingface/token",
+      "PIP_CACHE_DIR": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/pip",
+      "PYTHONPYCACHEPREFIX": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/pycache",
+      "XDG_CACHE_HOME": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache/xdg",
+      "TMPDIR": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.tmp",
+      "PIP_CONFIG_FILE": "/dev/null",
+      "PIP_REQUIRE_VIRTUALENV": "1",
+      "PYTHONNOUSERSITE": "1",
+      "HF_HUB_DISABLE_IMPLICIT_TOKEN": "1",
+      "HF_HUB_DISABLE_TELEMETRY": "1"
+    },
+    "network_policy": "HF_HUB_OFFLINE and TRANSFORMERS_OFFLINE are 1 unless explicitly launched with manage.py exec --online. Download uses token=False and local_dir models.",
+    "deletion_semantics": "Entire dedicated root permanently removed by shutil.rmtree after identity/open-file checks; symlink targets are not recursively followed. Does not clear global caches or stop KS KB/Docker/Ollama/browser services."
+  },
+  "scoped_directory_snapshot": [
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.cache",
+      "exists": true,
+      "files": 7430,
+      "logical_bytes": 310878187,
+      "recent_modified_count": 7430,
+      "errors": []
+    },
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.venv",
+      "exists": true,
+      "files": 9703,
+      "logical_bytes": 543738463,
+      "recent_modified_count": 9703,
+      "errors": []
+    },
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/models",
+      "exists": true,
+      "files": 68,
+      "logical_bytes": 3262998732,
+      "recent_modified_count": 68,
+      "errors": []
+    },
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/adapters",
+      "exists": true,
+      "files": 3,
+      "logical_bytes": 9974379,
+      "recent_modified_count": 3,
+      "errors": []
+    },
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/runs",
+      "exists": true,
+      "files": 55,
+      "logical_bytes": 41845293,
+      "recent_modified_count": 55,
+      "errors": []
+    },
+    {
+      "path": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.tmp",
+      "exists": true,
+      "files": 0,
+      "logical_bytes": 0,
+      "recent_modified_count": 0,
+      "errors": []
+    }
+  ],
+  "global_cache_spot_checks": [
+    {
+      "path": "/Users/vladimirdemidov/.cache/huggingface",
+      "exists": false,
+      "files": 0,
+      "logical_bytes": 0,
+      "recent_modified_count": 0,
+      "errors": [
+        "[Errno 2] No such file or directory: '/Users/vladimirdemidov/.cache/huggingface'"
+      ]
+    },
+    {
+      "path": "/Users/vladimirdemidov/.cache/pip",
+      "exists": false,
+      "files": 0,
+      "logical_bytes": 0,
+      "recent_modified_count": 0,
+      "errors": [
+        "[Errno 2] No such file or directory: '/Users/vladimirdemidov/.cache/pip'"
+      ]
+    },
+    {
+      "path": "/Users/vladimirdemidov/.cache/mlx",
+      "exists": false,
+      "files": 0,
+      "logical_bytes": 0,
+      "recent_modified_count": 0,
+      "errors": [
+        "[Errno 2] No such file or directory: '/Users/vladimirdemidov/.cache/mlx'"
+      ]
+    },
+    {
+      "path": "/Users/vladimirdemidov/Library/Caches/pip",
+      "exists": true,
+      "files": 1381,
+      "logical_bytes": 568443959,
+      "recent_modified_count": 0,
+      "errors": []
+    },
+    {
+      "path": "/Users/vladimirdemidov/Library/Caches/mlx",
+      "exists": false,
+      "files": 0,
+      "logical_bytes": 0,
+      "recent_modified_count": 0,
+      "errors": [
+        "[Errno 2] No such file or directory: '/Users/vladimirdemidov/Library/Caches/mlx'"
+      ]
+    }
+  ],
+  "unscoped_artifacts_confirmed_from_this_run": [],
+  "unscoped_artifact_conclusion": "No recent files found in the five checked global cache directories. Absence is limited to these checks; OS-managed Metal/driver caches, filesystem snapshots and other application activity were not exhaustively attributed.",
+  "fixture_remnants_found": [],
+  "fixture_note": "Earlier stdlib guard fixtures used TemporaryDirectory and were removed on context exit, including the failed fixture; later fixtures lived inside .tmp and were likewise removed. They are not model results.",
+  "preserve_before_cleanup": {
+    "recommended_export": "A small results-only directory or archive OUTSIDE the disposable root, with a SHA256 manifest and verified readback before deleting the root. The user requested a video/report, so preserve its deliverables and measurement evidence; do not silently retain weights or full virtualenv.",
+    "include": [
+      "runs/ (raw before/after responses, resource JSON/JSONL, comparison/report, cleanup-audit.json, video HTML/script/assets and licenses)",
+      ".control/jobs/ and .control/logs/",
+      "provenance/",
+      "seeds/ and source-handbook.txt",
+      "train-config.yaml, requirements.in, requirements.lock.txt",
+      "data-lock.json and model-lock.json when present",
+      "protocol-amendments.json and unknown-field-fix.json",
+      "common.py, prepare_data.py, run_eval.py, compare.py, resource_guard.py, manage.py, preflight.py, make_calibration.py, download_model.py",
+      "adapter config and adapter weights only if the user wants the trained artifact retained; report retention should be stated explicitly"
+    ],
+    "exclude": [
+      "models/",
+      ".venv/",
+      ".cache/",
+      ".tmp/",
+      ".input/",
+      "full duplicate runtime archives"
+    ]
+  },
+  "cleanup_steps": [
+    {
+      "order": 1,
+      "action": "Wait for the active final measurement/inference job to finish; finalize the truthful comparison and video/report. Distinguish stopped 4B calibration from actual 1.7B training."
+    },
+    {
+      "order": 2,
+      "action": "Export the intended report/evidence outside root; record exact export path, manifest, byte size and verify representative files/readback before removal."
+    },
+    {
+      "order": 3,
+      "cwd": "/Users/vladimirdemidov/development/vlogging",
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/manage.py",
+        "status"
+      ],
+      "effect": "Read-only; collect last tracked processes and logical size."
+    },
+    {
+      "order": 4,
+      "cwd": "/Users/vladimirdemidov/development/vlogging",
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/manage.py",
+        "cleanup"
+      ],
+      "effect": "Dry-run only. Review exact root/UUID/scope; no deletion."
+    },
+    {
+      "order": 5,
+      "cwd": "/Users/vladimirdemidov/development/vlogging",
+      "argv": [
+        "/opt/homebrew/bin/python3.12",
+        "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/manage.py",
+        "cleanup",
+        "--apply",
+        "--expect-id",
+        "10cc942d-fd1d-4042-b33b-404efa0196f9"
+      ],
+      "effect": "Only after the preserved report has been verified and final cleanup is authorized: stop owned jobs, reject untracked holders, delete disposable root permanently. If refusal occurs, inspect the reported PIDs; never kill unrelated apps."
+    },
+    {
+      "order": 6,
+      "action": "Verify root absence, absence of experiment Python/MLX processes, exported report readability and final disk free bytes. Show actual disk-free delta separately from estimated logical bytes; do not promise instantaneous SSD accounting or zero global OS cache."
+    }
+  ],
+  "calibration_4b_evidence": {
+    "schema": 1,
+    "stage": "calibration",
+    "started_at": "2026-10-26T16:20:30.946483+00:00",
+    "command": [
+      ".venv/bin/mlx_lm.lora",
+      "--config",
+      "train-config.yaml",
+      "--data",
+      "calibration-data",
+      "--iters",
+      "20",
+      "--save-every",
+      "20",
+      "--steps-per-eval",
+      "20",
+      "--val-batches",
+      "1",
+      "--adapter-path",
+      "adapters/smoke"
+    ],
+    "limits": {
+      "footprint_bytes": 6442450944,
+      "swap_growth_bytes": 805306368,
+      "pressure_level": 2,
+      "consecutive_host_limit_samples": 3,
+      "sample_interval_seconds": 1.0
+    },
+    "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+    "samples": 7,
+    "peak_footprint_bytes": 3494775592,
+    "peak_rss_bytes": 735903744,
+    "max_swap_growth_bytes": 0,
+    "observed_pressure_levels": [
+      1,
+      2
+    ],
+    "guard_exit_code": 124,
+    "child_exit_code": -15,
+    "status": "protective_stop",
+    "initial_swap_bytes": 602868285,
+    "child_pid": 67535,
+    "reason": "Host memory pressure >= 2 for 3 consecutive samples",
+    "termination": {
+      "term_pids": [
+        67535
+      ],
+      "own_direct_child_terminated": true,
+      "kill_pids": [],
+      "surviving_verified_pids": [],
+      "errors": []
+    },
+    "finished_at": "2026-10-26T16:20:37.131196+00:00",
+    "wall_seconds": 6.184799333001138,
+    "observed_process_identities": {
+      "67535": 959796069345
+    },
+    "reused_pids_ignored": []
+  },
+  "cleanup_performed": false
+}

@@ -1,0 +1,22 @@
+{
+  "id": "be5393b1f83e423288d2b8966e936837",
+  "stage": "install",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--disable-pip-version-check",
+    "--no-cache-dir",
+    "-r",
+    "requirements.lock.txt"
+  ],
+  "pid": 81187,
+  "pgid": 81187,
+  "birth": "Tue Oct 27 22:07:10 2026",
+  "manager_pid": 81182,
+  "manager_birth": "Tue Oct 27 22:07:10 2026",
+  "state": "finished",
+  "log": ".control/logs/be5393b1f83e423288d2b8966e936837.log",
+  "exit_code": 0
+}

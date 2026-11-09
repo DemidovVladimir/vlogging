@@ -1,0 +1,18 @@
+{
+  "id": "da3058b53e1346aabaaed5ba358a1c3e",
+  "stage": "package-lock",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "freeze"
+  ],
+  "pid": 26558,
+  "pgid": 26558,
+  "birth": "Tue Oct 27 13:11:58 2026",
+  "manager_pid": 26544,
+  "manager_birth": "Tue Oct 27 13:11:58 2026",
+  "state": "finished",
+  "log": ".control/logs/da3058b53e1346aabaaed5ba358a1c3e.log",
+  "exit_code": 0
+}

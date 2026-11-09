@@ -1,0 +1,26 @@
+{
+  "name": "tengu-youtube-motion-en",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render:sting": "remotion render src/index.ts TenguLogoSting ../../dist/assets/tengu-logo-sting-en.mp4 --codec=h264 --crf=12 --overwrite",
+    "still": "remotion still src/index.ts TenguLogoSting ../../dist/assets/tengu-logo-sting-poster-en.png --frame=62 --overwrite",
+    "studio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/literata": "5.3.0",
+    "@fontsource-variable/manrope": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/shippori-mincho": "5.3.0",
+    "@remotion/cli": "4.0.536",
+    "@remotion/media": "4.0.536",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}

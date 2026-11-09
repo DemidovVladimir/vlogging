@@ -1,0 +1,37 @@
+{
+  "at_utc": "2026-10-27T11:51:54.927795+00:00",
+  "commands": {
+    "sysctl -n hw.memsize hw.model hw.ncpu machdep.cpu.brand_string kern.memorystatus_vm_pressure_level": {
+      "exit": 0,
+      "stdout": "17179869184\nMac16,1\n10\nApple M4\n2\n",
+      "stderr": ""
+    },
+    "memory_pressure": {
+      "exit": 0,
+      "stdout": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 5715 \nPages purgeable: 957 \nPages purged: 6272020 \n\nSwap I/O:\nSwapins: 155598 \nSwapouts: 443590 \n\nPage Q counts:\nPages active: 238490 \nPages inactive: 234558 \nPages speculative: 3060 \nPages throttled: 0 \nPages wired down: 126925 \n\nCompressor Stats:\nPages used by compressor: 385867 \nPages decompressed: 40728798 \nPages compressed: 53054806 \n\nFile I/O:\nPageins: 17779221 \nPageouts: 142037 \n\nSystem-wide memory free percentage: 48%\n",
+      "stderr": ""
+    },
+    "vm_stat": {
+      "exit": 0,
+      "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     5962.\nPages active:                                 238498.\nPages inactive:                               234563.\nPages speculative:                              3063.\nPages throttled:                                   0.\nPages wired down:                             126925.\nPages purgeable:                                 957.\n\"Translation faults\":                      394484507.\nPages copy-on-write:                        15942908.\nPages zero filled:                         471983911.\nPages reactivated:                          45088405.\nPages purged:                                6272020.\nFile-backed pages:                            110786.\nAnonymous pages:                              365338.\nPages stored in compressor:                   975189.\nPages occupied by compressor:                 385866.\nDecompressions:                             40728803.\nCompressions:                               53054806.\nPageins:                                    17779223.\nPageouts:                                     142037.\nSwapins:                                      155598.\nSwapouts:                                     443590.\n",
+      "stderr": ""
+    },
+    "sysctl vm.swapusage": {
+      "exit": 0,
+      "stdout": "vm.swapusage: total = 3072.00M  used = 2354.06M  free = 717.94M  (encrypted)\n",
+      "stderr": ""
+    },
+    "df -k /Users/vladimirdemidov/development/vlogging/lumen-pilot-results-2026-10-26": {
+      "exit": 0,
+      "stdout": "Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on\n/dev/disk3s5   971350180 481355256 443549372    53% 8409882 4435493720    0%   /System/Volumes/Data\n",
+      "stderr": ""
+    },
+    "ollama ps": {
+      "exit": 0,
+      "stdout": "NAME                     ID              SIZE      PROCESSOR    CONTEXT    UNTIL                   \nembeddinggemma:latest    85462619ee72    1.1 GB    100% GPU     2048       About a minute from now    \n",
+      "stderr": ""
+    }
+  },
+  "decision": "Host pressure warning2: do not start inference. Collect public documents and design experiment first; require stable normal pressure and bounded probe before model test.",
+  "free_disk_bytes": 454194548736
+}

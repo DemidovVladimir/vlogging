@@ -1,0 +1,13 @@
+{
+  "started_at_utc": "2026-10-27T21:07:09.469808+00:00",
+  "status": "completed",
+  "answers_planned": 60,
+  "model_scores_available": true,
+  "answers_completed": 60,
+  "counts": {
+    "selection": 60
+  },
+  "grading_pending": false,
+  "finished_at_utc": "2026-10-27T21:10:13.123487+00:00",
+  "cleanup_completed": true
+}

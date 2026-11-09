@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "deploymentId": "c7211e8e-8b39-4cfd-a9fa-bda5e9c6e1c4",
+  "immutableOrigin": "https://c7211e8e.tengu-presentations.pages.dev",
+  "createdAt": "2026-10-28T14:25:03.085107Z",
+  "deployEndedAt": "2026-10-28T14:25:04.979035Z",
+  "previousDeploymentId": "c2577349-a8bd-49ee-b455-d0172b047ca8",
+  "project": "tengu-presentations",
+  "origin": "https://tengucluster.com",
+  "revision": 10,
+  "slug": "chaos-kb",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "paths": {
+    "ru": "/episodes/chaos-kb/",
+    "en": "/en/episodes/chaos-kb/"
+  },
+  "manifest": "build-manifest.json",
+  "verifiedAt": "2026-10-28T14:30:49.346Z",
+  "sourceWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-chaos-kb-2-1-revision",
+  "uploader": "wrangler 4.151.3 pages deploy (its own OAuth login: account:read user:read pages:write), branch main",
+  "staticAssets": 216,
+  "controlFiles": 2,
+  "privatePaths404PerOrigin": 468,
+  "verifiedOrigins": [
+    "tengucluster.com",
+    "tengu-presentations.pages.dev",
+    "c7211e8e.tengu-presentations.pages.dev"
+  ],
+  "browserChecks": {
+    "127.0.0.1": {
+      "guide": 39,
+      "site": 27
+    },
+    "tengucluster.com": {
+      "guide": 39,
+      "site": 27
+    }
+  },
+  "rollbackSnapshot": "previous/public",
+  "qa": "qa/tengucluster.com/",
+  "changedFiles": [
+    "en/episodes/chaos-kb/index.html",
+    "episodes/chaos-kb/index.html"
+  ],
+  "addedFiles": 0,
+  "unrelatedContentUnchanged": true,
+  "note": "EP.04 guide for chaos-kb 2.1.1 (95dd8af63c25ece22de689760abf397e6e407a53): an error from remember or forget changes nothing (new trouble row, real message), the Claude Code exercise repeated without the CLAUDE.md line (6 of 6 looked; kb_read now takes id, so no retry), outputs re-run with the page install command. build.mjs proves the live content still renders the live pages byte for byte.",
+  "linkedWorker": {
+    "name": "tengu-modal-city",
+    "route": "tengucluster.com/modal-city*",
+    "versionId": "48b450ed-fd3e-41b0-9d91-daaff95ccc97",
+    "source": "/Users/vladimirdemidov/development/neovim_pro/site"
+  }
+}

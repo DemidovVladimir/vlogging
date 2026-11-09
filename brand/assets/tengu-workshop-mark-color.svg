@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Tengu Workshop mark</title>
+  <desc id="desc">A central gold core with three red curved agent paths, three gold nodes, and a gold enclosing ring.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="218" stroke="#C8A24A" stroke-width="18"/>
+    <path d="M274 207 C314 166 377 170 414 214" stroke="#CE3526" stroke-width="48"/>
+    <path d="M274 207 C314 166 377 170 414 214" stroke="#CE3526" stroke-width="48" transform="rotate(120 256 256)"/>
+    <path d="M274 207 C314 166 377 170 414 214" stroke="#CE3526" stroke-width="48" transform="rotate(240 256 256)"/>
+  </g>
+  <g fill="#C8A24A">
+    <circle cx="256" cy="256" r="42"/>
+    <circle cx="420" cy="220" r="21"/>
+    <circle cx="420" cy="220" r="21" transform="rotate(120 256 256)"/>
+    <circle cx="420" cy="220" r="21" transform="rotate(240 256 256)"/>
+  </g>
+</svg>

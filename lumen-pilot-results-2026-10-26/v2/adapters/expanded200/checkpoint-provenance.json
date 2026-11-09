@@ -1,0 +1,8 @@
+{
+  "iteration": 200,
+  "trajectory_planned_iters": 800,
+  "source": "adapters/expanded/0000200_adapters.safetensors",
+  "sha256": "c64e09c536f306c9b5dbd24218c0d70357c5e4d96640f814313fbf93abea51de",
+  "copied_at": "2026-10-26T19:01:40.047495+00:00",
+  "selection": "fixed in protocol before training; not selected by exam"
+}

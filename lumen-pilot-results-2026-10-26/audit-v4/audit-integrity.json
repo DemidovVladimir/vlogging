@@ -1,0 +1,18 @@
+{
+  "read_inputs_unchanged": true,
+  "historical_manifest_unchanged": true,
+  "files_verified": 11,
+  "input_sha256": {
+    "manifest.json": "41bd58413ac05806ab2e00783ed1d7930405b8071b07350ed6ec63f0c3afe12b",
+    "v3/runs/context.jsonl": "af117d5b7b60f80a547c347e4d900e89c32a6d95f933f9441251f4e10e5cff5b",
+    "v3/seeds/test.jsonl": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+    "v3/source-handbook.txt": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+    "v3/runs/semantic-review.json": "07176cd0d5393497dfb17b12747979273d7943f5bb3a5963f4774f9e3f447dd5",
+    "v3/common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "v3/compare.py": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+    "v3/run_eval.py": "ac82dedba819bbcf10c6623a180859b144587dbab1cfc6379644c21627f685b2",
+    "v3/protocol.json": "be553d670accf76be101459745e4e282603202d505cc3641ccee67bde46d5191",
+    "v3/model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "v3/preflight.json": "25f508acabacd9f6209071728a804c7be208057755a7f749f17e26d7e5825342"
+  }
+}

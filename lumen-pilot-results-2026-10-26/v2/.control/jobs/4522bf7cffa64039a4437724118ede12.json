@@ -1,0 +1,22 @@
+{
+  "id": "4522bf7cffa64039a4437724118ede12",
+  "stage": "prepare-clean",
+  "command": [
+    ".venv/bin/python",
+    "prepare_data.py",
+    "--seeds",
+    "seeds-clean",
+    "--data-out",
+    "data-clean",
+    "--lock-out",
+    "data-clean-lock.json"
+  ],
+  "pid": 76733,
+  "pgid": 76733,
+  "birth": "Mon Oct 26 19:47:57 2026",
+  "manager_pid": 76719,
+  "manager_birth": "Mon Oct 26 19:47:57 2026",
+  "state": "finished",
+  "log": ".control/logs/4522bf7cffa64039a4437724118ede12.log",
+  "exit_code": 0
+}

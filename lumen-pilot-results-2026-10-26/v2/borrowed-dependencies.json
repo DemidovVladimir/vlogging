@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-10-26T18:39:41.335071+00:00",
+  "model": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/models/qwen3-1.7b-4bit",
+  "venv": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/.venv",
+  "policy": "Reuse existing pinned model and environment through symlinks; no package installations or extra model downloads. New caches, adapters, process registry, data and outputs stay under v2. Parent cleanup after completion removes all runtime files once."
+}

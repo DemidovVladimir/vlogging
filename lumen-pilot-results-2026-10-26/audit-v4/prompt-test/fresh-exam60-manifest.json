@@ -1,0 +1,299 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-27T09:48:53.680359+00:00",
+  "author": {
+    "kind": "agent",
+    "name": "pilot_method_review",
+    "human_validation": false,
+    "fully_independent": false
+  },
+  "prospective": true,
+  "generated_model_outputs_seen_for_this_exam": false,
+  "revised_system_seen_by_author": false,
+  "new_model_inference_or_training_performed": false,
+  "exam": {
+    "path": "fresh-exam60.jsonl",
+    "sha256": "57cbff775b48d89bf21e85ce587a7757bc866846fd5ac2747008cdbdd48e3d93",
+    "count": 60,
+    "category_counts": {
+      "atomic": 30,
+      "composition": 24,
+      "unknown": 6
+    }
+  },
+  "source": {
+    "path": "../v3/source-handbook.txt",
+    "sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52"
+  },
+  "historical_exact_question_checks": {
+    "files": [
+      {
+        "path": "seeds/train.jsonl",
+        "sha256": "3e20da68c161cd6fa6ff7cc21465834e725047ea8f1cadb88e0fb7ae9447ddfe",
+        "rows": 60
+      },
+      {
+        "path": "seeds/valid.jsonl",
+        "sha256": "8b4ee188e7ff420e7e34dfc1b25970ab2689f259d2925ff357d16677cf12d3d9",
+        "rows": 12
+      },
+      {
+        "path": "seeds/test.jsonl",
+        "sha256": "6cf4a48bf19142a9e0c7020fab091452d2ec876e8dce8b620a5bb5bd281b8a0e",
+        "rows": 8
+      },
+      {
+        "path": "v2/seeds/train.jsonl",
+        "sha256": "eaf2e74479a329f281f6dee79811159245fb4f080aef892c43cbb09989050d02",
+        "rows": 300
+      },
+      {
+        "path": "v2/seeds/valid.jsonl",
+        "sha256": "0dcb6fb547c554fdd7cff13c53f0be44c785df30695081ac76737673cfa39c8e",
+        "rows": 24
+      },
+      {
+        "path": "v2/seeds/test.jsonl",
+        "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+        "rows": 60
+      },
+      {
+        "path": "v3/seeds/test.jsonl",
+        "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+        "rows": 60
+      }
+    ],
+    "total_questions_compared": 524,
+    "exact_overlaps": [],
+    "comparison": "strip+casefold"
+  },
+  "checks": {
+    "all_ids_unique": true,
+    "all_questions_unique": true,
+    "all30_atomic_rule_ids_covered": true,
+    "known_fields_match_gold_data": true,
+    "all_unknown_requests_nonempty_and_gold_data_empty": true,
+    "all_answers_natural_not_nested_json": true,
+    "all24_composition_gold_checked_by_source_formulas": true,
+    "positive_pass_owner_remaining_use_day_term_and_seats_explicit": true,
+    "inclusive_calendar_weekdays_consistent": true,
+    "new_refund_totals_and_time_combinations": true,
+    "new_unknown_topics_outside_v2v3_six": true
+  },
+  "composition_oracles": {
+    "v4-c01": {
+      "kind": "ticket",
+      "n": 16,
+      "day": 3,
+      "premiere": false
+    },
+    "v4-c02": {
+      "kind": "ticket",
+      "n": 2,
+      "day": 4,
+      "premiere": false
+    },
+    "v4-c03": {
+      "kind": "ticket",
+      "n": 18,
+      "day": 5,
+      "premiere": false
+    },
+    "v4-c04": {
+      "kind": "ticket",
+      "n": 19,
+      "day": 4,
+      "premiere": true
+    },
+    "v4-c05": {
+      "kind": "refund",
+      "paid": 33,
+      "hours": 6,
+      "premiere": false,
+      "tickets": 3
+    },
+    "v4-c06": {
+      "kind": "refund",
+      "paid": 52.8,
+      "hours": 2,
+      "premiere": false,
+      "tickets": 6
+    },
+    "v4-c07": {
+      "kind": "refund",
+      "paid": 11,
+      "hours": 1.75,
+      "premiere": false,
+      "tickets": 1
+    },
+    "v4-c08": {
+      "kind": "refund",
+      "paid": 28,
+      "hours": 5.25,
+      "premiere": false,
+      "tickets": 2
+    },
+    "v4-c09": {
+      "kind": "refund",
+      "paid": 51,
+      "hours": 24,
+      "premiere": true,
+      "tickets": 3
+    },
+    "v4-c10": {
+      "kind": "refund",
+      "paid": 34,
+      "hours": 23.75,
+      "premiere": true,
+      "tickets": 2
+    },
+    "v4-c11": {
+      "kind": "capacity-min",
+      "n": 17
+    },
+    "v4-c12": {
+      "kind": "capacity-single",
+      "n": 29
+    },
+    "v4-c13": {
+      "kind": "capacity-any",
+      "n": 34
+    },
+    "v4-c14": {
+      "kind": "pass-both-same-day",
+      "name": "Искра",
+      "remaining": 3,
+      "day": 0,
+      "owner": true,
+      "used": false,
+      "same_day_visits_requested": 2
+    },
+    "v4-c15": {
+      "kind": "pass",
+      "name": "Туман",
+      "day": 3,
+      "within_term": true,
+      "remaining": 1,
+      "owner": true,
+      "used": true,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c16": {
+      "kind": "pass",
+      "name": "Искра",
+      "day": 1,
+      "within_term": true,
+      "remaining": 2,
+      "owner": false,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c17": {
+      "kind": "pass",
+      "name": "Туман",
+      "day": 6,
+      "within_term": true,
+      "remaining": 4,
+      "owner": false,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c18": {
+      "kind": "pass",
+      "name": "Искра",
+      "day": 5,
+      "within_term": true,
+      "remaining": 2,
+      "owner": true,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c19": {
+      "kind": "pass",
+      "name": "Туман",
+      "day": 4,
+      "within_term": true,
+      "remaining": 3,
+      "owner": true,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c20": {
+      "kind": "pass",
+      "name": "Искра",
+      "day": 1,
+      "activation_day": 2,
+      "elapsed": 21,
+      "remaining": 2,
+      "owner": true,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c21": {
+      "kind": "pass",
+      "name": "Искра",
+      "day": 2,
+      "activation_day": 2,
+      "elapsed": 22,
+      "remaining": 2,
+      "owner": true,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c22": {
+      "kind": "pass",
+      "name": "Туман",
+      "day": 3,
+      "activation_day": 6,
+      "elapsed": 40,
+      "remaining": 2,
+      "owner": true,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c23": {
+      "kind": "pass",
+      "name": "Туман",
+      "day": 4,
+      "activation_day": 6,
+      "elapsed": 41,
+      "remaining": 2,
+      "owner": true,
+      "used": false,
+      "premiere": false,
+      "seats": true
+    },
+    "v4-c24": {
+      "kind": "purchase-min",
+      "people": 7,
+      "visits_per_person": 3,
+      "days": [
+        0,
+        1,
+        3
+      ],
+      "iskra_total": 168,
+      "single_best_group_total": 184.8,
+      "fog_total": 308
+    }
+  },
+  "limitations_ru": [
+    "Автор знает результаты и ошибки v1–v3 и ранее создавал старый экзамен. Поэтому это новый prospective локальный тест до генерации, а не полностью независимый внешний benchmark.",
+    "Автор не читает revised SYSTEM root и не видит будущие ответы. Изменения инструкции и вся генерация остаются работой root после отдельного freeze.",
+    "Те же30 правил и факты намеренно содержатся в источнике. Новыми являются формулировки и составные сценарии, а не домен или сведения.",
+    "Атомарное имя может подсказаться системным сообщением; сравнение не доказывает его усвоение в весах.",
+    "Пороговые числа2/6/24часа и21/40дней общие по определению. Их использование в новых контекстах не делает сами правила невиданными.",
+    "Multiple-ticket refunds предполагают одинаковый срок возврата каждого билета, явно указанный в вопросе; общая сумма — сумма по каждому из одинаково применённых правил.",
+    "Для c24 даже наилучшие разовые групповые стоят26.4 на человека против24 за «Искру», поэтому возможные варианты смешанной оплаты не меняют минимальность всех7 «Искр».",
+    "Синонимы строк, формальные ошибки JSON и ложные объяснения должны оцениваться по прежнему заранее зафиксированному критерию; исторические scores не пересчитываются.",
+    "Перед первыми ответами root должен независимо проверить эталоны и включить exactSHA экзамена, source, SYSTEM и runner в freeze. Все arms показываются, без отбора лучшего по test."
+  ]
+}

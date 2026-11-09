@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU wordmark</title>
+  <desc id="desc">TENGU field seal and Russian descriptor.</desc>
+  <rect width="1440" height="420" fill="#E9DFC9"/>
+  <g transform="translate(38 -4) scale(.84)">
+    <path d="M72 196V88H196" fill="none" stroke="#11110F" stroke-width="34"/>
+    <path d="M316 88H424V196M424 316V424H316" fill="none" stroke="#C92F20" stroke-width="34"/>
+    <path d="M196 424H88V316" fill="none" stroke="#11110F" stroke-width="34"/>
+    <circle cx="256" cy="256" r="120" fill="none" stroke="#11110F" stroke-width="18" stroke-dasharray="188 25 92 25 188 236" transform="rotate(-38 256 256)"/>
+    <path d="M256 256L358 197" stroke="#A9853E" stroke-width="12"/>
+    <path d="M256 256V136M256 256L154 197M256 256L154 315M256 256V376M256 256L358 315" stroke="#11110F" stroke-width="5" opacity=".72"/>
+    <g fill="#11110F"><circle cx="256" cy="136" r="17"/><circle cx="154" cy="197" r="17"/><circle cx="154" cy="315" r="17"/><circle cx="256" cy="376" r="17"/><circle cx="358" cy="315" r="17"/></g>
+    <circle cx="358" cy="197" r="19" fill="#A9853E"/>
+    <rect x="216" y="216" width="80" height="80" fill="#C92F20"/>
+  </g>
+  <line x1="486" y1="74" x2="486" y2="346" stroke="#A9853E" stroke-width="4"/>
+  <text x="552" y="225" fill="#11110F" font-family="'Avenir Next','Manrope','Helvetica Neue',sans-serif" font-size="148" font-weight="800" letter-spacing="20">TENGU</text>
+  <text x="558" y="295" fill="#C92F20" font-family="'Menlo','IBM Plex Mono',monospace" font-size="31" font-weight="700" letter-spacing="8">ИИ НА ПРАКТИКЕ</text>
+  <text x="558" y="344" fill="#5B5A54" font-family="'Helvetica Neue',Arial,sans-serif" font-size="24">Люди ставят цель. Мы показываем весь путь.</text>
+</svg>

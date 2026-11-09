@@ -1,0 +1,34 @@
+{
+  "before.jsonl": {
+    "relative_to_video": "../before.jsonl",
+    "sha256": "8d67925260db40b5f0814bb1650a032ec46bc6619dbcdf34ba931771831254b9"
+  },
+  "after.jsonl": {
+    "relative_to_video": "../after.jsonl",
+    "sha256": "95af7cd2a1751466fe560014781e580107c6f2aabb2e5c3fa10416e2a623fd55"
+  },
+  "openbook.jsonl": {
+    "relative_to_video": "../openbook.jsonl",
+    "sha256": "948e1ff98e96d721dbd77d575b50733a45b574a332a9d8005228e92e7a8a7183"
+  },
+  "resources/train.json": {
+    "relative_to_video": "../resources/train.json",
+    "sha256": "c060c5a6439bde2a9513b418c03889db585c678591c5723e3453954b419e19d4"
+  },
+  "resources/calibration-17b.json": {
+    "relative_to_video": "../resources/calibration-17b.json",
+    "sha256": "1ba85dff5a662e4d9b305ef45343cec894815b72d4d1a39e506757d90ef7a514"
+  },
+  "resources/calibration.json": {
+    "relative_to_video": "../resources/calibration.json",
+    "sha256": "a4cd87b207b136914012ed5223997ef0efcbb1455fe1702621567ce601453e05"
+  },
+  "semantic-review.json": {
+    "relative_to_video": "../semantic-review.json",
+    "sha256": "5656bb9adcf6cd686199d7a5ca73608fdd5de5cc3f90cd138cca678d8ae02d29"
+  },
+  "method-review.txt": {
+    "relative_to_video": "../method-review.txt",
+    "sha256": "4c16c01a44005d805fae7233ea4125b58db1481ae040aefcbfc73de7500dd52e"
+  }
+}

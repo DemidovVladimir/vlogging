@@ -1,0 +1,12 @@
+{
+  "observed_at_utc": "2026-10-27T09:47:04.259394+00:00",
+  "cpu": "Apple M4",
+  "unified_memory_bytes": 17179869184,
+  "pressure_level": 2,
+  "swap": "total = 3072.00M  used = 1973.94M  free = 1098.06M  (encrypted)",
+  "model_loaded": false,
+  "runtime_created": false,
+  "new_inference_executed": false,
+  "gate": "Do not restore/load model while pressure is warning2 or higher; continuing file/data audit only.",
+  "previous_runtime_removed": true
+}

@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-10-27T09:57:41.257166+00:00",
+  "files": {
+    "common.py": "2e8b5ed2fc578f6e8fb66366dccc94b7ec756b166516debc2fdef027e9c90c31",
+    "compare.py": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+    "manage.py": "38e495c26c2b1a1f94e552449320842f99f97bcf65e1f73b00f5498d9ef79b7b",
+    "resource_guard.py": "4655674fca979e49de516c3485e4a5fc2ebf85c8aea96aa6a87f572785a80d3f",
+    "model-lock.json": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "source-handbook.txt": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+    "seeds/test.jsonl": "57cbff775b48d89bf21e85ce587a7757bc866846fd5ac2747008cdbdd48e3d93",
+    "protocol.json": "a895e8613bb427e01cf1c025a87c856c6c1242e13898238cc04f18eda051b14b",
+    "revised-system.txt": "c9ac0a7585f02a1f169aad5004492b260ce2cde417c4f3fb06e8b500e7eb4f4b",
+    "prompt_harness.py": "f2a050e41af64d9f5721bd2be6359ed8caf7f257554c7cf6232acfdc6bd0aea0",
+    "preflight.json": "530a3f03244e00a41a6b7ce0a68a4a8cce050ac1ef5780fa928be7782f8815bf",
+    "fresh-exam-independent-audit.json": "574833c79479a7ac605d67e319fe62a1fd2f1cc2b206ecc56395b571f17bf139",
+    "fresh-exam60-manifest.json": "a05948944a0f79fd874d988e10b1f473bb5c06b8da77cf029277ccf2323859e1"
+  },
+  "timing": "Frozen before any new model inference, including padded resource probe. Baseline and revised both use prospective new60."
+}

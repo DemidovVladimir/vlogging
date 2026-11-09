@@ -1,0 +1,13 @@
+# 2026-10-27T17:03:30Z chaos-kb sync --dry-run
+real 0.04
+real 0.04
+real 0.04
+{
+  "added": [],
+  "changed": [],
+  "chunks": 22,
+  "dry_run": true,
+  "embedded": 0,
+  "notes": 5,
+  "removed": []
+}

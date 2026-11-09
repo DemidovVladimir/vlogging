@@ -1,0 +1,254 @@
+[
+  {
+    "id": "eth-01",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Требуется обрабатывать false. Только combined даёт прямую буквальную MUST handle false."
+  },
+  {
+    "id": "eth-02",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "decimals опционален. Search_only верен несмотря на лишнюю кавычку; оба новых промпта ошибочно делают метод обязательным даже рядом с OPTIONAL."
+  },
+  {
+    "id": "eth-03",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Нулевой transfer обязан эмитировать Transfer. Combined подтверждает прямым правилом ERC20; prompt_only цитирует другой стандарт/другие события небуквально."
+  },
+  {
+    "id": "eth-04",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Повторный approve заменяет allowance. Подпись метода у prompt_only не доказывает overwrite; combined цитирует правило прямо."
+  },
+  {
+    "id": "eth-05",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "1234500/10^6=1,2345. Все три ответа не выполняют верную конвертацию; цитирование примера decimals8 не заменяет применение заданных6."
+  },
+  {
+    "id": "eth-06",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "balanceOf. Подпись owner→balance подтверждает нужный view-метод у обоих новых промптов. Ответ combined Баланс является описанием, data правильно называет метод, противоречия нет."
+  },
+  {
+    "id": "eth-07",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "convertToShares не включает fees. Search_only/prompt_only верны; combined datafalse и вводное Нет противоречат фразе должен включать, поэтому content=false."
+  },
+  {
+    "id": "eth-08",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "convertToShares округляет down. Combined даёт прямую MUST round down towards0 в нужном разделе. Prompt_only даёт две вырванные цитаты up/down, не устанавливающие выбор для конкретного метода."
+  },
+  {
+    "id": "eth-09",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "previewDeposit включает deposit fees. Все новые ответы верны; цитаты не являются точными подтверждающими выдержками в переданном виде."
+  },
+  {
+    "id": "eth-10",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "previewDeposit не учитывает deposit limits. Search_only верен. Prompt_only говорит true вопреки MUST NOT; combined datatrue противоречит answerНет, content=false."
+  },
+  {
+    "id": "eth-11",
+    "arm": "search_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При отключённых депозитах maxDeposit=0. Значения верны, но цитата prompt_only of asset не доказывает0, а combined цитирует другое условие unlimited."
+  },
+  {
+    "id": "eth-12",
+    "arm": "search_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Для требуемых к отдаче shares округлениеup. Все новые варианты возвращают down; combined даже копирует прямое up, но делает обратный вывод."
+  },
+  {
+    "id": "eth-01",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Требуется обрабатывать false. Только combined даёт прямую буквальную MUST handle false."
+  },
+  {
+    "id": "eth-02",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "decimals опционален. Search_only верен несмотря на лишнюю кавычку; оба новых промпта ошибочно делают метод обязательным даже рядом с OPTIONAL."
+  },
+  {
+    "id": "eth-03",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Нулевой transfer обязан эмитировать Transfer. Combined подтверждает прямым правилом ERC20; prompt_only цитирует другой стандарт/другие события небуквально."
+  },
+  {
+    "id": "eth-04",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Повторный approve заменяет allowance. Подпись метода у prompt_only не доказывает overwrite; combined цитирует правило прямо."
+  },
+  {
+    "id": "eth-05",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "1234500/10^6=1,2345. Все три ответа не выполняют верную конвертацию; цитирование примера decimals8 не заменяет применение заданных6."
+  },
+  {
+    "id": "eth-06",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "balanceOf. Подпись owner→balance подтверждает нужный view-метод у обоих новых промптов. Ответ combined Баланс является описанием, data правильно называет метод, противоречия нет."
+  },
+  {
+    "id": "eth-07",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "convertToShares не включает fees. Search_only/prompt_only верны; combined datafalse и вводное Нет противоречат фразе должен включать, поэтому content=false."
+  },
+  {
+    "id": "eth-08",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "convertToShares округляет down. Combined даёт прямую MUST round down towards0 в нужном разделе. Prompt_only даёт две вырванные цитаты up/down, не устанавливающие выбор для конкретного метода."
+  },
+  {
+    "id": "eth-09",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "previewDeposit включает deposit fees. Все новые ответы верны; цитаты не являются точными подтверждающими выдержками в переданном виде."
+  },
+  {
+    "id": "eth-10",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "previewDeposit не учитывает deposit limits. Search_only верен. Prompt_only говорит true вопреки MUST NOT; combined datatrue противоречит answerНет, content=false."
+  },
+  {
+    "id": "eth-11",
+    "arm": "prompt_only",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При отключённых депозитах maxDeposit=0. Значения верны, но цитата prompt_only of asset не доказывает0, а combined цитирует другое условие unlimited."
+  },
+  {
+    "id": "eth-12",
+    "arm": "prompt_only",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Для требуемых к отдаче shares округлениеup. Все новые варианты возвращают down; combined даже копирует прямое up, но делает обратный вывод."
+  },
+  {
+    "id": "eth-01",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Требуется обрабатывать false. Только combined даёт прямую буквальную MUST handle false."
+  },
+  {
+    "id": "eth-02",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "decimals опционален. Search_only верен несмотря на лишнюю кавычку; оба новых промпта ошибочно делают метод обязательным даже рядом с OPTIONAL."
+  },
+  {
+    "id": "eth-03",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Нулевой transfer обязан эмитировать Transfer. Combined подтверждает прямым правилом ERC20; prompt_only цитирует другой стандарт/другие события небуквально."
+  },
+  {
+    "id": "eth-04",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Повторный approve заменяет allowance. Подпись метода у prompt_only не доказывает overwrite; combined цитирует правило прямо."
+  },
+  {
+    "id": "eth-05",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "1234500/10^6=1,2345. Все три ответа не выполняют верную конвертацию; цитирование примера decimals8 не заменяет применение заданных6."
+  },
+  {
+    "id": "eth-06",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "balanceOf. Подпись owner→balance подтверждает нужный view-метод у обоих новых промптов. Ответ combined Баланс является описанием, data правильно называет метод, противоречия нет."
+  },
+  {
+    "id": "eth-07",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "convertToShares не включает fees. Search_only/prompt_only верны; combined datafalse и вводное Нет противоречат фразе должен включать, поэтому content=false."
+  },
+  {
+    "id": "eth-08",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "convertToShares округляет down. Combined даёт прямую MUST round down towards0 в нужном разделе. Prompt_only даёт две вырванные цитаты up/down, не устанавливающие выбор для конкретного метода."
+  },
+  {
+    "id": "eth-09",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "previewDeposit включает deposit fees. Все новые ответы верны; цитаты не являются точными подтверждающими выдержками в переданном виде."
+  },
+  {
+    "id": "eth-10",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "previewDeposit не учитывает deposit limits. Search_only верен. Prompt_only говорит true вопреки MUST NOT; combined datatrue противоречит answerНет, content=false."
+  },
+  {
+    "id": "eth-11",
+    "arm": "combined",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "При отключённых депозитах maxDeposit=0. Значения верны, но цитата prompt_only of asset не доказывает0, а combined цитирует другое условие unlimited."
+  },
+  {
+    "id": "eth-12",
+    "arm": "combined",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Для требуемых к отдаче shares округлениеup. Все новые варианты возвращают down; combined даже копирует прямое up, но делает обратный вывод."
+  }
+]

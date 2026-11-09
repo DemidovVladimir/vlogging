@@ -1,0 +1,101 @@
+{
+  "prepared_on": "2026-11-05",
+  "timezone": "Europe/Berlin",
+  "source_project": "/Users/vladimirdemidov/development/vlogging/youtube-reader",
+  "snapshot_role": "Baseline reference; the original source project remains the working project.",
+  "source_files": [
+    {
+      "path": "app/app.py",
+      "source_path": "app.py",
+      "bytes": 18337,
+      "sha256": "de81171a7ab0b701752e7a98597e6125e458641a43a7c9d2755c0acee3e33414"
+    },
+    {
+      "path": "app/launch.py",
+      "source_path": "launch.py",
+      "bytes": 1195,
+      "sha256": "ba567c1e5f59849d67f19a1707ca40e2ba320b15ee4d41f83b509c9bb7797500"
+    },
+    {
+      "path": "app/Start Margin.command",
+      "source_path": "Start Margin.command",
+      "bytes": 424,
+      "sha256": "9501f69429bd77d6f830375967df7a76a972eaa7309fc778328b43e50606b914"
+    },
+    {
+      "path": "app/pyproject.toml",
+      "source_path": "pyproject.toml",
+      "bytes": 386,
+      "sha256": "e9e6d752351010f2ecf0238d7959ef515a3b37a486a0827fdfbdd1c20ba3d5a6"
+    },
+    {
+      "path": "app/requirements.txt",
+      "source_path": "requirements.txt",
+      "bytes": 1149,
+      "sha256": "21746827df12f4710262cf13bd82824e5b44a73248243932ac10380112cebcca"
+    },
+    {
+      "path": "app/uv.lock",
+      "source_path": "uv.lock",
+      "bytes": 109584,
+      "sha256": "296940806fde4f969572ca98a3966fef6fe0dbef39bbbf7a510ae23a6714c41a"
+    },
+    {
+      "path": "app/.gitignore",
+      "source_path": ".gitignore",
+      "bytes": 51,
+      "sha256": "08a7e02fe94d976da5e06cb4d09a9c3a6b3cb82b456a4332f3f90fb279d4af73"
+    },
+    {
+      "path": "app/README.md",
+      "source_path": "README.md",
+      "bytes": 5759,
+      "sha256": "b9be85044237d83d6fc9fac5c903d2a7d0ef642f85ff371c86da12815dfc4872"
+    },
+    {
+      "path": "app/static/index.html",
+      "source_path": "static/index.html",
+      "bytes": 9841,
+      "sha256": "5c23bacacc3a03d901e594c7f102a41c539c0d9ebe61a4bcbc1662d7124f5959"
+    },
+    {
+      "path": "app/static/style.css",
+      "source_path": "static/style.css",
+      "bytes": 29311,
+      "sha256": "f63600a61bed8706d8159c3adc9fc09ce10ce7e16e7c677eb0635db0afa3ea54"
+    },
+    {
+      "path": "app/static/app.js",
+      "source_path": "static/app.js",
+      "bytes": 15408,
+      "sha256": "a335d65e6fd2b2ab124326b9cf85a29bc50274b2b2199a6094966717ad9026c9"
+    },
+    {
+      "path": "app/static/favicon.svg",
+      "source_path": "static/favicon.svg",
+      "bytes": 365,
+      "sha256": "00146de10b7b8e3b2255799672e4475164111b6eb86b93e72c3999667205a7f4"
+    },
+    {
+      "path": "app/tests/test_reader.py",
+      "source_path": "tests/test_reader.py",
+      "bytes": 9567,
+      "sha256": "a32f7bb6c56910c08646755a0e03cf8b45adab8000deaf1535b368c1d54b1a44"
+    }
+  ],
+  "reference_files": [
+    {
+      "path": "reference/preview-assets-fixed.png",
+      "bytes": 52780,
+      "sha256": "c8eabcb7b1ddc16e53a374e240a84c0c27c8c6748af54283cb69df401f17b703"
+    }
+  ],
+  "excluded": [
+    "virtual environments",
+    "runtime databases",
+    "exports",
+    "credentials",
+    "environment files",
+    "caches"
+  ]
+}

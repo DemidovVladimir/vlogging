@@ -1,0 +1,1093 @@
+{
+  "schema": 1,
+  "reviewer_agent": "/root/resource_guard",
+  "human_validation": false,
+  "review_type": "Source-grounded agent semantic review of exactly 30 atomic answers per completed arm. Not a second model inference or human validation.",
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "exam_sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a",
+  "strict_grader_sha256": "b577dbae8271f1e75e0c9a0401838a44f4b71477ae14e7d097607c5d1972ab75",
+  "criteria": {
+    "full_correct": "All requested facts present with truthful source-grounded explanation; semantically equivalent strings/currency acceptable; unsupported extra fact/title or contradictory status/data makes full=false.",
+    "classification": "correct=fully grounded; partial=some correct requested fact but incomplete/unsupported explanation; abstained=no substantive requested value; incorrect=wrong value/contradiction.",
+    "v2-a01": "Name is provided in SYSTEM; exclude this item from claims that new knowledge was learned, even if answered correctly."
+  },
+  "arms": {
+    "base": {
+      "file_sha256": "cf6e67a59152b4969bb3e8df27400535703813d0c831cf04df93885fb0eb1a74",
+      "reviewed_at": "2026-10-26T19:04:18.091777+00:00",
+      "items": [
+        {
+          "id": "v2-a01",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Название «Люмен» верно, но придуман заголовок справочника «Теоретико-методологический справочник». Название уже дано в SYSTEM и само по себе не доказывает усвоение нового знания."
+        },
+        {
+          "id": "v2-a02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо NFR-27 выданы имя поля code и тип string."
+        },
+        {
+          "id": "v2-a03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 18 мест выдано unknown с утверждением seats=0; добавлено необоснованное обобщение об отсутствии открытых данных."
+        },
+        {
+          "id": "v2-a04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдумана вместимость 1000 вместо 32 мест."
+        },
+        {
+          "id": "v2-a05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выданы 1000 рублей вместо 11 евро."
+        },
+        {
+          "id": "v2-a06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Нет тарифа 14 евро; unknown противоречит числовому утверждению amount=0."
+        },
+        {
+          "id": "v2-a07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Нет премьерной цены 17 евро; unknown сопровождается amount=0."
+        },
+        {
+          "id": "v2-a08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Нет порога 5 человек; unknown сопровождается minimum_people=0 и общими рассуждениями."
+        },
+        {
+          "id": "v2-a09",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Процент 20 не назван: отказ и null вместо значения. Запрошенное правило не усвоено."
+        },
+        {
+          "id": "v2-a10",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Не названы дни с понедельника по пятницу; отказ и пустая строка."
+        },
+        {
+          "id": "v2-a11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Unknown противоречит group_discount=true, а правило запрещает скидку на премьеры."
+        },
+        {
+          "id": "v2-a12",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Unknown, текст о неприменении скидки и group_discount=true противоречат друг другу; расчёт скидки для каждого абонемента выдуман."
+        },
+        {
+          "id": "v2-a13",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ назвать цену «Искры», data пуст; требуемые 24 евро отсутствуют."
+        },
+        {
+          "id": "v2-a14",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Названо 1 посещение вместо 3."
+        },
+        {
+          "id": "v2-a15",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым days; диапазон понедельник–четверг отсутствует."
+        },
+        {
+          "id": "v2-a16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Общая формула без срока 21 день; days=0 неверно."
+        },
+        {
+          "id": "v2-a17",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Запрет передачи и false верны, но объяснение внутренними правами собственности/возможной ограниченностью не дано в источнике; правило — именной абонемент."
+        },
+        {
+          "id": "v2-a18",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена 44 евро не названа; amount=0 и рассуждения о ежемесячных/ежегодных договорах не основаны на справочнике."
+        },
+        {
+          "id": "v2-a19",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Сообщено об отсутствии сведений, visits=null; число 5 не названо, status known не соответствует отказу."
+        },
+        {
+          "id": "v2-a20",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Нужные дни не названы; добавлено неверное отождествление абонемента с фильмом «Туман»."
+        },
+        {
+          "id": "v2-a21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Срок 40 дней не назван; unknown сопровождается days=0."
+        },
+        {
+          "id": "v2-a22",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Запрет передачи и false верны, но придуманы права доступа, создание объекта и правила пересылки; источник объясняет запрет именным характером."
+        },
+        {
+          "id": "v2-a23",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Дневной предел 1 не назван; visits_per_day=null и текст отказа при status known."
+        },
+        {
+          "id": "v2-a24",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Unknown сопровождается passes_valid=true и условным разрешением премьеры; оба абонемента на премьеры не действуют."
+        },
+        {
+          "id": "v2-a25",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдан нулевой возврат вместо полного (доля 1) при интервале не менее 6 часов."
+        },
+        {
+          "id": "v2-a26",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдан 0 вместо половины; объяснение про 100%/0% и договор не соответствует фиксированному правилу."
+        },
+        {
+          "id": "v2-a27",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Data=0 совпадает, но status unknown и текст о якобы обычно полной оплате противоречат правилу нулевого возврата."
+        },
+        {
+          "id": "v2-a28",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Полный возврат (доля 1) не назван; null и отсылка к условиям перевозчика/кинотеатра."
+        },
+        {
+          "id": "v2-a29",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Названа доля 0,5 вместо 0 и подменён интервал до премьеры интервалом между покупкой и выездом."
+        },
+        {
+          "id": "v2-a30",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Имя Сол Мерн не названо; пустой administrator и текст об отсутствии имени при status known."
+        }
+      ],
+      "full_answer_correct_count": 0,
+      "strict_correct_count": 3,
+      "classification_counts": {
+        "correct": 0,
+        "partial": 3,
+        "abstained": 9,
+        "incorrect": 18
+      },
+      "semantic_vs_strict_mismatches": [
+        {
+          "id": "v2-a01",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a17",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a22",
+          "semantic": false,
+          "strict": true
+        }
+      ],
+      "full_correct_excluding_system_name": {
+        "correct": 0,
+        "total": 29,
+        "excluded": [
+          "v2-a01"
+        ]
+      }
+    },
+    "v1": {
+      "file_sha256": "503ede90fb6058f6fddf013f1a4ecd67e8bfc6313f2fd51de353b010cf66cda6",
+      "reviewed_at": "2026-10-26T19:04:45.279925+00:00",
+      "items": [
+        {
+          "id": "v2-a01",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Название «Люмен» верно, без неподтверждённых добавлений. Оно уже дано в SYSTEM, поэтому это не доказательство приобретения нового знания."
+        },
+        {
+          "id": "v2-a02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо NFR-27 выдан тип string."
+        },
+        {
+          "id": "v2-a03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 18 мест выдано 120."
+        },
+        {
+          "id": "v2-a04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 32 мест выдано 120."
+        },
+        {
+          "id": "v2-a05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 11 евро выдано 12 евро."
+        },
+        {
+          "id": "v2-a06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 14 евро выдано 12 евро."
+        },
+        {
+          "id": "v2-a07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо 17 евро выдано 12 евро."
+        },
+        {
+          "id": "v2-a08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Порог группы указан как 1 вместо 5."
+        },
+        {
+          "id": "v2-a09",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Скидка указана как 10% вместо 20%."
+        },
+        {
+          "id": "v2-a10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Скидка ошибочно разрешена во все дни вместо понедельника–пятницы."
+        },
+        {
+          "id": "v2-a11",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно запрещает групповую скидку на премьерные билеты."
+        },
+        {
+          "id": "v2-a12",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно отрицает применение групповой скидки к стоимости абонемента."
+        },
+        {
+          "id": "v2-a13",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена «Искры» указана как 12,99 евро вместо 24."
+        },
+        {
+          "id": "v2-a14",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 1 посещение вместо 3."
+        },
+        {
+          "id": "v2-a15",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Все рабочие дни включает пятницу, тогда как «Искра» действует только с понедельника по четверг."
+        },
+        {
+          "id": "v2-a16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан 1 день вместо 21 календарного дня."
+        },
+        {
+          "id": "v2-a17",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно запрещает передачу посещения «Искры» другому человеку."
+        },
+        {
+          "id": "v2-a18",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 12 евро вместо 44."
+        },
+        {
+          "id": "v2-a19",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 12 посещений вместо 5."
+        },
+        {
+          "id": "v2-a20",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Перечислены шесть допустимых дней, но пропущен вторник; полный ответ должен разрешать любой день недели."
+        },
+        {
+          "id": "v2-a21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 14 дней вместо 40."
+        },
+        {
+          "id": "v2-a22",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно запрещает передачу посещения «Тумана» другому человеку."
+        },
+        {
+          "id": "v2-a23",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно указан максимум одного посещения в день по абонементу."
+        },
+        {
+          "id": "v2-a24",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно запрещает оплату премьерного сеанса обоими абонементами."
+        },
+        {
+          "id": "v2-a25",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан нулевой возврат вместо полного (доля 1)."
+        },
+        {
+          "id": "v2-a26",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан нулевой возврат вместо половины (0,5)."
+        },
+        {
+          "id": "v2-a27",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно указан нулевой возврат менее чем за два часа до обычного сеанса."
+        },
+        {
+          "id": "v2-a28",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан нулевой возврат вместо полного (доля 1) при интервале не менее 24 часов до премьеры."
+        },
+        {
+          "id": "v2-a29",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указана половина вместо нулевого возврата менее чем за 24 часа до премьеры."
+        },
+        {
+          "id": "v2-a30",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Имя Сол Мерн не названо; answer пустой administrator, а data содержит тип string."
+        }
+      ],
+      "full_answer_correct_count": 8,
+      "strict_correct_count": 8,
+      "classification_counts": {
+        "correct": 8,
+        "partial": 1,
+        "abstained": 0,
+        "incorrect": 21
+      },
+      "semantic_vs_strict_mismatches": [],
+      "full_correct_excluding_system_name": {
+        "correct": 7,
+        "total": 29,
+        "excluded": [
+          "v2-a01"
+        ]
+      }
+    },
+    "clean200": {
+      "file_sha256": "41d8b6ec74193fb2eb25f7b4e14e95bd4d749ae15919f63193d2dc52cabca7ba",
+      "reviewed_at": "2026-10-26T19:05:22.295917+00:00",
+      "items": [
+        {
+          "id": "v2-a01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вместо названия «Люмен» выдуман «Справочник справочников»."
+        },
+        {
+          "id": "v2-a02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Идентификатор NFR-27 не назван; вместо него тип string и общая трактовка поля code."
+        },
+        {
+          "id": "v2-a03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 124 места вместо 18."
+        },
+        {
+          "id": "v2-a04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 12000 мест вместо 32."
+        },
+        {
+          "id": "v2-a05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 12 евро вместо 11."
+        },
+        {
+          "id": "v2-a06",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Тариф 14 евро не назван; amount=0 неверно, добавлена несуществующая организация субботы/воскресенья."
+        },
+        {
+          "id": "v2-a07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Премьерная цена 17 евро подменена рассуждением о премьерной скидке; amount=0 неверно."
+        },
+        {
+          "id": "v2-a08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Не назван порог 5; status unknown сопровождается утверждением minimum_people=0."
+        },
+        {
+          "id": "v2-a09",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 0 вместо 20%; неверно отрицается снижение цены каждого обычного билета."
+        },
+        {
+          "id": "v2-a10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Названы суббота и воскресенье вместо понедельника–пятницы."
+        },
+        {
+          "id": "v2-a11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Data=false совпадает, но текст одновременно разрешает скидку на премьерные сеансы; ответ противоречив."
+        },
+        {
+          "id": "v2-a12",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Верно отрицает уменьшение цены, но далее выдумывает применение скидки к самому абонементу, что запрещено источником."
+        },
+        {
+          "id": "v2-a13",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ назвать 24 евро; оба поля null при status known."
+        },
+        {
+          "id": "v2-a14",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 1 посещение вместо 3; объяснение про разового посетителя неверно."
+        },
+        {
+          "id": "v2-a15",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Добавлена пятница: нужен диапазон понедельник–четверг, а не понедельник–пятница."
+        },
+        {
+          "id": "v2-a16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан 1 день вместо 21; включение дня активации не сокращает срок до одного дня."
+        },
+        {
+          "id": "v2-a17",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Запрет передачи и false верны, но выдумана принадлежность каждого посещения пороговой группе."
+        },
+        {
+          "id": "v2-a18",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ назвать 44 евро, amount/currency null при status known."
+        },
+        {
+          "id": "v2-a19",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано visits=0 вместо 5 и отсутствие числа в справочнике."
+        },
+        {
+          "id": "v2-a20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Data перечисляет все семь дней, но текст явно запрещает воскресенье, что противоречит правилу любого дня недели."
+        },
+        {
+          "id": "v2-a21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 14 дней вместо 40."
+        },
+        {
+          "id": "v2-a22",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Запрет передачи и false верны, но выдумано правило о двух людях, один из которых входит, другой выходит."
+        },
+        {
+          "id": "v2-a23",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Дневной лимит 1 верен, но добавлено отсутствующее в источнике название справочника «Абонементы»."
+        },
+        {
+          "id": "v2-a24",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Data=false совпадает, но текст отказывается дать однозначный ответ и утверждает отсутствие правила; запрет на премьеры не объяснён правдиво."
+        },
+        {
+          "id": "v2-a25",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 0,01 вместо 1 и выдуман заголовок справочника; возврат должен быть полным."
+        },
+        {
+          "id": "v2-a26",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Доля 0 вместо 0,5 неверна; объяснение не отвечает на вопрос о половинном возврате в интервале 2–6 часов."
+        },
+        {
+          "id": "v2-a27",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Data=0 совпадает, но текст обещает возврат всей оплаты менее чем за два часа; прямое противоречие."
+        },
+        {
+          "id": "v2-a28",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ назвать полный возврат (доля 1), data пуст при status known."
+        },
+        {
+          "id": "v2-a29",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Обещан полный возврат вместо нулевого и подменён срок до начала интервалом между выдачей и возвратом."
+        },
+        {
+          "id": "v2-a30",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Имя Сол Мерн не названо, data пуст; утверждается отсутствие сведений при status known."
+        }
+      ],
+      "full_answer_correct_count": 0,
+      "strict_correct_count": 7,
+      "classification_counts": {
+        "correct": 0,
+        "partial": 5,
+        "abstained": 4,
+        "incorrect": 21
+      },
+      "semantic_vs_strict_mismatches": [
+        {
+          "id": "v2-a11",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a12",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a17",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a22",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a23",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a24",
+          "semantic": false,
+          "strict": true
+        },
+        {
+          "id": "v2-a27",
+          "semantic": false,
+          "strict": true
+        }
+      ],
+      "full_correct_excluding_system_name": {
+        "correct": 0,
+        "total": 29,
+        "excluded": [
+          "v2-a01"
+        ]
+      }
+    },
+    "expanded200": {
+      "file_sha256": "31cfadac0c0f5105b901395b32378451d998566ded5974996595548c64ad1562",
+      "reviewed_at": "2026-10-26T19:06:21.479341+00:00",
+      "items": [
+        {
+          "id": "v2-a01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Название кинотеатра подменено названием зала «Сумрак»; нужно «Люмен»."
+        },
+        {
+          "id": "v2-a02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "NFR-27 не назван; data.code содержит тип string, а ответ придумывает структуру справочника."
+        },
+        {
+          "id": "v2-a03",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 124 места вместо 18."
+        },
+        {
+          "id": "v2-a04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 12000 мест вместо 32."
+        },
+        {
+          "id": "v2-a05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Тариф 11 евро не назван, data.amount=0; неверно отрицается принадлежность к учебному кинотеатру."
+        },
+        {
+          "id": "v2-a06",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно назван обычный билет на выходные за 14 евро."
+        },
+        {
+          "id": "v2-a07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдана нулевая цена вместо 17 евро; придумана связь премьеры с проживанием."
+        },
+        {
+          "id": "v2-a08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Не назван порог 5; unknown сопровождается minimum_people=0 и отказом."
+        },
+        {
+          "id": "v2-a09",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым data; скидка 20% не названа."
+        },
+        {
+          "id": "v2-a10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Невалидный JSON с лишней скобкой; текст путает выходные, все дни и будни, а data ограничивает понедельником–четвергом вместо понедельника–пятницы."
+        },
+        {
+          "id": "v2-a11",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Data разрешает скидку на премьеры и придуманы групповые/премьерные абонементы; правило запрещает такую скидку."
+        },
+        {
+          "id": "v2-a12",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Unknown сопровождается утверждением group_discount=false; текст дополнительно заявляет применение скидки к оплате абонемента, противореча источнику."
+        },
+        {
+          "id": "v2-a13",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ назвать 24 евро, data пуст при status known."
+        },
+        {
+          "id": "v2-a14",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 1 посещение вместо 3."
+        },
+        {
+          "id": "v2-a15",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "В data есть понедельник–четверг, но текст разрешает понедельник/среду/пятницу и пропускает вторник/четверг; ответ внутренне противоречив."
+        },
+        {
+          "id": "v2-a16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Срок 21 день не назван; data.days=0 неверно."
+        },
+        {
+          "id": "v2-a17",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "В тексте правильно запрещена передача, но выдуманы несуммируемость и сумма посещений; data пуст."
+        },
+        {
+          "id": "v2-a18",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Вывод оборван, JSON не завершён, цена 44 евро отсутствует; вместо неё повторяются выдуманные 144 часа."
+        },
+        {
+          "id": "v2-a19",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ назвать 5 посещений, data пуст при status known."
+        },
+        {
+          "id": "v2-a20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Ни один допустимый день не назван; текст ошибочно отрицает связь «Тумана» с учебным справочником."
+        },
+        {
+          "id": "v2-a21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 14 календарных дней вместо 40."
+        },
+        {
+          "id": "v2-a22",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым data; прямой запрет передачи именного «Тумана» не назван."
+        },
+        {
+          "id": "v2-a23",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым data; дневной лимит 1 не назван."
+        },
+        {
+          "id": "v2-a24",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Unknown и отказ дать правило противоречат утверждению passes_valid=false; полного правдивого ответа нет."
+        },
+        {
+          "id": "v2-a25",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан нулевой возврат вместо полного (доля 1)."
+        },
+        {
+          "id": "v2-a26",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан нулевой возврат вместо половины (0,5)."
+        },
+        {
+          "id": "v2-a27",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Обещан полный возврат вместо нулевого менее чем за два часа до обычного сеанса."
+        },
+        {
+          "id": "v2-a28",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ и пустой data вместо полного возврата при интервале не менее 24 часов; временное условие также спутано."
+        },
+        {
+          "id": "v2-a29",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно указан нулевой возврат премьерного билета менее чем за 24 часа до начала."
+        },
+        {
+          "id": "v2-a30",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Имя Сол Мерн не названо, data пуст; ответ не даёт содержательного значения."
+        }
+      ],
+      "full_answer_correct_count": 2,
+      "strict_correct_count": 2,
+      "classification_counts": {
+        "correct": 2,
+        "partial": 1,
+        "abstained": 7,
+        "incorrect": 20
+      },
+      "semantic_vs_strict_mismatches": [],
+      "full_correct_excluding_system_name": {
+        "correct": 2,
+        "total": 29,
+        "excluded": [
+          "v2-a01"
+        ]
+      }
+    },
+    "expanded800": {
+      "file_sha256": "6ff78065416ec44b4bd060a434a7fa4289c9f3b6a617d9c7772667fee98e14d5",
+      "reviewed_at": "2026-10-26T19:08:12.703949+00:00",
+      "items": [
+        {
+          "id": "v2-a01",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Название «Люмен» не названо; вместо него выдуман «Справочник типов зрителя»."
+        },
+        {
+          "id": "v2-a02",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан NFR-17 вместо NFR-27."
+        },
+        {
+          "id": "v2-a03",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно названы 18 мест в «Сумраке»."
+        },
+        {
+          "id": "v2-a04",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 18 мест вместо 32 в «Астре»."
+        },
+        {
+          "id": "v2-a05",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 14 евро вместо 11, цена также подменена возвратом."
+        },
+        {
+          "id": "v2-a06",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно названа цена обычного билета на выходные — 14 евро."
+        },
+        {
+          "id": "v2-a07",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Премьерная цена 17 евро не названа; amount=0 и повторяющиеся групповые суммы не основаны на источнике."
+        },
+        {
+          "id": "v2-a08",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан порог 18 вместо 5; выдумана зависимость порога от дней недели."
+        },
+        {
+          "id": "v2-a09",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 0 вместо 20% и ошибочно отрицается скидка на обычный билет."
+        },
+        {
+          "id": "v2-a10",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Скидка ошибочно разрешена в любой день вместо понедельника–пятницы."
+        },
+        {
+          "id": "v2-a11",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Запрет групповой скидки на премьеры и data=false верны. Второе предложение грамматически испорчено, но не утверждает противоположного факта или нового условия; фактический ответ достаточен."
+        },
+        {
+          "id": "v2-a12",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Не дан ясный ответ о снижении цены абонемента; data пуст, а фраза об именных абонементах/скидках не передаёт правило."
+        },
+        {
+          "id": "v2-a13",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "«Искра» ошибочно стоит 44 евро вместо 24."
+        },
+        {
+          "id": "v2-a14",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "В тексте смешаны 3 и 5 посещений, а data.visits=15; цельное число посещений неверно."
+        },
+        {
+          "id": "v2-a15",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Невалидный JSON с лишней скобкой; добавлены пятница и посторонние слова вместо диапазона понедельник–четверг."
+        },
+        {
+          "id": "v2-a16",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан 1 календарный день вместо 21."
+        },
+        {
+          "id": "v2-a17",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым data вместо запрета передачи; вопрос подменён передачей человека человеку."
+        },
+        {
+          "id": "v2-a18",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Цена 44 евро не названа; выданы 110 евро и выдуманные возвратные проценты."
+        },
+        {
+          "id": "v2-a19",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 3 посещения вместо 5; выдуманы абонементы «Астра»/«Астра Сумрак»."
+        },
+        {
+          "id": "v2-a20",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "В data понедельник–пятница вместо любого дня; текст одновременно допускает и исключает понедельник и выдумывает астрономическую причину."
+        },
+        {
+          "id": "v2-a21",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указан 21 день вместо 40."
+        },
+        {
+          "id": "v2-a22",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Запрет передачи в тексте есть, но фраза «Ни «Туман» именной абонементы» не даёт однозначного правдивого основания и data пуст. Консервативно partial; требуется независимая проверка человеком из-за испорченного русского текста."
+        },
+        {
+          "id": "v2-a23",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым data; суточный лимит 1 не назван."
+        },
+        {
+          "id": "v2-a24",
+          "full_answer_correct": false,
+          "classification": "partial",
+          "note_ru": "Data=false совпадает с запретом, но вместо «Искры» и «Тумана» выдуманы «Один осколок»/«Астра» и ошибочно отрицаются другие абонементы."
+        },
+        {
+          "id": "v2-a25",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Текст одновременно обещает весь возврат и называет долю 0; data=0 вместо 1."
+        },
+        {
+          "id": "v2-a26",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Указано 0 вместо 0,5 и бессмысленно описаны временные границы."
+        },
+        {
+          "id": "v2-a27",
+          "full_answer_correct": false,
+          "classification": "abstained",
+          "note_ru": "Отказ с пустым data вместо нулевого возврата менее чем за два часа."
+        },
+        {
+          "id": "v2-a28",
+          "full_answer_correct": true,
+          "classification": "correct",
+          "note_ru": "Верно указан полный возврат премьеры за 24 часа или раньше, включая точную границу, доля 1."
+        },
+        {
+          "id": "v2-a29",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Обещан полный возврат при интервале не больше 24 часов вместо нулевого при интервале менее 24 часов."
+        },
+        {
+          "id": "v2-a30",
+          "full_answer_correct": false,
+          "classification": "incorrect",
+          "note_ru": "Выдуманы учебные правила «Сумрак» и администратор «А.И. Сумрак» вместо Сол Мерна."
+        }
+      ],
+      "full_answer_correct_count": 4,
+      "strict_correct_count": 5,
+      "classification_counts": {
+        "correct": 4,
+        "partial": 2,
+        "abstained": 3,
+        "incorrect": 21
+      },
+      "semantic_vs_strict_mismatches": [
+        {
+          "id": "v2-a24",
+          "semantic": false,
+          "strict": true
+        }
+      ],
+      "full_correct_excluding_system_name": {
+        "correct": 4,
+        "total": 29,
+        "excluded": [
+          "v2-a01"
+        ]
+      }
+    }
+  },
+  "review_complete": true,
+  "completed_at": "2026-10-26T19:08:12.704400+00:00",
+  "independent_review_recommended": [
+    {
+      "arm": "expanded800",
+      "id": "v2-a22",
+      "issue": "Ambiguous malformed Russian explanation accompanying a correct transfer prohibition and empty data. Conservative partial; human review can clarify interpretation."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "all60_prompt_hashes_and_token_counts_match": true,
+  "all60_unique": true,
+  "larger_checkpoint_weights_verified": true,
+  "same_versions_and_generation_settings_except_allocator_limit": true,
+  "all60_question_context_catalogue_bytes_unchanged": true,
+  "all_finish_reason_stop": true,
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "raw_sha256": {
+    "larger": "9f7910b0dca056484f6ecf80a047246017367504b3a1164bf1cb2f96903ec3a3"
+  }
+}

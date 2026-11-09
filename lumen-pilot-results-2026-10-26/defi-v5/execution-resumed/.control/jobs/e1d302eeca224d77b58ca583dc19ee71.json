@@ -1,0 +1,20 @@
+{
+  "id": "e1d302eeca224d77b58ca583dc19ee71",
+  "stage": "packages",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements.lock.txt"
+  ],
+  "pid": 76075,
+  "pgid": 76075,
+  "birth": "Tue Oct 27 21:18:08 2026",
+  "manager_pid": 76072,
+  "manager_birth": "Tue Oct 27 21:18:08 2026",
+  "state": "finished",
+  "log": ".control/logs/e1d302eeca224d77b58ca583dc19ee71.log",
+  "exit_code": 0
+}

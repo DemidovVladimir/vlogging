@@ -1,0 +1,132 @@
+# Aave Documentation
+
+> Technical documentation for Aave Protocol (v3 & v4), GHO stablecoin, and governance. For protocol integrators and frontend engineers.
+
+Aave is a decentralized non-custodial liquidity protocol. This documentation covers AaveKit (React/TypeScript/GraphQL SDK), smart contract references, and integration guides.
+
+## When to use these docs
+
+Use this documentation to integrate Aave or act on it programmatically: reading market data and rates, building supply, borrow, repay, withdraw, and swap transactions, GHO and Savings GHO, staking (Umbrella), governance, and liquidations. Start with Aave 101 for concepts, the AaveKit getting-started guides for the SDKs, or the smart contract references for direct onchain integration. Every page is also available as markdown: append .md to any page URL, or send Accept: text/markdown.
+
+## Programmatic access
+
+- [Aave GraphQL API, v4](https://api.v4.aave.com/graphql): public endpoint for v4 market data, user positions, and transaction building. No API key required.
+- [Aave GraphQL API, v3](https://api.v3.aave.com/graphql): public endpoint for v3 markets across supported chains.
+- [Aave MCP server](https://mcp.aave.com): remote Model Context Protocol server for AI agents. Read markets and positions, simulate actions, and prepare unsigned Aave transactions for the user's wallet to sign.
+- [OpenAPI description](https://aave.com/openapi.json): the GraphQL-over-HTTP transport of the v4 API, machine-readable. The APIs are permissionless: no keys and no sign-in of any kind.
+
+## Contact
+
+- Help center: https://aave.com/help
+- X: https://x.com/aave
+- Discord: https://discord.com/invite/aave
+
+- [Aave 101](https://aave.com/docs/aave-101.md): An intro to Aave: powering open, decentralised finance.
+
+## Aave V4
+
+- [Overview](https://aave.com/docs/aave-v4.md): Aave v4 uses a **Hub & Spoke model** for liquidity management: the Liquidity Hub consolidates protocol-wide liquidity and accounting, while Spokes implement …
+- [React](https://aave.com/docs/aave-v4/getting-started/react.md): Get started with AaveKit React
+- [TypeScript](https://aave.com/docs/aave-v4/getting-started/typescript.md): Get started with AaveKit TypeScript
+- [GraphQL](https://aave.com/docs/aave-v4/getting-started/graphql.md): Get started with AaveKit API
+- [Solidity](https://aave.com/docs/aave-v4/getting-started/solidity.md): Get started with the Aave smart contracts
+- [Index](https://aave.com/docs/aave-v4/liquidity.md): Learn how the liquidity model works in Aave v4.
+- [Hubs](https://aave.com/docs/aave-v4/liquidity/hubs.md): Learn how to discover and access liquidity hubs in Aave v4.
+- [Spokes](https://aave.com/docs/aave-v4/liquidity/spokes.md): Learn how to discover available spokes in Aave v4.
+- [Reserves](https://aave.com/docs/aave-v4/liquidity/reserves.md): Learn how to discover and access reserves in Aave v4 spokes.
+- [Assets](https://aave.com/docs/aave-v4/liquidity/assets.md): Learn how to query and monitor asset information across Aave v4.
+- [Chains](https://aave.com/docs/aave-v4/liquidity/chains.md): Learn how to discover supported blockchain networks in Aave v4.
+- [Incentives](https://aave.com/docs/aave-v4/liquidity/incentives.md): Learn how to discover and claim incentive rewards on Aave v4.
+- [Index](https://aave.com/docs/aave-v4/positions.md): Learn how to manage user positions on Aave v4.
+- [Open Positions](https://aave.com/docs/aave-v4/positions/fetch.md): Learn how to fetch and monitor user positions on Aave v4.
+- [Supply](https://aave.com/docs/aave-v4/positions/supply.md): Learn how to earn interest on Aave v4 and use assets as collateral for borrowing.
+- [Borrow](https://aave.com/docs/aave-v4/positions/borrow.md): Learn how to borrow assets from Aave v4 reserves against your collateral.
+- [Withdraw](https://aave.com/docs/aave-v4/positions/withdraw.md): Learn how to withdraw assets from your Aave v4 supply positions.
+- [Repay](https://aave.com/docs/aave-v4/positions/repay.md): Learn how to repay borrowed assets to Aave v4 reserves.
+- [Swaps](https://aave.com/docs/aave-v4/positions/swaps.md): Learn how to modify your Aave v4 positions using integrated swap operations.
+- [Managers](https://aave.com/docs/aave-v4/positions/managers.md): Learn how position managers automate and delegate position management with user control.
+- [Conditions](https://aave.com/docs/aave-v4/positions/conditions.md): Learn how user position conditions work in Aave v4.
+- [Liquidations](https://aave.com/docs/aave-v4/positions/liquidations.md): Learn how liquidations work in Aave v4.
+- [Swaps](https://aave.com/docs/aave-v4/tools/swaps.md): Learn how to perform and monitor swap operations with AaveKit.
+- [User Balances](https://aave.com/docs/aave-v4/tools/balances.md): Learn how to monitor user balances for tokens supported by Aave v4.
+- [User Activities](https://aave.com/docs/aave-v4/tools/activities.md): Learn how to fetch users’ activity records across Aave v4.
+- [Exchange Rates](https://aave.com/docs/aave-v4/tools/exchange-rate.md): Learn how to fetch exchange rates between tokens and supported currencies on Aave v4.
+- [BigDecimal](https://aave.com/docs/aave-v4/reference/big-decimal.md): High-precision decimal arithmetic for AaveKit
+- [React Hooks](https://aave.com/docs/aave-v4/reference/react-hooks.md): All public Aave v4 React SDK hooks.
+
+## Aave V3
+
+- [Overview](https://aave.com/docs/aave-v3/overview.md): Aave v3 is a non-custodial liquidity protocol on Ethereum and other major networks.
+- [React](https://aave.com/docs/aave-v3/getting-started/react.md): AaveKit React is a collection of React hooks for building decentralized applications on top of the Aave Protocol.
+- [TypeScript](https://aave.com/docs/aave-v3/getting-started/typescript.md): AaveKit TypeScript provides a type-safe, low-level API client for interacting with Aave Protocol v3.
+- [GraphQL](https://aave.com/docs/aave-v3/getting-started/graphql.md): The Aave Protocol exposes a comprehensive GraphQL API that allows you to query market data, user positions, and execute transactions.
+- [Liquidity Pool](https://aave.com/docs/aave-v3/concepts/liquidity-pool.md): A **liquidity pool** is an Aave market instance that
+- [Reserve](https://aave.com/docs/aave-v3/concepts/reserve.md): A **reserve** is an instance of a token within an Aave [liquidity
+- [Incentives](https://aave.com/docs/aave-v3/concepts/incentives.md): Incentives within the Aave Protocol encourage active participation from suppliers and borrowers, enhancing liquidity and the overall efficiency of the protocol.
+- [Overview](https://aave.com/docs/aave-v3/markets/overview.md): The Aave Protocol consists of markets deployed to blockchain networks.
+- [Data](https://aave.com/docs/aave-v3/markets/data.md): Learn how to discover available markets and access detailed market information in Aave.
+- [Positions](https://aave.com/docs/aave-v3/markets/positions.md): Monitor user positions and account health across Aave markets.
+- [Operations](https://aave.com/docs/aave-v3/markets/operations.md): Execute the fundamental lending and borrowing operations on Aave markets.
+- [Incentives](https://aave.com/docs/aave-v3/markets/incentives.md): Aave reserves may offer additional incentives beyond base lending rates.
+- [Advanced](https://aave.com/docs/aave-v3/markets/advanced.md): Implement advanced Aave features for sophisticated DeFi applications.
+- [Smart Contract Architecture](https://aave.com/docs/aave-v3/smart-contracts.md): The source code of the Aave v3 Protocol contracts is available on [GitHub](https://github.com/aave-dao/aave-v3-origin).
+- [Pool](https://aave.com/docs/aave-v3/smart-contracts/pool.md): This contract is the main user-facing contract.
+- [L2 Pool](https://aave.com/docs/aave-v3/smart-contracts/l2-pool.md): The main transaction cost on L2 comes from calldata.
+- [Wrapped Token Gateway](https://aave.com/docs/aave-v3/smart-contracts/wrapped-token-gateway.md): The Aave Protocol operates exclusively with ERC-20 [reserve](../concepts/reserve) tokens.
+- [View Contracts](https://aave.com/docs/aave-v3/smart-contracts/view-contracts.md): The Aave Protocol has several view contracts to assist with querying onchain data.
+- [Incentives](https://aave.com/docs/aave-v3/smart-contracts/incentives.md): The [`UiIncentiveDataProvider`](./view-contracts) provides methods to query all active incentive emissions, and claimable user incentives for a particular Aa…
+- [Tokenization](https://aave.com/docs/aave-v3/smart-contracts/tokenization.md): aTokens are tokens minted and burnt upon `supply` and `withdraw` of assets to an Aave market.
+- [Interest Rate Strategy](https://aave.com/docs/aave-v3/smart-contracts/interest-rate-strategy.md): Implements the calculation of the interest rates depending on the reserve state.
+- [ACL Manager](https://aave.com/docs/aave-v3/smart-contracts/acl-manager.md): The Access Control List Manager (`ACLManager`) is the main registry of system roles and permissions.
+- [Aave Oracle](https://aave.com/docs/aave-v3/smart-contracts/oracles.md): Contract to get asset prices and manage price sources.
+- [Pool Addresses Provider](https://aave.com/docs/aave-v3/smart-contracts/pool-addresses-provider.md): The `PoolAddressesProvider` contract is the main registry of addresses that are part of, or connected to the Protocol, including permissioned roles.
+- [Pool Configurator](https://aave.com/docs/aave-v3/smart-contracts/pool-configurator.md): The `PoolConfigurator` contract implements the configuration methods for the Aave Protocol.
+- [Swap Features](https://aave.com/docs/aave-v3/smart-contracts/swap-features.md): The [Aave Labs interface](https://app.aave.com) integrates multiple features integrating token swaps detailed below.
+- [Vaults](https://aave.com/docs/aave-v3/smart-contracts/vaults.md): The `ATokenVault` contract is an ERC-4626 compliant yield-bearing vault designed for Aave v3.
+- [Testing & Debugging](https://aave.com/docs/aave-v3/smart-contracts/testing-and-debugging.md): This guide provides comprehensive instructions on how to test and debug Aave protocol integrations.
+- [Aptos](https://aave.com/docs/aave-v3/aptos.md): This is the official Aptos version of the Aave v3 Protocol.
+- [Smart Contracts](https://aave.com/docs/aave-v3/aptos/smart-contracts.md): Aave v3.3 on Aptos is architected using a modular design that leverages Move's strengths.
+- [ACL Manager](https://aave.com/docs/aave-v3/aptos/smart-contracts/acl-manager.md): Reference for the `aave-acl` Move package.
+- [Pool Configurator](https://aave.com/docs/aave-v3/aptos/smart-contracts/pool-configurator.md): Reference for the `aave-config` Move package.
+- [Oracles](https://aave.com/docs/aave-v3/aptos/smart-contracts/oracles.md): Reference for the `aave-oracle` Move package.
+- [Interest Rate Strategy](https://aave.com/docs/aave-v3/aptos/smart-contracts/interest-rate-strategy.md)
+- [Aave Logic](https://aave.com/docs/aave-v3/aptos/smart-contracts/aave-logic.md): Reference for the `aave-logic` Move package.
+- [Tokenization](https://aave.com/docs/aave-v3/aptos/smart-contracts/tokenization.md): Reference for the `aave-tokens` Move package.
+- [Incentives](https://aave.com/docs/aave-v3/aptos/smart-contracts/incentives.md): Reference for the `aave-incentives` Move package.
+- [Pool](https://aave.com/docs/aave-v3/aptos/smart-contracts/pool.md): Reference for the `aave-pool` Move package.
+- [Integrations](https://aave.com/docs/aave-v3/aptos/integrations.md): Available [APIs / SDKs](https://aave.github.io/aave-v3-aptos-ts-sdk/) to interact with the Aptos.
+- [Flash Loans](https://aave.com/docs/aave-v3/guides/flash-loans.md): Flash Loans are special transactions that allow the borrowing of an asset, as long as the borrowed amount (and a fee) is returned before the end of the trans…
+- [Credit Delegation](https://aave.com/docs/aave-v3/guides/credit-delegation.md): Credit delegation allows a supplier to contribute liquidity to the Aave protocol to earn interest, and delegate borrowing power (i.e.
+- [Umbrella](https://aave.com/docs/aave-v3/umbrella.md): Aave Umbrella is a modular, onchain risk management system that automates bad debt coverage for Aave v3 pools.
+- [Horizon](https://aave.com/docs/aave-v3/horizon.md): Aave Horizon is an initiative by Aave Labs designed to create a robust marketplace for Real-World Assets (RWAs) tailored to institutional and qualified parti…
+
+## Aave MCP
+
+- [Overview](https://aave.com/docs/mcp.md): Aave MCP gives AI agents a single interface to Aave v3 and v4.
+- [Getting Started](https://aave.com/docs/mcp/getting-started.md): Aave MCP is a remote server, so there is nothing to install and no key to manage.
+- [Tools](https://aave.com/docs/mcp/tools.md): Aave MCP groups its tools into reads, action builders, orders (token swaps), Savings GHO, DAO governance and guidance.
+- [Skills](https://aave.com/docs/mcp/skills.md): A skill is a short procedure for one Aave flow, written for the model rather than for a person: which tools to call, in what order, and what a finished answe…
+- [Safety](https://aave.com/docs/mcp/safety.md): Aave MCP reads live protocol data and builds transactions.
+
+## Ecosystem
+
+- [AAVE](https://aave.com/docs/ecosystem/aave.md): The AAVE token is the native governance token of the Aave Protocol.
+- [GHO](https://aave.com/docs/ecosystem/gho.md): GHO (pronounced "go") is a decentralised, over-collateralised stablecoin that is fully backed, transparent, and native to the Aave Protocol.
+- [Savings GHO](https://aave.com/docs/ecosystem/gho/sgho.md): Savings GHO (sGHO) is a savings product for the GHO stablecoin, built as a native ERC-4626 vault and deployed on Ethereum mainnet.
+- [Governance](https://aave.com/docs/ecosystem/governance.md): The Aave DAO is a decentralised collective of AAVE token holders and contributors who work together to shape the future of the protocol through a structured …
+- [Oracle](https://aave.com/docs/ecosystem/oracle.md): Each [reserve](../aave-v3/concepts/reserve) within the Aave Protocol is associated with an oracle contract.
+
+## Optional
+
+- [Resources](https://aave.com/docs/resources.md)
+- [Web3](https://aave.com/docs/resources/web3.md): Web3 is the next evolution of the internet where people have control and ownership over their data, the relationships they form online, and their user profile.
+- [Glossary](https://aave.com/docs/resources/glossary.md)
+- [Code Licensing](https://aave.com/docs/resources/code-licensing.md): The Aave Protocol operates on decentralized blockchain networks, with smart contracts that are self-executing and publicly auditable.
+- [Changelog](https://aave.com/docs/resources/changelog.md): Aave V4 launches on Base.
+- [Address Dashboard](https://aave.com/docs/resources/addresses.md)
+- [Access Controls Dashboard](https://aave.com/docs/resources/access-controls.md): See the [Aave Permissions
+- [Parameters Dashboard](https://aave.com/docs/resources/parameters.md)
+- [Risks](https://aave.com/docs/resources/risks.md): The Aave Protocol offers decentralised access to liquidity but is not without risks.
+- [Legacy Protocol Versions](https://aave.com/docs/resources/legacy-versions.md): Aave has undergone multiple iterations to optimize the functionality, gas efficiency, and modularity of the contract codebase.
+- [Legacy V1](https://aave.com/docs/resources/legacy-versions/v1.md): The following are key architectural differences between Aave v1 and subsequent protocol versions:
+- [Legacy V2](https://aave.com/docs/resources/legacy-versions/v2.md): The main entry point into the Aave Protocol.

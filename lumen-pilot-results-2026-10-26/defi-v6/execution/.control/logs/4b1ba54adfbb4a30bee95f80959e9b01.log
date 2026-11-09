@@ -1,0 +1,4 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Full-capacity probe completed: 1822 prompt tokens; 2.0798744170024293 seconds
+RESOURCE GUARD probe: completed; exit=0; child finished
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-defi-v6/runs/resources/probe.json

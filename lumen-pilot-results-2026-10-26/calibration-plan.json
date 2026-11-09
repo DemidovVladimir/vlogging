@@ -1,0 +1,13 @@
+{
+  "purpose": "Technical forward/backward memory and adapter-loading probe only",
+  "tokens": 481,
+  "loss_start": 413,
+  "padded_batch_tokens": 512,
+  "source": "Longest prepared training example, user message padded before assistant target",
+  "uses_test_or_validation_questions": false,
+  "main_training_data_unchanged": true,
+  "iterations": 20,
+  "adapter": "adapters/smoke",
+  "train_sha256": "ed68493c2ff860ed079f8d4186ec308272039947624356005473b64e849dc874",
+  "calibration_sha256": "c355b2c486c852d9fe0d3e2f26770a8ad5bf16887ea87ec4602fb074eb636041"
+}

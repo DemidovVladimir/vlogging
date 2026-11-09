@@ -1,0 +1,791 @@
+{
+  "reviewer": "/root/video_draft",
+  "reviewed_at_utc": "2026-10-27T20:27:04.595100+00:00",
+  "human_validation": false,
+  "scope": "All20Kamino questions across3ordinary-KV modes;60actual raw responses. Frozen rubric, gold, original source passages and delivered contexts. No model reruns or external lookup.",
+  "raw_sha256": {
+    "closed": "07459da865e6abd7216ff960dc428f09d8f7a378ed71d146f9912d3758e5c2e0",
+    "oracle": "eb0501aa5ff143bbcd5efffd8b649cc4f226a8c00b9f7d9c7e6daac871276404",
+    "retrieved": "a206e78d0820517c89212b5548f2bcc7c248bd128c6d2415d670006ee1e5fbdf"
+  },
+  "exam_sha256": "b83771b3e2ec0130630dc9da62c0b5a2f16a2a9c1786dee1df1d4c9e37920ed6",
+  "contexts_sha256": "9ada54c892377b995bbaf9e6f66c36215919b0157e9fd6e3a8ecfd75cb12bb55",
+  "rubric_sha256": "50ff49f87d87ff1311d241121e86da13accf84475ecc2063d1841b19b45303fc",
+  "count": 60,
+  "summary": {
+    "closed": {
+      "count": 20,
+      "content_correct": 8,
+      "citation_supported": 0
+    },
+    "oracle": {
+      "count": 20,
+      "content_correct": 16,
+      "citation_supported": 1
+    },
+    "retrieved": {
+      "count": 20,
+      "content_correct": 12,
+      "citation_supported": 0
+    }
+  },
+  "adjudication_cases": [
+    {
+      "ids": [
+        "kamino-10/oracle",
+        "kamino-10/retrieved"
+      ],
+      "provisional_content_correct": false,
+      "reason": "Explicit percent field0.2 conflicts with prose20%; numeric units are substantive, not cosmetic JSON."
+    },
+    {
+      "id": "kamino-04/oracle",
+      "content_correct": true,
+      "reason": "Increase vs increases is a semantic string equivalent; Russian answer confirms increase."
+    },
+    {
+      "ids": [
+        "kamino-02/closed",
+        "kamino-02/oracle",
+        "kamino-08/oracle",
+        "kamino-11/oracle",
+        "kamino-11/retrieved",
+        "kamino-12/oracle",
+        "kamino-12/retrieved",
+        "kamino-13/oracle",
+        "kamino-14/closed",
+        "kamino-14/oracle",
+        "kamino-14/retrieved",
+        "kamino-18/closed",
+        "kamino-19/oracle"
+      ],
+      "content_correct": true,
+      "reason": "Single clear complete response plus trailing quote; unambiguous substance preserved. Primary raw unchanged and mechanical parse=false retained."
+    }
+  ],
+  "items": [
+    {
+      "id": "kamino-01",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "LTV должен быть900/1500×100=60%, а не500%.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "70d1f523de6ff7cbe7012cbf9345cdd4d0a8cec29b2c89abd0d9b9f21ece011d",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-01",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": true,
+      "notes": "",
+      "source_evidence_notes": "R1 содержит CurrentLTV=risk-adjusted debt/collateral value; точная6-словная цитата формулы вместе с числами вопроса поддерживает60%.",
+      "raw_string_sha256": "405a1476e087f7f116604e4af6302f9bcc76a300626260cb2bfd992ea0612a8a",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-01",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "LTV должен быть60%, а не600%.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "86bbde7b967c4d99f13edf9cc7460c37db1cfc1e8cb1d363c3119279792473b5",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-02",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "1cd2f70370248ba6f20892b2cfe264b038b339975ab3a3364db78009327e40fd",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-02",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "1cd2f70370248ba6f20892b2cfe264b038b339975ab3a3364db78009327e40fd",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-02",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "dbfb62a869e8ff0fb062edcbea9e9012dc6610c040c84c6fd986d503260e6bf1",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-03",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Ошибочно отрицается ухудшение позиции из-за непрерывного начисления процентов при неизменной цене залога.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "008270c422b5a406e8604e26a130a3fbccabb28e6358aff79421d0bd147a2851",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-03",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "336174306e1ca981cf6bd8175c18d18bec21910eb490c258a64da0fd92e818b1",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-03",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "f483c6bde59f0895091e2810abcd65c1b56c8297aaefc1da4e89a420dd840805",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-04",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "При неизменном risk-adjusted debt падение collateral увеличивает LTV; decreases неверно.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "2f873aea0683ee48797e21c2b061c93ad58d5090e7db7a8c5725f697a262ada7",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md",
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-04",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Increase вместо increases — безвредный строковый эквивалент; answer «увеличивается» однозначен.",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "3109a25038bb8943eb0880d11910bb58c099d766694a5e3320dd857b67cf8a74",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md",
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-04",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Падение знаменателя при фиксированном risk-adjusted debt повышает LTV; decreases неверно.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "2f873aea0683ee48797e21c2b061c93ad58d5090e7db7a8c5725f697a262ada7",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md",
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-05",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "1000×0,8/2=400;500 игнорирует MaxLTV.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "901db003d398719fb5edceba87b34e5db784a49113933919d0d56f08ac256959",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-05",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Нужно400 по формуле1000×0,8/2;500 неверно даже при переданной формуле.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "901db003d398719fb5edceba87b34e5db784a49113933919d0d56f08ac256959",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-05",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Нужно400, не800; BorrowFactor2 не учтён.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "e305d20cc5181379d4e1ced5cef1b3a862b989473ef13f761b2e3151b17a430e",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-06",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "722a8eee14c05dc9e4d63d47721a6f21f215e0bde1b4af5a9851e97db9820aa5",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-06",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "722a8eee14c05dc9e4d63d47721a6f21f215e0bde1b4af5a9851e97db9820aa5",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-06",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "722a8eee14c05dc9e4d63d47721a6f21f215e0bde1b4af5a9851e97db9820aa5",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-07",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "CrossMode поддерживает несколько collateral и debt assets одновременно; false неверно.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "ef67965ec3f51572482664a8e5dc78dbeeedcb3b071fd429547bf4a8cba5a18c",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-07",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "0940ad2e86375607a9b76c54e3e8479425b597f30f4bff6eb5c2b325c80b9e75",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-07",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "3f7afa73edeb00b698b0c66bd41c6f978d239af7c725eee58e59481bc2eb21fc",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-08",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "1ca04905621e9ebb0f8d92e049aefc5933cb79eb036e4652ae811069e36a3887",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-08",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "f9590fbfd3b59dbf66f7d6dab992584dbdda16271d93f2b4fa8eaa32b5e3bb36",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-08",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "1ca04905621e9ebb0f8d92e049aefc5933cb79eb036e4652ae811069e36a3887",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-09",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Документация называет KaminoSwap, не DebtSwap.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "2316936b37fd2cc603bdfd776999bd954f763b0e13b1ce0d456a40b3faa5e3be",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-09",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "KaminoSwap назван верно; отсутствие citations — отдельная ошибка контракта, не содержания.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "8ff450082284b654bc8f02bb88b6ae97ff4ec714750a9d83125254d4f7d41dea",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-09",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "RepaywithCollateral — название функции/возможности; запрошенный механизм обмена — KaminoSwap.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "51847d9570219585c5b803b2627b8acdebc3a8c4b20a7aa9ed5ef07af2f4e7fd",
+      "gold_doc_ids": [
+        "kamino:products/borrow/borrowing.md"
+      ]
+    },
+    {
+      "id": "kamino-10",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Обычная частичная ликвидация закрывает максимум20% долга;75 и поле0,75 неверны.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "025df162732daadb4ba3940c5f8ebc4e579070c31e855d8af5f043543b735dc5",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-10",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Проза20% верна, но max_debt_closed_pct=0.2 означает0,2% в явно процентном поле; числовое содержание противоречит answer.",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "2b4fdc23a148cb0460acef3fb09a99aba0561332dbe14970d685906864064c1c",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-10",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Answer20% верен, но max_debt_closed_pct=0.2 не равен20 процентам. Единицы поля нарушены.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "c6d25fcdbc13828630b27a749850d270929c801c03d6a0677b40077aeb703648",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-11",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "062c14a0c493a3df236497d1a887000bd646adb9056a1012748f7da782964fbc",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-11",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "b89358afe03345a678a56589c476cfaba1d1741fe128cc8024910713ae69a791",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-11",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "b89358afe03345a678a56589c476cfaba1d1741fe128cc8024910713ae69a791",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-12",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "KaminoBorrow liquidations permissionless; отрицание неверно.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "5e15d830eead4a83ff583c7615159b52e25ae43aa5f634c3c9dbe0f43e9ec7c9",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-12",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "50bdc590e74cd89324be754b109dc2cb02f9338b767340a4026ed3c3ccf43045",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-12",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "8238bb1e57bc32571dcd9faca5cec0bdcc5bb7d65b090461ad62046ce9f386da",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-13",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "2c993d6ab9da46137074e11870e30656d027b035a21f85d1a64ee7af69fe0e2f",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-13",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "f3bef7c16298cf27f2f1c8b3b33424120d4afb5335b95b143c06bf366cc3d58c",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-13",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "2c993d6ab9da46137074e11870e30656d027b035a21f85d1a64ee7af69fe0e2f",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-14",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "ee5e80cf8ef7d85b6bfcc20c11f0b9cdcee0afa470f2ddc4f55d9dd52d75454f",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-14",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "ee5e80cf8ef7d85b6bfcc20c11f0b9cdcee0afa470f2ddc4f55d9dd52d75454f",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-14",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "ee5e80cf8ef7d85b6bfcc20c11f0b9cdcee0afa470f2ddc4f55d9dd52d75454f",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-15",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Нужно82−75=7%;6% неверно.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "2287016317894f24044574b3e89544e9ff228e969bb1e9b039753637292055ae",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-15",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Нужно7% между min2/max8.10% неверно и превышает заданный maximum8%.",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "173aa4b63b7d85ad9a19f4a30f4787915d8c7861fe73c6155c29f06817d4e509",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-15",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "На линейном участке82−75=7%, не5%.",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "cf1e2f204a4b99e646b6d15e15116a0ab1d2484d29ab6091f4b12f93c353768b",
+      "gold_doc_ids": [
+        "kamino:products/borrow/liquidations.md"
+      ]
+    },
+    {
+      "id": "kamino-16",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Utilization600/800×100=75%, не50%; data0,5 также нарушает процентные единицы.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "b9bef25eec9dddcabb7f0b0ecfd0ffe57bd80216c730b11883a3ab549cf317a3",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-16",
+      "arm": "oracle",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Нужно75%, а не70%;70% относится к другому примеру источника. Поле0,7 также не75%.",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "2a66dd863593481263b13e1948e7443a555771f87cdca9077217bdc2c3727871",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-16",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "600/800=75%, не50%.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "5e8ae1796b28b12271d41b20cb77c3e76858d82609b21d15005cd3b45ae3c50b",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-17",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Спред задан долей процентов; false ошибочно отрицает это правило.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "841c1aab8c75fce994f5de788c6a2868e3f26ca8f353baaf2263e3b41a46376c",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-17",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "bdb2deda919758179d0c05c17d7bdb1d2a24105e09874441cb6b48c14fbf17a6",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-17",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "85d8fe90879850f245873b8bb81749f5d5a9da3b3db503c569a84fe5caee8b22",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-18",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "acbace94cffdfdd7479904a644f71273e41845b0c26ce1c80968d7d6e7f74991",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-18",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "48b0b251412b495c507646e5d180fe842a074b51439e8417c39604de82b35a57",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-18",
+      "arm": "retrieved",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Незанятый капитал сам по себе не получает borrowerinterest; answer/data=true неверны.",
+      "source_evidence_notes": "R1/R2 quote не проходят дословную проверку; R3 —13слов и лишь общий источник доходности vault. Ни одна цитата не подтверждает, что idle capital получает borrowerinterest; формулаR2 с utilization этому противоречит.",
+      "raw_string_sha256": "3af0f702863d751d8ae6fcba5ee54734faa6cb610cce11a25718f21a7385e474",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fees.md"
+      ]
+    },
+    {
+      "id": "kamino-19",
+      "arm": "closed",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "ed7d10a4bb83cfeebcb04bcb1dc942577124fcf2155b7f564bfab129ce3c0d44",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fixed-rates.md"
+      ]
+    },
+    {
+      "id": "kamino-19",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "Содержание однозначно верно; лишняя завершающая кавычка портит JSON, но по rubric не снижает content.",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "95e53449ad634a68fac761f06d01ea7a073d02823963e7b28a41dd63c2151e5e",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fixed-rates.md"
+      ]
+    },
+    {
+      "id": "kamino-19",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Подтверждающая цитата отсутствует; пустой/отсутствующий citations не поддерживает ответ источником.",
+      "raw_string_sha256": "ed7d10a4bb83cfeebcb04bcb1dc942577124fcf2155b7f564bfab129ce3c0d44",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fixed-rates.md"
+      ]
+    },
+    {
+      "id": "kamino-20",
+      "arm": "closed",
+      "content_correct": false,
+      "citation_supported": false,
+      "notes": "Очередь withdrawal tickets блокирует rollover всех borrowers этого reserve; false неверно.",
+      "source_evidence_notes": "В closed источники не переданы; цитат нет. Содержание оценено отдельно по frozen gold/source.",
+      "raw_string_sha256": "245fceedfba999b80d40d6e961d56f8b68716099d85622fc7fe2c931f17c18ca",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fixed-rates.md"
+      ]
+    },
+    {
+      "id": "kamino-20",
+      "arm": "oracle",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "b992b3c9fec96637e4302c498ac6fc42e29c0271a5d1ce27f82cc52047d6047f",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fixed-rates.md"
+      ]
+    },
+    {
+      "id": "kamino-20",
+      "arm": "retrieved",
+      "content_correct": true,
+      "citation_supported": false,
+      "notes": "",
+      "source_evidence_notes": "Переданы только строковые R-id без quote; подтверждающей цитаты нет, независимо от правильности содержания.",
+      "raw_string_sha256": "4aaa44fafbe36e200c419005c5993d15326f8a377f82a7424106bd570a4980d8",
+      "gold_doc_ids": [
+        "kamino:products/borrow/fixed-rates.md"
+      ]
+    }
+  ]
+}

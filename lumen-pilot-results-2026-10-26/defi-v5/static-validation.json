@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Static only; no browser/server/model",
+  "ids": 58,
+  "local_links": 29,
+  "js_syntax": true,
+  "remote_render_assets": [],
+  "documents_sha_verified": 1673,
+  "exam_count": 60,
+  "state": "complete",
+  "scores_pending_for_incomplete_arms": true,
+  "errors": []
+}

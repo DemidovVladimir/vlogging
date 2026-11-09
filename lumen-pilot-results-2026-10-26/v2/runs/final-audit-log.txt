@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-10-26T19:20:08.277721+00:00",
+  "frozen_inputs_verified": 27,
+  "base_model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+  "all_exam_and_adapter_hashes_verified": true,
+  "scores": {
+    "base": {
+      "strict": 12,
+      "semantic_agent_review": 5,
+      "count": 60
+    },
+    "v1": {
+      "strict": 16,
+      "semantic_agent_review": 16,
+      "count": 60
+    },
+    "clean200": {
+      "strict": 14,
+      "semantic_agent_review": 3,
+      "count": 60
+    },
+    "expanded200": {
+      "strict": 11,
+      "semantic_agent_review": 7,
+      "count": 60
+    },
+    "expanded800": {
+      "strict": 12,
+      "semantic_agent_review": 6,
+      "count": 60
+    }
+  },
+  "training_and_inference_jobs_running": 0,
+  "orchestrator_exited": true,
+  "remaining_parent_jobs": [
+    {
+      "id": "f1d429b4b714457eac7f51869018ef30",
+      "stage": "report-server",
+      "command": [
+        ".venv/bin/python",
+        "serve_report.py"
+      ],
+      "pid": 70641,
+      "pgid": 70641,
+      "birth": "Mon Oct 26 17:36:45 2026",
+      "manager_pid": 70590,
+      "manager_birth": "Mon Oct 26 17:36:45 2026",
+      "state": "running",
+      "log": ".control/logs/f1d429b4b714457eac7f51869018ef30.log"
+    }
+  ],
+  "ks_kb_preserved_listening_port": 7341,
+  "v2_guarded_stages": 9,
+  "peak_observed_physical_footprint_bytes": 2795915136,
+  "max_observed_swap_growth_bytes": 0,
+  "cleanup_executed": false,
+  "runtime_logical_file_bytes_at_audit": 4379432084,
+  "note": "Runtime and adapters retained for review; parent cleanup preview only. Local report server still runs."
+}

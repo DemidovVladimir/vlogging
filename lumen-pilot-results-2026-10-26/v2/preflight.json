@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-10-26T18:48:23.528464+00:00",
+  "cpu": "Apple M4",
+  "cpu_cores": 10,
+  "unified_memory_bytes": 17179869184,
+  "python": "3.12.11",
+  "macOS": "26.6.2",
+  "mlx_device_info": {
+    "device_name": "Apple M4",
+    "max_recommended_working_set_size": 12713115648,
+    "memory_size": 17179869184,
+    "architecture": "applegpu_g16g",
+    "max_buffer_length": 9534832640,
+    "resource_limit": 499000
+  },
+  "host_memory_pressure_level": 1,
+  "host_swap": "total = 2048.00M  used = 558.94M  free = 1489.06M  (encrypted)",
+  "disk_free_bytes": 456482889728,
+  "weight_file_bytes": 968080210,
+  "data": {
+    "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+    "model_fingerprint": "7194cb92967c90dbdc5b133371a5aa14d5fc90556c3d4dff887a650378c94094",
+    "system_sha256": "da88aa52878dde20c495660dec2d002d1ae6eefb3a85e09699f3eaa34c915f6a",
+    "splits": {
+      "train": {
+        "count": 300,
+        "sha256": "eaf2e74479a329f281f6dee79811159245fb4f080aef892c43cbb09989050d02"
+      },
+      "valid": {
+        "count": 24,
+        "sha256": "0dcb6fb547c554fdd7cff13c53f0be44c785df30695081ac76737673cfa39c8e"
+      },
+      "test": {
+        "count": 60,
+        "sha256": "bda87822cd2c26dbfb41047f632fd9e1c1b00187f3bf331ba0df770ee277d34a"
+      }
+    },
+    "maximum_sequence_tokens": 371,
+    "mask_boundary_checked": true
+  },
+  "technical_budget": {
+    "child_tree_footprint_GiB": 6,
+    "host_swap_growth_GiB": 0.75,
+    "warning_pressure_level": 2,
+    "normal_pressure_level": 1
+  },
+  "static_estimates_not_measured": {
+    "lora_parameter_count": 1245184,
+    "fp32_adapter_plus_grad_plus_two_adam_states_bytes": 19922944,
+    "single_fp32_logits_tensor_at_512_tokens_bytes": 311164928,
+    "note": "Activations, workspaces, allocator cache, runtime overhead and load transients require measurement."
+  },
+  "static_compatibility_passed": true,
+  "training_capacity_approved": true,
+  "next_gate": "Separate 20-iteration train-only probe with a 512-token padded batch; no test answers.",
+  "approved_at": "2026-10-26T18:49:22.179743+00:00",
+  "measured_probe": "runs/resources/calibration.json"
+}

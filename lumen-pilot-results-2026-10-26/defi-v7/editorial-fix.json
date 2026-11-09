@@ -1,0 +1,34 @@
+{
+  "updated_at_utc": "2026-10-28T13:27:04.907015+00:00",
+  "scope": "Editorial clarity and offline HTML repair; no inference or training",
+  "previous_manifest": "defi-v7/history/before-editorial-fix/root-manifest.json",
+  "changed_existing_files": [
+    "defi-v7/report-data.json",
+    "defi-v7/report.html",
+    "defi-v7/static-validation.json",
+    "defi-v7/tools/build_report.py",
+    "defi-v7/tools/check_ui.js",
+    "defi-v7/tools/report-template.html",
+    "defi-v7/tools/report.css",
+    "defi-v7/tools/report.js",
+    "defi-v7/tools/validate_report.py"
+  ],
+  "all_other_previous_files_sha_verified": true,
+  "raw_answers_grades_and_frozen_inputs_unchanged": true,
+  "template_url": "tools/report-template.html",
+  "built_report": "report.html",
+  "source_template": "tools/report-template.html.in",
+  "external_render_assets": false,
+  "historical_full_correct": {
+    "base": 5,
+    "lora_v1": 16,
+    "context": 30,
+    "clean200": 3,
+    "expanded200": 7,
+    "expanded800": 6
+  },
+  "different_exams_explicit": true,
+  "inference_runtime_still_absent": true,
+  "browser_rendering_tested": false,
+  "static_and_ui_validation": "static-validation.json"
+}

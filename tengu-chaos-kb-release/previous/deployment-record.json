@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "deploymentId": "164c89c5-ad6a-483f-bc55-d65e570dcceb",
+  "immutableOrigin": "https://164c89c5.tengu-presentations.pages.dev",
+  "createdAt": "2026-10-23T11:36:22.935493Z",
+  "previousDeploymentId": "213faf4e-df95-4274-8e3d-5941b6173362",
+  "project": "tengu-presentations",
+  "origin": "https://tengucluster.com",
+  "revision": 4,
+  "slug": "emudhra-ca-compromise",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "manifest": "build-manifest.json",
+  "verifiedAt": "2026-10-23T11:40:00.190Z",
+  "sourceWorkspace": "/Users/vladimirdemidov/development/vlogging/tengu-emudhra-cloudflare-revision",
+  "staticAssets": 142,
+  "controlFiles": 2,
+  "privatePaths404PerOrigin": 144,
+  "verifiedOrigins": [
+    "tengucluster.com",
+    "tengu-presentations.pages.dev",
+    "164c89c5.tengu-presentations.pages.dev"
+  ],
+  "rollbackSnapshot": "previous/public",
+  "qa": "qa/tengucluster.com/technical-qa.json",
+  "timing": [
+    {
+      "language": "ru",
+      "spokenWords": 658,
+      "estimatedSeconds": 312
+    },
+    {
+      "language": "en",
+      "spokenWords": 690,
+      "estimatedSeconds": 326
+    }
+  ],
+  "unrelatedContentUnchanged": true
+}

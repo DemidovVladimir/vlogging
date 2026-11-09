@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:8463/runs/report.html",
+  "checks": [
+    "1280x720 hero screenshot; actual scores0/8,0/8,3/8",
+    "All8question buttons switch unique question, expected answer,3rawoutputs and3review notes",
+    "No document horizontal overflow at1280or390 foranyof8questions",
+    "All4details explanations open"
+  ],
+  "errors": [],
+  "requests": []
+}

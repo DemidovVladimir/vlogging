@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-10-27T11:57:06.758484+00:00",
+  "documents": 1673,
+  "aave": 94,
+  "kamino": 350,
+  "ethereum": 1229,
+  "chunks": 25074,
+  "chunking": "150 whitespace words with35 overlap, original character offsets retained",
+  "retrieval": "BM25 lexical FTS5 with fixed RU/EN domain dictionary; no embeddings or LLM",
+  "default_scope": "Question supplies protocol; Aave v3 only; Ethereum Final/Living; Kamino all collected pages",
+  "database_bytes": 53305344,
+  "sha256": "a28417c2dd98fc067bad7be9d0a297471050995716d9c802e9ae2185408a1f2a"
+}

@@ -1,0 +1,10 @@
+{
+  "exported_at_utc": "2026-10-27T20:23:36.253050+00:00",
+  "runtime_id": "0e02c844-3132-4d37-9807-afff09643c5e",
+  "valid_main_answers": 180,
+  "status": "completed",
+  "weights_exported": false,
+  "venv_exported": false,
+  "caches_exported": false,
+  "cleanup_completed": true
+}

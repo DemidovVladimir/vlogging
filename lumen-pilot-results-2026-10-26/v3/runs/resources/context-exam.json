@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "stage": "context-exam",
+  "started_at": "2026-10-26T21:07:24.238944+00:00",
+  "command": [
+    ".venv/bin/python",
+    "run_eval.py",
+    "--source-in-context",
+    "--out",
+    "runs/context.jsonl"
+  ],
+  "limits": {
+    "footprint_bytes": 6442450944,
+    "swap_growth_bytes": 805306368,
+    "pressure_level": 2,
+    "consecutive_host_limit_samples": 3,
+    "sample_interval_seconds": 1.0
+  },
+  "measurement": "sum libproc rusage_info_v0 physical footprint and RSS of verified child tree",
+  "samples": 126,
+  "peak_footprint_bytes": 2447459912,
+  "peak_rss_bytes": 1284685824,
+  "max_swap_growth_bytes": 0,
+  "observed_pressure_levels": [
+    1
+  ],
+  "guard_exit_code": 0,
+  "child_exit_code": 0,
+  "status": "completed",
+  "initial_swap_bytes": 586091069,
+  "child_pid": 87240,
+  "termination": {
+    "term_pids": [],
+    "own_direct_child_terminated": false,
+    "kill_pids": [],
+    "surviving_verified_pids": [],
+    "errors": []
+  },
+  "finished_at": "2026-10-26T21:09:30.867237+00:00",
+  "wall_seconds": 126.62919683299697,
+  "observed_process_identities": {
+    "87240": 1372914711728
+  },
+  "reused_pids_ignored": []
+}

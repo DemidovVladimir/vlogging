@@ -1,0 +1,17 @@
+{
+  "id": "6c62175cec5d4a57b40cffa3f4a2c286",
+  "stage": "verify-runtime",
+  "command": [
+    ".venv/bin/python",
+    "-c",
+    "from common import verify_model; import importlib.metadata as m; print(verify_model()); print({p:m.version(p) for p in [\"mlx\",\"mlx-lm\",\"transformers\"]})"
+  ],
+  "pid": 76029,
+  "pgid": 76029,
+  "birth": "Mon Oct 26 19:39:41 2026",
+  "manager_pid": 76019,
+  "manager_birth": "Mon Oct 26 19:39:41 2026",
+  "state": "finished",
+  "log": ".control/logs/6c62175cec5d4a57b40cffa3f4a2c286.log",
+  "exit_code": 0
+}

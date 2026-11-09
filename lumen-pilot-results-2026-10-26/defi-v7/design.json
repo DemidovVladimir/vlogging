@@ -1,0 +1,27 @@
+{
+  "created_at_utc": "2026-10-28T08:53:47.720205+00:00",
+  "comparison": "Qwen3-1.7B4bit v6selection vs Qwen3-4B-Instruct-2507-4bit",
+  "new_generations": 60,
+  "same_exam": "../defi-v5/exam/test.jsonl",
+  "same_evidence": "../defi-v6/selection/inputs/contexts.jsonl",
+  "same_instruction_source": "../defi-v6/selection/execution/prepare_selection.py",
+  "unchanged": [
+    "60questions/order/types",
+    "frozen source-catalogue chunks and IDs for each question",
+    "system/user instruction text",
+    "greedytemperature0 seed42 nonthinking outputcap384 inputcap1400 prefill128 ordinaryKV",
+    "citation-ID attachment logic and v5 semantic grading rubric",
+    "MLX,mlx-lm,transformers,HFhub package versions"
+  ],
+  "changed": [
+    "checkpoint size1.7B→4B and training/release2507",
+    "native chat template for4Bnonthinking",
+    "MLX allocator memory ceiling2.75→4GiB to fit largerweights; physical guard3.5→4.5GiB"
+  ],
+  "resource_gate": "Normal macOSpressure,>=12GiBdisk,config/weightpreflight,full1784+token padded functional probe before any60exam generations. Guard stops on pressure2 for3samples,swapgrowth>0.25GiB for3samples,footprint>4.5GiB.",
+  "no_training": true,
+  "no_eval_retries_or_prompt_tuning": true,
+  "no_gold_in_runtime": true,
+  "benchmark_limit": "Same familiar agent-authored development exam. Source/query choices already exposed. Human validation false. Not causal evidence about parameter count alone.",
+  "cleanup": "Finally export evidence and remove scoped runtime/weights/venv/caches; do not close apps,stopOllama,KB,Docker or alter previous archives."
+}

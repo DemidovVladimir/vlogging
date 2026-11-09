@@ -1,0 +1,21 @@
+model: models/qwen3-1.7b-4bit
+train: true
+data: data
+fine_tune_type: lora
+num_layers: 4
+batch_size: 1
+iters: 200
+learning_rate: 1.0e-5
+max_seq_length: 512
+grad_checkpoint: true
+mask_prompt: true
+seed: 42
+adapter_path: adapters/lumen-v1
+save_every: 50
+steps_per_eval: 20
+val_batches: 12
+steps_per_report: 10
+lora_parameters:
+  rank: 8
+  scale: 20.0
+  dropout: 0.0

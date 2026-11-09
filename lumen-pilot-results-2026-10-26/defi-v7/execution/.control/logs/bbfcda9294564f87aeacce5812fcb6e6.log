@@ -1,0 +1,16 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+{
+  "questions": 60,
+  "answers": 60,
+  "input_cap": 1400,
+  "max_input_tokens": 893,
+  "baseline_contexts_sha256": "f3f8ed913a06f2726aec3780661052e7bbc3f69112cc3c3e03939bb1b9b76080",
+  "prompts_sha256": "ed9f39ae2c42547200bf660b45986beed1cdd08b3092601fd41281897fba4392",
+  "contexts_sha256": "32ffd6afad0201650199f33f9f25a6a37eb98aa49bc19d47f8e86e8ffb603007",
+  "system_sha256": "204d06f6b446f321f2f502c1ec6a09b9ce29bcb23f7402c028721c01a81d824c",
+  "all60_baseline_prompts_reconstructed_exactly": true,
+  "same_system_user_messages_and_catalogue": true,
+  "retrieval_rerun": false,
+  "native_chat_template_changed_for_new_checkpoint": true,
+  "reads_gold": false
+}

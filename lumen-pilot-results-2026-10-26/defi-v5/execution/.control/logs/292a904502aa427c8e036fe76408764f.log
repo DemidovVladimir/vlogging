@@ -1,0 +1,31 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+1/180 aave-01 closed: 4.72s, out=384, finish=length
+2/180 aave-01 oracle: 4.73s, out=384, finish=length
+3/180 aave-01 retrieved: 1.49s, out=25, finish=stop
+4/180 aave-02 oracle: 4.82s, out=384, finish=length
+5/180 aave-02 retrieved: 1.44s, out=3, finish=stop
+6/180 aave-02 closed: 0.46s, out=2, finish=stop
+7/180 aave-03 retrieved: 1.38s, out=15, finish=stop
+8/180 aave-03 closed: 4.63s, out=384, finish=length
+9/180 aave-03 oracle: 4.78s, out=384, finish=length
+10/180 aave-04 closed: 4.60s, out=384, finish=length
+11/180 aave-04 oracle: 4.73s, out=384, finish=length
+12/180 aave-04 retrieved: 1.15s, out=3, finish=stop
+13/180 aave-05 oracle: 4.70s, out=384, finish=length
+14/180 aave-05 retrieved: 1.35s, out=10, finish=stop
+15/180 aave-05 closed: 4.59s, out=384, finish=length
+16/180 aave-06 retrieved: 5.78s, out=384, finish=length
+17/180 aave-06 closed: 4.62s, out=384, finish=length
+18/180 aave-06 oracle: 0.64s, out=6, finish=stop
+19/180 aave-07 closed: 0.46s, out=2, finish=stop
+20/180 aave-07 oracle: 4.70s, out=384, finish=length
+21/180 aave-07 retrieved: 5.53s, out=384, finish=length
+22/180 aave-08 oracle: 0.57s, out=7, finish=stop
+23/180 aave-08 retrieved: 1.39s, out=18, finish=stop
+24/180 aave-08 closed: 0.83s, out=39, finish=stop
+25/180 aave-09 retrieved: 1.44s, out=1, finish=stop
+26/180 aave-09 closed: 4.58s, out=384, finish=length
+27/180 aave-09 oracle: 4.72s, out=384, finish=length
+28/180 aave-10 closed: 4.58s, out=384, finish=length
+RESOURCE GUARD experiment: interrupted; exit=143; Received signal 15
+Resource summary: /Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5/runs/resources/experiment.json

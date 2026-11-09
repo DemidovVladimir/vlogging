@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-10-26T16:15:07.855465+00:00",
+  "before_first_model_run": true,
+  "reason": "Remove unknown-label leak from empty requested fields; unknown answers still return empty data. No questions or gold facts changed.",
+  "splits": [
+    {
+      "split": "train",
+      "count": 60,
+      "original_sha256": "80dc58e5c037410cf33aaa5b7b8cc09f38c43b80725f71a964031b1437fd5738",
+      "corrected_sha256": "3e20da68c161cd6fa6ff7cc21465834e725047ea8f1cadb88e0fb7ae9447ddfe"
+    },
+    {
+      "split": "valid",
+      "count": 12,
+      "original_sha256": "4f52278ac1a161ee96def6f8b42849c16ff83468be68cf38fb6300911d7f8e96",
+      "corrected_sha256": "8b4ee188e7ff420e7e34dfc1b25970ab2689f259d2925ff357d16677cf12d3d9"
+    },
+    {
+      "split": "test",
+      "count": 8,
+      "original_sha256": "314b1e0f4c7bbabeeffa2727639c5bc4a37f0e27b107dc7e4a86b1d2348f074d",
+      "corrected_sha256": "6cf4a48bf19142a9e0c7020fab091452d2ec876e8dce8b620a5bb5bd281b8a0e"
+    }
+  ],
+  "primary_training_iters": 200,
+  "main_training_hyperparameters": "train-config.yaml: model changed to 1.7B before baseline; remaining settings unchanged",
+  "primary_exam_items": 8,
+  "semantic_review_required": true,
+  "technical_calibration": "20 iterations, separate adapter, padded training-only examples up to 512 tokens",
+  "auxiliary_open_book_control": {
+    "planned_before_baseline": true,
+    "model": "same frozen base, no adapter",
+    "prompt": "same system and exam, handbook appended to user input",
+    "run_order": "after the final closed-book exam",
+    "purpose": "separate ability-to-use-provided-rules reference; not evidence of weight learning",
+    "affects_primary_training_or_score": false
+  },
+  "resource_limits": {
+    "max_child_tree_footprint_GiB": 6,
+    "max_host_swap_growth_GiB": 0.75,
+    "pressure_warning_stop": "3 consecutive one-second samples at level >=2",
+    "scope": "observed samples, not a kernel allocation cap",
+    "no_sysctl_changes": true
+  },
+  "capacity_based_model_selection": {
+    "created_at": "2026-10-26T16:25:32.598096+00:00",
+    "before_baseline": true,
+    "test_generations_seen": false,
+    "first_model": "mlx-community/Qwen3-4B-4bit",
+    "capacity_result": "safely stopped after 3 warning-pressure samples; no OOM; no main training or baseline",
+    "resource_evidence": "runs/resources/calibration.json",
+    "next_model": "mlx-community/Qwen3-1.7B-4bit",
+    "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+    "exam_and_training_iters_unchanged": true
+  }
+}

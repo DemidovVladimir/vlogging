@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-26T18:47:50.307019+00:00",
+  "status": "fixed_before_any_v2_model_compute",
+  "research_type": "Exploratory follow-up to known v1 failure; fresh prospective v2 exam, no independent-public-benchmark claim",
+  "training_arms": [
+    {
+      "name": "clean200",
+      "train": 60,
+      "valid": 12,
+      "iters": 200,
+      "change": "Only72gold.answer labels changed to natural source-grounded explanations; questions/status/data unchanged. Inherited underspecified positive pass questions remain for controlled comparison."
+    },
+    {
+      "name": "expanded",
+      "train": 300,
+      "valid": 24,
+      "iters": 800,
+      "checkpoints_to_evaluate": [
+        200,
+        800
+      ],
+      "change": "Clean natural labels, more examples, explicitconditionsin2inheritedpositivepassquestions, balancedunknowntopics, numericrulecases; enlarged dataandlongertraining are separate interventions."
+    }
+  ],
+  "eval_arms": [
+    "base",
+    "v1",
+    "clean200",
+    "expanded200",
+    "expanded800"
+  ],
+  "evaluation_order": "After all fixed new training completes; generate all5arms againstsamefresh60; do not select/retrain basedonexam",
+  "exam": {
+    "count": 60,
+    "atomic": 30,
+    "composition": 24,
+    "unknown": 6,
+    "sourcefacts_shared_between_train_test": true,
+    "holdout": "wordingandselectedscenario combinations; notunseenworldfacts",
+    "old8": "historicaldiagnostic only, not primaryv2exam"
+  },
+  "constants": {
+    "model": "mlx-community/Qwen3-1.7B-4bit",
+    "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+    "lora_rank": 8,
+    "last_layers": 4,
+    "learning_rate": 1e-05,
+    "batch_size": 1,
+    "max_seq_length": 512,
+    "mask_prompt": true,
+    "grad_checkpoint": true,
+    "seed": 42,
+    "eval_temperature": 0,
+    "eval_max_output_tokens": 256,
+    "thinking": false,
+    "validation_batches_per_event": 12
+  },
+  "evaluation_rules": {
+    "automatic": "Unchanged compare.grade: validJSON,correctstatus,nonemptyanswer,exacttypeddata; stringscasefoldstrip; numericabs_tol1e-6; arrayorderasgold",
+    "semantic": "Agent checks explanationtruth separately; not humanvalidation; no posthocstrictgraderchanges",
+    "diagnostics": "pairedwins/losses and atomic/composition/unknown breakdown"
+  },
+  "guard": {
+    "max_footprint_GiB": 6,
+    "max_system_swap_growth_GiB": 0.75,
+    "warning_pressure_samples_before_stop": 3,
+    "sample_interval_s": 1
+  },
+  "resource_gate": "freshstaticpreflightthen20iterationpadded512training-onlyseparatesmokeadapter; leaveguardonallstages",
+  "cleanup": "Keepv1andv2resultsforreview; sameparentruntime cleanupafterverifiedexport; noautostart/cloudGPU/globalpackages/newweightdownloads"
+}

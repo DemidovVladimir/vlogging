@@ -1,0 +1,26 @@
+{
+  "samples": [
+    {
+      "at_utc": "2026-10-27T20:17:43.922633+00:00",
+      "pressure": 1,
+      "swap": "vm.swapusage: total = 3072.00M  used = 1753.50M  free = 1318.50M  (encrypted)",
+      "disk_free_bytes": 450614800384
+    },
+    {
+      "at_utc": "2026-10-27T20:17:53.932915+00:00",
+      "pressure": 1,
+      "swap": "vm.swapusage: total = 3072.00M  used = 1753.50M  free = 1318.50M  (encrypted)",
+      "disk_free_bytes": 450640035840
+    },
+    {
+      "at_utc": "2026-10-27T20:18:03.951856+00:00",
+      "pressure": 1,
+      "swap": "vm.swapusage: total = 3072.00M  used = 1753.50M  free = 1318.50M  (encrypted)",
+      "disk_free_bytes": 450639921152
+    }
+  ],
+  "all_three_normal": true,
+  "brave_running": false,
+  "spotify_running": false,
+  "slack_running": false
+}

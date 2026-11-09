@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "questions": 60,
+  "arms": [
+    "closed",
+    "oracle",
+    "retrieved"
+  ],
+  "answers": 180
+}

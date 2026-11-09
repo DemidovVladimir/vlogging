@@ -1,0 +1,39 @@
+[
+  {
+    "url": "https://aave.com/docs/llms.txt",
+    "file": "aave-llms.txt",
+    "bytes": 15524,
+    "sha256": "f04f439e65bb51182a4986c82c62ad5bdc7bad6b14d81fd8e34093f5f88478bb",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at_utc": "2026-10-27T09:48:40.521424+00:00",
+    "status": "downloaded",
+    "markdown_links": 101
+  },
+  {
+    "url": "https://kamino.com/docs/llms.txt",
+    "file": "kamino-llms.txt",
+    "bytes": 57106,
+    "sha256": "e9ed3ca2748889fc1a82a073f21cbb6502eb92bfc838f71b792cde79f2a3174b",
+    "content_type": "text/plain; charset=utf-8",
+    "retrieved_at_utc": "2026-10-27T09:48:40.966961+00:00",
+    "status": "downloaded",
+    "markdown_links": 327
+  },
+  {
+    "url": "https://api.llama.fi/protocols",
+    "file": "defillama-protocols.json",
+    "bytes": 9406867,
+    "sha256": "1e34e86cda82d454e8917922579ad22b645427ab21fde6a171f94accfb18af9c",
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at_utc": "2026-10-27T09:48:40.969883+00:00",
+    "status": "downloaded",
+    "records": 8844,
+    "sample_names": [
+      "Binance CEX",
+      "Lido",
+      "Bitfinex",
+      "OKX",
+      "Aave V3"
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "at_utc": "2026-10-27T11:53:34.877714+00:00",
+  "pages": 444,
+  "bytes": 4562783,
+  "failed": [
+    {
+      "url": "https://aave.com/docs/aave-v3/aptos/smart-contracts/interest-rate-strategy.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:52:45.612908+00:00",
+      "protocol": "aave",
+      "listed_in_llms": true
+    },
+    {
+      "url": "https://aave.com/docs/resources.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:52:50.904719+00:00",
+      "protocol": "aave",
+      "listed_in_llms": true
+    },
+    {
+      "url": "https://aave.com/docs/view-contracts.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:52:51.603911+00:00",
+      "protocol": "aave",
+      "listed_in_llms": true
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/aave-v3/overview.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.160321+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/aave-v3.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.163369+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/aave-v3/getting-started/react.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.191555+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/guides/smart-contracts/acl-manager.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.412756+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/flash-loans.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.436722+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/guides/smart-contracts/pool.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.500299+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/guides/smart-contracts/tokenization.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.680398+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/credit-delegation.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.680751+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/smart-contracts/aclmanager.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.680967+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/aave-v3/smart-contracts/smart-contracts/wrapped-token-gateway.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.719691+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    },
+    {
+      "url": "https://aave.com/docs/ecosystem/smart-contracts/pool.md",
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "retrieved_at_utc": "2026-10-27T11:53:30.939770+00:00",
+      "protocol": "aave",
+      "listed_in_llms": false
+    }
+  ],
+  "pending": 0
+}

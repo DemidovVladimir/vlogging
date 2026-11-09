@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">TENGU field seal</title>
+  <desc id="desc">A red human core, six agent nodes, an open evidence ring, a verified gold route, and four field-frame segments.</desc>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M72 196V88H196" stroke="#11110F" stroke-width="34"/>
+    <path d="M316 88H424V196" stroke="#C92F20" stroke-width="34"/>
+    <path d="M424 316V424H316" stroke="#C92F20" stroke-width="34"/>
+    <path d="M196 424H88V316" stroke="#11110F" stroke-width="34"/>
+    <circle cx="256" cy="256" r="120" stroke="#11110F" stroke-width="18" stroke-dasharray="188 25 92 25 188 236" transform="rotate(-38 256 256)"/>
+    <path d="M256 256L358 197" stroke="#A9853E" stroke-width="12"/>
+    <path d="M256 256V136M256 256L154 197M256 256L154 315M256 256V376M256 256L358 315" stroke="#11110F" stroke-width="5" opacity=".72"/>
+  </g>
+  <g fill="#11110F">
+    <circle cx="256" cy="136" r="17"/>
+    <circle cx="154" cy="197" r="17"/>
+    <circle cx="154" cy="315" r="17"/>
+    <circle cx="256" cy="376" r="17"/>
+    <circle cx="358" cy="315" r="17"/>
+  </g>
+  <circle cx="358" cy="197" r="19" fill="#A9853E"/>
+  <rect x="216" y="216" width="80" height="80" fill="#C92F20"/>
+  <path d="M256 70V106M256 406V442M70 256H106M406 256H442" stroke="#11110F" stroke-width="8"/>
+</svg>

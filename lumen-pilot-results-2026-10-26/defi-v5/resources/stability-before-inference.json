@@ -1,0 +1,21 @@
+{
+  "samples": [
+    {
+      "at_utc": "2026-10-27T12:05:34.204579+00:00",
+      "pressure": 2,
+      "swap": "vm.swapusage: total = 3072.00M  used = 2322.06M  free = 749.94M  (encrypted)"
+    },
+    {
+      "at_utc": "2026-10-27T12:05:44.220128+00:00",
+      "pressure": 2,
+      "swap": "vm.swapusage: total = 3072.00M  used = 2322.06M  free = 749.94M  (encrypted)"
+    },
+    {
+      "at_utc": "2026-10-27T12:05:54.242963+00:00",
+      "pressure": 2,
+      "swap": "vm.swapusage: total = 3072.00M  used = 2322.06M  free = 749.94M  (encrypted)"
+    }
+  ],
+  "all_three_normal": false,
+  "inference_started": false
+}

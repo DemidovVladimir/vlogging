@@ -1,0 +1,293 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-26T16:34:46.520229+00:00",
+  "reviewer": {
+    "kind": "agent",
+    "name": "pilot_method_review",
+    "human_validation": false,
+    "method": "Independent source-grounded semantic review of saved outputs; no model generation or retraining."
+  },
+  "scope": "Fixed 60 train / 12 validation / 8 test, Qwen3-1.7B 4-bit base, 200 LoRA iterations. No general claim about LoRA or small models.",
+  "classification_definitions": {
+    "correct": "Вся запрошенная задача решена верно; текст и поля не противоречат источнику.",
+    "incorrect": "Основной запрошенный факт, число или решение неверны либо выдуманы.",
+    "abstained": "Модель отказалась отвечать и не заполнила фактические поля. На known-задаче это не успех. honest_abstention отдельно различает честную неизвестность и пропуск доступного источника.",
+    "partial": "Некоторые содержательные условия верны, но полный ответ неверен или противоречив. Правильная валюта сама по себе не считается частичным решением."
+  },
+  "source_sha256": "eb728534083b1532cf2756aef6c301770a9a27f5b53d650b69d3612a58a55d52",
+  "exam_sha256": "6cf4a48bf19142a9e0c7020fab091452d2ec876e8dce8b620a5bb5bd281b8a0e",
+  "arms": {
+    "before": {
+      "file": "runs/before.jsonl",
+      "file_sha256": "8d67925260db40b5f0814bb1650a032ec46bc6619dbcdf34ba931771831254b9",
+      "closed_book": true,
+      "adapter": null,
+      "valid_outer_json": 8,
+      "full_answer_correct": 0,
+      "total": 8,
+      "classification_counts": {
+        "abstained": 2,
+        "incorrect": 5,
+        "partial": 1
+      },
+      "items": [
+        {
+          "id": "demo-01",
+          "classification": "abstained",
+          "full_answer_correct": false,
+          "honest_abstention": true,
+          "known_task_not_solved": true,
+          "note_ru": "Модель честно не называет неизвестные ей зал и вместимость. Это отсутствие ответа на решаемую задачу, а не галлюцинация. По F03/F04 требовались «Астра», 32 места.",
+          "raw_sha256": "929069504b3f93f53c298ee28de04abb91b6e71c6a8c4c2aba1bbeefc27364b2"
+        },
+        {
+          "id": "demo-02",
+          "classification": "abstained",
+          "full_answer_correct": false,
+          "honest_abstention": true,
+          "known_task_not_solved": true,
+          "note_ru": "Модель воздержалась от выдуманной цены. Задача не решена: по F13 цена «Искры» 24 EUR. Упоминание открытых источников не означает, что в опыте выполнялся поиск.",
+          "raw_sha256": "8bde980bb09d774c1670b69c93d4691fe06140b20d2fea79cfd38dd3c4c368a8"
+        },
+        {
+          "id": "demo-03",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Придуманы 100 рублей за билет и итог 500 RUB. По F05/F08/F09/F10 пять человек в среду получают скидку: 5 × 11 × 0,8 = 44 EUR.",
+          "raw_sha256": "513cfe7151cce0e77f016bd23dd1983252ce138724cfb5489959406a7dff4242"
+        },
+        {
+          "id": "demo-04",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Общее рассуждение не даёт цены, а поля утверждают 0 RUB. По F06/F10 в субботу скидки нет: 5 × 14 = 70 EUR.",
+          "raw_sha256": "88ca972e704252eae8ef4ec669c2eb15f40014b93da543d15343d511427fb278"
+        },
+        {
+          "id": "demo-05",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Вместо минимальной покупки для двух людей на три дня даны 0 RUB, обычные билеты и quantity=1. Нужны два именных абонемента «Искра» по 24 EUR, всего 48 EUR; разовые билеты стоили бы 66 EUR.",
+          "raw_sha256": "90a7f49a526743a7816a8ba030e5d9572c2cceb3e980f65b22d5cb87f476b2db"
+        },
+        {
+          "id": "demo-06",
+          "classification": "partial",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Флаги group_discount=false и passes_valid=false совпадают с F11/F24, но цена 0 и пустая валюта ошибочны: 5 × 17 = 85 EUR. Status unknown с заполненными числовыми полями не является чистым воздержанием; количество зрителей уже дано в вопросе.",
+          "raw_sha256": "d83d64a1d5330a989e91b526e4230a4ba35a468a3ffa6a0fed5306307418dc33"
+        },
+        {
+          "id": "demo-07",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Возврат 11 EUR ошибочен. По F26 за четыре часа возвращается половина: 11 × 0,5 = 5,5 EUR. Формат JSON корректен, ошибка содержательная.",
+          "raw_sha256": "b11415215f62be20bb5cb7c03fdcbff26e10f5c3e7c3efb183a432466fb868db"
+        },
+        {
+          "id": "demo-08",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": false,
+          "note_ru": "Модель выдумала бесплатную парковку и status known. В справочнике парковка не описана; требовались unknown и пустой data, а не free_parking=true.",
+          "raw_sha256": "829652ff581f65f86e4c3d9ace51fc325a0d1c84590e5c7daebd682e97bebd48"
+        }
+      ]
+    },
+    "after": {
+      "file": "runs/after.jsonl",
+      "file_sha256": "95af7cd2a1751466fe560014781e580107c6f2aabb2e5c3fa10416e2a623fd55",
+      "closed_book": true,
+      "adapter": "/Users/vladimirdemidov/development/vlogging/lumen-local-pilot/adapters/lumen-v1",
+      "valid_outer_json": 8,
+      "full_answer_correct": 0,
+      "total": 8,
+      "classification_counts": {
+        "incorrect": 7,
+        "partial": 1
+      },
+      "items": [
+        {
+          "id": "demo-01",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Выдуманы зал «Солнышко» и 120 мест. По F03/F04 больший зал — «Астра», 32 места. Скопированный внутрь answer JSON повторяет неверные данные.",
+          "raw_sha256": "f1215092ddfd2a1243f9f6f417d10f92d1f57a5465bf5fe50123565b41a749e8"
+        },
+        {
+          "id": "demo-02",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Указано 12 EUR вместо цены «Искры» 24 EUR по F13. Валюта правильная, основной факт неверен.",
+          "raw_sha256": "cf0042f83fc7f2d72b03fc7566ac25b8243aee0a050957fa45266b5866473fe9"
+        },
+        {
+          "id": "demo-03",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Итог 5 EUR неверен. Пять человек в среду: 5 × 11 × 0,8 = 44 EUR по F05/F08/F09/F10.",
+          "raw_sha256": "fab4e310620e0933bbdd7e2a874e4644f3b4fd84f264c5872483de2eb305ac93"
+        },
+        {
+          "id": "demo-04",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Итог 12 EUR неверен. Пять обычных субботних билетов без групповой скидки стоят 70 EUR по F06/F10.",
+          "raw_sha256": "cf0042f83fc7f2d72b03fc7566ac25b8243aee0a050957fa45266b5866473fe9"
+        },
+        {
+          "id": "demo-05",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Сумма 12 EUR, purchase «счет» и quantity=1 не соответствуют задаче. Минимальный вариант — две именные «Искры», всего 48 EUR, на обычные сеансы понедельника, вторника и среды.",
+          "raw_sha256": "a94d6aa23e48229a832319e7e0cea99eccd4eee97ed275d2800c7bc3f8e1b232"
+        },
+        {
+          "id": "demo-06",
+          "classification": "partial",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Правильно запрещены групповая скидка и абонементы на премьеру (F11/F24), но 120 EUR вместо 5 × 17 = 85 EUR по F07. Полный ответ неверен.",
+          "raw_sha256": "7c3fc9e35f8d9cc820f9393fa4d98dcc732191338cd4dc35645107d3bd1fdb2e"
+        },
+        {
+          "id": "demo-07",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Сохранился неверный полный возврат 11 EUR. По F26 за четыре часа возвращают 5,5 EUR.",
+          "raw_sha256": "3f5e6b9c7f361e84e0d80a8363488728004f7ac6342ac4ab8da3def5dbe6a535"
+        },
+        {
+          "id": "demo-08",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": false,
+          "note_ru": "Модель теперь утверждает free_parking=false со status known. Отсутствие сведений не означает отсутствие бесплатной парковки: это неподтверждённое отрицание, а не корректное воздержание.",
+          "raw_sha256": "b17a95cc872c74c91422e5652f522ac4d71b4f2102fec83f8532751145e84e64"
+        }
+      ]
+    },
+    "openbook": {
+      "file": "runs/openbook.jsonl",
+      "file_sha256": "948e1ff98e96d721dbd77d575b50733a45b574a332a9d8005228e92e7a8a7183",
+      "closed_book": false,
+      "adapter": null,
+      "valid_outer_json": 8,
+      "full_answer_correct": 3,
+      "total": 8,
+      "classification_counts": {
+        "abstained": 1,
+        "correct": 3,
+        "incorrect": 2,
+        "partial": 2
+      },
+      "items": [
+        {
+          "id": "demo-01",
+          "classification": "abstained",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Модель отказалась отвечать и неверно заявила, что данных в справочнике нет. В приложенном источнике явно есть F03: 18 мест и F04: «Астра», 32 места. Это пропуск доступной информации, а не честное установление недостаточности источника.",
+          "raw_sha256": "8a816d4262eed07b29e1f602f21a8e0d6da85afac7e11f94e0b282688d1fc9e3"
+        },
+        {
+          "id": "demo-02",
+          "classification": "correct",
+          "full_answer_correct": true,
+          "honest_abstention": false,
+          "known_task_not_solved": false,
+          "note_ru": "Цена 24 EUR и объяснение согласованы с F13.",
+          "raw_sha256": "dfb243f7f65bf7d76d10022ef13cca46c24c63b379b7977377f457ed9809b8c2"
+        },
+        {
+          "id": "demo-03",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Итог 55 EUR равен пяти билетам по 11 без скидки. По F08/F09/F10 группа из пяти в среду получает 20 процентов: правильный итог 44 EUR.",
+          "raw_sha256": "6fda66809e704038c116f6e91072da282cc86f7293d566455ff2bc54008942ef"
+        },
+        {
+          "id": "demo-04",
+          "classification": "correct",
+          "full_answer_correct": true,
+          "honest_abstention": false,
+          "known_task_not_solved": false,
+          "note_ru": "Итог 70 EUR верен: пять субботних билетов по 14 EUR, групповая скидка в выходные не действует (F06/F10).",
+          "raw_sha256": "db44ccf71c51506926d17fdb54842eddd32cc5ffee78db6e054fcdf5cb3dffc6"
+        },
+        {
+          "id": "demo-05",
+          "classification": "incorrect",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Ответ рассматривает один понедельник вместо трёх дней и даёт 11 евро при quantity=2. Нужны две именные «Искры» по 24 EUR, всего 48 EUR. Это содержательная ошибка независимо от обозначения валюты Euro вместо EUR.",
+          "raw_sha256": "6dd226aa07787a78ae2b1cd6b8266c7f3d5cfa493f61cde142940677ab254de1"
+        },
+        {
+          "id": "demo-06",
+          "classification": "partial",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": true,
+          "note_ru": "Два запретительных флага совпали с F11/F24, но цена 0 неверна; нужен итог 85 EUR по F07. Текст об отсутствии данных о премьерах и абонементах противоречит приложенному справочнику. Unknown с непустыми полями не является чистым воздержанием.",
+          "raw_sha256": "6ad37efbdb8f679229a73b0e182c49b08ad7a4266f11dec3c73d1b208c16e6e8"
+        },
+        {
+          "id": "demo-07",
+          "classification": "correct",
+          "full_answer_correct": true,
+          "honest_abstention": false,
+          "known_task_not_solved": false,
+          "note_ru": "Правильно применено F26: за четыре часа возвращается половина 11 EUR, то есть 5,5 EUR. Текст и data согласованы.",
+          "raw_sha256": "890b6ff994cabd6d701386e600ce5301eac6540b0b0ae996ee2a5b8d492885c2"
+        },
+        {
+          "id": "demo-08",
+          "classification": "partial",
+          "full_answer_correct": false,
+          "honest_abstention": false,
+          "known_task_not_solved": false,
+          "note_ru": "Status unknown и текст об отсутствии сведений правильны, но data.free_parking=false утверждает отрицательный факт без источника. Это противоречие неопределённости, а не просто косметическая ошибка формата. Полный ответ должен содержать data={}.",
+          "raw_sha256": "6f3413dd37061553ac2bcc793b695b4b3307393c4404f2bf13ecb8099cc406c7"
+        }
+      ]
+    }
+  },
+  "cross_arm_findings_ru": [
+    "Полностью правильных ответов: до 0/8, после 0/8, отдельный контроль со справочником 3/8. Все 24 внешних JSON валидны: нулевой основной балл не вызван одним лишь парсером.",
+    "После адаптера все восемь ответов имеют status known. В baseline два вопроса с недоступными базовой модели фактами получили честное воздержание; после появились уверенные неверные факты.",
+    "После обучения модель копирует целевой стиль: answer содержит сериализованный JSON, дублирующий data. Это наблюдаемое изменение поведения, а не подтверждение усвоения правильных правил.",
+    "В обучении answer был заранее сериализованной строкой JSON внутри внешнего JSON. Такой формат может способствовать копированию оболочки, но его причинная роль в провале не проверена абляцией.",
+    "Контроль с полным справочником решает три задачи, но не является качественным готовым помощником. Ответ о парковке частичный и противоречивый, поэтому 4/8 считать нельзя.",
+    "Не менять обучение или экзамен по этим результатам. Отрицательный вывод относится к текущему набору, модели и фиксированным 200 итерациям; это не доказательство невозможности LoRA."
+  ]
+}

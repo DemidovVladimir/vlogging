@@ -1,0 +1,30 @@
+{
+  "origin": "https://tengucluster.com",
+  "checkedAt": "2026-10-22T11:10:07.319Z",
+  "languages": {
+    "ru": {
+      "status": "passed",
+      "scenes": 9,
+      "phases": 25,
+      "viewports": 5,
+      "intro": {
+        "width": 1920,
+        "muted": false,
+        "duration": 2.411,
+        "audio": 27248
+      }
+    },
+    "en": {
+      "status": "passed",
+      "scenes": 9,
+      "phases": 25,
+      "viewports": 5,
+      "intro": {
+        "width": 1920,
+        "muted": false,
+        "duration": 2.411,
+        "audio": 22004
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "aave-01",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "HF0,98 удовлетворяет<1. R4/R5 прямо устанавливают eligibility; R1 лишь дополнительный контекст."
+  },
+  {
+    "id": "aave-02",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "ПриHFровно1 строгое<1 не выполнено; выбрана прямая threshold-цитата."
+  },
+  {
+    "id": "aave-03",
+    "arm": "larger",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "Модель выбирает правильное withdraw-правило, но ошибочно допускает HF0,97. Неверный ответ не становится подтверждённым из-за наличия правильной цитаты."
+  },
+  {
+    "id": "aave-04",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Repay at any time прямо подтверждает отсутствие фиксированного срока ожидания."
+  },
+  {
+    "id": "aave-05",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "1:1 назван верно, но выбранное описание mint/burn/amount/yield не устанавливает именно точный peg, как и в прежней1.7B."
+  },
+  {
+    "id": "aave-06",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Balance_increases; R3 прямо говорит continuously increasing wallet balance."
+  },
+  {
+    "id": "aave-07",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "IsolationMode толькоspecificbasket: прямое подтверждение запрета arbitrarydebt."
+  },
+  {
+    "id": "aave-08",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Debtceiling устанавливаютR2/R7. ТриID укладываются в прежний лимит, в отличие от9IDу1.7B."
+  },
+  {
+    "id": "aave-09",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Correlated верно, но5ID превышают1–3. Прежний adapter не прикрепляет цитаты; ID не сокращали вручную."
+  },
+  {
+    "id": "aave-10",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Siloed borrowing запрещает другие activeborrowsвsamepool: прямая цитата."
+  },
+  {
+    "id": "aave-11",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Одного approvalнедостаточно безcollateral: beforeborrowmusthavesufficientcollateral."
+  },
+  {
+    "id": "aave-12",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "СамомуapproveDelegation prior supply не обязателен; выбранная цитата supplyforinterest не подтверждает требование или отсутствие prior approvalfunds."
+  },
+  {
+    "id": "aave-13",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Верно ожидаетborrowfailure, но выбранный liquidationseligibility-фрагмент не устанавливает pre-borrowпроверку."
+  },
+  {
+    "id": "aave-14",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "FlashLoanSimple single reserve: прямая цитата подтверждает1."
+  },
+  {
+    "id": "aave-15",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "В контекстеFlashLoanSimple canborroweropenanydebtposition отрицательно: прямая цитата."
+  },
+  {
+    "id": "aave-16",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "Receiverapproveprincipal+feeotherwiserevert и lackofapprovalreverts прямо подтверждают."
+  },
+  {
+    "id": "aave-17",
+    "arm": "larger",
+    "content_correct": false,
+    "citation_supported": false,
+    "notes": "10000×0,05/100=5, не50. Выбранная вернаяставка не подтверждает ошибочное вычисление."
+  },
+  {
+    "id": "aave-18",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "LTV0 нельзя включитьcollateral; выбранная общая insufficientcollateral-справка не устанавливает правилоLTV0."
+  },
+  {
+    "id": "aave-19",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": false,
+    "notes": "Supply/borrowcaps верно отнесены к операциям, но7IDпревышаютлимит1–3. Adapterотклоняетсписок, не выбираяID за модель."
+  },
+  {
+    "id": "aave-20",
+    "arm": "larger",
+    "content_correct": true,
+    "citation_supported": true,
+    "notes": "2000×0,75=1500; answer,dataиформулаLTV согласованы и подтверждены."
+  }
+]

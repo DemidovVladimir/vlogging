@@ -1,0 +1,26 @@
+{
+  "closed_apps": [
+    "Spotify",
+    "Slack"
+  ],
+  "authorization": "Existing explicit user replies in this conversation; normal quit only",
+  "remaining_matching_processes": [],
+  "samples": [
+    {
+      "at_utc": "2026-10-27T12:11:39.795855+00:00",
+      "pressure": 1,
+      "swap": "vm.swapusage: total = 3072.00M  used = 2322.06M  free = 749.94M  (encrypted)"
+    },
+    {
+      "at_utc": "2026-10-27T12:11:49.810910+00:00",
+      "pressure": 1,
+      "swap": "vm.swapusage: total = 3072.00M  used = 2322.06M  free = 749.94M  (encrypted)"
+    },
+    {
+      "at_utc": "2026-10-27T12:11:59.830849+00:00",
+      "pressure": 1,
+      "swap": "vm.swapusage: total = 3072.00M  used = 2322.06M  free = 749.94M  (encrypted)"
+    }
+  ],
+  "all_three_normal": true
+}

@@ -1,0 +1,24 @@
+{
+  "completed_at_utc": "2026-10-27T20:23:36.247679+00:00",
+  "runtime": "/Users/vladimirdemidov/development/vlogging/lumen-local-defi-v5",
+  "runtime_removed": true,
+  "owned_jobs_remaining": 0,
+  "inference_or_training_running": false,
+  "no_report_server_started": true,
+  "logical_bytes_removed_estimate": 1564795272,
+  "observed_free_disk_delta_bytes": 1597120512,
+  "ks_kb_preserved": true,
+  "docker_and_other_workloads_untouched": true,
+  "apps_gracefully_closed_for_resources": [
+    "Brave",
+    "Spotify",
+    "Slack"
+  ],
+  "model_weights_environments_caches_removed": true,
+  "retained": "Frozen public documents/index, questions, contexts, raw model answers, code and measurement evidence. No model runtime.",
+  "valid_main_answers": 180,
+  "invalid_kv4_answers_excluded": 28,
+  "pipeline_outcome": "completed",
+  "host_pressure_after": 1,
+  "host_swap_after": "vm.swapusage: total = 3072.00M  used = 1753.50M  free = 1318.50M  (encrypted)"
+}
